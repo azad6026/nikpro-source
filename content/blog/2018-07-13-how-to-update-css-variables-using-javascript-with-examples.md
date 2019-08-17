@@ -1,0 +1,106 @@
+---
+id: 31852
+title: How to update CSS variables using Javascript with an example
+date: 2018-07-13T22:55:23+00:00
+author: admin
+layout: post
+guid: http://www.nikpro.com.au/?p=31852
+permalink: /how-to-update-css-variables-using-javascript-with-examples/
+image: /wp-content/uploads/2018/07/css-var-change.png
+categories:
+  - CSS
+  - JAVASCRIPT
+tags:
+  - arrow functions
+  - css variables
+  - datasets
+---
+Have you tried to update [CSS variables](http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/) using Javascript? In this post we will explain how to do this with examples. This is an example from <a href="http://www.wesbos.com" target="_blank" rel="noopener noreferrer">Wesbos</a> courses and it is really useful and informative.
+
+## The Example
+
+It is the beauty of CSS variables that unlike CSS preprocessors they could be updated with Javascript after creation. I have created a pen in codepen for our example and you can see the result here:
+
+<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="wxKgvY" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="wxKgvY">
+  See the Pen <a href="https://codepen.io/azad6026/pen/wxKgvY/">wxKgvY</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
+</p>
+
+
+
+Let us explain what it does first. We have three variables that could be changed. The spacing and the blur through the spacebar and the colour through the colour set. It you change the spacing or blur bar, you will instantly see the padding and the image blur is changing. Also the same applies when you change the colour set. The JS word on the heading and the image background colour are using that colour and they change as you change them. So what is happening.
+
+### First the CSS
+
+If you know about CSS variables and <a href="http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">how to define them</a> you can see that we have defined three variables in our CSS:
+
+`<strong>:root {</strong>`  
+`<strong>  --base: #ffc600;</strong>`  
+`<strong>  --spacing: 10px;</strong>`  
+`<strong>  --blur: 10px;</strong>`  
+`<strong>}</strong>`
+
+And then we use them in our image and our heading:
+
+`<strong>img {</strong>`  
+`<strong>  padding: var(--spacing);</strong>`  
+`<strong>  background: var(--base);</strong>`  
+`<strong>  filter: blur(var(--blur));</strong>`  
+`<strong>}</strong>`  
+`<strong>.hl {</strong>`  
+`<strong>  color: var(--base);</strong>`  
+`<strong>}</strong>`
+
+If you are not familiar with how to define and use CSS variables, read <a href="http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">this</a> to learn their difference with preprocessors and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank" rel="noopener noreferrer">this</a> to understand them better. But here we use var to be able to use our variables wherever we need. This is how it has been implemented to CSS itself.
+
+### Now the HTML
+
+So far we know how to define and use our CSS variables. .In HTML code the part that we care about is the inputs:
+
+`<strong><input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px"></strong>`
+
+This is the spacing input. And the other two are the same with name and type changing. Also all inputs are sorrounded in a div by a class called controls.
+
+Now we need to learn how to change the CSS through inputs and make the magic happen.
+
+### Next is update CSS variables with Javascript 
+
+First we need to access to our inputs:
+
+`<strong>const inputs = document.querySelectorAll('.controls input');</strong>`
+
+This gives us a NodeList that we could use its forEach method to update the property for each input. Be aware the NodeList is different from an array and it is very limited in case of methods. You can test it for yourself creating a simple array and log it in console and log the inputs in console and check the methods available.
+
+Next we need to loop through inputs and listen to the change event and update the value by calling update function:
+
+`<strong>inputs.forEach(input => input.addEventListener('change', handleUpdate));</strong>`
+
+We used <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a> here to make the code nice and neat. We should listen to the mousemove event as well as if we don&#8217;t because the spacebar can be moved with mouse and it will be quick, the change event will not catch that. So we will do the same for mouse moves as well:
+
+`<strong>inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));</strong>`
+
+All good so far. We need to create the function to update the values now. We need to get the document element and set the style property to the changed value:
+
+`<strong>function handleUpdate() {</strong>`  
+``<strong>  document.documentElement.style.setProperty(`--${this.name}`, this.value);</strong>``  
+`<strong>}</strong>`
+
+In this case each time we change an input, it takes its name in `<strong>${this.name} </strong>`for example spacing and set it s value to what we have changed it to. So &#8211;spacing will get the value for spacing named input.
+
+#### Using datases
+
+It looks good but one thing missing. For spacing and blur the value has a suffix of px. If we don&#8217;t add that in, the spacing will be 20 for example and not 10px and it is not correct. That is why in HTML we have a `<strong>data-sizing="px"</strong>`so that we could use it here. In HTML tags, you could use datasets as data dash whatever you need to use it in your code. We called it data dash sizing so it makes sense. Now we add it in the function:
+
+`<strong> function handleUpdate() {</strong>`  
+`<strong>  const suffix = this.dataset.sizing || '';</strong>`  
+``<strong>  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);</strong>``  
+`<strong>}</strong>`
+
+So we created a suffix that gets the sizing dataset or it gets nothing which we added for colour variable as it does not need px as suffix to be added.
+
+Also in the second line of the function we added the suffix to the value so the value will be 10px for example. Try out each line in your console to see the result while you are changing the inputs and it makes more sense. That was all for this. 
+
+It is great that we could update CSS variables on the fly with Javascript. It makes the style more flexible and we could build cool staff with it. Here is the example again:
+
+<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="wxKgvY" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="wxKgvY">
+  See the Pen <a href="https://codepen.io/azad6026/pen/wxKgvY/">wxKgvY</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
+</p>
