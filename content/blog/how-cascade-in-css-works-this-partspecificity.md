@@ -5,10 +5,10 @@ date: 2018-09-22T21:54:08+00:00
 author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32263
-permalink: /how-cascade-in-css-works-this-partspecificity/
+permalink: /how-cascade-in-css-works-this-part-specificity/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/cascade-1568x1045.jpeg
+image: /wp-content/uploads/2018/09/cascade.jpeg
 categories:
   - CSS
   - CSS3
