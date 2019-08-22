@@ -20,6 +20,15 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
+       <nav>
+          <ul>
+            <li>
+                <Link to="/" >
+Back to home
+                </Link>
+            </li>
+          </ul>
+        </nav>
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -30,7 +39,7 @@ class BlogPostTemplate extends React.Component {
             </h1>
             <p
               style={{
-                ...scale(-1 / 5),
+                ...scale(-1 / 4),
                 display: `block`,
                 marginBottom: rhythm(1),
               }}
@@ -45,7 +54,6 @@ class BlogPostTemplate extends React.Component {
             }}
           />
           <footer>
-            <Bio />
           </footer>
         </article>
 
