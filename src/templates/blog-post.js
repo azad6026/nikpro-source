@@ -24,6 +24,7 @@ class BlogPostTemplate extends React.Component {
           <ul>
             <li>
                 <Link to="/" >
+Back to home
                 </Link>
             </li>
           </ul>
