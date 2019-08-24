@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Image from "../components/image"
 import SEO from '../components/seo'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
