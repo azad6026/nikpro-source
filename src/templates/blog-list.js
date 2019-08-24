@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
+import Image from "../components/image"
 import SEO from '../components/seo'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
@@ -36,6 +37,7 @@ class BlogIndex extends React.Component {
                                 </Link>
                             </h3>
                             <small>{node.frontmatter.date}</small>
+                            <img src={node.frontmatter.image} />
                             <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                         </div>
                     )
@@ -109,6 +111,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            image
           }
         }
       }
