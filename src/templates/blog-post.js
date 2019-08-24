@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -20,15 +19,15 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-       <nav>
-          <ul>
-            <li>
-                <Link to="/" >
-Back to home
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/" >
+                    Home
                 </Link>
-            </li>
-          </ul>
-        </nav>
+                </li>
+              </ul>
+            </nav>
             <h1
               style={{
                 marginTop: rhythm(1),
