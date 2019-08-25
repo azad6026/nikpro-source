@@ -9,26 +9,26 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    // if (location.pathname === rootPath) {
-    header = (
-      <>
-        <nav>
-          <li><Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            Home
+    if (location.pathname === rootPath) {
+      header = (
+        <>
+          <nav>
+            <li><Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              Home
       </Link></li>
 
-        </nav>
-      </>
-    )
+          </nav>
+        </>
+      )
 
-    // }
+    }
     return (
       <div
         style={{

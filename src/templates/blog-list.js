@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
                                 </Link>
                             </h3>
                             <small>{node.frontmatter.date}</small>
-                            <img src={node.frontmatter.image} />
+                            <img src={`/content/blog/${node.frontmatter.image} `} />
                             <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                         </div>
                     )
