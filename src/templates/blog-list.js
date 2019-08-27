@@ -29,8 +29,10 @@ class BlogIndex extends React.Component {
                         <article key={node.fields.slug}
                        style={{ 
                            backgroundImage: `url(${ node.frontmatter.image })`,
-                           boxShadow: `0px 0px 10px #808080`,
+                           background: `rgba(255,255,255,.8)`,
+                           boxShadow: `0px 0px 10px #505050`,
                            padding: `1rem 3rem`,
+                           margin: `1rem auto`,
                            transition: `all .5s`
                         }}
 >

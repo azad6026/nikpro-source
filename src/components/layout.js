@@ -33,13 +33,15 @@ class Layout extends React.Component {
           maxWidth: `80vw`,
         }}
       >
-        <p>The site is getting a new look in Gatsbyjs. Please bare with us.</p>
+        <p 
+        style={{
+          background: `tomato`,
+          padding: `1rem`,
+          textAlign: `center`
+        }}
+        >The site is getting a new look in Gatsbyjs. Please bare with us.</p>
         <header>{header}</header>
         <main 
-        style ={{
-          display: `grid`,
-          gridGap: `2rem`
-        }}
         >{children}
         </main>
         <footer>

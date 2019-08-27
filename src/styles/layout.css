@@ -1,6 +1,9 @@
 :root{
     --link-color: tomato;
-    --hover-color: darkBlue;
+    --hover-color: orange;
+}
+body{
+    background: url("../../content/assets/bg.png") no-repeat center center fixed;
 }
 .menu-list-item{
     list-style: none;
@@ -11,6 +14,7 @@
 pre{
     background : mistyrose;
     padding: 1rem 2rem;
+    overflow-x: auto;
 }
 a{
     color: var(--link-color);

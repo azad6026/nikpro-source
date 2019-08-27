@@ -16,7 +16,12 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article 
+        style= {{
+          background: `rgba(255,255,255,.8)`,
+          boxShadow: `0px 0px 10px #505050`,
+          padding: `1rem 3rem`
+        }}>
           <header>
             <h1
               style={{
@@ -40,7 +45,12 @@ class BlogPostTemplate extends React.Component {
           </footer>
         </article>
 
-        <nav>
+        <nav 
+        style={{
+          background: `rgba(255,255,255,.7)`,
+          padding: `1rem`,
+          margin: `1rem auto`
+        }}>
           <ul
             style={{
               display: `flex`,
