@@ -49,6 +49,8 @@ We might expect the same rule in the case of parent child. But it is different h
 
 But if we add some padding or border to the parent, this rule will go away as well. [See the pen below from CSS tricks](https://css-tricks.com/what-you-should-know-about-collapsing-margins/):
 
+https://css-tricks.com/what-you-should-know-about-collapsing-margins/
+
 The top parent has no padding, so it will all collapse and we will only see the purple colour child.
 
 However, the bottom parent has some padding , therefore we can see the margin is applied to the bottom and the top. There is 1px of padding for each child just to see the colours. It does have no effect on the matter though.
