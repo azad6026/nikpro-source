@@ -26,22 +26,23 @@ class BlogIndex extends React.Component {
                 {posts.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
                     return (
-                        <div key={node.fields.slug}
-                       //style={{ backgroundImage: `url(${ node.frontmatter.image })` }}
+                        <article key={node.fields.slug}
+                       style={{ 
+                           backgroundImage: `url(${ node.frontmatter.image })`,
+                           boxShadow: `0px 0px 10px #808080`,
+                           padding: `1rem 3rem`,
+                           transition: `all .5s`
+                        }}
 >
                             <h3
-                                style={{
-                                    marginBottom: rhythm(1 / 4),
-                                }}
                             >
                                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                                     {title}
                                 </Link>
                             </h3>
                             <small>{node.frontmatter.date}</small>
-                            <img src={`/content/blog/${node.frontmatter.image} `} />
                             <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                        </div>
+                        </article>
                     )
                 })}
                 <ul
@@ -69,7 +70,6 @@ class BlogIndex extends React.Component {
                             <Link
                                 to={`/${i === 0 ? '' : i + 1}`}
                                 style={{
-                                    padding: rhythm(1 / 4),
                                     textDecoration: 'none',
                                     color: i + 1 === currentPage ? '#ffffff' : '',
                                     background: i + 1 === currentPage ? '#007acc' : '',

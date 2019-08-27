@@ -1,3 +1,20 @@
+:root{
+    --link-color: tomato;
+    --hover-color: darkBlue;
+}
+.menu-list-item{
+    list-style: none;
+}
+.menu-item-link{
+    text-decoration: none;
+}
 pre{
-background : mistyrose;
+    background : mistyrose;
+    padding: 1rem 2rem;
+}
+a{
+    color: var(--link-color);
+}
+a:hover,.menu-item-link:hover{
+    color: var(--hover-color);
 }

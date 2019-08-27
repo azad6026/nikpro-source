@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import '../styles/layout.css'
 
 class Layout extends React.Component {
   render() {
@@ -9,38 +9,39 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
+    // if (location.pathname === rootPath) {
       header = (
         <>
-          <nav>
-            <li><Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={`/`}
-            >
-              Home
-      </Link></li>
-
-          </nav>
+            <nav>
+              <ul>
+                <li className="menu-list-item">
+                  <Link to="/" className="menu-item-link">
+                    Home
+                </Link>
+                </li>
+              </ul>
+            </nav>
         </>
       )
 
-    }
+    // }
     return (
       <div
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: `80vw`,
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <p>The site is getting a new look in Gatsbyjs. Please bare with us.</p>
         <header>{header}</header>
-        <main>{children}</main>
+        <main 
+        style ={{
+          display: `grid`,
+          gridGap: `2rem`
+        }}
+        >{children}
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
