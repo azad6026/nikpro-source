@@ -1,7 +1,7 @@
 ---
 id: 32763
 title: Collapsible margin, definition explained with some examples
-date: 2018-07-07T21:16:44+00:00
+date: 2019-07-07T21:16:44+00:00
 author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32763
