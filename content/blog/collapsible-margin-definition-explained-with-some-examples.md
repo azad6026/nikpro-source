@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32763
 permalink: /create-a-simple-website-layout-using-flexbox/
-image: /wp-content/uploads/2019/07/margin-in-element-1140x622.png
+# image: /wp-content/uploads/2019/07/margin-in-element-1140x622.png
+image: margin-in-element-1140x622.png
 categories:
   - CSS
 tags:

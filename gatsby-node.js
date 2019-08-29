@@ -1,3 +1,6 @@
+const sharp = require("sharp")
+sharp.simd(false)
+sharp.cache(false)
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -49,21 +52,20 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
   // Create blog post list pages
-  const postsPerPage = 10;
-  const numPages = Math.ceil(posts.length / postsPerPage);
+  const postsPerPage = 10
+  const numPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
-      component: path.resolve('./src/templates/blog-list.js'),
+      component: path.resolve("./src/templates/blog-list.js"),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
-        currentPage: i + 1
+        currentPage: i + 1,
       },
-    });
-
+    })
   })
 }
 
