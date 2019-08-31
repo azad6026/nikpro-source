@@ -34,9 +34,9 @@ pre {
 a {
   color: var(--link-color);
 }
-a:hover {
+h3 a:hover {
   color: var(--hover-color);
 }
-.menu-item-link:hover {
+a:hover {
   color: var(--menu-link-hover);
 }

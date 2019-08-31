@@ -55,6 +55,8 @@ class BlogIndex extends React.Component {
             alignItems: "center",
             listStyle: "none",
             padding: 0,
+            background: `#0c0904`,
+            padding: `1rem`,
           }}
         >
           {!isFirst && (
@@ -67,6 +69,7 @@ class BlogIndex extends React.Component {
               key={`pagination-number${i + 1}`}
               style={{
                 margin: 0,
+                display: `none`,
               }}
             >
               <Link
