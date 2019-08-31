@@ -1,54 +1,91 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import '../styles/layout.css'
+import Image from "../components/image"
+
+import "../styles/layout.css"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
-
     // if (location.pathname === rootPath) {
-      header = (
-        <>
-            <nav>
-              <ul>
-                <li className="menu-list-item">
-                  <Link to="/" className="menu-item-link">
-                    Home
+    header = (
+      <>
+        <div className="inner-wrapper">
+          <div
+            style={{
+              maxWidth: `150px`,
+            }}
+          >
+            <Link to="/">
+              <Image filename="nikpromainlogo.png" alt="nikpro logo" />
+            </Link>
+          </div>
+          <nav>
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                marginBottom: 0,
+              }}
+            >
+              <li className="menu-list-item">
+                <Link to="#" className="menu-item-link">
+                  CSS
                 </Link>
-                </li>
-              </ul>
-            </nav>
-        </>
-      )
+              </li>
+              <li className="menu-list-item">
+                <Link to="#" className="menu-item-link">
+                  Javascript
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link to="#" className="menu-item-link">
+                  React
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link to="#" className="menu-item-link">
+                  Life
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </>
+    )
 
     // }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: `80vw`,
-        }}
-      >
-        <p 
-        style={{
-          background: `tomato`,
-          padding: `1rem`,
-          textAlign: `center`
-        }}
-        >The site is getting a new look in Gatsbyjs. Please bare with us.</p>
-        <header>{header}</header>
-        <main 
-        >{children}
-        </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div>
+        <p
+          style={{
+            background: `#f08b33`,
+            padding: `1rem`,
+            textAlign: `center`,
+          }}
+        >
+          The site is getting a new look in Gatsbyjs. Please bare with us.
+        </p>
+        <header
+          style={{
+            background: `#0c0904`,
+            padding: `1rem`,
+          }}
+        >
+          {header}
+        </header>
+        <div className="inner-wrapper">
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
       </div>
     )
   }

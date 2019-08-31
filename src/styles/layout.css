@@ -1,24 +1,42 @@
-:root{
-    --link-color: tomato;
-    --hover-color: orange;
+:root {
+  --link-color: darkorange;
+  --hover-color: #0c0904;
+  --menu-link-hover: white;
 }
-body{
-    background: url("../../content/assets/bg.png") no-repeat center center fixed;
+body {
+  background: url("../../content/assets/bg.png") no-repeat center center fixed;
 }
-.menu-list-item{
-    list-style: none;
+p {
+  margin-bottom: inherit;
 }
-.menu-item-link{
-    text-decoration: none;
+a {
+  transition: all 0.5s;
 }
-pre{
-    background : mistyrose;
-    padding: 1rem 2rem;
-    overflow-x: auto;
+.inner-wrapper {
+  max-width: 80vw;
+  margin: 0 auto;
 }
-a{
-    color: var(--link-color);
+header .inner-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
-a:hover,.menu-item-link:hover{
-    color: var(--hover-color);
+.menu-list-item {
+  list-style: none;
+}
+.menu-item-link {
+  text-decoration: none;
+}
+pre {
+  background: mistyrose;
+  padding: 1rem 2rem;
+  overflow-x: auto;
+}
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--hover-color);
+}
+.menu-item-link:hover {
+  color: var(--menu-link-hover);
 }
