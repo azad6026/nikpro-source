@@ -28,7 +28,7 @@ class Layout extends React.Component {
               style={{
                 display: `flex`,
                 flexWrap: `wrap`,
-                justifyContent: `space-between`,
+                justifyContent: `space-around`,
                 marginBottom: 0,
               }}
             >
@@ -83,7 +83,9 @@ class Layout extends React.Component {
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a style={{ color: `#0c0904` }} href="https://www.gatsbyjs.org">
+              Gatsby
+            </a>
           </footer>
         </div>
       </div>

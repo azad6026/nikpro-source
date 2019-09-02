@@ -4,6 +4,7 @@
   --menu-link-hover: white;
 }
 body {
+  font-size: 1.2rem;
   background: url("../../content/assets/bg.png") no-repeat center center fixed;
 }
 p {
@@ -39,4 +40,16 @@ h3 a:hover {
 }
 a:hover {
   color: var(--menu-link-hover);
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  ul,
+  ol {
+    margin: 0;
+  }
+  .inner-wrapper {
+    max-width: 90vw;
+  }
 }

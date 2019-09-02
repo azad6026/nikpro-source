@@ -16,41 +16,41 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article 
-        style= {{
-          background: `rgba(255,255,255,.8)`,
-          boxShadow: `0px 0px 10px #505050`,
-          padding: `1rem 3rem`
-        }}>
+        <article
+          style={{
+            background: `rgba(255,255,255,.8)`,
+            boxShadow: `0px 0px 10px #505050`,
+            padding: `1rem 3rem`,
+          }}
+        >
           <header>
             <h1
               style={{
-                marginBottom: 0
+                marginBottom: 0,
               }}
             >
               {post.frontmatter.title}
             </h1>
             <p
               style={{
-                display: `block`
+                display: `block`,
               }}
             >
               {post.frontmatter.date}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-          />
-          <footer>
-          </footer>
+          <hr />
+          <footer></footer>
         </article>
 
-        <nav 
-        style={{
-          background: `rgba(255,255,255,.7)`,
-          padding: `1rem`,
-          margin: `1rem auto`
-        }}>
+        <nav
+          style={{
+            background: `rgb(12, 9, 4)`,
+            padding: `1rem`,
+            margin: `1rem auto`,
+          }}
+        >
           <ul
             style={{
               display: `flex`,
