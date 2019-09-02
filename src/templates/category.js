@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class BlogCategory extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -96,10 +96,10 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default BlogCategory
 
 export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
+  query CategoryPageQuery($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
@@ -107,6 +107,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { categories: { eq: "CSS" } } }
       limit: $limit
       skip: $skip
     ) {
@@ -120,6 +121,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             image
+            categories
           }
         }
       }
