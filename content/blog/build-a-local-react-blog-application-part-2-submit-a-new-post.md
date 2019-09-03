@@ -1,6 +1,6 @@
 ---
 id: 32388
-title: 'Build a local React blog application : part 2 &#8211; submit a new post'
+title: 'Build a local React blog application : part 2,submit a new post'
 date: 2018-10-11T20:40:12+00:00
 author: admin
 layout: post
