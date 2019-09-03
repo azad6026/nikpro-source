@@ -28,18 +28,18 @@ Therefore the smaller margin kind of gets eaten by the bigger one. This is the r
 
 Basically here is a simple example:
 
-&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
+<pre class="wp-block-preformatted"><strong>&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
 &lt;p&gt; This has a margin-top&lt;/p&gt;
-
+</strong></pre>
 We define the margins in CSS as below:
-
+<pre class="wp-block-preformatted"><strong>
 h1 {  
  margin-bottom: 25px;
 }
 p {  
  margin-top: 50px
 }
-
+</strong></pre>
 The expectation is to have 75px of margin between the two but we will have 50px as the actual distance. Therefore the biggest margin has won. Hooray!
 
 But wait. This is confusing in cases. Yes that is right. Especially in typography. So [some articles ](https://csswizardry.com/2012/06/single-direction-margin-declarations/)recommend to have only one direction margin for everything and make the other one zero. Well, good idea and you can override that whenever needed.
