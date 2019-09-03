@@ -48,9 +48,11 @@ But wait. This is confusing in cases. Yes that is right. Especially in typograph
 
 We might expect the same rule in the case of parent child. But it is different here. The child’s margin will be overriden by parent. So the parent is the dominent in this case.
 
-But if we add some padding or border to the parent, this rule will go away as well. [See the pen below from CSS tricks](https://css-tricks.com/what-you-should-know-about-collapsing-margins/):
+But if we add some padding or border to the parent, this rule will go away as well. 
 
-https://css-tricks.com/what-you-should-know-about-collapsing-margins/
+[See the pen below from CSS tricks](https://css-tricks.com/what-you-should-know-about-collapsing-margins/):
+
+https://codepen.io/team/css-tricks/pen/EjKOdV
 
 The top parent has no padding, so it will all collapse and we will only see the purple colour child.
 
