@@ -24,16 +24,16 @@ Whenever we have **multiple columns of blocks in one row** and we need to centre
 
 Here is a pen of multiple blocks being centred in x axis:
 
-<p data-height="500" data-theme-id="0" data-slug-hash="ebing" data-default-tab="html,result" data-user="chriscoyier" data-pen-title="Centering Row of Blocks" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/ebing/">Centering Row of Blocks</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/ebing
 
 And this is the code to make our blocks centred:
 
-<pre class="wp-block-preformatted"><strong>.flex-center {</strong><strong>
-  display: flex;</strong><strong>
-  justify-content: center;</strong><strong>
-}</strong></pre>
+<pre class="wp-block-preformatted"><strong>
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+</strong></pre>
 
 Using **justify-content: center;** in a FlexBox container we aligned items horizontally centred. Also we did notice that texts on the top has been centred inside their block using **text-align: center;** We use that to make any text centred.
 
@@ -41,43 +41,45 @@ Using **justify-content: center;** in a FlexBox container we aligned items hori
 
 Vertically centre elements is really easy in FlexBox. Practically we just need a few lines of code:
 
-<pre class="wp-block-preformatted"><strong>.parent {
+<pre class="wp-block-preformatted"><strong>
+.parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}</strong></pre>
+}
+</strong></pre>
 
 Therefor we will have items vertical changing the **flex-direction to column:**
 
 ****
 
-<p data-height="350" data-theme-id="0" data-slug-hash="FqDyi" data-default-tab="css,result" data-user="chriscoyier" data-pen-title="Center Block with Unknown Height with Flexbox" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/FqDyi/">Center Block with Unknown Height with Flexbox</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/FqDyi
 
 ## Centre in both directions using FlexBox
 
 Typically this is what we are looking for. Centre everything. And the magic comes true pretty easily using the magic Box. The Flexible one!
 
-<pre class="wp-block-preformatted"><strong>.parent {
+<pre class="wp-block-preformatted"><strong>
+.parent {
   display: flex;
   justify-content: center;
   align-items: center;
-}</strong></pre>
+}
+</strong></pre>
 
 Except for justify-content property for horizontal alignment we need to use align-items property to centre things vertically:
 
-<p data-height="400" data-theme-id="0" data-slug-hash="msItD" data-default-tab="css,result" data-user="chriscoyier" data-pen-title="Center Block with Unknown Height and Width with Flexbox" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/msItD/">Center Block with Unknown Height and Width with Flexbox</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/msItD
 
 Perfect balance. We can also use grid to centre elements :
 
-<pre class="wp-block-preformatted"><strong><code>body {
+<pre class="wp-block-preformatted"><strong>
+body {
   display: grid;
   place-items: center;
   height: 100vh;
-}</code></strong></pre>
+}
+</strong></pre>
 
 According to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-items" target="_blank" rel="noopener noreferrer">MDN</a> the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) **`place-items`** [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) property sets both the [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) and [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items) properties. The first value is the `align-items` property value, the second the `justify-items` one. 
 
