@@ -33,10 +33,10 @@ class BlogPostTemplate extends React.Component {
             </h1>
             <p
               style={{
-                display: `block`,
+                margin: `0 auto 2rem`,
               }}
             >
-              {post.frontmatter.date}
+              {post.frontmatter.date} by Azadeh
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />

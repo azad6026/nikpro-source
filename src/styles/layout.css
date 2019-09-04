@@ -7,11 +7,25 @@ body {
   font-size: 1.2rem;
   background: url("../../content/assets/bg.png") no-repeat center center fixed;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5rem 0;
+}
 p {
   margin-bottom: inherit;
 }
 a {
   transition: all 0.5s;
+}
+a:hover {
+  color: var(--hover-color);
+}
+iframe {
+  margin: 2rem auto;
 }
 .inner-wrapper {
   max-width: 80vw;
@@ -28,9 +42,13 @@ header .inner-wrapper {
   text-decoration: none;
 }
 pre {
-  background: mistyrose;
+  background: #0c0904;
   padding: 1rem 2rem;
   overflow-x: auto;
+  margin: 2rem auto;
+  color: #f5c49a;
+  border-top: 4px solid tomato;
+  font-size: 1rem;
 }
 a {
   color: var(--link-color);
@@ -38,7 +56,7 @@ a {
 h3 a:hover {
   color: var(--hover-color);
 }
-a:hover {
+.menu-item-link:hover {
   color: var(--menu-link-hover);
 }
 @media only screen and (max-width: 480px) {

@@ -33,23 +33,23 @@ class Layout extends React.Component {
               }}
             >
               <li className="menu-list-item">
-                <Link to="#" className="menu-item-link">
+                <Link to="/categories/css" className="menu-item-link">
                   CSS
                 </Link>
               </li>
               <li className="menu-list-item">
-                <Link to="#" className="menu-item-link">
+                <Link to="/categories/javascript/" className="menu-item-link">
                   Javascript
                 </Link>
               </li>
               <li className="menu-list-item">
-                <Link to="#" className="menu-item-link">
-                  React
+                <Link to="/categories/es-6" className="menu-item-link">
+                  ES6
                 </Link>
               </li>
               <li className="menu-list-item">
-                <Link to="#" className="menu-item-link">
-                  Life
+                <Link to="/categories/react" className="menu-item-link">
+                  React
                 </Link>
               </li>
             </ul>

@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.frontmatter.date} by Azadeh</small>
 
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </article>

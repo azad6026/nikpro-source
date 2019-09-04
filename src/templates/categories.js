@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -12,25 +14,57 @@ const Categories = ({ pageContext, data }) => {
   } linked with "${category}"`
 
   return (
-    <div>
-      <h1>{categoryHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
+    <Layout location={data.location} title={categoryHeader}>
+      <SEO
+        title={categoryHeader}
+        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+      />
+      <section
+        style={{
+          background: `rgba(255, 255, 255, 0.8)`,
+          padding: `1rem 2rem`,
+          margin: `1rem auto`,
+        }}
+      >
+        <h1>{categoryHeader}</h1>
+        <ul
+          style={{
+            marginLeft: `1.5rem`,
+          }}
+        >
+          {edges.map(({ node }) => {
+            const { slug } = node.fields
+            const { title } = node.frontmatter
+            return (
+              <li
+                key={slug}
+                style={{
+                  listStyleType: `square`,
+                }}
+              >
+                <Link
+                  to={slug}
+                  style={{
+                    marginBottom: `0`,
+                    boxShadow: `none`,
+                    textShadow: `0px 1px 1px #0c0904`,
+                    color: `#d38221`,
+                    letterSpacing: `2px`,
+                  }}
+                >
+                  {title}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+        {/*
               This links to a page that does not yet exist.
               We'll come back to it!
+               <Link to="/categories">All Categories</Link>
             */}
-      <Link to="/categories">All Categories</Link>
-    </div>
+      </section>
+    </Layout>
   )
 }
 
