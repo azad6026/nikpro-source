@@ -24,21 +24,45 @@ We all have been in this situation where we needed to have a few equal height co
 
 Firstly we better clarify which use case is best for these solutions. Both solutions work perfectly on box layouts and their direct children. Meaning there is no good solution if you have nested items inside your layout box. Lets check the markup:
 
-<pre class="wp-block-preformatted"><strong>&lt;div class="container"&gt;<br /> &lt;div class="layout-box"&gt;<br /> &lt;h3&gt;Layout Box title&lt;/h3&gt;<br /> &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;<br /> &lt;button&gt;read more&lt;/button&gt;<br /> &lt;/div&gt; <br />&lt;div class="layout-box"&gt;<br /> &lt;h3&gt;Layout Box title&lt;/h3&gt;<br /> &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;<br /> &lt;button&gt;read more&lt;/button&gt;<br /> &lt;/div&gt; <br />&lt;div class="layout-box"&gt;<br /> &lt;h3&gt;Layout Box title&lt;/h3&gt;<br /> &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;<br /> &lt;button&gt;read more&lt;/button&gt;<br /> &lt;/div&gt; <br /><br />&lt;/div&gt; </strong></pre>
+<pre class="wp-block-preformatted"><strong>
+&lt;div class="container"&gt;
+    &lt;div class="layout-box"&gt;
+        &lt;h3&gt;Layout Box title&lt;/h3&gt;
+        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
+        &lt;button&gt;read more&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="layout-box"&gt;
+        &lt;h3&gt;Layout Box title&lt;/h3&gt;
+        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
+        &lt;button&gt;read more&lt;/button&gt;
+    &lt;/div&gt; 
+    &lt;div class="layout-box"&gt;
+        &lt;h3&gt;Layout Box title&lt;/h3&gt;
+        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
+        &lt;button&gt;read more&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt; 
+</strong></pre>
 
 Interestingly all the layout boxes have three direct children. H3, p and button. Therefore our code will apply to them. There is no grandchild to affect the layout. We will explain that a bit more later.
 
 ## FlexBox to make equal height column
 
-Not only we want the columns to be equal height but also we need the button to stick to the bottom of the box so that it looks neat. <a href="https://codepen.io/azad6026/pen/LoPmVE" target="_blank" rel="noreferrer noopener" aria-label="Here is the pen I created for that (opens in a new tab)">Here is the pen I created for that</a>:
+Not only we want the columns to be equal height but also we need the button to stick to the bottom of the box so that it looks neat. 
 
-<p class="codepen" data-height="537" data-theme-id="0" data-default-tab="html,result" data-user="azad6026" data-slug-hash="LoPmVE" style="height: 537px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="equal height column card layouts in Flexbox">
-  <span>See the Pen <a href="https://codepen.io/azad6026/pen/LoPmVE/"> equal height column card layouts in Flexbox</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+https://codepen.io/azad6026/pen/LoPmVE
+
 
 I have used grid to make three responsive boxes. But to make the inner alignment flexbox does the job:
 
-<pre class="wp-block-preformatted"><strong>.layout-box{<br />   display: flex;<br />   flex-direction: column;<br /> }<br /> button{<br />   margin-top: auto;<br /> } </strong></pre>
+<pre class="wp-block-preformatted"><strong>
+.layout-box{   
+  display: flex;  
+  flex-direction: column;
+}
+button{  
+  margin-top: auto;
+} 
+</strong></pre>
 
 We have seen usefulness of auto margin in [this post](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) before. That makes the button to stick in the bottom of the card layout.
 
@@ -46,11 +70,14 @@ We have seen usefulness of auto margin in [this post](http://www.nikpro.com.au/h
 
 Practically the exact same layout but using grid system to accomplish it. Here is <a rel="noreferrer noopener" aria-label="the pen I have created (opens in a new tab)" href="https://codepen.io/azad6026/pen/WBeaGB" target="_blank">the pen I have created</a> for it:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="azad6026" data-slug-hash="WBeaGB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="equal height column card layouts in grid">
-  <span>See the Pen <a href="https://codepen.io/azad6026/pen/WBeaGB/"> equal height column card layouts in grid</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+https://codepen.io/azad6026/pen/WBeaGB
 
-<pre class="wp-block-preformatted"><strong>.layout-box{<br />   display: grid;<br />   grid-template-rows: auto 1fr auto;<br /> }</strong></pre>
+<pre class="wp-block-preformatted"><strong>
+.layout-box{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+</strong></pre>
 
 Basically using grid-template-rows we are giving all the extra space to the middle section which is the p tag so that the h3 and the button tag will stick to the edges of the layout.Really neat.
 
