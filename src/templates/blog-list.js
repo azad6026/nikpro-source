@@ -48,49 +48,58 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
-        <ul
+        <nav
+          className="pagination-menu"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            listStyle: "none",
-            padding: 0,
-            background: `#0c0904`,
+            background: `rgb(12, 9, 4)`,
             padding: `1rem`,
+            margin: `1rem auto`,
           }}
         >
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              ← Newer Posts
-            </Link>
-          )}
-          {Array.from({ length: numPages }, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-                display: `none`,
-              }}
-            >
-              <Link
-                to={`/${i === 0 ? "" : i + 1}`}
+          <ul
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              alignItems: "center",
+              listStyle: "none",
+              padding: 0,
+              background: `#0c0904`,
+              padding: `1rem`,
+            }}
+          >
+            {!isFirst && (
+              <Link to={prevPage} rel="prev">
+                ← Newer Articles
+              </Link>
+            )}
+            {Array.from({ length: numPages }, (_, i) => (
+              <li
+                key={`pagination-number${i + 1}`}
                 style={{
-                  textDecoration: "none",
-                  color: i + 1 === currentPage ? "#ffffff" : "",
-                  background: i + 1 === currentPage ? "#007acc" : "",
+                  margin: 0,
+                  display: `none`,
                 }}
               >
-                {i + 1}
+                <Link
+                  to={`/${i === 0 ? "" : i + 1}`}
+                  style={{
+                    textDecoration: "none",
+                    color: i + 1 === currentPage ? "#ffffff" : "",
+                    background: i + 1 === currentPage ? "#007acc" : "",
+                  }}
+                >
+                  {i + 1}
+                </Link>
+              </li>
+            ))}
+            {!isLast && (
+              <Link to={nextPage} rel="next">
+                Older Articles →
               </Link>
-            </li>
-          ))}
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              Older Posts →
-            </Link>
-          )}
-        </ul>
+            )}
+          </ul>
+        </nav>
       </Layout>
     )
   }

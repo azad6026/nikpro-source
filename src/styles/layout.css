@@ -53,6 +53,12 @@ pre {
 a {
   color: var(--link-color);
 }
+.pagination-menu a:hover {
+  --hover-color: #fff;
+}
+.pagination-menu ul {
+  margin: 0;
+}
 h3 a:hover {
   color: var(--hover-color);
 }

@@ -1,11 +1,11 @@
 ---
 id: 32664
-title: Using map method in real word use cases; mostly in React
+title: Using map method in real world use cases; mostly in React
 date: 2019-01-24T19:36:47+00:00
 author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32664
-permalink: /using-map-method-in-real-word-use-cases-mostly-in-react/
+permalink: /using-map-method-in-real-world-use-cases-mostly-in-react/
 xyz_twap:
   - "1"
 image: /wp-content/uploads/2019/01/map-method.png
@@ -15,9 +15,10 @@ categories:
 tags:
   - map method
 ---
-As we know the&nbsp;**map()**&nbsp;[method](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) creates a new array with the results of calling a provided function on every element in the calling array. 
 
-Therefore whenever we need to manipulate data without actually changing the data itself, map is the best option. 
+As we know the&nbsp;**map()**&nbsp;[method](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) creates a new array with the results of calling a provided function on every element in the calling array.
+
+Therefore whenever we need to manipulate data without actually changing the data itself, map is the best option.
 
 ## Render lists using map
 
@@ -27,7 +28,7 @@ Basically the most use case for map in React specifically is to ender lists of i
 
 We return JSX code using map method to create the list for us. As we know we need to specify the key attribute in our React code to have a unique identity for each list item.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2019/01/map-in-react-1024x576.png" alt="map in react" class="wp-image-32666" srcset="http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-1024x576.png 1024w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-300x169.png 300w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-768x432.png 768w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>map method in React</figcaption></figure> 
+<img src="http://www.nikpro.com.au/wp-content/uploads/2019/01/map-in-react-1024x576.png" alt="map in react" class="wp-image-32666" srcset="http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-1024x576.png 1024w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-300x169.png 300w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react-768x432.png 768w, http://testgatsby.local/wp-content/uploads/2019/01/map-in-react.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>map method in React</figcaption></figure>
 
 ## Create an array from Objects
 

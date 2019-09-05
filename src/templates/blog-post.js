@@ -45,6 +45,7 @@ class BlogPostTemplate extends React.Component {
         </article>
 
         <nav
+          className="pagination-menu"
           style={{
             background: `rgb(12, 9, 4)`,
             padding: `1rem`,
@@ -63,14 +64,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                  ← Newer Articles{previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                  {next.frontmatter.title}Older Articles →
                 </Link>
               )}
             </li>
