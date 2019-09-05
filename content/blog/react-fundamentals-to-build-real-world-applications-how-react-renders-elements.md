@@ -1,6 +1,6 @@
 ---
 id: 32623
-title: 'React fundamentals to build real world applications: how React renders elements'
+title: "React fundamentals to build real world applications: how React renders elements"
 date: 2018-12-31T20:14:06+00:00
 author: admin
 layout: post
@@ -15,6 +15,7 @@ categories:
 tags:
   - render elements in react
 ---
+
 This article is inspired by the very informative site called <a rel="noreferrer noopener" aria-label="Egghead.io (opens in a new tab)" href="https://egghead.io/lessons" target="_blank">Egghead.io</a> which I enjoy so much. Where I learnt things from deeply. Therefore I want to share a very important concept in React as how it renders elements comparing to pure Javascript.
 
 ## Rendering element using Javascript
@@ -23,9 +24,12 @@ Basically we create an element into the DOM using similar code as this:
 
 <pre class="wp-block-preformatted"><strong>// Create an element using only Javascript<br /> const parent = document.querySelector('#jstest');<br /> const jsElement = document.createElement('h2');<br /> jsElement.innerHTML = 'Hello There, I am created by Javascript';<br /> jsElement.classList.add('jsClass');<br /> parent.appendChild(jsElement);</strong></pre>
 
-As a test I have created a pen for all the examples in this article to see the differences and play around with it. <figure class="wp-block-image is-resized">
+As a test I have created a pen for all the examples in this article to see the differences and play around with it.
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/12/pure-js.png" alt="pure js" class="wp-image-32628" width="584" height="315" srcset="http://testgatsby.local/wp-content/uploads/2018/12/pure-js.png 306w, http://testgatsby.local/wp-content/uploads/2018/12/pure-js-300x162.png 300w" sizes="(max-width: 584px) 100vw, 584px" /> <figcaption>render elements in Javascript</figcaption></figure> 
+<!-- ![render elements in Javascript](/images/pure-js.png) -->
+<figure class="wp-block-image is-resized">
+
+<img src="/images/pure-js.png" alt="pure js"/> <figcaption>render elements in Javascript</figcaption></figure>
 
 We simply create a **h2 tag** and give it a class and content. Typically we use Javascript methods and properties to achieve the goal. And we append the element to the parent element. Lets create the same element using pure React with no JSX.
 
@@ -67,7 +71,7 @@ We have used two approaches here. In the first element we put the content as {co
 
 In the second element we called an arrow function to put the content in as we can use any Javascript code inside a JSX code. Pretty awesome.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/12/jsx-react-1024x538.png" alt="jsx react" class="wp-image-32627" srcset="http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-1024x538.png 1024w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-300x158.png 300w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-768x403.png 768w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>render elements in React</figcaption></figure> 
+<img src="http://www.nikpro.com.au/wp-content/uploads/2018/12/jsx-react-1024x538.png" alt="jsx react" class="wp-image-32627" srcset="http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-1024x538.png 1024w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-300x158.png 300w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react-768x403.png 768w, http://testgatsby.local/wp-content/uploads/2018/12/jsx-react.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>render elements in React</figcaption></figure>
 
 ## Rendering elements using props in React
 
