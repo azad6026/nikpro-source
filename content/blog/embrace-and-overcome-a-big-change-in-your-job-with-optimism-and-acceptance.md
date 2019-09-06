@@ -24,11 +24,7 @@ I would like to share an important experience of mine which was a big change in 
 
 At a time in my workplace where the business was setting up the new structure, my manager asked me for an important chat. He was overwhelmed with the volume of the work and needed help. He was a great tech guy that wasn&#8217;t doing tech staff anymore but managing a few departments.
 
-  <figure>
-  <img src="/images/big-change.jpg" alt="Big Change" />
-    <figcaption>Big Change
-  </figcaption>
-  </figure>
+&lt; src="/images/big-change.jpg" alt="Big Change" /&gt;
 
 He asked me to do some of his admin stuff such as lining up the jobs, managing paper and trays, managing and training remote developers and handing over most of the jobs to them so that I can help him more with internal works. Therefore the goal was for us to build a powerful internal hosting team while all the development job is being done by remotes.
 
@@ -40,11 +36,7 @@ As a default ready voice I asked him if I will be doing any development anymore 
 
 Surprisingly I thought very welcoming around it. Why? Because I was ready for a change. I cosschecked back of my mind and realised there are many things I wan to learn and explore and freeing up my time will help me on that.
 
-<figure class="aligncenter">
-  <img src="/images/acceptance.jpg" alt="power of acceptance" />
-  <figcaption>power of acceptance
-  </figcaption>
-</figure>
+&lt;img src="/images/acceptance.jpg" alt="power of acceptance" /&gt;
 
 I knew I could be pretty quick in doing admin stuff . Also I could learn training remote people and it opens up new doors for me to learn new ideas and challenges. So I gladly accepted and embraced the challenge.
 
@@ -56,10 +48,7 @@ Surely admin work is not fun for our like. However it helps to increase attentio
 
 Training people remotely is a hard work. You have limited time and a lot to get on to. As a result there are questions and challenges that you could never predict. 
 
-<figure >
-<img src="/images/challenge.jpg" alt="Challenge" /> 
-  <figcaption>Challenge</figcaption>
-</figure>
+&lt;img src="/images/challenge.jpg" alt="Challenge" /&gt;
 
 But on the other hand researching and facing the problems and solving these is a priceless experience.
 
@@ -71,10 +60,7 @@ However the less we think about the problems, the less they look like a problem.
 
 To finish tasks. To answer the questions. It is the power of mind. A positive and optimistic mind.
 
-<figure>
-<img src="/images/challenge-accepted.jpg"/> 
-<figcaption>Joy and happiness</figcaption>
-</figure>
+&lt;img src="/images/challenge-accepted.jpg"/&gt; 
 
 And I was surprised how I could overcome most chunks of my challenges really quickly. The negative voice is always there to remind you of failing.
 
