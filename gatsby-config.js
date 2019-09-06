@@ -63,6 +63,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
             },
           },
           {
@@ -72,7 +73,6 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
