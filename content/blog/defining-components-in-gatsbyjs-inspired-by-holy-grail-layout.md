@@ -9,7 +9,7 @@ guid: http://www.nikpro.com.au/?p=32754
 permalink: /defining-components-in-gatsbyjs-inspired-by-holy-grail-layout/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2019/05/building-blocks.jpg
+image: building-blocks.jpg
 categories:
   - HTML
   - React
@@ -18,14 +18,14 @@ tags:
   - react components
 ---
 
-Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gastbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](http://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby. Here is a summary.
+Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gatsbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](http://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby. Here is a summary.
 
 ## Holy grail components
 
 No matter what you use to build a site, you will need a structure. And the most simple and yet important one is the [holy grail layout](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/):
 
 <figure>
-<img src="http://www.nikpro.com.au/wp-content/uploads/2019/05/holy-grail-layout.png" alt="Simple Holy Grial Layout" /> 
+<img src="/images/holy-grail-layout.png" alt="Simple Holy Grial Layout" /> 
 <figcaption>Simple Holy Grial Layout</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ As a result we named them capitalised just as [components in react](http://www.n
 
 Generally these are the building blocks of any web application. And understanding this basic concept is the key for more complex structures. Lets talk about each main component in depth.
 <figure>
-<img src="http://www.nikpro.com.au/wp-content/uploads/2019/05/components.jpeg" alt="Components"  /> 
+<img src="/images/components.jpeg" alt="Components"  /> 
 <figcaption>Components</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ Absolutely no surprise that everything including image is a component. This is h
 </strong></pre>
 
 <figure>
-<img src="http://www.nikpro.com.au/wp-content/uploads/2019/05/main-blocks.png" alt="Component blocks" /> 
+<img src="/images/main-blocks.png" alt="Component blocks" /> 
 <figcaption>Component blocks</figcaption>
 </figure>
 
