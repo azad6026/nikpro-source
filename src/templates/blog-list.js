@@ -70,7 +70,7 @@ class BlogIndex extends React.Component {
           >
             {!isFirst && (
               <Link to={prevPage} rel="prev">
-                ← Newer Articles
+                ← Older Articles
               </Link>
             )}
             {Array.from({ length: numPages }, (_, i) => (
@@ -95,7 +95,7 @@ class BlogIndex extends React.Component {
             ))}
             {!isLast && (
               <Link to={nextPage} rel="next">
-                Older Articles →
+                Newer Articles →
               </Link>
             )}
           </ul>
