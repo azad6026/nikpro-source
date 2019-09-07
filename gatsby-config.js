@@ -46,6 +46,12 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
           },
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
             resolve: `@raae/gatsby-remark-oembed`,
             options: {
               // usePrefix defaults to false
@@ -57,13 +63,6 @@ module.exports = {
                 // If you do not need them.
                 exclude: ["Reddit"],
               },
-            },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-              wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
             },
           },
           {

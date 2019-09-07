@@ -65,6 +65,9 @@ h3 a:hover {
 .menu-item-link:hover {
   color: var(--menu-link-hover);
 }
+a.gatsby-resp-image-link {
+  pointer-events: none;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 12px;

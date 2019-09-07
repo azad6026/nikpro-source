@@ -64,7 +64,7 @@ class Layout extends React.Component {
         <p
           style={{
             background: `#f08b33`,
-            padding: `1rem`,
+            fontSize: `1rem`,
             textAlign: `center`,
           }}
         >
