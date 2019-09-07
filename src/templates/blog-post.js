@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
             </h1>
             <p
               style={{
-                margin: `0 auto 2rem`,
+                margin: `1rem auto 2rem`,
               }}
             >
               {post.frontmatter.date} by Azadeh
