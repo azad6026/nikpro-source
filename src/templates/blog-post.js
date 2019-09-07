@@ -64,14 +64,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← Newer Articles{previous.frontmatter.title}
+                  ← Older Articles{previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title}Older Articles →
+                  {next.frontmatter.title}Newer Articles →
                 </Link>
               )}
             </li>
