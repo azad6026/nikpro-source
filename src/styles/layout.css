@@ -79,7 +79,7 @@ a.gatsby-resp-image-link {
   }
   ul,
   ol {
-    margin: 0;
+    /* margin: 0; */
   }
   .inner-wrapper {
     max-width: 90vw;
