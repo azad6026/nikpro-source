@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32422
 permalink: /a-quick-review-of-how-to-centre-elements-or-blocks-using-flexbox-in-css/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/centre-elements.png
+image: centre-elements.png
 categories:
   - CSS
   - CSS3
@@ -16,6 +16,7 @@ tags:
   - centre elements
   - flexbox
 ---
+
 Generally we know lots of ways to centre elements of blocks anything in CSS using [FlexBox](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/). In this article we will review centring elements with examples.
 
 ## Centre elements horizontally using FlexBox
@@ -51,7 +52,7 @@ Vertically centre elements is really easy in FlexBox. Practically we just need a
 
 Therefor we will have items vertical changing the **flex-direction to column:**
 
-****
+---
 
 https://codepen.io/chriscoyier/pen/FqDyi
 
@@ -81,7 +82,7 @@ body {
 }
 </strong></pre>
 
-According to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-items" target="_blank" rel="noopener noreferrer">MDN</a> the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) **`place-items`** [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) property sets both the [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) and [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items) properties. The first value is the `align-items` property value, the second the `justify-items` one. 
+According to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-items" target="_blank" rel="noopener noreferrer">MDN</a> the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) **`place-items`** [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) property sets both the [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) and [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items) properties. The first value is the `align-items` property value, the second the `justify-items` one.
 
 But this property is a work in progress so if you want to use gris use the seperate properties for now.
 

@@ -70,6 +70,7 @@ class Layout extends React.Component {
         >
           The site is getting a new look in Gatsbyjs. Please bare with us.
         </p>
+        <a id="top"></a>
         <header
           style={{
             background: `#0c0904`,
@@ -88,6 +89,7 @@ class Layout extends React.Component {
             </a>
           </footer>
         </div>
+        <a href="#top">Scroll to top</a>
       </div>
     )
   }

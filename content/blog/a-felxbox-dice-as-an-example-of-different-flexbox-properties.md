@@ -6,13 +6,14 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32113
 permalink: /a-felxbox-dice-as-an-example-of-different-flexbox-properties/
-image: /wp-content/uploads/2018/08/flexbox-dice-1568x781.png
+image: flexbox-dice-1568x781.png
 categories:
   - CSS
   - CSS3
 tags:
   - flexbox properties
 ---
+
 As I was checking some CodePen Examples I came across A FelxBox dice  example using different FlexBox properties. Then I thought I will use it to practice some FlexBox properties in this article.
 
 ## A dice made with FlexBox properties
@@ -25,7 +26,7 @@ All dice faces have been styled with FlexBox definitions. Lets check the code.
 
 ## The first three faces
 
-Generally the first three faces follow the same rule. The flex-direction is row by default meaning each face pip (point) is in one row and its alignment FlexBox proprties has been changed. 
+Generally the first three faces follow the same rule. The flex-direction is row by default meaning each face pip (point) is in one row and its alignment FlexBox proprties has been changed.
 
 ### First face
 
@@ -95,4 +96,6 @@ As a result we have three columns here. Therefor we have the second one centred 
 }
 </strong></pre>
 
-Practically we can [use FlexBox](http://www.nikpro.com.au/custom-form-and-gird-layouts-with-flexbox/) properties in any type of things. It is very flexible and easy to use. We will practice some complex examples later on as well. Thanks for reading.
+Practically we can [use FlexBox](http://www.nikpro.com.au/custom-form-and-gird-layouts-with-flexbox/) properties in any type of things. It is very flexible and easy to use. We will practice some complex examples later on as well.
+
+Thank you for reading.

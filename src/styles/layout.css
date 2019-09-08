@@ -4,6 +4,9 @@
   --hover-color: #0c0904;
   --menu-link-hover: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 1.2rem;
   background: url("../../content/assets/bg.png") no-repeat center center fixed;
@@ -48,7 +51,7 @@ header .inner-wrapper {
 }
 pre {
   background: #0c0904;
-  padding: 1rem 2rem;
+  padding: 0 2rem 1rem;
   overflow-x: auto;
   margin: 2rem auto;
   color: #f5c49a;
