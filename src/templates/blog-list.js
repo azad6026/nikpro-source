@@ -31,8 +31,7 @@ class BlogIndex extends React.Component {
               style={{
                 // backgroundImage: `url(${node.frontmatter.image})`,
                 background: `rgba(255,255,255,.8)`,
-                boxShadow: `inset rgb(142, 139, 135) 0px 0px 3rem`,
-                borderRadius: `0rem 4rem`,
+                boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
                 padding: `1rem 3rem`,
                 margin: `1rem auto`,
                 transition: `all .5s`,
