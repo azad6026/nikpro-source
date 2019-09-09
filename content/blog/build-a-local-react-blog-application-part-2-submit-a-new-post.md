@@ -31,8 +31,6 @@ One way is to create handleChange methods separately per input. As in here we ha
 const value = event.target.value
 ```
 
-![We need to handle input changes](/images/input-change.jpeg)
-
 But if we create seperate methods we will end up having too many methods that do the same thing for different elements. Only the method name will be different:
 
 ```
@@ -57,37 +55,34 @@ Simply we create the form using a simple markup in JSX:
 
 ```
 <form className="new-post-form" onSubmit={this.handleSubmit}>
-<label> Post title
-<input className="title-input" type="text" name="title" onChange={this.handleChange} />
-</label>
-<label> Post content
-<textarea rows="4" className="content-input" type="text" name="content" onChange={this.handleChange} />
-</label>
-<input className="submit-button" type="submit" value="submit" />
+  <label> Post title
+    <input className="title-input" type="text" name="title" onChange={this.handleChange} />
+  </label>
+  <label> Post content
+    <textarea rows="4" className="content-input" type="text" name="content" onChange={this.handleChange} />
+  </label>
+  <input className="submit-button" type="submit" value="submit" />
 </form>
 ```
 
 To handle change event on each input we use **handleChange** method. Also we gave **a unique name to each input** and the form element handles the **form submission** through onSubmit event. These three things should be managed inside the logic. 
-
-![We handle the form submission using form element onSubmit event](/images/form-submit.jpg) 
 
 As a side note we don&#8217;t need to specify the value attribute. We will get the value through the code:
 
 ```
 // ES6 version of the handleChange method
 handleChange = event => {
-          // get the name and values from the focused input
-        const [name, value] = 
-        [event.target.name, event.target.value];
-              // get the post state
-        const { post } = this.state;
-              // update the state with the new value
-        const newPost = {
-            …post,
-            [name]: value
-        };
-                 this.setState({ post: newPost });
-    };
+  // get the name and values from the focused input
+  const [name, value] = [event.target.name, event.target.value];
+  // get the post state
+  const { post } = this.state;
+  // update the state with the new value
+  const newPost = {
+      …post,
+      [name]: value
+  };
+  this.setState({ post: newPost });
+};
 ```
 
 Preferably we are using ES6 [destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) to initialise name and value and then [rest parameters](http://www.nikpro.com.au/javascript-es6-modern-rest-parameters-are-explained-with-examples/) to add the new post. Afterwards we update the state.
@@ -99,13 +94,13 @@ Finally we are ready to submit the new values as a new post. We will handle it w
 
 ```
 handleSubmit = event => {
-        const { post, posts } = [...this.state];
-        const newPosts = Array.from(posts);
-        newPosts.push(post);
-        this.setState({
-            posts: newPosts
-        });<code>
-    event.preventDefault();
+const { post, posts } = [...this.state];
+const newPosts = Array.from(posts);
+newPosts.push(post);
+this.setState({
+    posts: newPosts
+});<code>
+event.preventDefault();
 };
 
 ```
