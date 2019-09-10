@@ -39,11 +39,11 @@ Inline styles added to an element (e.g., `style="font-weight:bold"`) always ove
 
 As a rule don&#8217;t use !important unless you have no other choice. It breaks the CSS and is hard to maintain. Instead make more specific rules by mixing different cases:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;div id="test">
+```<code>&lt;div id="test">
   &lt;span>Text&lt;/span>
-&lt;/div>&lt;br/></code></strong><br /><strong><code>div#test span { color: green; }
+&lt;/div>&lt;br/></code><br /><code>div#test span { color: green; }
 div span { color: blue; }
-span { color: red; }</code></strong></pre>
+span { color: red; }</code>```
 
 Practically the very first rule here wins. Because it is more specific. It hasa general selector targeting with an ID as the parent of the span element. Although it is first in the order but it wins. Also the second order wins over the last one as it is more specific. Order comes last.
 
@@ -51,15 +51,15 @@ Practically the very first rule here wins. Because it is more specific. It hasa 
 
 As mentioned in the [previous](http://www.nikpro.com.au/how-cascade-in-css-works-this-part-important/) post and acording to MDN simply add another CSS rule with `!important`, and either give the selector a higher specificity (adding a tag, id or class to the selector), or add a CSS rule with the same selector at a later point than the existing one:
 
-<pre class="wp-block-preformatted"><strong><code>table tr td   { width: 50px !important; }
-.myTable tr td { &lt;strong>&lt;code>width</code></strong>: 50px !important; }
-#myTable tr td { <strong><code>width</code></strong>: 50px !important; }<br /><br />// Or add the same selector later on<br /><code>tr td { &lt;strong>&lt;code>width</code>&lt;/strong>: 50px <strong>!important</strong>; }&lt;/code><br />&lt;/code>&lt;/strong></pre>
+```<code>table tr td   { width: 50px !important; }
+.myTable tr td { &lt;strong>&lt;code>width</code>: 50px !important; }
+#myTable tr td { <code>width</code>: 50px !important; }<br /><br />// Or add the same selector later on<br /><code>tr td { &lt;strong>&lt;code>width</code>&lt;/strong>: 50px !important; }&lt;/code><br />&lt;/code>&lt;/strong></pre>
 
 ### Direct target wins over inheritance
 
 We need to know that directly target an element is more specific over inheritance in the code:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;div>
+```<code>&lt;div>
   &lt;article id="parent">
     &lt;h1>Here is a title!&lt;/h1>
   &lt;/article>
@@ -68,18 +68,18 @@ We need to know that directly target an element is more specific over inheritanc
 }
 h1 {
   color: purple;
-}</code>&lt;/code></strong></pre>
+}</code>&lt;/code>```
 
 The title colour will be purple and will not be inherited from its parent element.
 
 Moreover in the same HTML if we write the below CSS:
 
-<pre class="wp-block-preformatted"><strong><code>article h1 {
+```<code>article h1 {
   color: green;
 }
 div h1 {
   color: blue;
-}</code></strong></pre>
+}</code>```
 
 Although article looks closer to h1 as a direct parent but because the second rule is the last one in order it wins.
 

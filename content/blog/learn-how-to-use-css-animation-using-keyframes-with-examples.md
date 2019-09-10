@@ -22,24 +22,24 @@ CSS animation is the best way to animate transitions on our elements using a bef
 
 This is a simple example making a paragraph to slide in from the right animating the margin-right and the width through keyframe setup in one step:
 
-`<strong>p.slidein {</strong>`  
-`<strong>  animation-name: slidein;</strong>`  
-`<strong>  animation-duration: 3s;</strong>`  
-`<strong>  animation-iteration-count: infinite;</strong>```
+`p.slidein {`  
+`  animation-name: slidein;`  
+`  animation-duration: 3s;`  
+`  animation-iteration-count: infinite;```
 
-`<strong>}</strong>`
+`}`
 
-`<strong>@keyframes slidein {</strong>`  
-`<strong>  from {</strong>`  
-`<strong>    margin-left: 100%;</strong>`  
-`<strong>    width: 300%; </strong>`  
-`<strong>  }</strong>`
+`@keyframes slidein {`  
+`  from {`  
+`    margin-left: 100%;`  
+`    width: 300%; `  
+`  }`
 
-`<strong>  to {</strong>`  
-`<strong>    margin-left: 0%;</strong>`  
-`<strong>    width: 100%;</strong>`  
-`<strong>  }</strong>`  
-`<strong>}</strong>`
+`  to {`  
+`    margin-left: 0%;`  
+`    width: 100%;`  
+`  }`  
+`}`
 
 Every animation must have a name(slidein here) and a duration. The other properties are optional and we will see them in other examples. We did set the animation iteration count to infinite here to see the animation all the time.
 
@@ -49,10 +49,10 @@ As you see the keyframe has the same name as the animation and some steps. It co
 
 Lets shorten the code as much as possible. Animation has a shorthand which we can use:
 
-`<strong>p.slidein {</strong>`  
-`<strong>  animation: slidein 3s</strong>``<strong>infinite;</strong>```
+`p.slidein {`  
+`  animation: slidein 3s``infinite;```
 
-`<strong>}</strong>`
+`}`
 
 That looks better. Doesn&#8217;t it.
 
@@ -62,69 +62,69 @@ Note that if a keyframe rule doesn&#8217;t specify the start or end states of t
 
 In this example we have three steps (at 0% and 30% and 100%) in our keyframe to animate the font size and we also added the alternate value to the animation to run it in both sides; back and forth:
 
-`<strong>@keyframes fontbulger {</strong>`  
-`<strong>  0% {</strong>`  
-`<strong>     font-size: 40px;</strong>`  
-`<strong>  }</strong>`  
-`<strong>  30% {</strong>`  
-`<strong>    font-size: 20px;</strong>`  
-`<strong>  }</strong>`  
-`<strong>  100% {</strong>`  
-`<strong>    font-size: 40px;</strong>`  
-`<strong>  }</strong>`  
-`<strong>}</strong>`
+`@keyframes fontbulger {`  
+`  0% {`  
+`     font-size: 40px;`  
+`  }`  
+`  30% {`  
+`    font-size: 20px;`  
+`  }`  
+`  100% {`  
+`    font-size: 40px;`  
+`  }`  
+`}`
 
-`<strong>.box {</strong>`  
-`<strong>  animation: fontbulger 2s infinite alternate;</strong>`  
-`<strong>}</strong>`
+`.box {`  
+`  animation: fontbulger 2s infinite alternate;`  
+`}`
 
 If you use steps(10) in your animation, it will make sure only 10 keyframes happen in the allotted time. When an animation has a similar start and end point you could shorten the code as below:
 
-`<strong>@keyframes fontbulger {</strong>`  
-`<strong>  0%, 100% {</strong>`  
-`<strong>     font-size: 40px;</strong>`  
-`<strong>  }</strong>`  
-`<strong>  30% {</strong>`  
-`<strong>    font-size: 20px;</strong>`  
-`<strong>  }</strong>`  
-`<strong>}</strong>`
+`@keyframes fontbulger {`  
+`  0%, 100% {`  
+`     font-size: 40px;`  
+`  }`  
+`  30% {`  
+`    font-size: 20px;`  
+`  }`  
+`}`
 
 ## All animation properties and values
 
 As you might be wondering what are other animation properties and vaues are, I put all together in this class:
 
-`<strong>.box {</strong>`  
-`<strong>  animation-name: fontbulger;</strong>`  
-`<strong>  animation-duration: 4s; /* or: Xms */</strong>`  
-`<strong>  animation-iteration-count: 10;</strong>`  
-`<strong>  animation-direction: alternate; /* or: normal */</strong>`  
-`<strong>  animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */</strong>`  
-`<strong>  animation-fill-mode: forwards; /* or: backwards, both, none */</strong>`  
-`<strong>  animation-delay: 2s; /* or: Xms */</strong>`  
-`<strong>}</strong>`
+`.box {`  
+`  animation-name: fontbulger;`  
+`  animation-duration: 4s; /* or: Xms */`  
+`  animation-iteration-count: 10;`  
+`  animation-direction: alternate; /* or: normal */`  
+`  animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */`  
+`  animation-fill-mode: forwards; /* or: backwards, both, none */`  
+`  animation-delay: 2s; /* or: Xms */`  
+`}`
 
 Now shorten tis one:
 
-`<strong>animation: fontbulger 4s 2s 10 alternate ease-out forwards;</strong>`
+`animation: fontbulger 4s 2s 10 alternate ease-out forwards;`
 
 Combine animation and transform
 
 We could use [CSS transform](http://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) in our animation as well:
 
-`<strong>@keyframes infinite-spinning {</strong>`  
-`<strong>  from {</strong>`  
-`<strong>    transform: rotate(0deg);</strong>`  
-`<strong>  }</strong>`  
-`<strong>  to {</strong>`  
-`<strong>    transform: rotate(360deg);</strong>`  
-`<strong>  }</strong>`  
-`<strong>}</strong>`
+`@keyframes infinite-spinning {`  
+`  from {`  
+`    transform: rotate(0deg);`  
+`  }`  
+`  to {`  
+`    transform: rotate(360deg);`  
+`  }`  
+`}`
 
 ### Multiple animations
 
 We could also have multiple animations on one element by comma separating them in the animation syntax:
 
-`<strong>@keyframes fade {<br />
+`@keyframes fade {<br />
   to {<br />
     opacity: 0;<br />
   }<br />
@@ -137,7 +137,7 @@ We could also have multiple animations on one element by comma separating them i
 .multiple {<br />
   animation: fade 5s 1s infinite linear alternate,<br />
              rotate 5s 1s infinite linear alternate;<br />
-}}</strong>`
+}}`
 
 This will animate both transform and opacity on the element.
 
@@ -151,11 +151,11 @@ We better use prefixes to have 100% cover on supported browsers. For the animati
 
 And for the keyframe:
 
-`<strong>@-webkit-keyframes fade { /* your style */ }</strong>`  
-`<strong>@-webkit-keyframes fade { /* your style */ }</strong>`  
-`<strong>@-webkit-keyframes fade { /* your style */ }</strong>`  
-`<strong>@-webkit-keyframes fade { /* your style */ }</strong>`  
-`<strong>@keyframes fade { /* your style */ }</strong>`
+`@-webkit-keyframes fade { /* your style */ }`  
+`@-webkit-keyframes fade { /* your style */ }`  
+`@-webkit-keyframes fade { /* your style */ }`  
+`@-webkit-keyframes fade { /* your style */ }`  
+`@keyframes fade { /* your style */ }`
 
 I have created a codepen for our examples here that you could play around with. Change the code and see the result for yourself:
 

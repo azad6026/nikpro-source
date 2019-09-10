@@ -53,36 +53,36 @@ I have made explanation for all lines. First get the canvas and add its specific
 
 `//get the canvas with its id`
 
-`<strong>const canvas = document.querySelector('#draw');</strong>`
+`const canvas = document.querySelector('#draw');`
 
 `//specify it is a 2d canvas using getContext method which returns a drawing <em>context</em> on the <em>canvas</em>`
 
-`<strong>const ctx = canvas.getContext('2d');</strong>`
+`const ctx = canvas.getContext('2d');`
 
 `//overwrite canvas's height and width to make it reflect the window size`
 
-`<strong>canvas.width = window.innerWidth;</strong>`  
-`<strong>canvas.height = window.innerHeight;</strong>`
+`canvas.width = window.innerWidth;`  
+`canvas.height = window.innerHeight;`
 
 `//<em>lineJoin</em> property sets or returns the type of corner created, when two lines meet.The <em>lineCap</em> property sets or returns. The style of the end caps for a line. We make them both round and if you draw in the canvas you see what I mean.`
 
-`<strong>ctx.lineJoin = 'round';</strong>`  
-`<strong>ctx.lineCap = 'round';</strong>`
+`ctx.lineJoin = 'round';`  
+`ctx.lineCap = 'round';`
 
 `//<em>lineWidth</em> property of the <em>Canvas</em> 2D API sets the thickness of lines in space units. `
 
-`<strong>ctx.lineWidth = 100;</strong>`
+`ctx.lineWidth = 100;`
 
 #### The end points
 
 Then we need to declare a few things. Specifying the ending points of the drawing as 0,0 and specifying a variable for colour (hue) and also set the direction to true so we can draw straight and once we draw back we will change it in the draw function.
 
-`<strong>let lastX = 0; </strong>//x end point`  
-`<strong>let lastY = 0; </strong>// Y end point`
+`let lastX = 0; //x end point`  
+`let lastY = 0; // Y end point`
 
 `// Hue is a degree on the colour wheel from 0 to 360. 0 is red, 120 is green, 240 is blue. We use hsl which I explain later```  
-`<strong>let hue = 0; </strong>`  
-`<strong>let direction = true; </strong>// set the direction flag to true`
+`let hue = 0; `  
+`let direction = true; // set the direction flag to true`
 
 #### Setup the events
 
@@ -92,60 +92,60 @@ Now we specify what we need to happen when the mouse is interacting with the can
 
 `// for mousedown event , we need to update our flag for drawing and set it to true which means we want to start drawing.``we  also need to update our ending points here. We use <a href="http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/" target="_blank" rel="noopener noreferrer">ES6 syntax</a> to update them all in one line.`
 
-`<strong>canvas.addEventListener('mousedown', (e) => {</strong>`  
-`<strong>isDrawing = true;</strong>`  
-`<strong>[lastX, lastY] = [e.offsetX, e.offsetY];</strong>`  
-`<strong>});</strong>`
+`canvas.addEventListener('mousedown', (e) => {`  
+`isDrawing = true;`  
+`[lastX, lastY] = [e.offsetX, e.offsetY];`  
+`});`
 
 `// Obviously we draw while mouse is moving`  
-`<strong>canvas.addEventListener('mousemove', draw);</strong>`
+`canvas.addEventListener('mousemove', draw);`
 
 `// And for these two events that we are not drawing, we make sure the drawing flag is off.`  
-`<strong>canvas.addEventListener('mouseup', () => isDrawing = false);</strong>`  
-`<strong>canvas.addEventListener('mouseout', () => isDrawing = false);</strong>`
+`canvas.addEventListener('mouseup', () => isDrawing = false);`  
+`canvas.addEventListener('mouseout', () => isDrawing = false);`
 
 #### Draw function
 
 After all we write our draw function. We need to update colour, start and end points, drawing thickness and its direction.
 
-`<strong>function draw(e) {</strong>`  
+`function draw(e) {`  
 `// stop the fn from running when they are not moused down`  
-`<strong>if (!isDrawing) return; </strong>`
+`if (!isDrawing) return; `
 
 `//HSL color values are specified with: hsl(hue, saturation, lightness).We set satuation and lightness to some percentages and use the hue variable to change the degree of the colour wheel`  
-``<strong>ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;</strong>``
+``ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;``
 
 `//begin the paint with beginPath method`  
-`<strong>ctx.beginPath();</strong>`  
+`ctx.beginPath();`  
 `// start from here and update start point`  
 **`ctx.moveTo(lastX, lastY);`**  
 `// go to the offset values and update end point`  
-`<strong>ctx.lineTo(e.offsetX, e.offsetY);</strong>`
+`ctx.lineTo(e.offsetX, e.offsetY);`
 
 `//to draw we need to call stroke method of the canvas`  
-`<strong>ctx.stroke();</strong>`
+`ctx.stroke();`
 
 `//update the ending points to connect them and draw the line`  
-`<strong>[lastX, lastY] = [e.offsetX, e.offsetY];</strong>`
+`[lastX, lastY] = [e.offsetX, e.offsetY];`
 
 `//increase the hue variable to change the colour. Hue is a degree on the color wheel from 0 to 360 and reset it.`  
-`<strong>hue++;</strong>`  
-`<strong>if (hue >= 360) {</strong>`  
-`<strong>hue = 0;</strong>`  
-`<strong>}</strong>`
+`hue++;`  
+`if (hue >= 360) {`  
+`hue = 0;`  
+`}`
 
 `//at some point (when the lineWidth is than 100 or thinner than 1) change the direction flag.This is what we see when the drawing reaches a certain thickness, it suddenly become narrow and thin and starts over.`  
-`<strong>if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {</strong>`  
-`<strong>direction = !direction;</strong>`  
-`<strong>}</strong>`
+`if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {`  
+`direction = !direction;`  
+`}`
 
 `//If direction is true, increase the linewidth and if not decrease it. `  
-`<strong>if(direction) {</strong>`  
-`<strong>ctx.lineWidth++;</strong>`  
-`<strong>} else {</strong>`  
-`<strong>ctx.lineWidth--;</strong>`  
-`<strong>}</strong>`  
-`<strong>}</strong>`
+`if(direction) {`  
+`ctx.lineWidth++;`  
+`} else {`  
+`ctx.lineWidth--;`  
+`}`  
+`}`
 
 So while drawing, a few things are happening. The colour is updating at certain points. The ending points is updating so that we can draw connected lines and draw. Play around with values and try to change things to see how it affects the drawing to understand it better.
 

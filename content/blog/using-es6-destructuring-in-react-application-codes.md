@@ -17,23 +17,23 @@ Using [ES6](http://www.nikpro.com.au/category/es6) destructuring in React appli
 
 As we learnt destructuring in ES6 [in this article](http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) we can use it to initialise props or to structure our rendered templates. Remember this from old way:
 
-<pre class="wp-block-preformatted"><strong>var object = { one: 1, two: 2, three: 3 }</strong><br /><strong>var one = object.one;</strong><br /><strong>var two = object.two;</strong><br /><strong>var three = object.three</strong><br /><strong>console.log(one, two, three) // prints 1, 2, 3</strong></pre>
+```var object = { one: 1, two: 2, three: 3 }<br />var one = object.one;<br />var two = object.two;<br />var three = object.three<br />console.log(one, two, three) // prints 1, 2, 3```
 
 Thankfully with ES6 destructuring we can change the code to be as simple as below:
 
-<pre class="wp-block-preformatted"><strong>let object = { one: 1, two: 2, three: 3 }</strong><br /><strong>let { one, two, three } = object;</strong><br /><strong>console.log(one, two, three) // prints 1, 2, 3</strong></pre>
+```let object = { one: 1, two: 2, three: 3 }<br />let { one, two, three } = object;<br />console.log(one, two, three) // prints 1, 2, 3```
 
 You can easily read the code and predict what it does. Now lets have a look at a React component and use ES6 destructuring in React code. This is a [functional component](http://www.nikpro.com.au/more-on-react-components-with-examples/) in React:
 
-<pre class="wp-block-preformatted"><strong>const Listing = (props) => (</strong><br /><strong>  &lt;div></strong><br /><strong>    &lt;p>Title: {props.listing.title}&lt;/p></strong><br /><strong>    &lt;p>Type: {props.listing.type}&lt;/p></strong><br /><strong>    &lt;p></strong><br /><strong>      Location: {props.listing.location.city},</strong><br /><strong>      {props.listing.location.state},</strong><br /><strong>      {props.listing.location.country}</strong><br /><strong>    &lt;/p></strong><br /><strong>  &lt;/div></strong><br /><strong>);</strong></pre>
+```const Listing = (props) => (<br />  &lt;div><br />    &lt;p>Title: {props.listing.title}&lt;/p><br />    &lt;p>Type: {props.listing.type}&lt;/p><br />    &lt;p><br />      Location: {props.listing.location.city},<br />      {props.listing.location.state},<br />      {props.listing.location.country}<br />    &lt;/p><br />  &lt;/div><br />);```
 
 Practically there is nothing wrong in this code. It takes the props from the function argument and creates a template to sow the data. The data comes from state of a class component which is stateful. Our focus is this template though.We can simplify this further by destructuring like below:
 
-<pre class="wp-block-preformatted"><strong>const Listing = ({ listing }) => (</strong><br /><strong>  &lt;div></strong><br /><strong>    &lt;p>Title: {listing.title}&lt;/p></strong><br /><strong>    &lt;p>Type: {listing.type}&lt;/p></strong><br /><strong>    &lt;p></strong><br /><strong>      Location: {listing.location.city},</strong><br /><strong>      {listing.location.state},</strong><br /><strong>      {listing.location.country}</strong><br /><strong>    &lt;/p></strong><br /><strong>  &lt;/div></strong><br /><strong>);</strong></pre>
+```const Listing = ({ listing }) => (<br />  &lt;div><br />    &lt;p>Title: {listing.title}&lt;/p><br />    &lt;p>Type: {listing.type}&lt;/p><br />    &lt;p><br />      Location: {listing.location.city},<br />      {listing.location.state},<br />      {listing.location.country}<br />    &lt;/p><br />  &lt;/div><br />);```
 
 Therefor we are passing in the props argument and using that in the template instead. We can simplify it even more:
 
-<pre class="wp-block-preformatted"><strong>const Listing = ({</strong><br /><strong>  listing: {</strong><br /><strong>    title,</strong><br /><strong>    type,</strong><br /><strong>    location: {</strong><br /><strong>      city,</strong><br /><strong>      state,</strong><br /><strong>      country</strong><br /><strong>    }</strong><br /><strong>  }</strong><br /><strong>}) => (</strong><br /><strong>  &lt;div></strong><br /><strong>    &lt;p>Title: {title}&lt;/p></strong><br /><strong>    &lt;p>Type: {type}&lt;/p></strong><br /><strong>    &lt;p>Location: {city}, {state}, {country}&lt;/p></strong><br /><strong>  &lt;/div></strong><br /><strong>);</strong></pre>
+```const Listing = ({<br />  listing: {<br />    title,<br />    type,<br />    location: {<br />      city,<br />      state,<br />      country<br />    }<br />  }<br />}) => (<br />  &lt;div><br />    &lt;p>Title: {title}&lt;/p><br />    &lt;p>Type: {type}&lt;/p><br />    &lt;p>Location: {city}, {state}, {country}&lt;/p><br />  &lt;/div><br />);```
 
 Basically we have destructed the keys inside Listings like title and type and location and location&#8217;s keys as well. It is nice and neat and easily maintainable.
 
@@ -41,7 +41,7 @@ Basically we have destructed the keys inside Listings like title and type and lo
 
 However if we wanted to implement the same rules for a class component with the same props definition it would look like the code below:
 
-<pre class="wp-block-preformatted"><strong>import React, { Component } from 'react';</strong><br /><strong>class Listing extends Component {</strong><br /><strong>  render() {</strong><br /><strong>    const {</strong><br /><strong>      listing: {</strong><br /><strong>        title,</strong><br /><strong>        type,</strong><br /><strong>        location: {</strong><br /><strong>          city,</strong><br /><strong>          state,</strong><br /><strong>          country</strong><br /><strong>        }</strong><br /><strong>      }</strong><br /><strong>    } = this.props;</strong><br /><strong>return (</strong><br /><strong>      &lt;div></strong><br /><strong>        &lt;p>Title: {title}&lt;/p></strong><br /><strong>        &lt;p>Type: {type}&lt;/p></strong><br /><strong>        &lt;p></strong><br /><strong>          Location: {city}, {state}, {country}</strong><br /><strong>        &lt;/p></strong><br /><strong>      &lt;/div></strong><br /><strong>    )</strong><br /><strong>  }</strong><br /><strong>}</strong></pre>
+```import React, { Component } from 'react';<br />class Listing extends Component {<br />  render() {<br />    const {<br />      listing: {<br />        title,<br />        type,<br />        location: {<br />          city,<br />          state,<br />          country<br />        }<br />      }<br />    } = this.props;<br />return (<br />      &lt;div><br />        &lt;p>Title: {title}&lt;/p><br />        &lt;p>Type: {type}&lt;/p><br />        &lt;p><br />          Location: {city}, {state}, {country}<br />        &lt;/p><br />      &lt;/div><br />    )<br />  }<br />}```
 
 As a result the props are nicely been destructured and rendered inside the component. It is the same result as functional approach but inside a stateful or class component.
 

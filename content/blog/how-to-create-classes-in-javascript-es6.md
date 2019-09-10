@@ -25,28 +25,28 @@ We can define a class in two ways. declare it or express it.
 ### Class declaration 
 
 <p class="brush: js line-numbers  language-js">
-  <strong><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
-</code></strong>
+  <code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+</code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <strong><code class=" language-js">&lt;span class="token function">  constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
-</code></strong>
+  <code class=" language-js">&lt;span class="token function">  constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+</code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <strong><code class=" language-js">&lt;span class="token keyword">   this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>&lt;br />
+  <code class=" language-js">&lt;span class="token keyword">   this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>&lt;br />
     &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>&lt;br />
-</code></strong>
+</code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <strong><code class=" language-js">&lt;span class="token punctuation">  }&lt;/span>&lt;br />
-</code></strong>
+  <code class=" language-js">&lt;span class="token punctuation">  }&lt;/span>&lt;br />
+</code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <strong><code class=" language-js">&lt;span class="token punctuation">}&lt;/span></code></strong>
+  <code class=" language-js">&lt;span class="token punctuation">}&lt;/span></code>
 </p>
 
 Here we actually declare it with class keyword.
@@ -80,7 +80,7 @@ The body of a class is executed in [strict mode](https://developer.mozilla.org/
 
 The `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">constructor</a>` method is a special method for creating and initialising an object created with a `class`.A constructor can use the `super` keyword to call the constructor of the super class. ( As in react) In the below class we have a constructor and a method.
 
-<pre class="brush: js line-numbers  language-js"><strong><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>
   &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
     &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>
     &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>
@@ -96,7 +96,7 @@ The `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">const&lt;/span> square &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 
-console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>square&lt;span class="token punctuation">.&lt;/span>area&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// 100&lt;/span></code></strong></pre>
+console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>square&lt;span class="token punctuation">.&lt;/span>area&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// 100&lt;/span></code>```
 
 The interesting thing about classes in ES6 is that there is no function keyword to declare one. We could use the name right away.
 
@@ -104,7 +104,7 @@ The interesting thing about classes in ES6 is that there is no function keyword 
 
 We could use extends keyword to create a new child class (of both types explained above) of another class.In the example below, the Dog class extends Animal class and using super to call class constructor and pass in the name.
 
-<pre class="brush: js line-numbers  language-js"><strong><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Animal&lt;/span> &lt;span class="token punctuation">{&lt;/span> 
+<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Animal&lt;/span> &lt;span class="token punctuation">{&lt;/span> 
   &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
     &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>
   &lt;span class="token punctuation">}&lt;/span>
@@ -123,13 +123,13 @@ We could use extends keyword to create a new child class (of both types explaine
   &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code></strong></pre>
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>```
 
 **Note: **If there is a constructor present in subclass, it needs to first call super() before using &#8220;this&#8221;. This is very useful in react application classes.
 
 You could also use class inheritence to extend old defined functions:
 
-<pre class="brush: js line-numbers  language-js"><strong><code class=" language-js">&lt;span class="token keyword">function&lt;/span> Animal &lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">function&lt;/span> Animal &lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
   &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>  
 &lt;span class="token punctuation">}&lt;/span>
 
@@ -142,11 +142,11 @@ Animal&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="tok
   &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code></strong></pre>
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>```
 
 It is important to know that classes cannot extend regular objects unless you use setPrototypeOf method to add the object as a method:
 
-<pre class="brush: js line-numbers  language-js"><strong><code class=" language-js">&lt;span class="token keyword">const&lt;/span> Animal &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">{&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">const&lt;/span> Animal &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">{&lt;/span>
   &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
     console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' makes a noise.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
   &lt;span class="token punctuation">}&lt;/span>
@@ -159,7 +159,7 @@ It is important to know that classes cannot extend regular objects unless you us
 &lt;span class="token comment" spellcheck="true">// If you do not do this you will get a TypeError when you invoke speak&lt;/span>
 Object&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">setPrototypeOf&lt;/span>&lt;span class="token punctuation">(&lt;/span>Dog&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="token punctuation">,&lt;/span> Animal&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie makes a noise.&lt;/span></code></strong></pre>
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie makes a noise.&lt;/span></code>```
 
 ## Calls with Super class
 

@@ -23,31 +23,31 @@ In this part, we will look at other event concepts. 
 
 This object is the parameter that is passed to the handler function and could provide information and some features:
 
-`<strong>var btn = document.querySelector('button');</strong>`
+`var btn = document.querySelector('button');`
 
-`<strong>function bgChange(e) {<br />
-</strong>`
+`function bgChange(e) {<br />
+`
 
-`<strong>  e.target.style.backgroundColor = "red";<br />
+`  e.target.style.backgroundColor = "red";<br />
   console.log(e);<br />
-</strong>`
+`
 
-`<strong>} </strong>`
+`} `
 
-`<strong> </p>
-<p>btn.addEventListener('click', bgChange);</strong>`
+` </p>
+<p>btn.addEventListener('click', bgChange);`
 
 Here **e, **is the event object and **e.target** refers to the button itself. The **e.target**  of the event object always refers to the element that the event has occurred in which is the button in this example.
 
 Using event object **e** ( you can call it anything but **e/evt/event** are common) **e.target** could be used to select multiple elements to have the same event occur on them. In the example below, we select all divs to change the background colour on them with same event:
 
-`<strong>var divs = document.querySelectorAll('div');</strong>`
+`var divs = document.querySelectorAll('div');`
 
-`<strong>for (var i = 0; i < divs.length; i++) {</strong>`  
-`<strong>  divs[i].onclick = function(e) {</strong>`  
-`<strong>  e.target.style.backgroundColor = bgChange();</strong>`  
-`<strong>}</strong>`  
-`<strong>}</strong>`
+`for (var i = 0; i < divs.length; i++) {`  
+`  divs[i].onclick = function(e) {`  
+`  e.target.style.backgroundColor = bgChange();`  
+`}`  
+`}`
 
 See the live example <a href="https://mdn.github.io/learning-area/javascript/building-blocks/events/useful-eventtarget.html" target="_blank" rel="noopener noreferrer">here</a>.Click on divs and you will see background will change randomly. (see the full code in that page).
 
@@ -57,18 +57,18 @@ Each event has a default behaviour. For example a form submit button normally su
 
 So if you have a simple form with first name and last name fields for example, a simple code could fix this:
 
-`<strong>var form = document.querySelector('form');</strong>`  
-`<strong>var fname = document.getElementById('fname');</strong>`  
-`<strong>var lname = document.getElementById('lname');</strong>`  
-`<strong>var submit = document.getElementById('submit');</strong>`  
-`<strong>var para = document.querySelector('p');</strong>`
+`var form = document.querySelector('form');`  
+`var fname = document.getElementById('fname');`  
+`var lname = document.getElementById('lname');`  
+`var submit = document.getElementById('submit');`  
+`var para = document.querySelector('p');`
 
-`<strong>form.onsubmit = function(e) {</strong>`  
-`<strong>  if (fname.value === '' || lname.value === '') {</strong>`  
-`<strong>    e.preventDefault();</strong>`  
-`<strong>    para.textContent = 'You need to fill in both names!';</strong>`  
-`<strong>  }</strong>`  
-`<strong>}</strong>`
+`form.onsubmit = function(e) {`  
+`  if (fname.value === '' || lname.value === '') {`  
+`    e.preventDefault();`  
+`    para.textContent = 'You need to fill in both names!';`  
+`  }`  
+`}`
 
 It is not a good validation of course but the point is **e.preventDefault** which will not allow user to send an empty form.
 
@@ -80,11 +80,11 @@ If you have an element that you specify an event to it and also you already have
 
 **When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.**
 
-`<strong><form onclick="alert('form')">FORM</strong>`  
-`<strong><div onclick="alert('div')">DIV</strong>`  
-`<strong><p onclick="alert('p')">P</p></strong>`  
-`<strong></div></strong>`  
-`<strong></form></strong>`
+`<form onclick="alert('form')">FORM`  
+`<div onclick="alert('div')">DIV`  
+`<p onclick="alert('p')">P</p>`  
+`</div>`  
+`</form>`
 
 If you click on the inner element which is the p tag, you will get 3 alerts. For p, div and formelements. It scales up from inner children to the parent.
 
@@ -94,9 +94,9 @@ Capturing is the reverse way. So in capturing the browser checks the html which 
 
 This is annoying behaviour, but there is a fix for it! The standard event object has a function available on it called `<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation">stopPropagation()</a>`, which when invoked on a handler&#8217;s event object makes it to run, but the event doesn&#8217;t bubble any further up the chain, so no more handlers will be run.
 
-``<strong><body onclick="alert(`the bubbling doesn't reach here`)"></strong>``  
-`<strong>  <button onclick="event.stopPropagation()">Click me</button></strong>`  
-`<strong></body></strong>`
+``<body onclick="alert(`the bubbling doesn't reach here`)">``  
+`  <button onclick="event.stopPropagation()">Click me</button>`  
+`</body>`
 
 For instance, here body.onclick doesn’t work if you click on <button>.
 

@@ -27,10 +27,10 @@ Basically if it finds a falsy value that does not meet the condition it immediat
 
 As an example we could check whether a size is small enough or not:
 
-<pre class="wp-block-preformatted"><strong><code>function isSmallEnough(element, index, array) {
+```<code>function isSmallEnough(element, index, array) {
   return element &lt;= 10;
 }&lt;br/>// Checking two arrays for the condition
-[12, 5, 8, 130, 44].every(&lt;strong>&lt;code>isSmallEnough</code></strong>); // false <br />[2, 5, 0, 10, 6].every(<strong><code>isSmallEnough</code></strong>); // true&lt;/code>&lt;/strong></pre>
+[12, 5, 8, 130, 44].every(&lt;strong>&lt;code>isSmallEnough</code>); // false <br />[2, 5, 0, 10, 6].every(<code>isSmallEnough</code>); // true&lt;/code>&lt;/strong></pre>
 
 We see that some values of the first array does not meet the condition. Therefor we get a false result while in the second one it passes the condition for all item values.
 
@@ -38,13 +38,13 @@ We see that some values of the first array does not meet the condition. Therefor
 
 Generally we can also test every() method on objects to see if they pass the test. Have a look at this example:
 
-<pre class="wp-block-preformatted"><strong><code>const arr1 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:1, x:2, y:3, z:4}];&lt;br/>arr1.every(obj => obj.a === 1); //true</code> </strong><br /><br /><strong><code>const arr2 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:2, x:2, y:3, z:4}];&lt;br/>arr2.every(obj => obj.a === 1); //false</code></strong></pre>
+```<code>const arr1 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:1, x:2, y:3, z:4}];&lt;br/>arr1.every(obj => obj.a === 1); //true</code> <br /><br /><code>const arr2 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:2, x:2, y:3, z:4}];&lt;br/>arr2.every(obj => obj.a === 1); //false</code>```
 
 We see in the second object only one pair does not meet the condition. As a result every() method returns false no matter the rest of pairs pass the condition.
 
 Moreover we can use [arrow function](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) in this method as well. Check out these examples:
 
-<pre class="wp-block-preformatted"><strong><code>const a1 = [12, 5, 8, 130, 44];&lt;br/>a1.every(x => x >= 10); // false&lt;br/>&lt;br/>// Or all in one line
-[12, 54, 18, 130, 44].every(x => x >= 10); // true</code></strong></pre>
+```<code>const a1 = [12, 5, 8, 130, 44];&lt;br/>a1.every(x => x >= 10); // false&lt;br/>&lt;br/>// Or all in one line
+[12, 54, 18, 130, 44].every(x => x >= 10); // true</code>```
 
 Generally we need to use every() method once we need a condition to be met in every single array item. Therefor it is like an && operator in practice and should be used in appropriate places. Thanks for reading.

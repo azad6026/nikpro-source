@@ -18,10 +18,10 @@ We all have heard of JSX. Lets explain it with some examples. First lets break t
 For browsers to understand it, it needs to be compiled with a compiler like [Babel](https://babeljs.io/). Ket us write some JSX examples and explain it better:
 
 <p class="gatsby-code-jsx">
-  <strong>const element = <h1>This is JSX</h1>;</p> 
+  const element = <h1>This is JSX</h1>;</p> 
   
   <p>
-    </strong>You can clearly see the syntax looks like a mix of HTML and Javascript.It is not a template language. It comes with the full power of Javascript.
+    You can clearly see the syntax looks like a mix of HTML and Javascript.It is not a template language. It comes with the full power of Javascript.
   </p>
   
   <h2 class="gatsby-code-jsx">
@@ -47,7 +47,7 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    <strong>const element = (</strong><br /> <strong> <h1 className=&#8221;greeting&#8221;></strong><br /> <strong>  Hello, world!</strong><br /> <strong>  </h1></strong><br /> <strong>);</strong>
+    const element = (<br />  <h1 className=&#8221;greeting&#8221;><br />   Hello, world!<br />   </h1><br /> );
   </p>
   
   <hr />
@@ -59,19 +59,19 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    <strong>const element = React.createElement(</strong><br /> <strong>  &#8216;h1&#8217;,</strong><br /> <strong>  {className: &#8216;greeting&#8217;},</strong><br /> <strong>  &#8216;Hello, world!&#8217;</strong><br /> <strong>);</strong>
+    const element = React.createElement(<br />   &#8216;h1&#8217;,<br />   {className: &#8216;greeting&#8217;},<br />   &#8216;Hello, world!&#8217;<br /> );
   </p>
   
   <hr />
   
   <p>
-    Babel compiles JSX down to <strong>React.createElement()</strong> calls.As you can see, class attribute is called className in camel case here. This code actually creates an object like this:
+    Babel compiles JSX down to React.createElement() calls.As you can see, class attribute is called className in camel case here. This code actually creates an object like this:
   </p>
   
   <hr />
   
   <p>
-    <strong>const element = {</strong><br /> <strong>  type: &#8216;h1&#8217;,</strong><br /> <strong>  props: {</strong><br /> <strong>    className: &#8216;greeting&#8217;,</strong><br /> <strong>    children: &#8216;Hello, world!&#8217;</strong><br /> <strong>  }</strong><br /> <strong>};</strong>
+    const element = {<br />   type: &#8216;h1&#8217;,<br />   props: {<br />     className: &#8216;greeting&#8217;,<br />     children: &#8216;Hello, world!&#8217;<br />   }<br /> };
   </p>
   
   <hr />
@@ -87,11 +87,11 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    <strong><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">&#8216;Azadeh&#8217;</span><span class="token punctuation">;</span></strong>
+    <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">&#8216;Azadeh&#8217;</span><span class="token punctuation">;</span>
   </p>
   
   <p>
-    <strong>const element = <h1>Hello, {name}</h1>;</strong>
+    const element = <h1>Hello, {name}</h1>;
   </p>
   
   <hr />
@@ -107,7 +107,7 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    <strong>function getGreeting(user) {</strong><br /> <strong>  if (user) {</strong><br /> <strong>    return <h1>Hello, {formatName(user)}!</h1>;</strong><br /> <strong>  }</strong><br /> <strong>  return <h1>Hello, Stranger.</h1>;</strong><br /> <strong>}</strong>
+    function getGreeting(user) {<br />   if (user) {<br />     return <h1>Hello, {formatName(user)}!</h1>;<br />   }<br />   return <h1>Hello, Stranger.</h1>;<br /> }
   </p>
   
   <hr />

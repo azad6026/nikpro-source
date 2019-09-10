@@ -21,36 +21,36 @@ A primitive is a data that is not an object, cannot be changed and does not have
 
 They are not variables but can be assigned to variables. The variable may be assigned a new value but the primitive remains the same. See below examples:
 
-`<strong>// Using a string method doesn't mutate the string</strong>`  
-`<strong>var bar = "baz";</strong>`  
-`<strong>console.log(bar); // baz</strong>`  
-`<strong>bar.toUpperCase()</strong>`  
-`<strong>console.log(bar); // baz ( It will not change to BAZ)</strong>`
+`// Using a string method doesn't mutate the string`  
+`var bar = "baz";`  
+`console.log(bar); // baz`  
+`bar.toUpperCase()`  
+`console.log(bar); // baz ( It will not change to BAZ)`
 
-`<strong>// Using an array method mutates the array</strong>`  
-`<strong>var foo = [];</strong>`  
-`<strong>console.log(foo); // []</strong>`  
-`<strong>foo.push("plugh");</strong>`  
-`<strong>console.log(foo); // ["plugh"]</strong>`
+`// Using an array method mutates the array`  
+`var foo = [];`  
+`console.log(foo); // []`  
+`foo.push("plugh");`  
+`console.log(foo); // ["plugh"]`
 
-`<strong>// Assignment gives the primitive a new (not a mutated) value</strong>`  
-`<strong>bar = bar.toUpperCase(); // BAZ</strong>`
+`// Assignment gives the primitive a new (not a mutated) value`  
+`bar = bar.toUpperCase(); // BAZ`
 
 As you can see methods do no affect primitive&#8217;s value but assignment gives them a new value. Here is another example:
 
-`<strong>// The Primitive </strong>`  
-`<strong>let foo = 5;</strong>`
+`// The Primitive `  
+`let foo = 5;`
 
-`<strong>// A function to change the Primitive value</strong>`  
-`<strong>function addTwo(foo) {</strong>`  
-`<strong>foo = foo + 2;</strong>`  
-`<strong>}</strong>`
+`// A function to change the Primitive value`  
+`function addTwo(foo) {`  
+`foo = foo + 2;`  
+`}`
 
-``<strong>// Pass our Primitive as an argument to `addTwo()` function</strong>``  
-`<strong>addTwo(foo);</strong>`
+``// Pass our Primitive as an argument to `addTwo()` function``  
+`addTwo(foo);`
 
-`<strong>// Get the current Primitive value</strong>`  
-`<strong>console.log(foo); // 5</strong>`
+`// Get the current Primitive value`  
+`console.log(foo); // 5`
 
 Before doing ANYTHING inside the function, **JavaScript took a copy of the original passed &#8211; Primitive &#8211; argument** to work with it inside our function. Any changes inside our function **won&#8217;t** affect the ORIGINAL `foo` at all, as we are working on our COPY of it. Inside the function, it refers to `foo` _the parameter   &#8211;   _<code class=" language-js">&lt;span class="token function">addTwo&lt;/span>&lt;span class="token punctuation">(&lt;/span>foo&lt;span class="token punctuation">)&lt;/span></code>_ _ not `foo` &#8211; _the variable &#8211; _<code class=" language-js">&lt;span class="token keyword">let&lt;/span> foo &lt;span class="token operator">=&lt;/span> &lt;span class="token number">5&lt;/span>&lt;span class="token punctuation">;&lt;/span></code>
 
@@ -62,71 +62,71 @@ foo.Valueof(); // 5
 
 The primitive types boolean, string and number can be wrapped by their object counterparts. These objects are instances of the Boolean, String and Number constructors respectively. See the below definitions:
 
-`<strong>typeof true; //"boolean"</strong>`  
-`<strong>typeof Boolean(true); //"boolean"</strong>`  
-`<strong>typeof new Boolean(true); //"object"</strong>`  
-`<strong>typeof (new Boolean(true)).valueOf(); //"boolean"</strong>`
+`typeof true; //"boolean"`  
+`typeof Boolean(true); //"boolean"`  
+`typeof new Boolean(true); //"object"`  
+`typeof (new Boolean(true)).valueOf(); //"boolean"`
 
-`<strong>typeof "abc"; //"string"</strong>`  
-`<strong>typeof String("abc"); //"string"</strong>`  
-`<strong>typeof new String("abc"); //"object"</strong>`  
-`<strong>typeof (new String("abc")).valueOf(); //"string"</strong>`
+`typeof "abc"; //"string"`  
+`typeof String("abc"); //"string"`  
+`typeof new String("abc"); //"object"`  
+`typeof (new String("abc")).valueOf(); //"string"`
 
-`<strong>typeof 123; //"number"</strong>`  
-`<strong>typeof Number(123); //"number"</strong>`  
-`<strong>typeof new Number(123); //"object"</strong>`  
-`<strong>typeof (new Number(123)).valueOf(); //"number"</strong>`
+`typeof 123; //"number"`  
+`typeof Number(123); //"number"`  
+`typeof new Number(123); //"object"`  
+`typeof (new Number(123)).valueOf(); //"number"`
 
 And the vice versa is true. So the objects could be coerced to their primitives:
 
-`<strong>//object coerced to primitive </strong>`  
-`<strong>var Twelve = new Number(12); </strong>`  
-`<strong>var fifteen = Twelve + 3; </strong>`  
-`<strong>fifteen; //15</strong>`  
-`<strong>typeof fifteen; //"number" (primitive)</strong>`  
-`<strong>typeof Twelve; //"object"; (still object)</strong>`
+`//object coerced to primitive `  
+`var Twelve = new Number(12); `  
+`var fifteen = Twelve + 3; `  
+`fifteen; //15`  
+`typeof fifteen; //"number" (primitive)`  
+`typeof Twelve; //"object"; (still object)`
 
-`<strong>//another object coerced to primitive</strong>`  
-`<strong>new String("hippo") + "potamus"; //"hippopotamus" </strong>`
+`//another object coerced to primitive`  
+`new String("hippo") + "potamus"; //"hippopotamus" `
 
-`<strong>//object not coerced (because 'typeof' operator can work with objects)</strong>`  
-`<strong>typeof new String("hippo") + "potamus"; //"objectpotamus"</strong>`
+`//object not coerced (because 'typeof' operator can work with objects)`  
+`typeof new String("hippo") + "potamus"; //"objectpotamus"`
 
 ### Why does `"abc".length` return a value?
 
 Javascript will coerce between primitives and objects. So for &#8220;abc&#8221; the string value is coerced to a string object to access to length property. See an example below:
 
-`<strong>String.prototype.returnMe= function() {</strong>`  
-`<strong>return this;</strong>`  
-`<strong>}</strong>`  
-`<strong>var a = "abc";</strong>`  
-`<strong>var b = a.returnMe(); </strong>`
+`String.prototype.returnMe= function() {`  
+`return this;`  
+`}`  
+`var a = "abc";`  
+`var b = a.returnMe(); `
 
-`<strong>a; //"abc" </strong>`  
-`<strong>typeof a; //"string" (still a primitive)</strong>`  
-`<strong>b; //"abc"</strong>`  
-`<strong>typeof b; //"object"</strong>`
+`a; //"abc" `  
+`typeof a; //"string" (still a primitive)`  
+`b; //"abc"`  
+`typeof b; //"object"`
 
 and tis example for a number primitive:
 
-`<strong>Number.prototype.toString = function() {</strong>`  
-`<strong>return typeof this;</strong>`  
-`<strong>}</strong>`
+`Number.prototype.toString = function() {`  
+`return typeof this;`  
+`}`
 
-`<strong>(123).toString(); //"object"</strong>`
+`(123).toString(); //"object"`
 
 By this means primitives have access to all the properties (including methods) defined by their respective object constructors. But even with this we cannot assign values to primitives:
 
-`<strong>var primitive = "september";</strong>`  
-`<strong>primitive.vowels = 3;</strong>`
+`var primitive = "september";`  
+`primitive.vowels = 3;`
 
-`<strong>primitive.vowels; //undefined;</strong>`
+`primitive.vowels; //undefined;`
 
 Primitives are immutable and we cannot modify them by tweaking the properties of the object wrapper:
 
-`<strong>var me = new String("Angus");</strong>`  
-`<strong>me.length = 2; //(error in strict mode)</strong>`  
-`<strong>me.length; //5 (not 2 - thanks @joseanpg)</strong>`  
-`<strong>me.valueOf(); "Angus"</strong>`
+`var me = new String("Angus");`  
+`me.length = 2; //(error in strict mode)`  
+`me.length; //5 (not 2 - thanks @joseanpg)`  
+`me.valueOf(); "Angus"`
 
 Primitives could be very confusing if we don&#8217;t understand what they really are and what are object&#8217;s differences with their primitives counterparts. I hope this helped.

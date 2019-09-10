@@ -20,76 +20,76 @@ The [`event.currentTarget`](https://developer.mozilla.org/en-US/docs/Web/API/Ev
 
 Here we explain it better. This is a simple example of using it to implement event delegation:
 
-`<strong>// Make a list</strong>`  
-`<strong>var ul = document.createElement('ul');</strong>`  
-`<strong>document.body.appendChild(ul);</strong>`
+`// Make a list`  
+`var ul = document.createElement('ul');`  
+`document.body.appendChild(ul);`
 
-`<strong>var li1 = document.createElement('li');</strong>`  
-`<strong>var li2 = document.createElement('li');</strong>`  
-`<strong>ul.appendChild(li1);</strong>`  
-`<strong>ul.appendChild(li2);</strong>`
+`var li1 = document.createElement('li');`  
+`var li2 = document.createElement('li');`  
+`ul.appendChild(li1);`  
+`ul.appendChild(li2);`
 
-`<strong>function hide(e){</strong>`  
-`<strong>// e.target refers to the clicked <li> element</strong>`  
-`<strong>// This is different than e.currentTarget which would refer to the parent <ul> in this context</strong>`  
-`<strong>e.target.style.visibility = 'hidden';</strong>`  
-`<strong>}</strong>`
+`function hide(e){`  
+`// e.target refers to the clicked <li> element`  
+`// This is different than e.currentTarget which would refer to the parent <ul> in this context`  
+`e.target.style.visibility = 'hidden';`  
+`}`
 
-`<strong>// Attach the listener to the list</strong>`  
-`<strong>// It will fire when each <li> is clicked</strong>`  
-`<strong>ul.addEventListener('click', hide, false);</strong>`
+`// Attach the listener to the list`  
+`// It will fire when each <li> is clicked`  
+`ul.addEventListener('click', hide, false);`
 
-As you can see, the e.target here refers to the li elements. So the li element actually makes the event happens. but the e.currentTarget is the one that the event directly refers to (`<strong>ul.addEventListener('click', hide, false);) </strong>`which in this case is the ul element and not each li element.
+As you can see, the e.target here refers to the li elements. So the li element actually makes the event happens. but the e.currentTarget is the one that the event directly refers to (`ul.addEventListener('click', hide, false);) `which in this case is the ul element and not each li element.
 
 ### The explanation in one example
 
 Assume this HTML code that we want to check out for the e.target property:
 
-`<strong><body></strong>`  
-`<strong><div id="container"></strong>`  
-`<strong><ul id="list"></strong>`  
-`<strong><li><a href="#">Item 1</a></li></strong>`  
-`<strong><li><a href="#">Item 2</a></li></strong>`  
-`<strong><li><a href="#">Item 3</a></li> </strong>`  
-`<strong><li><a href="#">Item 4</a></li></strong>`  
-`<strong>..................................</strong>`  
-`<strong><li><a href="#">Item 1000</a></li></strong>`  
-`<strong></ul></strong>`  
-`<strong></div></strong>`  
-`<strong></body></strong>`
+`<body>`  
+`<div id="container">`  
+`<ul id="list">`  
+`<li><a href="#">Item 1</a></li>`  
+`<li><a href="#">Item 2</a></li>`  
+`<li><a href="#">Item 3</a></li> `  
+`<li><a href="#">Item 4</a></li>`  
+`..................................`  
+`<li><a href="#">Item 1000</a></li>`  
+`</ul>`  
+`</div>`  
+`</body>`
 
 We have thousands of li elements. We certainly would not want to loop through all li elements and add an event listener. It is not practical and it may freeze the page.
 
 So here comes the event delegation: When the event bubbles up to the body element, we can check the element that triggered the event, using the event object’s target property:
 
-`<strong>document.addEventListener("click", function(e) {</strong>`  
-`<strong>  if(e.target && e.target.nodeName == "A") {</strong>`  
-`<strong>    console.log("List item ", e.target.textContent, " was clicked!");</strong>`  
-`<strong>  }</strong>`  
-`<strong>});</strong>`  
+`document.addEventListener("click", function(e) {`  
+`  if(e.target && e.target.nodeName == "A") {`  
+`    console.log("List item ", e.target.textContent, " was clicked!");`  
+`  }`  
+`});`  
  When we click the 2nd item, the page prints out: &#8220;List item Item 2 was clicked!&#8221; .
 
 ### How the event.currentTarget property differs
 
 So lets check the difference in code. In the below example which follows our last example, you will see the difference between e.target and e.curentTarget again:
 
-`<strong>document.addEventListener("click", function(e) {</strong>`  
-`<strong>  if(e.target && e.target.nodeName == "A") {</strong>`  
-`<strong>    console.log("List item ", e.target.textContent, " was clicked!");</strong>`  
-`<strong>  }</strong>`
+`document.addEventListener("click", function(e) {`  
+`  if(e.target && e.target.nodeName == "A") {`  
+`    console.log("List item ", e.target.textContent, " was clicked!");`  
+`  }`
 
-     `<strong> console.log(e.currentTarget); // #document</strong>`  
-`<strong>});</strong>`
+     ` console.log(e.currentTarget); // #document`  
+`});`
 
-And as you see here (`<strong>document.addEventListener) </strong>`we are adding the event listener to the document which means the e.currentTarget will refer to the document. It prints out “document” since we attached current event listener to the document while e.target refers to <a> which we clicked.
+And as you see here (`document.addEventListener) `we are adding the event listener to the document which means the e.currentTarget will refer to the document. It prints out “document” since we attached current event listener to the document while e.target refers to <a> which we clicked.
 
 Now lets change the element that the event listener is attached to and see the difference:
 
-`<strong>document.getElementById(“list”).addEventListener(“click”, function(e) {</strong>`  
-`<strong>  console.log(e.currentTarget); //<ul><li>...</li><ul></strong>`  
-`<strong>  console.log(e.target); //<a href="#">Item 2</a></strong>`  
-`<strong>);</strong>`
+`document.getElementById(“list”).addEventListener(“click”, function(e) {`  
+`  console.log(e.currentTarget); //<ul><li>...</li><ul>`  
+`  console.log(e.target); //<a href="#">Item 2</a>`  
+`);`
 
-Again in here the e.target refers the a tag that we clicked bu the e.currentTarget refers to  (`<strong>document.getElementById(“list”)) </strong>`the list element that we attached the event listener to.
+Again in here the e.target refers the a tag that we clicked bu the e.currentTarget refers to  (`document.getElementById(“list”)) `the list element that we attached the event listener to.
 
 That is it. Now with these two properties target and currentTarget, we can easily manipulate the node when the event gets triggered, as well as the node the event is attached to. However we better be careful when and how to use them.

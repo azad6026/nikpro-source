@@ -20,13 +20,13 @@ As we mentioned in a post about [HTNL5 new tags](http://www.nikpro.com.au/html5-
 
 First things first. Doctype should be your first line in you HTML code and its HTML5 is the recommended one:
 
-`<strong><!DOCTYPE html></strong>`
+`<!DOCTYPE html>`
 
 ### Closing tags 
 
 All tags should have a closing tag unless they are self closing tags. Self closing tags are:
 
-`<strong><br>, <hr>, <img>, <input>, <link>, <meta><area>, <base>, <col>, <command>, <embed>, <keygen>, <param>, <source>, <track>, <wbr> </strong>`  
+`<br>, <hr>, <img>, <input>, <link>, <meta><area>, <base>, <col>, <command>, <embed>, <keygen>, <param>, <source>, <track>, <wbr> `  
 
 ### Optional tags  
 
@@ -46,7 +46,7 @@ Unless you right a XML document.You don&#8217;t need this declaration before Doc
 
 It is a ver useful tag but remember it makes all links relative to the href it specifies:
 
-`<strong><base href="http://www.example.com/" /></strong>`
+`<base href="http://www.example.com/" />`
 
 unless you specify the link explicitly.
 
@@ -80,22 +80,22 @@ These tags are deprecated. Never use them. Also avoid using stylistic tags  lik
 
 The <br> tag is not for layout formatting and you should use CSS margin and padding to add spaces. You better use <br> inside an element to addd line breaks:
 
-`<strong><label>Please use the following text area:<br><br />
-</strong>`
+`<label>Please use the following text area:<br><br />
+`
 
-`<strong>  <textarea name="loremipsum"></textarea><br />
-</strong>`
+`  <textarea name="loremipsum"></textarea><br />
+`
 
-`<strong></label></strong>`
+`</label>`
 
 ### Type Attribute
 
 The type attribute is not necessary for link and script tags. All browsers expect a link tag for a stylesheet and a script tag as a Javascript tag. So always do this:
 
-`<strong><link rel="stylesheet" href="style.css" /><br />
-</strong>`
+`<link rel="stylesheet" href="style.css" /><br />
+`
 
-`<strong><script src="script.js"></script></strong>`
+`<script src="script.js"></script>`
 
 ### The alt attribute
 

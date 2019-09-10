@@ -31,10 +31,10 @@ While a user filling up a form it would be great if the form style could be chan
 
 Once you click on one of the inputs ( meaning a form child element), form&#8217;s background and colour style is changing:
 
-`<strong>form:focus-within {</strong>`  
-`<strong>  background: #ccc;</strong>`  
-`<strong>  color: black;</strong>`  
-`<strong>}</strong>`
+`form:focus-within {`  
+`  background: #ccc;`  
+`  color: black;`  
+`}`
 
 ## :focus-within selector in tables
 
@@ -48,10 +48,10 @@ A really good example of using :focus-within pseudo class is inside tables. When
 
 And we used :focus-within for the rows as below:
 
-`<strong>tbody tr:focus-within,</strong>`  
-`<strong>tbody tr:hover {</strong>`  
-`<strong>  background: blue;</strong>`  
-`<strong>}</strong>`
+`tbody tr:focus-within,`  
+`tbody tr:hover {`  
+`  background: blue;`  
+`}`
 
 ## :focus-within selector in dropdown menu
 
@@ -69,21 +69,21 @@ However in order for a navigation bar to be accessible, one should be able to ta
 
 Using :focus-within selector we can achieve these:
 
-`<strong>ul li:hover > ul,,ul li:focus-within > ul</strong>``<strong> {</strong>`  
-`<strong>  visibility: visible;</strong>`  
-`<strong>  opacity: 1;</strong>`  
-`<strong>  display: block;</strong>`  
-`<strong>}</strong>`
+`ul li:hover > ul,,ul li:focus-within > ul`` {`  
+`  visibility: visible;`  
+`  opacity: 1;`  
+`  display: block;`  
+`}`
 
 This way when we tab to the second item, our submenu pops up. As we tab through the submenu, the visibility remains! We then append our code to include **`:focus` **states alongside **`:hover`** to give keyboard users the same experience as our mouse users:
 
-`<strong>ul li:hover > ul,</strong>`  
-`<strong>ul li:focus-within > ul,</strong>`  
-`<strong>ul li ul:hover,</strong>`  
-`<strong>ul li ul:focus {</strong>`  
-`<strong>  visibility: visible;</strong>`  
-`<strong>  opacity: 1;</strong>`  
-`<strong>  display: block;</strong>`  
-`<strong>}</strong>`
+`ul li:hover > ul,`  
+`ul li:focus-within > ul,`  
+`ul li ul:hover,`  
+`ul li ul:focus {`  
+`  visibility: visible;`  
+`  opacity: 1;`  
+`  display: block;`  
+`}`
 
 There are also other use cases of :focus-within that you could read about in <a href="https://css-tricks.com/keeping-parent-visible-child-focus/" target="_blank" rel="noopener noreferrer">this</a> link for divs and a comprehensive article on dropdown menus <a href="https://css-tricks.com/solved-with-css-dropdown-menus/" target="_blank" rel="noopener noreferrer">here</a> as well. Thanks for reading.

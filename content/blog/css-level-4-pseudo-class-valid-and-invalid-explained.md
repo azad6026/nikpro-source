@@ -20,35 +20,35 @@ In [CSS level 4 pseudo-class](http://www.nikpro.com.au/the-css4-focus-within-se
 
 The **`:valid`** selector allows you to select `<input>` elements that contain valid content, as determined by its `type` attribute. It represents any [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) or other [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) element whose contents [validate](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation) successfully. It is great for highlighting the input status to the user while they are focused into the input.
 
-<pre class="wp-block-preformatted"><strong><code>/* Selects any valid &lt;input> */
+```<code>/* Selects any valid &lt;input> */
 input:valid {
   background-color: green;
-}</code></strong><br /></pre>
+}</code><br /></pre>
 
 ### The pseudo-class :invalid
 
 The **`:invalid`**CSS pseudo-class represents any [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) or other [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) element whose contents fail to validate. It is great for highlighting form input errors:
 
-<pre class="wp-block-preformatted"><strong><code>/* Selects any invalid &lt;input> */
+```<code>/* Selects any invalid &lt;input> */
 input:invalid {
   background-color: red;
-}</code></strong></pre>
+}</code>```
 
 #### An email field example
 
 As an example imagine we have this email field in our form:
 
-<pre class="wp-block-preformatted"><strong><code>Email: &lt;input type="email" required></code></strong></pre>
+```<code>Email: &lt;input type="email" required></code>```
 
 Therefor we add the relevant CSS to show the validity of data here:
 
-<pre class="wp-block-preformatted"><strong><code>input[type=email]:invalid {
+```<code>input[type=email]:invalid {
   outline: red solid 1px;
 }
 
 input[type=email]:valid {
   outline: green solid 1px;
-}</code></strong></pre>
+}</code>```
 
 The input will have red outline until the user starts typing and enters a valid email. Then the outline turns to green.
 

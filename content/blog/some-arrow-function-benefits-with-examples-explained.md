@@ -19,25 +19,25 @@ We have talked about arrow functions in [this article](http://www.nikpro.com.au/
 
 Obviously they are really short and neat and one you have them in your code it looks a lot shorter and cleaner. These are the general syntax:
 
-<pre class="wp-block-preformatted"><strong>// No parameters</strong><br /><strong>() => { statements }</strong><br /><strong>// single parameter</strong><br /><strong>(param) => { statements }</strong><br /><strong>param => { statements } </strong><br /><strong>// multiple parameters</strong><br /><strong>(param1,param2,....paramN) => { statements }</strong><br /><strong>// Returning objects</strong><br /><strong>// enclose objects by parenthesis so they can be treated as objects</strong><br /><strong>(param1,param2) => ( { id: 1 , key: value });</strong></pre>
+```// No parameters<br />() => { statements }<br />// single parameter<br />(param) => { statements }<br />param => { statements } <br />// multiple parameters<br />(param1,param2,....paramN) => { statements }<br />// Returning objects<br />// enclose objects by parenthesis so they can be treated as objects<br />(param1,param2) => ( { id: 1 , key: value });```
 
 Which if we want to shorten it actually they look like this:
 
-<pre class="wp-block-preformatted"><strong>parameters => expression</strong><br /><strong>// is equivalent to:</strong><br /><strong>function (parameters){</strong><br /><strong>  return expression;</strong><br /><strong>}</strong></pre>
+```parameters => expression<br />// is equivalent to:<br />function (parameters){<br />  return expression;<br />}```
 
 **A simple example**
 
 In your browser console type this in and see the result for yourself:
 
-<pre class="wp-block-preformatted"><strong><code>var double = num => num * 2&lt;br/>double(2);&lt;br/>// 4&lt;br/>double(3);&lt;br/>// 6</code></strong></pre>
+```<code>var double = num => num * 2&lt;br/>double(2);&lt;br/>// 4&lt;br/>double(3);&lt;br/>// 6</code>```
 
 The great thing is with ES6 you get to skip _function_ keyword and _return_ keyword as well some parenthesis, braces and semicolons. This is another example:
 
-<pre class="wp-block-preformatted"><strong>var imgUrlArray = [</strong><br /><strong>        imgUrl1,</strong><br /><strong>        imgUrl2</strong><br /><strong>];</strong><br /><strong>//ES5</strong><br /><strong>imgUrlArray.map(function (img){</strong><br /><strong>     return img;</strong><br /><strong>});</strong><br /><strong>//ES6</strong><br /><strong>imgUrlArray.map(img => img);</strong></pre>
+```var imgUrlArray = [<br />        imgUrl1,<br />        imgUrl2<br />];<br />//ES5<br />imgUrlArray.map(function (img){<br />     return img;<br />});<br />//ES6<br />imgUrlArray.map(img => img);```
 
 Also this is an example with the [map](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) method in both versions:
 
-<pre class="wp-block-preformatted"><strong>// Expressions</strong><br /><strong>// ES5</strong><br /><strong>var plusOne = [1,2,3,4,5].map(function(num){ return num + 1 });</strong><br /><strong>// ES6<br />var plusOne = [1,2,3,4,5].map(num => num + 1);  // implicit return</strong></pre>
+```// Expressions<br />// ES5<br />var plusOne = [1,2,3,4,5].map(function(num){ return num + 1 });<br />// ES6<br />var plusOne = [1,2,3,4,5].map(num => num + 1);  // implicit return```
 
 ## No &#8220;this&#8221; binding with arrow functions
 
@@ -49,7 +49,7 @@ An arrow function **_does not_** newly define its own `this` when it&#8217;s
 
 You clearly see the difference and no binding of &#8220;this&#8221; in arrow functions. ES6 arrow functions don’t bind their own arguments either:
 
-<pre class="wp-block-preformatted"><strong>const funct = () => {</strong><br /><strong>       console.log(arguments); <em>// This will throw reference error</em></strong><br /><strong>}</strong><br /><strong><em>// undefined</em></strong></pre>
+```const funct = () => {<br />       console.log(arguments); <em>// This will throw reference error</em><br />}<br /><em>// undefined</em>```
 
 Which is interesting and it is not something that we might be facing in code all the time. 
 
@@ -57,7 +57,7 @@ Which is interesting and it is not something that we might be facing in code all
 
 Although we can use arrow functions in most cases but we need to be careful around constructors. Arrow functions cannot be used as constructors:
 
-<pre class="wp-block-preformatted"><strong>var Person= (param) => {</strong><br /><strong>     this.name = param;</strong><br /><strong>}</strong><br /><strong>var Boy = new Person('Ram');</strong><br /><strong><em>// Throws error that Person is not a constructor</em></strong><br /></pre>
+```var Person= (param) => {<br />     this.name = param;<br />}<br />var Boy = new Person('Ram');<br /><em>// Throws error that Person is not a constructor</em><br /></pre>
 
 Therefor if we create a constructor with them it will throw an error like above.
 
@@ -65,6 +65,6 @@ Therefor if we create a constructor with them it will throw an error like above.
 
 And they certainly cannot be used with new keyword aswell:
 
-<pre class="wp-block-preformatted"><strong>var func = () => { console.log("Hello"); };</strong><br /><strong>var func1 = new func();</strong><br /><strong><em>// Uncaught TypeError: func is not a constructor</em></strong></pre>
+```var func = () => { console.log("Hello"); };<br />var func1 = new func();<br /><em>// Uncaught TypeError: func is not a constructor</em>```
 
 These are main arrow function benefits and awarenesses that could be useful once coding around them. Thanks for reading.

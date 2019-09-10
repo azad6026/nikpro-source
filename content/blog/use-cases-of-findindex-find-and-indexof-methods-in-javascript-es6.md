@@ -33,7 +33,7 @@ Practically we could say the first two methods are similar to each other. Also t
 
 Firstly we will find the index of a fruit inside a fruit array using [arrow](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) functions:
 
-<pre class="wp-block-preformatted"><strong><code>const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];&lt;br/>// find the index of the "&lt;strong>&lt;code>blueberries"</code></strong>
+```<code>const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];&lt;br/>// find the index of the "&lt;strong>&lt;code>blueberries"</code>
 const index = fruits.findIndex(fruit => fruit === "blueberries");
 console.log(index); // 3
 console.log(fruits[index]); // blueberries&lt;/code>&lt;/strong></pre>
@@ -44,13 +44,13 @@ As a use case this is good when we want to find the first item that matches our 
 
 Also this is another example to find the odd element inside an array:
 
-<pre class="wp-block-preformatted"><strong>let arr = [2, 4, 6, 8, 9, 10, 12];</strong><br /><strong>// create the function to check if the item is odd</strong><br /><strong><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the index</code></strong><br /><strong>arr.findIndex(isOdd);</strong><br /><strong>// 4</strong><br /></pre><figure class="wp-block-image">
+```let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the index</code><br />arr.findIndex(isOdd);<br />// 4<br /></pre><figure class="wp-block-image">
 
 <img src="http://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="http://testgatsby.localfind-index.png 1680w, http://testgatsby.localfind-index-300x113.png 300w, http://testgatsby.localfind-index-768x288.png 768w, http://testgatsby.localfind-index-1024x384.png 1024w, http://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
 
 #### Find the fruit object with find()
 
-<pre class="wp-block-preformatted"><strong><code>const inventory = [
+```<code>const inventory = [
     {name: 'apples', quantity: 2},
     {name: 'bananas', quantity: 0},
     {name: 'cherries', quantity: 5}
@@ -58,13 +58,13 @@ Also this is another example to find the odd element inside an array:
 // look for fruit with the name property of "cherries"
 const result = inventory.find( fruit => fruit.name === 'cherries' );
 
-console.log(result) // { name: 'cherries', quantity: 5 }</code></strong></pre>
+console.log(result) // { name: 'cherries', quantity: 5 }</code>```
 
 Above example shows how we can find an object inside an array using find() method looking for an object property( name here).
 
 #### Find the odd element with find() this time
 
-<pre class="wp-block-preformatted"><strong>let arr = [2, 4, 6, 8, 9, 10, 12];</strong><br /><strong>// create the function to check if the item is odd</strong><br /><strong><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the number this time</code></strong><br /><strong>arr.find(isOdd);</strong><br /><strong>// 49</strong></pre>
+```let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the number this time</code><br />arr.find(isOdd);<br />// 49```
 
 Similar function being passed to find(0 but this time we have found the actual number.<figure class="wp-block-image">
 
@@ -80,7 +80,7 @@ The find() method is great when we are looking for specific items. <a href="http
 
 Finally take a look at this example to find the element inside the array. If we found the element it updates the array and if not just reports it:
 
-<pre class="wp-block-preformatted"><strong><code>function updateVegetablesCollection (veggies, veggie) {&lt;br/>    // do we have a veggie by id of -1 ? &lt;strong>&lt;code>(means does not exist)</code></strong>
+```<code>function updateVegetablesCollection (veggies, veggie) {&lt;br/>    // do we have a veggie by id of -1 ? &lt;strong>&lt;code>(means does not exist)</code>
     if (veggies.indexOf(veggie) === -1) {<br />    // add it to array if not
         veggies.push(veggie);
         console.log('New veggies collection is : ' + veggies);<br />    // already exists? report it then

@@ -19,7 +19,7 @@ We will talk about Javascript ES6 reduce() method and how to use it in this arti
 
 Basically reduce() is used when we need to sum up an arrays values and get a total amount at the end. Its callback function(the function to be applied by reduce) will execute on each element and takes up to four arguments that two of them are required for reduce to wrk. We call it a reduction. Here is the syntax:
 
-`<strong><i>array</i>.<span class="color_h1">reduce</span>(<em>function(total, currentValue, currentIndex, arr), initialValue</em>);</strong>`
+`<i>array</i>.<span class="color_h1">reduce</span>(<em>function(total, currentValue, currentIndex, arr), initialValue</em>);`
 
 The total value is the initial value or returned value of the function. It is the first value of the array that we do the reduction for. We will explain it later.
 
@@ -31,9 +31,9 @@ These two values are required for reduce to work. Time for some examples.
 
 This is an ES6 reduce example:
 
-`<strong>[0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {</strong>`  
-`<strong>  return accumulator + currentValue;</strong>`  
-`<strong>});</strong>`
+`[0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {`  
+`  return accumulator + currentValue;`  
+`});`
 
 We have applied reduce to an array of five elements. In the below table you will see what happens to all those elements inside the function:
 
@@ -175,13 +175,13 @@ Clearly the accumulator which is called the total amount as well, is always the 
 
 And the best thing is to convert this to an [arrow function](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) syntax. We leave off the currentIndex and array as they are optional:
 
-`<strong>[0, 1, 2, 3, 4].reduce((accumulator, currentValue)=> accumulator + currentValue);</strong>`
+`[0, 1, 2, 3, 4].reduce((accumulator, currentValue)=> accumulator + currentValue);`
 
 ### Initial value
 
 If we were to have an initial value which we might incases, the code will change to this:
 
-`<strong>[0, 1, 2, 3, 4].reduce((accumulator, currentValue, currentIndex, array) =></strong>``<strong>accumulator + currentValue</strong>``<strong>, 10);</strong>`
+`[0, 1, 2, 3, 4].reduce((accumulator, currentValue, currentIndex, array) =>``accumulator + currentValue``, 10);`
 
 And the reduction will add up by the initial value and in this case 10. So the output is 20 instead of 10 in the above example.
 
@@ -189,12 +189,12 @@ And the reduction will add up by the initial value and in this case 10. So the o
 
 We could apply reduce to objects in a similar away:
 
-`<strong>var initialValue = 0;</strong>`  
-`<strong>var sum = [{x: 1}, {x:2}, {x:3}].reduce( (accumulator, currentValue) => accumulator + currentValue.x</strong>`  
-`<strong> ,initialValue</strong>`  
-`<strong>);</strong>`
+`var initialValue = 0;`  
+`var sum = [{x: 1}, {x:2}, {x:3}].reduce( (accumulator, currentValue) => accumulator + currentValue.x`  
+` ,initialValue`  
+`);`
 
-`<strong>console.log(sum) // logs 6</strong>`
+`console.log(sum) // logs 6`
 
 Which accumulates the object values and print them out.
 
@@ -202,18 +202,18 @@ Which accumulates the object values and print them out.
 
 In the example below we want to count how many times a name has been repeated inside the names array. If the name was repeated meaning the current value (name) was the same as total value (allNames) , we increment the total count by one and if not, we just count it as one repeat:
 
-`<strong>var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];</strong>`
+`var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];`
 
-`<strong>var countedNames = names.reduce(function (allNames, name) { </strong>`  
-`<strong>  if (name in allNames) {</strong>`  
-`<strong>    allNames[name]++;</strong>`  
-`<strong>  }</strong>`  
-`<strong>  else {</strong>`  
-`<strong>    allNames[name] = 1;</strong>`  
-`<strong>  }</strong>`  
-`<strong>  return allNames;</strong>`  
-`<strong>}, {});</strong>`  
-`<strong>// countedNames is:</strong>`  
-`<strong>// { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }</strong>`
+`var countedNames = names.reduce(function (allNames, name) { `  
+`  if (name in allNames) {`  
+`    allNames[name]++;`  
+`  }`  
+`  else {`  
+`    allNames[name] = 1;`  
+`  }`  
+`  return allNames;`  
+`}, {});`  
+`// countedNames is:`  
+`// { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }`
 
 There are lots of different use cases for reduce as it is a very useful and multipurpose method. We have shown a few of them here. In the upcoming articles, we will challenge ourselves in some difficult examples around reduce and other ES6 array methods. Thanks for reading.

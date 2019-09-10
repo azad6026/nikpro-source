@@ -21,9 +21,9 @@ Here is the case. There is an object in the code and we want to add some arrays 
 
 This is our object with the array inside it:
 
-<span style="color: #3366ff;"><strong>var todoListObject = {</strong></span>  
-<span style="color: #3366ff;"><strong>    todoList : [&#8216;One&#8217;,&#8217;Two&#8217;,&#8217;Three&#8217;]</strong></span>  
-<span style="color: #3366ff;"><strong>};</strong></span>
+<span style="color: #3366ff;">var todoListObject = {</span>  
+<span style="color: #3366ff;">    todoList : [&#8216;One&#8217;,&#8217;Two&#8217;,&#8217;Three&#8217;]</span>  
+<span style="color: #3366ff;">};</span>
 
 Next step is to create a method inside the object that add a new value to the array. A method is basically a function. The important thing about methods is that we could use or manipulate the array for example using &#8220;this&#8221; keyword that refers to the object itself, here being todoListObject.
 

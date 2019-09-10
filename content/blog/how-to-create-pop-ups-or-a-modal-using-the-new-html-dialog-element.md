@@ -23,9 +23,9 @@ Finally we can use a new HTML tag called dialog element to create pop ups and mo
 
 Typically we can use dialog element to create modals and popups using Javascript to set the behaviour. Here is a simple dialog tag:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;dialog open>
+```<code>&lt;dialog open>
   &lt;p>A simple dialog box which is open by default!&lt;/p>
-&lt;/dialog></code></strong></pre>
+&lt;/dialog></code>```
 
 As the above example shows we have an open attribute in dialog element. The open attribute indicates that the dialog is active and available for user interaction.
 
@@ -42,7 +42,7 @@ Basically these are some specifications of the dialog box:
 
 Surprisingly we could create a simple popup using dialog tag with a short Javascript code:
 
-<pre class="wp-block-preformatted"><strong>&lt;dialog id="popup">
+```&lt;dialog id="popup">
   &lt;h1>I am a simple popup&lt;/h1>
 &lt;/dialog><br />&lt;button id="showPopup" onClick="showPopup()">show simple popup&lt;/button>
 
@@ -51,7 +51,7 @@ Surprisingly we could create a simple popup using dialog tag with a short Javasc
     const popup = document.getElementById('popup');
     popup.show();
  }
-&lt;/script></strong></pre>
+&lt;/script>```
 
 Using show method we now have a simple dialog box using pure HTML and Javascript.<figure class="wp-block-image">
 
@@ -63,7 +63,7 @@ However we need to use **showModal** method to create a modal box with dialog ta
 
 ****
 
-<pre class="wp-block-preformatted"><strong>&lt;dialog id="modal">
+```&lt;dialog id="modal">
   &lt;h1>I am a Modal&lt;/h1>
 &lt;/dialog><br />&lt;button id="showModal" onClick="showModal()">show simple popup&lt;/button>
 
@@ -72,13 +72,13 @@ However we need to use **showModal** method to create a modal box with dialog ta
     const modal = document.getElementById('modal');
     modal.showModal();
  }
-&lt;/script></strong></pre>
+&lt;/script>```
 
 ### Using dialog attribute in a form
 
 Greatly we are able to use an attribute called method=&#8221;dialog&#8221;  in our forms that are within a dialog elements. Specifying the attribute provides the contents of the **submit button&#8217;s `value` attribute** to the dialog element itself. 
 
-<pre class="wp-block-preformatted"><strong>&lt;dialog id="form">
+```&lt;dialog id="form">
   &lt;form method="dialog">
     &lt;p>Would you like to continue?&lt;/p>
     &lt;button type="submit" value="no">No&lt;/button>
@@ -91,7 +91,7 @@ form.addEventListener('close',  (event) => {
     if (dialog.returnValue === 'yes') { /* … */ }
   });<br />&lt;/script>
 
-</strong></pre>
+```
 
 I have created a pen to demonstrate them all. We can manipulate them. Add cancel button to close them as well.
 

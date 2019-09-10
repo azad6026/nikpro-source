@@ -20,7 +20,7 @@ Background-size property is a very useful property to adjust the image backgroun
 
 Basically we could use background-size property with one and two values and keywords:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>// Keyword values&lt;/strong></code> <code>&lt;strong>background-size: cover;&lt;/strong></code> <code>&lt;strong>background-size: contain;&lt;/strong></code><strong> // two values ( width and height ) using different size units </strong><code>&lt;strong>background-size: width height;&lt;/strong></code><strong> // One value ( Only weight, the height is auto) </strong><code>&lt;strong>background-size: width;&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code>&lt;strong>// Keyword values&lt;/strong></code> <code>&lt;strong>background-size: cover;&lt;/strong></code> <code>&lt;strong>background-size: contain;&lt;/strong></code> // two values ( width and height ) using different size units <code>&lt;strong>background-size: width height;&lt;/strong></code> // One value ( Only weight, the height is auto) <code>&lt;strong>background-size: width;&lt;/strong></code></pre>
 
 We can also have multiple backgrounds which we will seperate the values by coma. We can use any [CSS size units ](http://css-tricks.com/the-lengths-of-css/), including pixels, percentages, ems, viewport units, etc.:
 
@@ -40,7 +40,7 @@ Actually it sets the size of the image to what is needed. Whether it needs to re
 
 Using **cover** in the first example in the pen as the value we tell the browser to make sure that the **image should cover the container all the time.** Even if the browser is resized and it has to cut or stretch the image to fit it in:
 
-<pre class="wp-block-preformatted"><strong>.cover { 
+```.cover { 
   background-size: cover; 
 }
 
@@ -48,23 +48,23 @@ Using **cover** in the first example in the pen as the value we tell the browse
 
 .cover { 
   background-size: 100% auto; 
-}</strong></pre>
+}```
 
 ### contain
 
 On the other hand as the second example **contain **value will make sure that the whole image is always visible even if there are empty spaces around the edges of the image container:
 
-<pre class="wp-block-preformatted"><strong>.cover { </strong>
-<strong>  background-size: cover; </strong>
-<strong>}</strong></pre>
+```.cover { 
+  background-size: cover; 
+}```
 
 ### width and height
 
 To make it a bit complex in the third example we have two backgrounds with two different background-sizes. We use the cover value for the second one. But for the first one we use **width and height values:**
 
-<pre class="wp-block-preformatted"><strong>.multi {
+```.multi {
   background-size: 300px 100px, cover;
-}</strong></pre>
+}```
 
 Therefor the first image which is a semi-transparent white overlay sits on the top left over the second covered background.
 
@@ -72,9 +72,9 @@ Therefor the first image which is a semi-transparent white overlay sits on the t
 
 At times we might need to set only the width for the background. In this cas we height will be auto:
 
-<pre class="wp-block-preformatted"><strong>.one-value {
+```.one-value {
   background-size: 50%;
-}</strong></pre>
+}```
 
 So it depends on how we need the background behave inside the container we have the flexibility to change its sizing using the background-size property.
 

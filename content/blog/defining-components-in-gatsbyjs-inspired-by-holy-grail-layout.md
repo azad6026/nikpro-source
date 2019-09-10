@@ -31,7 +31,7 @@ No matter what you use to build a site, you will need a structure. And the most 
 
 Basically in the first glance we see our major components here:
 
-<pre ><strong>&lt;Layout>  
+<pre >&lt;Layout>  
     &lt;Header/>
     &lt;Content>
       &lt;Nav/>
@@ -39,7 +39,7 @@ Basically in the first glance we see our major components here:
       &lt;Sidebar/>
     &lt;/Content>
     &lt;Footer/>
-&lt;/Layout></strong></pre>
+&lt;/Layout>```
 
 As a result we named them capitalised just as [components in react](http://www.nikpro.com.au/more-on-react-components-with-examples/) to better understand the application. Layout is the main component of the application and Content includes the main content of the site. Including Navigation, Sidebar and Main.
 
@@ -53,35 +53,35 @@ Generally these are the building blocks of any web application. And understandin
 
 Preferably we will move navigation inside header as it is more suited there for most use cases. Most likely we will have a logo or brand on top of the application as well. As a result we will have a complete Header component like this:
 
-<pre ><strong>&lt;Header/>
+<pre >&lt;Header/>
     &lt;Brand>
     &lt;Nav/>
-&lt;Header/></strong></pre>
+&lt;Header/>```
 
 ### Main Content, main component tree
 
 Speaking of the main component always mean the man content. It could be built of a massive component tree that is hard to maintain. But a good structure never fails even if it looks complex. Our main component here is the Content component:
 
-<pre ><strong>   
+<pre >   
 &lt;Content>
     &lt;Main/>
     &lt;Sidebar/>
 &lt;/Content>
-</strong></pre>
+```
 
 Surely we could break it down to inner components as we build the structure. Usually the **Main component** is the main article or story in the website. Alternatively it could be the loop of your blog posts. Either way it is content and needs a structure of content:
 
-<pre ><strong>   
+<pre >   
 &lt;Main>
     &lt;Image/>
     &lt;Title/>
     &lt;Text/>
 &lt;/Main>
-</strong></pre>
+```
 
 Absolutely no surprise that everything including image is a component. This is how Gatsby structures the applications and it is how it should be. Links are also components in gatsby. We could extend our content further:
 
-<pre ><strong>   
+<pre >   
 &lt;Main>
     &lt;Image/>
     &lt;Title/>
@@ -94,7 +94,7 @@ Absolutely no surprise that everything including image is a component. This is h
         &lt;Paragraph/>
     &lt;/Article>
 &lt;/Main>
-</strong></pre>
+```
 
 <figure>
 <img src="/images/main-blocks.png" alt="Component blocks" /> 
@@ -103,18 +103,18 @@ Absolutely no surprise that everything including image is a component. This is h
 
 Therefore it goes on and on. But we know it is maintainable and easy to understand. And here is a simplified Image component in React:
 
-<pre ><strong>
+<pre >
 // Part of an Image component
 const Image = props => (
   &lt;img src={props.src} alt={props.alt}/>
 )
-</strong></pre>
+```
 
 Practically we use it like below. Simple but powerful:
 
-<pre ><strong>
+<pre >
 &lt;Image src="http://link.com" alt ="some text"/>
-</strong></pre>
+```
 
 And this is applicable for all other components as building blocks of the application.
 

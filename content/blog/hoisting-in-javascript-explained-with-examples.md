@@ -29,28 +29,28 @@ The reality is Javascript **puts the variable and function declaration into the 
 
 In the below example we declare the variable after using it and it works just as it should:
 
-<pre class="wp-block-preformatted"><strong>x = 5; // Assign 5 to x</strong><br /><br /><strong>elem = document.getElementById("demo"); // Find an element </strong><br /><strong>elem.innerHTML = x;                     // Display x in the element</strong><br /><br /><strong>var x; // Declare x</strong></pre>
+```x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;                     // Display x in the element<br /><br />var x; // Declare x```
 
 We normally might be doing it the other way around declaring variable first. However it gives us the same result:
 
-<pre class="wp-block-preformatted"><strong>var x; // Declare x</strong><br /><strong>x = 5; // Assign 5 to x</strong><br /><br /><strong>elem = document.getElementById("demo"); // Find an element </strong><br /><strong>elem.innerHTML = x;</strong>  </pre>
+```var x; // Declare x<br />x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;  </pre>
 
 ## Hoisting in function declaration
 
 It is actually great case of function declaration as we could call them before even declaring them:
 
-<pre class="wp-block-preformatted"><strong><code>catName("Chloe");
+```<code>catName("Chloe");
 
 function catName(name) {
   console.log("My cat's name is " + name);
 }
 /*
 The result of the code above is: "My cat's name is Chloe"
-*/</code></strong></pre>
+*/</code>```
 
 We called the catName function with its argument before declaring it. We usually take the below approach which has the same output:
 
-<pre class="wp-block-preformatted"><strong><code>function catName(name) {
+```<code>function catName(name) {
   console.log("My cat's name is " + name);
 }
 
@@ -58,25 +58,25 @@ catName("Tigger");
 
 /*
 The result of the code above is: "My cat's name is Tigger"
-*/</code></strong></pre>
+*/</code>```
 
 ## Hoisting in initialisation
 
 No. There is no hoisting for initialisation. So if you use a variable which is declared and initialised, you have to use it afterwards. This is no accepted:
 
-<pre class="wp-block-preformatted"><strong><code>console.log(num); // Returns undefined 
+```<code>console.log(num); // Returns undefined 
 var num;
-num = 6;&lt;br/></code></strong></pre>
+num = 6;&lt;br/></code>```
 
 However you can initialise variable and use it and then declare it:
 
-<pre class="wp-block-preformatted"><strong><code>num = 6;
+```<code>num = 6;
 console.log(num); // returns 6
-var num;</code></strong></pre>
+var num;</code>```
 
 Here is another example for initialisation:
 
-<pre class="wp-block-preformatted"><strong><code>var x = 1; // Initialize x
+```<code>var x = 1; // Initialize x
 console.log(x + " " + y); // '1 undefined'
 var y = 2; // Initialize y
 
@@ -84,7 +84,7 @@ var y = 2; // Initialize y
 var x = 1; // Initialize x
 var y; // Declare y
 console.log(x + " " + y); // '1 undefined'
-y = 2; // Initialize y</code></strong></pre>
+y = 2; // Initialize y</code>```
 
 ## Best practices
 

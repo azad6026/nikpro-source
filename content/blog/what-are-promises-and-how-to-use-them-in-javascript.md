@@ -22,24 +22,24 @@ A [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 This is the old way of using callback functions:
 
-`<strong>function successCallback(result) {</strong>`  
-`<strong>console.log("Audio file ready at URL: " + result);</strong>`  
-`<strong>}</strong>`
+`function successCallback(result) {`  
+`console.log("Audio file ready at URL: " + result);`  
+`}`
 
-`<strong>function failureCallback(error) {</strong>`  
-`<strong>console.log("Error generating audio file: " + error);</strong>`  
-`<strong>};</strong>`
+`function failureCallback(error) {`  
+`console.log("Error generating audio file: " + error);`  
+`};`
 
-`<strong>createAudioFileAsync(audioSettings, successCallback, failureCallback);</strong>`
+`createAudioFileAsync(audioSettings, successCallback, failureCallback);`
 
 Using a promise , we will do this instead:
 
-`<strong>const promise = createAudioFileAsync(audioSettings); </strong>`  
-`<strong>promise.then(successCallback, failureCallback);</strong>`
+`const promise = createAudioFileAsync(audioSettings); `  
+`promise.then(successCallback, failureCallback);`
 
 Which we can use the shorthand like this:
 
-`<strong>createAudioFileAsync(audioSettings).then(successCallback, failureCallback);</strong>`
+`createAudioFileAsync(audioSettings).then(successCallback, failureCallback);`
 
 This is **an _asynchronous function call_.** And ** then **returns the promise. We explain it with examples.
 
@@ -53,42 +53,42 @@ This is **an _asynchronous function call_.** And ** then **returns the prom
 
 To execute two or more asyncronous operations one after another, we could se promises as promise chain:
 
-`<strong>const promise2 = doSomething().then(successCallback, failureCallback);</strong>`
+`const promise2 = doSomething().then(successCallback, failureCallback);`
 
 This promise2 represents the completion of dosomething and also the callback functions succcessCallback and failureCallback. Each promise represents the completion of another asynchronous step in the chain.
 
 Doing several asynchronous operations was a pain beore:
 
-`<strong>doSomething(function(result) {</strong>`  
-`<strong>  doSomethingElse(result, function(newResult) {</strong>`  
-`<strong>    doThirdThing(newResult, function(finalResult) {</strong>`  
-`<strong>      console.log('Got the final result: ' + finalResult);</strong>`  
-`<strong>    }, failureCallback);</strong>`  
-`<strong>  }, failureCallback);</strong>`  
-`<strong>}, failureCallback);</strong>`
+`doSomething(function(result) {`  
+`  doSomethingElse(result, function(newResult) {`  
+`    doThirdThing(newResult, function(finalResult) {`  
+`      console.log('Got the final result: ' + finalResult);`  
+`    }, failureCallback);`  
+`  }, failureCallback);`  
+`}, failureCallback);`
 
 With promises , we attach the callbackes to the returned promises instead and build a promise chain:
 
-`<strong>doSomething().then(function(result) {</strong>`  
-`<strong>  return doSomethingElse(result);</strong>`  
-`<strong>})</strong>`  
-`<strong>.then(function(newResult) {</strong>`  
-`<strong>  return doThirdThing(newResult);</strong>`  
-`<strong>})</strong>`  
-`<strong>.then(function(finalResult) {</strong>`  
-`<strong>console.log('Got the final result: ' + finalResult);</strong>`  
-`<strong>})</strong>`  
-`<strong>.then(null, failureCallback).</strong>`
+`doSomething().then(function(result) {`  
+`  return doSomethingElse(result);`  
+`})`  
+`.then(function(newResult) {`  
+`  return doThirdThing(newResult);`  
+`})`  
+`.then(function(finalResult) {`  
+`console.log('Got the final result: ' + finalResult);`  
+`})`  
+`.then(null, failureCallback).`
 
 Using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in ES6 we can write the above example like this:
 
-`<strong>doSomething()</strong>`  
-`<strong>.then(result => doSomethingElse(result))</strong>`  
-`<strong>.then(newResult => doThirdThing(newResult))</strong>`  
-`<strong>.then(finalResult => {</strong>`  
-``<strong>  console.log(`Got the final result: ${finalResult}`);</strong>``  
-`<strong>})</strong>`  
-`<strong>.then(null, failureCallback); // we can write catch(failureCallback); in this line as a shorthand</strong>`
+`doSomething()`  
+`.then(result => doSomethingElse(result))`  
+`.then(newResult => doThirdThing(newResult))`  
+`.then(finalResult => {`  
+``  console.log(`Got the final result: ${finalResult}`);``  
+`})`  
+`.then(null, failureCallback); // we can write catch(failureCallback); in this line as a shorthand`
 
 Remember to always return a result otherwise callbacks will not catch the result of the previous promise. Now that we know how to use them n practice, we better define them.
 
@@ -98,25 +98,25 @@ Remember to always return a result otherwise callbacks will not catch the result
 
 The **`Promise`** object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.Essentially, a promise is a returned object you attach callbacks to, instead of passing callbacks into a function. This is the syntax to create a promise:
 
-`<strong>new Promise( /* executor */ function(resolve, reject) { ... } );</strong>`
+`new Promise( /* executor */ function(resolve, reject) { ... } );`
 
 This is and example of a simple promise:
 
-`<strong>const myFirstPromise = new Promise((resolve, reject) => {</strong>`  
-`<strong>  // do something asynchronous which eventually calls either:</strong>`  
-`<strong>  //</strong>`  
-`<strong>  // resolve(someValue); // fulfilled</strong>`  
-`<strong>  // or</strong>`  
-`<strong>  // reject("failure reason"); // rejected</strong>`  
-`<strong>});I </strong>`
+`const myFirstPromise = new Promise((resolve, reject) => {`  
+`  // do something asynchronous which eventually calls either:`  
+`  //`  
+`  // resolve(someValue); // fulfilled`  
+`  // or`  
+`  // reject("failure reason"); // rejected`  
+`});I `
 
 The promise constructor takes in one argument: a **callback** function with two parameters — **resolve** and **reject**. We then can use it as we learnt above:
 
-`<strong>promise.then(function(result) {</strong>`  
-`<strong>  console.log("Promise worked");</strong>`  
-`<strong>}, function(err) {</strong>`  
-`<strong>console.log("Something broke");</strong>`  
-`<strong>});</strong>`
+`promise.then(function(result) {`  
+`  console.log("Promise worked");`  
+`}, function(err) {`  
+`console.log("Something broke");`  
+`});`
 
 If promise was successful, a resolve will happen and the console will log Promise worked, otherwiseSomething broke.
 
@@ -124,42 +124,42 @@ If promise was successful, a resolve will happen and the console will log Promis
 
 We use an example to [connect to an API](http://www.nikpro.com.au/how-to-connect-to-an-api-with-javascript-in-a-real-app/) to explain it here:
 
-`<strong>const loadImage = url => {</strong>`  
-`<strong>   return new Promise(function(resolve, reject) {</strong>`
+`const loadImage = url => {`  
+`   return new Promise(function(resolve, reject) {`
 
-`<strong>     //Open a new XHR</strong>`  
-`<strong>     var request = new XMLHttpRequest();</strong>`  
-`<strong>     request.open('GET', url);</strong>`
+`     //Open a new XHR`  
+`     var request = new XMLHttpRequest();`  
+`     request.open('GET', url);`
 
-`<strong>     // When the request loads, check whether it was successful</strong>`  
-`<strong>     request.onload = function() {</strong>`  
-`<strong>       if (request.status === 200) {</strong>`  
-`<strong>      // If successful, resolve the promise</strong>`  
-`<strong>        resolve(request.response);</strong>`  
-`<strong>      } else {</strong>`  
-`<strong>       // Otherwise, reject the promise</strong>`  
-`<strong>       reject(Error('An error occurred while loading image. error code:' + request.statusText));</strong>`  
-`<strong>     }</strong>`  
-`<strong>   };</strong>`
+`     // When the request loads, check whether it was successful`  
+`     request.onload = function() {`  
+`       if (request.status === 200) {`  
+`      // If successful, resolve the promise`  
+`        resolve(request.response);`  
+`      } else {`  
+`       // Otherwise, reject the promise`  
+`       reject(Error('An error occurred while loading image. error code:' + request.statusText));`  
+`     }`  
+`   };`
 
-`<strong>     request.send();</strong>`  
-`<strong>  });</strong>`
+`     request.send();`  
+`  });`
 
-`<strong>};</strong>`
+`};`
 
 Once the image is successfully loaded, promise will resolve with the response from XHR. We now use this promise by calling the loadImage function:
 
-`<strong>const embedImage = url => {</strong>`  
-`<strong>  loadImage(url).then(function(result) {</strong>`  
-`<strong>    const img = new Image();</strong>`  
-`<strong>    var imageURL = window.URL.createObjectURL(result);</strong>`  
-`<strong>    img.src = imageURL;</strong>`  
-`<strong>    document.querySelector('body').appendChild(img);</strong>`  
-`<strong>  },</strong>`  
-`<strong>  function(err) {</strong>`  
-`<strong>    console.log(err);</strong>`  
-`<strong>  });</strong>`  
-`<strong>}</strong>`
+`const embedImage = url => {`  
+`  loadImage(url).then(function(result) {`  
+`    const img = new Image();`  
+`    var imageURL = window.URL.createObjectURL(result);`  
+`    img.src = imageURL;`  
+`    document.querySelector('body').appendChild(img);`  
+`  },`  
+`  function(err) {`  
+`    console.log(err);`  
+`  });`  
+`}`
 
 Here we use the promise to add the image to the DOM. Or if we failed to throw and error. 
 

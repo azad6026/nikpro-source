@@ -31,21 +31,21 @@ In the API documentation beside the films section you see the`GET /films`. It wi
 
 We will need to fetch data from this JSON file.  This is how it is done:
 
-`<strong>// Create a request variable and assign a new XMLHttpRequest object to it.</strong>`  
-`<strong>var request = new XMLHttpRequest();</strong>`
+`// Create a request variable and assign a new XMLHttpRequest object to it.`  
+`var request = new XMLHttpRequest();`
 
-`<strong>// Open a new connection, using the GET request on the URL endpoint, first argument: GET is our method to get data, second argument is the API url, third argument is to makeit asyncronous </strong>`  
-`<strong>request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);</strong>`
+`// Open a new connection, using the GET request on the URL endpoint, first argument: GET is our method to get data, second argument is the API url, third argument is to makeit asyncronous `  
+`request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);`
 
-`<strong>//Begin access data</strong>`
+`//Begin access data`
 
-`<strong>request.onload = function () {</strong>`  
-`<strong>// Begin accessing JSON data here</strong>`  
-`<strong>}</strong>`  
-`<strong>}</strong>`
+`request.onload = function () {`  
+`// Begin accessing JSON data here`  
+`}`  
+`}`
 
-`<strong>// Send request</strong>`  
-`<strong>request.send();</strong>`
+`// Send request`  
+`request.send();`
 
 ## Display the response
 
@@ -55,65 +55,65 @@ To display the data we need to make the front end first. We have a div with cont
 
 &nbsp;
 
-`<strong>// Get the div element inside HTML</strong>`
+`// Get the div element inside HTML`
 
-`<strong>const app = document.getElementById('root');</strong>`
+`const app = document.getElementById('root');`
 
-`<strong>// Add the logo and its source</strong>`
+`// Add the logo and its source`
 
-`<strong>const logo = document.createElement('img');</strong>`  
-`<strong>logo.src = '<a href="https://raw.githubusercontent.com/taniarascia/sandbox/master/ghibli/logo.png" target="_blank" rel="noopener noreferrer">logo.png</a>';</strong>`
+`const logo = document.createElement('img');`  
+`logo.src = '<a href="https://raw.githubusercontent.com/taniarascia/sandbox/master/ghibli/logo.png" target="_blank" rel="noopener noreferrer">logo.png</a>';`
 
-`<strong>// Create the film container and add its class</strong>`
+`// Create the film container and add its class`
 
-`<strong>const container = document.createElement('div');</strong>`  
-`<strong>container.setAttribute('class', 'container');</strong>`
+`const container = document.createElement('div');`  
+`container.setAttribute('class', 'container');`
 
-`<strong>// Append/ add them to the DOM</strong>`
+`// Append/ add them to the DOM`
 
-`<strong>app.appendChild(logo);</strong>`  
-`<strong>app.appendChild(container);</strong>`
+`app.appendChild(logo);`  
+`app.appendChild(container);`
 
 ### Access the data
 
 We begin accessing theJSON data then by parsing the information and fetching the individual movie information:
 
-`<strong><span class="token comment" spellcheck="true">// Begin accessing JSON data here</span> </strong>`
+`<span class="token comment" spellcheck="true">// Begin accessing JSON data here</span> `
 
-`<strong><span class="token keyword">var</span> data <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span></strong>`
+`<span class="token keyword">var</span> data <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
 Before looping through data we have an if staatement which checks if the API response is not empty (404) and if its server status is OK (200):
 
-`<strong><span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>status <span class="token operator">>=</span> <span class="token number">200</span> <span class="token operator">&&</span> request<span class="token punctuation">.</span>status <span class="token operator"><</span> <span class="token number">400</span><span class="token punctuation">)</span> </strong>`
+`<span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>status <span class="token operator">>=</span> <span class="token number">200</span> <span class="token operator">&&</span> request<span class="token punctuation">.</span>status <span class="token operator"><</span> <span class="token number">400</span><span class="token punctuation">)</span> `
 
 if this become false, it throws an error. But if all is good, we will have our movie data which we take care of. I have explained what each line does:
 
-`<strong>// Loop through each movie object ( using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a>)</strong>`
+`// Loop through each movie object ( using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a>)`
 
-`<strong>data.forEach(movie => {</strong>`
+`data.forEach(movie => {`
 
-`<strong>  // Create a div element as the container of each movie data and assign class card to it</strong>`  
-`<strong>  const card = document.createElement('div');</strong>`  
-`<strong>  card.setAttribute('class', 'card');</strong>`
+`  // Create a div element as the container of each movie data and assign class card to it`  
+`  const card = document.createElement('div');`  
+`  card.setAttribute('class', 'card');`
 
-`<strong>      // Create a h2 title for each movie and assign the title data to its textContent property </strong>`
+`      // Create a h2 title for each movie and assign the title data to its textContent property `
 
-`<strong>  const h1 = document.createElement('h1');</strong>`  
-`<strong>  h1.textContent = movie.title;</strong>`
+`  const h1 = document.createElement('h1');`  
+`  h1.textContent = movie.title;`
 
-`<strong>      // Create a p title for each movie and assign the description data to its textContent property. We use substring before             //assigning to force all descriptions to same same length</strong>`
+`      // Create a p title for each movie and assign the description data to its textContent property. We use substring before             //assigning to force all descriptions to same same length`
 
-`<strong>  const p = document.createElement('p');</strong>`  
-`<strong>  movie.description = movie.description.substring(0, 300);</strong>`  
-``<strong>  p.textContent = `${movie.description}...`;</strong>``
+`  const p = document.createElement('p');`  
+`  movie.description = movie.description.substring(0, 300);`  
+``  p.textContent = `${movie.description}...`;``
 
-`<strong>   // And we append them all to the DOM</strong>`
+`   // And we append them all to the DOM`
 
-`<strong>  container.appendChild(card);</strong>`  
-`<strong>  card.appendChild(h1);</strong>`  
-`<strong>  card.appendChild(p);</strong>`  
-`<strong>  });</strong>`  
-`<strong>}</strong>`
+`  container.appendChild(card);`  
+`  card.appendChild(h1);`  
+`  card.appendChild(p);`  
+`  });`  
+`}`
 
 And it is done.We have connected to the API via Javascript using GET request method and modified the DOM with the response information.
 

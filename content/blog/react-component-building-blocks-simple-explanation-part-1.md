@@ -21,11 +21,11 @@ tags:
 
 It is easy and beautifully organised in code how you create a React component:
 
-<pre class="wp-block-preformatted"><strong>import React from 'react';</strong><br /><strong>class MyComponent extends React.Component {</strong><br /><strong>  render () {</strong><br /><strong>    return &lt;div> This is a component &lt;/div></strong><br /><strong>  }</strong><br /><strong>}</strong><br /></pre>
+```import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return &lt;div> This is a component &lt;/div><br />  }<br />}<br /></pre>
 
 And as you might have guessed it is also easy to use it in our application as many times as we need just like this:
 
-<pre class="wp-block-preformatted"><strong>&lt;MyComponent /></strong><br /></pre>
+```&lt;MyComponent /><br /></pre>
 
 As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and Javascript knowledge and creates amazing user interfaces.
 
@@ -33,7 +33,7 @@ As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and 
 
 The great thing is you could use your own custom React component inside another component and make complex logic interface:
 
-<pre class="wp-block-preformatted"><strong>import React from 'react';</strong><br /><strong>class MyComponent extends React.Component {</strong><br /><strong>  render () {</strong><br /><strong>    return &lt;div> This is a component &lt;/div></strong><br /><strong>  }</strong><br /><strong>}</strong><br /><strong>class MyOtherComponent extends React.Component {</strong><br /><strong>  render () {</strong><br /><strong>    return (</strong><br /><strong>      &lt;div></strong><br /><strong>        &lt;MyComponent /></strong><br /><strong>      &lt;/div></strong><br /><strong>    )</strong><br /><strong>  }</strong><br /><strong>}</strong></pre>
+```import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return &lt;div> This is a component &lt;/div><br />  }<br />}<br />class MyOtherComponent extends React.Component {<br />  render () {<br />    return (<br />      &lt;div><br />        &lt;MyComponent /><br />      &lt;/div><br />    )<br />  }<br />}```
 
 Besides it makes the code more maintainable and of course readable at the end.
 
@@ -43,11 +43,11 @@ Props are options that can be passed to a component to customise its functionali
 
 For example, I have a heading component which renders a heading with subtitle:
 
-<pre class="wp-block-preformatted"><strong>class MyHeading extends React.Component {</strong><br /><strong>  render () {</strong><br /><strong>    return &lt;div></strong><br /><strong>      &lt;h1>{this.props.heading}&lt;/h1></strong><br /><strong>      &lt;p>{this.props.subtitle}&lt;/p> </strong><br /><strong>    &lt;/div></strong><br /><strong>  }</strong><br /><strong>}</strong></pre>
+```class MyHeading extends React.Component {<br />  render () {<br />    return &lt;div><br />      &lt;h1>{this.props.heading}&lt;/h1><br />      &lt;p>{this.props.subtitle}&lt;/p> <br />    &lt;/div><br />  }<br />}```
 
 I can now use this component using its props which are actually the properties and can be setup just like HTML attributes:
 
-<pre class="wp-block-preformatted"><strong>&lt;MyHeading heading="Whoo! this is awesome" subtitle="And this is a subtitle" /></strong><br /><strong>&lt;MyHeading heading="Whoo! this is More awesome" subtitle="And this is second subtitle" /></strong></pre>
+```&lt;MyHeading heading="Whoo! this is awesome" subtitle="And this is a subtitle" /><br />&lt;MyHeading heading="Whoo! this is More awesome" subtitle="And this is second subtitle" />```
 
 As you can see it is reusable and easy to read. You can pass anything in your heading and subtitle and it will be rendered inside you **MyHeading **component. And they are accessible by using **this.props** inside the component. Whatever prop you define on your component you can access them as **this.props.whateverNameYouGivenToYourProp. **
 
@@ -55,7 +55,7 @@ As you can see it is reusable and easy to read. You can pass anything in your h
 
 State is unique to the component. Every component has it’s own **State **where it store & retrieve data from. This is an example:
 
-<pre class="wp-block-preformatted"><strong>import React from 'react';</strong><br /><strong>class MyComponent extends React.Component {</strong><br />  <br /><strong>  constructor(props) {</strong><br /><strong>    super(props);</strong><br /><strong>    this.state = {</strong><br /><strong>      name: "Harry"</strong><br /><strong>    };</strong><br /><strong>  }</strong><br /><strong>  render () {</strong><br /><strong>    return &lt;div> My name is {this.state.name} &lt;/div></strong><br /><strong>  }</strong><br /><strong>}</strong></pre>
+```import React from 'react';<br />class MyComponent extends React.Component {<br />  <br />  constructor(props) {<br />    super(props);<br />    this.state = {<br />      name: "Harry"<br />    };<br />  }<br />  render () {<br />    return &lt;div> My name is {this.state.name} &lt;/div><br />  }<br />}```
 
 The output for this component will be: **My name is Harry.**
 

@@ -18,9 +18,9 @@ CSS transition property has changed [CSS animation](http://www.nikpro.com.au/how
 
 Css transitions are just like simpler animations. They move from one fixed set of properties to another. The shorthand for transition is like this:
 
-`<strong>.move-me {</strong>`  
-`<strong>  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];</strong>`  
-`<strong>}</strong>`
+`.move-me {`  
+`  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];`  
+`}`
 
 And you don&#8217;t have to use all the values. You just need to setup the duration and that will create animation for all the attached property to the related element. Check this example:
 
@@ -34,17 +34,17 @@ And you don&#8217;t have to use all the values. You just need to setup the durat
 
 In the CSS we are changing the background colour and width on hover effect:
 
-`<strong>.box {</strong>`  
-`<strong>  width: 150px;</strong>`  
-`<strong>  height: 150px;</strong>`  
-`<strong>  background-color: red;</strong>`  
-`<strong>  transition: 1s;</strong>`  
-`<strong>}</strong>`
+`.box {`  
+`  width: 150px;`  
+`  height: 150px;`  
+`  background-color: red;`  
+`  transition: 1s;`  
+`}`
 
-`<strong>.box:hover {</strong>`  
-`<strong>  width: 300px;</strong>`  
-`<strong>  background-color: orange;</strong>`  
-`<strong>}</strong>`
+`.box:hover {`  
+`  width: 300px;`  
+`  background-color: orange;`  
+`}`
 
 And as you can see, the transition is set to : 1s meaning it takes one second to complete the animation and it tells the box to transition both width and background-color on hover in that time.
 
@@ -76,13 +76,13 @@ WE make things a little bit complicated by adding multiple steps in the transiti
 
 
 
-`<strong>.box {</strong>`  
-`<strong>  transition: </strong>`  
-`<strong>  /* step 1 */</strong>`  
-`<strong>  width 1s,</strong>`  
-`<strong>  /* step 2 */</strong>`  
-`<strong>  background 0.5s 1s;</strong>`  
-`<strong>}</strong>`
+`.box {`  
+`  transition: `  
+`  /* step 1 */`  
+`  width 1s,`  
+`  /* step 2 */`  
+`  background 0.5s 1s;`  
+`}`
 
 Now we will make it fancier by transitioning text and width and background-color one another:
 
@@ -92,62 +92,62 @@ Now we will make it fancier by transitioning text and width and background-color
 
 
 
-`<strong>/* Our box element */</strong>`  
-`<strong>.box {</strong>`  
-`<strong>  width: 150px;</strong>`  
-`<strong>  height: 150px;</strong>`  
-`<strong>  background-color: red;</strong>`  
-`<strong>  box-shadow: 5px 5px 25px #000;</strong>`  
-`<strong>  transition: all 1s;</strong>`  
-`<strong>}</strong>`
+`/* Our box element */`  
+`.box {`  
+`  width: 150px;`  
+`  height: 150px;`  
+`  background-color: red;`  
+`  box-shadow: 5px 5px 25px #000;`  
+`  transition: all 1s;`  
+`}`
 
-`<strong>/* On hover... */</strong>`  
-`<strong>.box:hover {</strong>`  
-`<strong>  /* Increase width */</strong>`  
-`<strong>  width: 300px;</strong>`  
-`<strong>  /* Change color */</strong>`  
-`<strong>  background-color: orange;</strong>`  
-`<strong>  /* Move the shadow */</strong>`  
-`<strong>  box-shadow: -5px 5px 25px #000;</strong>`  
-`<strong>}</strong>`
+`/* On hover... */`  
+`.box:hover {`  
+`  /* Increase width */`  
+`  width: 300px;`  
+`  /* Change color */`  
+`  background-color: orange;`  
+`  /* Move the shadow */`  
+`  box-shadow: -5px 5px 25px #000;`  
+`}`
 
-`<strong>/* The first line of text */</strong>`  
-`<strong>.box__blurb {</strong>`  
-`<strong>  /* Start with full opacity and centered */</strong>`  
-`<strong>  opacity: 1;</strong>`  
-`<strong>  transform: translateX(45px);</strong>`  
-`<strong>  /* Then transition these chained properties */</strong>`  
-`<strong>  transition:</strong>`  
-`<strong>  opacity 0.5s 2s,</strong>`  
-`<strong>  transform 0.5s 0.5s;</strong>`  
-`<strong>}</strong>`
+`/* The first line of text */`  
+`.box__blurb {`  
+`  /* Start with full opacity and centered */`  
+`  opacity: 1;`  
+`  transform: translateX(45px);`  
+`  /* Then transition these chained properties */`  
+`  transition:`  
+`  opacity 0.5s 2s,`  
+`  transform 0.5s 0.5s;`  
+`}`
 
-`<strong>/* On .box hover... */</strong>`  
-`<strong>.box:hover .box__blurb {</strong>`  
-`<strong>  /* Fade out */</strong>`  
-`<strong>  opacity: 0;</strong>`  
-`<strong>  /* Move over to the right */</strong>`  
-`<strong>  transform: translateX(-500px);</strong>`  
-`<strong>}</strong>`
+`/* On .box hover... */`  
+`.box:hover .box__blurb {`  
+`  /* Fade out */`  
+`  opacity: 0;`  
+`  /* Move over to the right */`  
+`  transform: translateX(-500px);`  
+`}`
 
-`<strong>/* The second line of text */</strong>`  
-`<strong>.rect__blurb {</strong>`  
-`<strong>  /* Start with no opacity and pushed off the element */</strong>`  
-`<strong>  opacity: 0;</strong>`  
-`<strong>  transform: translateX(500px);</strong>`  
-`<strong>  /* Then transition these chained properties */</strong>`  
-`<strong>  transition: </strong>`  
-`<strong>  opacity 0.5s 1s,</strong>`  
-`<strong>  transform 0.5s 1s;</strong>`  
-`<strong>}</strong>`
+`/* The second line of text */`  
+`.rect__blurb {`  
+`  /* Start with no opacity and pushed off the element */`  
+`  opacity: 0;`  
+`  transform: translateX(500px);`  
+`  /* Then transition these chained properties */`  
+`  transition: `  
+`  opacity 0.5s 1s,`  
+`  transform 0.5s 1s;`  
+`}`
 
-`<strong>/* On .box hover... */</strong>`  
-`<strong>.box:hover .rect__blurb {</strong>`  
-`<strong>  /* Face in */</strong>`  
-`<strong>  opacity: 1;</strong>`  
-`<strong>  /* While entering from the right */</strong>`  
-`<strong>  transform: translateX(-100px);</strong>`  
-`<strong>}</strong>`
+`/* On .box hover... */`  
+`.box:hover .rect__blurb {`  
+`  /* Face in */`  
+`  opacity: 1;`  
+`  /* While entering from the right */`  
+`  transform: translateX(-100px);`  
+`}`
 
 This is what is happenning in the code:
 

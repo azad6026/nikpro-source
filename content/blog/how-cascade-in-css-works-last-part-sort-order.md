@@ -38,13 +38,13 @@ Generally **based on the above order** I mentioned them they overwrite the style
 
 Technically we will have cases like this which we normally do not recognise as we are busy writing styles. But in reality these styles exist:
 
-<pre class="wp-block-preformatted"><strong>User-agent CSS:</strong><br /><code>li { padding: 10px }</code><br /><strong>Author CSS 1:</strong><br /><code>li { padding: 0 } /* This is like a reset */</code><br /><strong>Author CSS 2:</strong><br /><code>@media screen {
+```User-agent CSS:<br /><code>li { padding: 10px }</code><br />Author CSS 1:<br /><code>li { padding: 0 } /* This is like a reset */</code><br />Author CSS 2:<br /><code>@media screen {
   li { &lt;code>padding</code>: 3px }
 }
 
 @media print {
   li { <code>padding</code>: 1px }
-}&lt;/code><br /><strong>User CSS:</strong><br /><code>.specific { &lt;code>padding</code>: 1em }<br />&lt;/code><br /><strong>HTML:</strong><br /><code>&lt;ul>
+}&lt;/code><br />User CSS:<br /><code>.specific { &lt;code>padding</code>: 1em }<br />&lt;/code><br />HTML:<br /><code>&lt;ul>
   &lt;li class="specific">1&lt;sup>st&lt;/sup>&lt;/li>
   &lt;li>2&lt;sup>nd&lt;/sup>&lt;/li>
 &lt;/ul></code></pre>
@@ -53,7 +53,7 @@ Firstly based on specificity [rules](http://www.nikpro.com.au/how-cascade-in-css
 
 Therefor we have these three styles to win:
 
-<pre class="wp-block-preformatted"><strong><code>margin-left: 0&lt;br/></code></strong><br /><strong><code>margin-left: 3px&lt;br/></code></strong><br /><strong><code>margin-left: 1px</code></strong></pre>
+```<code>margin-left: 0&lt;br/></code><br /><code>margin-left: 3px&lt;br/></code><br /><code>margin-left: 1px</code>```
 
 As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.<figure class="wp-block-image">
 
@@ -63,7 +63,7 @@ As we have the second style specifying the media on screen the last style is ign
 
 Practically in CSS once all the style for one element in different stylesheets will apply to that property. Then based on importance and specificity and sort order the winner style remains for the element or actually will apply:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;p>I'm &lt;strong>bold&lt;/strong>&lt;/p>&lt;br/></code></strong><br /><strong><code>/* higher specificity */
+```<code>&lt;p>I'm &lt;strong>bold&lt;/strong>&lt;/p>&lt;br/></code><br /><code>/* higher specificity */
 p strong {
   background-color: khaki;
   color: green;
@@ -73,7 +73,7 @@ p strong {
 strong {
   text-decoration: underline;
   color: red;
-}</code></strong></pre>
+}</code>```
 
 Although the first rule has a higher specificity but the strong tag will have an underline as well which comes from the second rule. Also it will be bold as the user-agents have a default bold style for strong tag. See the pen <a href="https://codepen.io/pen/" target="_blank" rel="noopener noreferrer">here</a>. 
 
@@ -94,12 +94,12 @@ There are four values for specifying inheritance on the supported properties:
 
 #### Inheritance example
 
-<pre class="wp-block-preformatted"><strong><code>&lt;ul>
+```<code>&lt;ul>
   &lt;li>Default &lt;a href="#">link&lt;/a> color&lt;/li>
   &lt;li class="my-class-1">Inherit the &lt;a href="#">link&lt;/a> color&lt;/li>
   &lt;li class="my-class-2">Reset the &lt;a href="#">link&lt;/a> color&lt;/li>
   &lt;li class="my-class-3">Unset the &lt;a href="#">link&lt;/a> color&lt;/li>
-&lt;/ul>&lt;br/>&lt;br/>// And the CSS&lt;br/></code></strong><br /><strong><code>body {
+&lt;/ul>&lt;br/>&lt;br/>// And the CSS&lt;br/></code><br /><code>body {
   color: green;
 }
 
@@ -113,7 +113,7 @@ There are four values for specifying inheritance on the supported properties:
 
 .my-class-3 a {
   color: unset;
-}</code></strong></pre>
+}</code>```
 
 According to styles the first link will have natural inheritance which should be green but browsers set the colour of links to blue by default instead of allowing the natural inheritance of the color property the browser link colour which is naturally blue. 
 

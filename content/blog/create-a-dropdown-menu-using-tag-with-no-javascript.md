@@ -22,13 +22,13 @@ Did you know we could create a dropdown menu using only [HTML5 tag](http://www.n
 
 According to <a rel="noreferrer noopener" aria-label="MDN (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">MDN</a> :
 
-> The&nbsp;<strong>HTML Details Element (<code>&lt;details&gt;</code>)</strong>&nbsp;creates a disclosure widget in which information is visible only when the widget is toggled into an &#8220;open&#8221; state.&nbsp;A summary or label can be provided using the&nbsp;<a rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"><code>&lt;summary&gt;</code></a>&nbsp;element.
+> The&nbsp;HTML Details Element (<code>&lt;details&gt;</code>)&nbsp;creates a disclosure widget in which information is visible only when the widget is toggled into an &#8220;open&#8221; state.&nbsp;A summary or label can be provided using the&nbsp;<a rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"><code>&lt;summary&gt;</code></a>&nbsp;element.
 
 This is a simple semantic of how it looks like:
 
-<pre class="wp-block-preformatted"><strong>
+```
 &lt;details&gt;<br /> &nbsp; &nbsp; &lt;summary&gt;System Requirements&lt;/summary&gt;<br /> &nbsp; &nbsp; Something small enough to escape casual notice.<br /> &lt;/details&gt; 
-</strong></pre>
+```
 
 Basically the details tag always comes with summary tag as a label. If you remove summary, the &#8220;Details&#8221; text will be shown instead. Also we will see a triangle as a symbol of a disclosure widget which can be open and close.
 

@@ -20,24 +20,24 @@ Of course using if else statement has been around for ages. We can always use th
 
 Firstly have a look at this example with if/else statement:
 
-<pre class="wp-block-preformatted"><strong>const MyComponent = ({ name }) => {</strong><br /><strong>  if (name) {</strong><br /><strong>    return (</strong><br /><strong>      &lt;div className="hello"></strong><br /><strong>        Hello {name}</strong><br /><strong>      &lt;/div></strong><br /><strong>    );</strong><br /><strong>  }</strong><br /><strong>  return (</strong><br /><strong>    &lt;div className="hello"></strong><br /><strong>      Please sign in</strong><br /><strong>    &lt;/div></strong><br /><strong>  );</strong><br /><strong>};</strong></pre>
+```const MyComponent = ({ name }) => {<br />  if (name) {<br />    return (<br />      &lt;div className="hello"><br />        Hello {name}<br />      &lt;/div><br />    );<br />  }<br />  return (<br />    &lt;div className="hello"><br />      Please sign in<br />    &lt;/div><br />  );<br />};```
 
 In [this functional](http://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component of a form we simply return the name if it exists of we ask the user to put in the name. However if we use the ternary [operator](http://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) in React we make it look cleaner and neater just like this:
 
-<pre class="wp-block-preformatted"><strong>const MyComponent = ({ name }) => (</strong><br /><strong>  &lt;div className="hello"></strong><br /><strong>    {name ? `Hello ${name}` : 'Please sign in'}</strong><br /><strong>  &lt;/div></strong><br /><strong>);</strong></pre>
+```const MyComponent = ({ name }) => (<br />  &lt;div className="hello"><br />    {name ? `Hello ${name}` : 'Please sign in'}<br />  &lt;/div><br />);```
 
 All the if/else statement has become just one statement with the same result as above.  
 
 In addition have a look at these examples of using ternary operator in Rect site itself:
 
-<pre class="wp-block-preformatted"><strong><code>render() {
+```<code>render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     &lt;div>
       The user is &lt;b>{isLoggedIn ? 'currently' : 'not'}&lt;/b> logged in.
     &lt;/div>
   );
-}&lt;br/></code></strong></pre>
+}&lt;br/></code>```
 
 Conditionally we are using state to check if the user is logged in in a class component. Using ternary operator in React makes it super easy and quick to obtain the result. 
 
@@ -45,8 +45,8 @@ Conditionally we are using state to check if the user is logged in in a class co
 
 We could use ternary operator In JSX code. To render some JSX code conditionally we could do this as needed:
 
-<pre class="wp-block-preformatted"><strong><code>render() {
-  const isLoggedIn = this.state</code></strong><code>.</code><strong><code>isLoggedIn;
+```<code>render() {
+  const isLoggedIn = this.state</code><code>.</code><code>isLoggedIn;
   return (
     &lt;div>
       {isLoggedIn ? (
@@ -55,7 +55,7 @@ We could use ternary operator In JSX code. To render some JSX code conditionally
         &lt;LoginButton onClick={this.handleLoginClick} />
       )}
     &lt;/div>
- </code></strong><code> );
-}</code><strong><code>&lt;br/></code></strong></pre>
+ </code><code> );
+}</code><code>&lt;br/></code>```
 
 Remember it is best to use ternary opertor in short JSX code for having a clear and maintainable code. Thanks for reading. 

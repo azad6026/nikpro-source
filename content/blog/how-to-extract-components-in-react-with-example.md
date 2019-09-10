@@ -28,7 +28,7 @@ Whatever other reasons could be yours to do the extraction. Lets have a look at 
 
 I am using React site&#8217;s example as it is the best and clearest. Imagine a functional comment component we have:
 
-<pre class="wp-block-preformatted"><strong><code>function Comment(props) {
+```<code>function Comment(props) {
   return (
     &lt;div className="Comment">
       &lt;div className="UserInfo">
@@ -48,28 +48,28 @@ I am using React site&#8217;s example as it is the best and clearest. Imagine a 
       &lt;/div>
     &lt;/div>
   );
-}</code></strong></pre>
+}</code>```
 
 It accepts **`author`** which is an object itself. **A`text`** that is a string, and **`date`** (a date) as props, and describes a comment on a social media website.
 
 It is hard to use parts of this component as reusable parts. However doing extraction will make it easier and neater. First we can extract an **Avatar component** as a separate function component:
 
-<pre class="wp-block-preformatted"><strong><code>function Avatar(props) {
+```<code>function Avatar(props) {
   return (
     &lt;img className="Avatar"
       src={props.user.avatarUrl}
       alt={props.user.name}
     />
   );
-}</code></strong></pre>
+}</code>```
 
 It is recommended naming props from the component’s own point of view rather than the context in which it is being used. This is why we have given its prop a more generic name: **`user`** rather than **`author`**. Then we can use Avatar component just like this:
 
-<pre class="wp-block-preformatted"><strong>&lt;Avatar user={props.author} /></strong></pre>
+```&lt;Avatar user={props.author} />```
 
 Now we can extract components again by extracting a UserInfo component. therefor it will look like this:
 
-<pre class="wp-block-preformatted"><strong><code>unction UserInfo(props) {
+```<code>unction UserInfo(props) {
   return (
     &lt;div className="UserInfo">
       &lt;Avatar user={props.user} />
@@ -78,13 +78,13 @@ Now we can extract components again by extracting a UserInfo component. therefor
       &lt;/div>
     &lt;/div>
   );
-}</code></strong></pre>
+}</code>```
 
 As you can see we use Avatar here to render the user&#8217;s name and completing the UserInfo component by having all user(here author ) information in one place. Meaning one component.
 
 After all the comment component will look like a simpler and easy to read component:
 
-<pre class="wp-block-preformatted"><strong><code>function Comment(props) {
+```<code>function Comment(props) {
   return (
     &lt;div className="Comment">
       &lt;UserInfo user={props.author} />
@@ -96,6 +96,6 @@ After all the comment component will look like a simpler and easy to read compon
       &lt;/div>
     &lt;/div>
   );
-}</code></strong></pre>
+}</code>```
 
 As a result if a part of your UI is used multiple times like using Buttons , Avatar, or is complex enough on its own Like comment, post or App, it is a good practice extract components and make them reusable and easier to manage components. Thanks for reading.

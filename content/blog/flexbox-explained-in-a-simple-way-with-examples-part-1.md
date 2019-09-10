@@ -18,7 +18,7 @@ First we need to know about Flexbox container properties and then its immediate 
 
 To set up the parent container as Flexbox just add display property like this:
 
-<pre class="wp-block-preformatted"><strong>
+```
   .flex-container{
     display: -webkit-flex; /* Safari */
     display: flex;
@@ -27,48 +27,48 @@ To set up the parent container as Flexbox just add display property like this:
     display: -webkit-inline-flex; /* Safari */
     display: inline-flex;
   }
-</strong></pre>
+```
   All children of the container automatically become flex-items. Now we explain each parent property and we will see them in an example:
 
 
 ## flex-direction {#flex-direction}
 
   It specifies how flex items are laid out in the parent container.They can be laid out in two main directions, like rows horizontally or like columns vertically.
-<pre class="wp-block-preformatted"><strong>
-  <strong>.flex-container {</strong><br /> <strong>   flex-direction: row | row-reverse | column | column-reverse;</strong><br /> <strong>} </strong>
-</strong></pre>
+```
+  .flex-container {<br />    flex-direction: row | row-reverse | column | column-reverse;<br /> } 
+```
 ## flex-wrap {#flex-wrap}
 
 The initial flexbox concept is the container to set its items in one single line. The flex-wrap property controls if the flex container lay out its items in single or multiple lines, and the direction the new lines are stacked in.
-<pre class="wp-block-preformatted"><strong>
+```
 .flex-container {
     flex-wrap: nowrap | wrap | wrap-reverse;
 } 
-</strong></pre>
+```
 ## flex-flow {#flex-flow}
 
 This property is a shorthand for setting the flex-direction and flex-wrap properties.
-<pre class="wp-block-preformatted"><strong>
+```
 .flex-container { 
     flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 } 
-</strong></pre>
+```
 ## justify-content {#justify-content}
 
 The justify-content property aligns flex items along the main axis of the current line of the flex container. It helps distribute left free space when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.
-<pre class="wp-block-preformatted"><strong>
+```
 .flex-container {  
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 } 
-</strong></pre>
+```
 ## <a id="align-items"></a>align-items {#align-items}
 
 Flex items can be aligned in the cross axis of the current line of the flex container, similar to `justify-content` but in the perpendicular direction. This property sets the default alignment for all flex items, including the anonymous ones.
-<pre class="wp-block-preformatted"><strong>
+```
 .flex-container {
   <span class="token property">align-items</span><span class="token punctuation">:</span> flex-start | flex-end | center | baseline | stretch<span class="token punctuation">;</span>
 } 
-</strong></pre>
+```
 See these three examples of how to change the layout using these properties.
 
 <p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="JZByeO" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="Flexbox Example 1">
@@ -78,11 +78,11 @@ See these three examples of how to change the layout using these properties.
 ## align-content {#align-content}
 
 The align-content property aligns a flex container’s lines within the flex container when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
-<pre class="wp-block-preformatted"><strong>
+```
 .flex-container {  
    <span class="token property">align-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around | stretch<span class="token punctuation">;</span>  
 } 
-</strong></pre>
+```
 You can play around with flex items in this playground by Dimitar on CodePen. Cahnge the properties of parent by clicking on the radio buttons
 
 <p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yydezN" data-default-tab="html,result" data-user="justd" data-embed-version="2" data-pen-title="Flexbox Properties Demonstration">

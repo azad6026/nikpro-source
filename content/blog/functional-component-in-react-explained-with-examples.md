@@ -32,17 +32,17 @@ Practically a functional component is to build small chunks of code that are reu
 
 Basically functional components are just React components that aren’t created as their own separate class. They look like this:
 
-<pre class="wp-block-preformatted"><strong><em>// Class component<br /></em>class Parent extends React.Component {<br /> render () {<br />  return(<br />   &lt;Child bg<em>Color</em>={'blue'} /><br />  )<br /> }<br />}<br /><em>// Functional component<br /></em>const Child = () => {<br />  return (<br />    &lt;div>&lt;/div><br />  )<br />}</strong></pre>
+```<em>// Class component<br /></em>class Parent extends React.Component {<br /> render () {<br />  return(<br />   &lt;Child bg<em>Color</em>={'blue'} /><br />  )<br /> }<br />}<br /><em>// Functional component<br /></em>const Child = () => {<br />  return (<br />    &lt;div>&lt;/div><br />  )<br />}```
 
 However to get access to the props via the functional component in React you should pass it in the function arguments. 
 
 Thankfully there is no nee to use the this keyword here. Because it is not a class component:
 
-<pre class="wp-block-preformatted"><strong>const Child = (props) => {</strong><br /><strong>  return (</strong><br /><strong>    &lt;div style={{backgroundColor: props.bgColor}} /></strong><br /><strong>  )</strong><br /><strong>}</strong></pre>
+```const Child = (props) => {<br />  return (<br />    &lt;div style={{backgroundColor: props.bgColor}} /><br />  )<br />}```
 
 A stateless component(or dumb) is just presentation of the state(props). It only can render props and it should only do that. A good example is a button component: 
 
-<pre class="wp-block-preformatted"><strong>const Button = props => (</strong><br /><strong>   &lt;button className="our_button" onClick={props.onClick}></strong><br /><strong>      {props.label}</strong><br /><strong>   &lt;/button></strong><br /><strong>);</strong></pre>
+```const Button = props => (<br />   &lt;button className="our_button" onClick={props.onClick}><br />      {props.label}<br />   &lt;/button><br />);```
 
 Hence here you don&#8217;t need state. Because component creates a button and styles it and adds a click handler which we get its onClick method from the stateful component via props.
 
@@ -50,7 +50,7 @@ Hence here you don&#8217;t need state. Because component creates a button and st
 
 Moreover this is another example of a parent class component and a child functional component in React. Although parent could use the createClass function or be extended from Component in React which is more modern :
 
-<pre class="wp-block-preformatted"><strong><code>const Username = React.createClass({
+```<code>const Username = React.createClass({
   render() {
     return &lt;p>The logged in user is: {this.props.username}&lt;/p>;
   },
@@ -60,16 +60,16 @@ class Username extends React.Component {
   render() {
     return &lt;p>The logged in user is: {this.props.username}&lt;/p>;
   }
-}</code></strong></pre>
+}</code>```
 
 As an example wee could get the username via props in our functional component:
 
-<pre class="wp-block-preformatted"><strong><code>const Username = function(props) {
+```<code>const Username = function(props) {
   return &lt;p>The logged in user is: {props.username}&lt;/p>;
-};</code></strong></pre>
+};</code>```
 
 Alternatively which is a better way we could [use destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) in our function
 
-<pre class="wp-block-preformatted"><strong><code>const Username = ({ username }) => &lt;p>The logged in user is: {username}&lt;/p>;</code></strong></pre>
+```<code>const Username = ({ username }) => &lt;p>The logged in user is: {username}&lt;/p>;</code>```
 
 Therefor it looks much more cleaner and neater. Functional components have better performance than a class component. The only time you need to use a class component is if state is needed . Otherwise a functional component is the best option in any other case. Thanks for reading.

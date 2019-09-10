@@ -21,8 +21,8 @@ As it states in React docs a React element is the smallest [building block](http
 
 This is a simple example of how to render a simple React element into the root of the DOM:
 
-<pre class="wp-block-preformatted"><strong><code>const element = &lt;h1>Hello, world&lt;/h1>;
-ReactDOM.render(element, document.getElementById('root'));</code></strong></pre>
+```<code>const element = &lt;h1>Hello, world&lt;/h1>;
+ReactDOM.render(element, document.getElementById('root'));</code>```
 
 The element is actually a HTML code that could be considered as our view which will be rendered into our DOM. In this example we render the element into the HTML tag that have root id.
 
@@ -30,15 +30,15 @@ The element is actually a HTML code that could be considered as our view which w
 
 **An element is a plain object _describing_ a component instance or DOM node and its desired properties.** It contains only information about the component type (for example, a `Button`), its properties (for example, its `color`), and any child elements inside it. Thi is stated in the React blog. Take a look at this example:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;button class='button button-blue'>
+```<code>&lt;button class='button button-blue'>
   &lt;b>
     OK!
   &lt;/b>
-&lt;/button></code></strong></pre>
+&lt;/button></code>```
 
 This is a DOM element that will be rendered as this in React:
 
-<pre class="wp-block-preformatted"><strong><code>{
+```<code>{
   type: 'button',
   props: {
     className: 'button button-blue',
@@ -49,21 +49,21 @@ This is a DOM element that will be rendered as this in React:
       }
     }
   }
-}</code></strong></pre>
+}</code>```
 
 Moreover take a look at this example also which is a component described by React element and see how it will be rendered into the DOM:
 
-<pre class="wp-block-preformatted"><strong><code>const DeleteAccount = () => (
+```<code>const DeleteAccount = () => (
   &lt;div>
     &lt;p>Are you sure?&lt;/p>
     &lt;DangerButton>Yep&lt;/DangerButton>
     &lt;Button color='blue'>Cancel&lt;/Button>
   &lt;/div>
-);</code></strong></pre>
+);</code>```
 
 **An element describing a component is also an element, just like an element describing the DOM node. They can be nested and mixed with each other. **This will be rendered as the below code into the DOM:
 
-<pre class="wp-block-preformatted"><strong><code>const DeleteAccount = () => ({
+```<code>const DeleteAccount = () => ({
   type: 'div',
   props: {
     children: [{
@@ -83,7 +83,7 @@ Moreover take a look at this example also which is a component described by Reac
         children: 'Cancel'
       }
    }]
-});</code></strong><br /></pre>
+});</code><br /></pre>
 
 As a result you see clearly that it creates the DOM based on our elements or the view  and renders them with their own properties as **props**. Each and every tag has its own props and children and type rendered as we specify in our element declaration.
 
@@ -95,17 +95,17 @@ As a result you see clearly that it creates the DOM based on our elements or the
 
 Additionally take a look at this form as a React element as a form:
 
-<pre class="wp-block-preformatted"><strong><code>ReactDOM.render({
+```<code>ReactDOM.render({
   type: Form,
   props: {
     isSubmitted: false,
     buttonText: 'OK!'
   }
-}, document.getElementById('root'));</code></strong></pre>
+}, document.getElementById('root'));</code>```
 
 Firstly React will ask the `Form` component what element tree it returns, given those `props`. It will find out how to render the form elements into the DOM:
 
-<pre class="wp-block-preformatted"><strong><code>// React: You told me this...
+```<code>// React: You told me this...
 {
   type: Form,
   props: {
@@ -121,11 +121,11 @@ Firstly React will ask the `Form` component what element tree it returns, give
     children: 'OK!',
     color: 'blue'
   }
-}</code></strong></pre>
+}</code>```
 
 Finally it will go on and will render all needed tags into the DOM:
 
-<pre class="wp-block-preformatted"><strong><code>// React: ...and Button told me this! I guess I'm done.
+```<code>// React: ...and Button told me this! I guess I'm done.
 {
   type: 'button',
   props: {
@@ -137,6 +137,6 @@ Finally it will go on and will render all needed tags into the DOM:
       }
     }
   }
-}</code></strong></pre>
+}</code>```
 
 From the declaration of component elements React will render the desired application blocks called elements into the DOM. We will see more complex elements and components in the future posts of React. Thanks for reading.

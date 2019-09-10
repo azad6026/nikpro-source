@@ -29,31 +29,31 @@ The first parameter of the method defines the position where new elements should
 
 Firstly have a look at this example in both slice and splice methods:
 
-<pre class="wp-block-preformatted"><strong>let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];</strong><br /><strong>let citrus = fruits.slice(1);</strong><br /><strong>// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];</strong><br /><strong>// citrus : ["Banana", "Orange", "Lemon", "Apple"]</strong><br /></pre>
+```let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.slice(1);<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />// citrus : ["Banana", "Orange", "Lemon", "Apple"]<br /></pre>
 
 As a result fruits is intact even when we apply the slice method. And what slice does is to take out all the array elements except the last element **Mango**. Because 1 here means remove 1 element from the end of the array.
 
 Moreover if we do the slice with two arguments:
 
-<pre class="wp-block-preformatted"><strong>citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon"]</strong></pre>
+```citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon"]```
 
 Then citrus array will contain the elements from index 1 which is Orange up to index 3 which is apple and as I mentioned it will not contain the last index.
 
 Now lets try the same example of slice and splice with the splice method this time.
 
-<pre class="wp-block-preformatted"><strong>let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];</strong><br /><strong>let citrus = fruits.splice(1);</strong><br /><strong>// citrus : ["Orange", "Lemon", "Apple", "Mango"];</strong><br /><strong>// fruits : ["Banana"]</strong></pre>
+```let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.splice(1);<br />// citrus : ["Orange", "Lemon", "Apple", "Mango"];<br />// fruits : ["Banana"]```
 
 Now what happened?! Well that is the point. First of the splice method changes the original array so fruits has changed. Secondly when we specify one argument only it copies all array elements right after that index including that index which is Orange here.
 
 Now if we do the two argument check with splice:
 
-<pre class="wp-block-preformatted"><strong>citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon", "Apple"]<br />// fruits : ["Banana", "Mango"]</strong></pre>
+```citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon", "Apple"]<br />// fruits : ["Banana", "Mango"]```
 
 Practically it copies array elements from index 1 up to 3 elements to citrus array and the rest will remain for fruits.
 
 Comparing slice and splice we could also replace an element using splice in the array. If we specify a third parameter it would be the replaced element value specified by the second argument as its index:
 
-<pre class="wp-block-preformatted"><strong><strong>let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];</strong><br />let citrus = fruits.splice(4, 1,'Kiwi');<br />// citrus : ["Mango"]<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Kiwi"]</strong></pre>
+```let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.splice(4, 1,'Kiwi');<br />// citrus : ["Mango"]<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Kiwi"]```
 
 Therefor it first splices out elements after index 4 and copies them to citrus array and then replaces the 4th index which is Mango with Kiwi.
 

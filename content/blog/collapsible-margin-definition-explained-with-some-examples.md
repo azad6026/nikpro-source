@@ -27,20 +27,20 @@ Therefore the smaller margin kind of gets eaten by the bigger one. This is the r
 
 Basically here is a simple example:
 
-<pre class="wp-block-preformatted"><strong>&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
+```&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
 &lt;p&gt; This has a margin-top&lt;/p&gt;
-</strong></pre>
+```
 
 We define the margins in CSS as below:
 
-<pre class="wp-block-preformatted"><strong>
+```
 h1 {  
  margin-bottom: 25px;
 }
 p {  
  margin-top: 50px
 }
-</strong></pre>
+```
 
 The expectation is to have 75px of margin between the two but we will have 50px as the actual distance. Therefore the biggest margin has won. Hooray!
 

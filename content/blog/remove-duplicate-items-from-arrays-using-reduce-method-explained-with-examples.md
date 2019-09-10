@@ -27,11 +27,11 @@ We have had a situation while we needed to filter our array to get only unique i
 
 To be able to iterate through all array items and check if an item has a duplicate value we need to compare the current value and items already in accumulator. But we need an initial value as an empty array to be filled in by the result ( accumulator) as well. This is the approach from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank" rel="noreferrer noopener" aria-label="To be able to iterate through all array items and check if an item has a duplicate value we need to compare the current value and items already in accumulator. But we need an initial value as an empty array to be filled in by the result ( accumulator) as well. This is the approach from MDN: (opens in a new tab)">MDN</a>:
 
-<pre class="wp-block-preformatted"><strong>let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];<br />let result = arr.sort().reduce((accumulator, current) =&gt; {<br />    const length = accumulator.length<br />    if (length === 0 || accumulator[length - 1] !== current) {<br />        accumulator.push(current);<br />    }<br />    return accumulator;<br />}, []);<br />console.log(result); //[1,2,3,4,5]</strong></pre>
+```let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];<br />let result = arr.sort().reduce((accumulator, current) =&gt; {<br />    const length = accumulator.length<br />    if (length === 0 || accumulator[length - 1] !== current) {<br />        accumulator.push(current);<br />    }<br />    return accumulator;<br />}, []);<br />console.log(result); //[1,2,3,4,5]```
 
 With **length**&nbsp;that is the accumulator&#8217;s array length, we check if that item&#8217;s value is equal to the current item or if we are just in the first item:
 
-<pre class="wp-block-preformatted"><strong>length === 0 || accumulator[length - 1] !== current</strong></pre>
+```length === 0 || accumulator[length - 1] !== current```
 
 And if that was the case we **push** the item into the accumulator. But if not we just return accumulator itself and will not do anything.
 

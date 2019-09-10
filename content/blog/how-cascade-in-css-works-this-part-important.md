@@ -56,21 +56,21 @@ With that in mind lets explain the code.
 
 We have the HTML and CSS here again:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;p class="better">This is a paragraph.&lt;/p>
-&lt;p class="better" id="winner">One selector to rule them all!&lt;/p></code></strong></pre>
+```<code>&lt;p class="better">This is a paragraph.&lt;/p>
+&lt;p class="better" id="winner">One selector to rule them all!&lt;/p></code>```
 
-<pre class="wp-block-preformatted"><strong>#winner {</strong><br /><strong>  background-color: red;</strong><br /><strong>  border: 1px solid black;</strong><br /><strong>  font-size: 30px;</strong><strong>
-}</strong><strong>
-.better {</strong><strong>
-  background-color: gray;</strong><strong>
-  border: none !important;</strong><strong>
-}</strong><strong>
-p {</strong><strong>
-  background-color: blue;</strong><strong>
-  color: white;</strong><strong>
-  padding: 5px;</strong><strong>
-  font-size: 20px !important;</strong><strong>
-}</strong></pre>
+```#winner {<br />  background-color: red;<br />  border: 1px solid black;<br />  font-size: 30px;
+}
+.better {
+  background-color: gray;
+  border: none !important;
+}
+p {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  font-size: 20px !important;
+}```
 
   Similarly we gave both paragraphs a class and the second one has an id as well.
 
@@ -84,7 +84,7 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introdu
 
 <blockquote class="wp-block-quote">
   <p>
-    It is useful to know that <code>!important</code> exists so that you know what it is when you come across it in other people&#8217;s code. <strong>However</strong>, we strongly recommend that you never use it unless you absolutely have to. One situation in which you may have to use it is when you are working on a CMS where you can&#8217;t edit the core CSS modules, and you really want to override a style that can&#8217;t be overridden in any other way. But really, don&#8217;t use it if you can avoid it, because <code>!important</code> changes the way the cascade normally works, so it can make debugging CSS problems really hard to work out, especially in a large stylesheet.
+    It is useful to know that <code>!important</code> exists so that you know what it is when you come across it in other people&#8217;s code. However, we strongly recommend that you never use it unless you absolutely have to. One situation in which you may have to use it is when you are working on a CMS where you can&#8217;t edit the core CSS modules, and you really want to override a style that can&#8217;t be overridden in any other way. But really, don&#8217;t use it if you can avoid it, because <code>!important</code> changes the way the cascade normally works, so it can make debugging CSS problems really hard to work out, especially in a large stylesheet.
   </p>
 </blockquote>
 

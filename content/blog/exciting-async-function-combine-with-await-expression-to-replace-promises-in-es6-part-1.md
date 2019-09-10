@@ -23,7 +23,7 @@ Technically async function defines an asynchronous function that has an implicit
 
 Generally we know that everything in Javascript executes synchronously. Therefor to make asynchronous calls we need to change the code structure so that we get the results we desire. As a comparison to promises this is how it looks like:
 
-<pre class="wp-block-preformatted"><strong>// Async/Await version</strong><br /><strong>async function helloAsync() {</strong><br /><strong>  return "hello";</strong><br /><strong>}</strong><br /><strong>// Promises version</strong><br /><strong>function helloAsync() {</strong><br /><strong>  return new Promise(function (resolve) {</strong><br /><strong>    resolve("hello");</strong><br /><strong>  });</strong><br /><strong>}</strong></pre>
+```// Async/Await version<br />async function helloAsync() {<br />  return "hello";<br />}<br />// Promises version<br />function helloAsync() {<br />  return new Promise(function (resolve) {<br />    resolve("hello");<br />  });<br />}```
 
 ## Await expression
 
@@ -35,11 +35,11 @@ In addition await expression which only works inside an async function (otherwis
 
 Normally we write code which looks like this using promises and **then** method:
 
-<pre class="wp-block-preformatted"><strong>const makeRequest = () =></strong><br /><strong>  getJSON()</strong><br /><strong>    .then(data => {</strong><br /><strong>      console.log(data)</strong><br /><strong>      return "done"</strong><br /><strong>    })</strong><br /><strong>makeRequest()</strong></pre>
+```const makeRequest = () =><br />  getJSON()<br />    .then(data => {<br />      console.log(data)<br />      return "done"<br />    })<br />makeRequest()```
 
 We know that getJSON returns a promise and then we use that data and return &#8220;done&#8221;. We could write it this way using async await:
 
-<pre class="wp-block-preformatted"><br /><strong>const makeRequest = async () => {</strong><br /><strong>  console.log(await getJSON())</strong><br /><strong>  return "done"</strong><br /><strong>}</strong><br /><strong>makeRequest()</strong></pre>
+<pre class="wp-block-preformatted"><br />const makeRequest = async () => {<br />  console.log(await getJSON())<br />  return "done"<br />}<br />makeRequest()```
 
 Any **`async`** function returns a **promise implicitly**, and the **resolve value of the promise will be whatever you `return` from the function** (which is the string `"done"` in this case).
 
@@ -49,7 +49,7 @@ Therefor we have await for getJSON which means it console.log waits until getJSO
 
 Obviously we have to use error handling to make sure we will catch unwanted results and errors. One of the best ways is to put the code in the old try and catch block:
 
-<pre class="wp-block-preformatted"><strong>const makeRequest = async () => {</strong><br /><strong>  try {</strong><br /><strong>    // this parse may fail</strong><br /><strong>    const data = JSON.parse(await getJSON())</strong><br /><strong>    console.log(data)</strong><br /><strong>  } catch (err) {</strong><br /><strong>    console.log(err)</strong><br /><strong>  }</strong><br /><strong>}</strong></pre>
+```const makeRequest = async () => {<br />  try {<br />    // this parse may fail<br />    const data = JSON.parse(await getJSON())<br />    console.log(data)<br />  } catch (err) {<br />    console.log(err)<br />  }<br />}```
 
 We see how clean and neat the code looks like. Also it is more maintainable and easy to understand.<figure class="wp-block-image">
 
@@ -59,7 +59,7 @@ We see how clean and neat the code looks like. Also it is more maintainable and 
 
 Sometimes working with API&#8217;s we might have chain of promises. Imagine <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="noopener noreferrer">this code</a>:
 
-<pre class="wp-block-preformatted"><strong><code>function getProcessedData(url) {
+```<code>function getProcessedData(url) {
   return downloadData(url) // returns a promise
     .catch(e => {
       return downloadFallbackData(url)  // returns a promise
@@ -67,11 +67,11 @@ Sometimes working with API&#8217;s we might have chain of promises. Imagine <a h
     .then(v => {
       return processDataInWorker(v); // returns a promise
     });
-}</code></strong></pre>
+}</code>```
 
 The returned data has been split into a few parts. Using Async function and its await expression we could change the code to below:
 
-<pre class="wp-block-preformatted"><strong><code>async function getProcessedData(url) {
+```<code>async function getProcessedData(url) {
   let v;
   try {
     v = await downloadData(url); 
@@ -79,7 +79,7 @@ The returned data has been split into a few parts. Using Async function and its 
     v = await downloadFallbackData(url);
   }
   return processDataInWorker(v);
-}</code></strong></pre>
+}</code>```
 
 Basically we are using try catch block to make it easier to manage. The important note here is the return value of async function does not have await on it because it implicitly wrapped in Promise.Resolve.
 

@@ -23,7 +23,7 @@ We take a look at how Manuel Rego [takes a stab at explaining it](https://blogs
 
 <blockquote class="wp-block-quote is-style-default">
   <p>
-    <code>display:contents</code> makes that the div doesn’t generate any box, so its <strong>background, border and padding</strong> are not rendered. However the inherited properties like colour and font have effect on the child (span element) as expected.
+    <code>display:contents</code> makes that the div doesn’t generate any box, so its background, border and padding are not rendered. However the inherited properties like colour and font have effect on the child (span element) as expected.
   </p>
 </blockquote>
 

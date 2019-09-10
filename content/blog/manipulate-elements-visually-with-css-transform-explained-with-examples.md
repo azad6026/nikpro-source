@@ -20,9 +20,9 @@ CSS transform function like [CSS transition](http://www.nikpro.com.au/css-transi
 The <code class="w3-codespan">transform</code> property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. These are different values of transform property:
 
   * **`scale()`:** affects the size of the element. This also applies to the `font-size`, `padding`, `height`, and `width` of an element, too. It’s also a a shorthand function for the `scaleX` and `scaleY` functions.
-  * `<strong>skewX()</strong>` and **`skewY()`**: tilts an element to the left or right, like turning a triangle into a parallelogram. There is no shorthand `skew` property like scale().
+  * `skewX()` and **`skewY()`**: tilts an element to the left or right, like turning a triangle into a parallelogram. There is no shorthand `skew` property like scale().
   * **`translate()`**: moves an element up and down and left and right.
-  * `<strong>rotate()</strong>`: rotates an element clockwise .
+  * `rotate()`: rotates an element clockwise .
   * **`matrix()`**: a function that combines all transforms into one.
   * **`perspective()`**: it faffects the transforms of descendent elements&#8217; 3D transforms (and not the element), allowing them all to have a consistent depth perspective.
 
@@ -36,15 +36,15 @@ I have created this pen to explain in for both possible forms:
 
 
 
-The left box square uses`<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span></strong><span class="token punctuation"> </span>`which scales up both width and height by 20 times each direction.
+The left box square uses`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation"> </span>`which scales up both width and height by 20 times each direction.
 
-The right box square uses `<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20,30</span><span class="token punctuation">)</span><span class="token punctuation">; </span></strong>`which scales width by 20 and height by 30 and makes it a rectangle at the end.
+The right box square uses `<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20,30</span><span class="token punctuation">)</span><span class="token punctuation">; </span>`which scales width by 20 and height by 30 and makes it a rectangle at the end.
 
 There is another syntax to be more specific to change the scale by specifying X and Y in its syntax:
 
-`<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </strong>`
+`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> `
 
-`<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span></strong>`
+`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
 Try it on he above code pen and see how it scales the boxes. You will see how Y scales down by half as it has .5 as its scale.
 
@@ -52,13 +52,13 @@ Try it on he above code pen and see how it scales the boxes. You will see how Y 
 
 There is no generic syntax for skew and we have to specifically define it for X and Y directions:
 
-`<strong>.element {</strong>`  
-`<strong>  transform: skewX(25deg);</strong>`  
-`<strong>}</strong>`
+`.element {`  
+`  transform: skewX(25deg);`  
+`}`
 
-`<strong>.element {</strong>`  
-`<strong>  transform: skewY(25deg);</strong>`  
-`<strong>}</strong>`
+`.element {`  
+`  transform: skewY(25deg);`  
+`}`
 
 <p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="ZjLxrv" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="skew transform examples">
   See the Pen <a href="https://codepen.io/azad6026/pen/ZjLxrv/">skew transform examples</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -66,7 +66,7 @@ There is no generic syntax for skew and we have to specifically define it for X 
 
 
 
-They tilt an element in one way.In the example below, for the left blue boxes, we skew a 100px x 100px square to the left and right with **skewX **and in the right gray boxes, we skew them with `<strong>skewY.</strong>`
+They tilt an element in one way.In the example below, for the left blue boxes, we skew a 100px x 100px square to the left and right with **skewX **and in the right gray boxes, we skew them with `skewY.`
 
 ## Rotate transform function
 
@@ -74,11 +74,11 @@ With rotate you can have both generic and specific syntax. The rotation can happ
 
 Rotate and element clockwise:
 
-`<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">25</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span></strong>`
+`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">25</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
 And rotate in Y direction:
 
-`<strong>transform: rotateY(40deg);</strong>`
+`transform: rotateY(40deg);`
 
 Have a look at this pen:
 
@@ -94,12 +94,12 @@ In top three boxes, a square continues to rotate 360 degrees every three . And t
 
 It has both generic and specific syntax to move an element to the left and right or up and down:
 
-`<strong><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">20</span>px, <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span></strong>`
+`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">20</span>px, <span class="token number">10</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
 This transform function moves an element sideways, or up and down. Or use the specific syntax:
 
-`<strong>transform: translateX(value);</strong>`  
-`<strong>transform: translateY(value);</strong>`
+`transform: translateX(value);`  
+`transform: translateY(value);`
 
 In the example below an element using `transform` will not cause other elements to flow around it. By using the `translate` function below and changing the green square out of its original position, the text will remain fixed in place, as if the square is a block element:
 
@@ -113,18 +113,18 @@ In the example below an element using `transform` will not cause other element
 
 We could use multiple transform functions at once:
 
-`<strong>.element {</strong>`  
-`<strong>  width: 20px;</strong>`  
-`<strong>  height: 20px;</strong>`  
-`<strong>  transform: scale(20) skew(-20deg);</strong>`  
-`<strong>}</strong>`
+`.element {`  
+`  width: 20px;`  
+`  height: 20px;`  
+`  transform: scale(20) skew(-20deg);`  
+`}`
 
 In the example above the skew will be performed first and then the scale as there is an order for performing transform functionality. This is what also can be done by Matrix. The `matrix` transform function can be used to combine all transforms into one. There are tools out there like [The Matrix Resolutions](http://meyerweb.com/eric/tools/matrix/), which can convert a group of transforms into a single matrix declaration. So this:
 
-`<strong><span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">24</span>px, <span class="token number">25</span>px<span class="token punctuation">)</span></strong>`
+`<span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">24</span>px, <span class="token number">25</span>px<span class="token punctuation">)</span>`
 
 has a matrix function as this:
 
-`<strong><span class="token function">matrix</span><span class="token punctuation">(</span><span class="token number">0.7071067811865475</span>, <span class="token number">0.7071067811865476</span>, -<span class="token number">0.7071067811865476</span>, <span class="token number">0.7071067811865475</span>, -<span class="token number">0.7071067811865497</span>, <span class="token number">34.648232278140824).</span></strong>`
+`<span class="token function">matrix</span><span class="token punctuation">(</span><span class="token number">0.7071067811865475</span>, <span class="token number">0.7071067811865476</span>, -<span class="token number">0.7071067811865476</span>, <span class="token number">0.7071067811865475</span>, -<span class="token number">0.7071067811865497</span>, <span class="token number">34.648232278140824).</span>`
 
 This was all about CSS transform important functions. We will explain 3d transform and perspective in another post.

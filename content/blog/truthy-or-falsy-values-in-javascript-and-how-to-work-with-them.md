@@ -15,37 +15,37 @@ tags:
 ---
 [JavaScript variables](http://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript/) are loosely/dynamically typed and the language doesn’t care how a value is declared or changed. A **truthy** or **falsy** value is a value that translates to ture/false when evaluated in a [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean "Boolean: In computer science, a Boolean is a logical data type that can have only the values true or false."){.glossaryLink} context. Examples of _falsy_ values in JavaScript (which translate to false and thus _bypass_ the `if`block):
 
-`<strong>if (false)</strong>`  
-`<strong>if (null)</strong>`  
-`<strong>if (undefined)</strong>`  
-`<strong>if (0)</strong>`  
-`<strong>if (NaN)</strong>`  
-`<strong>if ('')</strong>`  
-`<strong>if ("")</strong>`  
-`<strong>if (document.all)</strong>`
+`if (false)`  
+`if (null)`  
+`if (undefined)`  
+`if (0)`  
+`if (NaN)`  
+`if ('')`  
+`if ("")`  
+`if (document.all)`
 
 ### True or false
 
 These are different types of data we can define as:
 
-`<strong>let x;</strong>`  
-`<strong>x = 1; // x is a number</strong>`  
-`<strong>x = '1'; // x is a string</strong>`  
-`<strong>x = [1]; // x is an array</strong>`
+`let x;`  
+`x = 1; // x is a number`  
+`x = '1'; // x is a string`  
+`x = [1]; // x is an array`
 
 When using  <code class=" language-undefined">==</code> (loose or abstract equality) for comparison, Javascript converts each side to a string and then does the comparison:
 
-`<strong>// all true</strong>`  
-`<strong>1 == '1';</strong>`  
-`<strong>1 == [1];</strong>`  
-`<strong>'1' == [1];</strong>`
+`// all true`  
+`1 == '1';`  
+`1 == [1];`  
+`'1' == [1];`
 
 But using  <code class=" language-undefined">===</code> (strict equality)  Javascript considers type and all will evaluate to false:
 
-`<strong>// all false</strong>`  
-`<strong>1 === '1';</strong>`  
-`<strong>1 === [1];</strong>`  
-`<strong>'1' === [1];</strong>`
+`// all false`  
+`1 === '1';`  
+`1 === [1];`  
+`'1' === [1];`
 
 Internally, JavaScript sets a value to one of six primitive data types:
 
@@ -79,13 +79,13 @@ And everything else including these are truthy:
 
 It means we cannot use a single value for evaluation in statements as it is always true:
 
-`<strong>if (value) {</strong>`  
-`<strong>  // value is truthy</strong>`  
-`<strong>}</strong>`  
-`<strong>else {</strong>`  
-`<strong>  // value is falsy</strong>`  
-`<strong>  // it could be false, 0, '', null, undefined or NaN</strong>`  
-`<strong>}</strong>`
+`if (value) {`  
+`  // value is truthy`  
+`}`  
+`else {`  
+`  // value is falsy`  
+`  // it could be false, 0, '', null, undefined or NaN`  
+`}`
 
 ### The rules to follow
 
@@ -99,43 +99,43 @@ Remember these rules while evaluating truthy and falsy:
 
 These are some examples:
 
-`<strong>// all true</strong>`  
-`<strong>false == 0;</strong>`  
-`<strong>0 == '';</strong>`  
-`<strong>null == undefined;</strong>`  
-`<strong>[] == false;</strong>`  
-`<strong>!![0] == true;</strong>`
+`// all true`  
+`false == 0;`  
+`0 == '';`  
+`null == undefined;`  
+`[] == false;`  
+`!![0] == true;`
 
-`<strong>// all false</strong>`  
-`<strong>false == null;</strong>`  
-`<strong>NaN == NaN;</strong>`  
-`<strong>Infinity == true;</strong>`  
-`<strong>[] == true;</strong>`  
-`<strong>[0] == true;</strong>`
+`// all false`  
+`false == null;`  
+`NaN == NaN;`  
+`Infinity == true;`  
+`[] == true;`  
+`[0] == true;`
 
 ### Use **<code class=" language-undefined">===</code>** strict equality and avoid type conversion issues
 
-`<strong>// instead of</strong>`  
-`<strong>if (x == y) // ...</strong>`  
-`<strong>// runs if x and y are both truthy or both falsy</strong>`  
-`<strong>// e.g. x = null and y = undefined</strong>`
+`// instead of`  
+`if (x == y) // ...`  
+`// runs if x and y are both truthy or both falsy`  
+`// e.g. x = null and y = undefined`
 
-`<strong>// use</strong>`  
-`<strong>if (x === y) // ...</strong>`  
-`<strong>// runs if x and y are identical...</strong>`  
-`<strong>// except when both are NaN</strong>`
+`// use`  
+`if (x === y) // ...`  
+`// runs if x and y are identical...`  
+`// except when both are NaN`
 
 ### Stop direct comparisons
 
 It is rare to compare two false or true values:
 
-`<strong>// instead of</strong>`  
-`<strong>if (x == false) // ...</strong>`  
-`<strong>// runs if x is false, 0, '', or []</strong>`
+`// instead of`  
+`if (x == false) // ...`  
+`// runs if x is false, 0, '', or []`
 
-`<strong>// use</strong>`  
-`<strong>if (!x) // ...</strong>`  
-`<strong>// runs if x is false, 0, '', NaN, null or undefined</strong>`
+`// use`  
+`if (!x) // ...`  
+`// runs if x is false, 0, '', NaN, null or undefined`
 
 ### Convert to real boolean value when necessary
 
@@ -143,14 +143,14 @@ Double-negative !! always generates false by <code class=" language-undefined"
 
 So in this case do as follows:
 
-`<strong>// instead of x or y on the side of comparison</strong>`  
-`<strong>if (x === y) // ...</strong>`  
-`<strong>// runs if x and y are identical...</strong>`  
-`<strong>// except when both are NaN</strong>`
+`// instead of x or y on the side of comparison`  
+`if (x === y) // ...`  
+`// runs if x and y are identical...`  
+`// except when both are NaN`
 
-`<strong>// use double-negative to make sure tey generate what you expect</strong>`  
-`<strong>if (!!x === !!y) // ...</strong>`  
-`<strong>// runs if x and y are identical...</strong>`  
-`<strong>// including when either or both are NaN</strong>`
+`// use double-negative to make sure tey generate what you expect`  
+`if (!!x === !!y) // ...`  
+`// runs if x and y are identical...`  
+`// including when either or both are NaN`
 
 Always be careful around truthy and falsy values. For example an empty string or a NAN could make the debugging very hard and painful. 

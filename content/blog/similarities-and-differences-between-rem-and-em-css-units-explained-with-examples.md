@@ -34,11 +34,11 @@ Although both em and rem are called relative units but they have a different beh
 
 Em is relative to its container. It means that it scales up and down calculating relative to its container. Take a look at this example:
 
-<pre class="wp-block-preformatted"><strong>html { font-size: 16px } <br />h1 { font-size: 2em } /* 16px * 2 = 32px */</strong></pre>
+```html { font-size: 16px } <br />h1 { font-size: 2em } /* 16px * 2 = 32px */```
 
 We set up our font in HTML tag by 16 pixels. Therefore h1 gets twice of that size by 2em because in this case HTMl is its closest parent container that has set a font on it. In the below code:
 
-<pre class="wp-block-preformatted"><strong>h1 {   font-size: 2em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 32px */ } </strong><br /><strong>p {   font-size: 1em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 16px */ }</strong></pre>
+```h1 {   font-size: 2em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 32px */ } <br />p {   font-size: 1em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 16px */ }```
 
 Although we gave h1 tag a 1em as margin-bottom but that is equal to 32px as it is twice of HTML font-size. But it is equal to 16px for p tag as it is only 1em and HTML tag is the p tag parent as well.<figure class="wp-block-image">
 
@@ -52,7 +52,7 @@ In terms of relativeness the story is the same for rem. But the big difference i
 
 Therefore the above example has a different effect this time:
 
-<pre class="wp-block-preformatted"><strong>h1 {   font-size: 2rem;   margin-bottom: 1rem; /* 1rem = 16px */ } <br />p {   font-size: 1rem;   margin-bottom: 1rem; /* 1rem = 16px */ }</strong></pre>
+```h1 {   font-size: 2rem;   margin-bottom: 1rem; /* 1rem = 16px */ } <br />p {   font-size: 1rem;   margin-bottom: 1rem; /* 1rem = 16px */ }```
 
 As the HTML is the root all calculations are based on that. So 1rem is always 16px no matter in which tag. <figure class="wp-block-image is-resized">
 

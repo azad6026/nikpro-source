@@ -17,7 +17,7 @@ tags:
 ---
 Continuing <a href="http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/" target="_blank" rel="noopener noreferrer">our explanation for ES6 new features</a>, we will review the spread operator. What is the magic spread syntax in ES6? The spread syntax is simply three dots: <code class="markup--code markup--li-code">...</code>
 
-<strong class="markup--strong markup--li-strong">It allows an iterable to expand in places</strong> where 0 or more arguments likeIndefinite number of arguments (function calls) or  elements (array literals) or key-value pairs (object literals) are expected.
+<strong class="markup--strong markup--li-strong">It allows an iterable to expand in places where 0 or more arguments likeIndefinite number of arguments (function calls) or  elements (array literals) or key-value pairs (object literals) are expected.
 
 Let us have a look at some of its usages to get a better idea:
 
@@ -26,13 +26,13 @@ Let us have a look at some of its usages to get a better idea:
 To call a function with array argument we needed to use apply and use this syntax:
 
 <p class=" language-js">
-  <strong><code>&lt;span class="token keyword">function&lt;/span> doSomething &lt;span class="token punctuation">(&lt;/span>x&lt;span class="token punctuation">,&lt;/span> y&lt;span class="token punctuation">,&lt;/span> z&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;br />
-</code></strong>
+  <code>&lt;span class="token keyword">function&lt;/span> doSomething &lt;span class="token punctuation">(&lt;/span>x&lt;span class="token punctuation">,&lt;/span> y&lt;span class="token punctuation">,&lt;/span> z&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;br />
+</code>
 </p>
 
 <p class=" language-js">
-  <strong><code>&lt;span class="token keyword">var&lt;/span> args &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">0&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">2&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;br />
-</code></strong>
+  <code>&lt;span class="token keyword">var&lt;/span> args &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">0&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">2&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;br />
+</code>
 </p>
 
 <p class=" language-js">
@@ -41,7 +41,7 @@ To call a function with array argument we needed to use apply and use this synta
 </p>
 
 <p class=" language-js">
-  <strong><code>&lt;span class="token punctuation">doSomething.&lt;/span>&lt;span class="token function">apply&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">null&lt;/span>&lt;span class="token punctuation">,&lt;/span> args&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code></strong>
+  <code>&lt;span class="token punctuation">doSomething.&lt;/span>&lt;span class="token function">apply&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">null&lt;/span>&lt;span class="token punctuation">,&lt;/span> args&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code>
 </p>
 
 This old problem has been solved using the spread operator. So we can now omit apply and use the spread syntax to call the function like this:
@@ -64,13 +64,13 @@ To copy an array we pass a reference to the second one so they will have same va
               <div class="CodeMirror-code" role="presentation">
                 <div>
                   <p class=" CodeMirror-line " role="presentation">
-                    <strong><code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr&lt;/span> &lt;span class="cm-operator">=&lt;/span> [&lt;span class="cm-string">'a'&lt;/span>, &lt;span class="cm-string">'b'&lt;/span>, &lt;span class="cm-string">'c'&lt;/span>];&lt;/span></code></strong>
+                    <code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr&lt;/span> &lt;span class="cm-operator">=&lt;/span> [&lt;span class="cm-string">'a'&lt;/span>, &lt;span class="cm-string">'b'&lt;/span>, &lt;span class="cm-string">'c'&lt;/span>];&lt;/span></code>
                   </p>
                 </div>
                 
-                <pre class=" CodeMirror-line " role="presentation"><strong><code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr2&lt;/span> &lt;span class="cm-operator">=&lt;/span> &lt;span class="cm-variable">arr&lt;/span>;
+                <pre class=" CodeMirror-line " role="presentation"><code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr2&lt;/span> &lt;span class="cm-operator">=&lt;/span> &lt;span class="cm-variable">arr&lt;/span>;
 
-&lt;/span>console.&lt;span class="cm-property">log&lt;/span>(&lt;span class="cm-variable">arr2&lt;/span>);</code></strong></pre>
+&lt;/span>console.&lt;span class="cm-property">log&lt;/span>(&lt;span class="cm-variable">arr2&lt;/span>);</code>```
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ To copy an array we pass a reference to the second one so they will have same va
     <div class="embedStyle_1ki8n3b object-description">
       <div class="value_142hmgp-o_O-monospace_5jrb82 flexBox">
         <p>
-          <strong><code>&lt;span class="normal_t5s8ur">&lt;span class="fixme-test-wrapper">output: [&lt;span class="type-string">"a"&lt;/span>, &lt;span class="type-string">"b"&lt;/span>, &lt;span class="type-string">"c"&lt;/span>]&lt;/span>&lt;/span></code></strong>
+          <code>&lt;span class="normal_t5s8ur">&lt;span class="fixme-test-wrapper">output: [&lt;span class="type-string">"a"&lt;/span>, &lt;span class="type-string">"b"&lt;/span>, &lt;span class="type-string">"c"&lt;/span>]&lt;/span>&lt;/span></code>
         </p>
         
         <p>

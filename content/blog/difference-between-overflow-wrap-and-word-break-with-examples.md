@@ -103,7 +103,7 @@ Therefore `word-break` is great for  **non-English content** that requires sp
 
 <!-- wp:paragraph -->
 
-According to MDN In contrast to `<strong>word-break: break-word</strong>`** and **`<strong>overflow-wrap: break-word</strong>`** **, `<strong>word-break: break-all</strong>`** **will create a break at the exact place where text would otherwise overflow its container
+According to MDN In contrast to `word-break: break-word`** and **`overflow-wrap: break-word`** **, `word-break: break-all`** **will create a break at the exact place where text would otherwise overflow its container
 
 <!-- /wp:paragraph -->
 

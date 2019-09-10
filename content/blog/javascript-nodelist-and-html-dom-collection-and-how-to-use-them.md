@@ -21,21 +21,21 @@ tags:
 
 A **NodeList** object is a list (collection) of nodes extracted from a document.The best way to get a list of div nodes is this:
 
-`<strong><span class="kd">var</span> <span class="nx">divs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span></strong>`
+`<span class="kd">var</span> <span class="nx">divs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>`
 
 The good thing about NodeLists is that their values in some cases are live meaning they give you the exact and live response. If you have one div and you add another on the fly with Javascript, they output will be updated as well. Have a look at this example:
 
-`<strong>var nodes = document.getElementsByTagName('div');</strong>`
+`var nodes = document.getElementsByTagName('div');`
 
-`<strong>// outputs 3</strong>`  
-`<strong>console.log(nodes);</strong>`
+`// outputs 3`  
+`console.log(nodes);`
 
-`<strong>// create a new element</strong>`  
-`<strong>var newDiv = document.createElement('div');</strong>`  
-`<strong>document.body.appendChild(newDiv);</strong>`
+`// create a new element`  
+`var newDiv = document.createElement('div');`  
+`document.body.appendChild(newDiv);`
 
-`<strong>// outputs 4</strong>`  
-`<strong>console.log(nodes);</strong>`
+`// outputs 4`  
+`console.log(nodes);`
 
 So although we created the fourth element inside the code, it has been reflected in the output. 
 
@@ -47,7 +47,7 @@ NodeList items can **only be accessed** by their index number. It might look lik
 
 You can get a HTML DOM collection like this:
 
-`<strong>var x = document.getElementsByTagName("p");</strong>`
+`var x = document.getElementsByTagName("p");`
 
 It also does not have access to any array methods as it is **not an array as well**.
 
@@ -60,11 +60,11 @@ It also does not have access to any array methods as it is **not an array as wel
 
 Although in some cases, the **`NodeList` **is a _live collection_, which means that changes in the DOM are reflected in the collection. For example, [`Node.childNodes`](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes "The Node.childNodes read-only property returns a live NodeList of child nodes of the given element where the first child node is assigned index 0.") is live:
 
-`<strong>var parent = document.getElementById('parent');</strong>`  
-`<strong>var child_nodes = parent.childNodes;</strong>`  
-`<strong>console.log(child_nodes.length); // let's assume "2"</strong>`  
-`<strong>parent.appendChild(document.createElement('div'));</strong>`  
-`<strong>console.log(child_nodes.length); // should output "3"</strong>`
+`var parent = document.getElementById('parent');`  
+`var child_nodes = parent.childNodes;`  
+`console.log(child_nodes.length); // let's assume "2"`  
+`parent.appendChild(document.createElement('div'));`  
+`console.log(child_nodes.length); // should output "3"`
 
 In other cases, the `NodeList` is a _static collection, _meaning any subsequent change in the DOM does not affect the content of the collection. [`document.querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.")returns a static `NodeList`.
 
@@ -74,41 +74,41 @@ It&#8217;s good to keep this distinction in mind when you choose how to iterate 
 
 To support all browsers including IE8 and below, the best way to convert a NodeList to an array is like this:
 
-`<strong>var myNodeList = document.querySelectorAll('div');</strong>`  
-`<strong>var myArray = []; // empty Array</strong>`  
-`<strong>for (var i = 0; i < myNodeList.length; i++) {</strong>`  
-`<strong>  var self = myNodeList[i];</strong>`  
-`<strong>  myArray.push(self);</strong>`  
-`<strong>}</strong>`
+`var myNodeList = document.querySelectorAll('div');`  
+`var myArray = []; // empty Array`  
+`for (var i = 0; i < myNodeList.length; i++) {`  
+`  var self = myNodeList[i];`  
+`  myArray.push(self);`  
+`}`
 
-Which keeps the NodeList reference if you need it as well although `<strong>document.querySelectorAll </strong>`will not create a live collection.
+Which keeps the NodeList reference if you need it as well although `document.querySelectorAll `will not create a live collection.
 
 The second way of converting them to array is using unshift method:
 
-`<strong>var arr = [];</strong>`  
-`<strong>var divs = document.querySelectorAll('div');</strong>`  
-`<strong>for(var i = divs.length; i--; arr.unshift(divs[i]));</strong>`
+`var arr = [];`  
+`var divs = document.querySelectorAll('div');`  
+`for(var i = divs.length; i--; arr.unshift(divs[i]));`
 
 If you do not care about IE8 and below, use this method which is neat and clean:
 
-`<strong>// 'divs' is now an Array</strong>`  
-`<strong>var divs = Array.prototype.slice.call(document.querySelectorAll('div'));</strong>`
+`// 'divs' is now an Array`  
+`var divs = Array.prototype.slice.call(document.querySelectorAll('div'));`
 
 Accessing the Prototype Object here, we grab the _slice()_ method, and pass our NodeList into it. It cleverly pushes each Node into a new Array.
 
 Besides we can finally use forEach loop:
 
-`<strong>var divs = Array.prototype.slice.call(document.querySelectorAll('div'));</strong>`  
-`<strong>divs.forEach(function () {</strong>`  
-`<strong>//...</strong>`  
-`<strong>});</strong>`
+`var divs = Array.prototype.slice.call(document.querySelectorAll('div'));`  
+`divs.forEach(function () {`  
+`//...`  
+`});`
 
 ### [ES6](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) Array.form 
 
 We could use the ES6 array.form method to complete the conversion:
 
-`<strong>var divs = document.querySelectorAll('div');</strong>`  
-`<strong>var arr = Array.from(divs); // Array of <div>s</strong>`
+`var divs = document.querySelectorAll('div');`  
+`var arr = Array.from(divs); // Array of <div>s`
 
 Apparently this is the newest version of doing so.
 
@@ -116,11 +116,11 @@ Apparently this is the newest version of doing so.
 
 One other way would be to convert the NodeList to an array using Array.prototype.foEach on the fly:
 
-`<strong>var divs = document.querySelectorAll('div');</strong>`  
-`<strong>Array.prototype.forEach.call(divs, function (item) {</strong>`  
-`<strong>  // Individual access to element:</strong>`  
-`<strong>  var elem = item;</strong>`  
-`<strong>});</strong>`
+`var divs = document.querySelectorAll('div');`  
+`Array.prototype.forEach.call(divs, function (item) {`  
+`  // Individual access to element:`  
+`  var elem = item;`  
+`});`
 
 Obviously we use call of forEach method here and we iterate through the NodeList in an array fashion.
 

@@ -22,7 +22,7 @@ This article is inspired by the very informative site called <a rel="noreferrer 
 
 Basically we create an element into the DOM using similar code as this:
 
-<pre class="wp-block-preformatted"><strong>// Create an element using only Javascript<br /> const parent = document.querySelector('#jstest');<br /> const jsElement = document.createElement('h2');<br /> jsElement.innerHTML = 'Hello There, I am created by Javascript';<br /> jsElement.classList.add('jsClass');<br /> parent.appendChild(jsElement);</strong></pre>
+```// Create an element using only Javascript<br /> const parent = document.querySelector('#jstest');<br /> const jsElement = document.createElement('h2');<br /> jsElement.innerHTML = 'Hello There, I am created by Javascript';<br /> jsElement.classList.add('jsClass');<br /> parent.appendChild(jsElement);```
 
 As a test I have created a pen for all the examples in this article to see the differences and play around with it.
 
@@ -41,7 +41,7 @@ We simply create a **h2 tag** and give it a class and content. Typically we use 
 
 Generally React utilises the same concept but makes it much simpler with its own syntax:
 
-<pre class="wp-block-preformatted"><strong>// Create the same element using React<br /> const rootElement = document.querySelector('#reacttest');<br /> const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});<br /> console.log(reactElement);<br /> ReactDOM.render(reactElement,rootElement);</strong></pre>
+```// Create the same element using React<br /> const rootElement = document.querySelector('#reacttest');<br /> const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});<br /> console.log(reactElement);<br /> ReactDOM.render(reactElement,rootElement);```
 
 As a result we get the same element rendered on the page with different content and class name. But the most important thing is **React.createElement** does the job. It accepts a few arguments. First one is the element name(tag). Also as the second one we could use an object to declare the class and content. The content which is called **children** always comes last in the list of arguments.
 
@@ -49,15 +49,15 @@ As a result we get the same element rendered on the page with different content 
 
 Reasonably we need to learn about the React element and understand its object. If you log the created reacElement into the console this is what we get:
 
-<pre class="wp-block-preformatted"><strong>Object {<br />  $$typeof: [object Symbol] {},<br />  _owner: null,<br />  key: null,<br /><br />  props: Object {<br />    children: "Hello There, I am created by React createElement",<br />    className: "reactCalss"<br />  },<br />  ref: null,<br />  type: "h2"<br />}</strong></pre>
+```Object {<br />  $$typeof: [object Symbol] {},<br />  _owner: null,<br />  key: null,<br /><br />  props: Object {<br />    children: "Hello There, I am created by React createElement",<br />    className: "reactCalss"<br />  },<br />  ref: null,<br />  type: "h2"<br />}```
 
 Clearly we see our content called children and the calss we have given as className. That is what comes from the code:
 
-<pre class="wp-block-preformatted"><strong>const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});</strong></pre>
+```const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});```
 
 If we needed seperate content we could also have an array of children:
 
-<pre class="wp-block-preformatted"><strong>const reactElement = React.createElement('h2',{className :  'reactCalss', children: ['Hello There, ','I am created by React createElement']});</strong></pre>
+```const reactElement = React.createElement('h2',{className :  'reactCalss', children: ['Hello There, ','I am created by React createElement']});```
 
 But we can make the code simpler and more readable using [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) which empowers our React application.
 
@@ -65,7 +65,7 @@ But we can make the code simpler and more readable using [JSX](http://www.nikpro
 
 Using JSX to render the element feels like writing HTML itself. But the best part is we can write Javascript inside the tags. Better say HTML inside Javascript because JSX is Javascript extension itself:
 
-<pre class="wp-block-preformatted"><strong>// Create the same element using JSX</strong><br /> <strong>const jsxRoot = document.querySelector('#jsxtest');</strong><br /> <strong>const content = "Hello there, I am created by React in JSX";</strong><br /> <strong>const className = "jsx-class";</strong><br /> <strong>// JSX with simple content&nbsp;</strong><br /> <strong>const element1 = &lt;h2 className={className}&gt;{content}&lt;/h2&gt;;</strong><br /> <strong>//&nbsp; JSX with content as a function using arrow function</strong><br /> <strong>const element2 = &lt;h2 className={className}&gt;{(() =&gt; content)()}&lt;/h2&gt;;</strong><br /> <strong>ReactDOM.render([element1,element2], jsxRoot);</strong> </pre>
+```// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = &lt;h2 className={className}&gt;{content}&lt;/h2&gt;;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = &lt;h2 className={className}&gt;{(() =&gt; content)()}&lt;/h2&gt;;<br /> ReactDOM.render([element1,element2], jsxRoot); </pre>
 
 We have used two approaches here. In the first element we put the content as {content} which is actually the children property from the mentioned above in pure React approach.
 
@@ -77,11 +77,11 @@ In the second element we called an arrow function to put the content in as we ca
 
 Lastly we will declare the properties as props and pass them to the element using the rest parameters or spread syntax for them to get a copy of it. A very neat approach:
 
-<pre class="wp-block-preformatted"><strong>// Create the same element using props</strong><br /> <strong>const propsRoot = document.querySelector('#propstest');</strong><br /> <strong>const props = {</strong><br /> <strong>  className : "props-class",</strong><br /> <strong>  children : " Hi there, I am created by props in React"</strong><br /> <strong>&nbsp;}</strong><br /> <strong>const propsElement = &lt;h2 {...props} /&gt;;</strong><br /> <strong>ReactDOM.render(propsElement,propsRoot);</strong></pre>
+```// Create the same element using props<br /> const propsRoot = document.querySelector('#propstest');<br /> const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = &lt;h2 {...props} /&gt;;<br /> ReactDOM.render(propsElement,propsRoot);```
 
 To override the {&#8230;props} properties we need to specify them tight after it inside the tag. For example to override the className we should change the code to this:
 
-<pre class="wp-block-preformatted"><strong>const props = {</strong><br /> <strong>  className : "props-class",</strong><br /> <strong>  children : " Hi there, I am created by props in React"</strong><br /> <strong>&nbsp;}</strong><br /> <strong>const propsElement = &lt;h2 {...props} className="averrided-class" /&gt;;</strong><br /> <strong>ReactDOM.render(propsElement,propsRoot);</strong></pre>
+```const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = &lt;h2 {...props} className="averrided-class" /&gt;;<br /> ReactDOM.render(propsElement,propsRoot);```
 
 In this technique we could add more arguments to our props and pass them to the element like events and other props.
 

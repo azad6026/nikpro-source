@@ -25,7 +25,7 @@ In this example form <a href="https://www.sitepoint.com/" target="_blank" rel="n
 
 This is the animated SVG spinner code which uses a few tags:
 
-<pre class="wp-block-preformatted"><strong><code>&lt;svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> &lt;!-- 1 -->
+```<code>&lt;svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> &lt;!-- 1 -->
 
   &lt;circle class="path spinner-border" cx="33" cy="33" r="31" stroke="url(#gradient)">&lt;/circle> &lt;!-- 2 -->
 
@@ -37,7 +37,7 @@ This is the animated SVG spinner code which uses a few tags:
 
   &lt;circle class="path spinner-dot" cx="37" cy="3" r="2">&lt;/circle> &lt;!-- 4 -->
 
-&lt;/svg></code></strong></pre>
+&lt;/svg></code>```
 
 Firstly the value of the `vieBox.` attribute is a list of four numbers `min-x`, `min-y`, `width` and `height.` Therefor **`viewBox="0 0 66 66"`** means that the viewport is 66 by 66.
 
@@ -53,21 +53,21 @@ The **`stroke-dasharray`** attribute is a presentation attribute defining the 
 
 The **`stroke-dashoffset`** attribute is a presentation attribute defining an offset on the rendering of the associated dash array. We define them for the spinner body as the first circle:
 
-<pre class="wp-block-preformatted"><strong>.path {</strong><br /><strong>  stroke-dasharray: 170;</strong><br /><strong>  stroke-dashoffset: 20;</strong><br /><strong>}</strong></pre>
+```.path {<br />  stroke-dasharray: 170;<br />  stroke-dashoffset: 20;<br />}```
 
 However we need to define the .spinner-border as well to make a full circle:
 
-<pre class="wp-block-preformatted"><strong>.spinner-border {</strong><br /><strong>  fill: transparent;</strong><br /><strong>  stroke-width: 2;</strong><br /><strong>  width: 100%;</strong><br /><strong>  height: 100%;</strong><strong>
-}</strong></pre>
+```.spinner-border {<br />  fill: transparent;<br />  stroke-width: 2;<br />  width: 100%;<br />  height: 100%;
+}```
 
 This just makes the circle as it should look like. We need to limit the width and height of the viewBox then to limit the circle in our defined area:
 
-<pre class="wp-block-preformatted"><strong>.spinner {</strong><br /><strong>  margin: 10px;</strong><br /><strong>  width: 180px;</strong><br /><strong>  height: 180px;</strong><br /><strong>}</strong></pre>
+```.spinner {<br />  margin: 10px;<br />  width: 180px;<br />  height: 180px;<br />}```
 
 That&#8217;s better. We also need to add the animated SVG head look like a dot:
 
-<pre class="wp-block-preformatted"><strong>.spinner-dot {</strong><br /><strong>  stroke: #000;</strong><br /><strong>  stroke-width: 1;</strong><br /><strong>  fill: #000;</strong><strong>
-}</strong></pre>
+```.spinner-dot {<br />  stroke: #000;<br />  stroke-width: 1;<br />  fill: #000;
+}```
 
 With stroke property we add border to our animated SVG dot shape and with fill we give it a colour.
 
@@ -75,21 +75,21 @@ With stroke property we add border to our animated SVG dot shape and with fill w
 
 Finally comes the interesting part which is the animation. We need to have two animation. First the rotation of the big circle and second the skew of the dot shape head:
 
-<pre class="wp-block-preformatted"><strong>@keyframes rotate {
+```@keyframes rotate {
   to {
     transform: rotate(360deg);
   }
-}</strong></pre>
+}```
 
 We will add this rotate keyframe as the animation for the big circle. Also we define the skew animation for the dot head:
 
-<pre class="wp-block-preformatted"><strong>@keyframes skew {</strong><strong>
-  from {</strong><strong>
-    transform: skewX(10deg)</strong><strong>
-  }</strong><br /><strong>  to {</strong><strong>
-    transform: skewX(40deg)</strong><strong>
-  }</strong><strong>
-}</strong></pre>
+```@keyframes skew {
+  from {
+    transform: skewX(10deg)
+  }<br />  to {
+    transform: skewX(40deg)
+  }
+}```
 
 As a result we have an animated SVG spinner with a dot shape head that spins infinitely as we speak. This is the pen for this example:
 

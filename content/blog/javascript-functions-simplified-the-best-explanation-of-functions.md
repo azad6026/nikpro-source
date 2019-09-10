@@ -23,8 +23,8 @@ For example, seafoods would have quiet similar recipe but different ingredients.
 
 We would write the &#8220;process&#8221;  and its &#8220;steps&#8221; and we can write a recipe like this:
 
-- <span style="color: #000080;"><strong>Add the ingredients</strong></span>
-- <span style="color: #000080;"><strong>Cook the Food </strong></span>
+- <span style="color: #000080;">Add the ingredients</span>
+- <span style="color: #000080;">Cook the Food </span>
 
 As you see, the whole process contains a few steps depends on the food that needs to be made.
 
@@ -36,8 +36,8 @@ First we need the Function word in the beginning as specifier of the &#8220;Proc
 
 Function makeSeafoood (ingredients){
 
-- <span style="color: #000080;"><strong>Add the ingredients</strong></span>
-- <span style="color: #000080;"><strong>Cook the Food </strong></span>
+- <span style="color: #000080;">Add the ingredients</span>
+- <span style="color: #000080;">Cook the Food </span>
 
 }
 

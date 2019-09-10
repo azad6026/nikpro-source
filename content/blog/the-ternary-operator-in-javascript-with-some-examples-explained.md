@@ -18,7 +18,7 @@ In this post I will explain the ternary operator in Javascript with some example
 
 This operator has a very interesting and yet confusing syntax if you don&#8217;t understand it properly. It is a conditional operator that could be used mostly to shorten the if statements to only one line if code. Have a look at its syntax first:
 
-`<strong>condition ? expression1 : expression2</strong>`
+`condition ? expression1 : expression2`
 
 It is the only operator taking three statements. The **condition** is what the operator will evaluate against it. If it evaluates to true the first expression will execute. If not the second one ( expression2 ) will be the returning value from the operator. Expressions could be of any type. Take a look a these examples now.
 
@@ -28,25 +28,25 @@ It is the only operator taking three statements. The **condition** is what the o
 
 Consider this object:
 
-    <strong>let person = {</strong> <strong>  name: 'tony',</strong> <strong>  age: 20,</strong> <strong>  driver: null</strong> <strong>};</strong>
+    let person = {   name: 'tony',   age: 20,   driver: null };
 
 We will check if the person can drive by its age in this object:
 
-    <strong>if (person.age >= 16) {</strong> <strong>  
-      person.driver = 'Yes';</strong> 
-    <strong>} else {</strong> <strong>  
-      person.driver = 'No';</strong> 
-    <strong>}</strong>
+    if (person.age >= 16) {   
+      person.driver = 'Yes'; 
+    } else {   
+      person.driver = 'No'; 
+    }
 
 We used an if statement. But we could use ternary operator and makes our life easier just by writing one line of code:
 
-    <strong>person.driver = person.age >=16 ? 'Yes' : 'No';</strong>
+    person.driver = person.age >=16 ? 'Yes' : 'No';
 
 Sweet isn&#8217;t it. We turned a five line code to just one. Besides it is more readable and maintainable. The ternary operator has the condition then the question marks which you can think of as a checker of which expression to be returned but it is just an operator and the colon separates the expression.
 
 Here is another example:
 
-    <strong>'The fee is ' + (isMember ? '$2.00' : '$10.00');</strong>
+    'The fee is ' + (isMember ? '$2.00' : '$10.00');
 
 It checks the **isMember** variable and returns the result accordingly.
 
@@ -54,24 +54,24 @@ It checks the **isMember** variable and returns the result accordingly.
 
 It is possible to have multiple ternary evaluations in one statement.Take a look at this example:
 
-    <strong>var firstCheck = false,</strong> 
-    <strong>secondCheck = false,</strong> 
-    <strong>access = firstCheck ? 'Access denied' : secondCheck ? 'Access denied' : 'Access granted';</strong> 
-    <strong>console.log(access); // logs "Access granted"</strong>
+    var firstCheck = false, 
+    secondCheck = false, 
+    access = firstCheck ? 'Access denied' : secondCheck ? 'Access denied' : 'Access granted'; 
+    console.log(access); // logs "Access granted"
 
 This is a good example for when a few conditions need to be checked step by step. You can also use multiple conditions like in a multiple-conditions IF statement:
 
-`<strong>var condition1 = true,</strong>`  
-`<strong>condition2 = false,</strong>` 
+`var condition1 = true,`  
+`condition2 = false,` 
 
-`<strong>access = condition1 ? (condition2 ? "true true": "true false") : <br />
-(condition2 ? "false true" : "false false");</strong>` `<strong>console.log(access); // logs "true false"</strong>` 
+`access = condition1 ? (condition2 ? "true true": "true false") : <br />
+(condition2 ? "false true" : "false false");` `console.log(access); // logs "true false"` 
 
 Here each expression contains a seperate ternary operator statement. Besides we can have more that only one operation per expression. We just need to seperate them with comma:
 
-    <strong>var stop = false, 
-    age = 23;</strong> 
-    <strong>age > 18 ? (</strong> <strong>alert('OK, you can go.'),</strong> <strong>location.assign('continue.html')</strong> <strong>) : 
-    (</strong> <strong>stop = true,</strong> <strong>alert('Sorry, you are much too young!')</strong> <strong>);</strong>
+    var stop = false, 
+    age = 23; 
+    age > 18 ? ( alert('OK, you can go.'), location.assign('continue.html') ) : 
+    ( stop = true, alert('Sorry, you are much too young!') );
 
 As you can see there are lots of use cases for ternary operation and if they been used in the proper place they save unnecessary  lines of code. Therefor will make the code cleaner and easy to maintain. Thanks for reading.

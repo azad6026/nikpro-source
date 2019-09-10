@@ -30,13 +30,13 @@ Basically it is one of the best use cases of CSS grid. Designing a responsive co
 
 Practically the main grid container specifies how we lay down the layout. We could find the code here:
 
-<pre class="wp-block-preformatted"><strong>.column__list {<br />   display: grid;<br />   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));<br />   grid-gap: .5rem;<br />   align-items: flex-start;<br /> }</strong></pre>
+```.column__list {<br />   display: grid;<br />   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));<br />   grid-gap: .5rem;<br />   align-items: flex-start;<br /> }```
 
 Using auto-fill in the repeat function we make sure that we achieve a fluid layout that each empty grid cell will be populated by a column once there is enough space for it. Therefore the minmax() function defines the minimum and maximum size of each grid cell to be calculated and occupied.
 
 The original layout in trello site is not responsive. We can even achieve that by adding these two lines:
 
-<pre class="wp-block-preformatted"><strong>grid-auto-flow: column;<br />grid-auto-columns: minmax(260px, 1fr);</strong></pre>
+```grid-auto-flow: column;<br />grid-auto-columns: minmax(260px, 1fr);```
 
 Originally the default flow of the grid is based on rows. If we change it to column, then we get a scrollbar in our grid as we expand the width of the container by resizing it. And adding grid-auto-columns we define the size of auto-generated columns in this case. Here these two lines are not in use though.
 
@@ -44,7 +44,7 @@ Originally the default flow of the grid is based on rows. If we change it to col
 
 Practically each main column or card is based on grid themselves:
 
-<pre class="wp-block-preformatted"><strong>.card__list {<br />   display: grid;<br />   grid-template-rows: auto;<br />   grid-gap: .5rem;<br />   margin: .5rem 0;<br /> }</strong></pre>
+```.card__list {<br />   display: grid;<br />   grid-template-rows: auto;<br />   grid-gap: .5rem;<br />   margin: .5rem 0;<br /> }```
 
 What matters is **grid-template-rows** set to **auto**. Because we need rows to have flexible heights based in their content.
 

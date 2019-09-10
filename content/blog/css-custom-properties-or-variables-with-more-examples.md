@@ -26,11 +26,11 @@ This example is from <a href="https://css-tricks.com/css-custom-properties-themi
 
 Practically we could use CSS variables anywhere we like. One of the good options is where we let the user to change the site&#8217;s theme for example. In the example above we have a main colour which we potentially want to use around the site. Generally in the title and subtitle and the footer background:
 
-<pre class="wp-block-preformatted"><strong><code>:root {&lt;br/>  --mainColor: #f06d06;&lt;br/>}</code></strong></pre>
+```<code>:root {&lt;br/>  --mainColor: #f06d06;&lt;br/>}</code>```
 
 Therefor we have an input to make the changes:
 
-<pre class="wp-block-preformatted"><strong>&lt;input type="color" /></strong></pre>
+```&lt;input type="color" />```
 
 Thankfully we are able to change the colours via Javascript just like we do with styling but this time we dynamically change the colour using CSS custom properties:
 
@@ -48,7 +48,7 @@ As a good example for animation I am referring to this one from <a href="https:
 
 As an explanation to animate an `<ellipse>` element with the class of `.bubble` inside an SVG graphic we would do this:
 
-<pre class="wp-block-preformatted"><strong><code>.bubble {
+```<code>.bubble {
 --direction-y: 30px;
 --transparency: 0;
 animation: bubbling 3s forwards infinite;
@@ -68,13 +68,13 @@ opacity: calc(var(--transparency) + 0.1);
 100% {
 opacity: var(--transparency);
 }
-}</code></strong></pre>
+}</code>```
 
 So we define the CSS custom properties in the target element and then we refer to them in the keyframe like above. We also use the calc() function to add more flexibility to the property change at some points.
 
 Also this is the code for the small fishes moving around. Each one with different delays:
 
-<pre class="wp-block-preformatted"><strong><code>.small-fish {&lt;br/>  --dir-left: -800px;&lt;br/>  --dir-right: 800px;&lt;br/>  --transparency: 0;&lt;br/>}&lt;br/>  0% {&lt;br/>    transform: translatex(var(--dir-right));&lt;br/>  }&lt;br/>  50% {&lt;br/>    opacity: calc(var(--transparency) + 0.3);&lt;br/>  }&lt;br/>  100% {&lt;br/>    transform: translatex(var(--dir-left));&lt;br/>    opacity: var(--transparency);&lt;br/>  }&lt;br/>}</code></strong></pre>
+```<code>.small-fish {&lt;br/>  --dir-left: -800px;&lt;br/>  --dir-right: 800px;&lt;br/>  --transparency: 0;&lt;br/>}&lt;br/>  0% {&lt;br/>    transform: translatex(var(--dir-right));&lt;br/>  }&lt;br/>  50% {&lt;br/>    opacity: calc(var(--transparency) + 0.3);&lt;br/>  }&lt;br/>  100% {&lt;br/>    transform: translatex(var(--dir-left));&lt;br/>    opacity: var(--transparency);&lt;br/>  }&lt;br/>}</code>```
 
 The neat thing about using CSS variables in this case is that you can tweak your animations simply by modifying the variables’ values inside the appropriate selectors. No need to look for each of the properties inside all the `@keyframes` directives.
 

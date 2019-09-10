@@ -20,14 +20,14 @@ The CSS 4 writing mode property is explained in this article.These properties ar
 
 According to MDN this is the syntax for the writing mode property and its values:
 
-<pre class="wp-block-preformatted"><strong>/* Keyword values */</strong><br /><strong>
-writing-mode: horizontal-tb;</strong> // horizontal direction from top to bottom<br /><strong>
-writing-mode: vertical-rl;</strong> // vertical direction from right to left<br /><strong>
-writing-mode: vertical-lr;</strong> // vertical direction from left to right<br /><strong>
-/* Global values */</strong><br /><strong>
-writing-mode: inherit;</strong><br /><strong>
-writing-mode: initial;</strong><br /><strong>
-writing-mode: unset;</strong></pre>
+```/* Keyword values */<br />
+writing-mode: horizontal-tb; // horizontal direction from top to bottom<br />
+writing-mode: vertical-rl; // vertical direction from right to left<br />
+writing-mode: vertical-lr; // vertical direction from left to right<br />
+/* Global values */<br />
+writing-mode: inherit;<br />
+writing-mode: initial;<br />
+writing-mode: unset;```
 
 ### Writing mode horizontal tb value
 

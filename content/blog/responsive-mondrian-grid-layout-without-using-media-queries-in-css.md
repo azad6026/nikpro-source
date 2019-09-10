@@ -29,15 +29,15 @@ Additionally most of  the CSS is the same. I explain the differences between bo
 
 Firstly the non responsive layout we specified the grid container columns and rows like this:
 
-<pre class="wp-block-preformatted"><strong>grid-template-columns: repeat(5, calc(70vw/5));</strong><strong>
-grid-template-rows: repeat(5, calc(80vw/5));</strong></pre>
+```grid-template-columns: repeat(5, calc(70vw/5));
+grid-template-rows: repeat(5, calc(80vw/5));```
 
 Therefor we specified how many columns and rows we need and asked the browser to take care of the rest by calculating the width and height with calc function. 
 
 In the responsive Mondrian grid we replace them with this code:
 
-<pre class="wp-block-preformatted"><strong>grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));</strong><strong>
-grid-auto-rows: 160px;</strong></pre>
+```grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+grid-auto-rows: 160px;```
 
 As a result we are using auto-fit to specify number of columns. What <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeat" target="_blank" rel="noopener noreferrer">auto-fit</a> does is it fills the available space with as much items available and then it collapses the empty spaces.The good thing is all the space is always occupied by items and no unused space is left. 
 

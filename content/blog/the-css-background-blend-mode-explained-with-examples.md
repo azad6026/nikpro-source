@@ -51,7 +51,7 @@ repeating-linear-gradient(
 
 As a result it repeats the colour stops infinitely in all directions so as to cover its entire container. Now we can add the **`background-blend-mode.`** There can be several values, separated by commas:
 
-<pre class="wp-block-preformatted"><strong>&lt;blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity</strong><br /></pre>
+```&lt;blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity<br /></pre>
 
 Therefor in this example we use **multiply**. This is the pen for this example:
 
@@ -75,36 +75,36 @@ However with the background-image property the **background blend mode property*
 
 Finally in this example the **repeating-radial-gradient()** function creates an image consisting of repeating gradients that radiate from an origin. Therefor it repeats the colour stops infinitely in all directions so as to cover its entire container. Have a look at the code:
 
-<pre class="wp-block-preformatted"><strong>background:</strong><strong>
-    repeating-radial-gradient(</strong><strong>
-        circle at top left,</strong><strong>
-        red,</strong><strong>
-        red 4em,</strong><strong>
-        transparent 4em,</strong><strong>
-        transparent 15em</strong><strong>
-    ),</strong><strong>
-    repeating-radial-gradient(</strong><strong>
-        circle at top right,</strong><strong>
-        lime,</strong><strong>
-        lime 4em,</strong><strong>
-        transparent 4em,</strong><strong>
-        transparent 15em</strong><strong>
-    ),</strong><strong>
-    repeating-radial-gradient(</strong><strong>
-        circle at bottom right,</strong><strong>
-        yellow,</strong><strong>
-        yellow 4em,</strong><strong>
-        transparent 4em,</strong><strong>
-        transparent 15em</strong><strong>
-    ),</strong><strong>
-    repeating-radial-gradient(</strong><strong>
-        circle at bottom left,</strong><strong>
-        blue,</strong><strong>
-        blue 4em,</strong><strong>
-        transparent 4em,</strong><strong>
-        transparent 15em</strong><strong>
-    ), white;</strong><strong>
-background-blend-mode: difference;</strong></pre>
+```background:
+    repeating-radial-gradient(
+        circle at top left,
+        red,
+        red 4em,
+        transparent 4em,
+        transparent 15em
+    ),
+    repeating-radial-gradient(
+        circle at top right,
+        lime,
+        lime 4em,
+        transparent 4em,
+        transparent 15em
+    ),
+    repeating-radial-gradient(
+        circle at bottom right,
+        yellow,
+        yellow 4em,
+        transparent 4em,
+        transparent 15em
+    ),
+    repeating-radial-gradient(
+        circle at bottom left,
+        blue,
+        blue 4em,
+        transparent 4em,
+        transparent 15em
+    ), white;
+background-blend-mode: difference;```
 
 As an explanation  **repeating-radial-gradient(** **circle at top left,** **red,** **red 4em,** **transparent 4em,** **transparent 15em** **)** this repeating gradient at the top left of its container starts in red and continues in red and continues in transparent in different positions. Try to change the background blend mode property to its different values and see other effects as well. This is the pen for this one:
 

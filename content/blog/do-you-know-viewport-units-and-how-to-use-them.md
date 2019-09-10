@@ -36,9 +36,9 @@ Generally it is common to use them for font sizes. Then the font size will updat
 
 Moreover we need to use calc() function to have more control over the font size growth:
 
-<pre class="wp-block-preformatted"><strong>h1 {
+```h1 {
   font-size: calc(20px + 1.5vw);
-}</strong></pre>
+}```
 
 Therefor this line means the h1 tag will have a font-size of 20 pixels plus 1.5% of the viewport width. So in the width of 1000px we will have a font size of 20px + 15px;
 
@@ -46,7 +46,7 @@ Therefor this line means the h1 tag will have a font-size of 20 pixels plus 1.5%
 
 Obviously we could of course use them an any use cases. We could create our grid system based on them:
 
-<pre class="wp-block-preformatted"><strong>.grid {}
+```.grid {}
     
 .grid::before,
 .grid::after {
@@ -61,7 +61,7 @@ Obviously we could of course use them an any use cases. We could create our grid
   height: 50vw;
   padding: 2em;
   width: 50vw;
-}</strong></pre>
+}```
 
 Interestingly the important thing here is at some point items will overflow on each other. **_“When the value of ‘overflow’ on the root element is ‘auto’, any scroll bars are assumed not to exist._.” __** from W3G
 

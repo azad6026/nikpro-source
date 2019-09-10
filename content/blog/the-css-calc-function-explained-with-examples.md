@@ -21,8 +21,8 @@ Generally the calc function is used to calculate CSS property values.  Accordin
 
 Basically the below is its syntax with an example:
 
-<pre class="wp-block-preformatted"><strong><code>Syntax : property: calc(expression) 
-Example : width: calc(100% - 80px);</code></strong></pre>
+```<code>Syntax : property: calc(expression) 
+Example : width: calc(100% - 80px);</code>```
 
 As a side note we need to remember a few things when using calc function:
 
@@ -73,7 +73,7 @@ Generally we can use calc to calculate the height or make the content to have th
 
 Therefor this is the interesting part of the code:
 
-<pre class="wp-block-preformatted"><strong>.area-one {
+```.area-one {
   /* With the body as tall as the browser window
      this will be too */
   height: 100%;
@@ -86,7 +86,7 @@ Therefor this is the interesting part of the code:
   /* Subtract the header size */
   height: calc(100% - 50px);
   overflow: auto;
-}</strong></pre>
+}```
 
 Firstly the body has a full height of 100%. Then the h2 has a fixed height of 50px. For the content to have the rest of the height and be as tall as the body we use calc as **height : calc(100% &#8211; 50px)** to make it work. Looks great.
 
