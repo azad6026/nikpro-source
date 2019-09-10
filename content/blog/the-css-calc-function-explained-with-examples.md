@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32179
 permalink: /the-css-calc-function-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/calc-function.png
+image: calc-function.png
 categories:
   - CSS
   - CSS3
@@ -30,7 +30,7 @@ As a side note we need to remember a few things when using calc function:
   * When using  plus and minus sign we always should add a space between the sign and the number to make a valid parsable expression: calc(50% **&#8211; 8px**) is right. calc(50% **-8px)**  is wrong.
   * We can use multiple units in our calc functions.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/css3-calc.jpg" alt="css3 calc" class="wp-image-32182" srcset="http://testgatsby.local/wp-content/uploads/2018/09/css3-calc.jpg 1280w, http://testgatsby.local/wp-content/uploads/2018/09/css3-calc-300x169.jpg 300w, http://testgatsby.local/wp-content/uploads/2018/09/css3-calc-768x432.jpg 768w, http://testgatsby.local/wp-content/uploads/2018/09/css3-calc-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> </figure> 
+<img src="http://www.nikpro.com.aucss3-calc.jpg" alt="css3 calc" class="wp-image-32182" srcset="http://testgatsby.localcss3-calc.jpg 1280w, http://testgatsby.localcss3-calc-300x169.jpg 300w, http://testgatsby.localcss3-calc-768x432.jpg 768w, http://testgatsby.localcss3-calc-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> </figure> 
 
 ### Positioning elements with calc
 

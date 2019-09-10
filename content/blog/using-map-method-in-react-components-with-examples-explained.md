@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32032
 permalink: /using-map-method-in-react-components-with-examples-explained/
-image: /wp-content/uploads/2018/08/reactmap.png
+image: reactmap.png
 categories:
   - ES6
   - React

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32045
 permalink: /how-to-extract-components-in-react-with-example/
-image: /wp-content/uploads/2018/08/extracting-component.png
+image: extracting-component.png
 categories:
   - React
 tags:

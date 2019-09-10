@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=31902
 permalink: /build-a-clock-with-javascript-and-css-using-css-transform/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/07/clock-without-js.png
+image: clock-without-js.png
 categories:
   - CSS
   - JAVASCRIPT
@@ -26,7 +26,7 @@ We will build a clock with Javascript and [CSS transform](http://www.nikpro.com
 
 We have three divs for seconds and minutes and hours by the class of &#8220;hand&#8221;. We will explain the most important part of the clock here. So without the Javascript and the transform line of code in the .hand class in CSS this is what you will see:
 
-<img class="alignnone wp-image-31903 size-full" src="http://www.nikpro.com.au/wp-content/uploads/2018/07/clock-without-transform.png" alt="" width="953" height="544" srcset="http://testgatsby.local/wp-content/uploads/2018/07/clock-without-transform.png 953w, http://testgatsby.local/wp-content/uploads/2018/07/clock-without-transform-300x171.png 300w, http://testgatsby.local/wp-content/uploads/2018/07/clock-without-transform-768x438.png 768w" sizes="(max-width: 953px) 100vw, 953px" /> 
+<img class="alignnone wp-image-31903 size-full" src="http://www.nikpro.com.auclock-without-transform.png" alt="" width="953" height="544" srcset="http://testgatsby.localclock-without-transform.png 953w, http://testgatsby.localclock-without-transform-300x171.png 300w, http://testgatsby.localclock-without-transform-768x438.png 768w" sizes="(max-width: 953px) 100vw, 953px" /> 
 
 All three hands are above each other pointing to the nine it seams. So first we need to make them point to twelve where the clock actually starts. 
 
@@ -41,7 +41,7 @@ We change the transform-origin from 50% which is its default value to 100%. Beca
 
 However this is not enough. Although it will ake the hands to turn pointing right to the middle but they do not start from twelve &#8216;o clock. They are stuck to nine &#8216;o clock at the moment.Thus we rotate them by 90 degrees and that will do the trick:
 
-<img class="alignnone wp-image-31904 size-full" src="http://www.nikpro.com.au/wp-content/uploads/2018/07/clock-without-js.png" alt="" width="952" height="543" srcset="http://testgatsby.local/wp-content/uploads/2018/07/clock-without-js.png 952w, http://testgatsby.local/wp-content/uploads/2018/07/clock-without-js-300x171.png 300w, http://testgatsby.local/wp-content/uploads/2018/07/clock-without-js-768x438.png 768w" sizes="(max-width: 952px) 100vw, 952px" /> 
+<img class="alignnone wp-image-31904 size-full" src="http://www.nikpro.com.auclock-without-js.png" alt="" width="952" height="543" srcset="http://testgatsby.localclock-without-js.png 952w, http://testgatsby.localclock-without-js-300x171.png 300w, http://testgatsby.localclock-without-js-768x438.png 768w" sizes="(max-width: 952px) 100vw, 952px" /> 
 
 We have the clock ready now. Lets add the Javascript. As always we get the elements we need to work on:
 

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32018
 permalink: /es6-export-and-import-statements-explained-with-examples/
-image: /wp-content/uploads/2018/08/import-export.png
+image: import-export.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -64,4 +64,4 @@ And the default export and import example:
 
 It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/08/import-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="http://testgatsby.local/wp-content/uploads/2018/08/import-export-image.jpeg 1276w, http://testgatsby.local/wp-content/uploads/2018/08/import-export-image-300x160.jpeg 300w, http://testgatsby.local/wp-content/uploads/2018/08/import-export-image-768x410.jpeg 768w, http://testgatsby.local/wp-content/uploads/2018/08/import-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> </figure>
+<img src="http://www.nikpro.com.auimport-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="http://testgatsby.localimport-export-image.jpeg 1276w, http://testgatsby.localimport-export-image-300x160.jpeg 300w, http://testgatsby.localimport-export-image-768x410.jpeg 768w, http://testgatsby.localimport-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> </figure>

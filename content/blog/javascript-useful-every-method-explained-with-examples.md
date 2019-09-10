@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32233
 permalink: /javascript-useful-every-method-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/every-1568x1046.png
+image: every-1568x1046.png
 categories:
   - ES6
   - JAVASCRIPT

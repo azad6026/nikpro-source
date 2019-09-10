@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31938
 permalink: /customise-html5-video-player-element-in-a-real-example/
-image: /wp-content/uploads/2018/07/htnl5-video.jpg
+image: htnl5-video.jpg
 categories:
   - HTML5
   - JAVASCRIPT

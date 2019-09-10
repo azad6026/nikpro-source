@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32092
 permalink: /using-es6-destructuring-in-react-application-codes/
-image: /wp-content/uploads/2018/08/react-destructuring.png
+image: react-destructuring.png
 categories:
   - ES6
   - React

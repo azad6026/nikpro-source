@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31894
 permalink: /manipulate-elements-visually-with-css-transform-explained-with-examples/
-image: /wp-content/uploads/2018/07/css-transform.png
+image: css-transform.png
 categories:
   - CSS
   - CSS3

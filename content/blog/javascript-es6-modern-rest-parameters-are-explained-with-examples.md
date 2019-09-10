@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32291
 permalink: /javascript-es6-modern-rest-parameters-are-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/rest-params-1568x882.jpeg
+image: rest-params-1568x882.jpeg
 categories:
   - ES6
   - JAVASCRIPT
@@ -31,7 +31,7 @@ Then we have all remaining arguments to be placed within &#8220;standard&#8221; 
 
 Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array `](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/restprams.png" alt="" class="wp-image-32293" srcset="http://testgatsby.local/wp-content/uploads/2018/09/restprams.png 599w, http://testgatsby.local/wp-content/uploads/2018/09/restprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> </figure> 
+<img src="http://www.nikpro.com.aurestprams.png" alt="" class="wp-image-32293" srcset="http://testgatsby.localrestprams.png 599w, http://testgatsby.localrestprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> </figure> 
 
 ### Destructuring rest parameters
 

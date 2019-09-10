@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32314
 permalink: /using-object-literals-and-map-method-instead-of-the-old-switch-statement/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/switch-statement.jpeg
+image: switch-statement.jpeg
 categories:
   - ES6
   - JAVASCRIPT
@@ -44,7 +44,7 @@ Clearly we could see how switch statement works here. it finds or categorises fr
 
 We know that switch statements, with their non standard syntax included, are difficult to read and contain extra **“syntactical sugar (not good sugar)”** that we really don’t want to be reading.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/synthatical-sugar.jpeg" alt="synthetical sugar" class="wp-image-32316" srcset="http://testgatsby.local/wp-content/uploads/2018/09/synthatical-sugar.jpeg 1600w, http://testgatsby.local/wp-content/uploads/2018/09/synthatical-sugar-300x202.jpeg 300w, http://testgatsby.local/wp-content/uploads/2018/09/synthatical-sugar-768x516.jpeg 768w, http://testgatsby.local/wp-content/uploads/2018/09/synthatical-sugar-1024x688.jpeg 1024w, http://testgatsby.local/wp-content/uploads/2018/09/synthatical-sugar-1568x1054.jpeg 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> </figure> 
+<img src="http://www.nikpro.com.ausynthatical-sugar.jpeg" alt="synthetical sugar" class="wp-image-32316" srcset="http://testgatsby.localsynthatical-sugar.jpeg 1600w, http://testgatsby.localsynthatical-sugar-300x202.jpeg 300w, http://testgatsby.localsynthatical-sugar-768x516.jpeg 768w, http://testgatsby.localsynthatical-sugar-1024x688.jpeg 1024w, http://testgatsby.localsynthatical-sugar-1568x1054.jpeg 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> </figure> 
 
 ## Object literals or map to help
 

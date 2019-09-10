@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31948
 permalink: /higher-order-functions-in-javascript-with-examples/
-image: /wp-content/uploads/2018/08/higher-order-functions-1568x882.jpg
+image: higher-order-functions-1568x882.jpg
 categories:
   - ES6
   - JAVASCRIPT

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31870
 permalink: /css-transitions-and-animations-explained-with-examples/
-image: /wp-content/uploads/2018/07/css-transition.jpg
+image: css-transition.jpg
 categories:
   - CSS
   - CSS3

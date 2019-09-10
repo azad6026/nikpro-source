@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31932
 permalink: /the-css-nth-child-selector-explained-with-examples/
-image: /wp-content/uploads/2018/07/nth-child.jpg
+image: nth-child.jpg
 categories:
   - CSS
   - CSS3

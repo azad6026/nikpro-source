@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32163
 permalink: /css-custom-properties-or-variables-with-more-examples/
-image: /wp-content/uploads/2018/09/css-custo-properties.jpg
+image: css-custo-properties.jpg
 categories:
   - CSS
   - CSS3

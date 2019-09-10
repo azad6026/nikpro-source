@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31945
 permalink: /the-css4-focus-within-selector-is-explained-with-examples/
-image: /wp-content/uploads/2018/07/focus-within.png
+image: focus-within.png
 categories:
   - Content Writing
   - CSS4

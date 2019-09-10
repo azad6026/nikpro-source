@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32100
 permalink: /create-a-simple-website-layout-using-flexbox/
-image: /wp-content/uploads/2018/08/website-kayout-using-FlexBox.png
+image: website-kayout-using-FlexBox.png
 categories:
   - CSS
   - CSS3

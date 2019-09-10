@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32306
 permalink: /sibling-and-children-and-adjacent-sibling-css-selectors/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/css-selectors.png
+image: css-selectors.png
 categories:
   - CSS
 ---
@@ -30,7 +30,7 @@ On the other hand we might need to select only the **direct children** of the un
 
 Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/selector-example.png" alt="" class="wp-image-32307" srcset="http://testgatsby.local/wp-content/uploads/2018/09/selector-example.png 570w, http://testgatsby.local/wp-content/uploads/2018/09/selector-example-300x205.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
+<img src="http://www.nikpro.com.auselector-example.png" alt="" class="wp-image-32307" srcset="http://testgatsby.localselector-example.png 570w, http://testgatsby.localselector-example-300x205.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
 
 Therefor we clearly see the difference between these two CSS selectors.
 
@@ -42,7 +42,7 @@ Technically we need to know that this selector selects all siblings. Not just th
 
 We can see the visual showcase of this here in this image:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/general-sibling-example.png" alt="general sibling example" class="wp-image-32309" srcset="http://testgatsby.local/wp-content/uploads/2018/09/general-sibling-example.png 570w, http://testgatsby.local/wp-content/uploads/2018/09/general-sibling-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
+<img src="http://www.nikpro.com.augeneral-sibling-example.png" alt="general sibling example" class="wp-image-32309" srcset="http://testgatsby.localgeneral-sibling-example.png 570w, http://testgatsby.localgeneral-sibling-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
 
 Although the last **p** element is not directly followed by an article but it has been selected by **p ~ p** selector as well.
 
@@ -50,7 +50,7 @@ Although the last **p** element is not directly followed by an article but it ha
 
 Finally we can combine both above CSS selectors and make an adjacent sibling selector which selects and element which directly follows the first element:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/adjacent-selector-example.png" alt="adjacent selector example" class="wp-image-32308" srcset="http://testgatsby.local/wp-content/uploads/2018/09/adjacent-selector-example.png 570w, http://testgatsby.local/wp-content/uploads/2018/09/adjacent-selector-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
+<img src="http://www.nikpro.com.auadjacent-selector-example.png" alt="adjacent selector example" class="wp-image-32308" srcset="http://testgatsby.localadjacent-selector-example.png 570w, http://testgatsby.localadjacent-selector-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure> 
 
 As a result the last p element is not selected by **p + p** selector this time which makes sense.
 

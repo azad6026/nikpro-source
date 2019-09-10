@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32281
 permalink: /react-forms-in-class-components-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/react-again.png
+image: react-again.png
 categories:
   - ES6
   - React
@@ -51,7 +51,7 @@ Alright. We better take a look at the state of our component in this case:
 
 Considerably I am using the React 16 ES6 version of state. You can also use a constructor for this which is less recommended as it makes it difficult to read and we need to take care of &#8220;this&#8221; in that case.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/react-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="http://testgatsby.local/wp-content/uploads/2018/09/react-logo.jpeg 842w, http://testgatsby.local/wp-content/uploads/2018/09/react-logo-300x212.jpeg 300w, http://testgatsby.local/wp-content/uploads/2018/09/react-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> </figure> 
+<img src="http://www.nikpro.com.aureact-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="http://testgatsby.localreact-logo.jpeg 842w, http://testgatsby.localreact-logo-300x212.jpeg 300w, http://testgatsby.localreact-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> </figure> 
 
 <hr class="wp-block-separator" />
 

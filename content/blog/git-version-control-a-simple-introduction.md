@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31738
 permalink: /git-version-control-a-simple-introduction/
-image: /wp-content/uploads/2018/06/git-version-control-system.jpg
+image: git-version-control-system.jpg
 categories:
   - Git
 tags:

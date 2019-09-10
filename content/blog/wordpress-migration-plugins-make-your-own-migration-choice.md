@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31629
 permalink: /wordpress-migration-plugins-make-your-own-migration-choice/
-image: /wp-content/uploads/2018/06/migration-wp.jpg
+image: migration-wp.jpg
 categories:
   - WORDPRESS
 tags:

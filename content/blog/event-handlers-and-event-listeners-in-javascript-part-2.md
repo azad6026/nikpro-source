@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31778
 permalink: /event-handlers-and-event-listeners-in-javascript-part-2/
-image: /wp-content/uploads/2018/07/event-listener-three-actors-model.png
+image: event-listener-three-actors-model.png
 categories:
   - JAVASCRIPT
 tags:

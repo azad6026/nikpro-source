@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31973
 permalink: /hoisting-in-javascript-explained-with-examples/
-image: /wp-content/uploads/2018/08/hoisting.png
+image: hoisting.png
 categories:
   - JAVASCRIPT
 tags:

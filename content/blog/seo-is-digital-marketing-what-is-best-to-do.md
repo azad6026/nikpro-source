@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31635
 permalink: /seo-is-digital-marketing-what-is-best-to-do/
-image: /wp-content/uploads/2018/06/images-3.jpeg
+image: images-3.jpeg
 categories:
   - SEO
 tags:

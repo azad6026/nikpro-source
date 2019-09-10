@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31952
 permalink: /the-ternary-operator-in-javascript-with-some-examples-explained/
-image: /wp-content/uploads/2018/08/ternary-operators.png
+image: ternary-operators.png
 categories:
   - JAVASCRIPT
 tags:
@@ -22,7 +22,7 @@ This operator has a very interesting and yet confusing syntax if you don&#8217;t
 
 It is the only operator taking three statements. The **condition** is what the operator will evaluate against it. If it evaluates to true the first expression will execute. If not the second one ( expression2 ) will be the returning value from the operator. Expressions could be of any type. Take a look a these examples now.
 
-<img class="wp-image-31954 size-full alignnone" src="http://www.nikpro.com.au/wp-content/uploads/2018/08/ternary.png" alt="" width="600" height="338" srcset="http://testgatsby.local/wp-content/uploads/2018/08/ternary.png 600w, http://testgatsby.local/wp-content/uploads/2018/08/ternary-300x169.png 300w" sizes="(max-width: 600px) 100vw, 600px" /> 
+<img class="wp-image-31954 size-full alignnone" src="http://www.nikpro.com.auternary.png" alt="" width="600" height="338" srcset="http://testgatsby.localternary.png 600w, http://testgatsby.localternary-300x169.png 300w" sizes="(max-width: 600px) 100vw, 600px" /> 
 
 ### Simple ternary operator
 

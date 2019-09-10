@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32748
 permalink: /equal-height-column-card-layouts-with-aligned-content-using-flexbox-and-grid-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2019/05/equal-height-column-1.png
+image: equal-height-column-1.png
 categories:
   - CSS
   - CSS3
@@ -47,10 +47,9 @@ Interestingly all the layout boxes have three direct children. H3, p and button.
 
 ## FlexBox to make equal height column
 
-Not only we want the columns to be equal height but also we need the button to stick to the bottom of the box so that it looks neat. 
+Not only we want the columns to be equal height but also we need the button to stick to the bottom of the box so that it looks neat.
 
 https://codepen.io/azad6026/pen/LoPmVE
-
 
 I have used grid to make three responsive boxes. But to make the inner alignment flexbox does the job:
 

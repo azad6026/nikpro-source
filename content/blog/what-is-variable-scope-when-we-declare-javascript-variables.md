@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32296
 permalink: /what-is-variable-scope-when-we-declare-javascript-variables/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/scope-example.png
+image: scope-example.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -46,7 +46,7 @@ Clearly we have statement scope, block scope, function scope and general scope. 
 
 As a result let allows developers to scope variables at the block level (the nearest curly brackets).<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/global-scope.png" alt="variable scoping" class="wp-image-32301" srcset="http://testgatsby.local/wp-content/uploads/2018/09/global-scope.png 544w, http://testgatsby.local/wp-content/uploads/2018/09/global-scope-300x179.png 300w" sizes="(max-width: 544px) 100vw, 544px" /> </figure> 
+<img src="http://www.nikpro.com.auglobal-scope.png" alt="variable scoping" class="wp-image-32301" srcset="http://testgatsby.localglobal-scope.png 544w, http://testgatsby.localglobal-scope-300x179.png 300w" sizes="(max-width: 544px) 100vw, 544px" /> </figure> 
 
 ### Variable scope of const
 

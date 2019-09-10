@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31688
 permalink: /how-seo-works-and-how-keywords-matter-in-2018/
-image: /wp-content/uploads/2018/06/seo-matters.jpg
+image: seo-matters.jpg
 categories:
   - Content Writing
   - SEO

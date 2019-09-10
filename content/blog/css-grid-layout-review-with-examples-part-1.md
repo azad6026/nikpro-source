@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31798
 permalink: /css-grid-layout-review-with-examples-part-1/
-image: /wp-content/uploads/2018/07/css-grid-layout.png
+image: css-grid-layout.png
 categories:
   - CSS
 tags:
@@ -19,7 +19,7 @@ This post is the first post about CSS grid layouts. It is more based on examples
 
 The grid container is boxes placed within certain boundaries and every website has made upon that. The below gif by gif by <a class="markup--anchor markup--figure-anchor" href="https://dribbble.com/bnistr" target="_blank" rel="nofollow noopener noreferrer" data-href="https://dribbble.com/bnistr">chris bannister</a> shows the grid layout:<figure id="attachment_31800" aria-describedby="caption-attachment-31800" style="width: 800px" class="wp-caption aligncenter">
 
-<img class="wp-image-31800 size-full" src="http://www.nikpro.com.au/wp-content/uploads/2018/07/chis-bannister.gif" alt="" width="800" height="600" /> <figcaption id="caption-attachment-31800" class="wp-caption-text">gif by chris bannister</figcaption></figure> 
+<img class="wp-image-31800 size-full" src="http://www.nikpro.com.auchis-bannister.gif" alt="" width="800" height="600" /> <figcaption id="caption-attachment-31800" class="wp-caption-text">gif by chris bannister</figcaption></figure> 
 
 Simply a grid is just horizontal and vertical lines that define the placement of other design elements.
 

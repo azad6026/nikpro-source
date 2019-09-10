@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31858
 permalink: /what-are-primitives-and-their-differences-with-objects-in-javascript/
-image: /wp-content/uploads/2018/07/primitives.png
+image: primitives.png
 categories:
   - JAVASCRIPT
 tags:

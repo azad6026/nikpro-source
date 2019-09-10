@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32007
 permalink: /more-on-react-components-with-examples/
-image: /wp-content/uploads/2018/08/react-components.png
+image: react-components.png
 categories:
   - JAVASCRIPT
   - React

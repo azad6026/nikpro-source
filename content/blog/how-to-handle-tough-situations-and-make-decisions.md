@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31835
 permalink: /how-to-handle-tough-situations-and-make-decisions/
-image: /wp-content/uploads/2018/07/the-change.jpg
+image: the-change.jpg
 categories:
   - CSS
   - JAVASCRIPT
@@ -21,7 +21,7 @@ There are times as I stated in [this post](http://www.nikpro.com.au/frustration-
 
 After hours of trying to find a solution to your problem,bug or anything you are working on, you still have got nothing. And of course you have tried everything you can think of. You feel like you are re-researching yourself and fell to be in a circle around yourself. None of your thoughts worked out and even it made it worse. And if it is a technical project problem, you might have missed the deadline or ruined the project. 
 
-<img class="aligncenter wp-image-31838 size-full" src="http://www.nikpro.com.au/wp-content/uploads/2018/07/open-the-door.jpg" alt="" width="725" height="482" srcset="http://testgatsby.local/wp-content/uploads/2018/07/open-the-door.jpg 725w, http://testgatsby.local/wp-content/uploads/2018/07/open-the-door-300x199.jpg 300w" sizes="(max-width: 725px) 100vw, 725px" /> 
+<img class="aligncenter wp-image-31838 size-full" src="http://www.nikpro.com.auopen-the-door.jpg" alt="" width="725" height="482" srcset="http://testgatsby.localopen-the-door.jpg 725w, http://testgatsby.localopen-the-door-300x199.jpg 300w" sizes="(max-width: 725px) 100vw, 725px" /> 
 
 ## Hold on for a moment &#8230;
 

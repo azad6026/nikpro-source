@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31847
 permalink: /what-are-promises-and-how-to-use-them-in-javascript/
-image: /wp-content/uploads/2018/07/es6-promises.png
+image: es6-promises.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -92,7 +92,7 @@ Using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arro
 
 Remember to always return a result otherwise callbacks will not catch the result of the previous promise. Now that we know how to use them n practice, we better define them.
 
-<img class="aligncenter wp-image-31849 size-full" src="http://www.nikpro.com.au/wp-content/uploads/2018/07/promised-land.jpeg" alt="" width="640" height="480" srcset="http://testgatsby.local/wp-content/uploads/2018/07/promised-land.jpeg 640w, http://testgatsby.local/wp-content/uploads/2018/07/promised-land-300x225.jpeg 300w" sizes="(max-width: 640px) 100vw, 640px" /> 
+<img class="aligncenter wp-image-31849 size-full" src="http://www.nikpro.com.aupromised-land.jpeg" alt="" width="640" height="480" srcset="http://testgatsby.localpromised-land.jpeg 640w, http://testgatsby.localpromised-land-300x225.jpeg 300w" sizes="(max-width: 640px) 100vw, 640px" /> 
 
 ## How to create a promise
 

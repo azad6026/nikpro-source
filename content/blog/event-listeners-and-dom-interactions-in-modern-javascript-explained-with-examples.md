@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32710
 permalink: /event-listeners-and-dom-interactions-in-modern-javascript-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2019/03/es6-events.png
+image: es6-events.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -16,6 +16,7 @@ tags:
   - es6
   - event listeners
 ---
+
 [Event listeners and their interaction](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-2/) with DOM is a very important part of Javascript. There has been many solutions and ways to deal with them and write the code. In this article we write some simple but modern and very useful examples.
 
 ## Attach event listener
@@ -24,7 +25,7 @@ We most likely write the code to add and event to an element like this:
 
 <pre class="wp-block-preformatted"><strong>Const Element1 = document.querySeletor(#name);<br />Element1.addEventListener ("click", function() {<br /> //this function does stuff <br /> });</strong></pre>
 
-Basically after defining the element, we use addEventListener method to attach the **&#8220;event&#8221;** and the action that it should do to the element. But this code adds the event only to one element. What if we had a few similar elements to be selectee? 
+Basically after defining the element, we use addEventListener method to attach the **&#8220;event&#8221;** and the action that it should do to the element. But this code adds the event only to one element. What if we had a few similar elements to be selectee?
 
 ## Add the event to multiple elements
 
@@ -52,7 +53,7 @@ But remember we should not use arrow function for the function inside the addEve
 
 <pre class="wp-block-preformatted"><strong>let elementsArray = document.querySelectorAll(".element");<br />elementsArray.forEach(el => el.addEventListener('click',() => {<br />  //console.log(this); refers to window<br />}));</strong></pre><figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2019/03/es5.jpg" alt="" class="wp-image-32711" srcset="http://testgatsby.local/wp-content/uploads/2019/03/es5.jpg 638w, http://testgatsby.local/wp-content/uploads/2019/03/es5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption></figure> 
+<img src="http://www.nikpro.com.aues5.jpg" alt="" class="wp-image-32711" srcset="http://testgatsby.locales5.jpg 638w, http://testgatsby.locales5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption></figure>
 
 In this case we don’t want an arrow function, because we need the keyword to reference the actual array elements that got clicked. That is now even more important as we have a whole bunch of them.
 

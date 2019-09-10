@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31967
 permalink: /custom-form-and-gird-layouts-with-flexbox/
-image: /wp-content/uploads/2018/08/flexbox-layout-form.jpg
+image: flexbox-layout-form.jpg
 categories:
   - CSS
   - CSS3

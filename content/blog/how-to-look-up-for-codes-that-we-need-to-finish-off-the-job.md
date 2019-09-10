@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31657
 permalink: /how-to-look-up-for-codes-that-we-need-to-finish-off-the-job/
-image: /wp-content/uploads/2018/06/search-look-up-code-1568x706.jpg
+image: search-look-up-code-1568x706.jpg
 categories:
   - Web Development
 tags:

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31623
 permalink: /wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/
-image: /wp-content/uploads/2018/06/Common-Challenges-Faced-by-WordPress-Agencies-Banner.jpg
+image: Common-Challenges-Faced-by-WordPress-Agencies-Banner.jpg
 categories:
   - WORDPRESS
 tags:

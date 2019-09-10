@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31840
 permalink: /how-to-connect-to-an-api-with-javascript-in-a-real-app/
-image: /wp-content/uploads/2018/07/api-connect.jpg
+image: api-connect.jpg
 categories:
   - API
   - JAVASCRIPT

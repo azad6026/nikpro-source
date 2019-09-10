@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32134
 permalink: /you-should-plan-ahead-even-when-you-are-certain-about-it/
-image: /wp-content/uploads/2018/09/hosting.jpeg
+image: hosting.jpeg
 categories:
   - NikPro
 ---

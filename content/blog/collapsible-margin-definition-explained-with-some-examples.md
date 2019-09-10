@@ -6,7 +6,6 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32763
 permalink: /create-a-simple-website-layout-using-flexbox/
-# image: /wp-content/uploads/2019/07/margin-in-element-1140x622.png
 image: margin-in-element-1140x622.png
 categories:
   - CSS
@@ -31,7 +30,9 @@ Basically here is a simple example:
 <pre class="wp-block-preformatted"><strong>&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
 &lt;p&gt; This has a margin-top&lt;/p&gt;
 </strong></pre>
+
 We define the margins in CSS as below:
+
 <pre class="wp-block-preformatted"><strong>
 h1 {  
  margin-bottom: 25px;
@@ -40,6 +41,7 @@ p {
  margin-top: 50px
 }
 </strong></pre>
+
 The expectation is to have 75px of margin between the two but we will have 50px as the actual distance. Therefore the biggest margin has won. Hooray!
 
 But wait. This is confusing in cases. Yes that is right. Especially in typography. So [some articles ](https://csswizardry.com/2012/06/single-direction-margin-declarations/)recommend to have only one direction margin for everything and make the other one zero. Well, good idea and you can override that whenever needed.
@@ -48,7 +50,7 @@ But wait. This is confusing in cases. Yes that is right. Especially in typograph
 
 We might expect the same rule in the case of parent child. But it is different here. The child’s margin will be overriden by parent. So the parent is the dominent in this case.
 
-But if we add some padding or border to the parent, this rule will go away as well. 
+But if we add some padding or border to the parent, this rule will go away as well.
 
 [See the pen below from CSS tricks](https://css-tricks.com/what-you-should-know-about-collapsing-margins/):
 

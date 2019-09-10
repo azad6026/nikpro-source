@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32248
 permalink: /how-cascade-in-css-works-this-part-important/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/css-rule.png
+image: css-rule.png
 categories:
   - CSS
 tags:
@@ -41,7 +41,7 @@ Therefor the only way to override it is to add another rule for that property wi
 
 Basically we have three rules specified in this example. We have a generic tag selector called **p** which applies to all paragraphs in HTML. Secondly we have a class selector called .**better.**Thirdly we have an id selector called **#winner** which as we know can only belong to one element as ids should be unique in a HTML code.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/id-vs-class.jpg" alt="" class="wp-image-32249" srcset="http://testgatsby.local/wp-content/uploads/2018/09/id-vs-class.jpg 510w, http://testgatsby.local/wp-content/uploads/2018/09/id-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> </figure> 
+<img src="http://www.nikpro.com.auid-vs-class.jpg" alt="" class="wp-image-32249" srcset="http://testgatsby.localid-vs-class.jpg 510w, http://testgatsby.localid-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> </figure> 
 
 Lets break it down to some steps:
 

@@ -6,10 +6,11 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31560
 permalink: /the-beauty-of-javascript/
-image: /wp-content/uploads/2018/05/challenge-1568x556.jpg
+image: challenge-1568x556.jpg
 categories:
   - JAVASCRIPT
 ---
+
 The more I learn about Javascript, the better I understand its world and beauty of coding with it.
 
 Sometimes you might stuck in a very small piece of code and you become angry or frustrated as I became today but at the end you will see that another door is available for you to open and find another world on the other side and enjoy it and cheer up and pat yourself on the back for what you have done.

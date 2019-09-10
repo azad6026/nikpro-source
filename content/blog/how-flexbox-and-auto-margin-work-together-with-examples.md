@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32050
 permalink: /how-flexbox-and-auto-margin-work-together-with-examples/
-image: /wp-content/uploads/2018/08/flexbox-and-auto-magin.jpg
+image: flexbox-and-auto-magin.jpg
 categories:
   - CSS
   - CSS3

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31511
 permalink: /topics/
-image: /wp-content/uploads/2018/03/network.png
+image: network.png
 categories:
   - ANGULAR
   - CSS
@@ -15,6 +15,7 @@ categories:
   - Web Development
   - WORDPRESS
 ---
+
 What we are going to cover will be around Web Development and Design:
 
 ### CSS
@@ -27,7 +28,7 @@ What we are going to cover will be around Web Development and Design:
 
 ### WORDPRESS
 
-We build our websites and stores with these technologies so I am happy to share my ideas with you. So wait up for the first post on this. 
+We build our websites and stores with these technologies so I am happy to share my ideas with you. So wait up for the first post on this.
 
 If you need a website right now, just contact me on my [email](sales@www.nikpro.com.au).
 

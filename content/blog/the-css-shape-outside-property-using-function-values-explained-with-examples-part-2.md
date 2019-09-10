@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32200
 permalink: /the-css-shape-outside-property-using-function-values-explained-with-examples-part-2/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/shape-outside-again.png
+image: shape-outside-again.png
 categories:
   - CSS
   - CSS3
@@ -54,7 +54,7 @@ So according to MDN float area is computed according to the shape of a float ele
 
 Practically the `shape-outside: url(image.png)` CSS declaration tells the browser to extract a shape from the image. Also we could use `-image-threshold` property to define the minimum opacity level of pixels that will be used to create the shape. Therefor we could use `0.0` for fully transparent and `1.0`  for fully opaque.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/espresso.jpg" alt="" class="wp-image-32202" srcset="http://testgatsby.local/wp-content/uploads/2018/09/espresso.jpg 660w, http://testgatsby.local/wp-content/uploads/2018/09/espresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure> 
+<img src="http://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="http://testgatsby.localespresso.jpg 660w, http://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure> 
 
 As a result of using the url function value the text has been wrapped around the element in the above example:
 

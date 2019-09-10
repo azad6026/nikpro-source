@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31852
 permalink: /how-to-update-css-variables-using-javascript-with-examples/
-image: /wp-content/uploads/2018/07/css-var-change.png
+image: css-var-change.png
 categories:
   - CSS
   - JAVASCRIPT

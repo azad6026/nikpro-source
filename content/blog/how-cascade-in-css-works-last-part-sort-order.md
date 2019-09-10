@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32286
 permalink: /how-cascade-in-css-works-last-part-sort-order/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/cascade-ss.jpg
+image: cascade-ss.jpg
 categories:
   - CSS
 tags:
@@ -57,7 +57,7 @@ Therefor we have these three styles to win:
 
 As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/cascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="http://testgatsby.local/wp-content/uploads/2018/09/cascade-it.jpg 1480w, http://testgatsby.local/wp-content/uploads/2018/09/cascade-it-300x185.jpg 300w, http://testgatsby.local/wp-content/uploads/2018/09/cascade-it-768x473.jpg 768w, http://testgatsby.local/wp-content/uploads/2018/09/cascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> </figure> 
+<img src="http://www.nikpro.com.aucascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="http://testgatsby.localcascade-it.jpg 1480w, http://testgatsby.localcascade-it-300x185.jpg 300w, http://testgatsby.localcascade-it-768x473.jpg 768w, http://testgatsby.localcascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> </figure> 
 
 ### All rules apply
 

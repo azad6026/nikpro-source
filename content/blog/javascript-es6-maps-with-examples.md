@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31906
 permalink: /javascript-es6-maps-with-examples/
-image: /wp-content/uploads/2018/07/es6-maps.jpg
+image: es6-maps.jpg
 categories:
   - ES6
   - JAVASCRIPT

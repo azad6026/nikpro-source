@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31809
 permalink: /css-grid-layout-review-with-examples-part-2/
-image: /wp-content/uploads/2018/07/grid-item-positioning.jpg
+image: grid-item-positioning.jpg
 categories:
   - CSS
 tags:

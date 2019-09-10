@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31646
 permalink: /css-grid-layouts-and-css-new-variables-should-we-get-started/
-image: /wp-content/uploads/2018/06/css-grid-terminology.png
+image: css-grid-terminology.png
 categories:
   - CSS
   - CSS3

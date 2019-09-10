@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32011
 permalink: /disabling-form-inputs-based-on-selection-explained-with-an-example/
-image: /wp-content/uploads/2018/08/Disabling-form-inputs.png
+image: Disabling-form-inputs.png
 categories:
   - ES6
   - JAVASCRIPT

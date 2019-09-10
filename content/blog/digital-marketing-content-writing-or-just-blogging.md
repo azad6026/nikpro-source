@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31649
 permalink: /digital-marketing-content-writing-or-just-blogging/
-image: /wp-content/uploads/2018/06/digital-marketing2.jpg
+image: digital-marketing2.jpg
 categories:
   - Content Writing
 tags:

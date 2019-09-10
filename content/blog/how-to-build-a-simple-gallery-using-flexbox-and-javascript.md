@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31821
 permalink: /how-to-build-a-simple-gallery-using-flexbox-and-javascript/
-image: /wp-content/uploads/2018/07/flexbox-gallery.png
+image: flexbox-gallery.png
 categories:
   - CSS
   - JAVASCRIPT

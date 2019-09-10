@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31981
 permalink: /css-clip-path-property-basic-concept-explained-with-examples/
-image: /wp-content/uploads/2018/08/clip-path.jpg
+image: clip-path.jpg
 categories:
   - CSS
   - CSS3

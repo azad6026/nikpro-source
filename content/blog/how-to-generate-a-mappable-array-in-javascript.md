@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32139
 permalink: /how-to-generate-a-mappable-array-in-javascript/
-image: /wp-content/uploads/2018/09/mappable-arrays-in-js-1568x882.png
+image: mappable-arrays-in-js-1568x882.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -35,7 +35,7 @@ And map each index to a number using map:
 
 As a result this is what we get:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/mapable-array.png" alt="" class="wp-image-32140" srcset="http://testgatsby.local/wp-content/uploads/2018/09/mapable-array.png 800w, http://testgatsby.local/wp-content/uploads/2018/09/mapable-array-300x152.png 300w, http://testgatsby.local/wp-content/uploads/2018/09/mapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </figure> 
+<img src="http://www.nikpro.com.aumapable-array.png" alt="" class="wp-image-32140" srcset="http://testgatsby.localmapable-array.png 800w, http://testgatsby.localmapable-array-300x152.png 300w, http://testgatsby.localmapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </figure> 
 
 Surprisingly we get undefined. As an explanation we know arrays are objects in practice. So the array like  **[&#8216;one&#8217;, &#8216;two&#8217;, &#8216;three&#8217;]** is equivalent to this object:
 

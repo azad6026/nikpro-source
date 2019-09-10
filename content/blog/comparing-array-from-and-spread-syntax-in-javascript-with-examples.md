@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32219
 permalink: /comparing-array-from-and-spread-syntax-in-javascript-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/array-1568x490.jpeg
+image: array-1568x490.jpeg
 categories:
   - ES6
   - JAVASCRIPT
@@ -58,7 +58,7 @@ Moreover we can use them both on a set object:
 As a result in this case as well spread syntax is a better option as it makes the code look better.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/arrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="http://testgatsby.local/wp-content/uploads/2018/09/arrays.png 376w, http://testgatsby.local/wp-content/uploads/2018/09/arrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></figure>
+  <figure class="aligncenter"><img src="http://www.nikpro.com.auarrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="http://testgatsby.localarrays.png 376w, http://testgatsby.localarrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></figure>
 </div>
 
 ### map functions inside Array.from method

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32258
 permalink: /the-minmax-function-in-css-grid-explained-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/09/minmax-function.jpg
+image: minmax-function.jpg
 categories:
   - CSS
   - CSS3
@@ -49,7 +49,7 @@ Moreover we can use percentage to calculate the width in minmax() function:
 Here the first column has a maximum width of 50% of the container and will not get smaller than 200px.  
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/09/minmax-example.jpg" alt="" class="wp-image-32261" srcset="http://testgatsby.local/wp-content/uploads/2018/09/minmax-example.jpg 800w, http://testgatsby.local/wp-content/uploads/2018/09/minmax-example-300x192.jpg 300w, http://testgatsby.local/wp-content/uploads/2018/09/minmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption></figure> 
+<img src="http://www.nikpro.com.auminmax-example.jpg" alt="" class="wp-image-32261" srcset="http://testgatsby.localminmax-example.jpg 800w, http://testgatsby.localminmax-example-300x192.jpg 300w, http://testgatsby.localminmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption></figure> 
 
 #### **min-content and max-content**
 

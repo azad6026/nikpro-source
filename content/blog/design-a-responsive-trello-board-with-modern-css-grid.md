@@ -8,14 +8,15 @@ guid: http://www.nikpro.com.au/?p=32725
 permalink: /design-a-responsive-trello-board-with-modern-css-grid/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2019/04/kh-trello-board-e1554545697640.png
+image: kh-trello-board-e1554545697640.png
 categories:
   - CSS3
   - Uncategorised
 tags:
   - card layout
 ---
-We have explained [different CSS grid](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) [responsive layouts before.](http://www.nikpro.com.au/the-minmax-function-in-css-grid-explained-with-examples/) But as a specific example we will learn about a responsive <a rel="noreferrer noopener" aria-label="trello board (opens in a new tab)" href="https://trello.com/b/1Jz6SorC/the-dev-board" target="_blank">trello card layout</a> borrowing from this thorough article about grids from <a rel="noreferrer noopener" aria-label="CSS tricks. (opens in a new tab)" href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target="_blank">CSS tricks.</a> 
+
+We have explained [different CSS grid](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) [responsive layouts before.](http://www.nikpro.com.au/the-minmax-function-in-css-grid-explained-with-examples/) But as a specific example we will learn about a responsive <a rel="noreferrer noopener" aria-label="trello board (opens in a new tab)" href="https://trello.com/b/1Jz6SorC/the-dev-board" target="_blank">trello card layout</a> borrowing from this thorough article about grids from <a rel="noreferrer noopener" aria-label="CSS tricks. (opens in a new tab)" href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target="_blank">CSS tricks.</a>
 
 ## Card layout trello as a common use case
 

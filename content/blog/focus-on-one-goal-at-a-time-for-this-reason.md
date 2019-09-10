@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31681
 permalink: /focus-on-one-goal-at-a-time-for-this-reason/
-image: /wp-content/uploads/2018/06/focus-on-one-goal.jpg
+image: focus-on-one-goal.jpg
 categories:
   - Life
   - Practice
