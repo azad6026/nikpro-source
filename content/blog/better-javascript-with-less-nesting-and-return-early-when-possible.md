@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32440
 permalink: /better-javascript-with-less-nesting-and-return-early-when-possible/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/Javascript-Best-Practices.jpg
+image: Javascript-Best-Practices.jpg
 categories:
   - ES6
   - JAVASCRIPT
@@ -25,7 +25,7 @@ The problem with nesting is we have to wait maybe until the last statement to ge
 
 These are some <a href="http://lecterror.com/articles/view/code-formatting-and-readability" target="_blank" rel="noreferrer noopener">good images from here</a> to show the case:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/badcode.png" alt="" class="wp-image-32441" srcset="http://testgatsby.local/wp-content/uploads/2018/10/badcode.png 717w, http://testgatsby.local/wp-content/uploads/2018/10/badcode-300x118.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> <figcaption>This is what happens with only one return statement</figcaption></figure> 
+<img src="http://www.nikpro.com.aubadcode.png" alt="" class="wp-image-32441" srcset="http://testgatsby.localbadcode.png 717w, http://testgatsby.localbadcode-300x118.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> <figcaption>This is what happens with only one return statement</figcaption></figure> 
 
 Therefor the sooner we could return a value the earlier we could leave the function call and the better and faster the code is written and executed. Performance wise it is important to write clean and more readable and maintainable code. And this is one of the use cases. Lets improve it a bit:
 
@@ -37,7 +37,7 @@ We return value whenever a check is done. Even better we can remove the else as 
 
 Also we clearly know what we return the value and when we should expect it:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/goodcode.png" alt="" class="wp-image-32442" srcset="http://testgatsby.local/wp-content/uploads/2018/10/goodcode.png 356w, http://testgatsby.local/wp-content/uploads/2018/10/goodcode-207x300.png 207w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption>This is best practice to return as early as possible</figcaption></figure> 
+<img src="http://www.nikpro.com.augoodcode.png" alt="" class="wp-image-32442" srcset="http://testgatsby.localgoodcode.png 356w, http://testgatsby.localgoodcode-207x300.png 207w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption>This is best practice to return as early as possible</figcaption></figure> 
 
 ## Less nesting to return early
 

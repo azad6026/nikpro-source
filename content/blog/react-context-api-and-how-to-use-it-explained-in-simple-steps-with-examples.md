@@ -8,10 +8,11 @@ guid: http://www.nikpro.com.au/?p=32610
 permalink: /react-context-api-and-how-to-use-it-explained-in-simple-steps-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/12/reactcontextapilearn.jpg
+image: reactcontextapilearn.jpg
 categories:
   - React
 ---
+
 React Context API is getting a lot of attention after the latest updates. Because in some cases that the application is not too complicated and using Redux to manage states seems an overkill this API looks prefect. In this article we will have a look at how it works with some examples.
 
 ## React Context API concepts
@@ -34,7 +35,7 @@ The BottomComponent renders the name in a p tag and that is what will be shown a
 
 Typically it is great that we could pass props like this in our application. But what if we to reuse components? Or have more levels of passing props? Using Context API makes sense then. Therefore we convert our application to utilise it.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/12/react-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="http://testgatsby.local/wp-content/uploads/2018/12/react-context-api-1024x576.jpg 1024w, http://testgatsby.local/wp-content/uploads/2018/12/react-context-api-300x169.jpg 300w, http://testgatsby.local/wp-content/uploads/2018/12/react-context-api-768x432.jpg 768w, http://testgatsby.local/wp-content/uploads/2018/12/react-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption></figure> 
+<img src="http://www.nikpro.com.aureact-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="http://testgatsby.localreact-context-api-1024x576.jpg 1024w, http://testgatsby.localreact-context-api-300x169.jpg 300w, http://testgatsby.localreact-context-api-768x432.jpg 768w, http://testgatsby.localreact-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption></figure>
 
 ## Using Context API in action
 
@@ -68,7 +69,7 @@ Typically we could create our context using a default value as well:
 
 Therefore in case of no close Provider it still works and takes the default value.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/12/globall-state.png" alt="global state" class="wp-image-32614" srcset="http://testgatsby.local/wp-content/uploads/2018/12/globall-state.png 389w, http://testgatsby.local/wp-content/uploads/2018/12/globall-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> </figure> 
+<img src="http://www.nikpro.com.augloball-state.png" alt="global state" class="wp-image-32614" srcset="http://testgatsby.localgloball-state.png 389w, http://testgatsby.localgloball-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> </figure>
 
 ### Another example
 

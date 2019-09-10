@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32503
 permalink: /difference-between-overflow-wrap-and-word-break-with-examples/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/11/overflow-wrap.png
+image: overflow-wrap.png
 categories:
   - CSS
 tags:

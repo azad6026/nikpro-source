@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32357
 permalink: /async-function-and-await-expression-combine-with-promise-all-explained-part-2/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/js-async-await.png
+image: js-async-await.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -57,7 +57,7 @@ As a result the second promise is rejected:
 
 Now that we know how it works we checkout and example with async await.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/promise.all_.png" alt="" class="wp-image-32359" srcset="http://testgatsby.local/wp-content/uploads/2018/10/promise.all_.png 1600w, http://testgatsby.local/wp-content/uploads/2018/10/promise.all_-300x124.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/promise.all_-768x317.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/promise.all_-1024x423.png 1024w, http://testgatsby.local/wp-content/uploads/2018/10/promise.all_-1568x648.png 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> <figcaption>promise.all</figcaption></figure> 
+<img src="http://www.nikpro.com.aupromise.all_.png" alt="" class="wp-image-32359" srcset="http://testgatsby.localpromise.all_.png 1600w, http://testgatsby.localpromise.all_-300x124.png 300w, http://testgatsby.localpromise.all_-768x317.png 768w, http://testgatsby.localpromise.all_-1024x423.png 1024w, http://testgatsby.localpromise.all_-1568x648.png 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> <figcaption>promise.all</figcaption></figure> 
 
 #### Advanced example with async await
 
@@ -67,7 +67,7 @@ Practically we can use them for real world example like this one in <a href="htt
 
 Great. Successfully we have saved a few unnecessary await as we didn&#8217;t really need to wait for them to be resolved one by one.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/promisesasync.jpeg" alt="" class="wp-image-32362" srcset="http://testgatsby.local/wp-content/uploads/2018/10/promisesasync.jpeg 744w, http://testgatsby.local/wp-content/uploads/2018/10/promisesasync-300x161.jpeg 300w" sizes="(max-width: 744px) 100vw, 744px" /> <figcaption>Lets  await the promises</figcaption></figure> 
+<img src="http://www.nikpro.com.aupromisesasync.jpeg" alt="" class="wp-image-32362" srcset="http://testgatsby.localpromisesasync.jpeg 744w, http://testgatsby.localpromisesasync-300x161.jpeg 300w" sizes="(max-width: 744px) 100vw, 744px" /> <figcaption>Lets  await the promises</figcaption></figure> 
 
 Also we could use it when a promise uses other promise&#8217;s return value and also there is a third promise as well:
 

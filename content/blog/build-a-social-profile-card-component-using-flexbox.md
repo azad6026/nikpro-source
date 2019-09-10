@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32511
 permalink: /build-a-social-profile-card-component-using-flexbox/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/11/align-center.png
+image: align-center.png
 categories:
   - CSS
   - CSS3
@@ -47,7 +47,7 @@ As we see the div with **.photo** class is the main container. So we design its 
   justify-content: space-between;
 }</strong></pre><figure class="wp-block-image">
 
-<img class="wp-image-32513" src="http://www.nikpro.com.au/wp-content/uploads/2018/11/justify.png" alt="" srcset="http://testgatsby.local/wp-content/uploads/2018/11/justify.png 512w, http://testgatsby.local/wp-content/uploads/2018/11/justify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> </figure> 
+<img class="wp-image-32513" src="http://www.nikpro.com.aujustify.png" alt="" srcset="http://testgatsby.localjustify.png 512w, http://testgatsby.localjustify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> </figure> 
 
 Firstly we change the direction of the [flex container](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/) to column so that the .**top** and .**middle** and  .**bottom** divs which are the immediate children of .photo div could be stacked on top of each other. Meaning we need to design them each in the location that their name suggest.
 
@@ -71,7 +71,7 @@ In addition we want the button content to be centred. We will use **align-items*
   align-items: center;
 }</strong></pre><figure class="wp-block-image">
 
-<img class="wp-image-32514" src="http://www.nikpro.com.au/wp-content/uploads/2018/11/align5.png" alt="" srcset="http://testgatsby.local/wp-content/uploads/2018/11/align5.png 687w, http://testgatsby.local/wp-content/uploads/2018/11/align5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> </figure> 
+<img class="wp-image-32514" src="http://www.nikpro.com.aualign5.png" alt="" srcset="http://testgatsby.localalign5.png 687w, http://testgatsby.localalign5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> </figure> 
 
 ### The simple middle part
 

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32495
 permalink: /how-to-use-background-size-property-in-different-use-cases/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/11/background-size.jpg
+image: background-size.jpg
 categories:
   - CSS
 ---

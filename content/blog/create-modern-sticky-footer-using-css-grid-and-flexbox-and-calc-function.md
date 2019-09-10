@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32414
 permalink: /create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/foter-sticky-1568x867.png
+image: foter-sticky-1568x867.png
 categories:
   - CSS
   - CSS3

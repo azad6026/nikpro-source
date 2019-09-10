@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32348
 permalink: /exciting-async-function-combine-with-await-expression-to-replace-promises-in-es6-part-1/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/js-async-await.png
+image: js-async-await.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -19,7 +19,7 @@ Just like [other](http://www.nikpro.com.au/javascript-es6-modern-rest-parameters
 
 Technically async function defines an asynchronous function that has an implicit [Promise](http://www.nikpro.com.au/what-are-promises-and-how-to-use-them-in-javascript/) to return its result. We simply add async to the beginning of the function.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/asyncawaitsyntaax.png" alt="" class="wp-image-32349" srcset="http://testgatsby.local/wp-content/uploads/2018/10/asyncawaitsyntaax.png 1280w, http://testgatsby.local/wp-content/uploads/2018/10/asyncawaitsyntaax-300x94.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/asyncawaitsyntaax-768x240.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/asyncawaitsyntaax-1024x320.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> <figcaption>Async function syntax with await expression</figcaption></figure> 
+<img src="http://www.nikpro.com.auasyncawaitsyntaax.png" alt="" class="wp-image-32349" srcset="http://testgatsby.localasyncawaitsyntaax.png 1280w, http://testgatsby.localasyncawaitsyntaax-300x94.png 300w, http://testgatsby.localasyncawaitsyntaax-768x240.png 768w, http://testgatsby.localasyncawaitsyntaax-1024x320.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> <figcaption>Async function syntax with await expression</figcaption></figure> 
 
 Generally we know that everything in Javascript executes synchronously. Therefor to make asynchronous calls we need to change the code structure so that we get the results we desire. As a comparison to promises this is how it looks like:
 
@@ -29,7 +29,7 @@ Generally we know that everything in Javascript executes synchronously. Therefor
 
 In addition await expression which only works inside an async function (otherwise throws an Error) pauses the async function&#8217;s execution and returns whatever the function returns when it is done. Therefor the function&#8217;s promise is being resolved in another word.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/async-javascript.jpg" alt="" class="wp-image-32351" srcset="http://testgatsby.local/wp-content/uploads/2018/10/async-javascript.jpg 1050w, http://testgatsby.local/wp-content/uploads/2018/10/async-javascript-300x103.jpg 300w, http://testgatsby.local/wp-content/uploads/2018/10/async-javascript-768x263.jpg 768w, http://testgatsby.local/wp-content/uploads/2018/10/async-javascript-1024x351.jpg 1024w" sizes="(max-width: 1050px) 100vw, 1050px" /> </figure> 
+<img src="http://www.nikpro.com.auasync-javascript.jpg" alt="" class="wp-image-32351" srcset="http://testgatsby.localasync-javascript.jpg 1050w, http://testgatsby.localasync-javascript-300x103.jpg 300w, http://testgatsby.localasync-javascript-768x263.jpg 768w, http://testgatsby.localasync-javascript-1024x351.jpg 1024w" sizes="(max-width: 1050px) 100vw, 1050px" /> </figure> 
 
 ### Async await simple example
 
@@ -53,7 +53,7 @@ Obviously we have to use error handling to make sure we will catch unwanted resu
 
 We see how clean and neat the code looks like. Also it is more maintainable and easy to understand.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/async-await-foreach.png" alt="" class="wp-image-32352" srcset="http://testgatsby.local/wp-content/uploads/2018/10/async-await-foreach.png 1068w, http://testgatsby.local/wp-content/uploads/2018/10/async-await-foreach-300x129.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/async-await-foreach-768x329.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/async-await-foreach-1024x439.png 1024w" sizes="(max-width: 1068px) 100vw, 1068px" /> <figcaption>Using async function in a forEach loop</figcaption></figure> 
+<img src="http://www.nikpro.com.auasync-await-foreach.png" alt="" class="wp-image-32352" srcset="http://testgatsby.localasync-await-foreach.png 1068w, http://testgatsby.localasync-await-foreach-300x129.png 300w, http://testgatsby.localasync-await-foreach-768x329.png 768w, http://testgatsby.localasync-await-foreach-1024x439.png 1024w" sizes="(max-width: 1068px) 100vw, 1068px" /> <figcaption>Using async function in a forEach loop</figcaption></figure> 
 
 ### A promise chain with Async function and await
 

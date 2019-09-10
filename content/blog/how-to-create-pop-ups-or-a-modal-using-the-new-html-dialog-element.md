@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32408
 permalink: /how-to-create-pop-ups-or-a-modal-using-the-new-html-dialog-element/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/dialog-element.png
+image: dialog-element.png
 categories:
   - HTML
   - HTML5
@@ -55,7 +55,7 @@ Surprisingly we could create a simple popup using dialog tag with a short Javasc
 
 Using show method we now have a simple dialog box using pure HTML and Javascript.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/icon-popup.png" alt="" class="wp-image-32410" srcset="http://testgatsby.local/wp-content/uploads/2018/10/icon-popup.png 284w, http://testgatsby.local/wp-content/uploads/2018/10/icon-popup-150x150.png 150w" sizes="(max-width: 284px) 100vw, 284px" /> <figcaption>popup or modal!</figcaption></figure> 
+<img src="http://www.nikpro.com.auicon-popup.png" alt="" class="wp-image-32410" srcset="http://testgatsby.localicon-popup.png 284w, http://testgatsby.localicon-popup-150x150.png 150w" sizes="(max-width: 284px) 100vw, 284px" /> <figcaption>popup or modal!</figcaption></figure> 
 
 ### Modal box
 

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32370
 permalink: /use-cases-of-findindex-find-and-indexof-methods-in-javascript-es6/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/find-methods.jpeg
+image: find-methods.jpeg
 categories:
   - ES6
   - JAVASCRIPT
@@ -46,7 +46,7 @@ Also this is another example to find the odd element inside an array:
 
 <pre class="wp-block-preformatted"><strong>let arr = [2, 4, 6, 8, 9, 10, 12];</strong><br /><strong>// create the function to check if the item is odd</strong><br /><strong><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the index</code></strong><br /><strong>arr.findIndex(isOdd);</strong><br /><strong>// 4</strong><br /></pre><figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/find-index.png" alt="find index" class="wp-image-32372" srcset="http://testgatsby.local/wp-content/uploads/2018/10/find-index.png 1680w, http://testgatsby.local/wp-content/uploads/2018/10/find-index-300x113.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/find-index-768x288.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/find-index-1024x384.png 1024w, http://testgatsby.local/wp-content/uploads/2018/10/find-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
+<img src="http://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="http://testgatsby.localfind-index.png 1680w, http://testgatsby.localfind-index-300x113.png 300w, http://testgatsby.localfind-index-768x288.png 768w, http://testgatsby.localfind-index-1024x384.png 1024w, http://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
 
 #### Find the fruit object with find()
 
@@ -68,7 +68,7 @@ Above example shows how we can find an object inside an array using find() metho
 
 Similar function being passed to find(0 but this time we have found the actual number.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/find-it.jpg" alt="find it" class="wp-image-32371" srcset="http://testgatsby.local/wp-content/uploads/2018/10/find-it.jpg 386w, http://testgatsby.local/wp-content/uploads/2018/10/find-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> </figure> 
+<img src="http://www.nikpro.com.aufind-it.jpg" alt="find it" class="wp-image-32371" srcset="http://testgatsby.localfind-it.jpg 386w, http://testgatsby.localfind-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> </figure> 
 
 The find() method is great when we are looking for specific items. <a href="https://codeburst.io/learn-javascript-es6-array-find-array-findindex-7fe4f63c6974" target="_blank" rel="noopener noreferrer">Note</a> that:
 

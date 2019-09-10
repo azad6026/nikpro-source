@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32332
 permalink: /fantastic-stripe-like-follow-along-nav-with-css-and-javascript-explained/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/final-nav.png
+image: final-nav.png
 categories:
   - CSS
   - CSS3
@@ -31,7 +31,7 @@ Basically it is a menu which when you hover over each tab and you follow along h
 
 Therefor you always see the white background moving along with a nice transition. Also it changes its width and heigh according to the current hovered over dropdown. The idea is from <a href="http://stripe.com" target="_blank" rel="noopener noreferrer">stipe</a>&#8216;s navigation bar.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/stipe-nav.png" alt="stripe nav" class="wp-image-32336" srcset="http://testgatsby.local/wp-content/uploads/2018/10/stipe-nav.png 1400w, http://testgatsby.local/wp-content/uploads/2018/10/stipe-nav-300x171.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/stipe-nav-768x439.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/stipe-nav-1024x585.png 1024w" sizes="(max-width: 1400px) 100vw, 1400px" /> </figure> 
+<img src="http://www.nikpro.com.austipe-nav.png" alt="stripe nav" class="wp-image-32336" srcset="http://testgatsby.localstipe-nav.png 1400w, http://testgatsby.localstipe-nav-300x171.png 300w, http://testgatsby.localstipe-nav-768x439.png 768w, http://testgatsby.localstipe-nav-1024x585.png 1024w" sizes="(max-width: 1400px) 100vw, 1400px" /> </figure> 
 
 ### The HTML
 
@@ -95,7 +95,7 @@ Here we remove classes in our mouseleave event handler:
 
 Until this step we have shown the background and the dropdown. But the background is not in the correct position. You will see it on the top left when you hover over each item:<figure class="wp-block-image is-resized">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/background-shown.png" alt="" class="wp-image-32333" width="580" height="388" srcset="http://testgatsby.local/wp-content/uploads/2018/10/background-shown.png 434w, http://testgatsby.local/wp-content/uploads/2018/10/background-shown-300x200.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>background is on top left once hover over items</figcaption></figure> 
+<img src="http://www.nikpro.com.aubackground-shown.png" alt="" class="wp-image-32333" width="580" height="388" srcset="http://testgatsby.localbackground-shown.png 434w, http://testgatsby.localbackground-shown-300x200.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>background is on top left once hover over items</figcaption></figure> 
 
 As a result for a follow along nav to work as its name suggests we need to calculate the coordinates of each item and position the background there accordingly. Also remember I mentioned about the title &#8220;cool&#8221; on the top.
 
@@ -115,7 +115,7 @@ After we calculated the cords for both nav and dropdown we assign it to the back
 
 <pre class="wp-block-preformatted"><strong>// assign the width and heigth using <a href="http://www.nikpro.com.au/template-literals-in-js6-explained/">template literals</a></strong><br /><strong>background.style.setProperty('width', <code>${coords.width}px</code>);</strong><br /><strong>background.style.setProperty('height', <code>${coords.height}px</code>);<br />// the left and right cords should be assigned to tranform prperty in CSS</strong><br /><strong>background.style.setProperty('transform', <code>translate(${coords.left}px, ${coords.top}px)</code>);</strong></pre><figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/final-nav.png" alt="final nav" class="wp-image-32335" srcset="http://testgatsby.local/wp-content/uploads/2018/10/final-nav.png 820w, http://testgatsby.local/wp-content/uploads/2018/10/final-nav-300x155.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/final-nav-768x398.png 768w" sizes="(max-width: 820px) 100vw, 820px" /> <figcaption>The final nav</figcaption></figure> 
+<img src="http://www.nikpro.com.aufinal-nav.png" alt="final nav" class="wp-image-32335" srcset="http://testgatsby.localfinal-nav.png 820w, http://testgatsby.localfinal-nav-300x155.png 300w, http://testgatsby.localfinal-nav-768x398.png 768w" sizes="(max-width: 820px) 100vw, 820px" /> <figcaption>The final nav</figcaption></figure> 
 
 Finally we are done. We have explained a follow along nav that is a fantastic example of a modern hover over effect based on Javascript and CSS.
 

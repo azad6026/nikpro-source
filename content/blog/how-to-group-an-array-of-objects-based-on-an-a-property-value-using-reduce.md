@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32465
 permalink: /how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/reduce.png
+image: reduce.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -122,7 +122,7 @@ Therefor we get the desired result :
   .
 }</strong></pre><figure class="wp-block-image">
 
-<img class="wp-image-32469" src="http://www.nikpro.com.au/wp-content/uploads/2018/10/transform.png" alt="transform the array" srcset="http://testgatsby.local/wp-content/uploads/2018/10/transform.png 550w, http://testgatsby.local/wp-content/uploads/2018/10/transform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
+<img class="wp-image-32469" src="http://www.nikpro.com.autransform.png" alt="transform the array" srcset="http://testgatsby.localtransform.png 550w, http://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
 
 We can use our [ES6](http://nikpro.com.au/category/es6) knowledge and change our code to be more readable [using arrow functions](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 

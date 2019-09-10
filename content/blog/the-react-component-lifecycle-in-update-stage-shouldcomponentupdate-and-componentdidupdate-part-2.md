@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32343
 permalink: /the-react-component-lifecycle-in-update-stage-shouldcomponentupdate-and-componentdidupdate-part-2/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/full-llifecycle-hooks-1568x724.png
+image: full-llifecycle-hooks-1568x724.png
 categories:
   - React
 tags:
@@ -25,7 +25,7 @@ Generally shouldComponentUpdate() is considered a useful but tricky and sometime
 
 Technically by default in React component will re render in every state or props change. We need to remember `shouldComponentUpdate()` is invoked before rendering when new props or state are being received. Defaults to `true`. This method is not called for the initial render or when `forceUpdate()` is used.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/lifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="http://testgatsby.local/wp-content/uploads/2018/10/lifecycle_props.png 1020w, http://testgatsby.local/wp-content/uploads/2018/10/lifecycle_props-300x115.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/lifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption></figure> 
+<img src="http://www.nikpro.com.aulifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="http://testgatsby.locallifecycle_props.png 1020w, http://testgatsby.locallifecycle_props-300x115.png 300w, http://testgatsby.locallifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption></figure> 
 
 Practically we should not use shouldComponentUpdate() to prevent rendering. This method only exists as a **[performance optimization](https://reactjs.org/docs/optimizing-performance.html).** 
 
@@ -70,7 +70,7 @@ Practically we can manipulate the DOM in componentDidUpdate() method. In additio
 
 But remember if we **update state in componentDidUpdate() it should be wrapped in a condition** like the example above to prevent infinite loops.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/componentlife.png" alt="" class="wp-image-32345" srcset="http://testgatsby.local/wp-content/uploads/2018/10/componentlife.png 975w, http://testgatsby.local/wp-content/uploads/2018/10/componentlife-300x154.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/componentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption></figure> 
+<img src="http://www.nikpro.com.aucomponentlife.png" alt="" class="wp-image-32345" srcset="http://testgatsby.localcomponentlife.png 975w, http://testgatsby.localcomponentlife-300x154.png 300w, http://testgatsby.localcomponentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption></figure> 
 
 Obviously just like [`componentDidMount()`](http://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/), the `componentDidUpdate()` is called after all of the children are updated
 

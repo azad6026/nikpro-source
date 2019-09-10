@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32518
 permalink: /nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-1/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/11/react.png
+image: react.png
 categories:
   - React
 tags:
@@ -43,7 +43,7 @@ Obviously our list is created via a loop through our array with map to generate 
 </strong><code>&lt;strong>  document.getElementById('root')&lt;/strong></code><strong>
 </strong><code>&lt;strong>);&lt;/strong></code></pre><figure class="wp-block-image">
 
-<img class="wp-image-32521" src="http://www.nikpro.com.au/wp-content/uploads/2018/11/passdata.png" alt="pass data down" srcset="http://testgatsby.local/wp-content/uploads/2018/11/passdata.png 591w, http://testgatsby.local/wp-content/uploads/2018/11/passdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure> 
+<img class="wp-image-32521" src="http://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="http://testgatsby.localpassdata.png 591w, http://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure> 
 
 ## Extract components to nested components
 

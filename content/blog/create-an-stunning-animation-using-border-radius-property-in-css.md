@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32426
 permalink: /create-an-stunning-animation-using-border-radius-property-in-css/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/border-radius-8-values.png
+image: border-radius-8-values.png
 categories:
   - CSS
   - CSS3
@@ -47,7 +47,7 @@ Therefor we can use forward slash which makes a huge difference of how the edges
 
 As per the above <a href="https://9elements.com/io/css-border-radius/" target="_blank" rel="noreferrer noopener">mentioned article</a>&nbsp;if we have two values with a slash the image below shows how they behave around edges:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/two-values.png" alt="" class="wp-image-32428" srcset="http://testgatsby.local/wp-content/uploads/2018/10/two-values.png 1000w, http://testgatsby.local/wp-content/uploads/2018/10/two-values-300x203.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/two-values-768x519.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> <figcaption>left image with normal values and right image with slash included</figcaption></figure> 
+<img src="http://www.nikpro.com.autwo-values.png" alt="" class="wp-image-32428" srcset="http://testgatsby.localtwo-values.png 1000w, http://testgatsby.localtwo-values-300x203.png 300w, http://testgatsby.localtwo-values-768x519.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> <figcaption>left image with normal values and right image with slash included</figcaption></figure> 
 
 Basically we realise that the right values 4em / 8em will apply based on axis not corners. So the first value before slash applies to top and bottom edges which are horizontal edges. Additionally the second value which comes after slash applies to vertical edges on left and right.
 
@@ -55,7 +55,7 @@ Basically we realise that the right values 4em / 8em will apply based on axis no
 
 However if we add eight values meaning four values on the left side of slash and four on its right, we will have values for all edges applying clockwise to horizontal and vertical alignments as explained above.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/border-radius-8-values.png" alt="" class="wp-image-32429" srcset="http://testgatsby.local/wp-content/uploads/2018/10/border-radius-8-values.png 800w, http://testgatsby.local/wp-content/uploads/2018/10/border-radius-8-values-300x236.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/border-radius-8-values-768x604.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>border-radius with 8 values using slash syntax</figcaption></figure> 
+<img src="http://www.nikpro.com.auborder-radius-8-values.png" alt="" class="wp-image-32429" srcset="http://testgatsby.localborder-radius-8-values.png 800w, http://testgatsby.localborder-radius-8-values-300x236.png 300w, http://testgatsby.localborder-radius-8-values-768x604.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>border-radius with 8 values using slash syntax</figcaption></figure> 
 
 ## Create an stunning animation using border-radius
 

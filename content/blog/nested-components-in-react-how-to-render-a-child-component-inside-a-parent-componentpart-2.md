@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32529
 permalink: /nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/11/nested.jpg
+image: nested.jpg
 categories:
   - React
 tags:
@@ -193,7 +193,7 @@ Therefore the best approach here is to use a **child component called Person to 
     );
 }</strong></pre><figure class="wp-block-image">
 
-<img class="wp-image-32533" src="http://www.nikpro.com.au/wp-content/uploads/2018/11/nestedararay.png" alt="" srcset="http://testgatsby.local/wp-content/uploads/2018/11/nestedararay.png 1192w, http://testgatsby.local/wp-content/uploads/2018/11/nestedararay-300x158.png 300w, http://testgatsby.local/wp-content/uploads/2018/11/nestedararay-768x403.png 768w, http://testgatsby.local/wp-content/uploads/2018/11/nestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> </figure> 
+<img class="wp-image-32533" src="http://www.nikpro.com.aunestedararay.png" alt="" srcset="http://testgatsby.localnestedararay.png 1192w, http://testgatsby.localnestedararay-300x158.png 300w, http://testgatsby.localnestedararay-768x403.png 768w, http://testgatsby.localnestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> </figure> 
 
 Now we could use the **{&#8230;details} as the desired  non nested array **and create our child component to show persons&#8217; info based on their age:
 

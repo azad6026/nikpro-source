@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32325
 permalink: /react-component-lifecycle-explained-with-examples-first-part/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/reactlifecycle.jpeg
+image: reactlifecycle.jpeg
 categories:
   - React
 tags:
@@ -26,7 +26,7 @@ We could see the the component lifecycle methods in the below diagram. Once a co
     
   * [**`componentDidMount()`**](https://reactjs.org/docs/react-component.html#componentdidmount)<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/React-lifecycle-methods-diagram.png" alt="" class="wp-image-32330" srcset="http://testgatsby.local/wp-content/uploads/2018/10/React-lifecycle-methods-diagram.png 1103w, http://testgatsby.local/wp-content/uploads/2018/10/React-lifecycle-methods-diagram-300x112.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/React-lifecycle-methods-diagram-768x288.png 768w, http://testgatsby.local/wp-content/uploads/2018/10/React-lifecycle-methods-diagram-1024x383.png 1024w" sizes="(max-width: 1103px) 100vw, 1103px" /> </figure> 
+<img src="http://www.nikpro.com.auReact-lifecycle-methods-diagram.png" alt="" class="wp-image-32330" srcset="http://testgatsby.localReact-lifecycle-methods-diagram.png 1103w, http://testgatsby.localReact-lifecycle-methods-diagram-300x112.png 300w, http://testgatsby.localReact-lifecycle-methods-diagram-768x288.png 768w, http://testgatsby.localReact-lifecycle-methods-diagram-1024x383.png 1024w" sizes="(max-width: 1103px) 100vw, 1103px" /> </figure> 
 
 ### The constructor
 
@@ -59,7 +59,7 @@ This method exists for [rare use cases](https://reactjs.org/blog/2018/06/07/you
 
 For example, it might be handy for implementing a `<Transition>` component that compares its previous and next children to decide which of them to animate in and out.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/lifecycle.jpg" alt="" class="wp-image-32327" srcset="http://testgatsby.local/wp-content/uploads/2018/10/lifecycle.jpg 638w, http://testgatsby.local/wp-content/uploads/2018/10/lifecycle-300x225.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
+<img src="http://www.nikpro.com.aulifecycle.jpg" alt="" class="wp-image-32327" srcset="http://testgatsby.locallifecycle.jpg 638w, http://testgatsby.locallifecycle-300x225.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
 
 ### The render() method
 

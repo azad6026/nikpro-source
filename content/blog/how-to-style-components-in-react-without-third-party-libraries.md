@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32471
 permalink: /how-to-style-components-in-react-without-third-party-libraries/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/css-style.png
+image: css-style.png
 categories:
   - React
 tags:
@@ -47,7 +47,7 @@ We can write normal styles here. We can either pass the variable name like above
 <code>&lt;strong>  &lt;div style={{ color: 'blue'}}&gt;Hello World!&lt;/div&gt;;&lt;/strong></code>
 <code>&lt;strong>);&lt;/strong></code></pre><figure class="wp-block-image">
 
-<img class="wp-image-32473" src="http://www.nikpro.com.au/wp-content/uploads/2018/10/cssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
+<img class="wp-image-32473" src="http://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
 
 ## Styling components with CSS stylesheet
 
@@ -77,7 +77,7 @@ Also this is the CSS file called DottedBox.css:
   text-align: center;
 }</strong></pre><figure class="wp-block-image">
 
-<img class="wp-image-32474" src="http://www.nikpro.com.au/wp-content/uploads/2018/10/css-in-react.jpg" alt="" srcset="http://testgatsby.local/wp-content/uploads/2018/10/css-in-react.jpg 638w, http://testgatsby.local/wp-content/uploads/2018/10/css-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
+<img class="wp-image-32474" src="http://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="http://testgatsby.localcss-in-react.jpg 638w, http://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
 
 ## Styling components using CSS modules
 

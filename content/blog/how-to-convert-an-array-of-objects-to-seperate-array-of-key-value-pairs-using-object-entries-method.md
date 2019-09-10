@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32394
 permalink: /how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/js-objects.png
+image: js-objects.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -61,7 +61,7 @@ key3: {
 
 But we need to give each person&#8217;s container a unique id to be able to manipulate it easier later on. As an example we want to edit or delete that persons information from the database. <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/for-...-of-loop.png" alt="" class="wp-image-32397" srcset="http://testgatsby.local/wp-content/uploads/2018/10/for-...-of-loop.png 880w, http://testgatsby.local/wp-content/uploads/2018/10/for-...-of-loop-300x188.png 300w, http://testgatsby.local/wp-content/uploads/2018/10/for-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption></figure> 
+<img src="http://www.nikpro.com.aufor-...-of-loop.png" alt="" class="wp-image-32397" srcset="http://testgatsby.localfor-...-of-loop.png 880w, http://testgatsby.localfor-...-of-loop-300x188.png 300w, http://testgatsby.localfor-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption></figure> 
 
 We will use [for .. of](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) to loop through the above object and using Object.entries() we will create an array of persons which holds their with a unique key per person:
 

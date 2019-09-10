@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32446
 permalink: /modern-techniques-for-image-hover-over-effects-using-css-transition-and-animation-part-1/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/hover-over-1-1568x882.jpg
+image: hover-over-1-1568x882.jpg
 categories:
   - CSS
   - CSS3

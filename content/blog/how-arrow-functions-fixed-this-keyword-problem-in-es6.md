@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32400
 permalink: /how-arrow-functions-fixed-this-keyword-problem-in-es6/
 xyz_twap:
   - "1"
-image: /wp-content/uploads/2018/10/arrow-22this22-1568x687.png
+image: arrow-22this22-1568x687.png
 categories:
   - ES6
   - JAVASCRIPT
@@ -57,7 +57,7 @@ Surprisingly we see that &#8220;this&#8221; keyword does not refer to the object
 
 <pre class="wp-block-preformatted"><strong>var anyFunction = function(){</strong><br /><strong>  console.log(this);</strong><br /><strong>}</strong><br /><strong>any/function(); // [object Window]</strong></pre><figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/the-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> </figure> 
+<img src="http://www.nikpro.com.authe-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> </figure> 
 
 ### Fix 1: using another variable to refer :this&#8221; keyword&#8221;
 
@@ -111,7 +111,7 @@ Why arrow function solves it? Because in arrow function&#8221;this&#8221; keywor
 // John loves eating
 // John loves coding</strong></strong></pre><figure class="wp-block-image is-resized">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/fat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="http://testgatsby.local/wp-content/uploads/2018/10/fat-arrow.png 323w, http://testgatsby.local/wp-content/uploads/2018/10/fat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption></figure> 
+<img src="http://www.nikpro.com.aufat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="http://testgatsby.localfat-arrow.png 323w, http://testgatsby.localfat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption></figure> 
 
 Great. We have solved it. It keeps the code in scope and we always refer to the right object with &#8220;this&#8221; at the end. Using arrow functions really saves the code and makes it more readable, maintainable and solves the old &#8220;this keyword problem. 
 

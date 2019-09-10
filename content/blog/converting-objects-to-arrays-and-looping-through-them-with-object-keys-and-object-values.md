@@ -50,7 +50,7 @@ Also we can even use it to get keys from a non object argument as well. Although
 Object.keys('apple');
 // ["0", "1", "2" , "3" , "4"]   (ES2015 code)</code></strong><br /></pre><figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.au/wp-content/uploads/2018/10/es6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="http://testgatsby.local/wp-content/uploads/2018/10/es6-object-methods.png 483w, http://testgatsby.local/wp-content/uploads/2018/10/es6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> </figure> 
+<img src="http://www.nikpro.com.aues6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="http://testgatsby.locales6-object-methods.png 483w, http://testgatsby.locales6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> </figure> 
 
 ### Object.values examples
 
