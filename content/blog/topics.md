@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31511
 permalink: /topics/
-image: network.png
+image: /images/network.png
 categories:
   - ANGULAR
   - CSS

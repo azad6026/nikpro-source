@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32623
 permalink: /react-fundamentals-to-build-real-world-applications-how-react-renders-elements/
 xyz_twap:
   - "1"
-image: react-render-1568x526.png
+image: /images/react-render-1568x526.png
 categories:
   - JSX
   - React

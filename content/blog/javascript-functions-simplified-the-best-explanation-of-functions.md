@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31542
 permalink: /javascript-functions-simplified-the-best-explanation-of-functions/
-image: functions-1568x1023.png
+image: /images/functions-1568x1023.png
 categories:
   - JAVASCRIPT
 tags:

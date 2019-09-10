@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32598
 permalink: /manipulate-dom-elements-and-their-css-styles-using-useful-javascript-methods/
 xyz_twap:
   - "1"
-image: domand-js.jpeg
+image: /images/domand-js.jpeg
 categories:
   - CSS
   - JAVASCRIPT

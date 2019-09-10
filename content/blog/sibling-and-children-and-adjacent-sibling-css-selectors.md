@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32306
 permalink: /sibling-and-children-and-adjacent-sibling-css-selectors/
 xyz_twap:
   - "1"
-image: css-selectors.png
+image: /images/css-selectors.png
 categories:
   - CSS
 ---

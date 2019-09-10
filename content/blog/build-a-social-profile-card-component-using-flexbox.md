@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32511
 permalink: /build-a-social-profile-card-component-using-flexbox/
 xyz_twap:
   - "1"
-image: align-center.png
+image: /images/align-center.png
 categories:
   - CSS
   - CSS3

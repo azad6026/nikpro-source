@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32710
 permalink: /event-listeners-and-dom-interactions-in-modern-javascript-explained-with-examples/
 xyz_twap:
   - "1"
-image: es6-events.png
+image: /images/es6-events.png
 categories:
   - ES6
   - JAVASCRIPT

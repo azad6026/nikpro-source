@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31602
 permalink: /how-to-define-arrays-inside-objects-and-play-around-with-them/
-image: array-1568x490.png
+image: /images/array-1568x490.png
 categories:
   - JAVASCRIPT
 tags:

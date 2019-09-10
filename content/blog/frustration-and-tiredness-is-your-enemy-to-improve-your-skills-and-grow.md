@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31609
 permalink: /frustration-and-tiredness-is-your-enemy-to-improve-your-skills-and-grow/
-image: grow.png
+image: /images/grow.png
 categories:
   - JAVASCRIPT
   - Life

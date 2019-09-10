@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32518
 permalink: /nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-1/
 xyz_twap:
   - "1"
-image: react.png
+image: /images/react.png
 categories:
   - React
 tags:

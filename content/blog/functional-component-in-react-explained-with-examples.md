@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32105
 permalink: /functional-component-in-react-explained-with-examples/
-image: functional-component.png
+image: /images/functional-component.png
 categories:
   - ES6
   - React

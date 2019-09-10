@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32343
 permalink: /the-react-component-lifecycle-in-update-stage-shouldcomponentupdate-and-componentdidupdate-part-2/
 xyz_twap:
   - "1"
-image: full-llifecycle-hooks-1568x724.png
+image: /images/full-llifecycle-hooks-1568x724.png
 categories:
   - React
 tags:

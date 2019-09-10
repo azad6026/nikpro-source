@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32080
 permalink: /using-svg-part-2-to-create-animated-svg-spinner-by-css-transforms/
-image: animated-SVg.jpg
+image: /images/animated-SVg.jpg
 categories:
   - CSS
   - CSS3

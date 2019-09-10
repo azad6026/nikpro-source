@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31865
 permalink: /what-is-e-target-and-e-currenttarget-and-how-to-use-them/
-image: event-content.jpg
+image: /images/event-content.jpg
 categories:
   - JAVASCRIPT
 tags:

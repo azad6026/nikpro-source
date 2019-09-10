@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32108
 permalink: /different-stateless-functional-component-in-react-explained/
-image: rendering-functional-component.jpg
+image: /images/rendering-functional-component.jpg
 categories:
   - ES6
   - React

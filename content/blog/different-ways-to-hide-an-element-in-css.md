@@ -10,7 +10,7 @@ excerpt: |
 layout: post
 guid: http://www.nikpro.com.au/?p=31514
 permalink: /different-ways-to-hide-an-element-in-css/
-image: css-tips.jpg
+image: /images/css-tips.jpg
 categories:
   - CSS
   - CSS3

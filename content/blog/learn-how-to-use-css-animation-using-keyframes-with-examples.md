@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31921
 permalink: /learn-how-to-use-css-animation-using-keyframes-with-examples/
-image: css-animation.jpg
+image: /images/css-animation.jpg
 categories:
   - CSS
   - CSS3

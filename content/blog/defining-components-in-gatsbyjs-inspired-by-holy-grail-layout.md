@@ -9,7 +9,7 @@ guid: http://www.nikpro.com.au/?p=32754
 permalink: /defining-components-in-gatsbyjs-inspired-by-holy-grail-layout/
 xyz_twap:
   - "1"
-image: building-blocks.jpg
+image: /images/building-blocks.jpg
 categories:
   - HTML
   - React

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31992
 permalink: /some-arrow-function-benefits-with-examples-explained/
-image: arrow-fun.png
+image: /images/arrow-fun.png
 categories:
   - JAVASCRIPT
 tags:

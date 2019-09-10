@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31503
 permalink: /nik-pro-is-all-about-web/
-image: colours-1568x1044.jpg
+image: /images/colours-1568x1044.jpg
 categories:
   - NikPro
 tags:

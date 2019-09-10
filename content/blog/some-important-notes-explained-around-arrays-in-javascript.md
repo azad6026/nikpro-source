@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32272
 permalink: /some-important-notes-explained-around-arrays-in-javascript/
 xyz_twap:
   - "1"
-image: javascript-arrays.jpg
+image: /images/javascript-arrays.jpg
 categories:
   - JAVASCRIPT
 tags:

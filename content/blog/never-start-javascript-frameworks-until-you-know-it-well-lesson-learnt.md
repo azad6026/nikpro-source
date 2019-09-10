@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31596
 permalink: /never-start-javascript-frameworks-until-you-know-it-well-lesson-learnt/
-image: fundamentals.png
+image: /images/fundamentals.png
 categories:
   - JAVASCRIPT
 tags:

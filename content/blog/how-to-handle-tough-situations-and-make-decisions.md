@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31835
 permalink: /how-to-handle-tough-situations-and-make-decisions/
-image: the-change.jpg
+image: /images/the-change.jpg
 categories:
   - CSS
   - JAVASCRIPT

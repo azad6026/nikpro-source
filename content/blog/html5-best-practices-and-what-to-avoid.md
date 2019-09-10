@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31784
 permalink: /html5-best-practices-and-what-to-avoid/
-image: html5-best-practices.png
+image: /images/html5-best-practices.png
 categories:
   - HTML5
   - Web Development

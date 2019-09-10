@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31897
 permalink: /javascript-nodelist-and-html-dom-collection-and-how-to-use-them/
-image: dom-node.png
+image: /images/dom-node.png
 categories:
   - ES6
   - JAVASCRIPT

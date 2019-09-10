@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32143
 permalink: /do-you-know-viewport-units-and-how-to-use-them/
-image: viewport-units-screens-1568x1048.jpg
+image: /images/viewport-units-screens-1568x1048.jpg
 categories:
   - CSS
   - CSS3

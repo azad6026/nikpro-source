@@ -10,7 +10,7 @@ guid: http://www.nikpro.com.au/?p=32762
 permalink: /embrace-and-overcome-a-big-change-in-your-job-with-optimism-and-acceptance/
 xyz_twap:
   - "1"
-image: are-you-ready.jpg
+image: /images/are-you-ready.jpg
 categories:
   - Life
   - Web Development

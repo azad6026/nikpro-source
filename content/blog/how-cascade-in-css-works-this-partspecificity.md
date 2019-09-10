@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32263
 permalink: /how-cascade-in-css-works-this-part-specificity/
 xyz_twap:
   - "1"
-image: cascade.jpeg
+image: /images/cascade.jpeg
 categories:
   - CSS
   - CSS3

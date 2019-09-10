@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32400
 permalink: /how-arrow-functions-fixed-this-keyword-problem-in-es6/
 xyz_twap:
   - "1"
-image: arrow-22this22-1568x687.png
+image: /images/arrow-22this22-1568x687.png
 categories:
   - ES6
   - JAVASCRIPT

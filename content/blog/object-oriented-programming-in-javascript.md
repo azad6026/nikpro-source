@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31615
 permalink: /object-oriented-programming-in-javascript/
-image: oop-big-1568x1043.jpeg
+image: /images/oop-big-1568x1043.jpeg
 categories:
   - JAVASCRIPT
 tags:

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32456
 permalink: /how-much-browser-support-matters-when-should-we-care/
 xyz_twap:
   - "1"
-image: frowny-guy-in-front-of-browsers.png
+image: /images/frowny-guy-in-front-of-browsers.png
 categories:
   - CSS
   - CSS3

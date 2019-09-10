@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31925
 permalink: /javascript-es6-reduce-method/
-image: reduce-method.png
+image: /images/reduce-method.png
 categories:
   - ES6
   - JAVASCRIPT
