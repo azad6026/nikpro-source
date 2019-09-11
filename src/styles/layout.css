@@ -63,7 +63,7 @@ a {
   color: var(--link-color);
 }
 .pagination-menu a:hover {
-  --hover-color: #fff;
+  --hover-color: #ffe;
 }
 .pagination-menu ul {
   margin: 0;
