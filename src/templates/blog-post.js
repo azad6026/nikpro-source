@@ -47,7 +47,6 @@ class BlogPostTemplate extends React.Component {
         <nav
           className="pagination-menu"
           style={{
-            background: `rgb(12, 9, 4)`,
             padding: `1rem`,
             margin: `1rem auto`,
           }}
