@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31829
 permalink: /how-to-create-classes-in-javascript-es6/
-image: /images/class-es6.png
+image: ../../static/images/class-es6.png
 categories:
   - ES6
   - JAVASCRIPT

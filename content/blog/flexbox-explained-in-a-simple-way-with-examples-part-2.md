@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31728
 permalink: /flexbox-explained-in-a-simple-way-with-examples-part-2/
-image: /images/css-flexbox-2-1568x696.png
+image: ../../static/images/css-flexbox-2-1568x696.png
 categories:
   - CSS
 tags:

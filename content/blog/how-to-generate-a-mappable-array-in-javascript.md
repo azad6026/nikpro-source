@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32139
 permalink: /how-to-generate-a-mappable-array-in-javascript/
-image: /images/mappable-arrays-in-js-1568x882.png
+image: ../../static/images/mappable-arrays-in-js-1568x882.png
 categories:
   - ES6
   - JAVASCRIPT

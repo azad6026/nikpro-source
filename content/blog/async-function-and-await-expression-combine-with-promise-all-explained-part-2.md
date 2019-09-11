@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32357
 permalink: /async-function-and-await-expression-combine-with-promise-all-explained-part-2/
 xyz_twap:
   - "1"
-image: /images/js-async-await.png
+image: ../../static/images/js-async-await.png
 categories:
   - ES6
   - JAVASCRIPT

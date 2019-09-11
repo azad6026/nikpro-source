@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32408
 permalink: /how-to-create-pop-ups-or-a-modal-using-the-new-html-dialog-element/
 xyz_twap:
   - "1"
-image: /images/dialog-element.png
+image: ../../static/images/dialog-element.png
 categories:
   - HTML
   - HTML5

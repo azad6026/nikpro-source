@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32179
 permalink: /the-css-calc-function-explained-with-examples/
 xyz_twap:
   - "1"
-image: /images/calc-function.png
+image: ../../static/images/calc-function.png
 categories:
   - CSS
   - CSS3
@@ -40,7 +40,7 @@ As an example we can position the background image in the bottom right using cal
   See the Pen <a href="https://codepen.io/chriscoyier/pen/cqzmD/">calc() use case #2</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
 
-<pre class="wp-block-preformatted">background-image: /images/url(dog.png);
+<pre class="wp-block-preformatted">background-image: ../../static/images/url(dog.png);
 background-position: calc(100% - 50px) calc(100% - 20px);</pre>
 
 The above piece of code puts the dog background in the bottom right. As a result calc put it 50px from the right and 20px from the bottom of the window width.

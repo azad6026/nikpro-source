@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32370
 permalink: /use-cases-of-findindex-find-and-indexof-methods-in-javascript-es6/
 xyz_twap:
   - "1"
-image: /images/find-methods.jpeg
+image: ../../static/images/find-methods.jpeg
 categories:
   - ES6
   - JAVASCRIPT

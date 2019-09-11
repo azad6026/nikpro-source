@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31952
 permalink: /the-ternary-operator-in-javascript-with-some-examples-explained/
-image: /images/ternary-operators.png
+image: ../../static/images/ternary-operators.png
 categories:
   - JAVASCRIPT
 tags:

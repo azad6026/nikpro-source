@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32129
 permalink: /new-ideas-around-all-web-front-end-development/
-image: /images/web-development.png
+image: ../../static/images/web-development.png
 categories:
   - NikPro
   - Web Development

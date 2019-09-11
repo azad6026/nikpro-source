@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32677
 permalink: /it-is-all-about-user-interface-stop-the-fight/
 xyz_twap:
   - "1"
-image: /images/main-divide-1568x846.png
+image: ../../static/images/main-divide-1568x846.png
 categories:
   - CSS
   - HTML

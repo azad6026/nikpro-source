@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32018
 permalink: /es6-export-and-import-statements-explained-with-examples/
-image: /images/import-export.png
+image: ../../static/images/import-export.png
 categories:
   - ES6
   - JAVASCRIPT

@@ -3,13 +3,14 @@
   --link-color: darkorange;
   --hover-color: #0c0904;
   --menu-link-hover: white;
+  --primary-dark-color: #131010;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-size: 1.2rem;
-  background: url("../../content/assets/bg.png") no-repeat center center fixed;
+  background: var(--primary-dark-color);
 }
 h1,
 h2,
@@ -67,6 +68,9 @@ a {
 .pagination-menu ul {
   margin: 0;
 }
+.post-box h3 a {
+  color: var(--primary-dark-color);
+}
 h3 a:hover {
   color: var(--hover-color);
 }
@@ -75,6 +79,25 @@ h3 a:hover {
 }
 a.gatsby-resp-image-link {
   pointer-events: none;
+}
+.post-box {
+  position: relative;
+  overflow: hidden;
+}
+article.post-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 3rem 3rem 0;
+  border-style: solid;
+  border-color: #0c0904 #120f0f #f08b33 #0c0904;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 0;
 }
 .post-box:hover {
   transform: translateY(-0.25rem);

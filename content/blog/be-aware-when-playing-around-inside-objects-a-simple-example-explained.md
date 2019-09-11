@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31566
 permalink: /be-aware-when-playing-around-inside-objects-a-simple-example-explained/
-image: /images/arrays-in-objects.jpg
+image: ../../static/images/arrays-in-objects.jpg
 categories:
   - JAVASCRIPT
   - Practice

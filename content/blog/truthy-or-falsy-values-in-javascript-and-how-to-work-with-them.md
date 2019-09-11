@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31861
 permalink: /truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/
-image: /images/truthy-falsy.jpg
+image: ../../static/images/truthy-falsy.jpg
 categories:
   - JAVASCRIPT
 tags:

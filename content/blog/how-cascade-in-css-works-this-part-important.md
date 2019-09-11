@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32248
 permalink: /how-cascade-in-css-works-this-part-important/
 xyz_twap:
   - "1"
-image: /images/css-rule.png
+image: ../../static/images/css-rule.png
 categories:
   - CSS
 tags:

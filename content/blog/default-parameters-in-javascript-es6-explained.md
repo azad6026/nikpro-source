@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31793
 permalink: /default-parameters-in-javascript-es6-explained/
-image: /images/es6-default-parameters.jpg
+image: ../../static/images/es6-default-parameters.jpg
 categories:
   - ES6
   - JAVASCRIPT

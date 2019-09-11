@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32002
 permalink: /react-component-building-blocks-simple-explanation-part-1/
-image: /images/ract-cpmonent-1568x882.png
+image: ../../static/images/ract-cpmonent-1568x882.png
 categories:
   - JAVASCRIPT
   - React

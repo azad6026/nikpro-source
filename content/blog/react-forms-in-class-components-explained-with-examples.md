@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32281
 permalink: /react-forms-in-class-components-explained-with-examples/
 xyz_twap:
   - "1"
-image: /images/react-again.png
+image: ../../static/images/react-again.png
 categories:
   - ES6
   - React

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32241
 permalink: /css-displaycontents-basic-introduction/
 xyz_twap:
   - "1"
-image: /images/displaycontents.png
+image: ../../static/images/displaycontents.png
 categories:
   - CSS
   - CSS3

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32118
 permalink: /using-ternary-operator-in-react-explained-with-examples/
-image: /images/ternary.png
+image: ../../static/images/ternary.png
 categories:
   - React
 tags:

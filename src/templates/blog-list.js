@@ -43,7 +43,9 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date} by Azadeh</small>
+              <small style={{ color: `#ad5100` }}>
+                {node.frontmatter.date} by Azadeh
+              </small>
 
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </article>
@@ -129,7 +131,13 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

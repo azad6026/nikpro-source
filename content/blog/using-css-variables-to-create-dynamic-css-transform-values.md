@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32592
 permalink: /using-css-variables-to-create-dynamic-css-transform-values/
 xyz_twap:
   - "1"
-image: /images/css-transforms-using-variables-1568x579.png
+image: ../../static/images/css-transforms-using-variables-1568x579.png
 categories:
   - CSS3
   - JAVASCRIPT

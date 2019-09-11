@@ -63,7 +63,7 @@ class Layout extends React.Component {
       <div>
         <p
           style={{
-            background: `#f08b33`,
+            background: `var(--primary-dark-colour )`,
             fontSize: `1rem`,
             textAlign: `center`,
           }}
@@ -73,7 +73,7 @@ class Layout extends React.Component {
         <a id="top"></a>
         <header
           style={{
-            background: `#0c0904`,
+            background: `var(--primary-dark-colour )`,
             padding: `1rem`,
           }}
         >
@@ -81,15 +81,20 @@ class Layout extends React.Component {
         </header>
         <div className="inner-wrapper">
           <main>{children}</main>
-          <footer>
+          <footer style={{ color: `white` }}>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a style={{ color: `#0c0904` }} href="https://www.gatsbyjs.org">
+            <a
+              style={{ color: `--menu-link-hover` }}
+              href="https://www.gatsbyjs.org"
+            >
               Gatsby
             </a>
           </footer>
         </div>
-        <a href="#top">Scroll to top</a>
+        <a style={{ color: `--menu-link-hover` }} href="#top">
+          Scroll to top
+        </a>
       </div>
     )
   }

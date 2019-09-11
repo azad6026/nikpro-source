@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31699
 permalink: /what-are-css-variables-and-their-differences-with-css-preprocessors/
-image: /images/cssvariables.jpg
+image: ../../static/images/cssvariables.jpg
 categories:
   - CSS
 tags:

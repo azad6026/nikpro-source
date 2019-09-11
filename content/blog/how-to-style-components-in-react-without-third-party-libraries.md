@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32471
 permalink: /how-to-style-components-in-react-without-third-party-libraries/
 xyz_twap:
   - "1"
-image: /images/css-style.png
+image: ../../static/images/css-style.png
 categories:
   - React
 tags:
@@ -25,7 +25,7 @@ Starting with a simple example we can explain it better:
 
 <pre class="wp-block-preformatted"><code>&lt;strong>const divStyle = {  &lt;/strong></code>
 <code>&lt;strong>  color: 'blue',  &lt;/strong></code>
-<code>&lt;strong>  backgroundimage: /images/'url(' + imgUrl + ')',&lt;/strong></code>
+<code>&lt;strong>  backgroundimage: ../../static/images/'url(' + imgUrl + ')',&lt;/strong></code>
 <code>&lt;strong>};&lt;/strong></code>
 <code>&lt;strong>HelloWorldComponent =&gt; (  &lt;/strong></code>
 <code>&lt;strong>  &lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;;&lt;/strong></code>
@@ -35,7 +35,7 @@ First we have defined a camelCased constant which is an object to hold the style
 
 ```var divStyle = {
   color: 'white',
-  backgroundimage: /images/'url(' + imgUrl + ')',
+  backgroundimage: ../../static/images/'url(' + imgUrl + ')',
   WebkitTransition: 'all', // note the capital 'W' here
   msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };

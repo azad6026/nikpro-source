@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32576
 permalink: /remove-duplicate-items-from-arrays-using-reduce-method-explained-with-examples/
 xyz_twap:
   - "1"
-image: /images/duplicate-files.jpg
+image: ../../static/images/duplicate-files.jpg
 categories:
   - ES6
   - JAVASCRIPT

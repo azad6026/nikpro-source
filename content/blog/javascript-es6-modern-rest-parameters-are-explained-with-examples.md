@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32291
 permalink: /javascript-es6-modern-rest-parameters-are-explained-with-examples/
 xyz_twap:
   - "1"
-image: /images/rest-params-1568x882.jpeg
+image: ../../static/images/rest-params-1568x882.jpeg
 categories:
   - ES6
   - JAVASCRIPT

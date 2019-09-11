@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32394
 permalink: /how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/
 xyz_twap:
   - "1"
-image: /images/js-objects.png
+image: ../../static/images/js-objects.png
 categories:
   - ES6
   - JAVASCRIPT
