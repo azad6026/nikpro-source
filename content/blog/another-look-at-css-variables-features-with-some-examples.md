@@ -20,23 +20,29 @@ We will take another look at CSS variables features with some examples in this 
 
 Generally one of the CSS variables features is their scope. In another word their definition in the CSS code. As an example this is a global variable as it is in root:
 
-````:root {
+````
+:root {
 	--main-color: green;
-}```
+}
+```
 
 If we want our variable to only be visible for a specific class, we can just define it in its local scope:
 
-```.title {
+```
+.title {
 	--title-color: blue;
 	color: var(--title-color);
-}```
+}
+```
 
 Therefor **&#8211;title-color** is being used only in the **title** class and its related tags. Also we could change the code to the below:
 
-```.title {
+```
+.title {
   --main-color: aqua;
   color: var(--main-color);
-}```
+}
+```
 
 Basically we change the **&#8211;main-color** here and using the root colour and change it. This is the dynamic aspect of CSS variable features.
 
@@ -56,7 +62,6 @@ We could also use `calc()` for unitless CSS variables like below:
 :root {
 	--duration: 2000;
 }
-
 div {
   animation-duration: calc(var(--duration) * 1ms);
 }```
