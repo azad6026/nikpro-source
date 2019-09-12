@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 :root {
-  --link-color: darkorange;
-  --hover-color: #fef;
-  --menu-link-hover: white;
+  --link-color: #a74e00;
+  --hover-color: #4e453d;
+  --menu-link-hover: #4e453d;
   --primary-dark-color: #131010;
   --primary-light-color: darkorange;
 }
@@ -50,6 +50,10 @@ header .inner-wrapper {
 }
 .menu-item-link {
   text-decoration: none;
+  color: var(--primary-light-color);
+}
+.menu-item-link:hover {
+  color: white;
 }
 pre {
   background: #0c0904;
@@ -74,9 +78,6 @@ a {
 }
 h3 a:hover {
   color: #a74e00;
-}
-.menu-item-link:hover {
-  color: var(--menu-link-hover);
 }
 a.gatsby-resp-image-link {
   pointer-events: none;
