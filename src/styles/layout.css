@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 :root {
   --link-color: darkorange;
-  --hover-color: #0c0904;
+  --hover-color: #fef;
   --menu-link-hover: white;
   --primary-dark-color: #131010;
   --primary-light-color: darkorange;
@@ -73,7 +73,7 @@ a {
   color: var(--primary-dark-color);
 }
 h3 a:hover {
-  color: var(--hover-color);
+  color: #a74e00;
 }
 .menu-item-link:hover {
   color: var(--menu-link-hover);
