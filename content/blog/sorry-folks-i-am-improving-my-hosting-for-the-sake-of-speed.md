@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32126
 permalink: /sorry-folks-i-am-improving-my-hosting-for-the-sake-of-speed/
-image: ../../static/images/images-4.jpeg
+# image: ../../static/images/images-4.jpeg
 categories:
   - NikPro
 ---

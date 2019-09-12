@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31563
 permalink: /insertbefore-function-in-javascript/
-image: ../../static/images/slide2-1568x408.jpg
+# image: ../../static/images/slide2-1568x408.jpg
 categories:
   - JAVASCRIPT
   - Practice

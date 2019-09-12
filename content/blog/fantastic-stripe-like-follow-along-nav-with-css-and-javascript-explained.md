@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32332
 permalink: /fantastic-stripe-like-follow-along-nav-with-css-and-javascript-explained/
 xyz_twap:
   - "1"
-image: ../../static/images/final-nav.png
+# image: ../../static/images/final-nav.png
 categories:
   - CSS
   - CSS3

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32610
 permalink: /react-context-api-and-how-to-use-it-explained-in-simple-steps-with-examples/
 xyz_twap:
   - "1"
-image: ../../static/images/reactcontextapilearn.jpg
+# image: ../../static/images/reactcontextapilearn.jpg
 categories:
   - React
 ---

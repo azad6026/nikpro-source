@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31653
 permalink: /html5-semantic-tags-and-where-to-use-them/
-image: ../../static/images/html5-semantic-tag.gif
+# image: ../../static/images/html5-semantic-tag.gif
 categories:
   - HTML5
 ---

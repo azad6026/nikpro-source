@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32113
 permalink: /a-felxbox-dice-as-an-example-of-different-flexbox-properties/
-image: ../../static/images/flexbox-dice-1568x781.png
+# image: ../../static/images/flexbox-dice-1568x781.png
 categories:
   - CSS
   - CSS3

@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32422
 permalink: /a-quick-review-of-how-to-centre-elements-or-blocks-using-flexbox-in-css/
 xyz_twap:
   - "1"
-image: ../../static/images/centre-elements.png
+# image: ../../static/images/centre-elements.png
 categories:
   - CSS
   - CSS3

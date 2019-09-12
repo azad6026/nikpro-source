@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31745
 permalink: /for-loop-in-javascript-and-es6-explained/
-image: ../../static/images/for-loop_0.jpg
+# image: ../../static/images/for-loop_0.jpg
 categories:
   - ES6
   - JAVASCRIPT

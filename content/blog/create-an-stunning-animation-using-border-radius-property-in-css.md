@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32426
 permalink: /create-an-stunning-animation-using-border-radius-property-in-css/
 xyz_twap:
   - "1"
-image: ../../static/images/border-radius-8-values.png
+# image: ../../static/images/border-radius-8-values.png
 categories:
   - CSS
   - CSS3

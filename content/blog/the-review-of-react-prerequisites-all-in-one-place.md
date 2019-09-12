@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32038
 permalink: /the-review-of-react-prerequisites-all-in-one-place/
-image: ../../static/images/reacr-pre.jpg
+# image: ../../static/images/reacr-pre.jpg
 categories:
   - ES6
   - JAVASCRIPT

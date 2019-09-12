@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31762
 permalink: /what-is-spread-syntax-in-es6-and-how-to-use-it/
-image: ../../static/images/spread-syntax.jpeg
+# image: ../../static/images/spread-syntax.jpeg
 categories:
   - JAVASCRIPT
 tags:

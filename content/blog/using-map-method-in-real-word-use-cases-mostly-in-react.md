@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32664
 permalink: /using-map-method-in-real-world-use-cases-mostly-in-react/
 xyz_twap:
   - "1"
-image: ../../static/images/map-method.png
+# image: ../../static/images/map-method.png
 categories:
   - JAVASCRIPT
   - React

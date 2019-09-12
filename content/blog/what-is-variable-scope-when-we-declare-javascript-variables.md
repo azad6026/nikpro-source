@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32296
 permalink: /what-is-variable-scope-when-we-declare-javascript-variables/
 xyz_twap:
   - "1"
-image: ../../static/images/scope-example.png
+# image: ../../static/images/scope-example.png
 categories:
   - ES6
   - JAVASCRIPT

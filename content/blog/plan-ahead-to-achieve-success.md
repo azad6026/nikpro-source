@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31667
 permalink: /plan-ahead-to-achieve-success/
-image: ../../static/images/Plan-Ahead.jpg
+# image: ../../static/images/Plan-Ahead.jpg
 categories:
   - Life
 tags:

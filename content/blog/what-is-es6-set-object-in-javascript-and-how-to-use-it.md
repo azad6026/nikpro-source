@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32056
 permalink: /what-is-es6-set-object-in-javascript-and-how-to-use-it/
-image: ../../static/images/set-1568x880.png
+# image: ../../static/images/set-1568x880.png
 categories:
   - ES6
   - JAVASCRIPT

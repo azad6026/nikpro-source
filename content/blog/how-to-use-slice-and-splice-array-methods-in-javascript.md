@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32174
 permalink: /how-to-use-slice-and-splice-array-methods-in-javascript/
 xyz_twap:
   - "1"
-image: ../../static/images/slice-vs-splice.png
+# image: ../../static/images/slice-vs-splice.png
 categories:
   - JAVASCRIPT
 tags:

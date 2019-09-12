@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31935
 permalink: /some-useful-html-attribute-and-elements-meter-keyboard-contenteditable/
-image: ../../static/images/html-elements.jpeg
+# image: ../../static/images/html-elements.jpeg
 categories:
   - HTML
   - HTML5

@@ -6,7 +6,7 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32097
 permalink: /using-es6-features-in-react-application-codes-spread-operator/
-image: ../../static/images/spread-operator-in-react.jpg
+# image: ../../static/images/spread-operator-in-react.jpg
 categories:
   - ES6
   - React

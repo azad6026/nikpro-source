@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32319
 permalink: /converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/
 xyz_twap:
   - "1"
-image: ../../static/images/some-js.jpeg
+# image: ../../static/images/some-js.jpeg
 categories:
   - ES6
   - JAVASCRIPT

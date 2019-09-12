@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32219
 permalink: /comparing-array-from-and-spread-syntax-in-javascript-with-examples/
 xyz_twap:
   - "1"
-image: ../../static/images/array-1568x490.jpeg
+# image: ../../static/images/array-1568x490.jpeg
 categories:
   - ES6
   - JAVASCRIPT

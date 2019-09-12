@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32388
 permalink: /build-a-local-react-blog-application-part-2-submit-a-new-post/
 xyz_twap:
   - "1"
-image: ../../static/images/forms.png
+# image: ../../static/images/forms.png
 categories:
   - React
 tags:

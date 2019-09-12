@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32748
 permalink: /equal-height-column-card-layouts-with-aligned-content-using-flexbox-and-grid-explained-with-examples/
 xyz_twap:
   - "1"
-image: ../../static/images/equal-height-column-1.png
+# image: ../../static/images/equal-height-column-1.png
 categories:
   - CSS
   - CSS3

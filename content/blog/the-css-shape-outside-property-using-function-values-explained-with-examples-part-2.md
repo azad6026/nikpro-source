@@ -8,7 +8,7 @@ guid: http://www.nikpro.com.au/?p=32200
 permalink: /the-css-shape-outside-property-using-function-values-explained-with-examples-part-2/
 xyz_twap:
   - "1"
-image: ../../static/images/shape-outside-again.png
+# image: ../../static/images/shape-outside-again.png
 categories:
   - CSS
   - CSS3
