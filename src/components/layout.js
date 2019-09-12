@@ -63,7 +63,7 @@ class Layout extends React.Component {
       <div>
         <p
           style={{
-            background: `var(--primary-dark-colour )`,
+            background: `var(--primary-light-color)`,
             fontSize: `1rem`,
             textAlign: `center`,
           }}

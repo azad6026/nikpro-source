@@ -4,6 +4,7 @@
   --hover-color: #0c0904;
   --menu-link-hover: white;
   --primary-dark-color: #131010;
+  --primary-light-color: darkorange;
 }
 html {
   scroll-behavior: smooth;
