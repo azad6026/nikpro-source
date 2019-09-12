@@ -25,7 +25,11 @@ Basically we could use different kind of values for CSS shape properties. W coul
 
 AS a result of using shape-outside property we have a circle shape around the image that wraps the text around it beautifully. As we see the image is floated and this is the code ( shape-outside):
 
-```shape-outside: circle(50%);```
+
+```
+shape-outside: circle(50%);
+```
+
 
 ## CSS shape properties ellipse() value
 
@@ -37,7 +41,11 @@ Secondly we could also use ellipse to make an oval shape of he container and  w
 
 So the important part here is these lines of code:
 
-```shape-outside: ellipse(100px 200px at 50% 50%);<br />clip-path: ellipse(100px 200px at 50% 50%);```
+
+```
+shape-outside: ellipse(100px 200px at 50% 50%);<br />clip-path: ellipse(100px 200px at 50% 50%);
+```
+
 
 Therefor [the clip-path](http://www.nikpro.com.au/css-clip-path-property-basic-concept-explained-with-examples/) makes the oval shape and we use the shape-outside property as one of the CSS shape properties to shape the container as expected.
 
@@ -51,7 +59,9 @@ Finally we see an example from MDN making a polygon around the container. It loo
 
 Practically we use clip-path to shape the two right and left containers and then set the shape-outside to make the text wrap around those two boxes:
 
-```-webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+
+```
+-webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
   shape-outside: polygon(100% 0, 100% 100%, 0 100%);
   float: right;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);

@@ -33,13 +33,17 @@ Secondly comes the CSS. I will explain this step by step. We begin with the gene
 
 Practically we need the **ul  **element to be the grid container as we need the list items to be grid items. We also add a background to it to have a nice blue colour for empty spaces of the Mondrian grid layout.
 
-```ul { 
+
+```
+ul { 
     background: #0056b8;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(5, calc(70vw/5));
     grid-template-rows: repeat(5, calc(80vw/5));
-}```
+}
+```
+
 
 ### The grid container 
 
@@ -60,10 +64,14 @@ Generally we need to remember that grid items fill the space one after another t
 
 We have this code for the very first **li **meaning the first image:
 
-```li:nth-child(1) {
+
+```
+li:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
-}```
+}
+```
+
 
 We are using [nth-child() Pseudo selector](http://www.nikpro.com.au/the-css-nth-child-selector-explained-with-examples/) to reach out each list item. Also we use **grid-column** and **grid-row** to define how many column and row the item can occupy in the rid. Therefor there are different syntaxes that could be used here. I use span in this example. So **grid-column:** **span 2; **means you can expand or take 2 columns in the grid. Moreover **grid-row: span 1;** defines one row could be used by this item. And you will see the result for the first item.
 
@@ -71,13 +79,17 @@ We are using [nth-child() Pseudo selector](http://www.nikpro.com.au/the-css-nth-
 
 In a Mondrian grid layout we can expect various kind of layouts. So items can take different tope of space and change the layout. Itm 3 takes one column and item 3 will take 2 columns:
 
-```li:nth-child(2) { 
+
+```
+li:nth-child(2) { 
     grid-column: span 1;
     grid-row: span 4;
   }
   li:nth-child(3) { 
     grid-column: span 2;
-  }```
+  }
+```
+
 
 We haven&#8217;t specified rows for third item meaning it takes one row which is he default.
 
@@ -87,14 +99,18 @@ Forth item takes one column which is the default so we don&#8217;t need to speci
 
 Great. All good so far. However wen we specify the fifth item to take two column and two rows it cannot find the enough space just beside the forth item. Therefor it jumps to the next available spot and sits there. Which is right after the second item (the gold item):
 
-```li:nth-child(5) { 
+
+```
+li:nth-child(5) { 
     grid-column: span 2;
     grid-row: span 2;
  }
  li:nth-child(6) { 
     grid-column: span 4;
     grid-row: span 1;
- }```
+ }
+```
+
 
 Finally the last item finds enough space at the very bottom where item two ends and it takes its own four columns and 1 row.
 

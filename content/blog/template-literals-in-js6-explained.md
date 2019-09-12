@@ -54,7 +54,9 @@ We can evaluate any sort of variables we would like here:
 
 `<span class="token keyword">let</span> person <span class="token operator">=</span> <span class="token punctuation">{</span> `
 
-``  firstName<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`Dave`</span></span>```<span class="token punctuation">,</span> `
+``  firstName<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`Dave`</span></span>
+```
+<span class="token punctuation">,</span> `
 
 ``<span class="token function">  sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`Hi my name is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>firstName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">;</span> ``
 

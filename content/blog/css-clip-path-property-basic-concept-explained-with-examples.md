@@ -22,7 +22,9 @@ In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="n
 
 
 
-```.clip-inset {
+
+```
+.clip-inset {
   clip-path: inset(10px 20px 30px 40px);
   /* Also can take single values to make all sides the same, or 2 values (vert/horz), or 3 values (top/horz/bottom). */
 }<br />.clip-circle {
@@ -44,49 +46,67 @@ This pen shows how an image can be clipped by different clip-path property shape
 
 With inset we can make an inner rectangle that crops the image where we need it to.
 
-```.inset {
+
+```
+.inset {
   -webkit-clip-path: inset(20% 25% 20% 10%);
   clip-path: inset(20% 25% 20% 10%);
-}```
+}
+```
+
 
 Also we could use round keyword and a border radius to make round edges:
 
-```.inset {
+
+```
+.inset {
   -webkit-clip-path: inset(20% 25% 20% 10%);
   clip-path: inset(20% 25% 20% 10%);
-}```
+}
+```
+
 
 [](http://bennettfeely.com/clippy/)**Eclipse**
 
 Ellipses are defined using this syntax: _ellipse(radiusX radiusY at posX posY)_. The position is optional and will default to _50% 50%:_
 
-```.ellipse {
+
+```
+.ellipse {
   -webkit-clip-path: ellipse(50% 35%);
   clip-path: ellipse(50% 35%);
 }
 .ellipse2 {
   -webkit-clip-path: ellipse(50% 65% at 70% 50%);
   clip-path: ellipse(50% 65% at 70% 50%);
-}```
+}
+```
+
 
 **Circle**
 
 Circles are defined with this syntax: _circle(radius at posX posY)_. And the position is default to 50% 50%:
 
-```.circle {
+
+```
+.circle {
   -webkit-clip-path: circle(50%);
   clip-path: circle(50%);
 }
 .circle2 {
   -webkit-clip-path: circle(70% at 70% 20%);
   clip-path: circle(70% at 70% 20%);
-}```
+}
+```
+
 
 **Polygon**
 
 Polygon is a very flexible shape maker. You can give it as many points as you like. The provided points are **pairs of X and Y coordinates** that can be of any unit. Here are three examples of clipping with Polygon creating rectangle,  x shape and star shape:
 
-```/* Triangle */
+
+```
+/* Triangle */
 .polygon1 {
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -100,7 +120,9 @@ Polygon is a very flexible shape maker. You can give it as many points as you li
 .polygon3 {
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}```
+}
+```
+
 
 ### All in one example
 

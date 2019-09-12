@@ -56,10 +56,16 @@ With that in mind lets explain the code.
 
 We have the HTML and CSS here again:
 
-```<code>&lt;p class="better">This is a paragraph.&lt;/p>
-&lt;p class="better" id="winner">One selector to rule them all!&lt;/p></code>```
 
-```#winner {<br />  background-color: red;<br />  border: 1px solid black;<br />  font-size: 30px;
+```
+<code>&lt;p class="better">This is a paragraph.&lt;/p>
+&lt;p class="better" id="winner">One selector to rule them all!&lt;/p></code>
+```
+
+
+
+```
+#winner {<br />  background-color: red;<br />  border: 1px solid black;<br />  font-size: 30px;
 }
 .better {
   background-color: gray;
@@ -70,7 +76,9 @@ p {
   color: white;
   padding: 5px;
   font-size: 20px !important;
-}```
+}
+```
+
 
   Similarly we gave both paragraphs a class and the second one has an id as well.
 

@@ -32,7 +32,11 @@ As we know [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Firstly here is an example for &#8220;var&#8221; which each scope has been clarified in front of the variable:
 
-```var x = "hello world"; // scope of x: global<br />function foo() {<br />  var a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    var b = 3; // scope of b: foo<br />  }<br />  {<br />    var e = 10; // scope of e: foo<br />  }<br />  while(a &lt; 2) {<br />    var d = 5; // scope of d: foo<br />  }<br />}```
+
+```
+var x = "hello world"; // scope of x: global<br />function foo() {<br />  var a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    var b = 3; // scope of b: foo<br />  }<br />  {<br />    var e = 10; // scope of e: foo<br />  }<br />  while(a &lt; 2) {<br />    var d = 5; // scope of d: foo<br />  }<br />}
+```
+
 
 Also we have global and function scope here which is not great all the time. As an example it leads to unnecessary bugs due to incomprehension of the scope.
 
@@ -40,7 +44,11 @@ Also we have global and function scope here which is not great all the time. As 
 
 Secondly we have the same example with &#8220;let&#8221; and the scopes are written inside the code:
 
-```let x = "hello world"; // scope of x: global<br />function foo() {<br />  let a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    let b = 3; // scope of b: if statement<br />  }<br />  {<br />    let e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    let d = 5; // scope of d: while loop<br />  }<br />}```
+
+```
+let x = "hello world"; // scope of x: global<br />function foo() {<br />  let a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    let b = 3; // scope of b: if statement<br />  }<br />  {<br />    let e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    let d = 5; // scope of d: while loop<br />  }<br />}
+```
+
 
 Clearly we have statement scope, block scope, function scope and general scope. Ideally we better use let instead of var in almost all cases. 
 
@@ -52,17 +60,25 @@ As a result let allows developers to scope variables at the block level (the nea
 
 Finally with &#8220;const&#8221; we have exactly the same result regarding to variable scope:
 
-```const x = "hello world"; // scope of x: global<br />function foo() {<br />  const a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    const b = 3; // scope of b: if statement<br />  }<br />  {<br />    const e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    const d = 5; // scope of d: while loop<br />  }<br />}```
+
+```
+const x = "hello world"; // scope of x: global<br />function foo() {<br />  const a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    const b = 3; // scope of b: if statement<br />  }<br />  {<br />    const e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    const d = 5; // scope of d: while loop<br />  }<br />}
+```
+
 
 Although as we know let can be mutated but const is a constant and cannot be changed once created.
 
 However `const` does not affect whether the value of a constant itself is mutable or no. Therefor if a constant refers to an object, it will always refer to that object, but the object itself can still be changed (if it is mutable and not being freezed):
 
-```<code>const obj = {};
+
+```
+<code>const obj = {};
 obj.prop = 123;
 console.log(obj.prop); // 123
 
-obj = {}; // TypeError</code>```
+obj = {}; // TypeError</code>
+```
+
 
 ### Final notes
 

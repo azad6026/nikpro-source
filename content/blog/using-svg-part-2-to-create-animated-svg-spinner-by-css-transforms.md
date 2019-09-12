@@ -25,7 +25,9 @@ In this example form <a href="https://www.sitepoint.com/" target="_blank" rel="n
 
 This is the animated SVG spinner code which uses a few tags:
 
-```<code>&lt;svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> &lt;!-- 1 -->
+
+```
+<code>&lt;svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> &lt;!-- 1 -->
 
   &lt;circle class="path spinner-border" cx="33" cy="33" r="31" stroke="url(#gradient)">&lt;/circle> &lt;!-- 2 -->
 
@@ -37,7 +39,9 @@ This is the animated SVG spinner code which uses a few tags:
 
   &lt;circle class="path spinner-dot" cx="37" cy="3" r="2">&lt;/circle> &lt;!-- 4 -->
 
-&lt;/svg></code>```
+&lt;/svg></code>
+```
+
 
 Firstly the value of the `vieBox.` attribute is a list of four numbers `min-x`, `min-y`, `width` and `height.` Therefor **`viewBox="0 0 66 66"`** means that the viewport is 66 by 66.
 
@@ -53,21 +57,37 @@ The **`stroke-dasharray`** attribute is a presentation attribute defining the 
 
 The **`stroke-dashoffset`** attribute is a presentation attribute defining an offset on the rendering of the associated dash array. We define them for the spinner body as the first circle:
 
-```.path {<br />  stroke-dasharray: 170;<br />  stroke-dashoffset: 20;<br />}```
+
+```
+.path {<br />  stroke-dasharray: 170;<br />  stroke-dashoffset: 20;<br />}
+```
+
 
 However we need to define the .spinner-border as well to make a full circle:
 
-```.spinner-border {<br />  fill: transparent;<br />  stroke-width: 2;<br />  width: 100%;<br />  height: 100%;
-}```
+
+```
+.spinner-border {<br />  fill: transparent;<br />  stroke-width: 2;<br />  width: 100%;<br />  height: 100%;
+}
+```
+
 
 This just makes the circle as it should look like. We need to limit the width and height of the viewBox then to limit the circle in our defined area:
 
-```.spinner {<br />  margin: 10px;<br />  width: 180px;<br />  height: 180px;<br />}```
+
+```
+.spinner {<br />  margin: 10px;<br />  width: 180px;<br />  height: 180px;<br />}
+```
+
 
 That&#8217;s better. We also need to add the animated SVG head look like a dot:
 
-```.spinner-dot {<br />  stroke: #000;<br />  stroke-width: 1;<br />  fill: #000;
-}```
+
+```
+.spinner-dot {<br />  stroke: #000;<br />  stroke-width: 1;<br />  fill: #000;
+}
+```
+
 
 With stroke property we add border to our animated SVG dot shape and with fill we give it a colour.
 
@@ -75,21 +95,29 @@ With stroke property we add border to our animated SVG dot shape and with fill w
 
 Finally comes the interesting part which is the animation. We need to have two animation. First the rotation of the big circle and second the skew of the dot shape head:
 
-```@keyframes rotate {
+
+```
+@keyframes rotate {
   to {
     transform: rotate(360deg);
   }
-}```
+}
+```
+
 
 We will add this rotate keyframe as the animation for the big circle. Also we define the skew animation for the dot head:
 
-```@keyframes skew {
+
+```
+@keyframes skew {
   from {
     transform: skewX(10deg)
   }<br />  to {
     transform: skewX(40deg)
   }
-}```
+}
+```
+
 
 As a result we have an animated SVG spinner with a dot shape head that spins infinitely as we speak. This is the pen for this example:
 

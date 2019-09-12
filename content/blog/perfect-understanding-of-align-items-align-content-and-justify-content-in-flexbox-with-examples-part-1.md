@@ -54,11 +54,15 @@ https://codepen.io/azad6026/pen/WYRGML
 
 The syntax for align-items is:
 
+
 ```
+
 .container {  
   align-items: flex-start | flex-end | center | baseline | stretch;
 }
+
 ```
+
 
 Therefore it has five different values. We use this property to **_align flex items in the cross axis_** meaning vertical from top to bottom.&nbsp;
 

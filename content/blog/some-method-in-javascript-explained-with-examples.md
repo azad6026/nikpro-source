@@ -23,16 +23,22 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 **Note:** some() does not execute the function for array elements without values and some() does not change the original array. Look at this simple example:
 
-```<code>function isBiggerThan10(element, index, array) {
+
+```
+<code>function isBiggerThan10(element, index, array) {
   return element > 10;
 }&lt;br/></code><br /><code>[2, 5, 8, 1, 4].some(x => x > 10);  // false
-[12, 5, 8, 1, 4].some(x => x > 10); // true</code>```
+[12, 5, 8, 1, 4].some(x => x > 10); // true</code>
+```
+
 
 Additionally we have used arrow functions to make it neater and more readable. Some will apply the function once for each element present in the array until it finds one where `callback` returns a [_truthy_](http://www.nikpro.com.au/truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/) value. Immediately it returns true then.
 
 Moreover we can shorten the whole code to one function as some accept the function as its array argument:
 
-```[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false<br />[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true<br /></pre>
+
+```
+[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false<br />[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true<br /></pre>
 
 Really sweet and clean. Huh! Lets have a look at another examples.
 
@@ -40,21 +46,31 @@ Really sweet and clean. Huh! Lets have a look at another examples.
 
 OF course there are other use cases for some. We might need to check if a user has admin privileges.
 
-```<code>const userPrivileges = ['user', 'user', 'user', 'admin'];&lt;br/>userPrivileges.some( element => element === 'admin');</code><br /><code>// will be equal to true</code>```
+
+```
+<code>const userPrivileges = ['user', 'user', 'user', 'admin'];&lt;br/>userPrivileges.some( element => element === 'admin');</code><br /><code>// will be equal to true</code>
+```
+
 
 There is also another example of checking if something exists inside array:
 
-```<code>const fruits = ['apple', 'banana', 'mango', 'guava'];
+
+```
+<code>const fruits = ['apple', 'banana', 'mango', 'guava'];
 
 function checkAvailability(arr, val) {
   return arr.some(arrVal => val === arrVal);
 }
 
-checkAvailability(fruits, 'kela');   // false</code>```
+checkAvailability(fruits, 'kela');   // false</code>
+```
+
 
 In addition we have a similar example with numbers :
 
-```const arr = [2, 5, 8, 1, 4]
+
+```
+const arr = [2, 5, 8, 1, 4]
 function checkAvailability(arr, val) 
 {
   return arr.some(
@@ -64,12 +80,18 @@ function checkAvailability(arr, val)
            } );
 }
 
-checkAvailability(arr, 2);<br />checkAvailability(arr, 87);```
+checkAvailability(arr, 2);<br />checkAvailability(arr, 87);
+```
+
 
 **some and includes methods difference**
 
 Similarly includes checks if an array contains a certain value. It’s similar to `.some()`,but instead of looking for a condition to pass, it looks if the array contains a specific value:
 
-```<code>const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];&lt;br/>names.includes('waldo');</code><br /><code>// will be equal to true</code>```
+
+```
+<code>const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];&lt;br/>names.includes('waldo');</code><br /><code>// will be equal to true</code>
+```
+
 
 In this short post I explained some method which has its own use cases. We also saw its difference with includes method. Respectively we will explore all array methods in the future articles like we [did](http://www.nikpro.com.au/javascript-es6-reduce-method/) [before](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/). Thanks fo reading.

@@ -23,7 +23,9 @@ Image effects like <a rel="noreferrer noopener" aria-label="drop shadow could  (
 
 Firstly we will take a look at its syntax:
 
-```drop-shadow(<em>offset-x</em> <em>offset-y</em> <em>blur-radius</em> <em>spread-radius</em> <em>color</em>);<br /><br />An example:<br /><br /><code>&lt;strong>/* Reddish shadow with 1rem blur and .3rem spread */ /* WARNING: not generally supported by browsers */ &lt;/strong></code><br /><br /><code>&lt;strong>drop-shadow(.5rem .5rem 1rem .3rem #e23)&lt;/strong></code></pre>
+
+```
+drop-shadow(<em>offset-x</em> <em>offset-y</em> <em>blur-radius</em> <em>spread-radius</em> <em>color</em>);<br /><br />An example:<br /><br /><code>&lt;strong>/* Reddish shadow with 1rem blur and .3rem spread */ /* WARNING: not generally supported by browsers */ &lt;/strong></code><br /><br /><code>&lt;strong>drop-shadow(.5rem .5rem 1rem .3rem #e23)&lt;/strong></code></pre>
 
 As we see it is very much the same as the box shadow property:
 

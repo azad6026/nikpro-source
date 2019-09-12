@@ -90,7 +90,9 @@ Now lets sort them by their age and the oldest comes first. We simply calculate 
 
 `const lastInventor = b.passed - b.year;`
 
-```  if (otherInventor < lastInventor){`  
+
+```
+  if (otherInventor < lastInventor){`  
 `    return 1;`  
 `  }else{`  
 `    return -1;`  
@@ -106,7 +108,9 @@ Lets make this one shorter and cleaner as well:
 
 `const lastInventor = b.passed - b.year;`
 
-```return otherInventor < lastInventor ? 1 : -1;`  
+
+```
+return otherInventor < lastInventor ? 1 : -1;`  
 `});`  
 `console.table(SortByAge);`
 
@@ -121,7 +125,9 @@ This is a really nice example using map and new ES6 syntax. We want to return th
 
 This works perfectly but lets make it more readable and modern using arrow function instead of the function and back-tick in [template literals](http://www.nikpro.com.au/template-literals-in-js6-explained/) in your return statement:
 
-`const fullnames = inventors.map(inventor =>````{$<code>inventor.first}{$inventor.last}`);``</code>  
+`const fullnames = inventors.map(inventor =>
+```
+`{$<code>inventor.first}{$inventor.last}`);``</code>  
 `console.table(fullnames);`
 
 And it now looks great. and works just the same.

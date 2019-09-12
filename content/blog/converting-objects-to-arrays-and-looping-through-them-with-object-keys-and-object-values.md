@@ -21,7 +21,9 @@ Basically these two ES6 methods are great replacement for for &#8230; in loop. A
 
 Simply Object.keys takes an object of key-value pairs and loops through them and creates an array of its keys:
 
-```<code>// simple array
+
+```
+<code>// simple array
 const arr = ['a', 'b', 'c'];
 console.log(Object.keys(arr)); // console: ['0', '1', '2']
 
@@ -44,7 +46,9 @@ console.log(Object.keys(myObj)); // console: ['foo']&lt;/code>&lt;/strong></pre>
 
 Also we can even use it to get keys from a non object argument as well. Although it is only in ES6 and in older version in gives a TypeError:
 
-```<code>Object.keys('apple');
+
+```
+<code>Object.keys('apple');
 // TypeError: "apple" is not an object (ES5 code)
 
 Object.keys('apple');
@@ -58,7 +62,9 @@ Here it comes the very useful Object.values. Although it is not supported in <a 
 
 Object.values returns an array of a given object&#8217;s own enumerable property values, in the same order as that provided by a [`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)loop. We will take a look at some examples again:
 
-```<code>const obj = { foo: 'bar', baz: 42 };
+
+```
+<code>const obj = { foo: 'bar', baz: 42 };
 console.log(Object.values(obj)); // ['bar', 42]
 
 // array like object
@@ -76,7 +82,9 @@ my_obj.foo = 'bar';
 console.log(Object.values(my_obj)); // ['bar']
 
 // non-object argument will be coerced to an object
-console.log(Object.values('apple')); // ['a, 'p, 'p' , 'l' , 'e']</code>```
+console.log(Object.values('apple')); // ['a, 'p, 'p' , 'l' , 'e']</code>
+```
+
 
 Clearly as mentioned about Object.keys as well , in the last example we see that we can even convert a string to object values as an array even though it is not an object. It is useful in some cases if needed.
 
@@ -84,16 +92,24 @@ Clearly as mentioned about Object.keys as well , in the last example we see that
 
 Technically we can combine Object.values and map method to produce the same result as Object.values if we care about IE. Take a look at these example:
 
-```<code>const obj = { foo: 'bar', baz: 42 };
+
+```
+<code>const obj = { foo: 'bar', baz: 42 };
 const values = Object.keys(obj).map(function(e) {
   return obj[e]
 })
 
-console.log(values)</code>```
+console.log(values)</code>
+```
+
 
 Therefor we get an array of keys first using Object.keys and using map method get an array of values for those keys afterwards. Using arrow functions it will look like this:&#8217;
 
-```<code>const values = Object.keys(obj).map(e => obj[e])</code>```
+
+```
+<code>const values = Object.keys(obj).map(e => obj[e])</code>
+```
+
 
 As a take away it is best ti use ES6 new techniques and methods whenever possible. It makes the code more maintainable and readable and give the desired outcome as well.
 

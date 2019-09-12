@@ -51,7 +51,9 @@ repeating-linear-gradient(
 
 As a result it repeats the colour stops infinitely in all directions so as to cover its entire container. Now we can add the **`background-blend-mode.`** There can be several values, separated by commas:
 
-```&lt;blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity<br /></pre>
+
+```
+&lt;blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity<br /></pre>
 
 Therefor in this example we use **multiply**. This is the pen for this example:
 
@@ -75,7 +77,9 @@ However with the background-image property the **background blend mode property*
 
 Finally in this example the **repeating-radial-gradient()** function creates an image consisting of repeating gradients that radiate from an origin. Therefor it repeats the colour stops infinitely in all directions so as to cover its entire container. Have a look at the code:
 
-```background:
+
+```
+background:
     repeating-radial-gradient(
         circle at top left,
         red,
@@ -104,7 +108,9 @@ Finally in this example the **repeating-radial-gradient()** function creates an
         transparent 4em,
         transparent 15em
     ), white;
-background-blend-mode: difference;```
+background-blend-mode: difference;
+```
+
 
 As an explanation  **repeating-radial-gradient(** **circle at top left,** **red,** **red 4em,** **transparent 4em,** **transparent 15em** **)** this repeating gradient at the top left of its container starts in red and continues in red and continues in transparent in different positions. Try to change the background blend mode property to its different values and see other effects as well. This is the pen for this one:
 

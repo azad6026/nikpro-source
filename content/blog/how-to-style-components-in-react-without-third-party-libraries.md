@@ -29,17 +29,23 @@ Starting with a simple example we can explain it better:
 <code>&lt;strong>};&lt;/strong></code>
 <code>&lt;strong>HelloWorldComponent =&gt; (  &lt;/strong></code>
 <code>&lt;strong>  &lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;;&lt;/strong></code>
-);```
+);
+```
+
 
 First we have defined a camelCased constant which is an object to hold the style. The object name which is **divStyle** in this case is the key of the object. And the object value is the styles. So inline style in React is not a string but defines as an object. Another example:
 
-```var divStyle = {
+
+```
+var divStyle = {
   color: 'white',
   background# image: ../../static/images/'url(' + imgUrl + ')',
   WebkitTransition: 'all', // note the capital 'W' here
   msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };
-ReactDOM.render(&lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;, mountNode);```
+ReactDOM.render(&lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;, mountNode);
+```
+
 
 We can write normal styles here. We can either pass the variable name like above  **style = {divStyle} **or pass the style directly like below:
 
@@ -55,7 +61,9 @@ Styling components with CSS stylesheet is a better and more maintainable way. Es
 
 We will need to import the file into the component and use the classes in our code. Here is a simple component called DottedBox using its very own CSS stylesheet:
 
-```import React from 'react';
+
+```
+import React from 'react';
 import './DottedBox.css';
 
 const DottedBox = () =&gt; (
@@ -64,18 +72,24 @@ const DottedBox = () =&gt; (
   &lt;/div&gt;
 );
 
-export default DottedBox;```
+export default DottedBox;
+```
+
 
 Also this is the CSS file called DottedBox.css:
 
-```.DottedBox {
+
+```
+.DottedBox {
   margin: 40px;
   border: 5px dotted pink;
 }
 .DottedBox_content {
   font-size: 15px;
   text-align: center;
-}```<figure class="wp-block-image">
+}
+```
+<figure class="wp-block-image">
 
 <img class="wp-image-32474" src="http://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="http://testgatsby.localcss-in-react.jpg 638w, http://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
 
@@ -83,7 +97,9 @@ Also this is the CSS file called DottedBox.css:
 
 Basically a CSS Module is a CSS file in which all class names and animation names are scoped locally by default. We could use React&#8217;s internal CSS modules which has some standard ones. Our component will look like this:
 
-```import React from 'react';
+
+```
+import React from 'react';
 import styles from './DashedBox.css';
 
 const DashedBox = () =&gt; (
@@ -92,7 +108,9 @@ const DashedBox = () =&gt; (
   &lt;/div&gt;
 );
 
-export default DashedBox;```
+export default DashedBox;
+```
+
 
 On the other hand the CSS styles:
 
@@ -112,12 +130,18 @@ On the other hand the CSS styles:
 
 But you need to run the **eject** command on your application to make CSS modules work. After ejecting <a href="https://medium.com/nulogy/how-to-use-css-modules-with-create-react-app-9e44bec2b5c2" target="_blank" rel="noreferrer noopener">we want to add these two lines</a> into our **webpack config both dev and prod setup**. modules: true means enable CSS module. localIdentName will give us n unique CSS classname. :
 
-```modules: true,
-localIdentName: '[name]__[local]__[hash:base64:5]'```
+
+```
+modules: true,
+localIdentName: '[name]__[local]__[hash:base64:5]'
+```
+
 
 Therefore we can use CSS styles in our components like below:
 
-```//App.js
+
+```
+//App.js
 import styles from './App.css';
 ...
 &lt;div <em>className</em>={styles.app}&gt;
@@ -128,7 +152,9 @@ import styles from './App.css';
   &lt;p <em>className</em>={styles.intro}&gt;
   To get started, edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
   &lt;/p&gt;
-&lt;/div&gt;```
+&lt;/div&gt;
+```
+
 
 Instead of using the class as a string as in CSS stylesheet, we need to use braces and add the CSS class name after **styles.** just like **className={styles.title}**. We could use any style in CSS modules.That is what makes it so powerful and useful.
 

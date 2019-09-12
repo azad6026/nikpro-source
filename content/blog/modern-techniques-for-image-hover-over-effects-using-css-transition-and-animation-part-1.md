@@ -35,11 +35,19 @@ For example in this one once we hover over the image its scale will change via t
 
 At the same time captions are kind of flying in with a nice background. We do that by changing the opacity and positioning:
 
-```figure:hover figcaption {<br />    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);<br />    filter: alpha(opacity=100);<br />    opacity: 1;<br />    top: 0;<br />}<br />// to make h3 and p to fly in<br />figure:hover h3, figure:hover p {<br />    left: 0px;<br />}```
+
+```
+figure:hover figcaption {<br />    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);<br />    filter: alpha(opacity=100);<br />    opacity: 1;<br />    top: 0;<br />}<br />// to make h3 and p to fly in<br />figure:hover h3, figure:hover p {<br />    left: 0px;<br />}
+```
+
 
 Practically we get advantage of transitions to have a smooth animation like effect for each animated section:
 
-```figcaption,figcaption h3 ,figcaption p,img{<br />  transition: all .9s ease;<br />  transition-delay: .5s;<br />}<br />//We could have written that all in one line :<br />// transition: all .9s ease .5;```
+
+```
+figcaption,figcaption h3 ,figcaption p,img{<br />  transition: all .9s ease;<br />  transition-delay: .5s;<br />}<br />//We could have written that all in one line :<br />// transition: all .9s ease .5;
+```
+
 
 ## #2: Fade in and out images using hover and animation
 
@@ -51,15 +59,27 @@ Lets animate the image using hover and keyframes (animation). Have a look a this
 
 Firstly the top image should be hovered over so that it fades out and the second image will be fade in. Therefor we change transition the opacity of the image:
 
-```.simple img{<br />-webkit-transition: opacity 4s ease-in-out;<br />  -moz-transition: opacity 4s ease-in-out;<br />  -o-transition: opacity 4s ease-in-out;<br />  transition: opacity 4s ease-in-out;<br />}<br />// Changing the opacity to see the other image<br />.simple img.top:hover {<br />  opacity:0;<br />}```
+
+```
+.simple img{<br />-webkit-transition: opacity 4s ease-in-out;<br />  -moz-transition: opacity 4s ease-in-out;<br />  -o-transition: opacity 4s ease-in-out;<br />  transition: opacity 4s ease-in-out;<br />}<br />// Changing the opacity to see the other image<br />.simple img.top:hover {<br />  opacity:0;<br />}
+```
+
 
 Secondly we have the same images that animate in a timeframe. It looks like a very simple [gallery](http://www.nikpro.com.au/how-to-build-a-simple-gallery-using-flexbox-and-javascript/) or slider that we have created just by simple CSS. Here is the animation with four transition steps defined into it:
 
-```@keyframes FadeInOut {<br />  0% {<br />  opacity:1;<br />}<br />45% {<br />opacity:1;<br />}<br />55% {<br />opacity:0;<br />}<br />100% {<br />opacity:0;<br />}<br />}```
+
+```
+@keyframes FadeInOut {<br />  0% {<br />  opacity:1;<br />}<br />45% {<br />opacity:1;<br />}<br />55% {<br />opacity:0;<br />}<br />100% {<br />opacity:0;<br />}<br />}
+```
+
 
 As a result the opacity of top image stays up to 45% and at 55% it become 0 and the image will fade out:
 
-```.animated img.top {<br />  animation-name: FadeInOut;<br />  animation-timing-function: ease-in-out;<br />  animation-iteration-count: infinite;<br />  animation-duration: 6s;<br />  animation-direction: alternate;<br />}<br />// We could put it all in one line as well:<br />animation: FadeInOut ease-in-out infinite 6s alternate;```
+
+```
+.animated img.top {<br />  animation-name: FadeInOut;<br />  animation-timing-function: ease-in-out;<br />  animation-iteration-count: infinite;<br />  animation-duration: 6s;<br />  animation-direction: alternate;<br />}<br />// We could put it all in one line as well:<br />animation: FadeInOut ease-in-out infinite 6s alternate;
+```
+
 
 Although it looks simple but it has the core concept of animation that could be made more complex as well. In the next article I will cover two more useful and cool CSS effects on images.
 

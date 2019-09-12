@@ -49,7 +49,9 @@ Obviously our list is created via a loop through our array with map to generate 
 
 Now if we [extract our component](http://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) to two seperate component we could have nested components and see how to pass props in that case. Our NumberList Component will be changed and we extract it to two components:
 
-```// Child component
+
+```
+// Child component
 function ListItem(props) {
   // Correct! There is no need to specify the key here:
   return &lt;li&gt;{props.value}&lt;/li&gt;;
@@ -67,27 +69,41 @@ function NumberList(props) {
       {listItems}
     &lt;/ul&gt;
   );
-}```
+}
+```
+
 
 Practically we have our **ListItem** component as the **child** component. Inside NumberList component we pass the props to the ListItem component once we initialise its properties:
 
-```const listItems = numbers.map((number) =&gt;
+
+```
+const listItems = numbers.map((number) =&gt;
     // Correct! Key should be specified inside the array.
     &lt;ListItem key={number.toString()}
               value={number} /&gt;
-  );```
+  );
+```
+
 
 Therefor **ListItem component will have access to the mapped numbers**. As a result we can now create our list inside our child component using passed props:
 
-``` return &lt;li&gt;{props.value}&lt;/li&gt;;```
+
+```
+ return &lt;li&gt;{props.value}&lt;/li&gt;;
+```
+
 
 Finally we return our list in the parent component:
 
-``` return (
+
+```
+ return (
     &lt;ul&gt;
       {listItems}
     &lt;/ul&gt;
-  );```
+  );
+```
+
 
 This is the core concept of passing props from top to bottom or from parent to child components in React. Understanding this will help to die into real world examples. In the next article we will see some more complex examples and we will pass states down as props into child components as well.
 

@@ -34,18 +34,26 @@ Generally we use the constructor if we need to initialise state or bind methods.
 
 According to Rect docs we **should not call `setState()`** in the `constructor()`. Instead, we should **assign the initial state to `this.state`** directly in the constructor:
 
-```<code>constructor(props) {
+
+```
+<code>constructor(props) {
   super(props);
   // Don't call this.setState() here!&lt;br/>  // initialise state
   this.state = { counter: 0 };&lt;br/>  // bund methods
   this.handleClick = this.handleClick.bind(this);
-}</code>```
+}</code>
+```
+
 
 Moreover for any side-effects or subscriptions we shouldn&#8217;t use constructor. Instead we should use componentDidMound().
 
 Also instead of the above constructor we could change the code to below:
 
-```// initialise state here, you don't need to use "this" keyword here<br />state = {<br />  counter: 0<br />}<br />// use arrow function which points to the class itself and there is no need to bind "this" to the event handler<br />handleClick = () => {<br /><br />}```
+
+```
+// initialise state here, you don't need to use "this" keyword here<br />state = {<br />  counter: 0<br />}<br />// use arrow function which points to the class itself and there is no need to bind "this" to the event handler<br />handleClick = () => {<br /><br />}
+```
+
 
 As you can see it is more readable and clean and there is no need to worry about constructor issues.
 
@@ -53,7 +61,11 @@ As you can see it is more readable and clean and there is no need to worry about
 
 Based on React docs `getDerivedStateFromProps` is invoked right before calling the render method, both on the initial mount and on subsequent updates. It should return an object to update the state, or null to update nothing:
 
-```<code>static getDerivedStateFromProps(props, state)</code>```
+
+```
+<code>static getDerivedStateFromProps(props, state)</code>
+```
+
 
 This method exists for [rare use cases](https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state) where the state depends on changes in props over time. 
 
@@ -65,7 +77,9 @@ For example, it might be handy for implementing a `<Transition>` component tha
 
 Technically we need only this  component lifecycle method as a required one in a [class component](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/). Actually it examines **this.props** and **this.state** and returns a type like React elements, arrays, portals, strings, numbers or booleans or null.
 
-```class App extends Component {
+
+```
+class App extends Component {
   render() {
     return (
       &lt;div>
@@ -83,9 +97,13 @@ Generally in the component lifecycle this method is a great place to initialise 
 
 Moreover we **may call `setState()` immediately** in `componentDidMount()`. AlthoughI it will trigger an extra rendering, but it will happen before the browser updates the screen:
 
-```componentDidMount(){
+
+```
+componentDidMount(){
     this.getData();
-  }```
+  }
+```
+
 
 Using **Did**Mount makes it clear that data won’t be loaded until _after_ the initial render. Putting the data loading code in `componentDidMount` will ensure that data is only fetched from the client.
 

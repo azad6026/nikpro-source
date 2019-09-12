@@ -17,19 +17,27 @@ There are really useful use cases that we might need [FlexBox](http://www.nikpro
 
 The idea is actually to make a FlexBox child independent from the container and place in where we need it to be not the default place that the flex force it to. Let me give you an example. Imagine the code below:
 
-```&lt;div class="parent">
+
+```
+&lt;div class="parent">
   &lt;div class="child1">&lt;/div><br />&lt;div class="child2">&lt;/div>
-&lt;/div>```
+&lt;/div>
+```
+
 
 If we want to have or place one child in the edge or middle edge of the container or right in the very centre of it we can. Using the magic of auto margins. The simplest way of doing this for example for placing that item in the centre of the parent container looks like this:
 
-```.parent {
+
+```
+.parent {
   display: flex
 }
 
 .child2 {
   margin: auto;
-}```
+}
+```
+
 
 As a result the **.child2** will be place in the centre of the remaining space of the container. By remaining I mean whatever space **.child1** is occupying is specified for item 1 and the rest will be where the item 2 will be in the centre of it.
 

@@ -19,23 +19,31 @@ Following these [series](http://www.nikpro.com.au/different-stateless-functional
 
 Typically the React forms markup looks like HTML code. But we know it will be rendered as a [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) code inside the component. Have a look at this example:
 
-```<code>&lt;form>
+
+```
+<code>&lt;form>
   &lt;label>
     Title:
     &lt;input type="text" name="title" />
   &lt;/label>
   &lt;input type="submit" value="Submit" />
-&lt;/form></code>```
+&lt;/form></code>
+```
+
 
 Basically it is a simple HTML form. We need to add the event handlers and value attribute to it to be able to maintain and manipulate it:
 
-```<code> &lt;form onSubmit={this.handleSubmit}>
+
+```
+<code> &lt;form onSubmit={this.handleSubmit}>
         &lt;label>
           Title:
           &lt;input type="text" value={this.state.title} onChange={this.handleChange} />
         &lt;/label>
         &lt;input type="submit" value="Submit" />
-      &lt;/form></code>```
+      &lt;/form></code>
+```
+
 
 Firstly  we will put this code into the render method of the Form component. So &#8220;this&#8221; refers to the class object. 
 
@@ -45,9 +53,13 @@ Secondly on the form tag we add an onSubmit event which will be handled by an ev
 
 Alright. We better take a look at the state of our component in this case:
 
-```state = {
+
+```
+state = {
     title: ""
-}```
+}
+```
+
 
 Considerably I am using the React 16 ES6 version of state. You can also use a constructor for this which is less recommended as it makes it difficult to read and we need to take care of &#8220;this&#8221; in that case.<figure class="wp-block-image">
 
@@ -57,18 +69,24 @@ Considerably I am using the React 16 ES6 version of state. You can also use a co
 
 On top of that we will have our event handlers like below. We just alert user of the new value of input tag:
 
-```<code> handleChange(event) {
+
+```
+<code> handleChange(event) {
     this.setState({title: event.target.title});
   }
 
   handleSubmit(event) {
     alert('A title was submitted here: ' + this.state.title);
     event.preventDefault();
-  }</code>```
+  }</code>
+```
+
 
 Great. Lets now put it all together and make our component right:
 
-```class Form extends React.Component {
+
+```
+class Form extends React.Component {
     state = {
         title: "",
     }<br />
@@ -87,7 +105,9 @@ handleSubmit = (event) => {
                 &lt;/lablel>
                 &lt;input type="submit" value="submit" />
             &lt;/form>
-        &lt;/React.Fragment></code> ); } <br />}```
+        &lt;/React.Fragment></code> ); } <br />}
+```
+
 
 In addition [we use React.Fragment](http://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) to wrap our code instead of a div element to make sure a new tag element will not be our container. 
 

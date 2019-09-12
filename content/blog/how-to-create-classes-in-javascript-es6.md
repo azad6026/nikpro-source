@@ -96,7 +96,9 @@ The `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">const&lt;/span> square &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 
-console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>square&lt;span class="token punctuation">.&lt;/span>area&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// 100&lt;/span></code>```
+console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>square&lt;span class="token punctuation">.&lt;/span>area&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// 100&lt;/span></code>
+```
+
 
 The interesting thing about classes in ES6 is that there is no function keyword to declare one. We could use the name right away.
 
@@ -123,7 +125,9 @@ We could use extends keyword to create a new child class (of both types explaine
   &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>```
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>
+```
+
 
 **Note: **If there is a constructor present in subclass, it needs to first call super() before using &#8220;this&#8221;. This is very useful in react application classes.
 
@@ -142,7 +146,9 @@ Animal&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="tok
   &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>```
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>
+```
+
 
 It is important to know that classes cannot extend regular objects unless you use setPrototypeOf method to add the object as a method:
 
@@ -159,7 +165,9 @@ It is important to know that classes cannot extend regular objects unless you us
 &lt;span class="token comment" spellcheck="true">// If you do not do this you will get a TypeError when you invoke speak&lt;/span>
 Object&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">setPrototypeOf&lt;/span>&lt;span class="token punctuation">(&lt;/span>Dog&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="token punctuation">,&lt;/span> Animal&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 &lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie makes a noise.&lt;/span></code>```
+d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie makes a noise.&lt;/span></code>
+```
+
 
 ## Calls with Super class
 

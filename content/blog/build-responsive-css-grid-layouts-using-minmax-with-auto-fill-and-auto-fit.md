@@ -36,38 +36,54 @@ In this post we will look at some examples of how we can use them to produce a f
 
 In a grid element, we can use the **repeat()** keyword to repeat all or part of our track definition. The following definition would create a grid with 10, 100 pixel width column tracks.
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(10, 100px);
 }
+
 ```
+
 
 We could create 10 flexibly sized equal width tracks by using the fr unit.
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(10, 1fr);
 }
+
 ```
+
 In these cases we will always have fixed width or flexible grid but with only 10 columns limit. We will need a grid so that asmany columns as possible could be fit in it in different widths. For this gaol in mind, we could use auto-fill and auto-fit.
 
 ## Using auto-fill and auto-fit
 
 To create a grid with as many 100 pixel tracks as will fit in the container we can use the auto-fill keyword rather than a number.
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, 100px);
 }
+
 ```
+
 
 We could also use ato-fit to achieve the same result:
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(auto-fit, 100px);
 }
+
 ```
+
 
 With auto-fill and auto-fit we create a grid with as many tracks as will fit into the container, and will taking any grid-gap value into account, If you use the auto-fill keyword empty tracks will remain as part of the grid. If you were to use the alternate auto-fit keyword, this would behave in the same way as described above but once all grid items have been placed any completely empty tracks will be dropped or collapsed. 
 
@@ -77,19 +93,27 @@ We will explain it with examples shortly.
 
 To create a complete flexible grid , flexible in size of tracks and number, we need [minmax()](https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax). We can give this function a minimum and maximum size that we want our track to be. So the following would make tracks a minimum of 200 pixels and a maximum of 200 pixels.
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
 }
+
 ```
+
 
 To make it even better and fully flexible, we will use the fraction unit as ou maximum value:
 
+
 ```
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
+
 ```
+
 
 See the example below:
 

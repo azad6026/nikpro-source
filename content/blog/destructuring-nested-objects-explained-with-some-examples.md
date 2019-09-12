@@ -21,7 +21,9 @@ One of the most useful and yet advanced aspects that ES6 introduced was [destruc
 
 Firstly we need to define how destructuring works.Take a look at this example:
 
+
 ```
+
 const user = {
   id: 339,
   name: 'Fred',
@@ -29,13 +31,19 @@ const user = {
 };
 const {name} = user;
 console.log(name); //prints: Fred
+
 ```
+
 
 Basically we have got an object called &#8220;user&#8221; and we have assigned some values to its variables. The line below:
 
+
 ```
+
 const {name} = user;
+
 ```
+
 
 Generally defines a variable called **name** and assigns the **user** object to it. Meaning we define the same variable called **name** using brackets and ask for its value out of its parent called **user**. 
 
@@ -45,7 +53,9 @@ Now if we print out the &#8220;name&#8221; we will see &#8220;Fred&#8221; which 
 
 What if we have a nested array? And we need to go deep and destructure some variables? We will use some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noreferrer noopener" aria-label="MDN (opens in a new tab)">MDN</a> examples:
 
+
 ```
+
 const metadata = {
   title: 'Scratchpad',
   translations: [
@@ -59,11 +69,15 @@ const metadata = {
   ],
   url: '/en-US/docs/Tools/Scratchpad'
  };
- ```
+ 
+```
+
 
 As an example we want to destructure the title and the locale variables:
 
+
 ```
+
 const { 
   title,
   translations: [
@@ -75,11 +89,15 @@ const {
 
 console.log(title); // "Scratchpad"
 console.log(locale);  // "de"
+
 ```
+
 
 Generally we can rename variables as we destructure them as well so it is more readable and less confusing at specific points like below:
 
+
 ```
+
 const {
   title: englishTitle,// rename
   translations: [
@@ -90,7 +108,9 @@ const {
  } = metadata;
  console.log(englishTitle); // "Scratchpad"
  console.log(localeTitle);  // "JavaScript-Umgebung"
- ```
+ 
+```
+
 
 Practically we have got two titles but we rename them at definition point and we can use their new name to get the values. Pretty neat.
 
@@ -98,7 +118,9 @@ Practically we have got two titles but we rename them at definition point and we
 
 Interestingly we can define variables as we destructure them by assigning default values. It is essential as if we don&#8217;t predefine the variable we will throw a Type Error. Here is an example of how to do it:
 
+
 ```
+
 const student = {
   name: 'John Doe',
   age: 16,
@@ -111,7 +133,9 @@ const student = {
 const { name, scores: {maths, science = 50}} = student;
 console.log(`${name} scored ${maths} in Maths and ${science} in Elementary Science.`);
 // John Doe scored 74 in Maths and 50 in Elementary Science.
+
 ```
+
 
 Therefore we defined &#8220;science&#8221; as a new variable inside &#8220;scores&#8221; object and output it at the end.
 
@@ -119,7 +143,9 @@ Therefore we defined &#8220;science&#8221; as a new variable inside &#8220;score
 
 Here is another example when we do iterate over an object while destructuring its variables:
 
+
 ```
+
 var people = [
   {
   name: 'Mike Smith',
@@ -145,7 +171,9 @@ var people = [
  }
  // "Name: Mike Smith, Father: Harry Smith"
  // "Name: Tom Jones, Father: Richard Jones"
- ```
+ 
+```
+
 
 [Using for &#8230; of](http://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) method we destructure people object and also rename its variables. The result is as we expected.
 

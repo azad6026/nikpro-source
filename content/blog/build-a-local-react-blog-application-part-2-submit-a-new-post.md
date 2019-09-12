@@ -27,33 +27,47 @@ To submit the form we need to get the value of each input and track the changes 
 
 One way is to create handleChange methods separately per input. As in here we have two input elements which one is textarea element we can create two methods. And then use their values and update state to save the data for submit method:
 
+
 ```
+
 const value = event.target.value
+
 ```
+
 
 But if we create seperate methods we will end up having too many methods that do the same thing for different elements. Only the method name will be different:
 
+
 ```
+
   <input onChange={this.handleTitleChange}/>
   <textarea onChange={this.handleContentChange}/>
   .
   .
   .
   
+
 ```
+
 
 However we don&#8217;t need to do this. Thankfully there is a clever way around it and that is using name on each element. As we know each form input could have a unique name. We will use that to target each input and handle input changes all in one method using name and value:
 
+
 ```
+
 const name = event.target.name
 const value = event.target.value
+
 ```
+
 
 ### The form
 
 Simply we create the form using a simple markup in JSX:
 
+
 ```
+
 <form className="new-post-form" onSubmit={this.handleSubmit}>
   <label> Post title
     <input className="title-input" type="text" name="title" onChange={this.handleChange} />
@@ -63,13 +77,17 @@ Simply we create the form using a simple markup in JSX:
   </label>
   <input className="submit-button" type="submit" value="submit" />
 </form>
+
 ```
+
 
 To handle change event on each input we use **handleChange** method. Also we gave **a unique name to each input** and the form element handles the **form submission** through onSubmit event. These three things should be managed inside the logic. 
 
 As a side note we don&#8217;t need to specify the value attribute. We will get the value through the code:
 
+
 ```
+
 // ES6 version of the handleChange method
 handleChange = event => {
   // get the name and values from the focused input
@@ -83,7 +101,9 @@ handleChange = event => {
   };
   this.setState({ post: newPost });
 };
+
 ```
+
 
 Preferably we are using ES6 [destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) to initialise name and value and then [rest parameters](http://www.nikpro.com.au/javascript-es6-modern-rest-parameters-are-explained-with-examples/) to add the new post. Afterwards we update the state.
 
@@ -92,7 +112,9 @@ Preferably we are using ES6 [destructuring](http://www.nikpro.com.au/using-es6-d
 Finally we are ready to submit the new values as a new post. We will handle it with handleSubmit method:
 
 
+
 ```
+
 handleSubmit = event => {
 const { post, posts } = [...this.state];
 const newPosts = Array.from(posts);
@@ -103,7 +125,9 @@ this.setState({
 event.preventDefault();
 };
 
+
 ```
+
 
 Starting with getting  post and posts to work with, we then convert posts to a mappable array and push the new post to the old array. Afterwards we will update state to reflect the DOM. We also add event.preventDefault() to prevent submitting with enter.
 

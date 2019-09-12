@@ -42,29 +42,45 @@ It is made up four things:
 
 It is the url you request for and has this structure:
 
+
 ```
+
 root-endpoint/?
+
 ```
+
 
 For example The root-endpoint of [Github’s API](https://developer.github.com/v3/) is **https://api.github.com**while the root-endpoint [Twitter’s API](https://dev.twitter.com/rest/reference) is **https://api.twitter.com. **For example, let’s say you want to get a list of repositories by a certain user through Github’s API. The docs tells you to use the the following path to do so:
 
+
 ```
+
 /users/:username/repos
+
 ```
+
 
 Any colons (:) on a path denotes a variable. So you need to replicate the username with the one you are looking for.
 
 The final part of an endpoint is **query parameters**. hey always begin with a question mark (?). Each parameter pair is then separated with an ampersand (&), like this:
 
+
 ```
+
 ?query1=value1&query2=value2
+
 ```
+
 
 When you try to get a list of a user’s repositories on Github, you could add value pairs query parameters to your url:
 
+
 ```
+
 https://api.github.com/users/:username/repos?sort=pushed
+
 ```
+
 
 Here we used sort=pushed as query parameter to see the list of recent repositories pushed by the username.
 
@@ -91,9 +107,13 @@ Except for GET all the other request will need authentication from the server. E
 
 Headers are used to provide information to both the client and server. It can be used for many purposes, such as authentication and providing information about the body content.  **HTTP Headers are property-value pairs** that are separated by a colon:
 
+
 ```
+
 "Content-Type: application/json". Missing the opening ".
+
 ```
+
 
 #### The Data (Or “Body”)
 
@@ -107,13 +127,19 @@ JSON (JavaScript Object Notation) a common format for sending and requesting dat
 
 The Instagram API allows your applications to retrieve user accounts, photos, tags and more! For example, here’s a GET request that you might make to the Instagram API for photo locations from a set of longitude and latitude coordinates for New York City (40.7127° N, 74.0059° W):
 
+
 ```
+
 GET /v1/locations/search?access_token=ACCESS_TOKEN&lat=40.7127&lng=74.0059
+
 ```
+
 
 Here’s the JSON response from Instagram:
 
+
 ```
+
 HTTP/1.1 200 OK
 
 {  
@@ -159,17 +185,25 @@ HTTP/1.1 200 OK
    }  
  ]  
 }
+
 ```
+
 
 As a GitHub example, if we want all the details on a certain user, you’d set up your application to ping the GitHub API with the HTTP GET method to retrieve a certain user:
 
+
 ```
+
 GET /users/:username
+
 ```
+
 
 And the response:
 
+
 ```
+
 {  
 "login": "sample",  
 "id": 1,  
@@ -213,7 +247,9 @@ And the response:
 "collaborators": 0  
 }  
 }
+
 ```
+
 
 We talked about almost everything around API request and responses here. In future articles, we will learn more of how to get data from these aPI responses and how to parse them and use them in our applications.
 

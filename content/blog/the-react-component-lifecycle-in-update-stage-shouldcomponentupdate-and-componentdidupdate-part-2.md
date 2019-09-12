@@ -21,7 +21,11 @@ Following [previous article](http://www.nikpro.com.au/react-component-lifecycle-
 
 Generally shouldComponentUpdate() is considered a useful but tricky and sometimes confusing lifecycle method. We must know when should we use it and when not. Typically its use case is when we want to let React know that the component has not been affected by current state and props changes. So we tell React that the component may not need to re render:
 
-```<code>shouldComponentUpdate(nextProps, nextState)</code>```
+
+```
+<code>shouldComponentUpdate(nextProps, nextState)</code>
+```
+
 
 Technically by default in React component will re render in every state or props change. We need to remember `shouldComponentUpdate()` is invoked before rendering when new props or state are being received. Defaults to `true`. This method is not called for the initial render or when `forceUpdate()` is used.<figure class="wp-block-image">
 
@@ -37,13 +41,19 @@ However we may compare this.props with nextProps and this.state with nextState a
 
 Therefor if it returns false **render() and componentDidUpdate()** will not be invoked:
 
-```<code>shouldComponentUpdate(nextProps, nextState) {
+
+```
+<code>shouldComponentUpdate(nextProps, nextState) {
   return this.state.value != nextState.value;
-}</code>```
+}</code>
+```
+
 
 As an example we might have a state with large object with several properties. But we have a specific component that cares about a single property or a small portion of the state. Therefor we can check for that change to determine if the component needs to re-render:
 
-```<code>shouldComponentUpdate(nextProps, nextState) {
+
+```
+<code>shouldComponentUpdate(nextProps, nextState) {
     if (this.props.color !== nextProps.color) {
       return true;
     }
@@ -51,22 +61,32 @@ As an example we might have a state with large object with several properties. B
       return true;
     }
     return false;
-}</code>```
+}</code>
+```
+
 
 ## componentDidUpdate()
 
 Additionally we have `componentDidUpdate()` which is invoked immediately after updating occurs and is not called for the initial render:
 
-```<code>componentDidUpdate(prevProps, prevState, snapshot)</code>```
+
+```
+<code>componentDidUpdate(prevProps, prevState, snapshot)</code>
+```
+
 
 Practically we can manipulate the DOM in componentDidUpdate() method. In addition we can create side effects and do network requests. However we should compare current props to the previous props for that matter:
 
-```<code>componentDidUpdate(prevProps) {
+
+```
+<code>componentDidUpdate(prevProps) {
   // Typical usage (don't forget to compare props):
   if (this.props.userID !== prevProps.userID) {
     this.fetchData(this.props.userID);
   }
-}</code>```
+}</code>
+```
+
 
 But remember if we **update state in componentDidUpdate() it should be wrapped in a condition** like the example above to prevent infinite loops.<figure class="wp-block-image">
 
@@ -74,14 +94,18 @@ But remember if we **update state in componentDidUpdate() it should be wrapped i
 
 Obviously just like [`componentDidMount()`](http://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/), the `componentDidUpdate()` is called after all of the children are updated
 
-```<code>componentDidUpdate(prevProps, prevState) {
+
+```
+<code>componentDidUpdate(prevProps, prevState) {
   // only update chart if the data has changed
   if (prevProps.data !== this.props.data) {
     this.chart = c3.load({
       data: this.props.data
     });
   }
-}</code>```
+}</code>
+```
+
 
 As a result we better be careful when we decide which lifecycle method we need. Although shouldComponentUpdate() could help with the performance but it can be buggy. Certainly we should limit our usage of this method.
 

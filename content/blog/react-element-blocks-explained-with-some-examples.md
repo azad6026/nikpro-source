@@ -21,8 +21,12 @@ As it states in React docs a React element is the smallest [building block](http
 
 This is a simple example of how to render a simple React element into the root of the DOM:
 
-```<code>const element = &lt;h1>Hello, world&lt;/h1>;
-ReactDOM.render(element, document.getElementById('root'));</code>```
+
+```
+<code>const element = &lt;h1>Hello, world&lt;/h1>;
+ReactDOM.render(element, document.getElementById('root'));</code>
+```
+
 
 The element is actually a HTML code that could be considered as our view which will be rendered into our DOM. In this example we render the element into the HTML tag that have root id.
 
@@ -30,15 +34,21 @@ The element is actually a HTML code that could be considered as our view which w
 
 **An element is a plain object _describing_ a component instance or DOM node and its desired properties.** It contains only information about the component type (for example, a `Button`), its properties (for example, its `color`), and any child elements inside it. Thi is stated in the React blog. Take a look at this example:
 
-```<code>&lt;button class='button button-blue'>
+
+```
+<code>&lt;button class='button button-blue'>
   &lt;b>
     OK!
   &lt;/b>
-&lt;/button></code>```
+&lt;/button></code>
+```
+
 
 This is a DOM element that will be rendered as this in React:
 
-```<code>{
+
+```
+<code>{
   type: 'button',
   props: {
     className: 'button button-blue',
@@ -49,21 +59,29 @@ This is a DOM element that will be rendered as this in React:
       }
     }
   }
-}</code>```
+}</code>
+```
+
 
 Moreover take a look at this example also which is a component described by React element and see how it will be rendered into the DOM:
 
-```<code>const DeleteAccount = () => (
+
+```
+<code>const DeleteAccount = () => (
   &lt;div>
     &lt;p>Are you sure?&lt;/p>
     &lt;DangerButton>Yep&lt;/DangerButton>
     &lt;Button color='blue'>Cancel&lt;/Button>
   &lt;/div>
-);</code>```
+);</code>
+```
+
 
 **An element describing a component is also an element, just like an element describing the DOM node. They can be nested and mixed with each other. **This will be rendered as the below code into the DOM:
 
-```<code>const DeleteAccount = () => ({
+
+```
+<code>const DeleteAccount = () => ({
   type: 'div',
   props: {
     children: [{
@@ -95,17 +113,23 @@ As a result you see clearly that it creates the DOM based on our elements or the
 
 Additionally take a look at this form as a React element as a form:
 
-```<code>ReactDOM.render({
+
+```
+<code>ReactDOM.render({
   type: Form,
   props: {
     isSubmitted: false,
     buttonText: 'OK!'
   }
-}, document.getElementById('root'));</code>```
+}, document.getElementById('root'));</code>
+```
+
 
 Firstly React will ask the `Form` component what element tree it returns, given those `props`. It will find out how to render the form elements into the DOM:
 
-```<code>// React: You told me this...
+
+```
+<code>// React: You told me this...
 {
   type: Form,
   props: {
@@ -121,11 +145,15 @@ Firstly React will ask the `Form` component what element tree it returns, give
     children: 'OK!',
     color: 'blue'
   }
-}</code>```
+}</code>
+```
+
 
 Finally it will go on and will render all needed tags into the DOM:
 
-```<code>// React: ...and Button told me this! I guess I'm done.
+
+```
+<code>// React: ...and Button told me this! I guess I'm done.
 {
   type: 'button',
   props: {
@@ -137,6 +165,8 @@ Finally it will go on and will render all needed tags into the DOM:
       }
     }
   }
-}</code>```
+}</code>
+```
+
 
 From the declaration of component elements React will render the desired application blocks called elements into the DOM. We will see more complex elements and components in the future posts of React. Thanks for reading.

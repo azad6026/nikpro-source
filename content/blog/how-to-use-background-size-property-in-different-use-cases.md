@@ -40,7 +40,9 @@ Actually it sets the size of the image to what is needed. Whether it needs to re
 
 Using **cover** in the first example in the pen as the value we tell the browser to make sure that the **image should cover the container all the time.** Even if the browser is resized and it has to cut or stretch the image to fit it in:
 
-```.cover { 
+
+```
+.cover { 
   background-size: cover; 
 }
 
@@ -48,23 +50,33 @@ Using **cover** in the first example in the pen as the value we tell the browse
 
 .cover { 
   background-size: 100% auto; 
-}```
+}
+```
+
 
 ### contain
 
 On the other hand as the second example **contain **value will make sure that the whole image is always visible even if there are empty spaces around the edges of the image container:
 
-```.cover { 
+
+```
+.cover { 
   background-size: cover; 
-}```
+}
+```
+
 
 ### width and height
 
 To make it a bit complex in the third example we have two backgrounds with two different background-sizes. We use the cover value for the second one. But for the first one we use **width and height values:**
 
-```.multi {
+
+```
+.multi {
   background-size: 300px 100px, cover;
-}```
+}
+```
+
 
 Therefor the first image which is a semi-transparent white overlay sits on the top left over the second covered background.
 
@@ -72,9 +84,13 @@ Therefor the first image which is a semi-transparent white overlay sits on the t
 
 At times we might need to set only the width for the background. In this cas we height will be auto:
 
-```.one-value {
+
+```
+.one-value {
   background-size: 50%;
-}```
+}
+```
+
 
 So it depends on how we need the background behave inside the container we have the flexibility to change its sizing using the background-size property.
 

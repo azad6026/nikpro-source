@@ -23,11 +23,19 @@ tags:
 
 We all know how to use border-radius using it with one value to be assigned to all edges:
 
-```border-radius: 50%;```
+
+```
+border-radius: 50%;
+```
+
 
 Or use it with four values starting clockwise from top left corner to the right left corner which we can use different units (percentage, pixels,&#8230;) :
 
-```border-radius:&nbsp;10px 20% 30px 50px;```
+
+```
+border-radius:&nbsp;10px 20% 30px 50px;
+```
+
 
 <p data-height="265" data-theme-id="0" data-slug-hash="NOMYjJ" data-default-tab="css,result" data-user="azad6026" data-pen-title="border-radius one/two values" class="codepen">
   See the Pen <a href="https://codepen.io/azad6026/pen/NOMYjJ/">border-radius one/two values</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -67,25 +75,45 @@ Finally this is the pen with the animation:
 
 We will explain the relevant part to the animation. The rest is just positioning stuff. This is the HTML:
 
-```&lt;div class="container"&gt;<br />&nbsp; &lt;div class="box"&gt;<br />&nbsp; &nbsp; &lt;div class="spin-container"&gt;<br />&nbsp; &nbsp; &nbsp; &lt;div class="shape"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="bd"&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp;&nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &lt;/div&gt;<br />&lt;/div&gt;                 ```
+
+```
+&lt;div class="container"&gt;<br />&nbsp; &lt;div class="box"&gt;<br />&nbsp; &nbsp; &lt;div class="spin-container"&gt;<br />&nbsp; &nbsp; &nbsp; &lt;div class="shape"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="bd"&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp;&nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &lt;/div&gt;<br />&lt;/div&gt;                 
+```
+
 
 We notice that the inner child with **class .bd&nbsp;**&nbsp;has the image background and the spin animation applies to it.
 
-```animation: spin 12s linear infinite reverse;```
+
+```
+animation: spin 12s linear infinite reverse;
+```
+
 
 And the spin animation has a rotation been defined to it:
 
-```@keyframes spin {<br />  to {<br />    transform: rotate(1turn);<br />  }<br />}```
+
+```
+@keyframes spin {<br />  to {<br />    transform: rotate(1turn);<br />  }<br />}
+```
+
 
 As a side note rotation property uses turn unit for the value which [we have explained here before](http://www.nikpro.com.au/angle-value-in-css-explained-degrees-gradians-radians-or-turns-units/).
 
 On the other side and **as the parent of this container we have a div with .shape class that magic applies to it.**
 
-```transition: border-radius 1s ease-out;<br />border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;<br />animation: morph 8s ease-in-out infinite both alternate;```
+
+```
+transition: border-radius 1s ease-out;<br />border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;<br />animation: morph 8s ease-in-out infinite both alternate;
+```
+
 
 Practically we use eight values which gives it different values on each edge. Then we apply the morph animation using both in the syntax.&nbsp;Therefor the animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions. And alternate them too.
 
-```@keyframes morph {<br />  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} <br />  100% {border-radius: 40% 60%;} <br />}```
+
+```
+@keyframes morph {<br />  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} <br />  100% {border-radius: 40% 60%;} <br />}
+```
+
 
 Also we see how the animation changes the border-radius property from start which it has 8 values using slash syntax to two values at 100%. Great effect.
 

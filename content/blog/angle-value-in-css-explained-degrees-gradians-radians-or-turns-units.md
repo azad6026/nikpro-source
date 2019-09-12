@@ -19,10 +19,14 @@ Generally as per <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle
 
 Practically we could use different units  for an angle rather than just using degrees. Basically this is how they compare to each other:
 
+
 ```
+
 A full angle: 
 360deg = 400grad = 1turn ≈ 6.2831853rad
+
 ```
+
 
 Therefor we can calculate them based on this and use them accordingly.
 
@@ -32,11 +36,15 @@ Therefor we can calculate them based on this and use them accordingly.
 
 Besides being just another unit the turn unit is just the perfect choice once we need to specify the rotation unit:
 
+
 ```
+
 .example {
   transform: rotate(1turn);
 }
+
 ```
+
 
 So the one turn means we want the item to have a one full turn. It is the most intuitive choice in this case.
 
@@ -44,21 +52,29 @@ So the one turn means we want the item to have a one full turn. It is the most i
 
 A full circle contains 2p radians.  Generally &#8220;pi&#8221; is equal to 3.14159265. So that’s exactly half a circle in terms of radians. So we double that and we get 6.2831853rad to get a full circle.The unit identifier for radians is `rad`.
 
+
 ```
+
 .example {
   transform: rotate(6.2831853rad);
 }
+
 ```
+
 
 ## Gradians unit
 
 As an explanation gradians also known as &#8220;gons&#8221; or &#8220;grades&#8221; are abbreviated using the string “grad” appended to the unit value. A full circle has 400 gradians, which would be the equivalent to 360 degrees.
 
+
 ```
+
 .example {
   transform: rotate(400grad);
 }
+
 ```
+
 
 Like turn we could use gradians with round numbers to calculate the turns specially.
 

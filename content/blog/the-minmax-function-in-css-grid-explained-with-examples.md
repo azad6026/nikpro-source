@@ -34,7 +34,11 @@ As an example we have a design which we create grid columns with minmax() functi
 
 As it is explained inside the HTML markup the first column can be as wide as its container as it has max-contnet. But at most it can be 300px as specified inside the first minmax() function:
 
-```grid-template-columns: minmax(max-content, 300px) minmax(200px, 1fr) 150px;```
+
+```
+grid-template-columns: minmax(max-content, 300px) minmax(200px, 1fr) 150px;
+```
+
 
 In the other hand the second column has a minimum with of 200px. But its maximum width is 1fraction of the remaining space. Kind of a flexible width.
 
@@ -42,7 +46,11 @@ In addition the third column has a fixed 150px width column which does not chang
 
 #### **Percentage as value**
 
-```<code>grid-template-columns: minmax(200px, 50%) 1fr 1fr;</code>```
+
+```
+<code>grid-template-columns: minmax(200px, 50%) 1fr 1fr;</code>
+```
+
 
 Moreover we can use percentage to calculate the width in minmax() function:
 
@@ -55,7 +63,11 @@ Here the first column has a maximum width of 50% of the container and will not g
 
 As another option we can use min and max content:
 
-```grid-template-columns: minmax(min-content, min-content) minmax(auto, auto) minmax(max-content, max-content);```
+
+```
+grid-template-columns: minmax(min-content, min-content) minmax(auto, auto) minmax(max-content, max-content);
+```
+
 
 As a result the third column expands to fit the entire length of the string. Since both the minimum and maximum values are set to `max-content`, the width of the column remains the same.
 
@@ -67,7 +79,11 @@ The second column has min and max value as auto. Auto as a maximum, is equivalen
 
 As explained in [Mondrian layout](http://www.nikpro.com.au/responsive-mondrian-grid-layout-without-using-media-queries-in-css/) and grid layouts [with minmax() function](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) we can use it to build responsive grid layouts:
 
-```<code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>```
+
+```
+<code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>
+```
+
 
 We use repeat function and auto-fit as its first argument and the minmax() function with a minimum fixed width and fr as max width to make sure the layout can expand according to the viewport width. It will beautifully build a responsive grid layout.
 

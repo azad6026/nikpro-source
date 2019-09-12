@@ -29,12 +29,16 @@ https://codepen.io/chriscoyier/pen/ebing
 
 And this is the code to make our blocks centred:
 
+
 ```
+
 .flex-center {
   display: flex;
   justify-content: center;
 }
+
 ```
+
 
 Using **justify-content: center;** in a FlexBox container we aligned items horizontally centred. Also we did notice that texts on the top has been centred inside their block using **text-align: center;** We use that to make any text centred.
 
@@ -42,13 +46,17 @@ Using **justify-content: center;** in a FlexBox container we aligned items hori
 
 Vertically centre elements is really easy in FlexBox. Practically we just need a few lines of code:
 
+
 ```
+
 .parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 ```
+
 
 Therefor we will have items vertical changing the **flex-direction to column:**
 
@@ -60,13 +68,17 @@ https://codepen.io/chriscoyier/pen/FqDyi
 
 Typically this is what we are looking for. Centre everything. And the magic comes true pretty easily using the magic Box. The Flexible one!
 
+
 ```
+
 .parent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 ```
+
 
 Except for justify-content property for horizontal alignment we need to use align-items property to centre things vertically:
 
@@ -74,13 +86,17 @@ https://codepen.io/chriscoyier/pen/msItD
 
 Perfect balance. We can also use grid to centre elements :
 
+
 ```
+
 body {
   display: grid;
   place-items: center;
   height: 100vh;
 }
+
 ```
+
 
 According to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-items" target="_blank" rel="noopener noreferrer">MDN</a> the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) **`place-items`** [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) property sets both the [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) and [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items) properties. The first value is the `align-items` property value, the second the `justify-items` one.
 

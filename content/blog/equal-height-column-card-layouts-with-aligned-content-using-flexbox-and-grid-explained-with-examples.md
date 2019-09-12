@@ -24,7 +24,9 @@ We all have been in this situation where we needed to have a few equal height co
 
 Firstly we better clarify which use case is best for these solutions. Both solutions work perfectly on box layouts and their direct children. Meaning there is no good solution if you have nested items inside your layout box. Lets check the markup:
 
+
 ```
+
 &lt;div class="container"&gt;
     &lt;div class="layout-box"&gt;
         &lt;h3&gt;Layout Box title&lt;/h3&gt;
@@ -41,7 +43,9 @@ Firstly we better clarify which use case is best for these solutions. Both solut
         &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
         &lt;button&gt;read more&lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt; 
+
 ```
+
 
 Interestingly all the layout boxes have three direct children. H3, p and button. Therefore our code will apply to them. There is no grandchild to affect the layout. We will explain that a bit more later.
 
@@ -53,7 +57,9 @@ https://codepen.io/azad6026/pen/LoPmVE
 
 I have used grid to make three responsive boxes. But to make the inner alignment flexbox does the job:
 
+
 ```
+
 .layout-box{   
   display: flex;  
   flex-direction: column;
@@ -61,7 +67,9 @@ I have used grid to make three responsive boxes. But to make the inner alignment
 button{  
   margin-top: auto;
 } 
+
 ```
+
 
 We have seen usefulness of auto margin in [this post](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) before. That makes the button to stick in the bottom of the card layout.
 
@@ -71,12 +79,16 @@ Practically the exact same layout but using grid system to accomplish it. Here i
 
 https://codepen.io/azad6026/pen/WBeaGB
 
+
 ```
+
 .layout-box{
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 ```
+
 
 Basically using grid-template-rows we are giving all the extra space to the middle section which is the p tag so that the h3 and the button tag will stick to the edges of the layout.Really neat.
 

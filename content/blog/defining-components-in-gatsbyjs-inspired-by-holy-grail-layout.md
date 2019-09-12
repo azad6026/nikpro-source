@@ -39,7 +39,9 @@ Basically in the first glance we see our major components here:
       &lt;Sidebar/>
     &lt;/Content>
     &lt;Footer/>
-&lt;/Layout>```
+&lt;/Layout>
+```
+
 
 As a result we named them capitalised just as [components in react](http://www.nikpro.com.au/more-on-react-components-with-examples/) to better understand the application. Layout is the main component of the application and Content includes the main content of the site. Including Navigation, Sidebar and Main.
 
@@ -56,7 +58,9 @@ Preferably we will move navigation inside header as it is more suited there for 
 <pre >&lt;Header/>
     &lt;Brand>
     &lt;Nav/>
-&lt;Header/>```
+&lt;Header/>
+```
+
 
 ### Main Content, main component tree
 
@@ -67,7 +71,9 @@ Speaking of the main component always mean the man content. It could be built of
     &lt;Main/>
     &lt;Sidebar/>
 &lt;/Content>
+
 ```
+
 
 Surely we could break it down to inner components as we build the structure. Usually the **Main component** is the main article or story in the website. Alternatively it could be the loop of your blog posts. Either way it is content and needs a structure of content:
 
@@ -77,7 +83,9 @@ Surely we could break it down to inner components as we build the structure. Usu
     &lt;Title/>
     &lt;Text/>
 &lt;/Main>
+
 ```
+
 
 Absolutely no surprise that everything including image is a component. This is how Gatsby structures the applications and it is how it should be. Links are also components in gatsby. We could extend our content further:
 
@@ -94,7 +102,9 @@ Absolutely no surprise that everything including image is a component. This is h
         &lt;Paragraph/>
     &lt;/Article>
 &lt;/Main>
+
 ```
+
 
 <figure>
 <img src="/images/main-blocks.png" alt="Component blocks" /> 
@@ -108,13 +118,17 @@ Therefore it goes on and on. But we know it is maintainable and easy to understa
 const Image = props => (
   &lt;img src={props.src} alt={props.alt}/>
 )
+
 ```
+
 
 Practically we use it like below. Simple but powerful:
 
 <pre >
 &lt;Image src="http://link.com" alt ="some text"/>
+
 ```
+
 
 And this is applicable for all other components as building blocks of the application.
 

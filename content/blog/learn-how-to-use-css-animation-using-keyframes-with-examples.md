@@ -25,7 +25,9 @@ This is a simple example making a paragraph to slide in from the right animating
 `p.slidein {`  
 `  animation-name: slidein;`  
 `  animation-duration: 3s;`  
-`  animation-iteration-count: infinite;```
+`  animation-iteration-count: infinite;
+```
+
 
 `}`
 
@@ -50,7 +52,9 @@ As you see the keyframe has the same name as the animation and some steps. It co
 Lets shorten the code as much as possible. Animation has a shorthand which we can use:
 
 `p.slidein {`  
-`  animation: slidein 3s``infinite;```
+`  animation: slidein 3s``infinite;
+```
+
 
 `}`
 

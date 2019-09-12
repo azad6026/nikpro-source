@@ -38,7 +38,9 @@ Generally **based on the above order** I mentioned them they overwrite the style
 
 Technically we will have cases like this which we normally do not recognise as we are busy writing styles. But in reality these styles exist:
 
-```User-agent CSS:<br /><code>li { padding: 10px }</code><br />Author CSS 1:<br /><code>li { padding: 0 } /* This is like a reset */</code><br />Author CSS 2:<br /><code>@media screen {
+
+```
+User-agent CSS:<br /><code>li { padding: 10px }</code><br />Author CSS 1:<br /><code>li { padding: 0 } /* This is like a reset */</code><br />Author CSS 2:<br /><code>@media screen {
   li { &lt;code>padding</code>: 3px }
 }
 
@@ -53,7 +55,11 @@ Firstly based on specificity [rules](http://www.nikpro.com.au/how-cascade-in-css
 
 Therefor we have these three styles to win:
 
-```<code>margin-left: 0&lt;br/></code><br /><code>margin-left: 3px&lt;br/></code><br /><code>margin-left: 1px</code>```
+
+```
+<code>margin-left: 0&lt;br/></code><br /><code>margin-left: 3px&lt;br/></code><br /><code>margin-left: 1px</code>
+```
+
 
 As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.<figure class="wp-block-image">
 
@@ -63,7 +69,9 @@ As we have the second style specifying the media on screen the last style is ign
 
 Practically in CSS once all the style for one element in different stylesheets will apply to that property. Then based on importance and specificity and sort order the winner style remains for the element or actually will apply:
 
-```<code>&lt;p>I'm &lt;strong>bold&lt;/strong>&lt;/p>&lt;br/></code><br /><code>/* higher specificity */
+
+```
+<code>&lt;p>I'm &lt;strong>bold&lt;/strong>&lt;/p>&lt;br/></code><br /><code>/* higher specificity */
 p strong {
   background-color: khaki;
   color: green;
@@ -73,7 +81,9 @@ p strong {
 strong {
   text-decoration: underline;
   color: red;
-}</code>```
+}</code>
+```
+
 
 Although the first rule has a higher specificity but the strong tag will have an underline as well which comes from the second rule. Also it will be bold as the user-agents have a default bold style for strong tag. See the pen <a href="https://codepen.io/pen/" target="_blank" rel="noopener noreferrer">here</a>. 
 
@@ -94,7 +104,9 @@ There are four values for specifying inheritance on the supported properties:
 
 #### Inheritance example
 
-```<code>&lt;ul>
+
+```
+<code>&lt;ul>
   &lt;li>Default &lt;a href="#">link&lt;/a> color&lt;/li>
   &lt;li class="my-class-1">Inherit the &lt;a href="#">link&lt;/a> color&lt;/li>
   &lt;li class="my-class-2">Reset the &lt;a href="#">link&lt;/a> color&lt;/li>
@@ -113,7 +125,9 @@ There are four values for specifying inheritance on the supported properties:
 
 .my-class-3 a {
   color: unset;
-}</code>```
+}</code>
+```
+
 
 According to styles the first link will have natural inheritance which should be green but browsers set the colour of links to blue by default instead of allowing the natural inheritance of the color property the browser link colour which is naturally blue. 
 

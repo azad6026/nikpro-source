@@ -26,7 +26,11 @@ Basically&nbsp;**justify-content aligns individual items** inside a flex contain
 
 &nbsp;Therefore what this means is in a flex container with the default flex-direction of row it will align items in the horizontal axis. Also in a column flex direction it aligns them in vertical axis which is the main axis in this case. This is the syntax:
 
-```.container {  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;}```
+
+```
+.container {  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;}
+```
+
 
 #### Align items using justify-content in flex-direction: row
 

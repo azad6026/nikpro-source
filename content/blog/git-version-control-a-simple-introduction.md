@@ -67,7 +67,9 @@ For a new initialised local repository, you will need o configure it for remote 
 
 Once you have a remote repo setup, you will need to add a remote repo url to your local `git config`, and set an upstream branch for your local branches.
 
-<pre><code>git remote add &lt;remote_name&gt; &lt;remote_repo_url&gt;</code>```
+<pre><code>git remote add &lt;remote_name&gt; &lt;remote_repo_url&gt;</code>
+```
+
 
 This command will map remote repository at `<remote_repo_url>`to a ref in your local repo under `<remote_name>`. 
 

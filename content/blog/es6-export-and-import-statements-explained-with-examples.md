@@ -24,30 +24,44 @@ There are two different types of export, **named** and **default**. You can h
 
 Named exports are useful to export several values. During the import, it is mandatory to use the **same name** of the corresponding object. But a default export can be imported with any name and only once per module:
 
-```<code>let k; &lt;br/>export default k = 12; // in file test.js
+
+```
+<code>let k; &lt;br/>export default k = 12; // in file test.js
 
 import m from './test' // note that we have the freedom to use import m instead of import k, because k was default export
 
-console.log(m);        // will log 12</code>```
+console.log(m);        // will log 12</code>
+```
+
 
 Or just export the default:
 
-```<code>export {default} from 'mod';</code><br /></pre>
+
+```
+<code>export {default} from 'mod';</code><br /></pre>
 
 Another example for export looks like this:
 
-```<code>// module "my-module.js"
+
+```
+<code>// module "my-module.js"
 export default function cube(x) {
   return x * x * x;
 }&lt;br/>&lt;br/>//In another module&lt;br/>&lt;code>import cube from 'my-module';
-console.log(cube(3)); // 27</code>&lt;/code>```
+console.log(cube(3)); // 27</code>&lt;/code>
+```
+
 
 ## The import statement
 
 The `import` statement is used to import bindings which are exported by another module. We can import modules in variety of ways. Take a look at these examples:
 
-```<code>import {myExport} from '/modules/my-module.js';</code><br /><code>import {foo, bar} from '/modules/my-module.js';</code><br /><code>import {reallyReallyLongModuleExportName as shortName}
-  from '/modules/my-module.js';</code>```
+
+```
+<code>import {myExport} from '/modules/my-module.js';</code><br /><code>import {foo, bar} from '/modules/my-module.js';</code><br /><code>import {reallyReallyLongModuleExportName as shortName}
+  from '/modules/my-module.js';</code>
+```
+
 
 Additionally we could import defaults as in export. It is possible to have a default [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) (whether it is an object, a function, a class, etc.). The `import` statement may then be used to import such defaults:
 
@@ -56,11 +70,19 @@ Additionally we could import defaults as in export. It is possible to have a def
 
 Finally have a look at these examples of both. First the named export and import:
 
-```<code>//------ lib.js ------&lt;br/>export const sqrt = Math.sqrt;&lt;br/>export function square(x) {&lt;br/>    return x * x;&lt;br/>}&lt;br/>export function diag(x, y) {&lt;br/>    return sqrt(square(x) + square(y));&lt;br/>}&lt;br/>&lt;br/>//------ main.js ------&lt;br/>import { square, diag } from 'lib';&lt;br/>console.log(square(11)); // 121&lt;br/>console.log(diag(4, 3)); // 5</code>```
+
+```
+<code>//------ lib.js ------&lt;br/>export const sqrt = Math.sqrt;&lt;br/>export function square(x) {&lt;br/>    return x * x;&lt;br/>}&lt;br/>export function diag(x, y) {&lt;br/>    return sqrt(square(x) + square(y));&lt;br/>}&lt;br/>&lt;br/>//------ main.js ------&lt;br/>import { square, diag } from 'lib';&lt;br/>console.log(square(11)); // 121&lt;br/>console.log(diag(4, 3)); // 5</code>
+```
+
 
 And the default export and import example:
 
-```<code>//------ myFunc.js ------&lt;br/>export default function () { ... };&lt;br/>&lt;br/>//------ main1.js ------&lt;br/>import myFunc from 'myFunc';&lt;br/>myFunc();</code>```
+
+```
+<code>//------ myFunc.js ------&lt;br/>export default function () { ... };&lt;br/>&lt;br/>//------ main1.js ------&lt;br/>import myFunc from 'myFunc';&lt;br/>myFunc();</code>
+```
+
 
 It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.<figure class="wp-block-image">
 

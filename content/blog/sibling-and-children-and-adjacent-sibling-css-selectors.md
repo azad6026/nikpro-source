@@ -18,7 +18,11 @@ As some general [CSS](http://nikpro.com.au/category/css) [selectors](http://www.
 
 Basically if we ever wanted to select **all descendant of an element** we will use this selector. What we need is to give same style to all similar elements no matter how deep they are buried in that selector:
 
-```ul li { color: green;}```
+
+```
+ul li { color: green;}
+```
+
 
 In this case we will select all lis items inside unordered list or nested inside its children.
 
@@ -26,7 +30,9 @@ In this case we will select all lis items inside unordered list or nested inside
 
 On the other hand we might need to select only the **direct children** of the unordered list. Meaning we only need elements of one level deep into the parent. We will have this code then:
 
-```ul > li { color : red; }<br /></pre>
+
+```
+ul > li { color : red; }<br /></pre>
 
 Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:<figure class="wp-block-image">
 
@@ -38,7 +44,11 @@ Therefor we clearly see the difference between these two CSS selectors.
 
 Technically we need to know that this selector selects all siblings. Not just those who immediately succeed the first element but also also those who appear anywhere:
 
-```p ~ p { margin: 0 0 5px 0; }```
+
+```
+p ~ p { margin: 0 0 5px 0; }
+```
+
 
 We can see the visual showcase of this here in this image:<figure class="wp-block-image">
 

@@ -28,7 +28,9 @@ According to MDN the `Promise.all(iterable)` method returns a single [`Promis
 
 #### A simple example
 
-```<code>var p1 = Promise.resolve(3);
+
+```
+<code>var p1 = Promise.resolve(3);
 var p2 = 1337;
 var p3 = new Promise((resolve, reject) => {
   setTimeout(resolve, 100, 'foo');
@@ -36,24 +38,34 @@ var p3 = new Promise((resolve, reject) => {
 
 Promise.all([p1, p2, p3]).then(values => { 
   console.log(values); // [3, 1337, "foo"] 
-});</code>```
+});</code>
+```
+
 
 As a result the values as an output from all three resolved promises. If a promise fails promise.all fails as well:
 
-```<code>var mixedPromisesArray = [Promise.resolve(33), Promise.reject(44)];
+
+```
+<code>var mixedPromisesArray = [Promise.resolve(33), Promise.reject(44)];
 var p = Promise.all(mixedPromisesArray);
 console.log(p);
 setTimeout(function() {
     console.log('the stack is now empty');
     console.log(p);
-});</code>```
+});</code>
+```
+
 
 As a result the second promise is rejected:
 
-```<code>// logs
+
+```
+<code>// logs
 // Promise { &lt;state>: "pending" } 
 // the stack is now empty
-// Promise { &lt;state>: "rejected", &lt;reason>: 44 }</code>```
+// Promise { &lt;state>: "rejected", &lt;reason>: 44 }</code>
+```
+
 
 Now that we know how it works we checkout and example with async await.<figure class="wp-block-image">
 
@@ -63,7 +75,11 @@ Now that we know how it works we checkout and example with async await.<figure c
 
 Practically we can use them for real world example like this one in <a href="https://gist.github.com/wesbos/1866f918824936ffb73d8fd0b02879b4" target="_blank" rel="noopener noreferrer">Github</a>. We want to make some API requests along with making a coffee. Read along the comments:
 
-```// This is a function to make coffee which takes 2 seconds!! really?<br />function getCoffee() {<br />  return new Promise(resolve => {<br />    setTimeout(() => resolve('&#x2615;'), 2000); // it takes 2 seconds to make coffee !!<br />  });<br />}<br /><br />// we add async to the whole function<br />async function go() {<br />  try {<br />    // and first, make our coffee<br />    const coffee = await getCoffee();<br />    console.log(coffee); // &#x2615;<br />    // then we grab some data over an Ajax request and wait for it too<br />    const user = await axios('https://api.github.com/users/user');<br />    console.log(user.data); // mediocre code<br />    // not always we want to wait.<br />    // make three requests and save their promises for us<br />    const wordPromise = axios('http://www.setgetgo.com/randomword/get.php');<br />    const userPromise = axios('https://randomuser.me/api/');<br />    const namePromise = axios('https://uinames.com/api/');<br />    // then we await all three promises to come back and <a href="http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/">destructure</a> the result into their own variables using ES6 features<br />    const [word, user, name] = await Promise.all([wordPromise, userPromise, namePromise]);<br />    console.log(word.data, user.data, name.data); // cool, {...}, {....}<br />  } catch (e) {<br />    console.error(e); // &#x1f4a9;<br />  }<br />}<br />go();```
+
+```
+// This is a function to make coffee which takes 2 seconds!! really?<br />function getCoffee() {<br />  return new Promise(resolve => {<br />    setTimeout(() => resolve('&#x2615;'), 2000); // it takes 2 seconds to make coffee !!<br />  });<br />}<br /><br />// we add async to the whole function<br />async function go() {<br />  try {<br />    // and first, make our coffee<br />    const coffee = await getCoffee();<br />    console.log(coffee); // &#x2615;<br />    // then we grab some data over an Ajax request and wait for it too<br />    const user = await axios('https://api.github.com/users/user');<br />    console.log(user.data); // mediocre code<br />    // not always we want to wait.<br />    // make three requests and save their promises for us<br />    const wordPromise = axios('http://www.setgetgo.com/randomword/get.php');<br />    const userPromise = axios('https://randomuser.me/api/');<br />    const namePromise = axios('https://uinames.com/api/');<br />    // then we await all three promises to come back and <a href="http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/">destructure</a> the result into their own variables using ES6 features<br />    const [word, user, name] = await Promise.all([wordPromise, userPromise, namePromise]);<br />    console.log(word.data, user.data, name.data); // cool, {...}, {....}<br />  } catch (e) {<br />    console.error(e); // &#x1f4a9;<br />  }<br />}<br />go();
+```
+
 
 Great. Successfully we have saved a few unnecessary await as we didn&#8217;t really need to wait for them to be resolved one by one.<figure class="wp-block-image">
 
@@ -71,15 +87,25 @@ Great. Successfully we have saved a few unnecessary await as we didn&#8217;t rea
 
 Also we could use it when a promise uses other promise&#8217;s return value and also there is a third promise as well:
 
-<pre class="wp-block-preformatted"><br />const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return promise2(value1)<br />        .then(value2 => {<br />          // do something          <br />          return promise3(value1, value2)<br />        })<br />    })<br />}```
+<pre class="wp-block-preformatted"><br />const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return promise2(value1)<br />        .then(value2 => {<br />          // do something          <br />          return promise3(value1, value2)<br />        })<br />    })<br />}
+```
+
 
 If we use promise.all only:
 
-```const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return Promise.all([value1, promise2(value1)])<br />    })<br />    .then(([value1, value2]) => {<br />      // do something          <br />      return promise3(value1, value2)<br />    })<br />}```
+
+```
+const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return Promise.all([value1, promise2(value1)])<br />    })<br />    .then(([value1, value2]) => {<br />      // do something          <br />      return promise3(value1, value2)<br />    })<br />}
+```
+
 
 But the simplest and best option here is to use async await and make it clean and more semantic:
 
-```const makeRequest = async () => {<br />  const value1 = await promise1()<br />  const value2 = await promise2(value1)<br />  return promise3(value1, value2)<br />}```
+
+```
+const makeRequest = async () => {<br />  const value1 = await promise1()<br />  const value2 = await promise2(value1)<br />  return promise3(value1, value2)<br />}
+```
+
 
 We do both promises asynchronously and the third promise keeps the returned value.
 

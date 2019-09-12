@@ -22,18 +22,26 @@ Following our [previous article](http://www.nikpro.com.au/the-css-shape-properti
 
 Basically the full notation for an inset shape function is `inset(top right bottom left border-radius)`. Therefore `inset()` takes four values for the top, right, bottom and left values plus a final value for `border-radius`.We could use `inset()` shape function to create rectangular shapes around which to wrap content:
 
-```.element{
+
+```
+.element{
   shape-outside: inset(100px 100px 100px 100px);
   <em>/* yields a rectangular shape which is 100px inset on all sides */</em>
   float: left;
-}```
+}
+```
+
 
 As an example again the below CSS creates a rectangular shape inset from the reference box of the floated element 20 pixels from the top and bottom and 10 pixels from the left and right, with a border-radius value of 10 pixels.
 
-```<code>.shape {
+
+```
+<code>.shape {
   float: left;
   shape-outside: inset(20px 10px 20px 10px round 10px);
-}</code>```
+}</code>
+```
+
 
 Finally have a look at this pen for a better idea:
 
@@ -43,10 +51,14 @@ Finally have a look at this pen for a better idea:
 
 Generally in the example above we used border-box as a reference box instead of margin-box:
 
-```.element-2 {
+
+```
+.element-2 {
   shape-outside: inset(0px 50% 50% 50% 50% 50px) border-box;
   shape-margin: 10px;
-}```
+}
+```
+
 
 So according to MDN float area is computed according to the shape of a float element&#8217;s edges (as defined by the [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)). This can be `margin-box`, `border-box`, `padding-box`, or `content-box`. 
 
@@ -58,11 +70,15 @@ Practically the `shape-outside: url(image.png)` CSS declaration tells the brow
 
 As a result of using the url function value the text has been wrapped around the element in the above example:
 
-```.element{
+
+```
+.element{
   shape-outside: url(image.png);
   shape-image-threshold: 0.5;
   float: left;
-}```
+}
+```
+
 
 Although the `shape-outside` property defines the shape of the area around which content will wrap, without the float, you won&#8217;t see the effects of the shape.
 

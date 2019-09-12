@@ -22,7 +22,9 @@ Implementing [ES6](http://nikpro.com.au/category/es6) features in our code it is
 
 As an example take a look at <a href="https://scotch.io/tutorials/5-tips-to-write-better-conditionals-in-javascript" target="_blank" rel="noopener noreferrer">this</a> example which I want to explain:
 
-```<code>function test(color) {
+
+```
+<code>function test(color) {
   // use switch case to find fruits in colour
   switch (color) {
     case 'red':
@@ -38,7 +40,9 @@ As an example take a look at <a href="https://scotch.io/tutorials/5-tips-to-writ
 
 //test results
 test(null); // []
-test('yellow'); // ['banana', 'pineapple']</code>```
+test('yellow'); // ['banana', 'pineapple']</code>
+```
+
 
 Clearly we could see how switch statement works here. it finds or categorises fruits in colour. 
 
@@ -50,7 +54,9 @@ We know that switch statements, with their non standard syntax included, are dif
 
 Technically we could use object literals to replace the above switch statement like below:
 
-```<code>function test(color) {
+
+```
+<code>function test(color) {
   // use object literals to find fruits in colour
   const fruitColor = {
     red: ['apple', 'strawberry'],
@@ -59,11 +65,15 @@ Technically we could use object literals to replace the above switch statement l
   };
 
   return fruitColor[color] || [];
-}</code>```
+}</code>
+```
+
 
 We have created a JSON object that contains our colours as keys and fruits and the value we want to select from the object. We have a much cleaner code which is not error prone either. Aa an alternative we could use map and set to define the switch statement instead:
 
-```<code>function test(color) {
+
+```
+<code>function test(color) {
   // use Map to find fruits in colour
   const fruitColor = new Map()
     .set('red', ['apple', 'strawberry'])
@@ -71,7 +81,9 @@ We have created a JSON object that contains our colours as keys and fruits and t
     .set('purple', ['grape', 'plum']);
 
   return fruitColor.get(color) || [];
-}</code>```
+}</code>
+```
+
 
 As a result we have similar outcomes from the three of the code snippets above. But using ES6 features like object literals saves a lot of time and code. Also we will have a more maintainable code. 
 
@@ -79,7 +91,9 @@ As a result we have similar outcomes from the three of the code snippets above. 
 
 Take a look at this similar example first with switch statement in the view:
 
-```let type = 'coke';
+
+```
+let type = 'coke';
 let drink;
 switch(type) {
 case 'coke':
@@ -91,13 +105,17 @@ case 'pepsi':
 default:
   drink = 'Unknown drink!';
 }
-console.log(drink); // 'Coke'```
+console.log(drink); // 'Coke'
+```
+
 
 Basically `switch` has lots of problems. from its procedural control flow to its non-standard-looking way it handles code blocks. AS the rest of JavaScript uses curly braces yet switch does not.
 
 Using object literals it makes it easy to manage it all and have control over the code:
 
-```function getDrink (type) {
+
+```
+function getDrink (type) {
   let drinks = {
     'coke': 'Coke',
     'pepsi': 'Pepsi',
@@ -109,7 +127,9 @@ Using object literals it makes it easy to manage it all and have control over th
 
 const drink = getDrink('coke');
 // The drink I chose was Coke
-console.log(drink);```
+console.log(drink);
+```
+
 
 As a result we have more readable code which can be expanded to much more complex code with different conditions. The concept remains the same though. 
 

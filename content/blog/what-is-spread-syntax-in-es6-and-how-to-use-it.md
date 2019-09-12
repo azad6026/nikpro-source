@@ -70,7 +70,9 @@ To copy an array we pass a reference to the second one so they will have same va
                 
                 <pre class=" CodeMirror-line " role="presentation"><code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr2&lt;/span> &lt;span class="cm-operator">=&lt;/span> &lt;span class="cm-variable">arr&lt;/span>;
 
-&lt;/span>console.&lt;span class="cm-property">log&lt;/span>(&lt;span class="cm-variable">arr2&lt;/span>);</code>```
+&lt;/span>console.&lt;span class="cm-property">log&lt;/span>(&lt;span class="cm-variable">arr2&lt;/span>);</code>
+```
+
               </div>
             </div>
           </div>

@@ -35,17 +35,23 @@ So props get passed to the component and state is managed through the component.
 
 This is a modern functional component using props in its arguments.:
 
-```const App = (props) => {
+
+```
+const App = (props) => {
   return (
     &lt;div>
       { props.username }
     &lt;/div>
   )
-}```
+}
+```
+
 
 It is written using [arrow functions](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) and is neat and simple. Comparably take a look at this class component using state in its constructor: 
 
-```class App extends React.Component {
+
+```
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = { username: 'johndoe' }
@@ -58,13 +64,17 @@ It is written using [arrow functions](http://www.nikpro.com.au/some-arrow-functi
       &lt;/div>
     )
   }
-}```
+}
+```
+
 
 The constructor is the right place to initialise state. Initialising state is done by setting `this.state` to an object, like you can see above. An initialised state can be accessed in the `render()` method like username in the example. 
 
 Thankfully we can use [destructing](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) and use const **status = this.state.username**  instead of username. Besides this is actually more convenient to be written like this:
 
-```class App extends React.Component {
+
+```
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = { username: 'johndoe' }
@@ -75,7 +85,9 @@ Thankfully we can use [destructing](http://www.nikpro.com.au/what-is-spread-synt
       { this.state.username }
     &lt;/div>
   )
-}```
+}
+```
+
 
 Therefor it is cleaner and more maintainable in practice. 
 
@@ -83,7 +95,9 @@ Therefor it is cleaner and more maintainable in practice. 
 
 As you see in these simple examples, props and state are used differently. State is responsible for user interaction changes. We update the state from above example with setState method which is responsible for udating state changes: 
 
-```class App extends React.Component {
+
+```
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = { username: 'johndoe' }
@@ -106,7 +120,9 @@ As you see in these simple examples, props and state are used differently. State
       &lt;/div>
     )
   }
-}```
+}
+```
+
 
 Additionally we have an event handler called **handleInputChange** which takes the username as input and updates the state using setState which is a core React method of class component. The onChange event listener using the [event target value](http://www.nikpro.com.au/what-is-e-target-and-e-currenttarget-and-how-to-use-them/) of the input and sets the new username based on that.
 

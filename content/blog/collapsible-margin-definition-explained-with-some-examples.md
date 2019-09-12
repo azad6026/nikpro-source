@@ -27,20 +27,28 @@ Therefore the smaller margin kind of gets eaten by the bigger one. This is the r
 
 Basically here is a simple example:
 
-```&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
-&lt;p&gt; This has a margin-top&lt;/p&gt;
+
 ```
+&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
+&lt;p&gt; This has a margin-top&lt;/p&gt;
+
+```
+
 
 We define the margins in CSS as below:
 
+
 ```
+
 h1 {  
  margin-bottom: 25px;
 }
 p {  
  margin-top: 50px
 }
+
 ```
+
 
 The expectation is to have 75px of margin between the two but we will have 50px as the actual distance. Therefore the biggest margin has won. Hooray!
 

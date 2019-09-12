@@ -23,19 +23,27 @@ There are couple of ways to create a modern sticky footer. Typically we are used
 
 Firstly we create a sticky fixed-height footer using calc() function to calculate the minimum height for the content in the page. Afterwards we reduce the footer&#8217;s height from that. Here is the HTML code for <a href="https://priteshgupta.com/2016/05/sticky-css-footer/" target="_blank" rel="noopener noreferrer">the idea</a>:
 
-```<code>&lt;body>
+
+```
+<code>&lt;body>
   &lt;div class="content"> &lt;/div>
   &lt;footer>© 2016&lt;/footer>
-&lt;/body></code>```
+&lt;/body></code>
+```
+
 
 And the CSS with calc() function:
 
-```.content {
+
+```
+.content {
   min-height: calc(100vh - 20px);
 }
 .footer {
   height: 20px;
-}```
+}
+```
+
 
 Also there is a pen in <a href="https://css-tricks.com/couple-takes-sticky-footer/" target="_blank" rel="noopener noreferrer">CSS tricks </a>that shows how it works:
 
@@ -49,16 +57,22 @@ Therefor no overlapping happens and two elements ( div.content and footer) will 
 
 We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/). We will have a variable height footer in this case. There are two ways for FlexBox option.
 
-```&lt;body>
+
+```
+&lt;body>
   &lt;div class="content">
     content
   &lt;/div>
   &lt;footer class="footer">&lt;/footer>
-&lt;/body>```
+&lt;/body>
+```
+
 
 We can use **margin-top: auto** for footer [to push it away as far as needed from the rest of the content](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/).
 
-```html, body {
+
+```
+html, body {
   height: 100%;
 }
 body {
@@ -67,16 +81,22 @@ body {
 }
 .footer {
   margin-top: auto;
-}```
+}
+```
+
 
 Alternatively give the content a **flex: 1** so that it grows to fill the space:
 
-```.content {
+
+```
+.content {
   flex: 1 0 auto;
 }
 .footer {
   flex-shrink: 0;
-}```
+}
+```
+
 
 <p data-height="500" data-theme-id="0" data-slug-hash="RRbKrL" data-default-tab="css,result" data-user="chriscoyier" data-pen-title="Sticky Footer with Flexbox" class="codepen">
   See the Pen <a href="https://codepen.io/chriscoyier/pen/RRbKrL/">Sticky Footer with Flexbox</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -86,7 +106,9 @@ Alternatively give the content a **flex: 1** so that it grows to fill the space
 
 With CSS grid we can use more modern code to create sticky flexible footer. CSS grid is <a href="https://caniuse.com/#search=grid" target="_blank" rel="noopener noreferrer">88% supported globally</a> and is ready to use for production. Here is the CSS code using grid:
 
-```html {
+
+```
+html {
   height: 100%;
 }
 body {
@@ -97,7 +119,9 @@ body {
 .footer {
   grid-row-start: 1;
   grid-row-end: 2;
-}```
+}
+```
+
 
 Using **grid-row-start** we specify where the footer starts as we have a two row layout. And with **grid-row-end** we specify the ending of footer. Also using  **grid-template-rows: 1fr auto;** we make a flexible height grid layout.
 
@@ -107,7 +131,11 @@ Using **grid-row-start** we specify where the footer starts as we have a two row
 
 We can also <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers" target="_blank" rel="noopener noreferrer">simply remove footer</a> code and only set **grid-template-rows:**
 
-```grid-template-rows: auto 1fr auto;```
+
+```
+grid-template-rows: auto 1fr auto;
+```
+
 
 As we mentioned at the beginning there are other ways like **absolute positioning footer** on the bottom or giving it **negative top margins** or give content **negative bottom margin equal to footer height.** Although they are still valid solutions but we need to write more code with fixed footer heights and less maintainable. Set aside they are not modern approaches. Lets get modernised.
 

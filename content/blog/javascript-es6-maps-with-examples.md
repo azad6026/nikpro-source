@@ -78,7 +78,9 @@ We could iterate through maps using [for&#8230; of loop](http://www.nikpro.com.a
 
 As a key-value pair:
 
-```for (var [key, value] of myMap) {`  
+
+```
+for (var [key, value] of myMap) {`  
 `console.log(key + ' = ' + value);`  
 `}`  
 `// 0 = zero`  
@@ -127,7 +129,9 @@ Create an array:
 
 We use the regular Map constructor to transform a 2D key-value Array into a map:
 
-```var myMap = new Map(kvArray);`
+
+```
+var myMap = new Map(kvArray);`
 
 `myMap.get('key1'); // returns "value1"`
 

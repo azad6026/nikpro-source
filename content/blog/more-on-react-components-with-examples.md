@@ -19,7 +19,9 @@ We had a brief look at React components in [this article](http://www.nikpro.com.
 
 Have a look at this functional React component and how it renders the output to the DOM:
 
-```<code>function Welcome(props) {
+
+```
+<code>function Welcome(props) {
   return &lt;h1>Hello, {props.name}&lt;/h1>;
 }
 
@@ -27,7 +29,9 @@ const element = &lt;Welcome name="Sara" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
-);</code>```
+);</code>
+```
+
 
 The function uses **props** as its argument that makes it a valid component.  The <a href="https://reactjs.org/docs/rendering-elements.html" target="_blank" rel="noopener noreferrer">element</a> which we will talk about in a seperate article later represents the user defined component in this example. So in this example:
 
@@ -42,7 +46,9 @@ The function uses **props** as its argument that makes it a valid component.  
 
 As mentioned [here](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) we can compose component to other components in React. We can reuse the same component as many times as needed. We can use an app component to render the Welcome component as many times:
 
-```<code>function Welcome(props) {
+
+```
+<code>function Welcome(props) {
   return &lt;h1>Hello, {props.name}&lt;/h1>;
 }
 
@@ -59,7 +65,9 @@ function App() {
 ReactDOM.render(
   &lt;App />,
   document.getElementById('root')
-);</code>```
+);</code>
+```
+
 
 Which the app component will be your main component and you will build your app upon that.
 
@@ -67,17 +75,25 @@ Which the app component will be your main component and you will build your app 
 
 The very first component we created was a functional one:
 
-```<code>function Welcome(props) {
+
+```
+<code>function Welcome(props) {
   return &lt;h1>Hello, {props.name}&lt;/h1>;
-}</code>```
+}</code>
+```
+
 
 And as we mentioned it is a valid component as it has props as its properties or argument. We could create exact same component in [ES6 way with a class:](http://www.nikpro.com.au/how-to-create-classes-in-javascript-es6/)
 
-```<code>class Welcome extends React.Component {
+
+```
+<code>class Welcome extends React.Component {
   render() {
     return &lt;h1>Hello, {this.props.name}&lt;/h1>;
   }
-}</code>```
+}</code>
+```
+
 
 The Welcome class which is actually the component extends the React.Component core class and we use **this** to refer to the Welcome component itself. 
 

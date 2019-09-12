@@ -27,15 +27,21 @@ Practically there are two syntax or patterns to use React.Fragment inside the co
 
 Firstly imagine this example table from <a href="https://reactjs.org/docs/fragments.html#short-syntax" target="_blank" rel="noopener noreferrer">React site</a> which will include a Columns component. Columns component returns multiple table cells or <td>s:
 
-```<code> &lt;table>
+
+```
+<code> &lt;table>
         &lt;tr>
           &lt;Columns />
         &lt;/tr>
- &lt;/table></code>```
+ &lt;/table></code>
+```
+
 
 Wrapping this Columns component return statement with a <div> is not correct in this case:
 
-```<code>class Columns extends React.Component {
+
+```
+<code>class Columns extends React.Component {
   render() {
     return (
       &lt;div>
@@ -44,22 +50,30 @@ Wrapping this Columns component return statement with a <div> is not correct in 
       &lt;/div>
     );
   }
-}</code>```
+}</code>
+```
+
 
 Which means the table will look like this at the end:
 
-```<code>&lt;table>
+
+```
+<code>&lt;table>
   &lt;tr>
     &lt;div>
       &lt;td>Hello&lt;/td>
       &lt;td>World&lt;/td>
     &lt;/div>
   &lt;/tr>
-&lt;/table></code>```
+&lt;/table></code>
+```
+
 
 Definitely this is not a correct semantic table. We will need React.Fragment to generate the table and have no wrapper around the Columns component return statement:
 
-```<code>class Columns extends React.Component {
+
+```
+<code>class Columns extends React.Component {
   render() {
     return (
       &lt;React.Fragment>
@@ -68,23 +82,33 @@ Definitely this is not a correct semantic table. We will need React.Fragment to 
       &lt;/React.Fragment>
     );
   }
-}</code>```
+}</code>
+```
+
 
 As a result we get this table:
 
-```<code>&lt;table>
+
+```
+<code>&lt;table>
   &lt;tr>
     &lt;td>Hello&lt;/td>
     &lt;td>World&lt;/td>
   &lt;/tr>
-&lt;/table></code>```
+&lt;/table></code>
+```
+
 
 Also we can use the shorter syntax in the Columns component which looks cool:
 
-```<code> &lt;>
+
+```
+<code> &lt;>
     &lt;td>Hello&lt;/td>
     &lt;td>World&lt;/td>
-  &lt;/></code>```
+  &lt;/></code>
+```
+
 
 We see that opening and closing tags are actually empty. Besides it really makes sense as they do not produce any actual tags. 
 
@@ -96,7 +120,9 @@ Also there is a pen for this in the React docs:
 
 Here is also a general usage of the React.Fragment wrapping multiple elements:
 
-```<code>render() {
+
+```
+<code>render() {
   return (
     &lt;React.Fragment>
       &lt;ChildA />
@@ -104,7 +130,9 @@ Here is also a general usage of the React.Fragment wrapping multiple elements:
       &lt;ChildC />
     &lt;/React.Fragment>
   );
-}</code>```
+}</code>
+```
+
 
 Considerably we could use React.Fragment instead of using higher order functions in most cases. It is simple, easy to maintain and does exaxtly what needs to be done: only wrapping the content without generating a DOM element. 
 

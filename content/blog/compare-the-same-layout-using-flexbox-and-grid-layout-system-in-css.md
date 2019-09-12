@@ -38,7 +38,11 @@ Generally with grid we could have alignment in both directions as grid is a two 
 
 As we explained in [this](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) article about using minmax() and auto-fit here we also use that t create columns:
 
-```grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));```
+
+```
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+```
+
 
 Therefor each column will be at least 150px wide and the rest of the columns in the row will divide the space using one fraction of unit.
 
@@ -64,7 +68,11 @@ Technically if we need items to wrap in a few lines but also take as much space 
 
 Ideally this is great for tag management and category based links for example. We just added this line to the container to make it centre:
 
-```justify-content: center;```
+
+```
+justify-content: center;
+```
+
 
 We didn&#8217;t need a strict layout for this case. Also as we can see FlexBox is the perfect choice to centre items so far:
 

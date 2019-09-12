@@ -26,9 +26,13 @@ According to <a rel="noreferrer noopener" aria-label="MDN (opens in a new tab)" 
 
 This is a simple semantic of how it looks like:
 
+
 ```
+
 &lt;details&gt;<br /> &nbsp; &nbsp; &lt;summary&gt;System Requirements&lt;/summary&gt;<br /> &nbsp; &nbsp; Something small enough to escape casual notice.<br /> &lt;/details&gt; 
+
 ```
+
 
 Basically the details tag always comes with summary tag as a label. If you remove summary, the &#8220;Details&#8221; text will be shown instead. Also we will see a triangle as a symbol of a disclosure widget which can be open and close.
 

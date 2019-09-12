@@ -26,7 +26,9 @@ https://codepen.io/g12n/pen/ZLYqyr
 Basically all variables are defined in the root here. The variables are used to change the SVG attributes on demand:
 
 
+
 ```
+
 :root {
   --trees-z1: hsl(20, 60%, 20%);
   --trees-z2: hsl(20, 60%, 30%);
@@ -41,22 +43,30 @@ Basically all variables are defined in the root here. The variables are used to 
   --sun: #f90;
   --angle: -20deg;
 }
+
 ```
+
 
 Except for the **&#8211;angle** they are all used to change the colours and saturation. The &#8211;angle though is the one to be used for the **#sky** angle in the SVG:
 
 
+
 ```
+
 #sky {
   transform-origin: 250px 450px;
   transform: rotate(var(--angle));
 }
+
 ```
+
 
 Inside rotate the angle variable is declared so that we can dynamically change it on demand like hover:
 
 
+
 ```
+
 svg:hover{
   --trees-z1: #0b3253;
   --trees-z2: #0c3b5b;
@@ -71,7 +81,9 @@ svg:hover{
   --sun: #fff;
   --angle: 20deg;
 }
+
 ```
+
 
 Therefore the values are changed on hover as well as **&#8211;angle**. And that makes the beautiful animation like effect one we hover over it.&nbsp;
 
@@ -83,7 +95,9 @@ https://codepen.io/danwilson/pen/oBrOGW
 
 Interestingly three properties inside transform have used CSS variables as their values. Also the duration of the transition is declared as a variable to make it more like an animation:
 
+
 ```
+
 /* Defining variables */
 :root {
   --tx: 0;
@@ -91,11 +105,15 @@ Interestingly three properties inside transform have used CSS variables as their
   --scale: 1;
   --deg: 0deg;
  }
- ```
+ 
+```
+
 
 Therefore Javascript will use these variables to change them based on input value changes. Here is the important CSS code that defines behaviour of each box:
 
+
 ```
+
 .mover {
   /* THIS is the important line */
   transform: 
@@ -106,14 +124,18 @@ Therefore Javascript will use these variables to change them based on input valu
   --duration: 2000ms;
   transition: transform var(--duration) linear;
 }
+
 ```
+
 
 As a side note need to note that &#8211;**-duration** has been defined inside the box and no the :root. Not all variables need to be defined in the root as they might only be used inside that element only. Remember CSS variables are **scoped** to where they have been defined.
 
 Finally using Javascript the values are changed dynamically:
 
 
+
 ```
+
 // Use the input ranges to modify the individual transform properties on the fly, and see that they can be smooth even if you change a different property mid transition. There's no need to remember what the other properties are when you set the new individual value.
 // We'll use this to change the CSS Variable values from JS
 const style = document.documentElement.style;
@@ -136,7 +158,9 @@ ranges.scale.addEventListener('input', function(e) {
 ranges.deg.addEventListener('input', function(e) { 
   valueChange(e.currentTarget.id, e.currentTarget.value + 'deg');
 });
+
 ```
+
 
 Moreover [the Event listener](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/)&nbsp;has been assigned to all properties of the element ( translate, scale, deg) to change the related style property using valueChange function. Very concise and useful.
 

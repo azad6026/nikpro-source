@@ -24,7 +24,9 @@ Firstly we will have a look at our array which in my case was a nested array of 
 
 Basically it is an array of objects called persons which each person has an age and person information which is an object nested inside. And we have name and hobby of that person inside &#8220;person&#8221; object. 
 
-```const persons = [
+
+```
+const persons = [
       {
         "age": 15,
         "person": {
@@ -65,13 +67,17 @@ Basically it is an array of objects called persons which each person has an age 
           hobby: 'books'
         }
       }
- ]```
+ ]
+```
+
 
 ### Group by age
 
 Secondly we explain the use case. I needed to transform this array to some array that **groups it based on the age value.** Practically we have persons with same age in this array. So I wanted to have all &#8220;person&#8221; values with same age as one object of the array. Therefor I needed an array like this:
 
-```{ 
+
+```
+{ 
  23: [
     { name: 'Suzi', hoby: 'golf' }, 
     { name: 'Joe', hobby: 'books'},
@@ -81,7 +87,9 @@ Secondly we explain the use case. I needed to transform this array to some array
   .
   .
   .
-}```
+}
+```
+
 
 As a result all values of same age will be grouped in one array themselves as part of the big array.  However it is [not a filter](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) but it is transforming the same array to another form.
 
@@ -111,7 +119,9 @@ Afterwards we can call in on our array:
 
 Therefor we get the desired result :
 
-``` 23: [
+
+```
+ 23: [
     { name: 'Suzi', hoby: 'golf' }, 
     { name: 'Joe', hobby: 'books'},
     {name: "Kane", hobby: "books"}
@@ -120,20 +130,26 @@ Therefor we get the desired result :
   .
   .
   .
-}```<figure class="wp-block-image">
+}
+```
+<figure class="wp-block-image">
 
 <img class="wp-image-32469" src="http://www.nikpro.com.autransform.png" alt="transform the array" srcset="http://testgatsby.localtransform.png 550w, http://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
 
 We can use our [ES6](http://nikpro.com.au/category/es6) knowledge and change our code to be more readable [using arrow functions](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
-```const groupBy = (<code>&lt;strong>OurArray, property&lt;/strong></code>) =&gt; {
+
+```
+const groupBy = (<code>&lt;strong>OurArray, property&lt;/strong></code>) =&gt; {
 return <code>&lt;strong>OurArray&lt;/strong></code>.reduce((<code>&lt;strong>accumulator, object&lt;/strong></code>) =&gt; {
 const key = <code>&lt;strong>object&lt;/strong></code>[<code>&lt;strong>property&lt;/strong></code>];
 // using ternary operator to make it shorter but in this case it is not necessary as it might look complicated
 !<code>&lt;strong>accumulator&lt;/strong></code>[key] ? (<code>&lt;strong>accumulator&lt;/strong></code>[key] = []) : (<code>&lt;strong>accumulator&lt;/strong></code>[key].push(<code>&lt;strong>object&lt;/strong></code>));
 return <code>&lt;strong>accumulator&lt;/strong></code>;
 }, {});
-};```
+};
+```
+
 
 Using reduce() in these cases makes it easier to implement and maintain. We can always use reduce() combining with other array methods to shape our array the way we need it.
 

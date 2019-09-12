@@ -23,21 +23,37 @@ In this article I will show some important notes around arrays in Javascript. We
 
 When creating arrays in Javascript do not use the new keyword. It confuses the code and no need to use that. WE better use the modern and clean brackets:
 
-```let points = new Array(40, 100, 1, 5, 25, 10); // Bad<br />let points = [40, 100, 1, 5, 25, 10];          // Good```
+
+```
+let points = new Array(40, 100, 1, 5, 25, 10); // Bad<br />let points = [40, 100, 1, 5, 25, 10];          // Good
+```
+
 
 ### How to recognise arrays in Javascript
 
 Practically there are a few ways to check if an object is an array. We can test it with this simple function:
 
-```let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />function isArray(x) {<br />    return x.constructor.toString().indexOf("Array") > -1;<br />}```
+
+```
+let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />function isArray(x) {<br />    return x.constructor.toString().indexOf("Array") > -1;<br />}
+```
+
 
 Therefor it always returns true if the argument is an array. Moreover the **instanceof** operator returns true if an object is created by a given constructor:
 
-```let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />fruits instanceof Array     // returns true```
+
+```
+let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />fruits instanceof Array     // returns true
+```
+
 
 Finally the newest option to recognise arrays in Javascript is the ES6 isArray method. It returns true if the object is an array :
 
-```let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />Array.isArray(fruits);     // returns true```
+
+```
+let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />Array.isArray(fruits);     // returns true
+```
+
 
 ### Methods pop and push, shift and unshift
 
@@ -51,17 +67,25 @@ Basically we use push and unshift methods to add and elements to an array. Also 
 
 As an example have a look at these example arrays in Javascript:
 
-```<code>let fruits = ["Apple", "Orange"];&lt;br/>&lt;br/>// Push
+
+```
+<code>let fruits = ["Apple", "Orange"];&lt;br/>&lt;br/>// Push
 fruits.push("Pear");
 alert( fruits ); // Apple, Orange, Pear&lt;br/>&lt;br/>// Unshift&lt;br/>&lt;code>fruits.unshift('Apple');
-alert( fruits ); // Apple, Orange, Pear</code>&lt;/code>```
+alert( fruits ); // Apple, Orange, Pear</code>&lt;/code>
+```
+
 
 Obviously we get the same results with push and unshift.
 
-```<code>let fruits = ["Apple", "Orange", "Pear"];&lt;br/>&lt;br/>// Pop
+
+```
+<code>let fruits = ["Apple", "Orange", "Pear"];&lt;br/>&lt;br/>// Pop
 alert( fruits.pop() ); // remove "Pear" and alert it
 alert( fruits ); // Apple, Orange</code><br /><br />// Shift<br /><code>alert( fruits.shift() ); // remove Apple and alert it
-alert( fruits ); // Orange, Pear</code>```
+alert( fruits ); // Orange, Pear</code>
+```
+
 
 However we do not get the same results here. Because pop removes the last element and shift takes out the very first element and that is how they work. 
 

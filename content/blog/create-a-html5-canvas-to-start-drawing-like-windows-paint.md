@@ -80,7 +80,9 @@ Then we need to declare a few things. Specifying the ending points of the drawin
 `let lastX = 0; //x end point`  
 `let lastY = 0; // Y end point`
 
-`// Hue is a degree on the colour wheel from 0 to 360. 0 is red, 120 is green, 240 is blue. We use hsl which I explain later```  
+`// Hue is a degree on the colour wheel from 0 to 360. 0 is red, 120 is green, 240 is blue. We use hsl which I explain later
+```
+  
 `let hue = 0; `  
 `let direction = true; // set the direction flag to true`
 

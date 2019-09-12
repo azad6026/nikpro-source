@@ -23,7 +23,11 @@ We have talked about CSS c[ustom properties](http://www.nikpro.com.au/using-css-
 
 Mostly we might use a custom CSS property for a solid or even gradient background like this:
 
-```:root {<br />   --lightBackground: mistyrose;<br /> }<br /> .light-section {<br />   background: var(—-lightBackground);<br /> }<br /> .button {<br />   --lightBackground: lightblue;<br />   background: var(—-lightBackground);<br /> }```
+
+```
+:root {<br />   --lightBackground: mistyrose;<br /> }<br /> .light-section {<br />   background: var(—-lightBackground);<br /> }<br /> .button {<br />   --lightBackground: lightblue;<br />   background: var(—-lightBackground);<br /> }
+```
+
 
 In the code above we use the same variable for both light section and the button. We use its normal colour for the light section. But for the button we changed the variable value to another colour and then assign that as the button background. A neat approach we could use with CSS custom properties.
 
@@ -37,7 +41,11 @@ Additionally we could use CSS variables for image backgrounds. Here is a pen I c
 
 Basically we use the same technique. But this time we assign the image url to a CSS variable:
 
-```:root{<br />     --imageBg: url("image1.jpg") no-repeat;<br /> }<br /> .container,.another-image-container{<br />     height: 200px;<br />     width: 300px;<br />     margin: 10px auto;<br /> }<br /> .first-image-container{<br />     background: var(--imageBg);<br /> }<br /> .another-image-container{<br />     --imageBg: url("image2.jpg") no-repeat;<br />     background: var(--imageBg);<br /> }```
+
+```
+:root{<br />     --imageBg: url("image1.jpg") no-repeat;<br /> }<br /> .container,.another-image-container{<br />     height: 200px;<br />     width: 300px;<br />     margin: 10px auto;<br /> }<br /> .first-image-container{<br />     background: var(--imageBg);<br /> }<br /> .another-image-container{<br />     --imageBg: url("image2.jpg") no-repeat;<br />     background: var(--imageBg);<br /> }
+```
+
 
 This is very useful incases like icons or SVGs where we need to change images per request. Use cases like hover over or click events could be some of the examples to switch between image backgrounds using CSS custom properties.
 

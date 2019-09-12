@@ -19,8 +19,12 @@ It is interesting to know about using [map method](http://www.nikpro.com.au/jav
 
 In a normal Javascript example this is how we use map method to create a new mapped array ( using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in practice):
 
-```<code>const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map((number) => number * 2);</code>```
+
+```
+<code>const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((number) => number * 2);</code>
+```
+
 
 Obviously the numbers array is intact and we have created a new array which has doubled values for each key.
 
@@ -28,17 +32,25 @@ Obviously the numbers array is intact and we have created a new array which has 
 
 To be able to render a list using  map method in React we could do the same thing:
 
-```<code>const numbers = [1, 2, 3, 4, 5];
+
+```
+<code>const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
   &lt;li>{number}&lt;/li>
-);</code>```
+);</code>
+```
+
 
 We just return the values in list items. And we can render it in our component in and unordered list:
 
-```<code>ReactDOM.render(
+
+```
+<code>ReactDOM.render(
   &lt;ul>{listItems}&lt;/ul>,
   document.getElementById('root')
-);</code>```
+);</code>
+```
+
 
 The only problem is although the list is showing but each child should have a unique key prop. A “key” is a special string attribute you need to include when creating lists of elements. 
 
@@ -50,16 +62,22 @@ Keys help React identify which items have changed, are added, or are removed. Ke
 
 Therefor we add the key for each list item to make sure each element is unique and identifiable:
 
-```<code>const numbers = [1, 2, 3, 4, 5];
+
+```
+<code>const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
   &lt;li key={number.toString()}>
     {number}
   &lt;/li>
-);</code>```
+);</code>
+```
+
 
 So the above component will look like this using map method in React example:
 
-```<code>function NumberList(props) {
+
+```
+<code>function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
     &lt;li key={number.toString()}>
@@ -75,11 +93,15 @@ const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   &lt;NumberList numbers={numbers} />,
   document.getElementById('root')
-);</code>```
+);</code>
+```
+
 
 Moreover we could inline the map results as we write JSX in React. So this is the same as above example:
 
-```<code>function NumberList(props) {
+
+```
+<code>function NumberList(props) {
   const numbers = props.numbers;
   return (
     &lt;ul>
@@ -89,17 +111,23 @@ Moreover we could inline the map results as we write JSX in React. So this is th
       )}
     &lt;/ul>
   );
-}</code>```
+}</code>
+```
+
 
 **A post example**
 
 As another example we can extract a post array with separate key value pairs using the id for the key:
 
-```<code>const content = posts.map((post) =>
+
+```
+<code>const content = posts.map((post) =>
   &lt;Post
     key={post.id}
     id={post.id}
     title={post.title} />
-);</code>```
+);</code>
+```
+
 
 As a result we could extract whatever needed from the array as long as we specify the key for each item. Using map method in React makes it easy and convenient to pull out data out of the array like list items and use them in our components. Thanks for reading.

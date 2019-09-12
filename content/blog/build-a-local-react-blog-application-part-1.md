@@ -40,7 +40,9 @@ Probably we could have the form in a seperate component. But we will look into t
 
 Firstly we will take a look at the App component as the main component which is called **container** component:
 
+
 ```
+
 class App extends React.Component {
     render() {
         return ( <React.Fragment>
@@ -49,7 +51,9 @@ class App extends React.Component {
         );
     }
 }
+
 ```
+
 
 Using [React.Fragment](http://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) we add our transparent wrapper and we render the Posts component. 
 
@@ -77,7 +81,9 @@ In React blog application we **handle state in Posts** component and pass on dat
 
 Take a look at the Post component:
 
+
 ```
+
 // The individual post component
 const Post = props => (
 	<article className="post" id={props.id}>
@@ -87,7 +93,9 @@ const Post = props => (
 		<button onClick={props.delete}>Delete this post</button>
 	</article>
 );
+
 ```
+
 
 Firstly this component is a [functional](http://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component meaning it does not handle state and it is just a simple function that generates some JSX code which looks like HTML. It creates the UI for each post. In [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) we need to use className to implement classes as above. 
 
@@ -105,13 +113,19 @@ Firstly we will see how Posts component handles state and then pass on expected 
 
 In ou React blog application the Posts component is a class component which is a stateful component:
 
+
 ```
+
 class Posts extends React.Component {}
+
 ```
+
 
 Therefor we can handle state which looks like this. I have used simpler and shorter text here:
 
+
 ```
+
 state = {
         posts: [
             {
@@ -132,13 +146,17 @@ state = {
             content: ""
         }
 };
+
 ```
+
 
 We have initialised our posts array with some dummy posts. But in real applications we will have it an empty array which will be populated by server data.
 
 Also we have individual post object to serve to Post component. To show the posts we need to loop through it [using map method](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) and populate the Post component with needed info:
 
+
 ```
+
 render() {
     const posts = this.state.posts.map((post, index) => {
         return (
@@ -151,20 +169,30 @@ render() {
         );
     });
     }
- ```
+ 
+```
+
 
 What we do indie map method is we use index of each post as the id and we pass on post info [using spread syntax](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) :
 
+
 ```
+
 {...post}
+
 ```
+
 
 We could have done it like this:
 
+
 ```
+
 title = {post.title}
 content = {post.content}
+
 ```
+
 
 But that is more elegant and modern. We also pass on the id as the map key as React will generate an Error saying a unique key is needed if we don&#8217;t.
 
@@ -174,14 +202,18 @@ In addition to title, id and content we also need to create a delete method. We 
 
 To delete an item we get the **post container index** ( in our app it is the article element) and **find that post inside posts array using [splice](http://www.nikpro.com.au/how-to-use-slice-and-splice-array-methods-in-javascript/) method**:
 
+
 ```
+
 handleDelete = event => {
     const posts = [...this.state.posts];
     const index = event.target.parentNode.id;
     const updatedPosts = posts.splice(index, 1);
     this.setState({ posts: posts });
 };
+
 ```
+
 
 
 ![a few tips about the code](/images/tips.png)

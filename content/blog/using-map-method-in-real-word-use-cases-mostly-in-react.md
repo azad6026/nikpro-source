@@ -24,7 +24,9 @@ Therefore whenever we need to manipulate data without actually changing the data
 
 Basically the most use case for map in React specifically is to ender lists of items. Whether it is a list of blog posts or comments or just a simple list of names as below:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];&lt;/strong></code><br />const NamesList = () =&gt; (<br /> &nbsp; &lt;div&gt;<br /> &nbsp; &nbsp; &lt;ul&gt;{names.map(name =&gt; &lt;li key={name}&gt; {name} &lt;/li&gt;)}&lt;/ul&gt;<br /> &nbsp; &lt;/div&gt;<br /> ); <br />```
+<pre class="wp-block-preformatted"><code>&lt;strong>const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];&lt;/strong></code><br />const NamesList = () =&gt; (<br /> &nbsp; &lt;div&gt;<br /> &nbsp; &nbsp; &lt;ul&gt;{names.map(name =&gt; &lt;li key={name}&gt; {name} &lt;/li&gt;)}&lt;/ul&gt;<br /> &nbsp; &lt;/div&gt;<br /> ); <br />
+```
+
 
 We return JSX code using map method to create the list for us. As we know we need to specify the key attribute in our React code to have a unique identity for each list item.<figure class="wp-block-image">
 
@@ -34,17 +36,29 @@ We return JSX code using map method to create the list for us. As we know we nee
 
 Additionally we can use the map method to manipulate array of objects. In this example we create and array based on an object and add an age for each person in the new array:
 
-``` const myUsers = [<br /> &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },<br /> &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },<br /> &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }<br /> ]<br /> <br /><br /> const foodLovers = myUsers.map(item =&gt; {<br /> &nbsp; &nbsp; const container = {};<br /> &nbsp; &nbsp; container[item.name] = item.likes;<br /> &nbsp; &nbsp; container.age = item.name.length * 10;<br /> <br /> &nbsp; &nbsp; return container;<br /> })<br /> <br /> console.log(foodLovers);<br /> // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] ```
+
+```
+ const myUsers = [<br /> &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },<br /> &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },<br /> &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }<br /> ]<br /> <br /><br /> const foodLovers = myUsers.map(item =&gt; {<br /> &nbsp; &nbsp; const container = {};<br /> &nbsp; &nbsp; container[item.name] = item.likes;<br /> &nbsp; &nbsp; container.age = item.name.length * 10;<br /> <br /> &nbsp; &nbsp; return container;<br /> })<br /> <br /> console.log(foodLovers);<br /> // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] 
+```
+
 
 ## Using map like a filter method
 
 Although we have [filter and other methods](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) in this use case but sometimes we can use map to filter a specific data from an array or array of objects. Have a look at a <a rel="noreferrer noopener" aria-label="this (opens in a new tab)" href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" target="_blank">simple</a> example which I explain below:
 
-```// What you have<br />var officers = [<br />  { id: 20, name: 'Captain Piett' },<br />  { id: 24, name: 'General Veers' },<br />  { id: 56, name: 'Admiral Ozzel' },<br />  { id: 88, name: 'Commander Jerjerrod' }<br />];<br />// What you need<br />[20, 24, 56, 88]```
+
+```
+// What you have<br />var officers = [<br />  { id: 20, name: 'Captain Piett' },<br />  { id: 24, name: 'General Veers' },<br />  { id: 56, name: 'Admiral Ozzel' },<br />  { id: 88, name: 'Commander Jerjerrod' }<br />];<br />// What you need<br />[20, 24, 56, 88]
+```
+
 
 Using map we can simply write the code:
 
-```const officersIds = officers.map(officer =&gt; officer.id);```
+
+```
+const officersIds = officers.map(officer =&gt; officer.id);
+```
+
 
 Obviously the result is simple and efficient and could be used in loops and lists as expected from map.
 
