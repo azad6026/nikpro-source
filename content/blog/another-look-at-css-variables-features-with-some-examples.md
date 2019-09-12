@@ -13,13 +13,14 @@ categories:
 tags:
   - css variables features.jpg
 ---
+
 We will take another look at CSS variables features with some examples in this article. Previously in [this link](http://www.nikpro.com.au/how-to-update-css-variables-using-javascript-with-examples/) we learnt about them in a practical example. Here we see more code in details.
 
 ## CSS variables scope
 
 Generally one of the CSS variables features is their scope. In another word their definition in the CSS code. As an example this is a global variable as it is in root:
 
-```:root {
+````:root {
 	--main-color: green;
 }```
 
@@ -43,13 +44,16 @@ Basically we change the **&#8211;main-color** here and using the root colour an
 
 Practically `calc()` was mostly used for calculating widths and heights of responsive elements. If we want a container width to become 100px shorter than 100% this is how to do it:
 
-```.container {
-  width: calc(100% - 100px);
+````
+
+.container {
+width: calc(100% - 100px);
 }```
 
 We could also use `calc()` for unitless CSS variables like below:
 
-```:root {
+````
+:root {
 	--duration: 2000;
 }
 
@@ -74,3 +78,4 @@ Or even update them in an inline Javascript code:
 ```element.style = "--color: red";```
 
 While working with CSS variables be aware in which scope our variable is defined. And if needed to change it, it will affect many children and thus create large amounts of style recalculation. Thanks for reading.
+````
