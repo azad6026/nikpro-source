@@ -32,23 +32,23 @@ const Categories = ({ pageContext, data }) => {
             marginLeft: `1.5rem`,
           }}
         >
-          {edges.map(({ node }) => {
+          {edges.map(({ node, index }) => {
             const { slug } = node.fields
             const { title } = node.frontmatter
             return (
               <li
                 key={slug}
                 style={{
-                  listStyleType: `square`,
+                  listStyleType: `none`,
                 }}
               >
+                # {index}
                 <Link
                   to={slug}
                   style={{
                     marginBottom: `0`,
                     boxShadow: `none`,
-                    textShadow: `0px 1px 1px #0c0904`,
-                    color: `#d38221`,
+                    textShadow: `rgb(18, 15, 15) 0px 0px 1px`,
                     letterSpacing: `2px`,
                   }}
                 >

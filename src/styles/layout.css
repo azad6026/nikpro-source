@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap|Montserrat");
 :root {
   --link-color: #a74e00;
   --hover-color: #4e453d;
@@ -12,6 +12,7 @@ html {
 body {
   font-size: 1.2rem;
   background: var(--primary-dark-color);
+  font-family: "Ubuntu", sans-serif;
 }
 h1,
 h2,
@@ -20,13 +21,14 @@ h4,
 h5,
 h6 {
   margin: 1.5rem 0;
-  font-family: "Ubuntu", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 h1 {
   font-size: 2.5rem;
 }
 p {
-  margin-bottom: inherit;
+  margin-bottom: 1rem;
 }
 a {
   transition: all 0.5s;

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `NIKPRO web solutions is getting a new look built on Gatsbyjs.Bare with us while it is being done.`,
+    title: `NIKPRO web solutions, The place to build, develop and learn`,
     author: `Azadeh Faramarzi`,
-    description: `A blog for learning the web`,
+    description: `A blog for learning all around the web`,
     siteUrl: `https://nikpro.com.au`,
     social: {
       twitter: `azad6026`,
