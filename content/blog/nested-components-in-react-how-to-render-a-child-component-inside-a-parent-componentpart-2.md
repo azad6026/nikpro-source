@@ -103,8 +103,8 @@ Our goal is to show a list of persons&#8217; information grouped by their age. T
 
 
 ```
-const groupBy = (OurArray, property) =&gt; {
-  return OurArray.reduce((accumulator, object) =&gt; {
+const groupBy = (OurArray, property) => {
+  return OurArray.reduce((accumulator, object) => {
     const key = object[property];
     // using ternary operator to make it shorter but in this case it   is not necessary as it might look complicated
     !accumulator[key] ? (accumulator[key] = []) : (accumulator[key].push(object));
@@ -161,12 +161,12 @@ Probably [map is the most useful an important array method in React](http://www.
 
 
 ```
-const personsInfo = persons.map((person, index) =&gt; {
+const personsInfo = persons.map((person, index) => {
     return (
-      &lt;Persons
+      <Persons
 	 key={index}
 	 {...person}
-      /&gt;
+      />
     );
 });
 ```
@@ -197,20 +197,20 @@ Therefore the best approach here is to use a **child component called Person to 
 
 
 ```
-const Persons = props =&gt; {
+const Persons = props => {
     // map through the individual array we have got from the first map
-    const personDetails = props.person.map((details, index) =&gt; {
+    const personDetails = props.person.map((details, index) => {
         return(
-          &lt;Person
+          <Person
             key={index}
 	    {...details}
-	  /&gt;
+	  />
         );
     });
     return(
-      &lt;React.Fragment&gt;
+      <React.Fragment>
 	 {personDetails}
-      &lt;React.Fragment&gt;	
+      <React.Fragment>	
     
     );
 }
@@ -223,16 +223,16 @@ Now we could use the **{&#8230;details} as the desired  non nested array **and
 
 
 ```
-const Person = props =&gt; {
+const Person = props => {
   return (
-    &lt;React.Fragment&gt;
-       &lt;div class="person-info"&gt;
-	 &lt;data&gt;Name: {props.name}&lt;/data&gt;
-	 &lt;data&gt;Favourite Movie: {props.hobby.movie}&lt;/data&gt;
-	 &lt;data&gt;Favourite Sport: {props.hobby.sport}&lt;/data&gt;
-	 &lt;data&gt;Favourite book: {props.hobby.book}&lt;/data&gt;
-       &lt;/div&gt;
-    &lt;/React.Fragment&gt;
+    <React.Fragment>
+       <div class="person-info">
+	 <data>Name: {props.name}</data>
+	 <data>Favourite Movie: {props.hobby.movie}</data>
+	 <data>Favourite Sport: {props.hobby.sport}</data>
+	 <data>Favourite book: {props.hobby.book}</data>
+       </div>
+    </React.Fragment>
   );
 }
 ```

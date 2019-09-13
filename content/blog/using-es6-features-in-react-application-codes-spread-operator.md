@@ -38,7 +38,7 @@ Basically the important usage of spread operator is to get a copy of an array an
 
 ```
 <code>function App1() {
-  return &lt;Greeting firstName="Ben" lastName="Hector" />;
+  return <Greeting firstName="Ben" lastName="Hector" />;
 }</code>
 ```
 
@@ -49,7 +49,7 @@ But using spread operator in React props makes it easier to read and understand:
 ```
 <code>function App2() {
   const props = {firstName: 'Ben', lastName: 'Hector'};
-  return &lt;Greeting {...props} />;
+  return <Greeting {...props} />;
 }</code>
 ```
 
@@ -72,7 +72,7 @@ Imagine this code in our JSX which uses props info inside and input:
 
 
 ```
-&lt;input <br />  type={props.type} <br />  id={props.id} <br />  placeholder={props.placeholder}<br />  value={props.value}<br />  onChange={(e) => props.onchange(e.target.value)}<br />  className={props.inputClass} />
+<input <br />  type={props.type} <br />  id={props.id} <br />  placeholder={props.placeholder}<br />  value={props.value}<br />  onChange={(e) => props.onchange(e.target.value)}<br />  className={props.inputClass} />
 ```
 
 
@@ -80,7 +80,7 @@ As a good practice we can use spread operator to pass in the info and clean up t
 
 
 ```
- return (<br />    &lt;div className={props.wrapClass}><br />      &lt;label <br />        htmlFor={props.id}<br />        className={props.labelClass}<br />      ><br />        {props.label}<br />      &lt;/label><br />      &lt;input <br />        {...props}<br />        onChange={(e) => props.onchange(e.target.value)}<br />        className={props.inputClass} /><br />    &lt;/div><br />  )<br />}
+ return (<br />    <div className={props.wrapClass}><br />      <label <br />        htmlFor={props.id}<br />        className={props.labelClass}<br />      ><br />        {props.label}<br />      </label><br />      <input <br />        {...props}<br />        onChange={(e) => props.onchange(e.target.value)}<br />        className={props.inputClass} /><br />    </div><br />  )<br />}
 ```
 
 

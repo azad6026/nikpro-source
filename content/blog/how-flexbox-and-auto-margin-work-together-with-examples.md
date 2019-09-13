@@ -19,9 +19,9 @@ The idea is actually to make a FlexBox child independent from the container and 
 
 
 ```
-&lt;div class="parent">
-  &lt;div class="child1">&lt;/div><br />&lt;div class="child2">&lt;/div>
-&lt;/div>
+<div class="parent">
+  <div class="child1"></div><br /><div class="child2"></div>
+</div>
 ```
 
 

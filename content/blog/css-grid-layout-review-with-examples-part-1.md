@@ -47,11 +47,11 @@ A Grid cell is the smallest unit of area in a grid layout.
 
 
 
-The main container has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">display&lt;/span>: &lt;span class="cm-atom">grid&lt;/span>; </code>Property which defines the grid. It also has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-template-columns&lt;/span>: &lt;span class="cm-number">100px&lt;/span> &lt;span class="cm-number">100px&lt;/span> &lt;span class="cm-number">100px&lt;/span>; </code>property which defines three column of 100px width.We could use fr which is fr. The `fr` unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:
+The main container has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">display</span>: <span class="cm-atom">grid</span>; </code>Property which defines the grid. It also has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: <span class="cm-number">100px</span> <span class="cm-number">100px</span> <span class="cm-number">100px</span>; </code>property which defines three column of 100px width.We could use fr which is fr. The `fr` unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:
 
-<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-template-columns&lt;/span>: 1fr fr 1fr;</code>
+<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: 1fr fr 1fr;</code>
 
-Each cell has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-column-start&lt;/span></code>property that sets the staarting column of the cell and <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-column-end  &lt;/span></code>sets the column that the cell end in. We have the same properties with row to define the grid cell positioning inside the rows as well. <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-row-start&lt;/span></code> and  `grid-row-end.`
+Each cell has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-column-start</span></code>property that sets the staarting column of the cell and <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-column-end  </span></code>sets the column that the cell end in. We have the same properties with row to define the grid cell positioning inside the rows as well. <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-row-start</span></code> and  `grid-row-end.`
 
 ### Shorthand &#8211; grid-row and grid-column
 
@@ -89,7 +89,7 @@ The values for repeat are the number of times you want the expression to repeat 
 
 Instead of naming the columns and rows, we use the shorter syntax called repeat notation like this:
 
-<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css">&lt;span class="cm-property">grid-template-columns&lt;/span>: &lt;span class="cm-atom">repeat&lt;/span>(&lt;span class="cm-number">4&lt;/span>, [&lt;span class="cm-variable">col&lt;/span>] &lt;span class="cm-number">100px&lt;/span> ) ;&lt;br />
+<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: <span class="cm-atom">repeat</span>(<span class="cm-number">4</span>, [<span class="cm-variable">col</span>] <span class="cm-number">100px</span> ) ;<br />
 </code>  
 Which means we create 4 columns with 100px width.
 

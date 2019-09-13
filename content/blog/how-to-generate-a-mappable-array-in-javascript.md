@@ -21,7 +21,7 @@ Basically we create arrays in the old way like the code below. If we want to cre
 
 
 ```
-const arr = [];<br />for (let i = 0; i &lt; 100; i++) {<br />  arr[i] = i;<br />}
+const arr = [];<br />for (let i = 0; i < 100; i++) {<br />  arr[i] = i;<br />}
 ```
 
 

@@ -23,13 +23,13 @@ It is easy and beautifully organised in code how you create a React component:
 
 
 ```
-import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return &lt;div> This is a component &lt;/div><br />  }<br />}<br /></pre>
+import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br /></pre>
 
 And as you might have guessed it is also easy to use it in our application as many times as we need just like this:
 
 
 ```
-&lt;MyComponent /><br /></pre>
+<MyComponent /><br /></pre>
 
 As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and Javascript knowledge and creates amazing user interfaces.
 
@@ -39,7 +39,7 @@ The great thing is you could use your own custom React component inside another 
 
 
 ```
-import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return &lt;div> This is a component &lt;/div><br />  }<br />}<br />class MyOtherComponent extends React.Component {<br />  render () {<br />    return (<br />      &lt;div><br />        &lt;MyComponent /><br />      &lt;/div><br />    )<br />  }<br />}
+import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br />class MyOtherComponent extends React.Component {<br />  render () {<br />    return (<br />      <div><br />        <MyComponent /><br />      </div><br />    )<br />  }<br />}
 ```
 
 
@@ -53,7 +53,7 @@ For example, I have a heading component which renders a heading with subtitle:
 
 
 ```
-class MyHeading extends React.Component {<br />  render () {<br />    return &lt;div><br />      &lt;h1>{this.props.heading}&lt;/h1><br />      &lt;p>{this.props.subtitle}&lt;/p> <br />    &lt;/div><br />  }<br />}
+class MyHeading extends React.Component {<br />  render () {<br />    return <div><br />      <h1>{this.props.heading}</h1><br />      <p>{this.props.subtitle}</p> <br />    </div><br />  }<br />}
 ```
 
 
@@ -61,7 +61,7 @@ I can now use this component using its props which are actually the properties a
 
 
 ```
-&lt;MyHeading heading="Whoo! this is awesome" subtitle="And this is a subtitle" /><br />&lt;MyHeading heading="Whoo! this is More awesome" subtitle="And this is second subtitle" />
+<MyHeading heading="Whoo! this is awesome" subtitle="And this is a subtitle" /><br /><MyHeading heading="Whoo! this is More awesome" subtitle="And this is second subtitle" />
 ```
 
 
@@ -73,7 +73,7 @@ State is unique to the component. Every component has it’s own **State **whe
 
 
 ```
-import React from 'react';<br />class MyComponent extends React.Component {<br />  <br />  constructor(props) {<br />    super(props);<br />    this.state = {<br />      name: "Harry"<br />    };<br />  }<br />  render () {<br />    return &lt;div> My name is {this.state.name} &lt;/div><br />  }<br />}
+import React from 'react';<br />class MyComponent extends React.Component {<br />  <br />  constructor(props) {<br />    super(props);<br />    this.state = {<br />      name: "Harry"<br />    };<br />  }<br />  render () {<br />    return <div> My name is {this.state.name} </div><br />  }<br />}
 ```
 
 

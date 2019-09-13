@@ -22,7 +22,7 @@ Firstly have a look at this example with if/else statement:
 
 
 ```
-const MyComponent = ({ name }) => {<br />  if (name) {<br />    return (<br />      &lt;div className="hello"><br />        Hello {name}<br />      &lt;/div><br />    );<br />  }<br />  return (<br />    &lt;div className="hello"><br />      Please sign in<br />    &lt;/div><br />  );<br />};
+const MyComponent = ({ name }) => {<br />  if (name) {<br />    return (<br />      <div className="hello"><br />        Hello {name}<br />      </div><br />    );<br />  }<br />  return (<br />    <div className="hello"><br />      Please sign in<br />    </div><br />  );<br />};
 ```
 
 
@@ -30,7 +30,7 @@ In [this functional](http://www.nikpro.com.au/functional-component-in-react-expl
 
 
 ```
-const MyComponent = ({ name }) => (<br />  &lt;div className="hello"><br />    {name ? `Hello ${name}` : 'Please sign in'}<br />  &lt;/div><br />);
+const MyComponent = ({ name }) => (<br />  <div className="hello"><br />    {name ? `Hello ${name}` : 'Please sign in'}<br />  </div><br />);
 ```
 
 
@@ -43,11 +43,11 @@ In addition have a look at these examples of using ternary operator in Rect site
 <code>render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
-    &lt;div>
-      The user is &lt;b>{isLoggedIn ? 'currently' : 'not'}&lt;/b> logged in.
-    &lt;/div>
+    <div>
+      The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
+    </div>
   );
-}&lt;br/></code>
+}<br/></code>
 ```
 
 
@@ -62,15 +62,15 @@ We could use ternary operator In JSX code. To render some JSX code conditionally
 <code>render() {
   const isLoggedIn = this.state</code><code>.</code><code>isLoggedIn;
   return (
-    &lt;div>
+    <div>
       {isLoggedIn ? (
-        &lt;LogoutButton onClick={this.handleLogoutClick} />
+        <LogoutButton onClick={this.handleLogoutClick} />
       ) : (
-        &lt;LoginButton onClick={this.handleLoginClick} />
+        <LoginButton onClick={this.handleLoginClick} />
       )}
-    &lt;/div>
+    </div>
  </code><code> );
-}</code><code>&lt;br/></code>
+}</code><code><br/></code>
 ```
 
 

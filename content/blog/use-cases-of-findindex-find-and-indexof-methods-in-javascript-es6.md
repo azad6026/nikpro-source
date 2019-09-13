@@ -35,10 +35,10 @@ Firstly we will find the index of a fruit inside a fruit array using [arrow](htt
 
 
 ```
-<code>const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];&lt;br/>// find the index of the "&lt;strong>&lt;code>blueberries"</code>
+<code>const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];<br/>// find the index of the "<strong><code>blueberries"</code>
 const index = fruits.findIndex(fruit => fruit === "blueberries");
 console.log(index); // 3
-console.log(fruits[index]); // blueberries&lt;/code>&lt;/strong></pre>
+console.log(fruits[index]); // blueberries</code></strong></pre>
 
 As a use case this is good when we want to find the first item that matches our condition when it exists in the array. Otherwise, it returns -1, indicating no element passed the test.
 
@@ -48,7 +48,7 @@ Also this is another example to find the odd element inside an array:
 
 
 ```
-let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the index</code><br />arr.findIndex(isOdd);<br />// 4<br /></pre><figure class="wp-block-image">
+let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the index</code><br />arr.findIndex(isOdd);<br />// 4<br /></pre><figure class="wp-block-image">
 
 <img src="http://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="http://testgatsby.localfind-index.png 1680w, http://testgatsby.localfind-index-300x113.png 300w, http://testgatsby.localfind-index-768x288.png 768w, http://testgatsby.localfind-index-1024x384.png 1024w, http://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
 
@@ -74,7 +74,7 @@ Above example shows how we can find an object inside an array using find() metho
 
 
 ```
-let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {&lt;br/>  return i % 2 !== 0;&lt;br/>}&lt;br/>//return the number this time</code><br />arr.find(isOdd);<br />// 49
+let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br /><code>function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the number this time</code><br />arr.find(isOdd);<br />// 49
 ```
 
 
@@ -94,7 +94,7 @@ Finally take a look at this example to find the element inside the array. If we 
 
 
 ```
-<code>function updateVegetablesCollection (veggies, veggie) {&lt;br/>    // do we have a veggie by id of -1 ? &lt;strong>&lt;code>(means does not exist)</code>
+<code>function updateVegetablesCollection (veggies, veggie) {<br/>    // do we have a veggie by id of -1 ? <strong><code>(means does not exist)</code>
     if (veggies.indexOf(veggie) === -1) {<br />    // add it to array if not
         veggies.push(veggie);
         console.log('New veggies collection is : ' + veggies);<br />    // already exists? report it then
@@ -108,7 +108,7 @@ var veggies = ['potato', 'tomato', 'chillies', 'green-pepper'];
 updateVegetablesCollection(veggies, 'spinach'); 
 // New veggies collection is : potato,tomato,chillies,green-pepper,spinach
 updateVegetablesCollection(veggies, 'spinach'); 
-// spinach already exists in the veggies collection.&lt;/code>&lt;/strong></pre>
+// spinach already exists in the veggies collection.</code></strong></pre>
 
 Nice and sweet. Practically we could use these useful methods in different use cases specifying various conditions. We just need to know which one suits in the situation the best. Find an element value and do something with it using its index with indexOf(). Use find() method to actually find an element passing a function to test the condition. And with findIndex() find out which element first meets your condition as specified. 
 

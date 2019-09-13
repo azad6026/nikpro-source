@@ -58,7 +58,7 @@ Eventually we can create arrays from mapped objects or a set object using both a
 
 
 ```
-<code>var m = new Map([[1, 2], [2, 4], [4, 8]]);&lt;br/>&lt;br/>// Using from method 
+<code>var m = new Map([[1, 2], [2, 4], [4, 8]]);<br/><br/>// Using from method 
 Array.from(m);</code><br /><br />// Using spread syntax<br />[...m];
 ```
 
@@ -67,7 +67,7 @@ Moreover we can use them both on a set object:
 
 
 ```
-<code>var s = new Set(['foo', window]); &lt;br/>&lt;br/>//Using from method&lt;br/>Array.from(s);&lt;br/>&lt;br/>//Using spread syntax</code><br />[...s];
+<code>var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s);<br/><br/>//Using spread syntax</code><br />[...s];
 ```
 
 

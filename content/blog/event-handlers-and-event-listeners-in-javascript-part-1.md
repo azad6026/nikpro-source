@@ -31,43 +31,43 @@ Each available event will have an event handler which is a block of code that ru
 //The HTML
 
 <p class="brush: html line-numbers  language-html">
-  <code class=" language-html">&lt;span class="token tag">&lt;span class="token punctuation">&lt;&lt;/span>button&lt;span class="token punctuation">&gt;&lt;/span>&lt;/span>Change color&lt;span class="token tag">&lt;span class="token punctuation">&lt;/&lt;/span>button&lt;span class="token punctuation">&gt;&lt;/p>
-&lt;p>&lt;/span>&lt;/span></code>//the Javascript
+  <code class=" language-html"><span class="token tag"><span class="token punctuation"><</span>button<span class="token punctuation">></span></span>Change color<span class="token tag"><span class="token punctuation"></</span>button<span class="token punctuation">></p>
+<p></span></span></code>//the Javascript
 </p>
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">var&lt;/span> btn &lt;span class="token operator">=&lt;/span> document&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">querySelector&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'button'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code></pre>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn&lt;span class="token punctuation">.&lt;/span>onclick &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">function&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">  document&lt;span class="token punctuation">.&lt;/span>body&lt;span class="token punctuation">.&lt;/span>style&lt;span class="token punctuation">.&lt;/span>backgroundColor &lt;span class="token operator">=&lt;/span> "red"&lt;span class="token punctuation">;&lt;/span> </code>
+  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> "red"<span class="token punctuation">;</span> </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token punctuation">}&lt;/span></code>
+  <code class=" language-js"><span class="token punctuation">}</span></code>
 </p>
 
 Or to makeit more readable you could do this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token keyword">function&lt;/span> &lt;span class="token function">bgChange&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+  <code class=" language-js"><span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">  document&lt;span class="token punctuation">.&lt;/span>body&lt;span class="token punctuation">.&lt;/span>style&lt;span class="token punctuation">.&lt;/span>backgroundColor &lt;span class="token operator">=&lt;/span> "red"&lt;span class="token punctuation">;&lt;/span> </code>
+  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> "red"<span class="token punctuation">;</span> </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token punctuation">}&lt;/span> </code>
+  <code class=" language-js"><span class="token punctuation">}</span> </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn&lt;span class="token punctuation">.&lt;/span>onclick &lt;span class="token operator">=&lt;/span> bgChange&lt;span class="token punctuation">;&lt;br />
-&lt;/span></code><br /> But the output is the same and clicking the button will change the background colour.
+  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> bgChange<span class="token punctuation">;<br />
+</span></code><br /> But the output is the same and clicking the button will change the background colour.
 </p>
 
 Lets now have a look of how we could implement event handlers and which one is better.
@@ -76,25 +76,25 @@ Lets now have a look of how we could implement event handlers and which one is b
 
 It mixes your Javascript with HTML by attaching the event directly to an attribute of HTML code:
 
-<pre class="brush: html line-numbers  language-html"><code class=" language-html">&lt;span class="token tag">&lt;span class="token punctuation">&lt;&lt;/span>button &lt;span class="token attr-name">onclick&lt;/span>&lt;span class="token attr-value">&lt;span class="token punctuation">=&lt;/span>&lt;span class="token punctuation">"&lt;/span>bgChange()&lt;span class="token punctuation">"&lt;/span>&lt;/span>&lt;span class="token punctuation">&gt;&lt;/span>&lt;/span>Press me&lt;span class="token tag">&lt;span class="token punctuation">&lt;/&lt;/span>button&lt;span class="token punctuation">&gt;&lt;/span>&lt;/span></code></pre>
+<pre class="brush: html line-numbers  language-html"><code class=" language-html"><span class="token tag"><span class="token punctuation"><</span>button <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bgChange()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Press me<span class="token tag"><span class="token punctuation"></</span>button<span class="token punctuation">></span></span></code></pre>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token keyword">function&lt;/span> &lt;span class="token function">bgChange&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span></code>
+  <code class=" language-js"><span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">  document&lt;span class="token punctuation">.&lt;/span>body&lt;span class="token punctuation">.&lt;/span>style&lt;span class="token punctuation">.&lt;/span>backgroundColor &lt;span class="token operator">=&lt;/span> "red"&lt;span class="token punctuation">;&lt;/span> </code>
+  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> "red"<span class="token punctuation">;</span> </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token punctuation">}&lt;/span></code><br /> Here we have assigned the bgChange function to onclick event of the button. This mix is a bad practice and could cause lots of problems in your code. Wha if you need to do the same action for multiple buttons? You will add lots of attributes?
+  <code class=" language-js"><span class="token punctuation">}</span></code><br /> Here we have assigned the bgChange function to onclick event of the button. This mix is a bad practice and could cause lots of problems in your code. Wha if you need to do the same action for multiple buttons? You will add lots of attributes?
 </p>
 
 Another approach in this case is to put the function body inside the HTML code as well:
 
 <p class="brush: html line-numbers  language-html">
-  <code class=" language-html">&lt;span class="token tag">&lt;span class="token punctuation">&lt;&lt;/span>button &lt;span class="token attr-name">onclick&lt;/span>&lt;span class="token attr-value">&lt;span class="token punctuation">=&lt;/span>&lt;span class="token punctuation">"&lt;/span>alert(&lt;span class="token punctuation">'&lt;/span>Hello, this is my old-fashioned event handler!&lt;span class="token punctuation">'&lt;/span>);&lt;span class="token punctuation">"&lt;/span>&lt;/span>&lt;span class="token punctuation">&gt;&lt;/span>&lt;/span>Press me&lt;span class="token tag">&lt;span class="token punctuation">&lt;/&lt;/span>button&lt;span class="token punctuation">&gt;&lt;/p>
-&lt;p>&lt;/span>&lt;/span></code>
+  <code class=" language-html"><span class="token tag"><span class="token punctuation"><</span>button <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert(<span class="token punctuation">'</span>Hello, this is my old-fashioned event handler!<span class="token punctuation">'</span>);<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Press me<span class="token tag"><span class="token punctuation"></</span>button<span class="token punctuation">></p>
+<p></span></span></code>
 </p>
 
 Separating your programming logic from your content also makes your site more friendly to search engines. It takes us to the next approach.
@@ -103,27 +103,27 @@ Separating your programming logic from your content also makes your site more fr
 
 This is [the newer approach](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) that is quiet similar to event handler approach but with a different syntax:
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">var&lt;/span> btn &lt;span class="token operator">=&lt;/span> document&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">querySelector&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'button'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token keyword">function&lt;/span> &lt;span class="token function">bgChange&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  document&lt;span class="token punctuation">.&lt;/span>body&lt;span class="token punctuation">.&lt;/span>style&lt;span class="token punctuation">.&lt;/span>backgroundColor &lt;span class="token operator">=&lt;/span> "red"&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>   
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> "red"<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>   
 
-btn&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">addEventListener&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'click'&lt;/span>&lt;span class="token punctuation">,&lt;/span> bgChange&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code></pre>
+btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> bgChange<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
 We have two parameters inside the addEventListener. First one is the event name and the second is the handler function to run in response to the event. We could also put all the code inside the second parameter like this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">addEventListener&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'click'&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token keyword">function&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+  <code class=" language-js">btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">  document&lt;span class="token punctuation">.&lt;/span>body&lt;span class="token punctuation">.&lt;/span>style&lt;span class="token punctuation">.&lt;/span>backgroundColor &lt;span class="token operator">=&lt;/span>"red"&lt;span class="token punctuation">;&lt;/span>&lt;br />
-&lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code><br /> We could also remove the listener:
+  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span>"red"<span class="token punctuation">;</span><br />
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><br /> We could also remove the listener:
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">removeEventListener&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'click'&lt;/span>&lt;span class="token punctuation">,&lt;/span> bgChange&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code>
+  <code class=" language-js">btn<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> bgChange<span class="token punctuation">)</span><span class="token punctuation">;</span></code>
 </p>
 
 With event listeners multiple functions could have same code in response to an event. 
@@ -131,24 +131,24 @@ With event listeners multiple functions could have same code in response to an e
 In the inline approach, we cannot have multiple handlers on the same event for an element so this will not work:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement&lt;span class="token punctuation">.&lt;/span>onclick &lt;span class="token operator">=&lt;/span> functionA&lt;span class="token punctuation">;&lt;/span>&lt;br />
+  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionA<span class="token punctuation">;</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement&lt;span class="token punctuation">.&lt;/span>onclick &lt;span class="token operator">=&lt;/span> functionB&lt;span class="token punctuation">;&lt;br />
-&lt;/span></code>
+  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionB<span class="token punctuation">;<br />
+</span></code>
 </p>
 
 But with Event Listeners we could do this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">addEventListener&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'click'&lt;/span>&lt;span class="token punctuation">,&lt;/span> functionA&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;br />
+  <code class=" language-js">myElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> functionA<span class="token punctuation">)</span><span class="token punctuation">;</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">addEventListener&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'click'&lt;/span>&lt;span class="token punctuation">,&lt;/span> functionB&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code>
+  <code class=" language-js">myElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> functionB<span class="token punctuation">)</span><span class="token punctuation">;</span></code>
 </p>
 
 Both functions will run when the element is clicked.

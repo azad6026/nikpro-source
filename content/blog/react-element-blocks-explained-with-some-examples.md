@@ -23,7 +23,7 @@ This is a simple example of how to render a simple React element into the root o
 
 
 ```
-<code>const element = &lt;h1>Hello, world&lt;/h1>;
+<code>const element = <h1>Hello, world</h1>;
 ReactDOM.render(element, document.getElementById('root'));</code>
 ```
 
@@ -36,11 +36,11 @@ The element is actually a HTML code that could be considered as our view which w
 
 
 ```
-<code>&lt;button class='button button-blue'>
-  &lt;b>
+<code><button class='button button-blue'>
+  <b>
     OK!
-  &lt;/b>
-&lt;/button></code>
+  </b>
+</button></code>
 ```
 
 
@@ -68,11 +68,11 @@ Moreover take a look at this example also which is a component described by Reac
 
 ```
 <code>const DeleteAccount = () => (
-  &lt;div>
-    &lt;p>Are you sure?&lt;/p>
-    &lt;DangerButton>Yep&lt;/DangerButton>
-    &lt;Button color='blue'>Cancel&lt;/Button>
-  &lt;/div>
+  <div>
+    <p>Are you sure?</p>
+    <DangerButton>Yep</DangerButton>
+    <Button color='blue'>Cancel</Button>
+  </div>
 );</code>
 ```
 

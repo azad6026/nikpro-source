@@ -32,7 +32,7 @@ var obj = { 0: 'a', 1: 'b', 2: 'c' };
 console.log(Object.keys(obj)); // console: ['0', '1', '2']
 
 // array like object with random key ordering
-&lt;strong>&lt;code>cons&lt;span style="background-color: rgb(243, 244, 245);">t&lt;/span></code> anObj = { 100: 'a', 2: 'b', 7: 'c' };
+<strong><code>cons<span style="background-color: rgb(243, 244, 245);">t</span></code> anObj = { 100: 'a', 2: 'b', 7: 'c' };
 console.log(Object.keys(anObj)); // console: ['2', '7', '100']
 
 // getFoo is a property which isn't enumerable
@@ -42,7 +42,7 @@ var myObj = Object.create({}, {
   } 
 });
 myObj.foo = 1;
-console.log(Object.keys(myObj)); // console: ['foo']&lt;/code>&lt;/strong></pre>
+console.log(Object.keys(myObj)); // console: ['foo']</code></strong></pre>
 
 Also we can even use it to get keys from a non object argument as well. Although it is only in ES6 and in older version in gives a TypeError:
 

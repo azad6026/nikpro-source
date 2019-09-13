@@ -28,7 +28,7 @@ Practically we could use CSS variables anywhere we like. One of the good options
 
 
 ```
-<code>:root {&lt;br/>  --mainColor: #f06d06;&lt;br/>}</code>
+<code>:root {<br/>  --mainColor: #f06d06;<br/>}</code>
 ```
 
 
@@ -36,7 +36,7 @@ Therefor we have an input to make the changes:
 
 
 ```
-&lt;input type="color" />
+<input type="color" />
 ```
 
 
@@ -88,7 +88,7 @@ Also this is the code for the small fishes moving around. Each one with differen
 
 
 ```
-<code>.small-fish {&lt;br/>  --dir-left: -800px;&lt;br/>  --dir-right: 800px;&lt;br/>  --transparency: 0;&lt;br/>}&lt;br/>  0% {&lt;br/>    transform: translatex(var(--dir-right));&lt;br/>  }&lt;br/>  50% {&lt;br/>    opacity: calc(var(--transparency) + 0.3);&lt;br/>  }&lt;br/>  100% {&lt;br/>    transform: translatex(var(--dir-left));&lt;br/>    opacity: var(--transparency);&lt;br/>  }&lt;br/>}</code>
+<code>.small-fish {<br/>  --dir-left: -800px;<br/>  --dir-right: 800px;<br/>  --transparency: 0;<br/>}<br/>  0% {<br/>    transform: translatex(var(--dir-right));<br/>  }<br/>  50% {<br/>    opacity: calc(var(--transparency) + 0.3);<br/>  }<br/>  100% {<br/>    transform: translatex(var(--dir-left));<br/>    opacity: var(--transparency);<br/>  }<br/>}</code>
 ```
 
 

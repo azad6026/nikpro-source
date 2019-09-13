@@ -20,11 +20,11 @@ Background-size property is a very useful property to adjust the image backgroun
 
 Basically we could use background-size property with one and two values and keywords:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>// Keyword values&lt;/strong></code> <code>&lt;strong>background-size: cover;&lt;/strong></code> <code>&lt;strong>background-size: contain;&lt;/strong></code> // two values ( width and height ) using different size units <code>&lt;strong>background-size: width height;&lt;/strong></code> // One value ( Only weight, the height is auto) <code>&lt;strong>background-size: width;&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>// Keyword values</strong></code> <code><strong>background-size: cover;</strong></code> <code><strong>background-size: contain;</strong></code> // two values ( width and height ) using different size units <code><strong>background-size: width height;</strong></code> // One value ( Only weight, the height is auto) <code><strong>background-size: width;</strong></code></pre>
 
 We can also have multiple backgrounds which we will seperate the values by coma. We can use any [CSS size units ](http://css-tricks.com/the-lengths-of-css/), including pixels, percentages, ems, viewport units, etc.:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>background-size: 6px, auto, contain;&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>background-size: 6px, auto, contain;</strong></code></pre>
 
 ## What background-size does exactly?
 

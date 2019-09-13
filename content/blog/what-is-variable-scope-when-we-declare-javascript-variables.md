@@ -34,7 +34,7 @@ Firstly here is an example for &#8220;var&#8221; which each scope has been clari
 
 
 ```
-var x = "hello world"; // scope of x: global<br />function foo() {<br />  var a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    var b = 3; // scope of b: foo<br />  }<br />  {<br />    var e = 10; // scope of e: foo<br />  }<br />  while(a &lt; 2) {<br />    var d = 5; // scope of d: foo<br />  }<br />}
+var x = "hello world"; // scope of x: global<br />function foo() {<br />  var a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    var b = 3; // scope of b: foo<br />  }<br />  {<br />    var e = 10; // scope of e: foo<br />  }<br />  while(a < 2) {<br />    var d = 5; // scope of d: foo<br />  }<br />}
 ```
 
 
@@ -46,7 +46,7 @@ Secondly we have the same example with &#8220;let&#8221; and the scopes are writ
 
 
 ```
-let x = "hello world"; // scope of x: global<br />function foo() {<br />  let a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    let b = 3; // scope of b: if statement<br />  }<br />  {<br />    let e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    let d = 5; // scope of d: while loop<br />  }<br />}
+let x = "hello world"; // scope of x: global<br />function foo() {<br />  let a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    let b = 3; // scope of b: if statement<br />  }<br />  {<br />    let e = 10; // scope of e: surrounding block<br />  }<br />  while(a < 2) {<br />    let d = 5; // scope of d: while loop<br />  }<br />}
 ```
 
 
@@ -62,7 +62,7 @@ Finally with &#8220;const&#8221; we have exactly the same result regarding to va
 
 
 ```
-const x = "hello world"; // scope of x: global<br />function foo() {<br />  const a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    const b = 3; // scope of b: if statement<br />  }<br />  {<br />    const e = 10; // scope of e: surrounding block<br />  }<br />  while(a &lt; 2) {<br />    const d = 5; // scope of d: while loop<br />  }<br />}
+const x = "hello world"; // scope of x: global<br />function foo() {<br />  const a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    const b = 3; // scope of b: if statement<br />  }<br />  {<br />    const e = 10; // scope of e: surrounding block<br />  }<br />  while(a < 2) {<br />    const d = 5; // scope of d: while loop<br />  }<br />}
 ```
 
 

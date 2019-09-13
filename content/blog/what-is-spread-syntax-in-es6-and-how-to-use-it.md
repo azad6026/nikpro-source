@@ -26,22 +26,22 @@ Let us have a look at some of its usages to get a better idea:
 To call a function with array argument we needed to use apply and use this syntax:
 
 <p class=" language-js">
-  <code>&lt;span class="token keyword">function&lt;/span> doSomething &lt;span class="token punctuation">(&lt;/span>x&lt;span class="token punctuation">,&lt;/span> y&lt;span class="token punctuation">,&lt;/span> z&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;br />
+  <code><span class="token keyword">function</span> doSomething <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><br />
 </code>
 </p>
 
 <p class=" language-js">
-  <code>&lt;span class="token keyword">var&lt;/span> args &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">0&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">2&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;br />
+  <code><span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
 </code>
 </p>
 
 <p class=" language-js">
-  <code>&lt;span class="token comment" spellcheck="true">// Call the function, passing args&lt;/span>&lt;br />
+  <code><span class="token comment" spellcheck="true">// Call the function, passing args</span><br />
 </code>
 </p>
 
 <p class=" language-js">
-  <code>&lt;span class="token punctuation">doSomething.&lt;/span>&lt;span class="token function">apply&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">null&lt;/span>&lt;span class="token punctuation">,&lt;/span> args&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span></code>
+  <code><span class="token punctuation">doSomething.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span></code>
 </p>
 
 This old problem has been solved using the spread operator. So we can now omit apply and use the spread syntax to call the function like this:
@@ -64,13 +64,13 @@ To copy an array we pass a reference to the second one so they will have same va
               <div class="CodeMirror-code" role="presentation">
                 <div>
                   <p class=" CodeMirror-line " role="presentation">
-                    <code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr&lt;/span> &lt;span class="cm-operator">=&lt;/span> [&lt;span class="cm-string">'a'&lt;/span>, &lt;span class="cm-string">'b'&lt;/span>, &lt;span class="cm-string">'c'&lt;/span>];&lt;/span></code>
+                    <code><span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr</span> <span class="cm-operator">=</span> [<span class="cm-string">'a'</span>, <span class="cm-string">'b'</span>, <span class="cm-string">'c'</span>];</span></code>
                   </p>
                 </div>
                 
-                <pre class=" CodeMirror-line " role="presentation"><code>&lt;span role="presentation">&lt;span class="cm-keyword">var&lt;/span> &lt;span class="cm-def">arr2&lt;/span> &lt;span class="cm-operator">=&lt;/span> &lt;span class="cm-variable">arr&lt;/span>;
+                <pre class=" CodeMirror-line " role="presentation"><code><span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr</span>;
 
-&lt;/span>console.&lt;span class="cm-property">log&lt;/span>(&lt;span class="cm-variable">arr2&lt;/span>);</code>
+</span>console.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>);</code>
 ```
 
               </div>
@@ -87,7 +87,7 @@ To copy an array we pass a reference to the second one so they will have same va
     <div class="embedStyle_1ki8n3b object-description">
       <div class="value_142hmgp-o_O-monospace_5jrb82 flexBox">
         <p>
-          <code>&lt;span class="normal_t5s8ur">&lt;span class="fixme-test-wrapper">output: [&lt;span class="type-string">"a"&lt;/span>, &lt;span class="type-string">"b"&lt;/span>, &lt;span class="type-string">"c"&lt;/span>]&lt;/span>&lt;/span></code>
+          <code><span class="normal_t5s8ur"><span class="fixme-test-wrapper">output: [<span class="type-string">"a"</span>, <span class="type-string">"b"</span>, <span class="type-string">"c"</span>]</span></span></code>
         </p>
         
         <p>
@@ -95,15 +95,15 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>arr2.push('d');&lt;/strong></code>
+          <code><strong>arr2.push('d');</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(arr);&lt;/strong></code>
+          <code><strong>console.log(arr);</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>output: ['a', 'b', 'c', 'd']&lt;/strong></code>
+          <code><strong>output: ['a', 'b', 'c', 'd']</strong></code>
         </p>
         
         <p>
@@ -111,19 +111,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>var arr = ['a', 'b', 'c'];&lt;/strong></code>
+          <code><strong>var arr = ['a', 'b', 'c'];</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>var arr2 = [...arr]; // this is where the magic happens&lt;/strong></code>
+          <code><strong>var arr2 = [...arr]; // this is where the magic happens</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(arr2);&lt;/strong></code>
+          <code><strong>console.log(arr2);</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>output: ['a', 'b', 'c']&lt;/strong></code>
+          <code><strong>output: ['a', 'b', 'c']</strong></code>
         </p>
         
         <p>
@@ -131,15 +131,15 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>arr2.push('d');&lt;/strong></code>
+          <code><strong>arr2.push('d');</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(arr);&lt;/strong></code>
+          <code><strong>console.log(arr);</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>output: ['a', 'b', 'c']&lt;/strong></code>
+          <code><strong>output: ['a', 'b', 'c']</strong></code>
         </p>
         
         <p>
@@ -155,19 +155,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>var str = "hello";&lt;/strong></code>
+          <code><strong>var str = "hello";</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>var chars = [...str];&lt;/strong></code>
+          <code><strong>var chars = [...str];</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(chars);&lt;/strong></code>
+          <code><strong>console.log(chars);</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>output: [&lt;span class="type-string">"h"&lt;/span>, &lt;span class="type-string">"e"&lt;/span>, &lt;span class="type-string">"l"&lt;/span>, &lt;span class="type-string">"l"&lt;/span>, &lt;span class="type-string">"o"&lt;/span>]&lt;/strong></code>
+          <code><strong>output: [<span class="type-string">"h"</span>, <span class="type-string">"e"</span>, <span class="type-string">"l"</span>, <span class="type-string">"l"</span>, <span class="type-string">"o"</span>]</strong></code>
         </p>
         
         <h2>
@@ -179,15 +179,15 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>var mid = [3, 4];&lt;/strong></code>
+          <code><strong>var mid = [3, 4];</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>var arr = [1, 2, mid, 5, 6];&lt;/strong></code>
+          <code><strong>var arr = [1, 2, mid, 5, 6];</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(arr);&lt;/strong></code>
+          <code><strong>console.log(arr);</strong></code>
         </p>
         
         <p>
@@ -199,41 +199,41 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code>&lt;strong>var mid = [3, 4];&lt;/strong></code></span>
+          <span style="font-family: georgia, palatino, serif;"><code><strong>var mid = [3, 4];</strong></code></span>
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code>&lt;strong>var arr = [1, 2, ...mid, 5, 6];&lt;/strong></code></span>
+          <span style="font-family: georgia, palatino, serif;"><code><strong>var arr = [1, 2, ...mid, 5, 6];</strong></code></span>
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code>&lt;strong>console.log(arr);&lt;/strong></code></span>
+          <span style="font-family: georgia, palatino, serif;"><code><strong>console.log(arr);</strong></code></span>
         </p>
         
         <p id="2b6d" class="graf graf--pre graf-after--p">
-          <code>&lt;strong>&lt;span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]&lt;/span>&lt;br />
-&lt;/strong></code>
+          <code><strong><span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]</span><br />
+</strong></code>
         </p>
         
         <p class="graf graf--pre graf-after--p">
-          As we expected. Also there are other ways of using spread operator to combine arrays:<code>&lt;strong>&lt;br />
-&lt;/strong></code>
+          As we expected. Also there are other ways of using spread operator to combine arrays:<code><strong><br />
+</strong></code>
         </p>
         
         <p class=" language-js">
-          <code>&lt;strong> // Adds arr2 items to end of array&lt;/strong></code>
+          <code><strong> // Adds arr2 items to end of array</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>arr1.push(...arr2)&lt;/strong></code>
+          <code><strong>arr1.push(...arr2)</strong></code>
         </p>
         
         <p class=" language-js">
-          <code>&lt;strong>//Adds arr2 items to the beginning of array&lt;/strong></code>
+          <code><strong>//Adds arr2 items to the beginning of array</strong></code>
         </p>
         
         <p class=" language-js">
-          <code></code><code>&lt;strong>arr1.unshift(...arr2) &lt;/strong></code>
+          <code></code><code><strong>arr1.unshift(...arr2) </strong></code>
         </p>
         
         <h2>
@@ -245,12 +245,12 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p class=" language-js">
-          <code>&lt;strong>&lt;span class="token keyword">let&lt;/span> numbers &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>&lt;span class="token number">9&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">4&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">7&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">1&lt;/span>&lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;br />
-&lt;/strong></code>
+          <code><strong><span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
+</strong></code>
         </p>
         
         <p class=" language-js">
-          <code>&lt;strong>Math&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">max&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token operator">...&lt;/span>numbers&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// outputs: 9&lt;/span>&lt;/strong></code>
+          <code><strong>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>numbers<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// outputs: 9</span></strong></code>
         </p>
         
         <p>
@@ -266,19 +266,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code>&lt;strong>let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };&lt;/strong></code>
+          <code><strong>let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(x); // 1&lt;/strong></code>
+          <code><strong>console.log(x); // 1</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(y); // 2&lt;/strong></code>
+          <code><strong>console.log(y); // 2</strong></code>
         </p>
         
         <p>
-          <code>&lt;strong>console.log(z); // { a: 3, b: 4 } &lt;/strong></code>
+          <code><strong>console.log(z); // { a: 3, b: 4 } </strong></code>
         </p>
         
         <p>

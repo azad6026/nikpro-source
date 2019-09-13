@@ -31,15 +31,15 @@ No matter what you use to build a site, you will need a structure. And the most 
 
 Basically in the first glance we see our major components here:
 
-<pre >&lt;Layout>  
-    &lt;Header/>
-    &lt;Content>
-      &lt;Nav/>
-      &lt;Main/>
-      &lt;Sidebar/>
-    &lt;/Content>
-    &lt;Footer/>
-&lt;/Layout>
+<pre ><Layout>  
+    <Header/>
+    <Content>
+      <Nav/>
+      <Main/>
+      <Sidebar/>
+    </Content>
+    <Footer/>
+</Layout>
 ```
 
 
@@ -55,10 +55,10 @@ Generally these are the building blocks of any web application. And understandin
 
 Preferably we will move navigation inside header as it is more suited there for most use cases. Most likely we will have a logo or brand on top of the application as well. As a result we will have a complete Header component like this:
 
-<pre >&lt;Header/>
-    &lt;Brand>
-    &lt;Nav/>
-&lt;Header/>
+<pre ><Header/>
+    <Brand>
+    <Nav/>
+<Header/>
 ```
 
 
@@ -67,10 +67,10 @@ Preferably we will move navigation inside header as it is more suited there for 
 Speaking of the main component always mean the man content. It could be built of a massive component tree that is hard to maintain. But a good structure never fails even if it looks complex. Our main component here is the Content component:
 
 <pre >   
-&lt;Content>
-    &lt;Main/>
-    &lt;Sidebar/>
-&lt;/Content>
+<Content>
+    <Main/>
+    <Sidebar/>
+</Content>
 
 ```
 
@@ -78,11 +78,11 @@ Speaking of the main component always mean the man content. It could be built of
 Surely we could break it down to inner components as we build the structure. Usually the **Main component** is the main article or story in the website. Alternatively it could be the loop of your blog posts. Either way it is content and needs a structure of content:
 
 <pre >   
-&lt;Main>
-    &lt;Image/>
-    &lt;Title/>
-    &lt;Text/>
-&lt;/Main>
+<Main>
+    <Image/>
+    <Title/>
+    <Text/>
+</Main>
 
 ```
 
@@ -90,18 +90,18 @@ Surely we could break it down to inner components as we build the structure. Usu
 Absolutely no surprise that everything including image is a component. This is how Gatsby structures the applications and it is how it should be. Links are also components in gatsby. We could extend our content further:
 
 <pre >   
-&lt;Main>
-    &lt;Image/>
-    &lt;Title/>
-    &lt;Article>
-    &lt;SubTitle/>
-        &lt;Paragraph/>
-        &lt;Link/>
-        &lt;Paragraph/>
-        &lt;Image/>
-        &lt;Paragraph/>
-    &lt;/Article>
-&lt;/Main>
+<Main>
+    <Image/>
+    <Title/>
+    <Article>
+    <SubTitle/>
+        <Paragraph/>
+        <Link/>
+        <Paragraph/>
+        <Image/>
+        <Paragraph/>
+    </Article>
+</Main>
 
 ```
 
@@ -116,7 +116,7 @@ Therefore it goes on and on. But we know it is maintainable and easy to understa
 <pre >
 // Part of an Image component
 const Image = props => (
-  &lt;img src={props.src} alt={props.alt}/>
+  <img src={props.src} alt={props.alt}/>
 )
 
 ```
@@ -125,7 +125,7 @@ const Image = props => (
 Practically we use it like below. Simple but powerful:
 
 <pre >
-&lt;Image src="http://link.com" alt ="some text"/>
+<Image src="http://link.com" alt ="some text"/>
 
 ```
 

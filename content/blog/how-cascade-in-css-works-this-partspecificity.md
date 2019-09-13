@@ -41,9 +41,9 @@ As a rule don&#8217;t use !important unless you have no other choice. It breaks 
 
 
 ```
-<code>&lt;div id="test">
-  &lt;span>Text&lt;/span>
-&lt;/div>&lt;br/></code><br /><code>div#test span { color: green; }
+<code><div id="test">
+  <span>Text</span>
+</div><br/></code><br /><code>div#test span { color: green; }
 div span { color: blue; }
 span { color: red; }</code>
 ```
@@ -58,8 +58,8 @@ As mentioned in the [previous](http://www.nikpro.com.au/how-cascade-in-css-works
 
 ```
 <code>table tr td   { width: 50px !important; }
-.myTable tr td { &lt;strong>&lt;code>width</code>: 50px !important; }
-#myTable tr td { <code>width</code>: 50px !important; }<br /><br />// Or add the same selector later on<br /><code>tr td { &lt;strong>&lt;code>width</code>&lt;/strong>: 50px !important; }&lt;/code><br />&lt;/code>&lt;/strong></pre>
+.myTable tr td { <strong><code>width</code>: 50px !important; }
+#myTable tr td { <code>width</code>: 50px !important; }<br /><br />// Or add the same selector later on<br /><code>tr td { <strong><code>width</code></strong>: 50px !important; }</code><br /></code></strong></pre>
 
 ### Direct target wins over inheritance
 
@@ -67,16 +67,16 @@ We need to know that directly target an element is more specific over inheritanc
 
 
 ```
-<code>&lt;div>
-  &lt;article id="parent">
-    &lt;h1>Here is a title!&lt;/h1>
-  &lt;/article>
-&lt;/div>&lt;br/>&lt;br/>&lt;code>#parent {
+<code><div>
+  <article id="parent">
+    <h1>Here is a title!</h1>
+  </article>
+</div><br/><br/><code>#parent {
   color: green;
 }
 h1 {
   color: purple;
-}</code>&lt;/code>
+}</code></code>
 ```
 
 

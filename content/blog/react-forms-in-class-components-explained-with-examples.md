@@ -21,13 +21,13 @@ Typically the React forms markup looks like HTML code. But we know it will be re
 
 
 ```
-<code>&lt;form>
-  &lt;label>
+<code><form>
+  <label>
     Title:
-    &lt;input type="text" name="title" />
-  &lt;/label>
-  &lt;input type="submit" value="Submit" />
-&lt;/form></code>
+    <input type="text" name="title" />
+  </label>
+  <input type="submit" value="Submit" />
+</form></code>
 ```
 
 
@@ -35,13 +35,13 @@ Basically it is a simple HTML form. We need to add the event handlers and value 
 
 
 ```
-<code> &lt;form onSubmit={this.handleSubmit}>
-        &lt;label>
+<code> <form onSubmit={this.handleSubmit}>
+        <label>
           Title:
-          &lt;input type="text" value={this.state.title} onChange={this.handleChange} />
-        &lt;/label>
-        &lt;input type="submit" value="Submit" />
-      &lt;/form></code>
+          <input type="text" value={this.state.title} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form></code>
 ```
 
 
@@ -98,14 +98,14 @@ handleSubmit = (event) => {
     event.preventDefault();
 }
     render() {
-        return (<br /><code>        &lt;React.Fragment>
-            &lt;form onSubmit={this.handleSubmit}>
-                &lt;lablel>
-                    Title:&lt;br/>                        &lt;input type="text" name="title" &lt;br/>                         value={this.state.title} &lt;br/>                         onChange={this.handleChange}/>
-                &lt;/lablel>
-                &lt;input type="submit" value="submit" />
-            &lt;/form>
-        &lt;/React.Fragment></code> ); } <br />}
+        return (<br /><code>        <React.Fragment>
+            <form onSubmit={this.handleSubmit}>
+                <lablel>
+                    Title:<br/>                        <input type="text" name="title" <br/>                         value={this.state.title} <br/>                         onChange={this.handleChange}/>
+                </lablel>
+                <input type="submit" value="submit" />
+            </form>
+        </React.Fragment></code> ); } <br />}
 ```
 
 

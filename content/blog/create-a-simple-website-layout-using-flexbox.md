@@ -22,7 +22,7 @@ To create the simple website layout using FlexBox we create a simple markup firs
 
 
 ```
-&lt;body><br />  &lt;header>Header&lt;/header><br />  &lt;main><br />    &lt;article>Article&lt;/article><br />    &lt;nav>Nav&lt;/nav><br />    &lt;aside>Aside&lt;/aside><br />  &lt;/main><br />  &lt;footer>Footer&lt;/footer><br />&lt;/body>
+<body><br />  <header>Header</header><br />  <main><br />    <article>Article</article><br />    <nav>Nav</nav><br />    <aside>Aside</aside><br />  </main><br />  <footer>Footer</footer><br /></body>
 ```
 
 

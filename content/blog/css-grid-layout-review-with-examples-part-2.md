@@ -19,7 +19,7 @@ In this post we check some more examples and will learn more syntaxes and ideas 
 
 ### Line-based placement named lines with spans
 
-You can give lines (grid line) the same name and then use the span keyword to target lines of a certain name.  Here we start at a certain column line by using <code class="highlighter-rouge">col &lt;line number&gt;</code> and span by saying <code class="highlighter-rouge">span &lt;number of lines&gt;</code>. See below:
+You can give lines (grid line) the same name and then use the span keyword to target lines of a certain name.  Here we start at a certain column line by using <code class="highlighter-rouge">col <line number></code> and span by saying <code class="highlighter-rouge">span <number of lines></code>. See below:
 
 <p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="oXKgeQ" data-default-tab="css,result" data-user="rachelandrew" data-embed-version="2" data-pen-title="Grid by Example 8: Line-based placement named lines with span">
   See the Pen <a href="https://codepen.io/rachelandrew/pen/oXKgeQ/">Grid by Example 8: Line-based placement named lines with span</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.

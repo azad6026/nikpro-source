@@ -38,8 +38,8 @@ According to Rect docs we **should not call `setState()`** in the `construc
 ```
 <code>constructor(props) {
   super(props);
-  // Don't call this.setState() here!&lt;br/>  // initialise state
-  this.state = { counter: 0 };&lt;br/>  // bund methods
+  // Don't call this.setState() here!<br/>  // initialise state
+  this.state = { counter: 0 };<br/>  // bund methods
   this.handleClick = this.handleClick.bind(this);
 }</code>
 ```
@@ -82,9 +82,9 @@ Technically we need only this  component lifecycle method as a required one in 
 class App extends Component {
   render() {
     return (
-      &lt;div>
-          &lt;h1 className="App-title">Welcome to React&lt;/h1>
-      &lt;/div>
+      <div>
+          <h1 className="App-title">Welcome to React</h1>
+      </div>
     );
   }
 }<br /></pre>

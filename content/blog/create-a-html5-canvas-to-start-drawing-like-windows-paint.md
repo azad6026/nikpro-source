@@ -15,7 +15,7 @@ tags:
   - draw
   - 'HTML% canvas'
 ---
-In this post we will create a HTML5 canvas element to start drawing. We will learn about canvas behaviour in action. Added in HTML5 like [many other tags](http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/), the **HTML <a style="text-decoration: none; color: #3f87a6; margin: 0px; padding: 0px; border: 0px;" title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a> element** can be used to draw graphics via scripting in JavaScript.  We sill create an example based on a <a href="http://www.wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> course example and will explain the code in details. 
+In this post we will create a HTML5 canvas element to start drawing. We will learn about canvas behaviour in action. Added in HTML5 like [many other tags](http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/), the **HTML <a style="text-decoration: none; color: #3f87a6; margin: 0px; padding: 0px; border: 0px;" title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"><code><canvas></code></a> element** can be used to draw graphics via scripting in JavaScript.  We sill create an example based on a <a href="http://www.wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> course example and will explain the code in details. 
 
 This is what we are going to explain:
 

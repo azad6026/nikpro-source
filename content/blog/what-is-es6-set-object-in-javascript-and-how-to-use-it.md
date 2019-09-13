@@ -68,7 +68,7 @@ As an interesting part when we need to iterate over set object,  just like arra
 
 
 ```
-<code>&lt;code>var mySet = new Set();
+<code><code>var mySet = new Set();
 
 mySet.add(1); // Set [ 1 ]
 mySet.add(5); // Set [ 1, 5 ]
@@ -77,7 +77,7 @@ mySet.add('some text'); // Set [ 1, 5, 'some text' ]
 var o = {a: 1, b: 2};
 mySet.add(o);
 
-mySet.add({a: 1, b: 2}); // o is referencing a different object so this is okay&lt;br/>&lt;br/></code>// iterate over items in set
+mySet.add({a: 1, b: 2}); // o is referencing a different object so this is okay<br/><br/></code>// iterate over items in set
 // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2} 
 for (let item of mySet) console.log(item);
 
@@ -117,7 +117,7 @@ mySet.forEach(function(value) {
 // 1
 // 2
 // 3
-// 4&lt;/code>
+// 4</code>
 ```
 
 

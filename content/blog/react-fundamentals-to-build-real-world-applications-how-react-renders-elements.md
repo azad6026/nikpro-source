@@ -87,7 +87,7 @@ Using JSX to render the element feels like writing HTML itself. But the best par
 
 
 ```
-// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = &lt;h2 className={className}&gt;{content}&lt;/h2&gt;;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = &lt;h2 className={className}&gt;{(() =&gt; content)()}&lt;/h2&gt;;<br /> ReactDOM.render([element1,element2], jsxRoot); </pre>
+// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = <h2 className={className}>{content}</h2>;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = <h2 className={className}>{(() => content)()}</h2>;<br /> ReactDOM.render([element1,element2], jsxRoot); </pre>
 
 We have used two approaches here. In the first element we put the content as {content} which is actually the children property from the mentioned above in pure React approach.
 
@@ -101,7 +101,7 @@ Lastly we will declare the properties as props and pass them to the element usin
 
 
 ```
-// Create the same element using props<br /> const propsRoot = document.querySelector('#propstest');<br /> const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = &lt;h2 {...props} /&gt;;<br /> ReactDOM.render(propsElement,propsRoot);
+// Create the same element using props<br /> const propsRoot = document.querySelector('#propstest');<br /> const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = <h2 {...props} />;<br /> ReactDOM.render(propsElement,propsRoot);
 ```
 
 
@@ -109,7 +109,7 @@ To override the {&#8230;props} properties we need to specify them tight after it
 
 
 ```
-const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = &lt;h2 {...props} className="averrided-class" /&gt;;<br /> ReactDOM.render(propsElement,propsRoot);
+const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = <h2 {...props} className="averrided-class" />;<br /> ReactDOM.render(propsElement,propsRoot);
 ```
 
 

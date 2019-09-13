@@ -29,7 +29,7 @@ Then we have all remaining arguments to be placed within &#8220;standard&#8221; 
 ```
 <code>function f(a, b, ...theArgs) {
   // ...
-}&lt;br/>&lt;br/>// Using &lt;a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions&lt;br/>&lt;br/>&lt;/a>const f = (a,b,  ...theArgs) => {&lt;br/>&lt;strong>&lt;code> // ...</code><br />}&lt;/code>&lt;/strong></pre>
+}<br/><br/>// Using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/><strong><code> // ...</code><br />}</code></strong></pre>
 
 Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array `](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
 
@@ -61,11 +61,11 @@ myFun("one", "two", "three");
 
 // a, one
 // b, two
-// manyMoreArgs, [three]&lt;br/>&lt;br/>// Another call&lt;br/>&lt;br/>&lt;code>myFun("one", "two");
+// manyMoreArgs, [three]<br/><br/>// Another call<br/><br/><code>myFun("one", "two");
 
 // a, one
 // b, two
-// manyMoreArgs, []</code><br />&lt;/code>
+// manyMoreArgs, []</code><br /></code>
 ```
 
 
@@ -89,20 +89,20 @@ But we cannot do the same with arguments as they are not an array:
 
 
 ```
-<code>// This is wrong and will not work. &lt;br/>const sortArguments = (&lt;strong>&lt;code>arguments</code>) => {
+<code>// This is wrong and will not work. <br/>const sortArguments = (<strong><code>arguments</code>) => {
   return <code>arguments</code>.sort();
-}&lt;/code>&lt;/strong></pre>
+}</code></strong></pre>
 
 Best approach is to convert it to an array and then use array methods:
 
 
 ```
-<code>const &lt;code>sortArguments</code> = (arguments) => {
+<code>const <code>sortArguments</code> = (arguments) => {
   const args = Array.from(arguments);
    return args.sort();
 }
 
-console.log(<code>sortArguments</code>(5, 3, 7, 1)); // 1, 3, 5, 7&lt;/code>
+console.log(<code>sortArguments</code>(5, 3, 7, 1)); // 1, 3, 5, 7</code>
 ```
 
 

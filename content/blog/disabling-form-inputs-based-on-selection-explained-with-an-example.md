@@ -29,7 +29,7 @@ The interesting part for us are the inputs. First the radio buttons:
 
 
 ```
-<code>&lt;input name="iceCream" type="radio" value="yes">&lt;br/>&lt;code>&lt;input name="iceCream" type="radio" value="no"></code>&lt;/code>
+<code><input name="iceCream" type="radio" value="yes"><br/><code><input name="iceCream" type="radio" value="no"></code></code>
 ```
 
 
@@ -37,7 +37,7 @@ Firstly the name attribute and the value of inputs are of interest. Also the bot
 
 
 ```
-<code>&lt;input name="flavour" type="checkbox" value="chocolate" disabled="">&lt;code> &lt;br/>&lt;input name="flavour" type="checkbox" value="vanilla" disabled=""></code><br /><code>&lt;input name="flavour" type="checkbox" value="strawberry" disabled=""></code>&lt;/code>
+<code><input name="flavour" type="checkbox" value="chocolate" disabled=""><code> <br/><input name="flavour" type="checkbox" value="vanilla" disabled=""></code><br /><code><input name="flavour" type="checkbox" value="strawberry" disabled=""></code></code>
 ```
 
 

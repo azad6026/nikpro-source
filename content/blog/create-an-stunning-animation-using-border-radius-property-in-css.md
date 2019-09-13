@@ -45,7 +45,7 @@ That is all great.We can manipulate each edge as we like with different units an
 
 <blockquote class="wp-block-quote">
   <p>
-    followed optionally by &#8220;/&#8221; and one, two, three, or four&nbsp;<code>&lt;length&gt;</code>&nbsp;or&nbsp;<code>&lt;percentage&gt;</code>&nbsp;values. This is used to set an additional radius, so you can have elliptical corners.
+    followed optionally by &#8220;/&#8221; and one, two, three, or four&nbsp;<code><length></code>&nbsp;or&nbsp;<code><percentage></code>&nbsp;values. This is used to set an additional radius, so you can have elliptical corners.
   </p>
 </blockquote>
 
@@ -77,7 +77,7 @@ We will explain the relevant part to the animation. The rest is just positioning
 
 
 ```
-&lt;div class="container"&gt;<br />&nbsp; &lt;div class="box"&gt;<br />&nbsp; &nbsp; &lt;div class="spin-container"&gt;<br />&nbsp; &nbsp; &nbsp; &lt;div class="shape"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="bd"&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp;&nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &lt;/div&gt;<br />&lt;/div&gt;                 
+<div class="container"><br />&nbsp; <div class="box"><br />&nbsp; &nbsp; <div class="spin-container"><br />&nbsp; &nbsp; &nbsp; <div class="shape"><br />&nbsp; &nbsp; &nbsp; &nbsp; <div class="bd"></div><br />&nbsp; &nbsp; &nbsp; </div><br />&nbsp;&nbsp; &nbsp; </div><br />&nbsp; </div><br /></div>                 
 ```
 
 

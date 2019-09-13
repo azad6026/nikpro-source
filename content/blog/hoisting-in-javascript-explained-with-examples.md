@@ -82,7 +82,7 @@ No. There is no hoisting for initialisation. So if you use a variable which is d
 ```
 <code>console.log(num); // Returns undefined 
 var num;
-num = 6;&lt;br/></code>
+num = 6;<br/></code>
 ```
 
 

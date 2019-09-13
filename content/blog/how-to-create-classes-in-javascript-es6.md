@@ -25,52 +25,52 @@ We can define a class in two ways. declare it or express it.
 ### Class declaration 
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+  <code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token function">  constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>&lt;br />
+  <code class=" language-js"><span class="token function">  constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token keyword">   this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>&lt;br />
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>&lt;br />
+  <code class=" language-js"><span class="token keyword">   this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span><br />
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token punctuation">  }&lt;/span>&lt;br />
+  <code class=" language-js"><span class="token punctuation">  }</span><br />
 </code>
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">&lt;span class="token punctuation">}&lt;/span></code>
+  <code class=" language-js"><span class="token punctuation">}</span></code>
 </p>
 
 Here we actually declare it with class keyword.
 
 ### Class expressions
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token comment" spellcheck="true">&lt;strong>// unnamed&lt;/strong>&lt;/span>&lt;strong>
-&lt;span class="token keyword">let&lt;/span> Rectangle &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">class&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>Rectangle&lt;span class="token punctuation">.&lt;/span>name&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token comment" spellcheck="true">// output: "Rectangle"&lt;/span>
-&lt;span class="token comment" spellcheck="true">// named&lt;/span>
-&lt;span class="token keyword">let&lt;/span> Rectangle &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle2&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>Rectangle&lt;span class="token punctuation">.&lt;/span>name&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token comment" spellcheck="true">// output: "Rectangle2"&lt;/span>&lt;/strong></code></pre>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token comment" spellcheck="true"><strong>// unnamed</strong></span><strong>
+<span class="token keyword">let</span> Rectangle <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Rectangle<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// output: "Rectangle"</span>
+<span class="token comment" spellcheck="true">// named</span>
+<span class="token keyword">let</span> Rectangle <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token class-name">Rectangle2</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Rectangle<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// output: "Rectangle2"</span></strong></code></pre>
 
 The name given to a named class expression is local to the class&#8217;s body. It can be retrieved through the class&#8217;s (not an instance&#8217;s) [.name](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name) property, though)
 
@@ -80,23 +80,23 @@ The body of a class is executed in [strict mode](https://developer.mozilla.org/
 
 The `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">constructor</a>` method is a special method for creating and initialising an object created with a `class`.A constructor can use the `super` keyword to call the constructor of the super class. ( As in react) In the below class we have a constructor and a method.
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>height&lt;span class="token punctuation">,&lt;/span> width&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">=&lt;/span> height&lt;span class="token punctuation">;&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width &lt;span class="token operator">=&lt;/span> width&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-  &lt;span class="token comment" spellcheck="true">// Getter&lt;/span>
-  &lt;span class="token keyword">get&lt;/span> &lt;span class="token function">area&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">return&lt;/span> &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">calcArea&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-  &lt;span class="token comment" spellcheck="true">// Method&lt;/span>
-  &lt;span class="token function">calcArea&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">return&lt;/span> &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>height &lt;span class="token operator">*&lt;/span> &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>width&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">const&lt;/span> square &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Rectangle&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token number">10&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">// Getter</span>
+  <span class="token keyword">get</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">calcArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">// Method</span>
+  <span class="token function">calcArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> square <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>square&lt;span class="token punctuation">.&lt;/span>area&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// 100&lt;/span></code>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>square<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 100</span></code>
 ```
 
 
@@ -106,26 +106,26 @@ The interesting thing about classes in ES6 is that there is no function keyword 
 
 We could use extends keyword to create a new child class (of both types explained above) of another class.In the example below, the Dog class extends Animal class and using super to call class constructor and pass in the name.
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Animal&lt;/span> &lt;span class="token punctuation">{&lt;/span> 
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span> 
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
   
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' makes a noise.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Dog&lt;/span> &lt;span class="token keyword">extends&lt;/span> &lt;span class="token class-name">Animal&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">super&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// call the super class constructor and pass in the name parameter&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' makes a noise.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// call the super class constructor and pass in the name parameter</span>
+  <span class="token punctuation">}</span>
 
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' barks.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' barks.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token string">'Mitzie'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Mitzie barks.</span></code>
 ```
 
 
@@ -133,39 +133,39 @@ d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">s
 
 You could also use class inheritence to extend old defined functions:
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">function&lt;/span> Animal &lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>  
-&lt;span class="token punctuation">}&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">function</span> Animal <span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
 
-Animal&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="token punctuation">.&lt;/span>speak &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">function&lt;/span> &lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' makes a noise.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Dog&lt;/span> &lt;span class="token keyword">extends&lt;/span> &lt;span class="token class-name">Animal&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' barks.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie barks.&lt;/span></code>
+Animal<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>speak <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' makes a noise.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' barks.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token string">'Mitzie'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Mitzie barks.</span></code>
 ```
 
 
 It is important to know that classes cannot extend regular objects unless you use setPrototypeOf method to add the object as a method:
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">const&lt;/span> Animal &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">+&lt;/span> &lt;span class="token string">' makes a noise.'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Dog&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token comment" spellcheck="true">// If you do not do this you will get a TypeError when you invoke speak&lt;/span>
-Object&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">setPrototypeOf&lt;/span>&lt;span class="token punctuation">(&lt;/span>Dog&lt;span class="token punctuation">.&lt;/span>prototype&lt;span class="token punctuation">,&lt;/span> Animal&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-&lt;span class="token keyword">let&lt;/span> d &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Dog&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Mitzie'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> &lt;span class="token comment" spellcheck="true">// Mitzie makes a noise.&lt;/span></code>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">const</span> Animal <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">' makes a noise.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// If you do not do this you will get a TypeError when you invoke speak</span>
+Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>Dog<span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> Animal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token string">'Mitzie'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Mitzie makes a noise.</span></code>
 ```
 
 
@@ -173,24 +173,24 @@ d&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">s
 
 The **super keyword** is getting used to call the super class methods. In this example it is used to call the speak method of the parent class:
 
-<pre class="brush: js line-numbers  language-js"><code class=" language-js">&lt;span class="token keyword">&lt;strong>class&lt;/strong>&lt;/span></code><code class=" language-js">&lt;strong>&lt;span class="token class-name">Cat&lt;/span> &lt;span class="token punctuation">{&lt;/span> 
-  &lt;span class="token function">constructor&lt;/span>&lt;span class="token punctuation">(&lt;/span>name&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name &lt;span class="token operator">=&lt;/span> name&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
+<pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword"><strong>class</strong></span></code><code class=" language-js"><strong><span class="token class-name">Cat</span> <span class="token punctuation">{</span> 
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
   
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token string">`&lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string"> makes a noise.`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">class&lt;/span> &lt;span class="token class-name">Lion&lt;/span> &lt;span class="token keyword">extends&lt;/span> &lt;span class="token class-name">Cat&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-  &lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span> &lt;span class="token punctuation">{&lt;/span>
-    &lt;span class="token keyword">super&lt;/span>&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-    console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token string">`&lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>&lt;span class="token keyword">this&lt;/span>&lt;span class="token punctuation">.&lt;/span>name&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string"> roars.`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-  &lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token punctuation">}&lt;/span>
-&lt;span class="token keyword">let&lt;/span> l &lt;span class="token operator">=&lt;/span> &lt;span class="token keyword">new&lt;/span> &lt;span class="token class-name">Lion&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">'Fuzzy'&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
-l&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">speak&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span> 
-&lt;span class="token comment" spellcheck="true">// Fuzzy makes a noise.&lt;/span>
-&lt;span class="token comment" spellcheck="true">// Fuzzy roars.&lt;/span>&lt;/strong></code></pre>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> makes a noise.`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Lion</span> <span class="token keyword">extends</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> roars.`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> l <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Lion</span><span class="token punctuation">(</span><span class="token string">'Fuzzy'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+l<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token comment" spellcheck="true">// Fuzzy makes a noise.</span>
+<span class="token comment" spellcheck="true">// Fuzzy roars.</span></strong></code></pre>
 
 It was a brief about classes and their definition in Javascript ES6.However In future posts we will build some applications using ES6 classes. 

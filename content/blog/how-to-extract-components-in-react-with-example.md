@@ -32,23 +32,23 @@ I am using React site&#8217;s example as it is the best and clearest. Imagine a 
 ```
 <code>function Comment(props) {
   return (
-    &lt;div className="Comment">
-      &lt;div className="UserInfo">
-        &lt;img className="Avatar"
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
           src={props.author.avatarUrl}
           alt={props.author.name}
         />
-        &lt;div className="UserInfo-name">
+        <div className="UserInfo-name">
           {props.author.name}
-        &lt;/div>
-      &lt;/div>
-      &lt;div className="Comment-text">
+        </div>
+      </div>
+      <div className="Comment-text">
         {props.text}
-      &lt;/div>
-      &lt;div className="Comment-date">
+      </div>
+      <div className="Comment-date">
         {formatDate(props.date)}
-      &lt;/div>
-    &lt;/div>
+      </div>
+    </div>
   );
 }</code>
 ```
@@ -62,7 +62,7 @@ It is hard to use parts of this component as reusable parts. However doing extra
 ```
 <code>function Avatar(props) {
   return (
-    &lt;img className="Avatar"
+    <img className="Avatar"
       src={props.user.avatarUrl}
       alt={props.user.name}
     />
@@ -75,7 +75,7 @@ It is recommended naming props from the component’s own point of view rather t
 
 
 ```
-&lt;Avatar user={props.author} />
+<Avatar user={props.author} />
 ```
 
 
@@ -85,12 +85,12 @@ Now we can extract components again by extracting a UserInfo component. therefor
 ```
 <code>unction UserInfo(props) {
   return (
-    &lt;div className="UserInfo">
-      &lt;Avatar user={props.user} />
-      &lt;div className="UserInfo-name">
+    <div className="UserInfo">
+      <Avatar user={props.user} />
+      <div className="UserInfo-name">
         {props.user.name}
-      &lt;/div>
-    &lt;/div>
+      </div>
+    </div>
   );
 }</code>
 ```
@@ -104,15 +104,15 @@ After all the comment component will look like a simpler and easy to read compon
 ```
 <code>function Comment(props) {
   return (
-    &lt;div className="Comment">
-      &lt;UserInfo user={props.author} />
-      &lt;div className="Comment-text">
+    <div className="Comment">
+      <UserInfo user={props.author} />
+      <div className="Comment-text">
         {props.text}
-      &lt;/div>
-      &lt;div className="Comment-date">
+      </div>
+      <div className="Comment-date">
         {formatDate(props.date)}
-      &lt;/div>
-    &lt;/div>
+      </div>
+    </div>
   );
 }</code>
 ```

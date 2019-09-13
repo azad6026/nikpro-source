@@ -39,9 +39,9 @@ This is a modern functional component using props in its arguments.:
 ```
 const App = (props) => {
   return (
-    &lt;div>
+    <div>
       { props.username }
-    &lt;/div>
+    </div>
   )
 }
 ```
@@ -59,9 +59,9 @@ class App extends React.Component {
   render() {
     const { username } = this.state
     return(
-      &lt;div>
+      <div>
         { username }
-      &lt;/div>
+      </div>
     )
   }
 }
@@ -81,9 +81,9 @@ class App extends React.Component {
   }
  render() {
   return(
-    &lt;div>
+    <div>
       { this.state.username }
-    &lt;/div>
+    </div>
   )
 }
 ```
@@ -108,16 +108,16 @@ class App extends React.Component {
   render() {
     const { username } = this.state
     return (
-      &lt;div>
-        &lt;div>
-          &lt;input 
+      <div>
+        <div>
+          <input 
             type="text"
             value={this.state.username}
             onChange={event => this.handleInputChange(event.target.value)}
           />
-        &lt;/div>
-        &lt;p>Your username is, {username}&lt;/p>
-      &lt;/div>
+        </div>
+        <p>Your username is, {username}</p>
+      </div>
     )
   }
 }

@@ -58,8 +58,8 @@ We have the HTML and CSS here again:
 
 
 ```
-<code>&lt;p class="better">This is a paragraph.&lt;/p>
-&lt;p class="better" id="winner">One selector to rule them all!&lt;/p></code>
+<code><p class="better">This is a paragraph.</p>
+<p class="better" id="winner">One selector to rule them all!</p></code>
 ```
 
 

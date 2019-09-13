@@ -41,15 +41,15 @@ Technically we will have cases like this which we normally do not recognise as w
 
 ```
 User-agent CSS:<br /><code>li { padding: 10px }</code><br />Author CSS 1:<br /><code>li { padding: 0 } /* This is like a reset */</code><br />Author CSS 2:<br /><code>@media screen {
-  li { &lt;code>padding</code>: 3px }
+  li { <code>padding</code>: 3px }
 }
 
 @media print {
   li { <code>padding</code>: 1px }
-}&lt;/code><br />User CSS:<br /><code>.specific { &lt;code>padding</code>: 1em }<br />&lt;/code><br />HTML:<br /><code>&lt;ul>
-  &lt;li class="specific">1&lt;sup>st&lt;/sup>&lt;/li>
-  &lt;li>2&lt;sup>nd&lt;/sup>&lt;/li>
-&lt;/ul></code></pre>
+}</code><br />User CSS:<br /><code>.specific { <code>padding</code>: 1em }<br /></code><br />HTML:<br /><code><ul>
+  <li class="specific">1<sup>st</sup></li>
+  <li>2<sup>nd</sup></li>
+</ul></code></pre>
 
 Firstly based on specificity [rules](http://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/)  declarations inside `li` and `.specific` rules should apply. No declaration is marked as `!important`, so the precedence order is author style sheets before user style sheets or user-agent stylesheet.
 
@@ -57,7 +57,7 @@ Therefor we have these three styles to win:
 
 
 ```
-<code>margin-left: 0&lt;br/></code><br /><code>margin-left: 3px&lt;br/></code><br /><code>margin-left: 1px</code>
+<code>margin-left: 0<br/></code><br /><code>margin-left: 3px<br/></code><br /><code>margin-left: 1px</code>
 ```
 
 
@@ -71,7 +71,7 @@ Practically in CSS once all the style for one element in different stylesheets w
 
 
 ```
-<code>&lt;p>I'm &lt;strong>bold&lt;/strong>&lt;/p>&lt;br/></code><br /><code>/* higher specificity */
+<code><p>I'm <strong>bold</strong></p><br/></code><br /><code>/* higher specificity */
 p strong {
   background-color: khaki;
   color: green;
@@ -106,12 +106,12 @@ There are four values for specifying inheritance on the supported properties:
 
 
 ```
-<code>&lt;ul>
-  &lt;li>Default &lt;a href="#">link&lt;/a> color&lt;/li>
-  &lt;li class="my-class-1">Inherit the &lt;a href="#">link&lt;/a> color&lt;/li>
-  &lt;li class="my-class-2">Reset the &lt;a href="#">link&lt;/a> color&lt;/li>
-  &lt;li class="my-class-3">Unset the &lt;a href="#">link&lt;/a> color&lt;/li>
-&lt;/ul>&lt;br/>&lt;br/>// And the CSS&lt;br/></code><br /><code>body {
+<code><ul>
+  <li>Default <a href="#">link</a> color</li>
+  <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+  <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+  <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+</ul><br/><br/>// And the CSS<br/></code><br /><code>body {
   color: green;
 }
 

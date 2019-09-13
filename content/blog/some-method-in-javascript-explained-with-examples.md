@@ -27,7 +27,7 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ```
 <code>function isBiggerThan10(element, index, array) {
   return element > 10;
-}&lt;br/></code><br /><code>[2, 5, 8, 1, 4].some(x => x > 10);  // false
+}<br/></code><br /><code>[2, 5, 8, 1, 4].some(x => x > 10);  // false
 [12, 5, 8, 1, 4].some(x => x > 10); // true</code>
 ```
 
@@ -48,7 +48,7 @@ OF course there are other use cases for some. We might need to check if a user h
 
 
 ```
-<code>const userPrivileges = ['user', 'user', 'user', 'admin'];&lt;br/>userPrivileges.some( element => element === 'admin');</code><br /><code>// will be equal to true</code>
+<code>const userPrivileges = ['user', 'user', 'user', 'admin'];<br/>userPrivileges.some( element => element === 'admin');</code><br /><code>// will be equal to true</code>
 ```
 
 
@@ -90,7 +90,7 @@ Similarly includes checks if an array contains a certain value. It’s similar t
 
 
 ```
-<code>const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];&lt;br/>names.includes('waldo');</code><br /><code>// will be equal to true</code>
+<code>const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.includes('waldo');</code><br /><code>// will be equal to true</code>
 ```
 
 

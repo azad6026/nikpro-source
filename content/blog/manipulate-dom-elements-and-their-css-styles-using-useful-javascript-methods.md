@@ -24,11 +24,11 @@ There are two types of methods to select elements in the DOM. The old ones are:
 
 
 ```
-// Select an element with an id : here id=para<br /><code>&lt;strong>const el = document.getElementById('para');&lt;/strong></code><br /><br />// Select an element by tag name :  here p tag<br /><code>&lt;strong>const el = document.getElementsByTagName('p');&lt;/strong></code><br /><br />// Select an element by class name : here class=test<br /><code>&lt;strong>const el = document.getElementsByClassName('test');&lt;/strong></code></pre>
+// Select an element with an id : here id=para<br /><code><strong>const el = document.getElementById('para');</strong></code><br /><br />// Select an element by tag name :  here p tag<br /><code><strong>const el = document.getElementsByTagName('p');</strong></code><br /><br />// Select an element by class name : here class=test<br /><code><strong>const el = document.getElementsByClassName('test');</strong></code></pre>
 
 With above elements we could select elements of the DOM separately by id or tag or class names. But there are modern ways to do this using query selector methods:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>const el = document.querySelector(".myclass");&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>const el = document.querySelector(".myclass");</strong></code></pre>
 
 Using&nbsp;`querySelector method`&nbsp;we could select any selector. It could be a tag or an id or a class. If we needed to select multiple selectors we could use&nbsp;`querySelectorAll`&nbsp; instead:
 
@@ -44,7 +44,7 @@ Practically we could combine them to select specific children of a parent elemen
 
 
 ```
-// Select an element with id=test<br />const container = document.querySelector("#test");<br /><br />// Select all p tags inside a div with class=highlighted of the above container<br />const matches = container.querySelectorAll("div.highlighted &gt; p");
+// Select an element with id=test<br />const container = document.querySelector("#test");<br /><br />// Select all p tags inside a div with class=highlighted of the above container<br />const matches = container.querySelectorAll("div.highlighted > p");
 ```
 
 
@@ -67,7 +67,7 @@ Additionally we can create , append and remove elements using&nbsp;&nbsp;`create
 
 
 ```
-// Create a p tag<br /><br />const para = document.createElement('p');<br />para.textContent = 'We hope you enjoyed the ride.';<br /><br />// Append it to the section<br /><br /><code>&lt;strong>const sect = document.querySelector('section');&lt;/strong></code><br /><code>&lt;strong>sect.appendChild(para);&lt;/strong></code><br /><br />// Remove the p tag<br /><br /><code>&lt;strong>sect.removeChild(linkPara);&lt;/strong></code><br /><br />//Or remove it referencing to its parent like this when that is the only way<br /><br /><code>&lt;strong>linkPara.parentNode.removeChild(linkPara);&lt;/strong></code></pre>
+// Create a p tag<br /><br />const para = document.createElement('p');<br />para.textContent = 'We hope you enjoyed the ride.';<br /><br />// Append it to the section<br /><br /><code><strong>const sect = document.querySelector('section');</strong></code><br /><code><strong>sect.appendChild(para);</strong></code><br /><br />// Remove the p tag<br /><br /><code><strong>sect.removeChild(linkPara);</strong></code><br /><br />//Or remove it referencing to its parent like this when that is the only way<br /><br /><code><strong>linkPara.parentNode.removeChild(linkPara);</strong></code></pre>
 
 &nbsp;
 
@@ -77,7 +77,7 @@ Basically there are two ways to manipulate CSS using Javascript. You can directl
 
 
 ```
-// Change the p tag's styles<br /><br />const para = document.createElement('p');<br /><br />// For two word properties we use camel case like in <code>&lt;strong>backgroundColor&lt;/strong></code><br /><code>&lt;strong>para.style.color = 'white';&lt;/strong></code><br /><code>&lt;strong>para.style.backgroundColor = 'black';&lt;/strong></code><br /><code>&lt;strong>para.style.padding = '10px';&lt;/strong></code><br /><code>&lt;strong>para.style.width = '250px';&lt;/strong></code><br /><code>&lt;strong>para.style.textAlign = 'center';&lt;/strong></code><br />
+// Change the p tag's styles<br /><br />const para = document.createElement('p');<br /><br />// For two word properties we use camel case like in <code><strong>backgroundColor</strong></code><br /><code><strong>para.style.color = 'white';</strong></code><br /><code><strong>para.style.backgroundColor = 'black';</strong></code><br /><code><strong>para.style.padding = '10px';</strong></code><br /><code><strong>para.style.width = '250px';</strong></code><br /><code><strong>para.style.textAlign = 'center';</strong></code><br />
 ```
 
 
@@ -89,7 +89,7 @@ Instead of doing all properties one by one we can create a class and put in all 
 
 
 ```
-.highlight {<br />  color: white;<br />  background-color: black;<br />  padding: 10px;<br />  width: 250px;<br />  text-align: center;<br />}<br /><br /><code>&lt;strong>para.setAttribute('class', 'highlight');&lt;/strong></code></pre><figure class="wp-block-image">
+.highlight {<br />  color: white;<br />  background-color: black;<br />  padding: 10px;<br />  width: 250px;<br />  text-align: center;<br />}<br /><br /><code><strong>para.setAttribute('class', 'highlight');</strong></code></pre><figure class="wp-block-image">
 
 <img src="http://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="http://testgatsby.localdom-tree.png 665w, http://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> </figure>
 

@@ -29,8 +29,8 @@ Basically here is a simple example:
 
 
 ```
-&lt;h1&gt;This has a margin-bottom&lt;/h1&gt;
-&lt;p&gt; This has a margin-top&lt;/p&gt;
+<h1>This has a margin-bottom</h1>
+<p> This has a margin-top</p>
 
 ```
 

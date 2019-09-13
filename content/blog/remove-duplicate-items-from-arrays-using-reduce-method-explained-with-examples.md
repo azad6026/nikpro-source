@@ -29,7 +29,7 @@ To be able to iterate through all array items and check if an item has a duplica
 
 
 ```
-let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];<br />let result = arr.sort().reduce((accumulator, current) =&gt; {<br />    const length = accumulator.length<br />    if (length === 0 || accumulator[length - 1] !== current) {<br />        accumulator.push(current);<br />    }<br />    return accumulator;<br />}, []);<br />console.log(result); //[1,2,3,4,5]
+let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];<br />let result = arr.sort().reduce((accumulator, current) => {<br />    const length = accumulator.length<br />    if (length === 0 || accumulator[length - 1] !== current) {<br />        accumulator.push(current);<br />    }<br />    return accumulator;<br />}, []);<br />console.log(result); //[1,2,3,4,5]
 ```
 
 
@@ -49,7 +49,7 @@ At the end we will have a **sorted** array with unique values from the original 
 
 Also as with <a href="https://denizkumsal.com/programming/using-reduce-to-remove-duplicates/" target="_blank" rel="noreferrer noopener" aria-label="Also as with this method we can use includes method instead of length property to check the item's equality and concat the unique values at the end. Using ternary syntax will make it really short: (opens in a new tab)">this method</a> we can use [includes](http://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) method instead of length property to check the item&#8217;s equality and **concat** the unique values at the end. Using [ternary syntax](http://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) will make it really short:
 
-<pre class="wp-block-preformatted">const removeDuplicates = (theArray) =&gt; {<br />  return theArray.reduce((result,nextItem) =&gt; result.includes(nextItem) ? result : result.concat(nextItem),[]);<br />}</pre>
+<pre class="wp-block-preformatted">const removeDuplicates = (theArray) => {<br />  return theArray.reduce((result,nextItem) => result.includes(nextItem) ? result : result.concat(nextItem),[]);<br />}</pre>
 
 Here we check if the result which is the accumulator contains or includes the currentItem(calling it nextItem here just fo clarity). If it does we return the accumulator and if it does not include it, we concat that item to the result. <figure class="wp-block-image">
 
@@ -59,7 +59,7 @@ Very neat and clean indeed. We could also use [push](http://www.nikpro.com.au/ho
 
 We could have return the method in one line not using explicit &#8220;return. We need to remove brackets and remove the return keyword:
 
-<pre class="wp-block-preformatted">const removeDuplicates = (theArray) =&gt; <br />  theArray.reduce((result,nextItem) =&gt; result.includes(nextItem) ? result : result.concat(nextItem),[]);<br /><br /></pre>
+<pre class="wp-block-preformatted">const removeDuplicates = (theArray) => <br />  theArray.reduce((result,nextItem) => result.includes(nextItem) ? result : result.concat(nextItem),[]);<br /><br /></pre>
 
 Whichever approach we could use reduce in a reliable and easy way to remove duplicate items from an array. We could also use [filter](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) and set methods in a different ways to complete the task but that is for another article.
 

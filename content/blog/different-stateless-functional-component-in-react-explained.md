@@ -22,7 +22,7 @@ Basically in stateless functional component we need to wrap the JSX code in a co
 
 
 ```
-<a><code>const Profile = props => {&lt;br/>  return (  &lt;br/>&lt;br/>      &lt;h1>{props.name}&lt;/h1>&lt;br/>      &lt;p>{props.bio}&lt;/p>&lt;br/>&lt;br/>  );&lt;br/>};&lt;br/>&lt;br/>&lt;em>Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag&lt;/em></code><br /><br /></a>
+<a><code>const Profile = props => {<br/>  return (  <br/><br/>      <h1>{props.name}</h1><br/>      <p>{props.bio}</p><br/><br/>  );<br/>};<br/><br/><em>Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag</em></code><br /><br /></a>
 ```
 
 
@@ -30,13 +30,13 @@ Therefor we always need a wrapper to fix this as below:
 
 
 ```
-const Profile = props => {<br />  return (  <br />    &lt;div><br />      &lt;h1>{props.name}&lt;/h1><br />      &lt;p>{props.bio}&lt;/p><br />    &lt;/div>;<br />  );<br />};
+const Profile = props => {<br />  return (  <br />    <div><br />      <h1>{props.name}</h1><br />      <p>{props.bio}</p><br />    </div>;<br />  );<br />};
 ```
 
 
 Typically we use a div but you can use whatever suits your code. Also in this example we have just a one line code so we can drop the {} curly braces and the return statement based on [arrow functions capabilities](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
-<pre class="wp-block-preformatted"><br />const Profile = props => <br />  &lt;div><br />    &lt;h1>{props.name}&lt;/h1><br />    &lt;p>{props.bio}&lt;/p><br />  &lt;/div>;<br /></pre>
+<pre class="wp-block-preformatted"><br />const Profile = props => <br />  <div><br />    <h1>{props.name}</h1><br />    <p>{props.bio}</p><br />  </div>;<br /></pre>
 
 ### Using higher order component as a wrapper
 
@@ -52,7 +52,7 @@ As a result we don&#8217;t even need to import React as we are not writing any J
 
 
 ```
-const Profile = props => {<br />  return (  <br />    &lt;Aux><br />      &lt;h1>{props.name}&lt;/h1><br />      &lt;p>{props.bio}&lt;/p><br />    &lt;/Aux>;<br />  );<br />};
+const Profile = props => {<br />  return (  <br />    <Aux><br />      <h1>{props.name}</h1><br />      <p>{props.bio}</p><br />    </Aux>;<br />  );<br />};
 ```
 
 
@@ -60,7 +60,7 @@ Finally we can also destructure the incoming props and create a more modern sta
 
 
 ```
-const Profile = ({ name, bio }) =><br />  &lt;Aux><br />    &lt;h1>{name}&lt;/h1><br />    &lt;p>{bio}&lt;/p><br />  &lt;/Aux>;
+const Profile = ({ name, bio }) =><br />  <Aux><br />    <h1>{name}</h1><br />    <p>{bio}</p><br />  </Aux>;
 ```
 
 

@@ -24,7 +24,7 @@ Therefore whenever we need to manipulate data without actually changing the data
 
 Basically the most use case for map in React specifically is to ender lists of items. Whether it is a list of blog posts or comments or just a simple list of names as below:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];&lt;/strong></code><br />const NamesList = () =&gt; (<br /> &nbsp; &lt;div&gt;<br /> &nbsp; &nbsp; &lt;ul&gt;{names.map(name =&gt; &lt;li key={name}&gt; {name} &lt;/li&gt;)}&lt;/ul&gt;<br /> &nbsp; &lt;/div&gt;<br /> ); <br />
+<pre class="wp-block-preformatted"><code><strong>const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];</strong></code><br />const NamesList = () => (<br /> &nbsp; <div><br /> &nbsp; &nbsp; <ul>{names.map(name => <li key={name}> {name} </li>)}</ul><br /> &nbsp; </div><br /> ); <br />
 ```
 
 
@@ -38,7 +38,7 @@ Additionally we can use the map method to manipulate array of objects. In this e
 
 
 ```
- const myUsers = [<br /> &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },<br /> &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },<br /> &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }<br /> ]<br /> <br /><br /> const foodLovers = myUsers.map(item =&gt; {<br /> &nbsp; &nbsp; const container = {};<br /> &nbsp; &nbsp; container[item.name] = item.likes;<br /> &nbsp; &nbsp; container.age = item.name.length * 10;<br /> <br /> &nbsp; &nbsp; return container;<br /> })<br /> <br /> console.log(foodLovers);<br /> // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] 
+ const myUsers = [<br /> &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },<br /> &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },<br /> &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }<br /> ]<br /> <br /><br /> const foodLovers = myUsers.map(item => {<br /> &nbsp; &nbsp; const container = {};<br /> &nbsp; &nbsp; container[item.name] = item.likes;<br /> &nbsp; &nbsp; container.age = item.name.length * 10;<br /> <br /> &nbsp; &nbsp; return container;<br /> })<br /> <br /> console.log(foodLovers);<br /> // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] 
 ```
 
 
@@ -56,7 +56,7 @@ Using map we can simply write the code:
 
 
 ```
-const officersIds = officers.map(officer =&gt; officer.id);
+const officersIds = officers.map(officer => officer.id);
 ```
 
 

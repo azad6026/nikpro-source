@@ -26,7 +26,7 @@ Named exports are useful to export several values. During the import, it is mand
 
 
 ```
-<code>let k; &lt;br/>export default k = 12; // in file test.js
+<code>let k; <br/>export default k = 12; // in file test.js
 
 import m from './test' // note that we have the freedom to use import m instead of import k, because k was default export
 
@@ -47,8 +47,8 @@ Another example for export looks like this:
 <code>// module "my-module.js"
 export default function cube(x) {
   return x * x * x;
-}&lt;br/>&lt;br/>//In another module&lt;br/>&lt;code>import cube from 'my-module';
-console.log(cube(3)); // 27</code>&lt;/code>
+}<br/><br/>//In another module<br/><code>import cube from 'my-module';
+console.log(cube(3)); // 27</code></code>
 ```
 
 
@@ -65,14 +65,14 @@ The `import` statement is used to import bindings which are exported by anothe
 
 Additionally we could import defaults as in export. It is possible to have a default [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) (whether it is an object, a function, a class, etc.). The `import` statement may then be used to import such defaults:
 
-<pre class="wp-block-preformatted"><code>import myDefault from '/modules/my-module.js';</code><br /><code>&lt;code>// myModule used as a namespace</code><br />import myDefault, {foo, bar} from '/modules/my-module.js';
-// specific, named imports&lt;/code></pre>
+<pre class="wp-block-preformatted"><code>import myDefault from '/modules/my-module.js';</code><br /><code><code>// myModule used as a namespace</code><br />import myDefault, {foo, bar} from '/modules/my-module.js';
+// specific, named imports</code></pre>
 
 Finally have a look at these examples of both. First the named export and import:
 
 
 ```
-<code>//------ lib.js ------&lt;br/>export const sqrt = Math.sqrt;&lt;br/>export function square(x) {&lt;br/>    return x * x;&lt;br/>}&lt;br/>export function diag(x, y) {&lt;br/>    return sqrt(square(x) + square(y));&lt;br/>}&lt;br/>&lt;br/>//------ main.js ------&lt;br/>import { square, diag } from 'lib';&lt;br/>console.log(square(11)); // 121&lt;br/>console.log(diag(4, 3)); // 5</code>
+<code>//------ lib.js ------<br/>export const sqrt = Math.sqrt;<br/>export function square(x) {<br/>    return x * x;<br/>}<br/>export function diag(x, y) {<br/>    return sqrt(square(x) + square(y));<br/>}<br/><br/>//------ main.js ------<br/>import { square, diag } from 'lib';<br/>console.log(square(11)); // 121<br/>console.log(diag(4, 3)); // 5</code>
 ```
 
 
@@ -80,7 +80,7 @@ And the default export and import example:
 
 
 ```
-<code>//------ myFunc.js ------&lt;br/>export default function () { ... };&lt;br/>&lt;br/>//------ main1.js ------&lt;br/>import myFunc from 'myFunc';&lt;br/>myFunc();</code>
+<code>//------ myFunc.js ------<br/>export default function () { ... };<br/><br/>//------ main1.js ------<br/>import myFunc from 'myFunc';<br/>myFunc();</code>
 ```
 
 

@@ -36,7 +36,7 @@ To be able to render a list using  map method in React we could do the same thi
 ```
 <code>const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
-  &lt;li>{number}&lt;/li>
+  <li>{number}</li>
 );</code>
 ```
 
@@ -46,7 +46,7 @@ We just return the values in list items. And we can render it in our component i
 
 ```
 <code>ReactDOM.render(
-  &lt;ul>{listItems}&lt;/ul>,
+  <ul>{listItems}</ul>,
   document.getElementById('root')
 );</code>
 ```
@@ -66,9 +66,9 @@ Therefor we add the key for each list item to make sure each element is unique a
 ```
 <code>const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
-  &lt;li key={number.toString()}>
+  <li key={number.toString()}>
     {number}
-  &lt;/li>
+  </li>
 );</code>
 ```
 
@@ -80,18 +80,18 @@ So the above component will look like this using map method in React example:
 <code>function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
-    &lt;li key={number.toString()}>
+    <li key={number.toString()}>
       {number}
-    &lt;/li>
+    </li>
   );
   return (
-    &lt;ul>{listItems}&lt;/ul>
+    <ul>{listItems}</ul>
   );
 }
 
 const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
-  &lt;NumberList numbers={numbers} />,
+  <NumberList numbers={numbers} />,
   document.getElementById('root')
 );</code>
 ```
@@ -104,12 +104,12 @@ Moreover we could inline the map results as we write JSX in React. So this is th
 <code>function NumberList(props) {
   const numbers = props.numbers;
   return (
-    &lt;ul>
+    <ul>
       {numbers.map((number) =>
-        &lt;ListItem key={number.toString()}
+        <ListItem key={number.toString()}
                   value={number} />
       )}
-    &lt;/ul>
+    </ul>
   );
 }</code>
 ```
@@ -122,7 +122,7 @@ As another example we can extract a post array with separate key value pairs usi
 
 ```
 <code>const content = posts.map((post) =>
-  &lt;Post
+  <Post
     key={post.id}
     id={post.id}
     title={post.title} />

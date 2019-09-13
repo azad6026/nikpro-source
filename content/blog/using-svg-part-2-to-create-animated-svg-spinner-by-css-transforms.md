@@ -27,19 +27,19 @@ This is the animated SVG spinner code which uses a few tags:
 
 
 ```
-<code>&lt;svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> &lt;!-- 1 -->
+<code><svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> <!-- 1 -->
 
-  &lt;circle class="path spinner-border" cx="33" cy="33" r="31" stroke="url(#gradient)">&lt;/circle> &lt;!-- 2 -->
+  <circle class="path spinner-border" cx="33" cy="33" r="31" stroke="url(#gradient)"></circle> <!-- 2 -->
 
-  &lt;linearGradient id="gradient"> &lt;!-- 3 -->
-    &lt;stop offset="50%" stop-color="#000" stop-opacity="1">&lt;/stop>
-    &lt;stop offset="65%" stop-color="#000" stop-opacity=".5">&lt;/stop>
-    &lt;stop offset="100%" stop-color="#000" stop-opacity="0">&lt;/stop>
-  &lt;/linearGradient>
+  <linearGradient id="gradient"> <!-- 3 -->
+    <stop offset="50%" stop-color="#000" stop-opacity="1"></stop>
+    <stop offset="65%" stop-color="#000" stop-opacity=".5"></stop>
+    <stop offset="100%" stop-color="#000" stop-opacity="0"></stop>
+  </linearGradient>
 
-  &lt;circle class="path spinner-dot" cx="37" cy="3" r="2">&lt;/circle> &lt;!-- 4 -->
+  <circle class="path spinner-dot" cx="37" cy="3" r="2"></circle> <!-- 4 -->
 
-&lt;/svg></code>
+</svg></code>
 ```
 
 

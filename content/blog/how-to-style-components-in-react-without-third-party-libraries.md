@@ -23,12 +23,12 @@ Generally we know inline styling as the very first and basic styling in CSS. It 
 
 Starting with a simple example we can explain it better:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>const divStyle = {  &lt;/strong></code>
-<code>&lt;strong>  color: 'blue',  &lt;/strong></code>
-<code>&lt;strong>  background# image: ../../static/images/'url(' + imgUrl + ')',&lt;/strong></code>
-<code>&lt;strong>};&lt;/strong></code>
-<code>&lt;strong>HelloWorldComponent =&gt; (  &lt;/strong></code>
-<code>&lt;strong>  &lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;;&lt;/strong></code>
+<pre class="wp-block-preformatted"><code><strong>const divStyle = {  </strong></code>
+<code><strong>  color: 'blue',  </strong></code>
+<code><strong>  background# image: ../../static/images/'url(' + imgUrl + ')',</strong></code>
+<code><strong>};</strong></code>
+<code><strong>HelloWorldComponent => (  </strong></code>
+<code><strong>  <div style={divStyle}>Hello World!</div>;</strong></code>
 );
 ```
 
@@ -43,15 +43,15 @@ var divStyle = {
   WebkitTransition: 'all', // note the capital 'W' here
   msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };
-ReactDOM.render(&lt;div style={divStyle}&gt;Hello World!&lt;/div&gt;, mountNode);
+ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
 ```
 
 
 We can write normal styles here. We can either pass the variable name like above  **style = {divStyle} **or pass the style directly like below:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>HelloWorldComponent =&gt; (  &lt;/strong></code>
-<code>&lt;strong>  &lt;div style={{ color: 'blue'}}&gt;Hello World!&lt;/div&gt;;&lt;/strong></code>
-<code>&lt;strong>);&lt;/strong></code></pre><figure class="wp-block-image">
+<pre class="wp-block-preformatted"><code><strong>HelloWorldComponent => (  </strong></code>
+<code><strong>  <div style={{ color: 'blue'}}>Hello World!</div>;</strong></code>
+<code><strong>);</strong></code></pre><figure class="wp-block-image">
 
 <img class="wp-image-32473" src="http://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
 
@@ -66,10 +66,10 @@ We will need to import the file into the component and use the classes in our co
 import React from 'react';
 import './DottedBox.css';
 
-const DottedBox = () =&gt; (
-  &lt;div className="DottedBox"&gt;
-    &lt;p className="DottedBox_content"&gt;Get started with CSS styling&lt;/p&gt;
-  &lt;/div&gt;
+const DottedBox = () => (
+  <div className="DottedBox">
+    <p className="DottedBox_content">Get started with CSS styling</p>
+  </div>
 );
 
 export default DottedBox;
@@ -102,10 +102,10 @@ Basically a CSS Module is a CSS file in which all class names and animation nam
 import React from 'react';
 import styles from './DashedBox.css';
 
-const DashedBox = () =&gt; (
-  &lt;div className={styles.container}&gt;
-    &lt;p className={styles.content}&gt;Get started with CSS Modules style&lt;/p&gt;
-  &lt;/div&gt;
+const DashedBox = () => (
+  <div className={styles.container}>
+    <p className={styles.content}>Get started with CSS Modules style</p>
+  </div>
 );
 
 export default DashedBox;
@@ -144,15 +144,15 @@ Therefore we can use CSS styles in our components like below:
 //App.js
 import styles from './App.css';
 ...
-&lt;div <em>className</em>={styles.app}&gt;
-  &lt;header <em>className</em>={styles.header}&gt;
-  &lt;img <em>src</em>={logo} <em>className</em>={styles.logo} <em>alt</em>="logo" /&gt;
-  &lt;h1 <em>className</em>={styles.title}&gt;Welcome to React&lt;/h1&gt;
-  &lt;/header&gt;
-  &lt;p <em>className</em>={styles.intro}&gt;
-  To get started, edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
-  &lt;/p&gt;
-&lt;/div&gt;
+<div <em>className</em>={styles.app}>
+  <header <em>className</em>={styles.header}>
+  <img <em>src</em>={logo} <em>className</em>={styles.logo} <em>alt</em>="logo" />
+  <h1 <em>className</em>={styles.title}>Welcome to React</h1>
+  </header>
+  <p <em>className</em>={styles.intro}>
+  To get started, edit <code>src/App.js</code> and save to reload.
+  </p>
+</div>
 ```
 
 

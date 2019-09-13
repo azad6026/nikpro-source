@@ -35,7 +35,7 @@ You can easily read the code and predict what it does. Now lets have a look at a
 
 
 ```
-const Listing = (props) => (<br />  &lt;div><br />    &lt;p>Title: {props.listing.title}&lt;/p><br />    &lt;p>Type: {props.listing.type}&lt;/p><br />    &lt;p><br />      Location: {props.listing.location.city},<br />      {props.listing.location.state},<br />      {props.listing.location.country}<br />    &lt;/p><br />  &lt;/div><br />);
+const Listing = (props) => (<br />  <div><br />    <p>Title: {props.listing.title}</p><br />    <p>Type: {props.listing.type}</p><br />    <p><br />      Location: {props.listing.location.city},<br />      {props.listing.location.state},<br />      {props.listing.location.country}<br />    </p><br />  </div><br />);
 ```
 
 
@@ -43,7 +43,7 @@ Practically there is nothing wrong in this code. It takes the props from the fun
 
 
 ```
-const Listing = ({ listing }) => (<br />  &lt;div><br />    &lt;p>Title: {listing.title}&lt;/p><br />    &lt;p>Type: {listing.type}&lt;/p><br />    &lt;p><br />      Location: {listing.location.city},<br />      {listing.location.state},<br />      {listing.location.country}<br />    &lt;/p><br />  &lt;/div><br />);
+const Listing = ({ listing }) => (<br />  <div><br />    <p>Title: {listing.title}</p><br />    <p>Type: {listing.type}</p><br />    <p><br />      Location: {listing.location.city},<br />      {listing.location.state},<br />      {listing.location.country}<br />    </p><br />  </div><br />);
 ```
 
 
@@ -51,7 +51,7 @@ Therefor we are passing in the props argument and using that in the template ins
 
 
 ```
-const Listing = ({<br />  listing: {<br />    title,<br />    type,<br />    location: {<br />      city,<br />      state,<br />      country<br />    }<br />  }<br />}) => (<br />  &lt;div><br />    &lt;p>Title: {title}&lt;/p><br />    &lt;p>Type: {type}&lt;/p><br />    &lt;p>Location: {city}, {state}, {country}&lt;/p><br />  &lt;/div><br />);
+const Listing = ({<br />  listing: {<br />    title,<br />    type,<br />    location: {<br />      city,<br />      state,<br />      country<br />    }<br />  }<br />}) => (<br />  <div><br />    <p>Title: {title}</p><br />    <p>Type: {type}</p><br />    <p>Location: {city}, {state}, {country}</p><br />  </div><br />);
 ```
 
 
@@ -63,7 +63,7 @@ However if we wanted to implement the same rules for a class component with the 
 
 
 ```
-import React, { Component } from 'react';<br />class Listing extends Component {<br />  render() {<br />    const {<br />      listing: {<br />        title,<br />        type,<br />        location: {<br />          city,<br />          state,<br />          country<br />        }<br />      }<br />    } = this.props;<br />return (<br />      &lt;div><br />        &lt;p>Title: {title}&lt;/p><br />        &lt;p>Type: {type}&lt;/p><br />        &lt;p><br />          Location: {city}, {state}, {country}<br />        &lt;/p><br />      &lt;/div><br />    )<br />  }<br />}
+import React, { Component } from 'react';<br />class Listing extends Component {<br />  render() {<br />    const {<br />      listing: {<br />        title,<br />        type,<br />        location: {<br />          city,<br />          state,<br />          country<br />        }<br />      }<br />    } = this.props;<br />return (<br />      <div><br />        <p>Title: {title}</p><br />        <p>Type: {type}</p><br />        <p><br />          Location: {city}, {state}, {country}<br />        </p><br />      </div><br />    )<br />  }<br />}
 ```
 
 

@@ -29,11 +29,11 @@ Firstly imagine this example table from <a href="https://reactjs.org/docs/fragme
 
 
 ```
-<code> &lt;table>
-        &lt;tr>
-          &lt;Columns />
-        &lt;/tr>
- &lt;/table></code>
+<code> <table>
+        <tr>
+          <Columns />
+        </tr>
+ </table></code>
 ```
 
 
@@ -44,10 +44,10 @@ Wrapping this Columns component return statement with a <div> is not correct in 
 <code>class Columns extends React.Component {
   render() {
     return (
-      &lt;div>
-        &lt;td>Hello&lt;/td>
-        &lt;td>World&lt;/td>
-      &lt;/div>
+      <div>
+        <td>Hello</td>
+        <td>World</td>
+      </div>
     );
   }
 }</code>
@@ -58,14 +58,14 @@ Which means the table will look like this at the end:
 
 
 ```
-<code>&lt;table>
-  &lt;tr>
-    &lt;div>
-      &lt;td>Hello&lt;/td>
-      &lt;td>World&lt;/td>
-    &lt;/div>
-  &lt;/tr>
-&lt;/table></code>
+<code><table>
+  <tr>
+    <div>
+      <td>Hello</td>
+      <td>World</td>
+    </div>
+  </tr>
+</table></code>
 ```
 
 
@@ -76,10 +76,10 @@ Definitely this is not a correct semantic table. We will need React.Fragment to 
 <code>class Columns extends React.Component {
   render() {
     return (
-      &lt;React.Fragment>
-        &lt;td>Hello&lt;/td>
-        &lt;td>World&lt;/td>
-      &lt;/React.Fragment>
+      <React.Fragment>
+        <td>Hello</td>
+        <td>World</td>
+      </React.Fragment>
     );
   }
 }</code>
@@ -90,12 +90,12 @@ As a result we get this table:
 
 
 ```
-<code>&lt;table>
-  &lt;tr>
-    &lt;td>Hello&lt;/td>
-    &lt;td>World&lt;/td>
-  &lt;/tr>
-&lt;/table></code>
+<code><table>
+  <tr>
+    <td>Hello</td>
+    <td>World</td>
+  </tr>
+</table></code>
 ```
 
 
@@ -103,10 +103,10 @@ Also we can use the shorter syntax in the Columns component which looks cool:
 
 
 ```
-<code> &lt;>
-    &lt;td>Hello&lt;/td>
-    &lt;td>World&lt;/td>
-  &lt;/></code>
+<code> <>
+    <td>Hello</td>
+    <td>World</td>
+  </></code>
 ```
 
 
@@ -124,11 +124,11 @@ Here is also a general usage of the React.Fragment wrapping multiple elements:
 ```
 <code>render() {
   return (
-    &lt;React.Fragment>
-      &lt;ChildA />
-      &lt;ChildB />
-      &lt;ChildC />
-    &lt;/React.Fragment>
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
   );
 }</code>
 ```

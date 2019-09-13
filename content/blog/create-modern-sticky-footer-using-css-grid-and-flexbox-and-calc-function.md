@@ -25,10 +25,10 @@ Firstly we create a sticky fixed-height footer using calc() function to calculat
 
 
 ```
-<code>&lt;body>
-  &lt;div class="content"> &lt;/div>
-  &lt;footer>© 2016&lt;/footer>
-&lt;/body></code>
+<code><body>
+  <div class="content"> </div>
+  <footer>© 2016</footer>
+</body></code>
 ```
 
 
@@ -59,12 +59,12 @@ We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.
 
 
 ```
-&lt;body>
-  &lt;div class="content">
+<body>
+  <div class="content">
     content
-  &lt;/div>
-  &lt;footer class="footer">&lt;/footer>
-&lt;/body>
+  </div>
+  <footer class="footer"></footer>
+</body>
 ```
 
 

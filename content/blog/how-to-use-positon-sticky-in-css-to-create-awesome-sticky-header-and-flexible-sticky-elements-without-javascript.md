@@ -36,7 +36,7 @@ Using **position: sticky** in CSS we create an sticky element which sticks the e
 
 Here is a simple example:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>#one { position: sticky; top: 10px; }&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>#one { position: sticky; top: 10px; }</strong></code></pre>
 
 ### Sticky titles with position: sticky
 
@@ -48,7 +48,7 @@ We will have a look at a great demo from MDN. Basically in this example each sec
 
 Firstly the **dt tag** which holds the title have this important CSS:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>dt {&lt;br>  position: -webkit-sticky; //safari support&lt;br>  position: sticky;&lt;br>  top: -1px;&lt;br>}&lt;br>&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>dt {<br>  position: -webkit-sticky; //safari support<br>  position: sticky;<br>  top: -1px;<br>}<br></strong></code></pre>
 
 Sticky value for position property makes it behave as a relative positioned before scrolling. Also it has a top property which is needed as we scroll down. Once we scroll down the behaviour of the element will change to fixed positioning and the title sticks on the top.
 

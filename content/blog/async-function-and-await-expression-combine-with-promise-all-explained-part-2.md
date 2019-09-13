@@ -61,9 +61,9 @@ As a result the second promise is rejected:
 
 ```
 <code>// logs
-// Promise { &lt;state>: "pending" } 
+// Promise { <state>: "pending" } 
 // the stack is now empty
-// Promise { &lt;state>: "rejected", &lt;reason>: 44 }</code>
+// Promise { <state>: "rejected", <reason>: 44 }</code>
 ```
 
 

@@ -22,10 +22,10 @@ Have a look at this functional React component and how it renders the output to 
 
 ```
 <code>function Welcome(props) {
-  return &lt;h1>Hello, {props.name}&lt;/h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 
-const element = &lt;Welcome name="Sara" />;
+const element = <Welcome name="Sara" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
@@ -49,21 +49,21 @@ As mentioned [here](http://www.nikpro.com.au/react-component-building-blocks-sim
 
 ```
 <code>function Welcome(props) {
-  return &lt;h1>Hello, {props.name}&lt;/h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 
 function App() {
   return (
-    &lt;div>
-      &lt;Welcome name="Sara" />
-      &lt;Welcome name="Cahal" />
-      &lt;Welcome name="Edite" />
-    &lt;/div>
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
   );
 }
 
 ReactDOM.render(
-  &lt;App />,
+  <App />,
   document.getElementById('root')
 );</code>
 ```
@@ -78,7 +78,7 @@ The very first component we created was a functional one:
 
 ```
 <code>function Welcome(props) {
-  return &lt;h1>Hello, {props.name}&lt;/h1>;
+  return <h1>Hello, {props.name}</h1>;
 }</code>
 ```
 
@@ -89,7 +89,7 @@ And as we mentioned it is a valid component as it has props as its properties or
 ```
 <code>class Welcome extends React.Component {
   render() {
-    return &lt;h1>Hello, {this.props.name}&lt;/h1>;
+    return <h1>Hello, {this.props.name}</h1>;
   }
 }</code>
 ```

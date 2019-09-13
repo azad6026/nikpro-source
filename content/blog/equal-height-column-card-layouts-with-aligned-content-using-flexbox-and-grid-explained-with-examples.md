@@ -27,22 +27,22 @@ Firstly we better clarify which use case is best for these solutions. Both solut
 
 ```
 
-&lt;div class="container"&gt;
-    &lt;div class="layout-box"&gt;
-        &lt;h3&gt;Layout Box title&lt;/h3&gt;
-        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
-        &lt;button&gt;read more&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class="layout-box"&gt;
-        &lt;h3&gt;Layout Box title&lt;/h3&gt;
-        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
-        &lt;button&gt;read more&lt;/button&gt;
-    &lt;/div&gt; 
-    &lt;div class="layout-box"&gt;
-        &lt;h3&gt;Layout Box title&lt;/h3&gt;
-        &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum&lt;/p&gt;
-        &lt;button&gt;read more&lt;/button&gt;&lt;/div&gt;
-    &lt;/div&gt; 
+<div class="container">
+    <div class="layout-box">
+        <h3>Layout Box title</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <button>read more</button>
+    </div>
+    <div class="layout-box">
+        <h3>Layout Box title</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <button>read more</button>
+    </div> 
+    <div class="layout-box">
+        <h3>Layout Box title</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <button>read more</button></div>
+    </div> 
 
 ```
 

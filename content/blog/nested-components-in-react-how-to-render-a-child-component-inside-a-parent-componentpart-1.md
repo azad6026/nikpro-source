@@ -22,26 +22,26 @@ Basically we have to understand that **props can only be passed down to the chil
 
 Therefor knowing these two facts lets take a look at this very useful example from <a href="https://reactjs.org/docs/lists-and-keys.html" target="_blank" rel="noreferrer noopener">Reactjs</a>. We have got an array of numbers to show as a list in frontend:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>const numbers = [1, 2, 3, 4, 5, 6];&lt;/strong></code></pre>
+<pre class="wp-block-preformatted"><code><strong>const numbers = [1, 2, 3, 4, 5, 6];</strong></code></pre>
 
 Our first approach is to create a component to loop through the array and output them:
 
 <pre class="wp-block-preformatted"><code>function NumberList(props) {  </code>
 <code>  const numbers = props.numbers;  </code>
-<code>  const listItems = numbers.map((number) =&gt;    </code>
-<code>    &lt;li&gt;{number}&lt;/li&gt;  </code>
+<code>  const listItems = numbers.map((number) =>    </code>
+<code>    <li>{number}</li>  </code>
 <code>  );  </code>
 <code>  return (    </code>
-<code>    &lt;ul&gt;{listItems}&lt;/ul&gt;  </code>
+<code>    <ul>{listItems}</ul>  </code>
 <code>  );</code>
 <code>}</code></pre>
 
 Obviously our list is created via a loop through our array with map to generate list items. As a result our NumberList component returns an unordered list of items:
 
-<pre class="wp-block-preformatted"><code>&lt;strong>ReactDOM.render(  &lt;/strong></code>
-<code>&lt;strong>  &lt;NumberList numbers={numbers} /&gt;,  &lt;/strong></code>
-<code>&lt;strong>  document.getElementById('root')&lt;/strong></code>
-<code>&lt;strong>);&lt;/strong></code></pre><figure class="wp-block-image">
+<pre class="wp-block-preformatted"><code><strong>ReactDOM.render(  </strong></code>
+<code><strong>  <NumberList numbers={numbers} />,  </strong></code>
+<code><strong>  document.getElementById('root')</strong></code>
+<code><strong>);</strong></code></pre><figure class="wp-block-image">
 
 <img class="wp-image-32521" src="http://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="http://testgatsby.localpassdata.png 591w, http://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure> 
 
@@ -54,20 +54,20 @@ Now if we [extract our component](http://www.nikpro.com.au/how-to-extract-compon
 // Child component
 function ListItem(props) {
   // Correct! There is no need to specify the key here:
-  return &lt;li&gt;{props.value}&lt;/li&gt;;
+  return <li>{props.value}</li>;
 }
 // Parent component
 function NumberList(props) {
   const numbers = props.numbers;
-  const listItems = numbers.map((number) =&gt;
+  const listItems = numbers.map((number) =>
     // Correct! Key should be specified inside the array.
-    &lt;ListItem key={number.toString()}
-              value={number} /&gt;
+    <ListItem key={number.toString()}
+              value={number} />
   );
   return (
-    &lt;ul&gt;
+    <ul>
       {listItems}
-    &lt;/ul&gt;
+    </ul>
   );
 }
 ```
@@ -77,10 +77,10 @@ Practically we have our **ListItem** component as the **child** component. Insid
 
 
 ```
-const listItems = numbers.map((number) =&gt;
+const listItems = numbers.map((number) =>
     // Correct! Key should be specified inside the array.
-    &lt;ListItem key={number.toString()}
-              value={number} /&gt;
+    <ListItem key={number.toString()}
+              value={number} />
   );
 ```
 
@@ -89,7 +89,7 @@ Therefor **ListItem component will have access to the mapped numbers**. As a res
 
 
 ```
- return &lt;li&gt;{props.value}&lt;/li&gt;;
+ return <li>{props.value}</li>;
 ```
 
 
@@ -98,9 +98,9 @@ Finally we return our list in the parent component:
 
 ```
  return (
-    &lt;ul&gt;
+    <ul>
       {listItems}
-    &lt;/ul&gt;
+    </ul>
   );
 ```
 

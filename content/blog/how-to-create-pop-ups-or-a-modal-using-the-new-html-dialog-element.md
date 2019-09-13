@@ -25,9 +25,9 @@ Typically we can use dialog element to create modals and popups using Javascript
 
 
 ```
-<code>&lt;dialog open>
-  &lt;p>A simple dialog box which is open by default!&lt;/p>
-&lt;/dialog></code>
+<code><dialog open>
+  <p>A simple dialog box which is open by default!</p>
+</dialog></code>
 ```
 
 
@@ -48,16 +48,16 @@ Surprisingly we could create a simple popup using dialog tag with a short Javasc
 
 
 ```
-&lt;dialog id="popup">
-  &lt;h1>I am a simple popup&lt;/h1>
-&lt;/dialog><br />&lt;button id="showPopup" onClick="showPopup()">show simple popup&lt;/button>
+<dialog id="popup">
+  <h1>I am a simple popup</h1>
+</dialog><br /><button id="showPopup" onClick="showPopup()">show simple popup</button>
 
-&lt;script>
+<script>
   const showPopup = ()  => { 
     const popup = document.getElementById('popup');
     popup.show();
  }
-&lt;/script>
+</script>
 ```
 
 
@@ -73,16 +73,16 @@ However we need to use **showModal** method to create a modal box with dialog ta
 
 
 ```
-&lt;dialog id="modal">
-  &lt;h1>I am a Modal&lt;/h1>
-&lt;/dialog><br />&lt;button id="showModal" onClick="showModal()">show simple popup&lt;/button>
+<dialog id="modal">
+  <h1>I am a Modal</h1>
+</dialog><br /><button id="showModal" onClick="showModal()">show simple popup</button>
 
-&lt;script>
+<script>
   const showModal = ()  => { 
     const modal = document.getElementById('modal');
     modal.showModal();
  }
-&lt;/script>
+</script>
 ```
 
 
@@ -92,18 +92,18 @@ Greatly we are able to use an attribute called method=&#8221;dialog&#8221;  in
 
 
 ```
-&lt;dialog id="form">
-  &lt;form method="dialog">
-    &lt;p>Would you like to continue?&lt;/p>
-    &lt;button type="submit" value="no">No&lt;/button>
-    &lt;button type="submit" value="yes">Yes&lt;/button>
-  &lt;/form>
-&lt;/dialog>
-&lt;button id="showForm" onClick="showForm()">show form&lt;/button><br /><br />&lt;script><br />const form = document.getElementById('form');
+<dialog id="form">
+  <form method="dialog">
+    <p>Would you like to continue?</p>
+    <button type="submit" value="no">No</button>
+    <button type="submit" value="yes">Yes</button>
+  </form>
+</dialog>
+<button id="showForm" onClick="showForm()">show form</button><br /><br /><script><br />const form = document.getElementById('form');
 const showForm = () => form.showModal();
 form.addEventListener('close',  (event) => {
     if (dialog.returnValue === 'yes') { /* … */ }
-  });<br />&lt;/script>
+  });<br /></script>
 
 
 ```

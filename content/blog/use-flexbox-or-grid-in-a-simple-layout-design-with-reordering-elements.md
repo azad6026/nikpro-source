@@ -39,7 +39,7 @@ https://codepen.io/azad6026/pen/ZwVoLP
 
 The reason is I had a small design the other day and I couldn&#8217;t change the markup for a good reason and I had to reorder the sections. Therefore the best solution was using CSS. Using FlexBox. Practically after making the container a flexible parent, we need to use the order property as below to reshuffle the boxes:
 
-<pre >lt;strong>.container{&lt;br>    display: flex;&lt;br>}&lt;br>.item{&lt;br>    flex:1;&lt;br>}&lt;br>.item1{&lt;br>    order: 3;&lt;br>}&lt;br>.item2{&lt;br>    order: 1;&lt;br>}&lt;br>.item3{&lt;br>    order: 2;&lt;br>}&lt;/strong></pre>
+<pre >lt;strong>.container{<br>    display: flex;<br>}<br>.item{<br>    flex:1;<br>}<br>.item1{<br>    order: 3;<br>}<br>.item2{<br>    order: 1;<br>}<br>.item3{<br>    order: 2;<br>}</strong></pre>
 
 ## Using Grid
 
@@ -50,12 +50,12 @@ https://codepen.io/azad6026/pen/VgqxqW
 Therefore the code looks like this:
 
 <pre>
-&lt;strong>.container{&lt;br>    display: grid;&lt;br>    grid-template-columns: repeat(3,1fr);&lt;br>    grid-template-rows: 1fr;&lt;br>}&lt;/strong><
+<strong>.container{<br>    display: grid;<br>    grid-template-columns: repeat(3,1fr);<br>    grid-template-rows: 1fr;<br>}</strong><
 </pre>
 
 Although we don&#8217;t need to define the rows but I prefer that here for simplicity. Then we need to define which box belongs to which column.
 
-<pre>lt;strong>.item1{&lt;br>    grid-column: 3/-1;&lt;br>}&lt;br>.item2{&lt;br>    grid-column: 1/2;&lt;br>}&lt;br>.item3{&lt;br>    grid-column: 2/3;&lt;br>}&lt;/strong>
+<pre>lt;strong>.item1{<br>    grid-column: 3/-1;<br>}<br>.item2{<br>    grid-column: 1/2;<br>}<br>.item3{<br>    grid-column: 2/3;<br>}</strong>
 </pre>
 
 But with only this code you will see that the first box sits on the last column. However the other boxes feel into the next row. As a result they will not fill up the first row.
@@ -65,7 +65,7 @@ Actually this is how grid works. Because we asked the very first box i the marku
 That is happening actually. But because the items follow each other in order in the grid, they cannot simply move up to the first row. So we need to add one more line of code to each box:
 
 <pre>
-.item{&lt;br>    grid-row: 1/1;&lt;br>}
+.item{<br>    grid-row: 1/1;<br>}
 </pre>
 
 Specifying which row they should sit in and occupy. Finally the design is done.

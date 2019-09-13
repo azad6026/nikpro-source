@@ -41,7 +41,7 @@ But the most important part is the background container which is a div inside th
 
 
 ```
-&lt;div class="dropdownBackground"><br />    &lt;span class="arrow">&lt;/span><br />&lt;/div>
+<div class="dropdownBackground"><br />    <span class="arrow"></span><br /></div>
 ```
 
 

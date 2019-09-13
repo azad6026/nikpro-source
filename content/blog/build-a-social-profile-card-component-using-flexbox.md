@@ -31,15 +31,15 @@ The whole idea is to design a social profile card that can be of any social medi
 
 
 ```
-&lt;div class="photo"&gt;
-  &lt;div class="top"&gt;
+<div class="photo">
+  <div class="top">
    // the top links go here
-  &lt;/div&gt;
-  &lt;div class="middle"&gt;&lt;h3&gt;Coding is my passion!&lt;/h3&gt;&lt;/div&gt;
-  &lt;div class="bottom"&gt;
+  </div>
+  <div class="middle"><h3>Coding is my passion!</h3></div>
+  <div class="bottom">
    // the image and link in the bottom go here
-  &lt;/div&gt;
-&lt;/div&gt;
+  </div>
+</div>
 ```
 
 

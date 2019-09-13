@@ -34,7 +34,7 @@ Basically functional components are just React components that aren’t created 
 
 
 ```
-<em>// Class component<br /></em>class Parent extends React.Component {<br /> render () {<br />  return(<br />   &lt;Child bg<em>Color</em>={'blue'} /><br />  )<br /> }<br />}<br /><em>// Functional component<br /></em>const Child = () => {<br />  return (<br />    &lt;div>&lt;/div><br />  )<br />}
+<em>// Class component<br /></em>class Parent extends React.Component {<br /> render () {<br />  return(<br />   <Child bg<em>Color</em>={'blue'} /><br />  )<br /> }<br />}<br /><em>// Functional component<br /></em>const Child = () => {<br />  return (<br />    <div></div><br />  )<br />}
 ```
 
 
@@ -44,7 +44,7 @@ Thankfully there is no nee to use the this keyword here. Because it is not a cla
 
 
 ```
-const Child = (props) => {<br />  return (<br />    &lt;div style={{backgroundColor: props.bgColor}} /><br />  )<br />}
+const Child = (props) => {<br />  return (<br />    <div style={{backgroundColor: props.bgColor}} /><br />  )<br />}
 ```
 
 
@@ -52,7 +52,7 @@ A stateless component(or dumb) is just presentation of the state(props). It only
 
 
 ```
-const Button = props => (<br />   &lt;button className="our_button" onClick={props.onClick}><br />      {props.label}<br />   &lt;/button><br />);
+const Button = props => (<br />   <button className="our_button" onClick={props.onClick}><br />      {props.label}<br />   </button><br />);
 ```
 
 
@@ -66,13 +66,13 @@ Moreover this is another example of a parent class component and a child functio
 ```
 <code>const Username = React.createClass({
   render() {
-    return &lt;p>The logged in user is: {this.props.username}&lt;/p>;
+    return <p>The logged in user is: {this.props.username}</p>;
   },
 });
 // OR:
 class Username extends React.Component {
   render() {
-    return &lt;p>The logged in user is: {this.props.username}&lt;/p>;
+    return <p>The logged in user is: {this.props.username}</p>;
   }
 }</code>
 ```
@@ -83,7 +83,7 @@ As an example wee could get the username via props in our functional component:
 
 ```
 <code>const Username = function(props) {
-  return &lt;p>The logged in user is: {props.username}&lt;/p>;
+  return <p>The logged in user is: {props.username}</p>;
 };</code>
 ```
 
@@ -92,7 +92,7 @@ Alternatively which is a better way we could [use destructuring](http://www.nikp
 
 
 ```
-<code>const Username = ({ username }) => &lt;p>The logged in user is: {username}&lt;/p>;</code>
+<code>const Username = ({ username }) => <p>The logged in user is: {username}</p>;</code>
 ```
 
 
