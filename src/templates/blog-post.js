@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
                 margin: `1rem auto 2rem`,
               }}
             >
-              {post.frontmatter.date} by Azadeh
+              {post.frontmatter.date} by Azadeh, {post.timeToRead} min
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -93,6 +93,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      timeToRead
       excerpt(pruneLength: 160)
       html
       frontmatter {

@@ -44,7 +44,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small style={{ color: `#ad5100` }}>
-                {node.frontmatter.date} by Azadeh
+                {node.frontmatter.date} by Azadeh, {node.timeToRead} min
               </small>
 
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
@@ -122,6 +122,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          timeToRead
           excerpt
           fields {
             slug
