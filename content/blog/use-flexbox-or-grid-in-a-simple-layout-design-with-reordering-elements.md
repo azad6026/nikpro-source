@@ -39,7 +39,8 @@ https://codepen.io/azad6026/pen/ZwVoLP
 
 The reason is I had a small design the other day and I couldn&#8217;t change the markup for a good reason and I had to reorder the sections. Therefore the best solution was using CSS. Using FlexBox. Practically after making the container a flexible parent, we need to use the order property as below to reshuffle the boxes:
 
-```<pre >lt;strong>.container{
+````
+lt;strong>.container{
    display: flex;<br>}<br>.item{
    flex:1;<br>}<br>.item1{
    order: 3;<br>}<br>.item2{
@@ -94,3 +95,4 @@ But if we need to reorder some of the small sections we could use these techniqu
 
 Thank you for reading.
 ```
+````
