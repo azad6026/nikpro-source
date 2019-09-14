@@ -31,7 +31,9 @@ We gave spinner , the caption box and the main wrapper and the image wrapper a *
 
 
 ```
-border-radius: 50%;<br /></pre>
+border-radius: 50%;<br />
+```
+
 
 But the interesting part is when we hover over the image. The spinner wrapper will be transformed with a rotation of 180deg and it looks like a ring wrapping the content:
 

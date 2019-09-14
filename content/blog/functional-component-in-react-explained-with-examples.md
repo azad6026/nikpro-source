@@ -64,7 +64,7 @@ Moreover this is another example of a parent class component and a child functio
 
 
 ```
-<code>const Username = React.createClass({
+const Username = React.createClass({
   render() {
     return <p>The logged in user is: {this.props.username}</p>;
   },
@@ -74,7 +74,7 @@ class Username extends React.Component {
   render() {
     return <p>The logged in user is: {this.props.username}</p>;
   }
-}</code>
+}
 ```
 
 
@@ -82,9 +82,9 @@ As an example wee could get the username via props in our functional component:
 
 
 ```
-<code>const Username = function(props) {
+const Username = function(props) {
   return <p>The logged in user is: {props.username}</p>;
-};</code>
+};
 ```
 
 
@@ -92,7 +92,7 @@ Alternatively which is a better way we could [use destructuring](http://www.nikp
 
 
 ```
-<code>const Username = ({ username }) => <p>The logged in user is: {username}</p>;</code>
+const Username = ({ username }) => <p>The logged in user is: {username}</p>;
 ```
 
 

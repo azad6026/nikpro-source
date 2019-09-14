@@ -36,12 +36,12 @@ According to Rect docs we **should not call `setState()`** in the `construc
 
 
 ```
-<code>constructor(props) {
+constructor(props) {
   super(props);
   // Don't call this.setState() here!<br/>  // initialise state
   this.state = { counter: 0 };<br/>  // bund methods
   this.handleClick = this.handleClick.bind(this);
-}</code>
+}
 ```
 
 
@@ -63,7 +63,7 @@ Based on React docs `getDerivedStateFromProps` is invoked right before calling 
 
 
 ```
-<code>static getDerivedStateFromProps(props, state)</code>
+static getDerivedStateFromProps(props, state)
 ```
 
 
@@ -87,7 +87,9 @@ class App extends Component {
       </div>
     );
   }
-}<br /></pre>
+}<br />
+```
+
 
 basically it renders the same thing each time it invokes. So we should not  modify state there. It does not interact with the browser. This method should stay pure. Also it will not be invoked if [`shouldComponentUpdate()`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate) returns false. We will check out this method later in the next article.
 

@@ -47,7 +47,8 @@ const makeRequest = () =><br />  getJSON()<br />    .then(data => {<br />      c
 
 We know that getJSON returns a promise and then we use that data and return &#8220;done&#8221;. We could write it this way using async await:
 
-<pre class="wp-block-preformatted"><br />const makeRequest = async () => {<br />  console.log(await getJSON())<br />  return "done"<br />}<br />makeRequest()
+```
+<br />const makeRequest = async () => {<br />  console.log(await getJSON())<br />  return "done"<br />}<br />makeRequest()
 ```
 
 
@@ -75,7 +76,7 @@ Sometimes working with API&#8217;s we might have chain of promises. Imagine <a h
 
 
 ```
-<code>function getProcessedData(url) {
+function getProcessedData(url) {
   return downloadData(url) // returns a promise
     .catch(e => {
       return downloadFallbackData(url)  // returns a promise
@@ -83,7 +84,7 @@ Sometimes working with API&#8217;s we might have chain of promises. Imagine <a h
     .then(v => {
       return processDataInWorker(v); // returns a promise
     });
-}</code>
+}
 ```
 
 
@@ -91,7 +92,7 @@ The returned data has been split into a few parts. Using Async function and its 
 
 
 ```
-<code>async function getProcessedData(url) {
+async function getProcessedData(url) {
   let v;
   try {
     v = await downloadData(url); 
@@ -99,7 +100,7 @@ The returned data has been split into a few parts. Using Async function and its 
     v = await downloadFallbackData(url);
   }
   return processDataInWorker(v);
-}</code>
+}
 ```
 
 

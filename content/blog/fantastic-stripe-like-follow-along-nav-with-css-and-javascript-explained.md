@@ -147,7 +147,7 @@ After we calculated the cords for both nav and dropdown we assign it to the back
 
 
 ```
-// assign the width and heigth using <a href="http://www.nikpro.com.au/template-literals-in-js6-explained/">template literals</a><br />background.style.setProperty('width', <code>${coords.width}px</code>);<br />background.style.setProperty('height', <code>${coords.height}px</code>);<br />// the left and right cords should be assigned to tranform prperty in CSS<br />background.style.setProperty('transform', <code>translate(${coords.left}px, ${coords.top}px)</code>);
+// assign the width and heigth using <a href="http://www.nikpro.com.au/template-literals-in-js6-explained/">template literals</a><br />background.style.setProperty('width', ${coords.width}px);<br />background.style.setProperty('height', ${coords.height}px);<br />// the left and right cords should be assigned to tranform prperty in CSS<br />background.style.setProperty('transform', translate(${coords.left}px, ${coords.top}px));
 ```
 <figure class="wp-block-image">
 

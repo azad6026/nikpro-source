@@ -29,7 +29,7 @@ The interesting part for us are the inputs. First the radio buttons:
 
 
 ```
-<code><input name="iceCream" type="radio" value="yes"><br/><code><input name="iceCream" type="radio" value="no"></code></code>
+<input name="iceCream" type="radio" value="yes"><br/><input name="iceCream" type="radio" value="no">
 ```
 
 
@@ -37,7 +37,7 @@ Firstly the name attribute and the value of inputs are of interest. Also the bot
 
 
 ```
-<code><input name="flavour" type="checkbox" value="chocolate" disabled=""><code> <br/><input name="flavour" type="checkbox" value="vanilla" disabled=""></code><br /><code><input name="flavour" type="checkbox" value="strawberry" disabled=""></code></code>
+<input name="flavour" type="checkbox" value="chocolate" disabled=""> <br/><input name="flavour" type="checkbox" value="vanilla" disabled=""><br /><input name="flavour" type="checkbox" value="strawberry" disabled="">
 ```
 
 
@@ -72,10 +72,10 @@ After all this we need to write the toggleFavours function to disable and enable
 function toggleFlavours(value) {<br />
 // Find all input[name=flavour] tags<br />
   document.querySelectorAll('input[name=flavour]').forEach(tag =><br />
-<code>// Set disabled attribute based on value of current input[name=iceCream]
+// Set disabled attribute based on value of current input[name=iceCream]
 value === 'no'
 ? tag.disabled = true
-: tag.disabled = false</code><br />)<br />}
+: tag.disabled = false<br />)<br />}
 ```
 
 
@@ -85,7 +85,7 @@ Finally in this function again arrow function has been used and also the ternary
 
 
 ```
-tag => <code>value === 'no' ? tag.disabled = true : tag.disabled = false</code>
+tag => value === 'no' ? tag.disabled = true : tag.disabled = false
 ```
 
 

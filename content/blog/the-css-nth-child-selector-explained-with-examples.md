@@ -14,7 +14,7 @@ tags:
   - CSS selectors
   - nth-child
 ---
-The CSS3<code class=" language-undefined">:nth-child </code>selector is a pseudo class used to select elements by a numeric expression. Lets take a look at how nth-child works.
+The CSS3<code class=" language-undefined">:nth-child selector is a pseudo class used to select elements by a numeric expression. Lets take a look at how nth-child works.
 
 ## The nth-child syntax
 
@@ -22,7 +22,7 @@ This is how the nth-child selector syntax looks like:
 
 `li:nth-child(expression); {}`
 
-In the parentheses it accepts **number**, **odd** and **even** and an **expression**.As <code class=" language-undefined">:nth-child</code> can be used to select a range of different elements under different circumstances, it’s difficult to explain how it works and what it’s for. We show this with some examples.
+In the parentheses it accepts **number**, **odd** and **even** and an **expression**.As <code class=" language-undefined">:nth-child can be used to select a range of different elements under different circumstances, it’s difficult to explain how it works and what it’s for. We show this with some examples.
 
 ### A simple expression
 
@@ -36,7 +36,7 @@ Which means select the 4th list item from the list. Or select odd or even elemen
 
 `li:nth-child(even); {}` //selects even list items
 
-### The <code class=" language-undefined">an+b</code> expression {#the-anb-expression}
+### The <code class=" language-undefined">an+b expression {#the-anb-expression}
 
 Our expression could be an+b which means it will selects groups of a elements. b can be zero as well. Lets assume we want to select the list items above 5:
 
@@ -74,7 +74,7 @@ Obviously do not overuse nth child when you can. Follow some best practices 
 
   * Use :first-child and :last-child for first and last elements instead of nth-child.
 <li id="tip-4-avoid-weird-and-complex-nth-childnbspexpressions">
-  Avoid weird and complex <code class=" language-undefined">nth-child</code>expressions
+  Avoid weird and complex <code class=" language-undefined">nth-childexpressions
 </li>
 
 Check out this example to alternate table background colours:

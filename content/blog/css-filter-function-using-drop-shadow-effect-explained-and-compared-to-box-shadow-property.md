@@ -25,11 +25,16 @@ Firstly we will take a look at its syntax:
 
 
 ```
-drop-shadow(<em>offset-x</em> <em>offset-y</em> <em>blur-radius</em> <em>spread-radius</em> <em>color</em>);<br /><br />An example:<br /><br /><code><strong>/* Reddish shadow with 1rem blur and .3rem spread */ /* WARNING: not generally supported by browsers */ </strong></code><br /><br /><code><strong>drop-shadow(.5rem .5rem 1rem .3rem #e23)</strong></code></pre>
+drop-shadow(<em>offset-x</em> <em>offset-y</em> <em>blur-radius</em> <em>spread-radius</em> <em>color</em>);<br /><br />An example:<br /><br />/* Reddish shadow with 1rem blur and .3rem spread */ /* WARNING: not generally supported by browsers */ <br /><br />drop-shadow(.5rem .5rem 1rem .3rem #e23)
+```
+
 
 As we see it is very much the same as the box shadow property:
 
-<pre class="wp-block-preformatted"><code><strong>/* offset-x | offset-y | blur-radius | spread-radius | color */ </strong></code><br /><br /><code><strong>box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);</strong></code></pre>
+```
+/* offset-x | offset-y | blur-radius | spread-radius | color */ <br /><br />box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+```
+
 
 Common thing is spread radius is not supported by most browsers. So if used will not have any effect.
 

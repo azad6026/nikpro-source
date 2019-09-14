@@ -24,7 +24,8 @@ Therefore whenever we need to manipulate data without actually changing the data
 
 Basically the most use case for map in React specifically is to ender lists of items. Whether it is a list of blog posts or comments or just a simple list of names as below:
 
-<pre class="wp-block-preformatted"><code><strong>const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];</strong></code><br />const NamesList = () => (<br /> &nbsp; <div><br /> &nbsp; &nbsp; <ul>{names.map(name => <li key={name}> {name} </li>)}</ul><br /> &nbsp; </div><br /> ); <br />
+```
+const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];<br />const NamesList = () => (<br /> &nbsp; <div><br /> &nbsp; &nbsp; <ul>{names.map(name => <li key={name}> {name} </li>)}</ul><br /> &nbsp; </div><br /> ); <br />
 ```
 
 

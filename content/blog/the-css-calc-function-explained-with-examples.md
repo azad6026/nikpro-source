@@ -23,8 +23,8 @@ Basically the below is its syntax with an example:
 
 
 ```
-<code>Syntax : property: calc(expression) 
-Example : width: calc(100% - 80px);</code>
+Syntax : property: calc(expression) 
+Example : width: calc(100% - 80px);
 ```
 
 
@@ -44,8 +44,11 @@ As an example we can position the background image in the bottom right using cal
   See the Pen <a href="https://codepen.io/chriscoyier/pen/cqzmD/">calc() use case #2</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
 
-<pre class="wp-block-preformatted">background-# image: ../../static/images/url(dog.png);
-background-position: calc(100% - 50px) calc(100% - 20px);</pre>
+```
+background-# image: ../../static/images/url(dog.png);
+background-position: calc(100% - 50px) calc(100% - 20px);
+```
+
 
 The above piece of code puts the dog background in the bottom right. As a result calc put it 50px from the right and 20px from the bottom of the window width.
 

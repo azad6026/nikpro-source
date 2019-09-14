@@ -27,9 +27,11 @@ Then we have all remaining arguments to be placed within &#8220;standard&#8221; 
 
 
 ```
-<code>function f(a, b, ...theArgs) {
+function f(a, b, ...theArgs) {
   // ...
-}<br/><br/>// Using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/><strong><code> // ...</code><br />}</code></strong></pre>
+}<br/><br/>// Using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/> // ...<br />}
+```
+
 
 Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array `](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
 
@@ -45,27 +47,29 @@ const myFun = (a, b, …manyMoreArgs) => {
   console.log("a", a); 
   console.log("b", b);
   console.log("manyMoreArgs", manyMoreArgs); 
-}<br /><br /><code>myFun("one", "two", "three", "four", "five", "six");
+}<br /><br />myFun("one", "two", "three", "four", "five", "six");
 
 // a, one
 // b, two
-// manyMoreArgs, [three, four, five, six]</code><br /></pre>
+// manyMoreArgs, [three, four, five, six]<br />
+```
+
 
 As an example we have &#8230;manyMoreArgs as rest parameters. Therefor whatever argument to be assigned after the first two arguments will be part of the rest parameters:
 
 
 ```
-<code>// using the same function definition from example above
+// using the same function definition from example above
 
 myFun("one", "two", "three");
 
 // a, one
 // b, two
-// manyMoreArgs, [three]<br/><br/>// Another call<br/><br/><code>myFun("one", "two");
+// manyMoreArgs, [three]<br/><br/>// Another call<br/><br/>myFun("one", "two");
 
 // a, one
 // b, two
-// manyMoreArgs, []</code><br /></code>
+// manyMoreArgs, []<br />
 ```
 
 
@@ -77,11 +81,11 @@ AS I mentioned above we could use array methods on rest parameter args because i
 
 
 ```
-<code>const sortRestArgs = (...theArgs) => {
+const sortRestArgs = (...theArgs) => {
   return theArgs.sort();
 }
 
-console.log(sortRestArgs(5, 3, 7, 1)); // 1, 3, 5, 7</code>
+console.log(sortRestArgs(5, 3, 7, 1)); // 1, 3, 5, 7
 ```
 
 
@@ -89,20 +93,22 @@ But we cannot do the same with arguments as they are not an array:
 
 
 ```
-<code>// This is wrong and will not work. <br/>const sortArguments = (<strong><code>arguments</code>) => {
-  return <code>arguments</code>.sort();
-}</code></strong></pre>
+// This is wrong and will not work. <br/>const sortArguments = (arguments) => {
+  return arguments.sort();
+}
+```
+
 
 Best approach is to convert it to an array and then use array methods:
 
 
 ```
-<code>const <code>sortArguments</code> = (arguments) => {
+const sortArguments = (arguments) => {
   const args = Array.from(arguments);
    return args.sort();
 }
 
-console.log(<code>sortArguments</code>(5, 3, 7, 1)); // 1, 3, 5, 7</code>
+console.log(sortArguments(5, 3, 7, 1)); // 1, 3, 5, 7
 ```
 
 

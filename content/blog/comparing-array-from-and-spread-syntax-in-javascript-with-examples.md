@@ -58,8 +58,8 @@ Eventually we can create arrays from mapped objects or a set object using both a
 
 
 ```
-<code>var m = new Map([[1, 2], [2, 4], [4, 8]]);<br/><br/>// Using from method 
-Array.from(m);</code><br /><br />// Using spread syntax<br />[...m];
+var m = new Map([[1, 2], [2, 4], [4, 8]]);<br/><br/>// Using from method 
+Array.from(m);<br /><br />// Using spread syntax<br />[...m];
 ```
 
 
@@ -67,7 +67,7 @@ Moreover we can use them both on a set object:
 
 
 ```
-<code>var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s);<br/><br/>//Using spread syntax</code><br />[...s];
+var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s);<br/><br/>//Using spread syntax<br />[...s];
 ```
 
 
@@ -83,10 +83,10 @@ Comparably we better know `Array.from()` has an optional parameter `mapFn`, w
 
 
 ```
-<code>// Using an arrow function as the map function to
+// Using an arrow function as the map function to
 // manipulate the elements
 Array.from([1, 2, 3], x => x + x);      
-// [2, 4, 6]</code>
+// [2, 4, 6]
 ```
 
 
@@ -96,13 +96,13 @@ However we only can use Array.from if we wanted to work on array-like objects. T
 
 
 ```
-<code>function f() {
+function f() {
   return Array.from(arguments);
 }
 
 const result = f(1, 2, 3);
 
-// result =  [1, 2, 3]</code>
+// result =  [1, 2, 3]
 ```
 
 

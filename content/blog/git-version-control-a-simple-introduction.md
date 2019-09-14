@@ -22,8 +22,10 @@ By far, the most widely used version control system is Git. Rather than having o
 
 After <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">installing git</a>, you need to setup your repository to have a virtual space for your project We assume that we have a project already and we need to version it with a new git repository:
 
-**`<pre><code>cd /path/to/your/existing/code <br />
-git init</code></pre>`**
+**`<pre>cd /path/to/your/existing/code <br />
+git init
+```
+`**
 
 We could also point initialisation directly to the project:
 
@@ -67,7 +69,7 @@ For a new initialised local repository, you will need o configure it for remote 
 
 Once you have a remote repo setup, you will need to add a remote repo url to your local `git config`, and set an upstream branch for your local branches.
 
-<pre><code>git remote add <remote_name> <remote_repo_url></code>
+<pre>git remote add <remote_name> <remote_repo_url>
 ```
 
 

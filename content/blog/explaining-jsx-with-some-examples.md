@@ -97,7 +97,7 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    We declare a variable called <code>name</code> and then use it inside JSX by wrapping it in curly braces. You can put any vald Javascript expression inside curly braces in JSX. Functions , objects, objects properties.
+    We declare a variable called name and then use it inside JSX by wrapping it in curly braces. You can put any vald Javascript expression inside curly braces in JSX. Functions , objects, objects properties.
   </p>
   
   <p>

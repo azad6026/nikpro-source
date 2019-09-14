@@ -31,7 +31,9 @@ Firstly have a look at this example in both slice and splice methods:
 
 
 ```
-let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.slice(1);<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />// citrus : ["Banana", "Orange", "Lemon", "Apple"]<br /></pre>
+let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.slice(1);<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />// citrus : ["Banana", "Orange", "Lemon", "Apple"]<br />
+```
+
 
 As a result fruits is intact even when we apply the slice method. And what slice does is to take out all the array elements except the last element **Mango**. Because 1 here means remove 1 element from the end of the array.
 

@@ -21,8 +21,8 @@ In a normal Javascript example this is how we use map method to create a new map
 
 
 ```
-<code>const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map((number) => number * 2);</code>
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((number) => number * 2);
 ```
 
 
@@ -34,10 +34,10 @@ To be able to render a list using  map method in React we could do the same thi
 
 
 ```
-<code>const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
   <li>{number}</li>
-);</code>
+);
 ```
 
 
@@ -45,10 +45,10 @@ We just return the values in list items. And we can render it in our component i
 
 
 ```
-<code>ReactDOM.render(
+ReactDOM.render(
   <ul>{listItems}</ul>,
   document.getElementById('root')
-);</code>
+);
 ```
 
 
@@ -64,12 +64,12 @@ Therefor we add the key for each list item to make sure each element is unique a
 
 
 ```
-<code>const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
   <li key={number.toString()}>
     {number}
   </li>
-);</code>
+);
 ```
 
 
@@ -77,7 +77,7 @@ So the above component will look like this using map method in React example:
 
 
 ```
-<code>function NumberList(props) {
+function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
     <li key={number.toString()}>
@@ -93,7 +93,7 @@ const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   <NumberList numbers={numbers} />,
   document.getElementById('root')
-);</code>
+);
 ```
 
 
@@ -101,7 +101,7 @@ Moreover we could inline the map results as we write JSX in React. So this is th
 
 
 ```
-<code>function NumberList(props) {
+function NumberList(props) {
   const numbers = props.numbers;
   return (
     <ul>
@@ -111,7 +111,7 @@ Moreover we could inline the map results as we write JSX in React. So this is th
       )}
     </ul>
   );
-}</code>
+}
 ```
 
 
@@ -121,12 +121,12 @@ As another example we can extract a post array with separate key value pairs usi
 
 
 ```
-<code>const content = posts.map((post) =>
+const content = posts.map((post) =>
   <Post
     key={post.id}
     id={post.id}
     title={post.title} />
-);</code>
+);
 ```
 
 

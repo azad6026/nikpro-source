@@ -33,7 +33,10 @@ Basically we have two values for this property:
 
 <!-- wp:preformatted -->
 
-<pre class="wp-block-preformatted"><code><strong>/* Keyword values */</strong></code> <code><strong>overflow-wrap: normal;</strong></code> <code><strong>overflow-wrap: break-word;</strong></code></pre>
+```
+/* Keyword values */ overflow-wrap: normal; overflow-wrap: break-word;
+```
+
 
 <!-- /wp:preformatted -->
 
@@ -97,7 +100,10 @@ Therefore `word-break` is great for  **non-English content** that requires sp
 
 <!-- wp:preformatted -->
 
-<pre class="wp-block-preformatted"><code><strong>/* Keyword values */</strong></code> <code><strong>word-break: normal; </strong></code> <code><strong>word-break: break-all; </strong></code> <code><strong>word-break: keep-all;</strong></code> <code><strong>word-break: break-word;</strong></code></pre>
+```
+/* Keyword values */ word-break: normal;  word-break: break-all;  word-break: keep-all; word-break: break-word;
+```
+
 
 <!-- /wp:preformatted -->
 

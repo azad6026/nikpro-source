@@ -14,6 +14,7 @@ categories:
 tags:
   - nested components
 ---
+
 Once we start writing real world applications in React we need to learn about nested components. How we could actually render a child component inside a parent component and how to pass the state and props. In a series of articles we are going to cover this with examples.
 
 ## Passing props down
@@ -22,33 +23,42 @@ Basically we have to understand that **props can only be passed down to the chil
 
 Therefor knowing these two facts lets take a look at this very useful example from <a href="https://reactjs.org/docs/lists-and-keys.html" target="_blank" rel="noreferrer noopener">Reactjs</a>. We have got an array of numbers to show as a list in frontend:
 
-<pre class="wp-block-preformatted"><code><strong>const numbers = [1, 2, 3, 4, 5, 6];</strong></code></pre>
+```
+const numbers = [1, 2, 3, 4, 5, 6];
+```
+
 
 Our first approach is to create a component to loop through the array and output them:
 
-<pre class="wp-block-preformatted"><code>function NumberList(props) {  </code>
-<code>  const numbers = props.numbers;  </code>
-<code>  const listItems = numbers.map((number) =>    </code>
-<code>    <li>{number}</li>  </code>
-<code>  );  </code>
-<code>  return (    </code>
-<code>    <ul>{listItems}</ul>  </code>
-<code>  );</code>
-<code>}</code></pre>
+```
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <li>{number}</li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+```
+
 
 Obviously our list is created via a loop through our array with map to generate list items. As a result our NumberList component returns an unordered list of items:
 
-<pre class="wp-block-preformatted"><code><strong>ReactDOM.render(  </strong></code>
-<code><strong>  <NumberList numbers={numbers} />,  </strong></code>
-<code><strong>  document.getElementById('root')</strong></code>
-<code><strong>);</strong></code></pre><figure class="wp-block-image">
+```
 
-<img class="wp-image-32521" src="http://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="http://testgatsby.localpassdata.png 591w, http://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure> 
+ReactDOM.render( 
+  <NumberList numbers={numbers} />, 
+  document.getElementById('root')
+);
+```
+<figure class="wp-block-image">
+
+<img class="wp-image-32521" src="http://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="http://testgatsby.localpassdata.png 591w, http://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure>
 
 ## Extract components to nested components
 
 Now if we [extract our component](http://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) to two seperate component we could have nested components and see how to pass props in that case. Our NumberList Component will be changed and we extract it to two components:
-
 
 ```
 // Child component
@@ -72,9 +82,7 @@ function NumberList(props) {
 }
 ```
 
-
 Practically we have our **ListItem** component as the **child** component. Inside NumberList component we pass the props to the ListItem component once we initialise its properties:
-
 
 ```
 const listItems = numbers.map((number) =>
@@ -84,17 +92,13 @@ const listItems = numbers.map((number) =>
   );
 ```
 
-
 Therefor **ListItem component will have access to the mapped numbers**. As a result we can now create our list inside our child component using passed props:
-
 
 ```
  return <li>{props.value}</li>;
 ```
 
-
 Finally we return our list in the parent component:
-
 
 ```
  return (
@@ -103,7 +107,6 @@ Finally we return our list in the parent component:
     </ul>
   );
 ```
-
 
 This is the core concept of passing props from top to bottom or from parent to child components in React. Understanding this will help to die into real world examples. In the next article we will see some more complex examples and we will pass states down as props into child components as well.
 

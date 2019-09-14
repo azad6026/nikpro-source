@@ -150,7 +150,7 @@ This will animate both transform and opacity on the element.
 We better use prefixes to have 100% cover on supported browsers. For the animation itself:
 
 <p id="0d67" class="graf graf--pre graf-after--p">
-  <code><strong>.element {</strong></code><br /> <code><strong>  -webkit-animation: fade 4s 1s infinite linear alternate;</strong></code><br /> <code><strong>  -moz-animation: fade 4s 1s infinite linear alternate;</strong></code><br /> <code><strong>  -ms-animation: fade 4s 1s infinite linear alternate;</strong></code><br /> <code><strong>  -o-animation: fade 4s 1s infinite linear alternate;</strong></code><br /> <code><strong>  animation: fade 4s 1s infinite linear alternate;</strong></code><br /> <code><strong>}</strong></code>
+  .element {<br />   -webkit-animation: fade 4s 1s infinite linear alternate;<br />   -moz-animation: fade 4s 1s infinite linear alternate;<br />   -ms-animation: fade 4s 1s infinite linear alternate;<br />   -o-animation: fade 4s 1s infinite linear alternate;<br />   animation: fade 4s 1s infinite linear alternate;<br /> }
 </p>
 
 And for the keyframe:

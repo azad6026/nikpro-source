@@ -105,9 +105,9 @@ Always use alt attribute for your images as an alternative when the image couldn
 
 Do not use title attribute for images. It is best practice not to as it is a tooltip that is shown with the image and in lacks in compatibility with touch only browsers in phones and tablets. Use &#8220;alt&#8221; attribute to describe the image.
 
-### The <pre> and <code> tags
+### The <pre> and  tags
 
-The <code> tag does not preserve any newline or white spaces but <pre> tag does. So use <pre>tag alone to avoid this.
+The  tag does not preserve any newline or white spaces but <pre> tag does. So use <pre>tag alone to avoid this.
 
 ### Comments
 

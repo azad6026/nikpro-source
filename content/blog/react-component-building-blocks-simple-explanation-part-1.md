@@ -23,13 +23,17 @@ It is easy and beautifully organised in code how you create a React component:
 
 
 ```
-import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br /></pre>
+import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br />
+```
+
 
 And as you might have guessed it is also easy to use it in our application as many times as we need just like this:
 
 
 ```
-<MyComponent /><br /></pre>
+<MyComponent /><br />
+```
+
 
 As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and Javascript knowledge and creates amazing user interfaces.
 

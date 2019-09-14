@@ -94,13 +94,17 @@ Thankfully we could also update CSS variables in Javascript just like a normal s
 
 
 ```
-element.style.setProperty(’color’, ’red’);<br /></pre>
+element.style.setProperty(’color’, ’red’);<br />
+```
+
 
 Additionally we could do the same for CSS variables:
 
 
 ```
-element.style.setProperty(’--color’, ’red’); </pre>
+element.style.setProperty(’--color’, ’red’); 
+```
+
 
 Or even update them in an inline Javascript code:
 

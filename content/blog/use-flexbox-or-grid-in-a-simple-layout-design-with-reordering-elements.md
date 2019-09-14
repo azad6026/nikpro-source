@@ -39,7 +39,14 @@ https://codepen.io/azad6026/pen/ZwVoLP
 
 The reason is I had a small design the other day and I couldn&#8217;t change the markup for a good reason and I had to reorder the sections. Therefore the best solution was using CSS. Using FlexBox. Practically after making the container a flexible parent, we need to use the order property as below to reshuffle the boxes:
 
-<pre >lt;strong>.container{<br>    display: flex;<br>}<br>.item{<br>    flex:1;<br>}<br>.item1{<br>    order: 3;<br>}<br>.item2{<br>    order: 1;<br>}<br>.item3{<br>    order: 2;<br>}</strong></pre>
+```<pre >lt;strong>.container{
+   display: flex;<br>}<br>.item{
+   flex:1;<br>}<br>.item1{
+   order: 3;<br>}<br>.item2{
+   order: 1;<br>}<br>.item3{
+   order: 2;<br>}
+```
+
 
 ## Using Grid
 
@@ -50,13 +57,21 @@ https://codepen.io/azad6026/pen/VgqxqW
 Therefore the code looks like this:
 
 <pre>
-<strong>.container{<br>    display: grid;<br>    grid-template-columns: repeat(3,1fr);<br>    grid-template-rows: 1fr;<br>}</strong><
-</pre>
+.container{
+   display: grid;   grid-template-columns: repeat(3,1fr);   grid-template-rows: 1fr;<br>}<
+
+```
+
 
 Although we don&#8217;t need to define the rows but I prefer that here for simplicity. Then we need to define which box belongs to which column.
 
-<pre>lt;strong>.item1{<br>    grid-column: 3/-1;<br>}<br>.item2{<br>    grid-column: 1/2;<br>}<br>.item3{<br>    grid-column: 2/3;<br>}</strong>
-</pre>
+<pre>lt;strong>.item1{
+   grid-column: 3/-1;<br>}<br>.item2{
+   grid-column: 1/2;<br>}<br>.item3{
+   grid-column: 2/3;<br>}
+
+```
+
 
 But with only this code you will see that the first box sits on the last column. However the other boxes feel into the next row. As a result they will not fill up the first row.
 
@@ -65,13 +80,17 @@ Actually this is how grid works. Because we asked the very first box i the marku
 That is happening actually. But because the items follow each other in order in the grid, they cannot simply move up to the first row. So we need to add one more line of code to each box:
 
 <pre>
-.item{<br>    grid-row: 1/1;<br>}
-</pre>
+.item{
+   grid-row: 1/1;<br>}
+
+```
+
 
 Specifying which row they should sit in and occupy. Finally the design is done.
 
 Notebally this is not a preferred approach if we need the order of the text to change. Because this does not change the actual markup. And the text readers will read the content as it is in html.
 
-But if we need to reorder some of the small sections we could use these techniques. FlexBox solution has less code and more flexibility it seems but if needed the layout to also be responsive we can consoder grid a better solution. Changing the teplate to have responsive code.
+But if we need to reorder some of the small sections we could use these techniques. FlexBox solution has less code and more flexibility it seems but if needed the layout to also be responsive we can consoder grid a better solution. Changing the template to have responsive code.
 
 Thank you for reading.
+```

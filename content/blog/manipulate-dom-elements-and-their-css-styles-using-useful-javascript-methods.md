@@ -24,17 +24,24 @@ There are two types of methods to select elements in the DOM. The old ones are:
 
 
 ```
-// Select an element with an id : here id=para<br /><code><strong>const el = document.getElementById('para');</strong></code><br /><br />// Select an element by tag name :  here p tag<br /><code><strong>const el = document.getElementsByTagName('p');</strong></code><br /><br />// Select an element by class name : here class=test<br /><code><strong>const el = document.getElementsByClassName('test');</strong></code></pre>
+// Select an element with an id : here id=para<br />const el = document.getElementById('para');<br /><br />// Select an element by tag name :  here p tag<br />const el = document.getElementsByTagName('p');<br /><br />// Select an element by class name : here class=test<br />const el = document.getElementsByClassName('test');
+```
+
 
 With above elements we could select elements of the DOM separately by id or tag or class names. But there are modern ways to do this using query selector methods:
 
-<pre class="wp-block-preformatted"><code><strong>const el = document.querySelector(".myclass");</strong></code></pre>
+```
+const el = document.querySelector(".myclass");
+```
+
 
 Using&nbsp;`querySelector method`&nbsp;we could select any selector. It could be a tag or an id or a class. If we needed to select multiple selectors we could use&nbsp;`querySelectorAll`&nbsp; instead:
 
 
 ```
-CSS// Selects all p tags<br />const matches = document.querySelectorAll("p");<br /><br />// Selects all divs with class of note and alert<br />const matches = document.querySelectorAll("div.note, div.alert");<br /></pre>
+CSS// Selects all p tags<br />const matches = document.querySelectorAll("p");<br /><br />// Selects all divs with class of note and alert<br />const matches = document.querySelectorAll("div.note, div.alert");<br />
+```
+
 
 <div class="wp-block-image">
   <figure class="aligncenter"><img src="http://www.nikpro.com.auhtmlDOM.png" alt="" class="wp-image-32602" srcset="http://testgatsby.localhtmlDOM.png 225w, http://testgatsby.localhtmlDOM-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /><figcaption>Manipulate DOM using CSS in JS</figcaption></figure>
@@ -67,7 +74,9 @@ Additionally we can create , append and remove elements using&nbsp;&nbsp;`create
 
 
 ```
-// Create a p tag<br /><br />const para = document.createElement('p');<br />para.textContent = 'We hope you enjoyed the ride.';<br /><br />// Append it to the section<br /><br /><code><strong>const sect = document.querySelector('section');</strong></code><br /><code><strong>sect.appendChild(para);</strong></code><br /><br />// Remove the p tag<br /><br /><code><strong>sect.removeChild(linkPara);</strong></code><br /><br />//Or remove it referencing to its parent like this when that is the only way<br /><br /><code><strong>linkPara.parentNode.removeChild(linkPara);</strong></code></pre>
+// Create a p tag<br /><br />const para = document.createElement('p');<br />para.textContent = 'We hope you enjoyed the ride.';<br /><br />// Append it to the section<br /><br />const sect = document.querySelector('section');<br />sect.appendChild(para);<br /><br />// Remove the p tag<br /><br />sect.removeChild(linkPara);<br /><br />//Or remove it referencing to its parent like this when that is the only way<br /><br />linkPara.parentNode.removeChild(linkPara);
+```
+
 
 &nbsp;
 
@@ -77,19 +86,24 @@ Basically there are two ways to manipulate CSS using Javascript. You can directl
 
 
 ```
-// Change the p tag's styles<br /><br />const para = document.createElement('p');<br /><br />// For two word properties we use camel case like in <code><strong>backgroundColor</strong></code><br /><code><strong>para.style.color = 'white';</strong></code><br /><code><strong>para.style.backgroundColor = 'black';</strong></code><br /><code><strong>para.style.padding = '10px';</strong></code><br /><code><strong>para.style.width = '250px';</strong></code><br /><code><strong>para.style.textAlign = 'center';</strong></code><br />
+// Change the p tag's styles<br /><br />const para = document.createElement('p');<br /><br />// For two word properties we use camel case like in backgroundColor<br />para.style.color = 'white';<br />para.style.backgroundColor = 'black';<br />para.style.padding = '10px';<br />para.style.width = '250px';<br />para.style.textAlign = 'center';<br />
 ```
 
 
 In addition to this simple approach we have the option to use setAttribute method:
 
-<pre class="wp-block-preformatted"><code>para.setAttribute('color', 'white');</code></pre>
+```
+para.setAttribute('color', 'white');
+```
+
 
 Instead of doing all properties one by one we can create a class and put in all properties and set that class to the tag using this method:
 
 
 ```
-.highlight {<br />  color: white;<br />  background-color: black;<br />  padding: 10px;<br />  width: 250px;<br />  text-align: center;<br />}<br /><br /><code><strong>para.setAttribute('class', 'highlight');</strong></code></pre><figure class="wp-block-image">
+.highlight {<br />  color: white;<br />  background-color: black;<br />  padding: 10px;<br />  width: 250px;<br />  text-align: center;<br />}<br /><br />para.setAttribute('class', 'highlight');
+```
+<figure class="wp-block-image">
 
 <img src="http://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="http://testgatsby.localdom-tree.png 665w, http://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> </figure>
 

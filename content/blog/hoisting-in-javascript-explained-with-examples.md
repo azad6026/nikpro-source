@@ -39,7 +39,9 @@ We normally might be doing it the other way around declaring variable first. How
 
 
 ```
-var x; // Declare x<br />x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;  </pre>
+var x; // Declare x<br />x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;  
+```
+
 
 ## Hoisting in function declaration
 
@@ -47,14 +49,14 @@ It is actually great case of function declaration as we could call them before e
 
 
 ```
-<code>catName("Chloe");
+catName("Chloe");
 
 function catName(name) {
   console.log("My cat's name is " + name);
 }
 /*
 The result of the code above is: "My cat's name is Chloe"
-*/</code>
+*/
 ```
 
 
@@ -62,7 +64,7 @@ We called the catName function with its argument before declaring it. We usually
 
 
 ```
-<code>function catName(name) {
+function catName(name) {
   console.log("My cat's name is " + name);
 }
 
@@ -70,7 +72,7 @@ catName("Tigger");
 
 /*
 The result of the code above is: "My cat's name is Tigger"
-*/</code>
+*/
 ```
 
 
@@ -80,9 +82,9 @@ No. There is no hoisting for initialisation. So if you use a variable which is d
 
 
 ```
-<code>console.log(num); // Returns undefined 
+console.log(num); // Returns undefined 
 var num;
-num = 6;<br/></code>
+num = 6;<br/>
 ```
 
 
@@ -90,9 +92,9 @@ However you can initialise variable and use it and then declare it:
 
 
 ```
-<code>num = 6;
+num = 6;
 console.log(num); // returns 6
-var num;</code>
+var num;
 ```
 
 
@@ -100,7 +102,7 @@ Here is another example for initialisation:
 
 
 ```
-<code>var x = 1; // Initialize x
+var x = 1; // Initialize x
 console.log(x + " " + y); // '1 undefined'
 var y = 2; // Initialize y
 
@@ -108,7 +110,7 @@ var y = 2; // Initialize y
 var x = 1; // Initialize x
 var y; // Declare y
 console.log(x + " " + y); // '1 undefined'
-y = 2; // Initialize y</code>
+y = 2; // Initialize y
 ```
 
 

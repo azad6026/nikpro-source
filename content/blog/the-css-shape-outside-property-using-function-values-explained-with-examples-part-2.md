@@ -36,10 +36,10 @@ As an example again the below CSS creates a rectangular shape inset from the ref
 
 
 ```
-<code>.shape {
+.shape {
   float: left;
   shape-outside: inset(20px 10px 20px 10px round 10px);
-}</code>
+}
 ```
 
 

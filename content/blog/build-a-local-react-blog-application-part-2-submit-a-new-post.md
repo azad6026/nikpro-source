@@ -121,7 +121,7 @@ const newPosts = Array.from(posts);
 newPosts.push(post);
 this.setState({
     posts: newPosts
-});<code>
+});
 event.preventDefault();
 };
 

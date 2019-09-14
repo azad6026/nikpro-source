@@ -25,9 +25,9 @@ Typically we can use dialog element to create modals and popups using Javascript
 
 
 ```
-<code><dialog open>
+<dialog open>
   <p>A simple dialog box which is open by default!</p>
-</dialog></code>
+</dialog>
 ```
 
 

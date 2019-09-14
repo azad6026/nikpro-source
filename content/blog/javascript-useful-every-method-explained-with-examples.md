@@ -29,10 +29,12 @@ As an example we could check whether a size is small enough or not:
 
 
 ```
-<code>function isSmallEnough(element, index, array) {
+function isSmallEnough(element, index, array) {
   return element <= 10;
 }<br/>// Checking two arrays for the condition
-[12, 5, 8, 130, 44].every(<strong><code>isSmallEnough</code>); // false <br />[2, 5, 0, 10, 6].every(<code>isSmallEnough</code>); // true</code></strong></pre>
+[12, 5, 8, 130, 44].every(isSmallEnough); // false <br />[2, 5, 0, 10, 6].every(isSmallEnough); // true
+```
+
 
 We see that some values of the first array does not meet the condition. Therefor we get a false result while in the second one it passes the condition for all item values.
 
@@ -42,7 +44,7 @@ Generally we can also test every() method on objects to see if they pass the tes
 
 
 ```
-<code>const arr1 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:1, x:2, y:3, z:4}];<br/>arr1.every(obj => obj.a === 1); //true</code> <br /><br /><code>const arr2 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:2, x:2, y:3, z:4}];<br/>arr2.every(obj => obj.a === 1); //false</code>
+const arr1 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:1, x:2, y:3, z:4}];<br/>arr1.every(obj => obj.a === 1); //true <br /><br />const arr2 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:2, x:2, y:3, z:4}];<br/>arr2.every(obj => obj.a === 1); //false
 ```
 
 
@@ -52,8 +54,8 @@ Moreover we can use [arrow function](http://www.nikpro.com.au/some-arrow-functio
 
 
 ```
-<code>const a1 = [12, 5, 8, 130, 44];<br/>a1.every(x => x >= 10); // false<br/><br/>// Or all in one line
-[12, 54, 18, 130, 44].every(x => x >= 10); // true</code>
+const a1 = [12, 5, 8, 130, 44];<br/>a1.every(x => x >= 10); // false<br/><br/>// Or all in one line
+[12, 54, 18, 130, 44].every(x => x >= 10); // true
 ```
 
 

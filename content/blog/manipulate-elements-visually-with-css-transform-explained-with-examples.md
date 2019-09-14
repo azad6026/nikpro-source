@@ -17,7 +17,7 @@ CSS transform function like [CSS transition](http://www.nikpro.com.au/css-transi
 
 ## The transform property values
 
-The <code class="w3-codespan">transform</code> property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. These are different values of transform property:
+The <code class="w3-codespan">transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. These are different values of transform property:
 
   * **`scale()`:** affects the size of the element. This also applies to the `font-size`, `padding`, `height`, and `width` of an element, too. It’s also a a shorthand function for the `scaleX` and `scaleY` functions.
   * `skewX()` and **`skewY()`**: tilts an element to the left or right, like turning a triangle into a parallelogram. There is no shorthand `skew` property like scale().

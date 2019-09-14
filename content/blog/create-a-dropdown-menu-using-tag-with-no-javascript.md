@@ -22,7 +22,7 @@ Did you know we could create a dropdown menu using only [HTML5 tag](http://www.n
 
 According to <a rel="noreferrer noopener" aria-label="MDN (opens in a new tab)" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">MDN</a> :
 
-> The&nbsp;HTML Details Element (<code><details></code>)&nbsp;creates a disclosure widget in which information is visible only when the widget is toggled into an &#8220;open&#8221; state.&nbsp;A summary or label can be provided using the&nbsp;<a rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"><code><summary></code></a>&nbsp;element.
+> The&nbsp;HTML Details Element (<details>)&nbsp;creates a disclosure widget in which information is visible only when the widget is toggled into an &#8220;open&#8221; state.&nbsp;A summary or label can be provided using the&nbsp;<a rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"><summary></a>&nbsp;element.
 
 This is a simple semantic of how it looks like:
 

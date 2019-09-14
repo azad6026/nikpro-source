@@ -87,7 +87,9 @@ Using JSX to render the element feels like writing HTML itself. But the best par
 
 
 ```
-// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = <h2 className={className}>{content}</h2>;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = <h2 className={className}>{(() => content)()}</h2>;<br /> ReactDOM.render([element1,element2], jsxRoot); </pre>
+// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = <h2 className={className}>{content}</h2>;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = <h2 className={className}>{(() => content)()}</h2>;<br /> ReactDOM.render([element1,element2], jsxRoot); 
+```
+
 
 We have used two approaches here. In the first element we put the content as {content} which is actually the children property from the mentioned above in pure React approach.
 

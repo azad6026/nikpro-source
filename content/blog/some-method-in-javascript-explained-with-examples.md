@@ -25,10 +25,10 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 
 ```
-<code>function isBiggerThan10(element, index, array) {
+function isBiggerThan10(element, index, array) {
   return element > 10;
-}<br/></code><br /><code>[2, 5, 8, 1, 4].some(x => x > 10);  // false
-[12, 5, 8, 1, 4].some(x => x > 10); // true</code>
+}<br/><br />[2, 5, 8, 1, 4].some(x => x > 10);  // false
+[12, 5, 8, 1, 4].some(x => x > 10); // true
 ```
 
 
@@ -38,7 +38,9 @@ Moreover we can shorten the whole code to one function as some accept the functi
 
 
 ```
-[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false<br />[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true<br /></pre>
+[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false<br />[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true<br />
+```
+
 
 Really sweet and clean. Huh! Lets have a look at another examples.
 
@@ -48,7 +50,7 @@ OF course there are other use cases for some. We might need to check if a user h
 
 
 ```
-<code>const userPrivileges = ['user', 'user', 'user', 'admin'];<br/>userPrivileges.some( element => element === 'admin');</code><br /><code>// will be equal to true</code>
+const userPrivileges = ['user', 'user', 'user', 'admin'];<br/>userPrivileges.some( element => element === 'admin');<br />// will be equal to true
 ```
 
 
@@ -56,13 +58,13 @@ There is also another example of checking if something exists inside array:
 
 
 ```
-<code>const fruits = ['apple', 'banana', 'mango', 'guava'];
+const fruits = ['apple', 'banana', 'mango', 'guava'];
 
 function checkAvailability(arr, val) {
   return arr.some(arrVal => val === arrVal);
 }
 
-checkAvailability(fruits, 'kela');   // false</code>
+checkAvailability(fruits, 'kela');   // false
 ```
 
 
@@ -90,7 +92,7 @@ Similarly includes checks if an array contains a certain value. It’s similar t
 
 
 ```
-<code>const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.includes('waldo');</code><br /><code>// will be equal to true</code>
+const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.includes('waldo');<br />// will be equal to true
 ```
 
 

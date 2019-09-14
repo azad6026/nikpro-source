@@ -40,14 +40,14 @@ In addition have a look at these examples of using ternary operator in Rect site
 
 
 ```
-<code>render() {
+render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
       The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
     </div>
   );
-}<br/></code>
+}<br/>
 ```
 
 
@@ -59,8 +59,8 @@ We could use ternary operator In JSX code. To render some JSX code conditionally
 
 
 ```
-<code>render() {
-  const isLoggedIn = this.state</code><code>.</code><code>isLoggedIn;
+render() {
+  const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
       {isLoggedIn ? (
@@ -69,8 +69,8 @@ We could use ternary operator In JSX code. To render some JSX code conditionally
         <LoginButton onClick={this.handleLoginClick} />
       )}
     </div>
- </code><code> );
-}</code><code><br/></code>
+  );
+}<br/>
 ```
 
 

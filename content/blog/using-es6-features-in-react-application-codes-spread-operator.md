@@ -19,7 +19,9 @@ Definitely there are times that we need to preserve the information of state and
 
 
 ```
-const updatedIngredients = this.state.ingredients;<br />   </pre>
+const updatedIngredients = this.state.ingredients;<br />   
+```
+
 
 Best approach is to use spread operator in React component to preserve **ingredients **and just update it with the added info:
 
@@ -37,9 +39,9 @@ Basically the important usage of spread operator is to get a copy of an array an
 
 
 ```
-<code>function App1() {
+function App1() {
   return <Greeting firstName="Ben" lastName="Hector" />;
-}</code>
+}
 ```
 
 
@@ -47,10 +49,10 @@ But using spread operator in React props makes it easier to read and understand:
 
 
 ```
-<code>function App2() {
+function App2() {
   const props = {firstName: 'Ben', lastName: 'Hector'};
   return <Greeting {...props} />;
-}</code>
+}
 ```
 
 

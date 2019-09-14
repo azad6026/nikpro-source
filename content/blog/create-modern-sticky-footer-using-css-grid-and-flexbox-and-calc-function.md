@@ -25,10 +25,10 @@ Firstly we create a sticky fixed-height footer using calc() function to calculat
 
 
 ```
-<code><body>
+<body>
   <div class="content"> </div>
   <footer>© 2016</footer>
-</body></code>
+</body>
 ```
 
 

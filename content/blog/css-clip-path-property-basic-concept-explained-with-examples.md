@@ -36,7 +36,9 @@ In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="n
 .clip-polygon {
   clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   /* Note that percentages work as well as px */
-}<br /></pre>
+}<br />
+```
+
 
 We have four different shapes kind of clip-path. Lets explain each with a few examples.
 

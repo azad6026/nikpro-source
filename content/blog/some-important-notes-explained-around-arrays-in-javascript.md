@@ -69,10 +69,10 @@ As an example have a look at these example arrays in Javascript:
 
 
 ```
-<code>let fruits = ["Apple", "Orange"];<br/><br/>// Push
+let fruits = ["Apple", "Orange"];<br/><br/>// Push
 fruits.push("Pear");
-alert( fruits ); // Apple, Orange, Pear<br/><br/>// Unshift<br/><code>fruits.unshift('Apple');
-alert( fruits ); // Apple, Orange, Pear</code></code>
+alert( fruits ); // Apple, Orange, Pear<br/><br/>// Unshift<br/>fruits.unshift('Apple');
+alert( fruits ); // Apple, Orange, Pear
 ```
 
 
@@ -80,10 +80,10 @@ Obviously we get the same results with push and unshift.
 
 
 ```
-<code>let fruits = ["Apple", "Orange", "Pear"];<br/><br/>// Pop
+let fruits = ["Apple", "Orange", "Pear"];<br/><br/>// Pop
 alert( fruits.pop() ); // remove "Pear" and alert it
-alert( fruits ); // Apple, Orange</code><br /><br />// Shift<br /><code>alert( fruits.shift() ); // remove Apple and alert it
-alert( fruits ); // Orange, Pear</code>
+alert( fruits ); // Apple, Orange<br /><br />// Shift<br />alert( fruits.shift() ); // remove Apple and alert it
+alert( fruits ); // Orange, Pear
 ```
 
 

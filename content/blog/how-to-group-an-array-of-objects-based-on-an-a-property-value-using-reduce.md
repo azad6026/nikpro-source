@@ -97,25 +97,31 @@ As a result all values of same age will be grouped in one array themselves as pa
 
 As <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank" rel="noreferrer noopener">we know</a> reduce method executes a **reducer** function (that you provide) on each member of the array resulting in a single output value. Therefor in our case we need to write a function that reduces the array based on what we provide as the callback function:
 
-<pre class="wp-block-preformatted"><code><strong>function groupBy(OurArray, property) {  </strong></code>
-<code><strong>  return OurArray.reduce(function (accumulator, object) { </strong></code>
-<code><strong>    // get the value of our object(age in our case) to use for group    the array as the array key   </strong></code>
-<code><strong>    const key = object[property]; </strong></code>
-<code><strong>    // if the current value is similar to the key(age) don't accumulate the transformed array and leave it empty  </strong></code>
-<code><strong>    if (!accumulator[key]) {      </strong></code>
-<code><strong>      accumulator[key] = [];    </strong></code>
-<code><strong>    }    </strong></code>
+```
+function groupBy(OurArray, property) {  
+  return OurArray.reduce(function (accumulator, object) { 
+    // get the value of our object(age in our case) to use for group    the array as the array key   
+    const key = object[property]; 
+    // if the current value is similar to the key(age) don't accumulate the transformed array and leave it empty  
+    if (!accumulator[key]) {      
+      accumulator[key] = [];    
+    }    
 // add the value to the array
-<code><strong>    accumulator[key].push(object);</strong></code>
-<code><strong>    // return the transformed array</strong></code>
-<code><strong>  return accumulator;  </strong></code>
+    accumulator[key].push(object);
+    // return the transformed array
+  return accumulator;  
 // Also we also set the initial value of reduce() to an empty object
-<code><strong>  }, {});</strong></code>
-<code><strong>}</strong></code></pre>
+  }, {});
+}
+```
+
 
 Afterwards we can call in on our array:
 
-<pre class="wp-block-preformatted"><code><strong>const groupedPeople = groupBy(persons, 'age');</strong></code></pre>
+```
+const groupedPeople = groupBy(persons, 'age');
+```
+
 
 Therefor we get the desired result :
 
@@ -140,12 +146,12 @@ We can use our [ES6](http://nikpro.com.au/category/es6) knowledge and change our
 
 
 ```
-const groupBy = (<code><strong>OurArray, property</strong></code>) => {
-return <code><strong>OurArray</strong></code>.reduce((<code><strong>accumulator, object</strong></code>) => {
-const key = <code><strong>object</strong></code>[<code><strong>property</strong></code>];
+const groupBy = (OurArray, property) => {
+return OurArray.reduce((accumulator, object) => {
+const key = object[property];
 // using ternary operator to make it shorter but in this case it is not necessary as it might look complicated
-!<code><strong>accumulator</strong></code>[key] ? (<code><strong>accumulator</strong></code>[key] = []) : (<code><strong>accumulator</strong></code>[key].push(<code><strong>object</strong></code>));
-return <code><strong>accumulator</strong></code>;
+!accumulator[key] ? (accumulator[key] = []) : (accumulator[key].push(object));
+return accumulator;
 }, {});
 };
 ```

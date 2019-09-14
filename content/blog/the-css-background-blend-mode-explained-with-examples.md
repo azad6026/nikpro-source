@@ -17,8 +17,9 @@ The [CSS](http://www.nikpro.com.au/category/css) background blend mode property 
 
 In this example the **`repeating-linear-gradient()`** property has been used to create an image like gradient background. The **`repeating-linear-gradient()`** CSS function creates an image consisting of repeating linear gradients. This is the code for this property here:
 
-<pre class="wp-block-preformatted">background:
-<code>repeating-linear-gradient(
+```
+background:
+repeating-linear-gradient(
     50deg,
     #F7A37B,
     #F7A37B 1em,
@@ -47,13 +48,17 @@ repeating-linear-gradient(
     #00A2E1 5em,
     #0085C8 5em,
     #0085C8 6em
-);</code><br /></pre>
+);<br />
+```
+
 
 As a result it repeats the colour stops infinitely in all directions so as to cover its entire container. Now we can add the **`background-blend-mode.`** There can be several values, separated by commas:
 
 
 ```
-<blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity<br /></pre>
+<blend-mode> = normal <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> multiply <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> screen <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> overlay <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> darken <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> lighten <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-dodge <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color-burn <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hard-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> soft-light <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> difference <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> exclusion <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> hue <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> saturation <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> color <a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Single_bar">|</a> luminosity<br />
+```
+
 
 Therefor in this example we use **multiply**. This is the pen for this example:
 

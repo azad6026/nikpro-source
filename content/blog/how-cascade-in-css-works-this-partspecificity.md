@@ -41,11 +41,11 @@ As a rule don&#8217;t use !important unless you have no other choice. It breaks 
 
 
 ```
-<code><div id="test">
+<div id="test">
   <span>Text</span>
-</div><br/></code><br /><code>div#test span { color: green; }
+</div><br/><br />div#test span { color: green; }
 div span { color: blue; }
-span { color: red; }</code>
+span { color: red; }
 ```
 
 
@@ -57,9 +57,11 @@ As mentioned in the [previous](http://www.nikpro.com.au/how-cascade-in-css-works
 
 
 ```
-<code>table tr td   { width: 50px !important; }
-.myTable tr td { <strong><code>width</code>: 50px !important; }
-#myTable tr td { <code>width</code>: 50px !important; }<br /><br />// Or add the same selector later on<br /><code>tr td { <strong><code>width</code></strong>: 50px !important; }</code><br /></code></strong></pre>
+table tr td   { width: 50px !important; }
+.myTable tr td { width: 50px !important; }
+#myTable tr td { width: 50px !important; }<br /><br />// Or add the same selector later on<br />tr td { width: 50px !important; }<br />
+```
+
 
 ### Direct target wins over inheritance
 
@@ -67,16 +69,16 @@ We need to know that directly target an element is more specific over inheritanc
 
 
 ```
-<code><div>
+<div>
   <article id="parent">
     <h1>Here is a title!</h1>
   </article>
-</div><br/><br/><code>#parent {
+</div><br/><br/>#parent {
   color: green;
 }
 h1 {
   color: purple;
-}</code></code>
+}
 ```
 
 
@@ -86,12 +88,12 @@ Moreover in the same HTML if we write the below CSS:
 
 
 ```
-<code>article h1 {
+article h1 {
   color: green;
 }
 div h1 {
   color: blue;
-}</code>
+}
 ```
 
 

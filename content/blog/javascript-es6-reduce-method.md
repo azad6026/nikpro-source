@@ -41,23 +41,23 @@ We have applied reduce to an array of five elements. In the below table you will
   <table>
     <tr>
       <th scope="col">
-        <code>callback</code>
+        callback
       </th>
       
       <th scope="col">
-        <code>accumulator</code>
+        accumulator
       </th>
       
       <th scope="col">
-        <code>currentValue</code>
+        currentValue
       </th>
       
       <th scope="col">
-        <code>currentIndex</code>
+        currentIndex
       </th>
       
       <th scope="col">
-        <code>array</code>
+        array
       </th>
       
       <th scope="col">
@@ -71,11 +71,7 @@ We have applied reduce to an array of five elements. In the below table you will
       </th>
       
       <td>
-        <code></code>
-      </td>
-      
-      <td>
-        <code>1</code>
+        
       </td>
       
       <td>
@@ -83,11 +79,15 @@ We have applied reduce to an array of five elements. In the below table you will
       </td>
       
       <td>
-        <code>[0, 1, 2, 3, 4]</code>
+        1
       </td>
       
       <td>
-        <code>1</code>
+        [0, 1, 2, 3, 4]
+      </td>
+      
+      <td>
+        1
       </td>
     </tr>
     
@@ -97,11 +97,7 @@ We have applied reduce to an array of five elements. In the below table you will
       </th>
       
       <td>
-        <code>1</code>
-      </td>
-      
-      <td>
-        <code>2</code>
+        1
       </td>
       
       <td>
@@ -109,11 +105,15 @@ We have applied reduce to an array of five elements. In the below table you will
       </td>
       
       <td>
-        <code>[0, 1, 2, 3, 4]</code>
+        2
       </td>
       
       <td>
-        <code>3</code>
+        [0, 1, 2, 3, 4]
+      </td>
+      
+      <td>
+        3
       </td>
     </tr>
     
@@ -123,11 +123,7 @@ We have applied reduce to an array of five elements. In the below table you will
       </th>
       
       <td>
-        <code>3</code>
-      </td>
-      
-      <td>
-        <code>3</code>
+        3
       </td>
       
       <td>
@@ -135,11 +131,15 @@ We have applied reduce to an array of five elements. In the below table you will
       </td>
       
       <td>
-        <code>[0, 1, 2, 3, 4]</code>
+        3
       </td>
       
       <td>
-        <code>6</code>
+        [0, 1, 2, 3, 4]
+      </td>
+      
+      <td>
+        6
       </td>
     </tr>
     
@@ -149,11 +149,7 @@ We have applied reduce to an array of five elements. In the below table you will
       </th>
       
       <td>
-        <code>6</code>
-      </td>
-      
-      <td>
-        <code>4</code>
+        6
       </td>
       
       <td>
@@ -161,11 +157,15 @@ We have applied reduce to an array of five elements. In the below table you will
       </td>
       
       <td>
-        <code>[0, 1, 2, 3, 4]</code>
+        4
       </td>
       
       <td>
-        <code>10</code>
+        [0, 1, 2, 3, 4]
+      </td>
+      
+      <td>
+        10
       </td>
     </tr>
   </table>

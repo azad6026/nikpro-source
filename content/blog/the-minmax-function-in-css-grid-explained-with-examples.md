@@ -48,7 +48,7 @@ In addition the third column has a fixed 150px width column which does not chang
 
 
 ```
-<code>grid-template-columns: minmax(200px, 50%) 1fr 1fr;</code>
+grid-template-columns: minmax(200px, 50%) 1fr 1fr;
 ```
 
 
@@ -81,7 +81,7 @@ As explained in [Mondrian layout](http://www.nikpro.com.au/responsive-mondrian-g
 
 
 ```
-<code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 ```
 
 

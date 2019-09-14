@@ -72,11 +72,11 @@ However `const` does not affect whether the value of a constant itself is muta
 
 
 ```
-<code>const obj = {};
+const obj = {};
 obj.prop = 123;
 console.log(obj.prop); // 123
 
-obj = {}; // TypeError</code>
+obj = {}; // TypeError
 ```
 
 

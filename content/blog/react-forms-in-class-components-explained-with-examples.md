@@ -21,13 +21,13 @@ Typically the React forms markup looks like HTML code. But we know it will be re
 
 
 ```
-<code><form>
+<form>
   <label>
     Title:
     <input type="text" name="title" />
   </label>
   <input type="submit" value="Submit" />
-</form></code>
+</form>
 ```
 
 
@@ -35,13 +35,13 @@ Basically it is a simple HTML form. We need to add the event handlers and value 
 
 
 ```
-<code> <form onSubmit={this.handleSubmit}>
+ <form onSubmit={this.handleSubmit}>
         <label>
           Title:
           <input type="text" value={this.state.title} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
-      </form></code>
+      </form>
 ```
 
 
@@ -71,14 +71,14 @@ On top of that we will have our event handlers like below. We just alert user of
 
 
 ```
-<code> handleChange(event) {
+ handleChange(event) {
     this.setState({title: event.target.title});
   }
 
   handleSubmit(event) {
     alert('A title was submitted here: ' + this.state.title);
     event.preventDefault();
-  }</code>
+  }
 ```
 
 
@@ -98,14 +98,14 @@ handleSubmit = (event) => {
     event.preventDefault();
 }
     render() {
-        return (<br /><code>        <React.Fragment>
+        return (<br />        <React.Fragment>
             <form onSubmit={this.handleSubmit}>
                 <lablel>
                     Title:<br/>                        <input type="text" name="title" <br/>                         value={this.state.title} <br/>                         onChange={this.handleChange}/>
                 </lablel>
                 <input type="submit" value="submit" />
             </form>
-        </React.Fragment></code> ); } <br />}
+        </React.Fragment> ); } <br />}
 ```
 
 

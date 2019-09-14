@@ -87,7 +87,7 @@ Using render porps makes the component reusable. According to Reactjs every Cons
 
 <blockquote class="wp-block-quote">
   <p>
-    Requires a <a href="https://reactjs.org/docs/render-props.html#using-props-other-than-render">function as a child</a>. The function receives the current context value and returns a React node. The <code>value</code> argument passed to the function will be equal to the <code>value</code> prop of the closest Provider for this context above in the tree. If there is no Provider for this context above, the <code>value</code> argument will be equal to the <code>defaultValue</code> that was passed to <code>createContext()</code>.
+    Requires a <a href="https://reactjs.org/docs/render-props.html#using-props-other-than-render">function as a child</a>. The function receives the current context value and returns a React node. The value argument passed to the function will be equal to the value prop of the closest Provider for this context above in the tree. If there is no Provider for this context above, the value argument will be equal to the defaultValue that was passed to createContext().
   </p>
 </blockquote>
 

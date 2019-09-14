@@ -15,7 +15,7 @@ tags:
   - soread syntax
   - spraed operator
 ---
-Continuing <a href="http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/" target="_blank" rel="noopener noreferrer">our explanation for ES6 new features</a>, we will review the spread operator. What is the magic spread syntax in ES6? The spread syntax is simply three dots: <code class="markup--code markup--li-code">...</code>
+Continuing <a href="http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/" target="_blank" rel="noopener noreferrer">our explanation for ES6 new features</a>, we will review the spread operator. What is the magic spread syntax in ES6? The spread syntax is simply three dots: <code class="markup--code markup--li-code">...
 
 <strong class="markup--strong markup--li-strong">It allows an iterable to expand in places where 0 or more arguments likeIndefinite number of arguments (function calls) or  elements (array literals) or key-value pairs (object literals) are expected.
 
@@ -26,22 +26,22 @@ Let us have a look at some of its usages to get a better idea:
 To call a function with array argument we needed to use apply and use this syntax:
 
 <p class=" language-js">
-  <code><span class="token keyword">function</span> doSomething <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><br />
-</code>
+  <span class="token keyword">function</span> doSomething <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><br />
+
 </p>
 
 <p class=" language-js">
-  <code><span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
-</code>
+  <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
+
 </p>
 
 <p class=" language-js">
-  <code><span class="token comment" spellcheck="true">// Call the function, passing args</span><br />
-</code>
+  <span class="token comment" spellcheck="true">// Call the function, passing args</span><br />
+
 </p>
 
 <p class=" language-js">
-  <code><span class="token punctuation">doSomething.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span></code>
+  <span class="token punctuation">doSomething.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </p>
 
 This old problem has been solved using the spread operator. So we can now omit apply and use the spread syntax to call the function like this:
@@ -64,13 +64,13 @@ To copy an array we pass a reference to the second one so they will have same va
               <div class="CodeMirror-code" role="presentation">
                 <div>
                   <p class=" CodeMirror-line " role="presentation">
-                    <code><span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr</span> <span class="cm-operator">=</span> [<span class="cm-string">'a'</span>, <span class="cm-string">'b'</span>, <span class="cm-string">'c'</span>];</span></code>
+                    <span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr</span> <span class="cm-operator">=</span> [<span class="cm-string">'a'</span>, <span class="cm-string">'b'</span>, <span class="cm-string">'c'</span>];</span>
                   </p>
                 </div>
                 
-                <pre class=" CodeMirror-line " role="presentation"><code><span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr</span>;
+                <pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">var</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr</span>;
 
-</span>console.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>);</code>
+</span>console.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>);
 ```
 
               </div>
@@ -87,7 +87,7 @@ To copy an array we pass a reference to the second one so they will have same va
     <div class="embedStyle_1ki8n3b object-description">
       <div class="value_142hmgp-o_O-monospace_5jrb82 flexBox">
         <p>
-          <code><span class="normal_t5s8ur"><span class="fixme-test-wrapper">output: [<span class="type-string">"a"</span>, <span class="type-string">"b"</span>, <span class="type-string">"c"</span>]</span></span></code>
+          <span class="normal_t5s8ur"><span class="fixme-test-wrapper">output: [<span class="type-string">"a"</span>, <span class="type-string">"b"</span>, <span class="type-string">"c"</span>]</span></span>
         </p>
         
         <p>
@@ -95,15 +95,15 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>arr2.push('d');</strong></code>
+          arr2.push('d');
         </p>
         
         <p>
-          <code><strong>console.log(arr);</strong></code>
+          console.log(arr);
         </p>
         
         <p>
-          <code><strong>output: ['a', 'b', 'c', 'd']</strong></code>
+          output: ['a', 'b', 'c', 'd']
         </p>
         
         <p>
@@ -111,19 +111,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>var arr = ['a', 'b', 'c'];</strong></code>
+          var arr = ['a', 'b', 'c'];
         </p>
         
         <p>
-          <code><strong>var arr2 = [...arr]; // this is where the magic happens</strong></code>
+          var arr2 = [...arr]; // this is where the magic happens
         </p>
         
         <p>
-          <code><strong>console.log(arr2);</strong></code>
+          console.log(arr2);
         </p>
         
         <p>
-          <code><strong>output: ['a', 'b', 'c']</strong></code>
+          output: ['a', 'b', 'c']
         </p>
         
         <p>
@@ -131,15 +131,15 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>arr2.push('d');</strong></code>
+          arr2.push('d');
         </p>
         
         <p>
-          <code><strong>console.log(arr);</strong></code>
+          console.log(arr);
         </p>
         
         <p>
-          <code><strong>output: ['a', 'b', 'c']</strong></code>
+          output: ['a', 'b', 'c']
         </p>
         
         <p>
@@ -155,19 +155,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>var str = "hello";</strong></code>
+          var str = "hello";
         </p>
         
         <p>
-          <code><strong>var chars = [...str];</strong></code>
+          var chars = [...str];
         </p>
         
         <p>
-          <code><strong>console.log(chars);</strong></code>
+          console.log(chars);
         </p>
         
         <p>
-          <code><strong>output: [<span class="type-string">"h"</span>, <span class="type-string">"e"</span>, <span class="type-string">"l"</span>, <span class="type-string">"l"</span>, <span class="type-string">"o"</span>]</strong></code>
+          output: [<span class="type-string">"h"</span>, <span class="type-string">"e"</span>, <span class="type-string">"l"</span>, <span class="type-string">"l"</span>, <span class="type-string">"o"</span>]
         </p>
         
         <h2>
@@ -179,19 +179,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>var mid = [3, 4];</strong></code>
+          var mid = [3, 4];
         </p>
         
         <p>
-          <code><strong>var arr = [1, 2, mid, 5, 6];</strong></code>
+          var arr = [1, 2, mid, 5, 6];
         </p>
         
         <p>
-          <code><strong>console.log(arr);</strong></code>
+          console.log(arr);
         </p>
         
         <p>
-          <code>output: [1, 2, [3, 4], 5, 6]</code>
+          output: [1, 2, [3, 4], 5, 6]
         </p>
         
         <p>
@@ -199,41 +199,41 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code><strong>var mid = [3, 4];</strong></code></span>
+          <span style="font-family: georgia, palatino, serif;">var mid = [3, 4];</span>
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code><strong>var arr = [1, 2, ...mid, 5, 6];</strong></code></span>
+          <span style="font-family: georgia, palatino, serif;">var arr = [1, 2, ...mid, 5, 6];</span>
         </p>
         
         <p>
-          <span style="font-family: georgia, palatino, serif;"><code><strong>console.log(arr);</strong></code></span>
+          <span style="font-family: georgia, palatino, serif;">console.log(arr);</span>
         </p>
         
         <p id="2b6d" class="graf graf--pre graf-after--p">
-          <code><strong><span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]</span><br />
-</strong></code>
+          <span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]</span><br />
+
         </p>
         
         <p class="graf graf--pre graf-after--p">
-          As we expected. Also there are other ways of using spread operator to combine arrays:<code><strong><br />
-</strong></code>
+          As we expected. Also there are other ways of using spread operator to combine arrays:<br />
+
         </p>
         
         <p class=" language-js">
-          <code><strong> // Adds arr2 items to end of array</strong></code>
+           // Adds arr2 items to end of array
         </p>
         
         <p>
-          <code><strong>arr1.push(...arr2)</strong></code>
+          arr1.push(...arr2)
         </p>
         
         <p class=" language-js">
-          <code><strong>//Adds arr2 items to the beginning of array</strong></code>
+          //Adds arr2 items to the beginning of array
         </p>
         
         <p class=" language-js">
-          <code></code><code><strong>arr1.unshift(...arr2) </strong></code>
+          arr1.unshift(...arr2) 
         </p>
         
         <h2>
@@ -241,20 +241,20 @@ To copy an array we pass a reference to the second one so they will have same va
         </h2>
         
         <p>
-          Spread operator &#8220;spreads&#8221; an array into different arguments, so any function where spread is used as the argument can be used by functions that can accept any number of arguments. <code class="markup--code markup--p-code">Math.max()</code> returns the largest of zero or more numbers. 
+          Spread operator &#8220;spreads&#8221; an array into different arguments, so any function where spread is used as the argument can be used by functions that can accept any number of arguments. <code class="markup--code markup--p-code">Math.max() returns the largest of zero or more numbers. 
         </p>
         
         <p class=" language-js">
-          <code><strong><span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
-</strong></code>
+          <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
+
         </p>
         
         <p class=" language-js">
-          <code><strong>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>numbers<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// outputs: 9</span></strong></code>
+          Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>numbers<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// outputs: 9</span>
         </p>
         
         <p>
-          The <code>Math</code> object&#8217;s set of functions are a perfect example of the spread operator as the only argument to a function.
+          The Math object&#8217;s set of functions are a perfect example of the spread operator as the only argument to a function.
         </p>
         
         <h2>
@@ -266,19 +266,19 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p>
-          <code><strong>let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };</strong></code>
+          let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
         </p>
         
         <p>
-          <code><strong>console.log(x); // 1</strong></code>
+          console.log(x); // 1
         </p>
         
         <p>
-          <code><strong>console.log(y); // 2</strong></code>
+          console.log(y); // 2
         </p>
         
         <p>
-          <code><strong>console.log(z); // { a: 3, b: 4 } </strong></code>
+          console.log(z); // { a: 3, b: 4 } 
         </p>
         
         <p>

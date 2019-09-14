@@ -30,7 +30,7 @@ I am using React site&#8217;s example as it is the best and clearest. Imagine a 
 
 
 ```
-<code>function Comment(props) {
+function Comment(props) {
   return (
     <div className="Comment">
       <div className="UserInfo">
@@ -50,7 +50,7 @@ I am using React site&#8217;s example as it is the best and clearest. Imagine a 
       </div>
     </div>
   );
-}</code>
+}
 ```
 
 
@@ -60,14 +60,14 @@ It is hard to use parts of this component as reusable parts. However doing extra
 
 
 ```
-<code>function Avatar(props) {
+function Avatar(props) {
   return (
     <img className="Avatar"
       src={props.user.avatarUrl}
       alt={props.user.name}
     />
   );
-}</code>
+}
 ```
 
 
@@ -83,7 +83,7 @@ Now we can extract components again by extracting a UserInfo component. therefor
 
 
 ```
-<code>unction UserInfo(props) {
+unction UserInfo(props) {
   return (
     <div className="UserInfo">
       <Avatar user={props.user} />
@@ -92,7 +92,7 @@ Now we can extract components again by extracting a UserInfo component. therefor
       </div>
     </div>
   );
-}</code>
+}
 ```
 
 
@@ -102,7 +102,7 @@ After all the comment component will look like a simpler and easy to read compon
 
 
 ```
-<code>function Comment(props) {
+function Comment(props) {
   return (
     <div className="Comment">
       <UserInfo user={props.author} />
@@ -114,7 +114,7 @@ After all the comment component will look like a simpler and easy to read compon
       </div>
     </div>
   );
-}</code>
+}
 ```
 
 

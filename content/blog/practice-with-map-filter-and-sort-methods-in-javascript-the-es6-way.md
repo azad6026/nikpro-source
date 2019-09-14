@@ -127,7 +127,7 @@ This works perfectly but lets make it more readable and modern using arrow funct
 
 `const fullnames = inventors.map(inventor =>
 ```
-`{$<code>inventor.first}{$inventor.last}`);``</code>  
+`{$inventor.first}{$inventor.last}`);``  
 `console.table(fullnames);`
 
 And it now looks great. and works just the same.

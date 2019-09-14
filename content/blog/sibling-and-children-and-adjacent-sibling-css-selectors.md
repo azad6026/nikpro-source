@@ -32,7 +32,9 @@ On the other hand we might need to select only the **direct children** of the un
 
 
 ```
-ul > li { color : red; }<br /></pre>
+ul > li { color : red; }<br />
+```
+
 
 Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:<figure class="wp-block-image">
 

@@ -30,7 +30,7 @@ According to MDN the `Promise.all(iterable)` method returns a single [`Promis
 
 
 ```
-<code>var p1 = Promise.resolve(3);
+var p1 = Promise.resolve(3);
 var p2 = 1337;
 var p3 = new Promise((resolve, reject) => {
   setTimeout(resolve, 100, 'foo');
@@ -38,7 +38,7 @@ var p3 = new Promise((resolve, reject) => {
 
 Promise.all([p1, p2, p3]).then(values => { 
   console.log(values); // [3, 1337, "foo"] 
-});</code>
+});
 ```
 
 
@@ -46,13 +46,13 @@ As a result the values as an output from all three resolved promises. If a promi
 
 
 ```
-<code>var mixedPromisesArray = [Promise.resolve(33), Promise.reject(44)];
+var mixedPromisesArray = [Promise.resolve(33), Promise.reject(44)];
 var p = Promise.all(mixedPromisesArray);
 console.log(p);
 setTimeout(function() {
     console.log('the stack is now empty');
     console.log(p);
-});</code>
+});
 ```
 
 
@@ -60,10 +60,10 @@ As a result the second promise is rejected:
 
 
 ```
-<code>// logs
+// logs
 // Promise { <state>: "pending" } 
 // the stack is now empty
-// Promise { <state>: "rejected", <reason>: 44 }</code>
+// Promise { <state>: "rejected", <reason>: 44 }
 ```
 
 
@@ -87,7 +87,8 @@ Great. Successfully we have saved a few unnecessary await as we didn&#8217;t rea
 
 Also we could use it when a promise uses other promise&#8217;s return value and also there is a third promise as well:
 
-<pre class="wp-block-preformatted"><br />const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return promise2(value1)<br />        .then(value2 => {<br />          // do something          <br />          return promise3(value1, value2)<br />        })<br />    })<br />}
+```
+<br />const makeRequest = () => {<br />  return promise1()<br />    .then(value1 => {<br />      // do something<br />      return promise2(value1)<br />        .then(value2 => {<br />          // do something          <br />          return promise3(value1, value2)<br />        })<br />    })<br />}
 ```
 
 

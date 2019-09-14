@@ -28,7 +28,7 @@ Practically we could use CSS variables anywhere we like. One of the good options
 
 
 ```
-<code>:root {<br/>  --mainColor: #f06d06;<br/>}</code>
+:root {<br/>  --mainColor: #f06d06;<br/>}
 ```
 
 
@@ -42,7 +42,10 @@ Therefor we have an input to make the changes:
 
 Thankfully we are able to change the colours via Javascript just like we do with styling but this time we dynamically change the colour using CSS custom properties:
 
-<pre class="wp-block-preformatted"><br /></pre>
+```
+<br />
+```
+
 
 Moreover as you see here we could store the colour in a local storage or a database for later usage. This is a great simple example on how to use CSS custom properties for theming your application or site.
 
@@ -58,7 +61,7 @@ As an explanation to animate an `<ellipse>` element with the class of `.bubbl
 
 
 ```
-<code>.bubble {
+.bubble {
 --direction-y: 30px;
 --transparency: 0;
 animation: bubbling 3s forwards infinite;
@@ -78,7 +81,7 @@ opacity: calc(var(--transparency) + 0.1);
 100% {
 opacity: var(--transparency);
 }
-}</code>
+}
 ```
 
 
@@ -88,7 +91,7 @@ Also this is the code for the small fishes moving around. Each one with differen
 
 
 ```
-<code>.small-fish {<br/>  --dir-left: -800px;<br/>  --dir-right: 800px;<br/>  --transparency: 0;<br/>}<br/>  0% {<br/>    transform: translatex(var(--dir-right));<br/>  }<br/>  50% {<br/>    opacity: calc(var(--transparency) + 0.3);<br/>  }<br/>  100% {<br/>    transform: translatex(var(--dir-left));<br/>    opacity: var(--transparency);<br/>  }<br/>}</code>
+.small-fish {<br/>  --dir-left: -800px;<br/>  --dir-right: 800px;<br/>  --transparency: 0;<br/>}<br/>  0% {<br/>    transform: translatex(var(--dir-right));<br/>  }<br/>  50% {<br/>    opacity: calc(var(--transparency) + 0.3);<br/>  }<br/>  100% {<br/>    transform: translatex(var(--dir-left));<br/>    opacity: var(--transparency);<br/>  }<br/>}
 ```
 
 

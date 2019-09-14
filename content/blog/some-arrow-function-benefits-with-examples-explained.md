@@ -39,7 +39,7 @@ In your browser console type this in and see the result for yourself:
 
 
 ```
-<code>var double = num => num * 2<br/>double(2);<br/>// 4<br/>double(3);<br/>// 6</code>
+var double = num => num * 2<br/>double(2);<br/>// 4<br/>double(3);<br/>// 6
 ```
 
 
@@ -65,7 +65,10 @@ Another important thing about arrow function benefits is that there is no bindin
 
 An arrow function **_does not_** newly define its own `this` when it&#8217;s being executed.The value of `this` is always inherited from the enclosing scope:
 
-<pre class="wp-block-preformatted"><em>// ES5</em><br />function Counter(){<br />   this.seconds = 0;<br />   <code>window.setInterval(<strong>function</strong>() {<br/>    <strong>this</strong>.seconds<strong>++</strong>;<br/>  }.bind(<strong>this</strong>), 1000);<br/></code>}<br /><em>//ES6</em><br />function Counter(){<br />this.seconds =0;<br />window.setInterval( () => this.seconds++,1000 );<br />}</pre>
+```
+<em>// ES5</em><br />function Counter(){<br />   this.seconds = 0;<br />   window.setInterval(function() {<br/>    this.seconds++;<br/>  }.bind(this), 1000);<br/>}<br /><em>//ES6</em><br />function Counter(){<br />this.seconds =0;<br />window.setInterval( () => this.seconds++,1000 );<br />}
+```
+
 
 You clearly see the difference and no binding of &#8220;this&#8221; in arrow functions. ES6 arrow functions don’t bind their own arguments either:
 
@@ -83,7 +86,9 @@ Although we can use arrow functions in most cases but we need to be careful arou
 
 
 ```
-var Person= (param) => {<br />     this.name = param;<br />}<br />var Boy = new Person('Ram');<br /><em>// Throws error that Person is not a constructor</em><br /></pre>
+var Person= (param) => {<br />     this.name = param;<br />}<br />var Boy = new Person('Ram');<br /><em>// Throws error that Person is not a constructor</em><br />
+```
+
 
 Therefor if we create a constructor with them it will throw an error like above.
 

@@ -34,9 +34,9 @@ In addition we can create an array of key value pairs based on single objects in
 
 
 ```
-<code>// return an array of an array like object
+// return an array of an array like object
 const obj = { 0: 'a', 1: 'b', 2: 'c' };
-console.log(Object.entries(obj)); // [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ]</code>
+console.log(Object.entries(obj)); // [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ]
 ```
 
 
@@ -46,8 +46,8 @@ Practically we could use this method to iterate through an object nd manipulate 
 
 
 ```
-<code>const obj = { first: 'answer', second: 'answer' };
-Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "first: answer", "second: answer"</code>
+const obj = { first: 'answer', second: 'answer' };
+Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "first: answer", "second: answer"
 ```
 
 
@@ -91,7 +91,9 @@ const persons = [];<br />for (const [key, value] of Object.entries(databaseUsers
     };
     // add all persons to the array here
     persons.push(person);
-}<br /></pre>
+}<br />
+```
+
 
 Therefor we could have an array of persons as below which we can then display as we need in our application of or code:
 

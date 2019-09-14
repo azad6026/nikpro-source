@@ -58,8 +58,8 @@ We have the HTML and CSS here again:
 
 
 ```
-<code><p class="better">This is a paragraph.</p>
-<p class="better" id="winner">One selector to rule them all!</p></code>
+<p class="better">This is a paragraph.</p>
+<p class="better" id="winner">One selector to rule them all!</p>
 ```
 
 
@@ -92,7 +92,7 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introdu
 
 <blockquote class="wp-block-quote">
   <p>
-    It is useful to know that <code>!important</code> exists so that you know what it is when you come across it in other people&#8217;s code. However, we strongly recommend that you never use it unless you absolutely have to. One situation in which you may have to use it is when you are working on a CMS where you can&#8217;t edit the core CSS modules, and you really want to override a style that can&#8217;t be overridden in any other way. But really, don&#8217;t use it if you can avoid it, because <code>!important</code> changes the way the cascade normally works, so it can make debugging CSS problems really hard to work out, especially in a large stylesheet.
+    It is useful to know that !important exists so that you know what it is when you come across it in other people&#8217;s code. However, we strongly recommend that you never use it unless you absolutely have to. One situation in which you may have to use it is when you are working on a CMS where you can&#8217;t edit the core CSS modules, and you really want to override a style that can&#8217;t be overridden in any other way. But really, don&#8217;t use it if you can avoid it, because !important changes the way the cascade normally works, so it can make debugging CSS problems really hard to work out, especially in a large stylesheet.
   </p>
 </blockquote>
 

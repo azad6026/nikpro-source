@@ -22,10 +22,12 @@ The **`:valid`** selector allows you to select `<input>` elements that conta
 
 
 ```
-<code>/* Selects any valid <input> */
+/* Selects any valid <input> */
 input:valid {
   background-color: green;
-}</code><br /></pre>
+}<br />
+```
+
 
 ### The pseudo-class :invalid
 
@@ -33,10 +35,10 @@ The **`:invalid`**CSS pseudo-class represents any [`<input>`](https://develop
 
 
 ```
-<code>/* Selects any invalid <input> */
+/* Selects any invalid <input> */
 input:invalid {
   background-color: red;
-}</code>
+}
 ```
 
 
@@ -46,7 +48,7 @@ As an example imagine we have this email field in our form:
 
 
 ```
-<code>Email: <input type="email" required></code>
+Email: <input type="email" required>
 ```
 
 
@@ -54,13 +56,13 @@ Therefor we add the relevant CSS to show the validity of data here:
 
 
 ```
-<code>input[type=email]:invalid {
+input[type=email]:invalid {
   outline: red solid 1px;
 }
 
 input[type=email]:valid {
   outline: green solid 1px;
-}</code>
+}
 ```
 
 

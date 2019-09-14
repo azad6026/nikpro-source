@@ -24,7 +24,7 @@ As an example take a look at <a href="https://scotch.io/tutorials/5-tips-to-writ
 
 
 ```
-<code>function test(color) {
+function test(color) {
   // use switch case to find fruits in colour
   switch (color) {
     case 'red':
@@ -40,7 +40,7 @@ As an example take a look at <a href="https://scotch.io/tutorials/5-tips-to-writ
 
 //test results
 test(null); // []
-test('yellow'); // ['banana', 'pineapple']</code>
+test('yellow'); // ['banana', 'pineapple']
 ```
 
 
@@ -56,7 +56,7 @@ Technically we could use object literals to replace the above switch statement l
 
 
 ```
-<code>function test(color) {
+function test(color) {
   // use object literals to find fruits in colour
   const fruitColor = {
     red: ['apple', 'strawberry'],
@@ -65,7 +65,7 @@ Technically we could use object literals to replace the above switch statement l
   };
 
   return fruitColor[color] || [];
-}</code>
+}
 ```
 
 
@@ -73,7 +73,7 @@ We have created a JSON object that contains our colours as keys and fruits and t
 
 
 ```
-<code>function test(color) {
+function test(color) {
   // use Map to find fruits in colour
   const fruitColor = new Map()
     .set('red', ['apple', 'strawberry'])
@@ -81,7 +81,7 @@ We have created a JSON object that contains our colours as keys and fruits and t
     .set('purple', ['grape', 'plum']);
 
   return fruitColor.get(color) || [];
-}</code>
+}
 ```
 
 

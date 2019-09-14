@@ -45,7 +45,7 @@ That is all great.We can manipulate each edge as we like with different units an
 
 <blockquote class="wp-block-quote">
   <p>
-    followed optionally by &#8220;/&#8221; and one, two, three, or four&nbsp;<code><length></code>&nbsp;or&nbsp;<code><percentage></code>&nbsp;values. This is used to set an additional radius, so you can have elliptical corners.
+    followed optionally by &#8220;/&#8221; and one, two, three, or four&nbsp;<length>&nbsp;or&nbsp;<percentage>&nbsp;values. This is used to set an additional radius, so you can have elliptical corners.
   </p>
 </blockquote>
 

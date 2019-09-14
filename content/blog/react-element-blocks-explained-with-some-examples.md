@@ -23,8 +23,8 @@ This is a simple example of how to render a simple React element into the root o
 
 
 ```
-<code>const element = <h1>Hello, world</h1>;
-ReactDOM.render(element, document.getElementById('root'));</code>
+const element = <h1>Hello, world</h1>;
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 
@@ -36,11 +36,11 @@ The element is actually a HTML code that could be considered as our view which w
 
 
 ```
-<code><button class='button button-blue'>
+<button class='button button-blue'>
   <b>
     OK!
   </b>
-</button></code>
+</button>
 ```
 
 
@@ -48,7 +48,7 @@ This is a DOM element that will be rendered as this in React:
 
 
 ```
-<code>{
+{
   type: 'button',
   props: {
     className: 'button button-blue',
@@ -59,7 +59,7 @@ This is a DOM element that will be rendered as this in React:
       }
     }
   }
-}</code>
+}
 ```
 
 
@@ -67,13 +67,13 @@ Moreover take a look at this example also which is a component described by Reac
 
 
 ```
-<code>const DeleteAccount = () => (
+const DeleteAccount = () => (
   <div>
     <p>Are you sure?</p>
     <DangerButton>Yep</DangerButton>
     <Button color='blue'>Cancel</Button>
   </div>
-);</code>
+);
 ```
 
 
@@ -81,7 +81,7 @@ Moreover take a look at this example also which is a component described by Reac
 
 
 ```
-<code>const DeleteAccount = () => ({
+const DeleteAccount = () => ({
   type: 'div',
   props: {
     children: [{
@@ -101,7 +101,9 @@ Moreover take a look at this example also which is a component described by Reac
         children: 'Cancel'
       }
    }]
-});</code><br /></pre>
+});<br />
+```
+
 
 As a result you see clearly that it creates the DOM based on our elements or the view  and renders them with their own properties as **props**. Each and every tag has its own props and children and type rendered as we specify in our element declaration.
 
@@ -115,13 +117,13 @@ Additionally take a look at this form as a React element as a form:
 
 
 ```
-<code>ReactDOM.render({
+ReactDOM.render({
   type: Form,
   props: {
     isSubmitted: false,
     buttonText: 'OK!'
   }
-}, document.getElementById('root'));</code>
+}, document.getElementById('root'));
 ```
 
 
@@ -129,7 +131,7 @@ Firstly React will ask the `Form` component what element tree it returns, give
 
 
 ```
-<code>// React: You told me this...
+// React: You told me this...
 {
   type: Form,
   props: {
@@ -145,7 +147,7 @@ Firstly React will ask the `Form` component what element tree it returns, give
     children: 'OK!',
     color: 'blue'
   }
-}</code>
+}
 ```
 
 
@@ -153,7 +155,7 @@ Finally it will go on and will render all needed tags into the DOM:
 
 
 ```
-<code>// React: ...and Button told me this! I guess I'm done.
+// React: ...and Button told me this! I guess I'm done.
 {
   type: 'button',
   props: {
@@ -165,7 +167,7 @@ Finally it will go on and will render all needed tags into the DOM:
       }
     }
   }
-}</code>
+}
 ```
 
 

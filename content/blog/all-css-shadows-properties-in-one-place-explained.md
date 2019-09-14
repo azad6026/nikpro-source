@@ -24,7 +24,9 @@ This property is used to create shadows for block-level elements. The syntax for
 
 <pre>
 <span class="token property">box-shadow</span><span class="token punctuation">:</span> [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]<span class="token punctuation">;</span>
-</pre>
+
+```
+
 
 **The horizontal offset** :
 
@@ -62,7 +64,9 @@ The text-shadow property applies shadows on the text itself. The syntax looks li
 
 <pre>
 <span class="token property">text-shadow</span><span class="token punctuation">:</span> [horizontal offset] [vertical offset] [blur radius] [color]<span class="token punctuation">;</span>
-</pre>
+
+```
+
 
 The effect of the values are the same as box-shadow. based on that positive values make the shadow on the right and below the text. The blur is optional and it is zero by default.Also, remember you can use [RGBa](http://css-tricks.com/rgba-browser-support/) or [HSLa](http://css-tricks.com/examples/HSLaExplorer/) values for the color,
 

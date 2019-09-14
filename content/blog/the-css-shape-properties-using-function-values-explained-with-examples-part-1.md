@@ -65,7 +65,9 @@ Practically we use clip-path to shape the two right and left containers and then
   shape-outside: polygon(100% 0, 100% 100%, 0 100%);
   float: right;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);<br /></pre>
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);<br />
+```
+
 
 The above is the code for the right floated box and we have a similar code for the other one.
 

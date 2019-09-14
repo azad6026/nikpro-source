@@ -23,12 +23,13 @@ Generally we know inline styling as the very first and basic styling in CSS. It 
 
 Starting with a simple example we can explain it better:
 
-<pre class="wp-block-preformatted"><code><strong>const divStyle = {  </strong></code>
-<code><strong>  color: 'blue',  </strong></code>
-<code><strong>  background# image: ../../static/images/'url(' + imgUrl + ')',</strong></code>
-<code><strong>};</strong></code>
-<code><strong>HelloWorldComponent => (  </strong></code>
-<code><strong>  <div style={divStyle}>Hello World!</div>;</strong></code>
+```
+const divStyle = {  
+  color: 'blue',  
+  background# image: ../../static/images/'url(' + imgUrl + ')',
+};
+HelloWorldComponent => (  
+  <div style={divStyle}>Hello World!</div>;
 );
 ```
 
@@ -49,9 +50,12 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
 
 We can write normal styles here. We can either pass the variable name like above  **style = {divStyle} **or pass the style directly like below:
 
-<pre class="wp-block-preformatted"><code><strong>HelloWorldComponent => (  </strong></code>
-<code><strong>  <div style={{ color: 'blue'}}>Hello World!</div>;</strong></code>
-<code><strong>);</strong></code></pre><figure class="wp-block-image">
+```
+HelloWorldComponent => (  
+  <div style={{ color: 'blue'}}>Hello World!</div>;
+);
+```
+<figure class="wp-block-image">
 
 <img class="wp-image-32473" src="http://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
 
@@ -150,7 +154,7 @@ import styles from './App.css';
   <h1 <em>className</em>={styles.title}>Welcome to React</h1>
   </header>
   <p <em>className</em>={styles.intro}>
-  To get started, edit <code>src/App.js</code> and save to reload.
+  To get started, edit src/App.js and save to reload.
   </p>
 </div>
 ```

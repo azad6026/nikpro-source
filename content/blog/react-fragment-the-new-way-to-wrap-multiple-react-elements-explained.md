@@ -29,11 +29,11 @@ Firstly imagine this example table from <a href="https://reactjs.org/docs/fragme
 
 
 ```
-<code> <table>
+ <table>
         <tr>
           <Columns />
         </tr>
- </table></code>
+ </table>
 ```
 
 
@@ -41,7 +41,7 @@ Wrapping this Columns component return statement with a <div> is not correct in 
 
 
 ```
-<code>class Columns extends React.Component {
+class Columns extends React.Component {
   render() {
     return (
       <div>
@@ -50,7 +50,7 @@ Wrapping this Columns component return statement with a <div> is not correct in 
       </div>
     );
   }
-}</code>
+}
 ```
 
 
@@ -58,14 +58,14 @@ Which means the table will look like this at the end:
 
 
 ```
-<code><table>
+<table>
   <tr>
     <div>
       <td>Hello</td>
       <td>World</td>
     </div>
   </tr>
-</table></code>
+</table>
 ```
 
 
@@ -73,7 +73,7 @@ Definitely this is not a correct semantic table. We will need React.Fragment to 
 
 
 ```
-<code>class Columns extends React.Component {
+class Columns extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -82,7 +82,7 @@ Definitely this is not a correct semantic table. We will need React.Fragment to 
       </React.Fragment>
     );
   }
-}</code>
+}
 ```
 
 
@@ -90,12 +90,12 @@ As a result we get this table:
 
 
 ```
-<code><table>
+<table>
   <tr>
     <td>Hello</td>
     <td>World</td>
   </tr>
-</table></code>
+</table>
 ```
 
 
@@ -103,10 +103,10 @@ Also we can use the shorter syntax in the Columns component which looks cool:
 
 
 ```
-<code> <>
+ <>
     <td>Hello</td>
     <td>World</td>
-  </></code>
+  </>
 ```
 
 
@@ -122,7 +122,7 @@ Here is also a general usage of the React.Fragment wrapping multiple elements:
 
 
 ```
-<code>render() {
+render() {
   return (
     <React.Fragment>
       <ChildA />
@@ -130,7 +130,7 @@ Here is also a general usage of the React.Fragment wrapping multiple elements:
       <ChildC />
     </React.Fragment>
   );
-}</code>
+}
 ```
 
 

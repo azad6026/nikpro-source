@@ -23,7 +23,7 @@ Generally shouldComponentUpdate() is considered a useful but tricky and sometime
 
 
 ```
-<code>shouldComponentUpdate(nextProps, nextState)</code>
+shouldComponentUpdate(nextProps, nextState)
 ```
 
 
@@ -43,9 +43,9 @@ Therefor if it returns false **render() and componentDidUpdate()** will not be i
 
 
 ```
-<code>shouldComponentUpdate(nextProps, nextState) {
+shouldComponentUpdate(nextProps, nextState) {
   return this.state.value != nextState.value;
-}</code>
+}
 ```
 
 
@@ -53,7 +53,7 @@ As an example we might have a state with large object with several properties. B
 
 
 ```
-<code>shouldComponentUpdate(nextProps, nextState) {
+shouldComponentUpdate(nextProps, nextState) {
     if (this.props.color !== nextProps.color) {
       return true;
     }
@@ -61,7 +61,7 @@ As an example we might have a state with large object with several properties. B
       return true;
     }
     return false;
-}</code>
+}
 ```
 
 
@@ -71,7 +71,7 @@ Additionally we have `componentDidUpdate()` which is invoked immediately after
 
 
 ```
-<code>componentDidUpdate(prevProps, prevState, snapshot)</code>
+componentDidUpdate(prevProps, prevState, snapshot)
 ```
 
 
@@ -79,12 +79,12 @@ Practically we can manipulate the DOM in componentDidUpdate() method. In additio
 
 
 ```
-<code>componentDidUpdate(prevProps) {
+componentDidUpdate(prevProps) {
   // Typical usage (don't forget to compare props):
   if (this.props.userID !== prevProps.userID) {
     this.fetchData(this.props.userID);
   }
-}</code>
+}
 ```
 
 
@@ -96,14 +96,14 @@ Obviously just like [`componentDidMount()`](http://www.nikpro.com.au/react-comp
 
 
 ```
-<code>componentDidUpdate(prevProps, prevState) {
+componentDidUpdate(prevProps, prevState) {
   // only update chart if the data has changed
   if (prevProps.data !== this.props.data) {
     this.chart = c3.load({
       data: this.props.data
     });
   }
-}</code>
+}
 ```
 
 

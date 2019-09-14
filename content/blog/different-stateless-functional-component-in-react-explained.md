@@ -22,7 +22,7 @@ Basically in stateless functional component we need to wrap the JSX code in a co
 
 
 ```
-<a><code>const Profile = props => {<br/>  return (  <br/><br/>      <h1>{props.name}</h1><br/>      <p>{props.bio}</p><br/><br/>  );<br/>};<br/><br/><em>Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag</em></code><br /><br /></a>
+<a>const Profile = props => {<br/>  return (  <br/><br/>      <h1>{props.name}</h1><br/>      <p>{props.bio}</p><br/><br/>  );<br/>};<br/><br/><em>Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag</em><br /><br /></a>
 ```
 
 
@@ -36,7 +36,10 @@ const Profile = props => {<br />  return (  <br />    <div><br />      <h1>{prop
 
 Typically we use a div but you can use whatever suits your code. Also in this example we have just a one line code so we can drop the {} curly braces and the return statement based on [arrow functions capabilities](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
-<pre class="wp-block-preformatted"><br />const Profile = props => <br />  <div><br />    <h1>{props.name}</h1><br />    <p>{props.bio}</p><br />  </div>;<br /></pre>
+```
+<br />const Profile = props => <br />  <div><br />    <h1>{props.name}</h1><br />    <p>{props.bio}</p><br />  </div>;<br />
+```
+
 
 ### Using higher order component as a wrapper
 

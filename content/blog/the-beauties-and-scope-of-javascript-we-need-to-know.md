@@ -23,9 +23,9 @@ The scope which something code executes in is defined that which variables are a
 
 
 ```
-<code>var animal = 'dog';
+var animal = 'dog';
 function getAnimal(adjective) { alert(adjective+' '+this.animal); }
-getAnimal('lovely'); //alerts 'lovely dog';</code>
+getAnimal('lovely'); //alerts 'lovely dog';
 ```
 
 
@@ -33,10 +33,10 @@ In the example above our variable and function are both declared in the global 
 
 
 ```
-<code>var animal = 'dog';
+var animal = 'dog';
 function getAnimal(adjective) { alert(adjective+' '+this.animal); };
 var myObj = {animal: 'camel'};
-getAnimal.call(myObj, 'lovely'); //alerts 'lovely camel'</code>
+getAnimal.call(myObj, 'lovely'); //alerts 'lovely camel'
 ```
 
 
@@ -44,7 +44,7 @@ Therefor the function is not called in the window scope but in the myObj scope. 
 
 
 ```
-<code>getAnimal.apply(myObj, ['lovely']); //func args sent as array</code>
+getAnimal.apply(myObj, ['lovely']); //func args sent as array
 ```
 
 
@@ -54,7 +54,7 @@ Null means the **total absence of meaningful value.**  Here is an example of 
 
 
 ```
-<code>alert(typeof null); //alerts 'object'</code>
+alert(typeof null); //alerts 'object'
 ```
 
 
@@ -70,8 +70,8 @@ This is even more odd when you do the same with NAN:
 
 
 ```
-<code>alert(typeof NaN); //alerts 'Number'
-alert(NaN === NaN); //evaluates false</code>
+alert(typeof NaN); //alerts 'Number'
+alert(NaN === NaN); //evaluates false
 ```
 
 
@@ -83,18 +83,21 @@ It takes the [truthy and falsy](http://www.nikpro.com.au/truthy-or-falsy-values-
 
 
 ```
-<code>alert(new Array() == false); //evaluates true</code>
+alert(new Array() == false); //evaluates true
 ```
 
 
 Because apples cannot be compared to pears, when JavaScript is asked to compare values of differing data types, it first “**coerces**” them into a common data type. `False`, `zero`, `null`, `undefined`, empty strings and `NaN` all end up becoming `false` — not permanently, just for the given expression. An example to the rescue:
 
-<pre class="wp-block-preformatted">So this is an example to the rescue: </pre>
+```
+So this is an example to the rescue: 
+```
+
 
 
 ```
-<code>var someVar = 0;
-alert(someVar == false); //evaluates true</code>
+var someVar = 0;
+alert(someVar == false); //evaluates true
 ```
 
 
@@ -102,9 +105,9 @@ Here, we’re attempting to compare the number `` to the boolean `false`. Bec
 
 
 ```
-<code>var someVar = []; //empty array
+var someVar = []; //empty array
 alert(someVar == false); //evaluates true
-if (someVar) alert('hello'); //alert runs, so someVar evaluates to true</code>
+if (someVar) alert('hello'); //alert runs, so someVar evaluates to true
 ```
 
 
@@ -112,9 +115,9 @@ The best thing is to use value and type comparison operator, **===**, and it is
 
 
 ```
-<code>var someVar = 0;
+var someVar = 0;
 alert(someVar == false); //evaluates true – zero is a falsy
-alert(someVar === false); //evaluates false – zero is a number, not a boolean</code>
+alert(someVar === false); //evaluates false – zero is a number, not a boolean
 ```
 
 
