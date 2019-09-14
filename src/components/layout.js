@@ -69,7 +69,7 @@ class Layout extends React.Component {
           }}
         >
           The site is getting a new look in Gatsbyjs.{" "}
-          <a href="mailto:azad6026@gmail.com">Send</a> me your feedbacks.
+          <a href="mailto:niksoftpro@outlook.com">Send</a> me your feedbacks.
         </p>
         <a id="top"></a>
         <header
