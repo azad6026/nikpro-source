@@ -2,6 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Image from "../components/image"
+import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { rhythm } from "../utils/typography"
@@ -26,29 +28,35 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article
-              className="post-box"
-              key={node.fields.slug}
-              style={{
-                transition: `transform 250ms cubic- bezier(0.4, 0, 0.2, 1), box - shadow 250ms cubic - bezier(0.4, 0, 0.2, 1), padding 250ms cubic - bezier(0.4, 0, 0.2, 1)`,
-                background: `rgba(255,255,255,.8)`,
-                boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
-                padding: `1rem 3rem`,
-                margin: `1rem auto`,
-                transition: `all .5s`,
-              }}
+            <BackgroundImage
+              Tag="section"
+              className="bg-image"
+              fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+              backgroundColor={`#fff`}
             >
-              <h3>
-                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small style={{ color: `#ad5100` }}>
-                {node.frontmatter.date} by Azadeh, {node.timeToRead} min
-              </small>
-
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </article>
+              <article
+                className="post-box"
+                key={node.fields.slug}
+                style={{
+                  transition: `transform 250ms cubic- bezier(0.4, 0, 0.2, 1), box - shadow 250ms cubic - bezier(0.4, 0, 0.2, 1), padding 250ms cubic - bezier(0.4, 0, 0.2, 1)`,
+                  background: `rgba(255,255,255,.8)`,
+                  boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
+                  padding: `1rem 3rem`,
+                  margin: `1rem auto`,
+                  transition: `all .5s`,
+                }}
+              >
+                <h3>
+                  <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small style={{ color: `#ad5100` }}>
+                  {node.frontmatter.date} by Azadeh, {node.timeToRead} min
+                </small>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </article>
+            </BackgroundImage>
           )
         })}
         <nav
@@ -130,6 +138,13 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

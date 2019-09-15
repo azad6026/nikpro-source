@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32471
 permalink: /how-to-style-components-in-react-without-third-party-libraries/
 xyz_twap:
   - "1"
-# image: ../../static/images/css-style.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css-style.png
 categories:
   - React
 tags:
@@ -26,7 +27,8 @@ Starting with a simple example we can explain it better:
 ```
 const divStyle = {  
   color: 'blue',  
-  background# image: ../../static/images/'url(' + imgUrl + ')',
+  backgroundfeaturedImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/'url(' + imgUrl + ')',
 };
 HelloWorldComponent => (  
   <div style={divStyle}>Hello World!</div>;
@@ -40,7 +42,8 @@ First we have defined a camelCased constant which is an object to hold the style
 ```
 var divStyle = {
   color: 'white',
-  background# image: ../../static/images/'url(' + imgUrl + ')',
+  backgroundfeaturedImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/'url(' + imgUrl + ')',
   WebkitTransition: 'all', // note the capital 'W' here
   msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };

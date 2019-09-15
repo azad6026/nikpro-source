@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32022
 permalink: /react-element-blocks-explained-with-some-examples/
-# image: ../../static/images/reac-element.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/reac-element.png
 categories:
   - React
 tags:

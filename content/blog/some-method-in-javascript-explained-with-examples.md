@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32151
 permalink: /some-method-in-javascript-explained-with-examples/
 xyz_twap:
   - "1"
-# image: ../../static/images/some-js.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/some-js.jpeg
 categories:
   - ES6
   - JAVASCRIPT

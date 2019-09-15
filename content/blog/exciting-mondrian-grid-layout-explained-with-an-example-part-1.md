@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32193
 permalink: /exciting-mondrian-grid-layout-explained-with-an-example-part-1/
 xyz_twap:
   - "1"
-# image: ../../static/images/mondrian1.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/mondrian1.jpeg
 categories:
   - CSS
   - CSS3

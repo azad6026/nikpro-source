@@ -6,13 +6,15 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31623
 permalink: /wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/
-# image: ../../static/images/Common-Challenges-Faced-by-WordPress-Agencies-Banner.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/Common-Challenges-Faced-by-WordPress-Agencies-Banner.jpg
 categories:
   - WORDPRESS
 tags:
   - challenges
   - problems
 ---
+
 Have you used WordPress? Or better to ask, have you actually developed a site or blog in it? Not using a predefined theme and just customise it but actually develop the theme, make your own theme from a starter kit (perhaps not write the theme from scratch to reinvent the wheel) and play around with plugins? Well I have,  and I have done it for quiet sometime now and after building many websites there are still difficulties and challenges that I face on a daily basis that I really don&#8217;t like.
 
 WordPress is a great software there is no doubt in it. It makes the work easier and faster and as a content management system ( although many disagree it is one) , it does a fantastic job. But is comes with some lets say hidden quirks and tweaks and series of strange problems from installation to finalisation. Let that be that you see a blank page all of a sudden after all the hard work you did for the last hour and you feel empty and exhausted and your best guess is that one of the plugins has caused it and if by chance you could find that, well done you saved our work and if not, good luck redoing all the work.

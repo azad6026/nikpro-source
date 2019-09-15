@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32207
 permalink: /responsive-mondrian-grid-layout-without-using-media-queries-in-css/
 xyz_twap:
   - "1"
-# image: ../../static/images/mondrian-responsive.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/mondrian-responsive.png
 categories:
   - CSS
   - CSS3

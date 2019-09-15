@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31914
 permalink: /practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/
-# image: ../../static/images/sort.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/sort.jpg
 categories:
   - ES6
   - JAVASCRIPT

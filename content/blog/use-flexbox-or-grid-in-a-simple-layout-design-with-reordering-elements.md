@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32697
 permalink: /use-flexbox-or-grid-in-a-simple-layout-design-with-reordering-elements/
 xyz_twap:
   - "1"
-# image: ../../static/images/flexbox-grid.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/flexbox-grid.png
 categories:
   - CSS
 tags:

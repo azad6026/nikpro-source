@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=31902
 permalink: /build-a-clock-with-javascript-and-css-using-css-transform/
 xyz_twap:
   - "1"
-# image: ../../static/images/clock-without-js.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/clock-without-js.png
 categories:
   - CSS
   - JAVASCRIPT

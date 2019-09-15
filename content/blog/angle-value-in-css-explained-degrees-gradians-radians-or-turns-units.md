@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32212
 permalink: /angle-value-in-css-explained-degrees-gradians-radians-or-turns-units/
 xyz_twap:
   - "1"
-# image: ../../static/images/angle.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/angle.png
 categories:
   - CSS
   - CSS3

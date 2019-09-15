@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32085
 permalink: /the-css-background-blend-mode-explained-with-examples/
-# image: ../../static/images/blend-mode.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/blend-mode.png
 categories:
   - CSS
   - CSS3

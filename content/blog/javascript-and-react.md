@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31555
 permalink: /javascript-and-react/
-# image: ../../static/images/reactjs.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/reactjs.png
 categories:
   - ANGULAR
   - HTML

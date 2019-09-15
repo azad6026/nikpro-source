@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32705
 permalink: /css-custom-properties-for-image-backgrounds-explained/
 xyz_twap:
   - "1"
-# image: ../../static/images/css-image-bg.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css-image-bg.jpeg
 categories:
   - CSS
   - CSS3

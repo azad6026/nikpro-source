@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31986
 permalink: /the-beauties-and-scope-of-javascript-we-need-to-know/
-# image: ../../static/images/js-specials.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/js-specials.png
 categories:
   - JAVASCRIPT
 tags:

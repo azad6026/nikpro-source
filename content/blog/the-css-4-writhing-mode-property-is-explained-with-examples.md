@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32075
 permalink: /the-css-4-writhing-mode-property-is-explained-with-examples/
-# image: ../../static/images/writing-mode.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/writing-mode.png
 categories:
   - CSS
   - CSS4

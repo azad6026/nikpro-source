@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32185
 permalink: /the-css-shape-properties-using-function-values-explained-with-examples-part-1/
 xyz_twap:
   - "1"
-# image: ../../static/images/shape-out.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/shape-out.jpg
 categories:
   - CSS
   - CSS3

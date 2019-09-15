@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31755
 permalink: /all-css-shadows-properties-in-one-place-explained/
-# image: ../../static/images/css3-shadows.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css3-shadows.jpg
 categories:
   - CSS
   - CSS3

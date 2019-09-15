@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32375
 permalink: /build-a-local-react-blog-application-part-1/
 xyz_twap:
   - "1"
-# image: ../../static/images/reactcomponent.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/reactcomponent.png
 categories:
   - ES6
   - React

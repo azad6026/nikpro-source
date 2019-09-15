@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32677
 permalink: /it-is-all-about-user-interface-stop-the-fight/
 xyz_twap:
   - "1"
-# image: ../../static/images/main-divide-1568x846.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/main-divide.png
 categories:
   - CSS
   - HTML

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32414
 permalink: /create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/
 xyz_twap:
   - "1"
-# image: ../../static/images/foter-sticky-1568x867.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/foter-sticky.png
 categories:
   - CSS
   - CSS3
@@ -17,12 +18,12 @@ tags:
   - flexbox
   - grid layout
 ---
+
 There are couple of ways to create a modern sticky footer. Typically we are used to negative margins and absolute positioning. But we could use [CSS grid](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) and [FlexBox](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) and [calc()](http://www.nikpro.com.au/the-css-calc-function-explained-with-examples/) function to build them along the way.
 
 ## Sticky footer with calc() function
 
 Firstly we create a sticky fixed-height footer using calc() function to calculate the minimum height for the content in the page. Afterwards we reduce the footer&#8217;s height from that. Here is the HTML code for <a href="https://priteshgupta.com/2016/05/sticky-css-footer/" target="_blank" rel="noopener noreferrer">the idea</a>:
-
 
 ```
 <body>
@@ -31,9 +32,7 @@ Firstly we create a sticky fixed-height footer using calc() function to calculat
 </body>
 ```
 
-
 And the CSS with calc() function:
-
 
 ```
 .content {
@@ -43,7 +42,6 @@ And the CSS with calc() function:
   height: 20px;
 }
 ```
-
 
 Also there is a pen in <a href="https://css-tricks.com/couple-takes-sticky-footer/" target="_blank" rel="noopener noreferrer">CSS tricks </a>that shows how it works:
 
@@ -57,7 +55,6 @@ Therefor no overlapping happens and two elements ( div.content and footer) will 
 
 We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/). We will have a variable height footer in this case. There are two ways for FlexBox option.
 
-
 ```
 <body>
   <div class="content">
@@ -67,9 +64,7 @@ We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.
 </body>
 ```
 
-
 We can use **margin-top: auto** for footer [to push it away as far as needed from the rest of the content](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/).
-
 
 ```
 html, body {
@@ -84,9 +79,7 @@ body {
 }
 ```
 
-
 Alternatively give the content a **flex: 1** so that it grows to fill the space:
-
 
 ```
 .content {
@@ -97,7 +90,6 @@ Alternatively give the content a **flex: 1** so that it grows to fill the space
 }
 ```
 
-
 <p data-height="500" data-theme-id="0" data-slug-hash="RRbKrL" data-default-tab="css,result" data-user="chriscoyier" data-pen-title="Sticky Footer with Flexbox" class="codepen">
   See the Pen <a href="https://codepen.io/chriscoyier/pen/RRbKrL/">Sticky Footer with Flexbox</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
@@ -105,7 +97,6 @@ Alternatively give the content a **flex: 1** so that it grows to fill the space
 ## Sticky footer with CSS Grid
 
 With CSS grid we can use more modern code to create sticky flexible footer. CSS grid is <a href="https://caniuse.com/#search=grid" target="_blank" rel="noopener noreferrer">88% supported globally</a> and is ready to use for production. Here is the CSS code using grid:
-
 
 ```
 html {
@@ -122,7 +113,6 @@ body {
 }
 ```
 
-
 Using **grid-row-start** we specify where the footer starts as we have a two row layout. And with **grid-row-end** we specify the ending of footer. Also using  **grid-template-rows: 1fr auto;** we make a flexible height grid layout.
 
 <p data-height="500" data-theme-id="0" data-slug-hash="YWKNrE" data-default-tab="js,result" data-user="chriscoyier" data-pen-title="Sticky Footer with Grid" class="codepen">
@@ -131,11 +121,9 @@ Using **grid-row-start** we specify where the footer starts as we have a two row
 
 We can also <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers" target="_blank" rel="noopener noreferrer">simply remove footer</a> code and only set **grid-template-rows:**
 
-
 ```
 grid-template-rows: auto 1fr auto;
 ```
-
 
 As we mentioned at the beginning there are other ways like **absolute positioning footer** on the bottom or giving it **negative top margins** or give content **negative bottom margin equal to footer height.** Although they are still valid solutions but we need to write more code with fixed footer heights and less maintainable. Set aside they are not modern approaches. Lets get modernised.
 

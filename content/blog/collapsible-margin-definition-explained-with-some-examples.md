@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32763
 permalink: /create-a-simple-website-layout-using-flexbox/
-# image: ../../static/images/margin-in-element-1140x622.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/margin-in-element.png
 categories:
   - CSS
 tags:
@@ -27,28 +28,24 @@ Therefore the smaller margin kind of gets eaten by the bigger one. This is the r
 
 Basically here is a simple example:
 
-
 ```
 <h1>This has a margin-bottom</h1>
 <p> This has a margin-top</p>
 
 ```
 
-
 We define the margins in CSS as below:
-
 
 ```
 
-h1 {  
+h1 {
  margin-bottom: 25px;
 }
-p {  
+p {
  margin-top: 50px
 }
 
 ```
-
 
 The expectation is to have 75px of margin between the two but we will have 50px as the actual distance. Therefore the biggest margin has won. Hooray!
 

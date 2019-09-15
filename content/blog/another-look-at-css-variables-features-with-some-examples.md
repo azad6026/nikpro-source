@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32122
 permalink: /another-look-at-css-variables-features-with-some-examples/
-# image: ../../static/images/css-variables-features.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css-variables-features.jpg
 categories:
   - CSS
   - CSS3

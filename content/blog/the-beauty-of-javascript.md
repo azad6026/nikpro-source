@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31560
 permalink: /the-beauty-of-javascript/
-# image: ../../static/images/challenge-1568x556.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/challenge.jpg
 categories:
   - JAVASCRIPT
 ---

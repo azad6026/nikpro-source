@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32584
 permalink: /heads-up-for-wordpress-gutenberg-how-to-get-ready-for-the-big-change/
 xyz_twap:
   - "1"
-# image: ../../static/images/new-future.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/new-future.jpg
 categories:
   - WORDPRESS
 ---

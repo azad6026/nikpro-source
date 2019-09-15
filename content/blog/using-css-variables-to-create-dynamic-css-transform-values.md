@@ -8,11 +8,13 @@ guid: http://www.nikpro.com.au/?p=32592
 permalink: /using-css-variables-to-create-dynamic-css-transform-values/
 xyz_twap:
   - "1"
-# image: ../../static/images/css-transforms-using-variables-1568x579.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css-transforms-using-variables.png
 categories:
   - CSS3
   - JAVASCRIPT
 ---
+
 One of the things that I hear a lot about is the ability to dynamically change CSS transform values by the power of CSS variables. So this way we can control our transform properties at any time as CSS variables are live in the browser.
 
 ## Change CSS transform rotate on hover
@@ -24,8 +26,6 @@ https://codepen.io/g12n/pen/ZLYqyr
 #### Defining variables
 
 Basically all variables are defined in the root here. The variables are used to change the SVG attributes on demand:
-
-
 
 ```
 
@@ -46,10 +46,7 @@ Basically all variables are defined in the root here. The variables are used to 
 
 ```
 
-
 Except for the **&#8211;angle** they are all used to change the colours and saturation. The &#8211;angle though is the one to be used for the **#sky** angle in the SVG:
-
-
 
 ```
 
@@ -60,10 +57,7 @@ Except for the **&#8211;angle** they are all used to change the colours and satu
 
 ```
 
-
 Inside rotate the angle variable is declared so that we can dynamically change it on demand like hover:
-
-
 
 ```
 
@@ -84,7 +78,6 @@ svg:hover{
 
 ```
 
-
 Therefore the values are changed on hover as well as **&#8211;angle**. And that makes the beautiful animation like effect one we hover over it.&nbsp;
 
 ## Dynamic CSS transform involving Javascript to change variables
@@ -95,7 +88,6 @@ https://codepen.io/danwilson/pen/oBrOGW
 
 Interestingly three properties inside transform have used CSS variables as their values. Also the duration of the transition is declared as a variable to make it more like an animation:
 
-
 ```
 
 /* Defining variables */
@@ -105,20 +97,18 @@ Interestingly three properties inside transform have used CSS variables as their
   --scale: 1;
   --deg: 0deg;
  }
- 
+
 ```
 
-
 Therefore Javascript will use these variables to change them based on input value changes. Here is the important CSS code that defines behaviour of each box:
-
 
 ```
 
 .mover {
   /* THIS is the important line */
-  transform: 
-    translate3d(var(--tx), var(--ty), 0) 
-    scale(var(--scale)) 
+  transform:
+    translate3d(var(--tx), var(--ty), 0)
+    scale(var(--scale))
     rotate(var(--deg));
   --hue: 120;
   --duration: 2000ms;
@@ -127,12 +117,9 @@ Therefore Javascript will use these variables to change them based on input valu
 
 ```
 
-
 As a side note need to note that &#8211;**-duration** has been defined inside the box and no the :root. Not all variables need to be defined in the root as they might only be used inside that element only. Remember CSS variables are **scoped** to where they have been defined.
 
 Finally using Javascript the values are changed dynamically:
-
-
 
 ```
 
@@ -149,18 +136,17 @@ var ranges = {
 function valueChange(id, value) {
   style.setProperty('--' + id, value);
 }
-ranges.translate.addEventListener('input', function(e) { 
+ranges.translate.addEventListener('input', function(e) {
   valueChange(e.currentTarget.id, e.currentTarget.value + 'vw');
 });
-ranges.scale.addEventListener('input', function(e) { 
+ranges.scale.addEventListener('input', function(e) {
   valueChange(e.currentTarget.id, e.currentTarget.value);
 });
-ranges.deg.addEventListener('input', function(e) { 
+ranges.deg.addEventListener('input', function(e) {
   valueChange(e.currentTarget.id, e.currentTarget.value + 'deg');
 });
 
 ```
-
 
 Moreover [the Event listener](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/)&nbsp;has been assigned to all properties of the element ( translate, scale, deg) to change the related style property using valueChange function. Very concise and useful.
 

@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31660
 permalink: /no-matter-what-happens-never-stop-learning/
-# image: ../../static/images/never-stop-learning.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/never-stop-learning.png
 categories:
   - Web Development
 tags:

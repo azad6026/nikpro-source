@@ -17,7 +17,8 @@ enclosure:
     3265503
     video/quicktime
     
-# image: ../../static/images/minmax-auto-fill-auto-fit.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/minmax-auto-fill-auto-fit.jpg
 categories:
   - CSS
   - CSS3

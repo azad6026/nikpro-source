@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31693
 permalink: /explaining-jsx-with-some-examples/
-# image: ../../static/images/jsx-react.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/jsx-react.png
 categories:
   - JSX
   - React

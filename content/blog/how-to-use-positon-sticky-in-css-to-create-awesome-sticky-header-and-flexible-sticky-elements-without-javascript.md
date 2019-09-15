@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32635
 permalink: /how-to-use-positon-sticky-in-css-to-create-awesome-sticky-header-and-flexible-sticky-elements-without-javascript/
 xyz_twap:
   - "1"
-# image: ../../static/images/sticky-elements.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/sticky-elements.png
 categories:
   - CSS
   - CSS3

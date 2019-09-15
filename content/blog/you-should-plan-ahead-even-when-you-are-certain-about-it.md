@@ -6,10 +6,12 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32134
 permalink: /you-should-plan-ahead-even-when-you-are-certain-about-it/
-# image: ../../static/images/hosting.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/design-with-code.jpg
 categories:
   - NikPro
 ---
+
 Upgrading my hosting thought me that you should plan ahead even when you are confident about what you do.
 
 Certainly I had hard times doing the upgrade which I am still fixing bugs and issues and doing checkups everywhere needed.
@@ -18,4 +20,4 @@ It is always stressful and unpredictable thing around hosting especially if you 
 
 Finally the pain is over but I learnt to plan ahead next time for things that I cannot predict or understand.
 
-Thanks for your patience and I will update the site soon with brand new articles. 
+Thanks for your patience and I will update the site soon with brand new articles.

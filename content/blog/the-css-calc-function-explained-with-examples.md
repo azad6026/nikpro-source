@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32179
 permalink: /the-css-calc-function-explained-with-examples/
 xyz_twap:
   - "1"
-# image: ../../static/images/calc-function.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/calc-function.png
 categories:
   - CSS
   - CSS3
@@ -45,7 +46,8 @@ As an example we can position the background image in the bottom right using cal
 </p>
 
 ```
-background-# image: ../../static/images/url(dog.png);
+background-featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/url(dog.png);
 background-position: calc(100% - 50px) calc(100% - 20px);
 ```
 

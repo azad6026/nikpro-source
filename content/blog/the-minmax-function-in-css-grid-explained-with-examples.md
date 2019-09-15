@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32258
 permalink: /the-minmax-function-in-css-grid-explained-with-examples/
 xyz_twap:
   - "1"
-# image: ../../static/images/minmax-function.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/minmax-function.jpg
 categories:
   - CSS
   - CSS3

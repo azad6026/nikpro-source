@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32440
 permalink: /better-javascript-with-less-nesting-and-return-early-when-possible/
 xyz_twap:
   - "1"
-# image: ../../static/images/Javascript-Best-Practices.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/Javascript-Best-Practices.jpg
 categories:
   - ES6
   - JAVASCRIPT

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32325
 permalink: /react-component-lifecycle-explained-with-examples-first-part/
 xyz_twap:
   - "1"
-# image: ../../static/images/reactlifecycle.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/reactlifecycle.jpeg
 categories:
   - React
 tags:

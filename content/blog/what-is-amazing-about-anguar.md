@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31671
 permalink: /what-is-amazing-about-anguar/
-# image: ../../static/images/angualr.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/angualr.jpg
 categories:
   - ANGULAR
 tags:

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32254
 permalink: /react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/
 xyz_twap:
   - "1"
-# image: ../../static/images/react-fragment.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/react-fragment.png
 categories:
   - React
 tags:

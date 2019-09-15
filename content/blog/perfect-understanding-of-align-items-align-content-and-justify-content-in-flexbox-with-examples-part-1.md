@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32538
 permalink: /perfect-understanding-of-align-items-align-content-and-justify-content-in-flexbox-with-examples-part-1/
 xyz_twap:
   - "1"
-# image: ../../static/images/alignment.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/alignment.png
 categories:
   - CSS
   - CSS3

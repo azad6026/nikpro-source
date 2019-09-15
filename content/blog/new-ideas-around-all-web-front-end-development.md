@@ -6,11 +6,13 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32129
 permalink: /new-ideas-around-all-web-front-end-development/
-# image: ../../static/images/web-development.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/never-stop-learning.png
 categories:
   - NikPro
   - Web Development
 ---
+
 After fixing server issues which is in progress, I would like to ask you as my visitors to send me your new ideas around all web development mostly front end. I wish to have lots of researches and answer your questions or put up a complete article around that subject.
 
 ## New ideas in web development are always welcome
@@ -23,6 +25,6 @@ I have committed myself to finish my own theme for the site and publish it soon.
 
 ### React articles
 
-I will be writing more around React as well. I want to build a few applications and hopefully will post articles with detailed explanation about each and every one of them. So stay tuned and send me your ideas in any case you can think of in web development. I would love to have research around even strange things. 
+I will be writing more around React as well. I want to build a few applications and hopefully will post articles with detailed explanation about each and every one of them. So stay tuned and send me your ideas in any case you can think of in web development. I would love to have research around even strange things.
 
-Thankfully if the server fixing process goes well I will continue talking to you around all the web development things. Thanks for reading. 
+Thankfully if the server fixing process goes well I will continue talking to you around all the web development things. Thanks for reading.

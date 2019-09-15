@@ -6,12 +6,14 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31629
 permalink: /wordpress-migration-plugins-make-your-own-migration-choice/
-# image: ../../static/images/migration-wp.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/migration-wp.jpg
 categories:
   - WORDPRESS
 tags:
   - plugins
 ---
+
 There are lots of plugins developed for a WordPress [site](_wp_link_placeholder) migration purpose. You will need a good way and the right choice to be able to migrate or duplicate one site to another and finding the best one that suits your need is hard. All these plugins are pretty much the same but they vary in options and flexibility they come with and of course their price.
 
 I will share a few of them that I have played around with and used for [my most recent project](http://www.nikpro.com.au/wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/) so that you get the idea:
@@ -24,13 +26,13 @@ For mu=y project I couldn&#8217;t use the free version as my site was a large on
 
 ### [BackupBuddy](http://ithemes.com/purchase/backupbuddy/)
 
-This plugin isn’t free. Prices start at $80 for two sites. But it does a great job.All you need to do is follow the on-screen prompts and the provided ImportBuddy script will take care of migrating URLs and file paths in posts, settings and configuration files.I haven&#8217;t used this one but it looks reliable.
+This plugin isn’t free. Prices start at \$80 for two sites. But it does a great job.All you need to do is follow the on-screen prompts and the provided ImportBuddy script will take care of migrating URLs and file paths in posts, settings and configuration files.I haven&#8217;t used this one but it looks reliable.
 
 ### [UpdraftPlus](https://updraftplus.com/)
 
 I really like this one. It might be slow but it is fully optional. UpdraftPlus lets you to clone a website entirely at a different location, all from your WordPress dashboard.
 
-You can easily import backups made elsewhere, allowing you to quickly migrate a site to a different install. You’ll need to upgrade to the premium version of this plugin for a migration addon and Multisite compatibility. Prices start at $60 for two licences.
+You can easily import backups made elsewhere, allowing you to quickly migrate a site to a different install. You’ll need to upgrade to the premium version of this plugin for a migration addon and Multisite compatibility. Prices start at \$60 for two licences.
 
 ### Do it Manually
 

@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32062
 permalink: /what-is-svg-and-how-to-create-it-part-1/
-# image: ../../static/images/svg-1568x833.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/svg.png
 categories:
   - CSS
 ---

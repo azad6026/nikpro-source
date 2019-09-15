@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32041
 permalink: /css-level-4-pseudo-class-valid-and-invalid-explained/
-# image: ../../static/images/css4-invalid-valid.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css4-invalid-valid.png
 categories:
   - CSS
   - CSS4

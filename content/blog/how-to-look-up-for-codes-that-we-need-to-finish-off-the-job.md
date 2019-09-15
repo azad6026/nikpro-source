@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31657
 permalink: /how-to-look-up-for-codes-that-we-need-to-finish-off-the-job/
-# image: ../../static/images/search-look-up-code-1568x706.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/search-look-up-code.jpg
 categories:
   - Web Development
 tags:
@@ -14,6 +15,7 @@ tags:
   - research
   - search
 ---
+
 There are hundreds of ways to look up codes that is needed to finish a project or to simply go to the next stage. Sometimes we <a href="http://www.nikpro.com.au/wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/" target="_blank" rel="noopener noreferrer">get stuck</a> and it seems to take ages to write the right code on our own if we are lucky enough to know &#8220;how&#8221; to write it.
 
 But the truth is we don&#8217;t know everything and we are not supposed to know. No one knows every part of a coding language because it is not necessary. You need to know the basics and then build up on those fundamentals and look for snippets or hints that you need to learn and complete or continue your jobs or projects.

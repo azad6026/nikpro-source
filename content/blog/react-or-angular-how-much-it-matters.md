@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31575
 permalink: /react-or-angular-how-much-it-matters/
-# image: ../../static/images/focus-on-what-matters.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/focus-on-what-matters.jpg
 categories:
   - ANGULAR
   - JAVASCRIPT

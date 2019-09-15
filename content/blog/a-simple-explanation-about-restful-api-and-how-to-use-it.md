@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31875
 permalink: /a-simple-explanation-about-restful-api-and-how-to-use-it/
-# image: ../../static/images/restap.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/restap.png
 categories:
   - API
 tags:

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32314
 permalink: /using-object-literals-and-map-method-instead-of-the-old-switch-statement/
 xyz_twap:
   - "1"
-# image: ../../static/images/switch-statement.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/switch-statement.jpeg
 categories:
   - ES6
   - JAVASCRIPT

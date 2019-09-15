@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31847
 permalink: /what-are-promises-and-how-to-use-them-in-javascript/
-# image: ../../static/images/es6-promises.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/es6-promises.png
 categories:
   - ES6
   - JAVASCRIPT

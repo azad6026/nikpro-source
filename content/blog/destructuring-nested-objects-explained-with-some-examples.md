@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32669
 permalink: /destructuring-nested-objects-explained-with-some-examples/
 xyz_twap:
   - "1"
-# image: ../../static/images/nestedobject.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/nestedobject.jpg
 categories:
   - ES6
   - JAVASCRIPT

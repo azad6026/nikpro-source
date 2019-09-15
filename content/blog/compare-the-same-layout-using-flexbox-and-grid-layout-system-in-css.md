@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32366
 permalink: /compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/
 xyz_twap:
   - "1"
-# image: ../../static/images/flexbox-vs-grid.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/flexbox-vs-grid.png
 categories:
   - CSS
   - CSS3

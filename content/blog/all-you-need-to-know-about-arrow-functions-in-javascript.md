@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31711
 permalink: /all-you-need-to-know-about-arrow-functions-in-javascript/
-# image: ../../static/images/arrow-function-example.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/arrow-function-example.png
 categories:
   - JAVASCRIPT
 tags:

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32465
 permalink: /how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/
 xyz_twap:
   - "1"
-# image: ../../static/images/reduce.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/reduce.png
 categories:
   - ES6
   - JAVASCRIPT

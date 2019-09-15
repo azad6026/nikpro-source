@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31768
 permalink: /template-literals-in-js6-explained/
-# image: ../../static/images/tmplate-literals-1568x506.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/tmplate-literals.png
 categories:
   - ES6
   - JAVASCRIPT

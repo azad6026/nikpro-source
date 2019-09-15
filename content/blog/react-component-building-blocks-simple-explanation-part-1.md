@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32002
 permalink: /react-component-building-blocks-simple-explanation-part-1/
-# image: ../../static/images/ract-cpmonent-1568x882.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/ract-cpmonent.png
 categories:
   - JAVASCRIPT
   - React
@@ -15,25 +16,22 @@ tags:
   - props
   - state
 ---
+
 [React](http://www.nikpro.com.au/react-or-angular-how-much-it-matters/) component is like building block of a lego game. They have different use cases and <a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">each component</a> or here say block could be used in multiple sections or blocks.
 
 ## Create a React component
 
 It is easy and beautifully organised in code how you create a React component:
 
-
 ```
 import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br />
 ```
 
-
 And as you might have guessed it is also easy to use it in our application as many times as we need just like this:
-
 
 ```
 <MyComponent /><br />
 ```
-
 
 As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and Javascript knowledge and creates amazing user interfaces.
 
@@ -41,11 +39,9 @@ As simple as writing a HTML tag. Yes. It combines the virtual DOM with HTML and 
 
 The great thing is you could use your own custom React component inside another component and make complex logic interface:
 
-
 ```
 import React from 'react';<br />class MyComponent extends React.Component {<br />  render () {<br />    return <div> This is a component </div><br />  }<br />}<br />class MyOtherComponent extends React.Component {<br />  render () {<br />    return (<br />      <div><br />        <MyComponent /><br />      </div><br />    )<br />  }<br />}
 ```
-
 
 Besides it makes the code more maintainable and of course readable at the end.
 
@@ -55,19 +51,15 @@ Props are options that can be passed to a component to customise its functionali
 
 For example, I have a heading component which renders a heading with subtitle:
 
-
 ```
 class MyHeading extends React.Component {<br />  render () {<br />    return <div><br />      <h1>{this.props.heading}</h1><br />      <p>{this.props.subtitle}</p> <br />    </div><br />  }<br />}
 ```
 
-
 I can now use this component using its props which are actually the properties and can be setup just like HTML attributes:
-
 
 ```
 <MyHeading heading="Whoo! this is awesome" subtitle="And this is a subtitle" /><br /><MyHeading heading="Whoo! this is More awesome" subtitle="And this is second subtitle" />
 ```
-
 
 As you can see it is reusable and easy to read. You can pass anything in your heading and subtitle and it will be rendered inside you **MyHeading **component. And they are accessible by using **this.props** inside the component. Whatever prop you define on your component you can access them as **this.props.whateverNameYouGivenToYourProp. **
 
@@ -75,11 +67,9 @@ As you can see it is reusable and easy to read. You can pass anything in your h
 
 State is unique to the component. Every component has it’s own **State **where it store & retrieve data from. This is an example:
 
-
 ```
 import React from 'react';<br />class MyComponent extends React.Component {<br />  <br />  constructor(props) {<br />    super(props);<br />    this.state = {<br />      name: "Harry"<br />    };<br />  }<br />  render () {<br />    return <div> My name is {this.state.name} </div><br />  }<br />}
 ```
-
 
 The output for this component will be: **My name is Harry.**
 

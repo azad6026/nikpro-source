@@ -1,23 +1,24 @@
 ---
 id: 31721
-title: 'Flexbox explained in a simple way with examples: Part 1'
+title: "Flexbox explained in a simple way with examples: Part 1"
 date: 2018-06-25T20:52:14+00:00
 author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31721
 permalink: /flexbox-explained-in-a-simple-way-with-examples-part-1/
-# image: ../../static/images/css-flexbox-2-1568x696.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/css-flexbox-2.png
 categories:
   - CSS
 tags:
   - flexbox
 ---
+
 Flexbox has opened the doors for lots of flexibility in our layouts and explaining all its power takes more that a post or even two. I will demonstrate different layouts with Flexbox explaining in a simple way with examples.
 
 First we need to know about Flexbox container properties and then its immediate children or Flexbox items properties and then combine them together to make the desired layout. I will show you the parent container&#8217;s properties first and we will build a layout using its properties.
 
 To set up the parent container as Flexbox just add display property like this:
-
 
 ```
 
@@ -32,16 +33,15 @@ To set up the parent container as Flexbox just add display property like this:
 
 ```
 
-  All children of the container automatically become flex-items. Now we explain each parent property and we will see them in an example:
-
+All children of the container automatically become flex-items. Now we explain each parent property and we will see them in an example:
 
 ## flex-direction {#flex-direction}
 
-  It specifies how flex items are laid out in the parent container.They can be laid out in two main directions, like rows horizontally or like columns vertically.
+It specifies how flex items are laid out in the parent container.They can be laid out in two main directions, like rows horizontally or like columns vertically.
 
 ```
 
-  .flex-container {<br />    flex-direction: row | row-reverse | column | column-reverse;<br /> } 
+  .flex-container {<br />    flex-direction: row | row-reverse | column | column-reverse;<br /> }
 
 ```
 
@@ -53,7 +53,7 @@ The initial flexbox concept is the container to set its items in one single line
 
 .flex-container {
     flex-wrap: nowrap | wrap | wrap-reverse;
-} 
+}
 
 ```
 
@@ -63,9 +63,9 @@ This property is a shorthand for setting the flex-direction and flex-wrap proper
 
 ```
 
-.flex-container { 
+.flex-container {
     flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-} 
+}
 
 ```
 
@@ -75,9 +75,9 @@ The justify-content property aligns flex items along the main axis of the curren
 
 ```
 
-.flex-container {  
+.flex-container {
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
-} 
+}
 
 ```
 
@@ -89,7 +89,7 @@ Flex items can be aligned in the cross axis of the current line of the flex cont
 
 .flex-container {
   <span class="token property">align-items</span><span class="token punctuation">:</span> flex-start | flex-end | center | baseline | stretch<span class="token punctuation">;</span>
-} 
+}
 
 ```
 
@@ -105,9 +105,9 @@ The align-content property aligns a flex container’s lines within the flex con
 
 ```
 
-.flex-container {  
-   <span class="token property">align-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around | stretch<span class="token punctuation">;</span>  
-} 
+.flex-container {
+   <span class="token property">align-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around | stretch<span class="token punctuation">;</span>
+}
 
 ```
 
@@ -116,7 +116,5 @@ You can play around with flex items in this playground by Dimitar on CodePen. Ca
 <p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yydezN" data-default-tab="html,result" data-user="justd" data-embed-version="2" data-pen-title="Flexbox Properties Demonstration">
   See the Pen <a href="https://codepen.io/justd/pen/yydezN/">Flexbox Properties Demonstration</a> by Dimitar (<a href="https://codepen.io/justd">@justd</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
-
-
 
 These were all parent container&#8217;s properties. In the next article we will have a look at flex items properties.

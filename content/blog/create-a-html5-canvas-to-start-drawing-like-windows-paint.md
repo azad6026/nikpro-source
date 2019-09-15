@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31884
 permalink: /create-a-html5-canvas-to-start-drawing-like-windows-paint/
-# image: ../../static/images/html5-canvas.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/html5-canvas.jpg
 categories:
   - HTML
   - HTML5

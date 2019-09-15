@@ -6,13 +6,15 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31615
 permalink: /object-oriented-programming-in-javascript/
-# image: ../../static/images/oop-big-1568x1043.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/oop-big.jpeg
 categories:
   - JAVASCRIPT
 tags:
   - objects
   - oop
 ---
+
 Long time ago when I started programming in C# which is a really difficult language to learn and is a high level language in .Net world, I was very impressed by its object oriented nature and enjoyed playing around with it. Clearly you could identify and manage OOP structure in this language. But it takes a bit of time to learn coding around it.
 
 In JavaScript and pretty much any other language, the story is the same. You can structure your code based on objects and take advantage of OOP benefits in your projects.

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32653
 permalink: /similarities-and-differences-between-rem-and-em-css-units-explained-with-examples/
 xyz_twap:
   - "1"
-# image: ../../static/images/hqdefault.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/hqdefault.jpg
 categories:
   - CSS
 tags:

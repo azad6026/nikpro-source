@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31602
 permalink: /how-to-define-arrays-inside-objects-and-play-around-with-them/
-# image: ../../static/images/array-1568x490.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/array.png
 categories:
   - JAVASCRIPT
 tags:
@@ -15,6 +16,7 @@ tags:
   - functions
   - objects
 ---
+
 Lately I have posted an article about simple mistake around objects in [this link](http://www.nikpro.com.au/be-aware-when-playing-around-inside-objects-a-simple-example-explained/) emphasising how important curly braces are. Here in this article I want to show you other mistakes around arrays inside objets that might be useful to you.
 
 I have created a simple pen in codepen ro demonstrate what I mean. My main focus is the array.Inside objects, arrays are defined as objects as well. Unlike a variable, which used assignment operator, in array we use colons to give them vale. And for arrays we use brackets to hold the values. Simple and important. But to give the array an initial value, we need to use braces around an item and then inside it first comes the item property name and after a colon, inside cotations we need to add the value like this:
@@ -47,8 +49,6 @@ Obviously in this case, array is not defined as an object and cannot be used as 
 <p class="codepen" data-height="438" data-theme-id="0" data-slug-hash="gKrjKr" data-default-tab="html,result" data-user="azad6026" data-embed-version="2" data-pen-title="Arrays inside objects">
   See the Pen <a href="https://codepen.io/azad6026/pen/gKrjKr/">Arrays inside objects</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
-
-
 
 It looks simple and obvious but it is actually a fundamental concept about objects that should be taken care of. How to define an object which arrays are the best to practice ( with for having the same nature) , how to initialise them and make sure about syntax errors that might take aways hours in large and complicated code to be found.
 

@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32286
 permalink: /how-cascade-in-css-works-last-part-sort-order/
 xyz_twap:
   - "1"
-# image: ../../static/images/cascade-ss.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/cascade-ss.jpg
 categories:
   - CSS
 tags:

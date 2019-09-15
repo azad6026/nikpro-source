@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32028
 permalink: /explaining-props-and-state-in-react-components/
-# image: ../../static/images/props-and-state.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/props-and-state.png
 categories:
   - ES6
   - React

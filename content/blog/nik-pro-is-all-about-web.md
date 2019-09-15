@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31503
 permalink: /nik-pro-is-all-about-web/
-# image: ../../static/images/colours-1568x1044.jpg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/never-stop-learning.png
 categories:
   - NikPro
 tags:

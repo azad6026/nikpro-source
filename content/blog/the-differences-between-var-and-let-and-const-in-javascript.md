@@ -6,7 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31708
 permalink: /the-differences-between-var-and-let-and-const-in-javascript/
-# image: ../../static/images/var-let-const.jpeg
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/var-let-const.jpeg
 categories:
   - JAVASCRIPT
 tags:

@@ -6,10 +6,12 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31653
 permalink: /html5-semantic-tags-and-where-to-use-them/
-# image: ../../static/images/html5-semantic-tag.gif
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/design-with-code.jpg
 categories:
   - HTML5
 ---
+
 I still remember when I first started using HTML5 new semantic tags a few years ago. I used to read lots of articles about how and where to use them and I was very excited about how they make the document look nicer and more readable.
 
 <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics" target="_blank" rel="noopener noreferrer">Tags</a> like **article**, **section**, **aside**, **nav, header,footer** were my favourite ones and they still are. I want to have a review here about them and renew my knowledge about them.

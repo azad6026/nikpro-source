@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32348
 permalink: /exciting-async-function-combine-with-await-expression-to-replace-promises-in-es6-part-1/
 xyz_twap:
   - "1"
-# image: ../../static/images/js-async-await.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/js-async-await.png
 categories:
   - ES6
   - JAVASCRIPT

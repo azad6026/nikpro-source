@@ -8,7 +8,8 @@ guid: http://www.nikpro.com.au/?p=32735
 permalink: /css-filter-function-using-drop-shadow-effect-explained-and-compared-to-box-shadow-property/
 xyz_twap:
   - "1"
-# image: ../../static/images/drop-vs-box-shadow.png
+featuredImage: ../../static/images/design-with-code.jpg
+# featuredImage: ../../static/images/drop-vs-box-shadow.png
 categories:
   - CSS
   - CSS3
