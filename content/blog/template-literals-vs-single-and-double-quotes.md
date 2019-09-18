@@ -104,9 +104,11 @@ console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
 
 Comparingly the same example using back-ticks in template literals:
 
+```
 console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
 // "Fifteen is 15 and
 // not 20."
+```
 
 Practically back-ticks have made it so easy to deal with the mix of text and variables in template literals. Also multiline strings or escaped characters.
 
