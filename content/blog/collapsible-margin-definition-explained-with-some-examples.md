@@ -6,8 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=32763
 permalink: /create-a-simple-website-layout-using-flexbox/
-featuredImage: ../../static/images/design-with-code.jpg
-# featuredImage: ../../static/images/margin-in-element.png
+# featuredImage: ../../static/images/design-with-code.jpg
+featuredImage: ../../static/images/margin-in-element.jpg
 categories:
   - CSS
 tags:
