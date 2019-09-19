@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                 key={node.fields.slug}
                 style={{
                   transition: `transform 250ms cubic- bezier(0.4, 0, 0.2, 1), box - shadow 250ms cubic - bezier(0.4, 0, 0.2, 1), padding 250ms cubic - bezier(0.4, 0, 0.2, 1)`,
-                  background: `rgba(255,255,255,.8)`,
+                  background: `rgba(255,255,255,.95)`,
                   boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
                   padding: `1rem 3rem`,
                   margin: `1rem auto`,
