@@ -29,12 +29,12 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <BackgroundImage
-              Tag="section"
+              Tag="article"
               className="bg-image"
               fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
               backgroundColor={`#fff`}
             >
-              <article
+              <div
                 className="post-box"
                 key={node.fields.slug}
                 style={{
@@ -55,7 +55,7 @@ class BlogIndex extends React.Component {
                   {node.frontmatter.date} by Azadeh, {node.timeToRead} min
                 </small>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </article>
+              </div>
             </BackgroundImage>
           )
         })}
