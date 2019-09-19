@@ -6,8 +6,8 @@ author: admin
 layout: post
 guid: http://www.nikpro.com.au/?p=31768
 permalink: /template-literals-vs-single-and-double-quotes
-featuredImage: ../../static/images/design-with-code.jpg
-# featuredImage: ../../static/images/tmplate-literals.png
+# featuredImage: ../../static/images/design-with-code.jpg
+featuredImage: ../../static/images/back-ticks-vs-single-double-quotes-string.png
 categories:
   - ES6
   - JAVASCRIPT
