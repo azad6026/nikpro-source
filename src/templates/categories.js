@@ -21,7 +21,7 @@ const Categories = ({ pageContext, data }) => {
       />
       <section
         style={{
-          background: `rgba(255, 255, 255, 0.8)`,
+          background: `#fff`,
           padding: `1rem 2rem`,
           margin: `1rem auto`,
         }}

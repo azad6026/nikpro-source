@@ -28,10 +28,14 @@ class BlogPostTemplate extends React.Component {
               padding: `1rem 3rem`,
             }}
           >
-            <header>
+            <header
+              style={{
+                marginBottom: `1.5rem`,
+              }}
+            >
               <h1
                 style={{
-                  marginBottom: 0,
+                  marginBottom: `1rem`,
                 }}
               >
                 {post.frontmatter.title}
@@ -45,7 +49,6 @@ class BlogPostTemplate extends React.Component {
               </time>
             </header>
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
-            <hr />
             <footer></footer>
           </div>
         </article>
