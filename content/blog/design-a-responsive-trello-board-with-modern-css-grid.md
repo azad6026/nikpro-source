@@ -8,8 +8,8 @@ guid: http://www.nikpro.com.au/?p=32725
 permalink: /design-a-responsive-trello-board-with-modern-css-grid/
 xyz_twap:
   - "1"
-featuredImage: ../../static/images/design-with-code.jpg
-# featuredImage: ../../static/images/kh-trello-board-e1554545697640.png
+# featuredImage: ../../static/images/design-with-code.jpg
+featuredImage: ../../static/images/trello-board.png
 categories:
   - CSS3
   - Uncategorised
