@@ -8,8 +8,8 @@ guid: http://www.nikpro.com.au/?p=32716
 permalink: /create-a-dropdown-menu-using-details-tag-with-no-javascript/
 xyz_twap:
   - "1"
-featuredImage: ../../static/images/design-with-code.jpg
-# featuredImage: ../../static/images/nice-details.jpg
+# featuredImage: ../../static/images/design-with-code.jpg
+featuredImage: ../../static/images/nice-details.jpg
 categories:
   - HTML5
 tags:
