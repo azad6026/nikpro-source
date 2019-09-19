@@ -51,9 +51,13 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small style={{ color: `#ad5100` }}>
-                  {node.frontmatter.date} by Azadeh, {node.timeToRead} min
-                </small>
+                <time
+                  datetime={node.frontmatter.date}
+                  style={{ color: `#ad5100` }}
+                >
+                  {node.frontmatter.date}
+                  <span> by Azadeh, {node.timeToRead} min</span>
+                </time>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </div>
             </BackgroundImage>

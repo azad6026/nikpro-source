@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -18,30 +18,36 @@ class BlogPostTemplate extends React.Component {
         />
         <article
           style={{
-            background: `rgba(255,255,255,.8)`,
-            boxShadow: `0px 0px 10px #505050`,
-            padding: `1rem 3rem`,
+            background: `#fff`,
           }}
         >
-          <header>
-            <h1
-              style={{
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                margin: `1rem auto 2rem`,
-              }}
-            >
-              {post.frontmatter.date} by Azadeh, {post.timeToRead} min
-            </p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
-          <footer></footer>
+          <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+          <div
+            class="inner-article"
+            style={{
+              padding: `1rem 3rem`,
+            }}
+          >
+            <header>
+              <h1
+                style={{
+                  marginBottom: 0,
+                }}
+              >
+                {post.frontmatter.title}
+              </h1>
+              <time
+                datetime={post.frontmatter.date}
+                style={{ color: `#ad5100` }}
+              >
+                {post.frontmatter.date}
+                <span> by Azadeh, {post.timeToRead} min</span>
+              </time>
+            </header>
+            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            <hr />
+            <footer></footer>
+          </div>
         </article>
 
         <nav
@@ -96,10 +102,18 @@ export const pageQuery = graphql`
       timeToRead
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
