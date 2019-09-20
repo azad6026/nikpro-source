@@ -18,11 +18,11 @@ This post is the first post about CSS grid layouts. It is more based on examples
 
 ## A grid container
 
-The grid container is boxes placed within certain boundaries and every website has made upon that. The below gif by gif by <a class="markup--anchor markup--figure-anchor" href="https://dribbble.com/bnistr" target="_blank" rel="nofollow noopener noreferrer" data-href="https://dribbble.com/bnistr">chris bannister</a> shows the grid layout:<figure id="attachment_31800" aria-describedby="caption-attachment-31800" style="width: 800px" class="wp-caption aligncenter">
+The grid container is boxes placed within certain boundaries and every website has made upon that. The below gif by gif by <a class="markup--anchor markup--figure-anchor" href="https://dribbble.com/bnistr" target="_blank" rel="nofollow noopener noreferrer" data-href="https://dribbble.com/bnistr">chris bannister</a> shows the grid layout:
 
-<img class="wp-image-31800 size-full" src="http://www.nikpro.com.auchis-bannister.gif" alt="" width="800" height="600" /> <figcaption id="caption-attachment-31800" class="wp-caption-text">gif by chris bannister</figcaption></figure> 
+![gif by chris bannister](/images/chis-bannister.gif)
 
-Simply a grid is just horizontal and vertical lines that define the placement of other design elements.
+Simply a grid is just horizontal and vertical lines that define the placement of other design elements.
 
 ### Grid Lines
 
@@ -34,64 +34,60 @@ A Grid cell is the smallest unit of area in a grid layout.
 
 ### Grid Area {#2a9d.graf.graf--h4.graf-after--figure}
 
-<p id="1573" class="graf graf--p graf-after--h4">
   A grid area may be as small as the area contained within a grid cell. Or it may be as large as all the cells within the grid.
-</p>
 
-**Now we will have a look at some examples from <a href="https://gridbyexample.com/examples/" target="_blank" rel="noopener noreferrer">grid by example</a>.**
+**Now we will have a look at some examples from **
+
+<a href="https://gridbyexample.com/examples/" target="_blank" rel="noopener noreferrer">grid by example</a>.
 
 ### Line-based placement
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="RPXNod" data-default-tab="css,result" data-user="rachelandrew" data-embed-version="2" data-pen-title="Grid by Example 2: Line-based placement">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/RPXNod/">Grid by Example 2: Line-based placement</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/rachelandrew/pen/RPXNod
 
+The main container has display: grid; Property which defines the grid. It also has grid-template-columns: 100px 100px 100px; property which defines three column of 100px width.We could use fr which is fr. The `fr` unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:
 
+grid-template-columns: 1fr fr 1fr;
 
-The main container has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">display</span>: <span class="cm-atom">grid</span>; Property which defines the grid. It also has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: <span class="cm-number">100px</span> <span class="cm-number">100px</span> <span class="cm-number">100px</span>; property which defines three column of 100px width.We could use fr which is fr. The `fr` unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:
-
-<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: 1fr fr 1fr;
-
-Each cell has <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-column-start</span>property that sets the staarting column of the cell and <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-column-end  </span>sets the column that the cell end in. We have the same properties with row to define the grid cell positioning inside the rows as well. <code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-row-start</span> and  `grid-row-end.`
+Each cell has grid-column-startproperty that sets the staarting column of the cell and grid-column-end  sets the column that the cell end in. We have the same properties with row to define the grid cell positioning inside the rows as well. grid-row-start and  `grid-row-end.`
 
 ### Shorthand &#8211; grid-row and grid-column
 
 In the example below the shorthand syntax has been used column and row properties:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="VLoYPV" data-default-tab="css,result" data-user="rachelandrew" data-embed-version="2" data-pen-title="Grid by Example 3: Line-based placement shorthand">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/VLoYPV/">Grid by Example 3: Line-based placement shorthand</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/rachelandrew/pen/VLoYPV
+  
+Grid by Example 3: Line-based placement shorthand</a> by Rachel Andrew: 
+  
+https://codepen.io/rachelandrew
 
-
-
-For example for the F word we use `grid-column: 3 / 4;` and `grid-row: 1 / 2;` to define start and end of the column and row.( start from 3rd column and end in column for and so on).
+We use `grid-column: 3 / 4;` and `grid-row: 1 / 2;` to define start and end of the column and row.( start from 3rd column and end in column for and so on).
 
 ### Placement named lines
 
 We could also name the cells ( or lines as grid layout is made of lines) as in the below example:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yNmyoM" data-default-tab="css,result" data-user="rachelandrew" data-embed-version="2" data-pen-title="Grid by Example 7: Line-based placement named lines">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/yNmyoM/">Grid by Example 7: Line-based placement named lines</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/rachelandrew/pen/yNmyoM
 
 
-
-For example to define the rows we use names like this: `grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];` which is more definitive and descriptive if you wish.
+For example to define the rows we use names like this: 
+```
+grid-template-rows: [row1-start] auto [row2-start] auto [row2-end]; 
+```
+which is more definitive and descriptive if you wish.
 
 ### Using repeat notation
 
 The values for repeat are the number of times you want the expression to repeat and then the expression. In this example:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yNmyPb" data-default-tab="css,result" data-user="rachelandrew" data-embed-version="2" data-pen-title="Grid by Example 9: The repeat keyword">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/yNmyPb/">Grid by Example 9: The repeat keyword</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
+https://codepen.io/rachelandrew/pen/yNmyPb
 
 
 Instead of naming the columns and rows, we use the shorter syntax called repeat notation like this:
 
-<code id="actual-css-code" class=" cm-s-default" data-lang="css" data-og-lang="css" data-alt-lang="css"><span class="cm-property">grid-template-columns</span>: <span class="cm-atom">repeat</span>(<span class="cm-number">4</span>, [<span class="cm-variable">col</span>] <span class="cm-number">100px</span> ) ;<br />
+```
+grid-template-columns: repeat(4, 100px ) ;
+```
   
 Which means we create 4 columns with 100px width.
 
-We saw the grid layout with some practical examples. In the next article we will show more examples and will explain mroe properties in practice around grid layout. 
+We saw the grid layout with some practical examples. In the next article we will show more examples and will explain mroe properties in practice around grid layout. 
