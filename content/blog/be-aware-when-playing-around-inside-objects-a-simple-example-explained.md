@@ -4,7 +4,7 @@ title: 'Be aware when playing around inside objects : a simple example explained
 date: 2018-06-02T21:03:01+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31566
+guid: https://www.nikpro.com.au/?p=31566
 permalink: /be-aware-when-playing-around-inside-objects-a-simple-example-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/arrays-in-objects.jpg

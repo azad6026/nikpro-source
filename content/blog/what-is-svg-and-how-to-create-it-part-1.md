@@ -4,14 +4,14 @@ title: 'What is SVG and how to create it : Part 1'
 date: 2018-08-21T21:36:21+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32062
+guid: https://www.nikpro.com.au/?p=32062
 permalink: /what-is-svg-and-how-to-create-it-part-1/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/svg.png
 categories:
   - CSS
 ---
-In this post I start explaining about what is SVG and how to create and use it. SVG is probably the most efficient way of creating images and icons in [HTML](http://www.nikpro.com.au/category/html/) and as the W3C strongly recommends using it whenever possible.
+In this post I start explaining about what is SVG and how to create and use it. SVG is probably the most efficient way of creating images and icons in [HTML](https://www.nikpro.com.au/category/html/) and as the W3C strongly recommends using it whenever possible.
 
 ## What is SVG
 

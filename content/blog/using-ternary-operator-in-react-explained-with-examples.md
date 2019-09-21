@@ -4,7 +4,7 @@ title: Using ternary operator in React explained with examples
 date: 2018-08-31T21:58:37+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32118
+guid: https://www.nikpro.com.au/?p=32118
 permalink: /using-ternary-operator-in-react-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/ternary.png
@@ -13,7 +13,7 @@ categories:
 tags:
   - ternary operator in React
 ---
-Following the [previous](http://www.nikpro.com.au/using-es6-features-in-react-application-codes-spread-operator/) [articles](http://www.nikpro.com.au/using-es6-features-in-react-application-codes-spread-operator/) we talk about using ternary operator in React  with some examples.
+Following the [previous](https://www.nikpro.com.au/using-es6-features-in-react-application-codes-spread-operator/) [articles](https://www.nikpro.com.au/using-es6-features-in-react-application-codes-spread-operator/) we talk about using ternary operator in React  with some examples.
 
 ## Conditional rendering using ternary operator in React 
 
@@ -27,7 +27,7 @@ const MyComponent = ({ name }) => {<br />  if (name) {<br />    return (<br />  
 ```
 
 
-In [this functional](http://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component of a form we simply return the name if it exists of we ask the user to put in the name. However if we use the ternary [operator](http://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) in React we make it look cleaner and neater just like this:
+In [this functional](https://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component of a form we simply return the name if it exists of we ask the user to put in the name. However if we use the ternary [operator](https://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) in React we make it look cleaner and neater just like this:
 
 
 ```

@@ -4,7 +4,7 @@ title: What is ES6 Set object in Javascript and how to use it
 date: 2018-08-20T21:10:01+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32056
+guid: https://www.nikpro.com.au/?p=32056
 permalink: /what-is-es6-set-object-in-javascript-and-how-to-use-it/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/set.png
@@ -16,7 +16,7 @@ tags:
   - set object
 ---
 
-In this article we will describe what a set object is in Javascript and how to use it in our code. It is very compatible with other  [ES6 features](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) by the way.
+In this article we will describe what a set object is in Javascript and how to use it in our code. It is very compatible with other  [ES6 features](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) by the way.
 
 ## Set object
 
@@ -113,8 +113,8 @@ mySet.forEach(function(value) {
 
 #### What is the example about
 
-Fistly creating set in the first few lines it is using different kind of for loop methods ([for &#8230;of](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) ) to log set object into the console.
+Fistly creating set in the first few lines it is using different kind of for loop methods ([for &#8230;of](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) ) to log set object into the console.
 
-Afterwards it converts it into an array and using [spread operator](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) creates copies of the old set and filters through hem. We can even add document.body to set collection. And finally print it out using forEach loop.
+Afterwards it converts it into an array and using [spread operator](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) creates copies of the old set and filters through hem. We can even add document.body to set collection. And finally print it out using forEach loop.
 
 Technically the set object is really useful if we need to keep a collection of unique values of different objects that is an iterable array and can be manipulated as long as the values stay unique. Thanks for reading.

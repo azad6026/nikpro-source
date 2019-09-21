@@ -4,7 +4,7 @@ title: Learn how to use CSS animation using keyframes with examples
 date: 2018-07-26T22:23:33+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31921
+guid: https://www.nikpro.com.au/?p=31921
 permalink: /learn-how-to-use-css-animation-using-keyframes-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-animation.jpg
@@ -15,7 +15,7 @@ tags:
   - CSS animation
   - keyframes
 ---
-CSS animation is the best way to animate transitions on our elements using a before and after style. CSS animation contains of two sections. The animation property itself and a set of keyframes that include before and after styles for the element in certain points. We can make animation with CSS transition as well which you can read about it [here](http://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/).
+CSS animation is the best way to animate transitions on our elements using a before and after style. CSS animation contains of two sections. The animation property itself and a set of keyframes that include before and after styles for the element in certain points. We can make animation with CSS transition as well which you can read about it [here](https://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/).
 
 ## A few examples 
 
@@ -114,7 +114,7 @@ Now shorten tis one:
 
 Combine animation and transform
 
-We could use [CSS transform](http://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) in our animation as well:
+We could use [CSS transform](https://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) in our animation as well:
 
 `@keyframes infinite-spinning {`  
 `  from {`  

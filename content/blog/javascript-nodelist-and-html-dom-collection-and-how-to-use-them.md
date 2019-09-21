@@ -4,7 +4,7 @@ title: Javascript NodeList and HTML DOM collection and how to use them
 date: 2018-07-22T21:36:18+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31897
+guid: https://www.nikpro.com.au/?p=31897
 permalink: /javascript-nodelist-and-html-dom-collection-and-how-to-use-them/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/dom-node.png
@@ -104,7 +104,7 @@ Besides we can finally use forEach loop:
 `//...`  
 `});`
 
-### [ES6](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) Array.form 
+### [ES6](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) Array.form 
 
 We could use the ES6 array.form method to complete the conversion:
 

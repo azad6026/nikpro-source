@@ -4,7 +4,7 @@ title: 'Build a local React blog application : part 2,submit a new post'
 date: 2018-10-11T20:40:12+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32388
+guid: https://www.nikpro.com.au/?p=32388
 permalink: /build-a-local-react-blog-application-part-2-submit-a-new-post/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ tags:
   - local app
   - React blog application
 ---
-We had a long article about our local React blog application in [part 1](http://www.nikpro.com.au/build-a-local-react-blog-application-part-1/). Continuously we will explain how to submit a new form and manage our state as well.
+We had a long article about our local React blog application in [part 1](https://www.nikpro.com.au/build-a-local-react-blog-application-part-1/). Continuously we will explain how to submit a new form and manage our state as well.
 
 ## The form requirements
 
@@ -106,7 +106,7 @@ handleChange = event => {
 ```
 
 
-Preferably we are using ES6 [destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) to initialise name and value and then [rest parameters](http://www.nikpro.com.au/javascript-es6-modern-rest-parameters-are-explained-with-examples/) to add the new post. Afterwards we update the state.
+Preferably we are using ES6 [destructuring](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) to initialise name and value and then [rest parameters](https://www.nikpro.com.au/javascript-es6-modern-rest-parameters-are-explained-with-examples/) to add the new post. Afterwards we update the state.
 
 ### Submit the form
 

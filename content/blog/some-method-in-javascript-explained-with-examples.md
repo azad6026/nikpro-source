@@ -4,7 +4,7 @@ title: Some() method in Javascript explained with examples
 date: 2018-09-07T21:22:17+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32151
+guid: https://www.nikpro.com.au/?p=32151
 permalink: /some-method-in-javascript-explained-with-examples/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ categories:
 tags:
   - some method
 ---
-In this article some [method](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) is explained with examples. It is a useful method with various use cases we could us it for.
+In this article some [method](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) is explained with examples. It is a useful method with various use cases we could us it for.
 
 ## Some method definition
 
@@ -33,7 +33,7 @@ function isBiggerThan10(element, index, array) {
 ```
 
 
-Additionally we have used arrow functions to make it neater and more readable. Some will apply the function once for each element present in the array until it finds one where `callback` returns a [_truthy_](http://www.nikpro.com.au/truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/) value. Immediately it returns true then.
+Additionally we have used arrow functions to make it neater and more readable. Some will apply the function once for each element present in the array until it finds one where `callback` returns a [_truthy_](https://www.nikpro.com.au/truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/) value. Immediately it returns true then.
 
 Moreover we can shorten the whole code to one function as some accept the function as its array argument:
 
@@ -97,4 +97,4 @@ const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.inclu
 ```
 
 
-In this short post I explained some method which has its own use cases. We also saw its difference with includes method. Respectively we will explore all array methods in the future articles like we [did](http://www.nikpro.com.au/javascript-es6-reduce-method/) [before](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/). Thanks fo reading.
+In this short post I explained some method which has its own use cases. We also saw its difference with includes method. Respectively we will explore all array methods in the future articles like we [did](https://www.nikpro.com.au/javascript-es6-reduce-method/) [before](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/). Thanks fo reading.

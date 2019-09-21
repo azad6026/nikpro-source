@@ -4,7 +4,7 @@ title: What are primitives and their differences with objects in Javascript?
 date: 2018-07-14T22:54:17+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31858
+guid: https://www.nikpro.com.au/?p=31858
 permalink: /what-are-primitives-and-their-differences-with-objects-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/primitives.png
@@ -14,7 +14,7 @@ tags:
   - fondumentals
   - primitives
 ---
-In this post we will refresh our knowledge on [core concepts of Javascript](http://www.nikpro.com.au/how-to-create-classes-in-javascript-es6/). What are primitives and their differences with objects in Javascript? We will demonstrate them with some examples.
+In this post we will refresh our knowledge on [core concepts of Javascript](https://www.nikpro.com.au/how-to-create-classes-in-javascript-es6/). What are primitives and their differences with objects in Javascript? We will demonstrate them with some examples.
 
 ## Define a Primitive
 

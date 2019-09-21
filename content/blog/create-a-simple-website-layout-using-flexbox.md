@@ -4,7 +4,7 @@ title: Create a simple website layout using FlexBox
 date: 2018-08-27T21:16:44+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32100
+guid: https://www.nikpro.com.au/?p=32100
 permalink: /create-a-simple-website-layout-using-flexbox/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/website-kayout-using-FlexBox.png
@@ -15,7 +15,7 @@ tags:
   - flexbox
   - website layout
 ---
-In this article we quickly check how we can create a simple website layout using FlexBox. You can read about basics of FlexBox in [this](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [this](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/) article.
+In this article we quickly check how we can create a simple website layout using FlexBox. You can read about basics of FlexBox in [this](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [this](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/) article.
 
 ## The simple website layout using FlexBox
 

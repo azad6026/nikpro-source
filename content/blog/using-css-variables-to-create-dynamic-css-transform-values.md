@@ -4,7 +4,7 @@ title: Using CSS variables to create dynamic CSS transform values
 date: 2018-12-08T21:25:52+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32592
+guid: https://www.nikpro.com.au/?p=32592
 permalink: /using-css-variables-to-create-dynamic-css-transform-values/
 xyz_twap:
   - "1"
@@ -19,7 +19,7 @@ One of the things that I hear a lot about is the ability to dynamically change C
 
 ## Change CSS transform rotate on hover
 
-We will not go into basics here. You can read more about CSS variables in [this](http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/) and [this](http://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) articles. But we will have a look at some examples. In this first examples with this beautiful sky from&nbsp;<a rel="noreferrer noopener" aria-label="We will not go into basics here. You can read more about CSS variables in this and this articles. But we will have a look at some examples. In this first examples with this beautiful sky from&nbsp;Michael Gehrmann (opens in a new tab)" href="https://codepen.io/g12n/" target="_blank">Michael Gehrmann</a>&nbsp;we will see a live example:
+We will not go into basics here. You can read more about CSS variables in [this](https://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/) and [this](https://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) articles. But we will have a look at some examples. In this first examples with this beautiful sky from&nbsp;<a rel="noreferrer noopener" aria-label="We will not go into basics here. You can read more about CSS variables in this and this articles. But we will have a look at some examples. In this first examples with this beautiful sky from&nbsp;Michael Gehrmann (opens in a new tab)" href="https://codepen.io/g12n/" target="_blank">Michael Gehrmann</a>&nbsp;we will see a live example:
 
 https://codepen.io/g12n/pen/ZLYqyr
 
@@ -148,7 +148,7 @@ ranges.deg.addEventListener('input', function(e) {
 
 ```
 
-Moreover [the Event listener](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/)&nbsp;has been assigned to all properties of the element ( translate, scale, deg) to change the related style property using valueChange function. Very concise and useful.
+Moreover [the Event listener](https://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/)&nbsp;has been assigned to all properties of the element ( translate, scale, deg) to change the related style property using valueChange function. Very concise and useful.
 
 With CSS variables it is easy and clever to change CSS transform properties based on user activity to create animations and effects. It is live in browser and more maintainable in code.
 

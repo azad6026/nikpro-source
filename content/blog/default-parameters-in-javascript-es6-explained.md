@@ -4,7 +4,7 @@ title: Default parameters in Javascript ES6 explained
 date: 2018-07-05T22:42:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31793
+guid: https://www.nikpro.com.au/?p=31793
 permalink: /default-parameters-in-javascript-es6-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/es6-default-parameters.jpg
@@ -15,7 +15,7 @@ tags:
   - default parameters
   - property shorthands
 ---
-We have been learning about new features in Javascript ES6 in [this post](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) and [this one](http://www.nikpro.com.au/template-literals-in-js6-explained/) and [this post](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) so far. Here we will explain default parameters in Javascript ES6 and its wide usage in our code practices.
+We have been learning about new features in Javascript ES6 in [this post](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) and [this one](https://www.nikpro.com.au/template-literals-in-js6-explained/) and [this post](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) so far. Here we will explain default parameters in Javascript ES6 and its wide usage in our code practices.
 
 ## ES6 default parameters
 

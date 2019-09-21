@@ -4,7 +4,7 @@ title: "The React component lifecycle in update stage: shouldComponentUpdate() a
 date: 2018-10-04T21:39:35+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32343
+guid: https://www.nikpro.com.au/?p=32343
 permalink: /the-react-component-lifecycle-in-update-stage-shouldcomponentupdate-and-componentdidupdate-part-2/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - shouldComponentUpdate()
 ---
 
-Following [previous article](http://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/) about mounting stage in React component lifecycle, here we explain two important methods in the update stage. We will have a look at **shouldComponentUpdate() and componentDidUpdate()**.
+Following [previous article](https://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/) about mounting stage in React component lifecycle, here we explain two important methods in the update stage. We will have a look at **shouldComponentUpdate() and componentDidUpdate()**.
 
 ## shouldComponentUpdate()
 
@@ -29,7 +29,7 @@ shouldComponentUpdate(nextProps, nextState)
 
 Technically by default in React component will re render in every state or props change. We need to remember `shouldComponentUpdate()` is invoked before rendering when new props or state are being received. Defaults to `true`. This method is not called for the initial render or when `forceUpdate()` is used.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aulifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="http://testgatsby.locallifecycle_props.png 1020w, http://testgatsby.locallifecycle_props-300x115.png 300w, http://testgatsby.locallifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption></figure>
+<img src="https://www.nikpro.com.aulifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="https://testgatsby.locallifecycle_props.png 1020w, https://testgatsby.locallifecycle_props-300x115.png 300w, https://testgatsby.locallifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption></figure>
 
 Practically we should not use shouldComponentUpdate() to prevent rendering. This method only exists as a **[performance optimization](https://reactjs.org/docs/optimizing-performance.html).**
 
@@ -82,9 +82,9 @@ componentDidUpdate(prevProps) {
 
 But remember if we **update state in componentDidUpdate() it should be wrapped in a condition** like the example above to prevent infinite loops.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aucomponentlife.png" alt="" class="wp-image-32345" srcset="http://testgatsby.localcomponentlife.png 975w, http://testgatsby.localcomponentlife-300x154.png 300w, http://testgatsby.localcomponentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption></figure>
+<img src="https://www.nikpro.com.aucomponentlife.png" alt="" class="wp-image-32345" srcset="https://testgatsby.localcomponentlife.png 975w, https://testgatsby.localcomponentlife-300x154.png 300w, https://testgatsby.localcomponentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption></figure>
 
-Obviously just like [`componentDidMount()`](http://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/), the `componentDidUpdate()` is called after all of the children are updated
+Obviously just like [`componentDidMount()`](https://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/), the `componentDidUpdate()` is called after all of the children are updated
 
 ```
 componentDidUpdate(prevProps, prevState) {

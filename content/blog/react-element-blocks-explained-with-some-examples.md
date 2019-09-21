@@ -4,7 +4,7 @@ title: React element blocks explained with some examples
 date: 2018-08-13T20:26:05+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32022
+guid: https://www.nikpro.com.au/?p=32022
 permalink: /react-element-blocks-explained-with-some-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/reac-element.png
@@ -16,7 +16,7 @@ tags:
 ---
  
 
-As it states in React docs a React element is the smallest [building block](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) of a React application. It describes what you want to be shown in your screen. Components are made of these React elements in practice.
+As it states in React docs a React element is the smallest [building block](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) of a React application. It describes what you want to be shown in your screen. Components are made of these React elements in practice.
 
 ## Render React element into the DOM
 

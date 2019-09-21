@@ -4,7 +4,7 @@ title: How to use background-size property in different use cases
 date: 2018-11-01T19:38:43+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32495
+guid: https://www.nikpro.com.au/?p=32495
 permalink: /how-to-use-background-size-property-in-different-use-cases/
 xyz_twap:
   - "1"
@@ -13,7 +13,7 @@ featuredImage: ../../static/images/design-with-code.jpg
 categories:
   - CSS
 ---
-There was a situation where I had to manipulate background-size property in a different use case. Generally we all might have experienced where we had to use a non-responsive image as a [background](http://www.nikpro.com.au/the-css-background-blend-mode-explained-with-examples/) and try to fit it in with different techniques.
+There was a situation where I had to manipulate background-size property in a different use case. Generally we all might have experienced where we had to use a non-responsive image as a [background](https://www.nikpro.com.au/the-css-background-blend-mode-explained-with-examples/) and try to fit it in with different techniques.
 
 Background-size property is a very useful property to adjust the image background when needed.
 
@@ -26,7 +26,7 @@ Basically we could use background-size property with one and two values and keyw
 ```
 
 
-We can also have multiple backgrounds which we will seperate the values by coma. We can use any [CSS size units ](http://css-tricks.com/the-lengths-of-css/), including pixels, percentages, ems, viewport units, etc.:
+We can also have multiple backgrounds which we will seperate the values by coma. We can use any [CSS size units ](https://css-tricks.com/the-lengths-of-css/), including pixels, percentages, ems, viewport units, etc.:
 
 ```
 background-size: 6px, auto, contain;

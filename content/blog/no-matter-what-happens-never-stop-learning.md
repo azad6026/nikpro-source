@@ -4,7 +4,7 @@ title: No matter what happens, Never stop learning
 date: 2018-06-16T22:04:48+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31660
+guid: https://www.nikpro.com.au/?p=31660
 permalink: /no-matter-what-happens-never-stop-learning/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/never-stop-learning.png
@@ -13,7 +13,7 @@ categories:
 tags:
   - learning
 ---
-That is right. No matter what happens Never stop learning. It doesn&#8217;t matter how hard it might look or no matter what happens. Just never stop learning and [pushing yourself forward](http://www.nikpro.com.au/frustration-and-tiredness-is-your-enemy-to-improve-your-skills-and-grow/). Learning is the crucial key to always feel happy and on the board.
+That is right. No matter what happens Never stop learning. It doesn&#8217;t matter how hard it might look or no matter what happens. Just never stop learning and [pushing yourself forward](https://www.nikpro.com.au/frustration-and-tiredness-is-your-enemy-to-improve-your-skills-and-grow/). Learning is the crucial key to always feel happy and on the board.
 
 ### Why We Stop
 

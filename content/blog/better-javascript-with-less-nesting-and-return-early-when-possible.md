@@ -4,7 +4,7 @@ title: Better Javascript with less nesting and return early when possible
 date: 2018-10-20T21:13:26+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32440
+guid: https://www.nikpro.com.au/?p=32440
 permalink: /better-javascript-with-less-nesting-and-return-early-when-possible/
 xyz_twap:
   - "1"
@@ -14,7 +14,7 @@ categories:
   - ES6
   - JAVASCRIPT
 ---
-[One of the best practices](http://www.nikpro.com.au/how-arrow-functions-fixed-this-keyword-problem-in-es6/) in Javascript is to avoid too much nesting and return the value or error as soon as possible. We will take a look at some examples around this scenario.
+[One of the best practices](https://www.nikpro.com.au/how-arrow-functions-fixed-this-keyword-problem-in-es6/) in Javascript is to avoid too much nesting and return the value or error as soon as possible. We will take a look at some examples around this scenario.
 
 ## Return early in if else statements
 
@@ -28,9 +28,9 @@ There is an article in <a href="https://dev.to/jenniferlynparsons/early-returns-
 
 The problem with nesting is we have to wait maybe until the last statement to get the value back. Besides there is only one return in the whole function and this is assumed as bad practice. 
 
-These are some <a href="http://lecterror.com/articles/view/code-formatting-and-readability" target="_blank" rel="noreferrer noopener">good images from here</a> to show the case:<figure class="wp-block-image">
+These are some <a href="https://lecterror.com/articles/view/code-formatting-and-readability" target="_blank" rel="noreferrer noopener">good images from here</a> to show the case:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aubadcode.png" alt="" class="wp-image-32441" srcset="http://testgatsby.localbadcode.png 717w, http://testgatsby.localbadcode-300x118.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> <figcaption>This is what happens with only one return statement</figcaption></figure> 
+<img src="https://www.nikpro.com.aubadcode.png" alt="" class="wp-image-32441" srcset="https://testgatsby.localbadcode.png 717w, https://testgatsby.localbadcode-300x118.png 300w" sizes="(max-width: 717px) 100vw, 717px" /> <figcaption>This is what happens with only one return statement</figcaption></figure> 
 
 Therefor the sooner we could return a value the earlier we could leave the function call and the better and faster the code is written and executed. Performance wise it is important to write clean and more readable and maintainable code. And this is one of the use cases. Lets improve it a bit:
 
@@ -50,7 +50,7 @@ We return value whenever a check is done. Even better we can remove the else as 
 
 Also we clearly know what we return the value and when we should expect it:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.augoodcode.png" alt="" class="wp-image-32442" srcset="http://testgatsby.localgoodcode.png 356w, http://testgatsby.localgoodcode-207x300.png 207w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption>This is best practice to return as early as possible</figcaption></figure> 
+<img src="https://www.nikpro.com.augoodcode.png" alt="" class="wp-image-32442" srcset="https://testgatsby.localgoodcode.png 356w, https://testgatsby.localgoodcode-207x300.png 207w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption>This is best practice to return as early as possible</figcaption></figure> 
 
 ## Less nesting to return early
 

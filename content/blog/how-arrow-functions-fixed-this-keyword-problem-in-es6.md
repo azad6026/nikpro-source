@@ -4,7 +4,7 @@ title: "How arrow functions fixed &#8220;this&#8221; keyword problem in ES6?"
 date: 2018-10-14T21:32:47+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32400
+guid: https://www.nikpro.com.au/?p=32400
 permalink: /how-arrow-functions-fixed-this-keyword-problem-in-es6/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - this keyword
 ---
 
-In this article we will take a look at [how arrow functions](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) fixed the old ES5 problem around&#8221;this&#8221; keyword. What problem? &#8220;This&#8221; keyword cannot be relied on in different scope of code and they give unexpected results. By scope I simply mean brackets as they define the scope in Javascript.
+In this article we will take a look at [how arrow functions](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) fixed the old ES5 problem around&#8221;this&#8221; keyword. What problem? &#8220;This&#8221; keyword cannot be relied on in different scope of code and they give unexpected results. By scope I simply mean brackets as they define the scope in Javascript.
 
 ## &#8220;This&#8221; keyword
 
@@ -40,7 +40,7 @@ var person = {
 person.showName(); // John
 ```
 
-Perfect. We expected that result. It shows the name a John. Now if we add an array to our object and call an [array method](http://www.nikpro.com.au/some-important-notes-explained-around-arrays-in-javascript/) inside the object function we get a totally different result:
+Perfect. We expected that result. It shows the name a John. Now if we add an array to our object and call an [array method](https://www.nikpro.com.au/some-important-notes-explained-around-arrays-in-javascript/) inside the object function we get a totally different result:
 
 ```
 var person = {
@@ -67,7 +67,7 @@ var anyFunction = function(){<br />  console.log(this);<br />}<br />any/function
 
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.authe-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> </figure>
+<img src="https://www.nikpro.com.authe-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> </figure>
 
 ### Fix 1: using another variable to refer :this&#8221; keyword&#8221;
 
@@ -129,7 +129,7 @@ var person = {
 
 <figure class="wp-block-image is-resized">
 
-<img src="http://www.nikpro.com.aufat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="http://testgatsby.localfat-arrow.png 323w, http://testgatsby.localfat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption></figure>
+<img src="https://www.nikpro.com.aufat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="https://testgatsby.localfat-arrow.png 323w, https://testgatsby.localfat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption></figure>
 
 Great. We have solved it. It keeps the code in scope and we always refer to the right object with &#8220;this&#8221; at the end. Using arrow functions really saves the code and makes it more readable, maintainable and solves the old &#8220;this keyword problem.
 

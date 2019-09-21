@@ -4,7 +4,7 @@ title: 'How cascade in CSS works? this part: important!'
 date: 2018-09-19T21:59:57+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32248
+guid: https://www.nikpro.com.au/?p=32248
 permalink: /how-cascade-in-css-works-this-part-important/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ tags:
   - '!important'
   - Cascade in css
 ---
-In a series of articles we will have a look at how cascade in [CSS](http://nikpro.com.au/category/css) works. Moreover we will show the importance of each part with examples. We will talk about a special syntax called !important.
+In a series of articles we will have a look at how cascade in [CSS](https://nikpro.com.au/category/css) works. Moreover we will show the importance of each part with examples. We will talk about a special syntax called !important.
 
 ## Cascade in CSS
 
@@ -42,7 +42,7 @@ Therefor the only way to override it is to add another rule for that property wi
 
 Basically we have three rules specified in this example. We have a generic tag selector called **p** which applies to all paragraphs in HTML. Secondly we have a class selector called .**better.**Thirdly we have an id selector called **#winner** which as we know can only belong to one element as ids should be unique in a HTML code.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auid-vs-class.jpg" alt="" class="wp-image-32249" srcset="http://testgatsby.localid-vs-class.jpg 510w, http://testgatsby.localid-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> </figure> 
+<img src="https://www.nikpro.com.auid-vs-class.jpg" alt="" class="wp-image-32249" srcset="https://testgatsby.localid-vs-class.jpg 510w, https://testgatsby.localid-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> </figure> 
 
 Lets break it down to some steps:
 

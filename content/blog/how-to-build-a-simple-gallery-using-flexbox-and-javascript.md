@@ -4,7 +4,7 @@ title: How to build a simple gallery using flexbox and Javascript
 date: 2018-07-08T22:18:35+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31821
+guid: https://www.nikpro.com.au/?p=31821
 permalink: /how-to-build-a-simple-gallery-using-flexbox-and-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/flexbox-gallery.png
@@ -15,7 +15,7 @@ tags:
   - flexbox
   - gallery
 ---
-If you love building small but interesting things using CSS and Javascript, then you will enjoy this one. We will build a simple gallery using flexbox and Javascript. This is from one of the <a href="http://wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> courses and it is amazingly simple and elegant.
+If you love building small but interesting things using CSS and Javascript, then you will enjoy this one. We will build a simple gallery using flexbox and Javascript. This is from one of the <a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> courses and it is amazingly simple and elegant.
 
 ## The Flex Gallery
 
@@ -69,7 +69,7 @@ html
 
 #### Parent container with .panels class
 
-We have a panel container with panels class and five child panels. Also three child paragraphs that hold the words. Now to make the panel layout all centred from top to bottom we will need flexbox.  You can read about flexbox with examples <a href="http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/" target="_blank" rel="noopener noreferrer">here</a> and <a href="http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/" target="_blank" rel="noopener noreferrer">here. </a>
+We have a panel container with panels class and five child panels. Also three child paragraphs that hold the words. Now to make the panel layout all centred from top to bottom we will need flexbox.  You can read about flexbox with examples <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/" target="_blank" rel="noopener noreferrer">here. </a>
 
 So we will add display: flex;to the panels container with **.panels **class.
 
@@ -207,7 +207,7 @@ To toggle the toggle Open, add . this code:
 
 ```
 
-which uses <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a> to create the event handler function with click event. With each click, it toggles the open class.
+which uses <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a> to create the event handler function with click event. With each click, it toggles the open class.
 
 To make the words transitioned, we listen to transitioned event and fire the toggleActive function:
 

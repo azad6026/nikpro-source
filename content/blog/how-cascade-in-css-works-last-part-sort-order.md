@@ -4,7 +4,7 @@ title: 'How cascade in CSS works? last part: sort order'
 date: 2018-09-25T21:44:43+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32286
+guid: https://www.nikpro.com.au/?p=32286
 permalink: /how-cascade-in-css-works-last-part-sort-order/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - sort order
   - specificity
 ---
-In the last part of this series following [first](http://www.nikpro.com.au/how-cascade-in-css-works-this-part-important/) and [second](http://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/) part we will explain sort order in CSS. Technically this is the third important point that affects cascade in CSS.
+In the last part of this series following [first](https://www.nikpro.com.au/how-cascade-in-css-works-this-part-important/) and [second](https://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/) part we will explain sort order in CSS. Technically this is the third important point that affects cascade in CSS.
 
 ## Sort order in cascade
 
@@ -54,7 +54,7 @@ User-agent CSS:<br />li { padding: 10px }<br />Author CSS 1:<br />li { padding: 
 ```
 
 
-Firstly based on specificity [rules](http://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/)  declarations inside `li` and `.specific` rules should apply. No declaration is marked as `!important`, so the precedence order is author style sheets before user style sheets or user-agent stylesheet.
+Firstly based on specificity [rules](https://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/)  declarations inside `li` and `.specific` rules should apply. No declaration is marked as `!important`, so the precedence order is author style sheets before user style sheets or user-agent stylesheet.
 
 Therefor we have these three styles to win:
 
@@ -66,7 +66,7 @@ margin-left: 0<br/><br />margin-left: 3px<br/><br />margin-left: 1px
 
 As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aucascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="http://testgatsby.localcascade-it.jpg 1480w, http://testgatsby.localcascade-it-300x185.jpg 300w, http://testgatsby.localcascade-it-768x473.jpg 768w, http://testgatsby.localcascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> </figure> 
+<img src="https://www.nikpro.com.aucascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="https://testgatsby.localcascade-it.jpg 1480w, https://testgatsby.localcascade-it-300x185.jpg 300w, https://testgatsby.localcascade-it-768x473.jpg 768w, https://testgatsby.localcascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> </figure> 
 
 ### All rules apply
 

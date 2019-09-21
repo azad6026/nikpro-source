@@ -4,7 +4,7 @@ title: CSS transitions and animations explained with examples
 date: 2018-07-17T21:09:08+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31870
+guid: https://www.nikpro.com.au/?p=31870
 permalink: /css-transitions-and-animations-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-transition.jpg
@@ -15,7 +15,7 @@ tags:
   - animations
   - transitions
 ---
-CSS transition property has changed [CSS animation](http://www.nikpro.com.au/how-to-build-a-simple-gallery-using-flexbox-and-javascript/) and we use it now quiet often. Here I will demonstrate some of its usages. We will explain CSS transitions and animations with some examples.
+CSS transition property has changed [CSS animation](https://www.nikpro.com.au/how-to-build-a-simple-gallery-using-flexbox-and-javascript/) and we use it now quiet often. Here I will demonstrate some of its usages. We will explain CSS transitions and animations with some examples.
 
 Css transitions are just like simpler animations. They move from one fixed set of properties to another. The shorthand for transition is like this:
 

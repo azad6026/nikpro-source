@@ -4,7 +4,7 @@ title: The CSS shape outside property using function values explained with examp
 date: 2018-09-13T20:52:46+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32200
+guid: https://www.nikpro.com.au/?p=32200
 permalink: /the-css-shape-outside-property-using-function-values-explained-with-examples-part-2/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - shape outside inset
   - shape outside url
 ---
-Following our [previous article](http://www.nikpro.com.au/the-css-shape-properties-using-function-values-explained-with-examples-part-1/) about CSS shape outside property in this article we explain two more values on this property. The url property and the inset property. 
+Following our [previous article](https://www.nikpro.com.au/the-css-shape-properties-using-function-values-explained-with-examples-part-1/) about CSS shape outside property in this article we explain two more values on this property. The url property and the inset property. 
 
 ## Shape outside inset() function
 
@@ -67,7 +67,7 @@ So according to MDN float area is computed according to the shape of a float ele
 
 Practically the `shape-outside: url(image.png)` CSS declaration tells the browser to extract a shape from the image. Also we could use `-image-threshold` property to define the minimum opacity level of pixels that will be used to create the shape. Therefor we could use `0.0` for fully transparent and `1.0`  for fully opaque.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="http://testgatsby.localespresso.jpg 660w, http://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure> 
+<img src="https://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="https://testgatsby.localespresso.jpg 660w, https://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure> 
 
 As a result of using the url function value the text has been wrapped around the element in the above example:
 

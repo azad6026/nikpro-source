@@ -4,7 +4,7 @@ title: How to group an array of objects based on an a property value using reduc
 date: 2018-10-26T20:16:08+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32465
+guid: https://www.nikpro.com.au/?p=32465
 permalink: /how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - array of objects
   - reduce
 ---
-We have [explained reduce() before](http://www.nikpro.com.au/javascript-es6-reduce-method/) and a great use case of it is to group array of objects based on a property value inside it. In this article I will use an example that I had to use reduce to achieve what I needed and I want to explain it here as it is very useful.
+We have [explained reduce() before](https://www.nikpro.com.au/javascript-es6-reduce-method/) and a great use case of it is to group array of objects based on a property value inside it. In this article I will use an example that I had to use reduce to achieve what I needed and I want to explain it here as it is very useful.
 
 ## An array of objects
 
@@ -92,7 +92,7 @@ Secondly we explain the use case. I needed to transform this array to some array
 ```
 
 
-As a result all values of same age will be grouped in one array themselves as part of the big array.  However it is [not a filter](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) but it is transforming the same array to another form.
+As a result all values of same age will be grouped in one array themselves as part of the big array.  However it is [not a filter](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) but it is transforming the same array to another form.
 
 ## Reduce() to solve the problem
 
@@ -141,9 +141,9 @@ Therefor we get the desired result :
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32469" src="http://www.nikpro.com.autransform.png" alt="transform the array" srcset="http://testgatsby.localtransform.png 550w, http://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
+<img class="wp-image-32469" src="https://www.nikpro.com.autransform.png" alt="transform the array" srcset="https://testgatsby.localtransform.png 550w, https://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
 
-We can use our [ES6](http://nikpro.com.au/category/es6) knowledge and change our code to be more readable [using arrow functions](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
+We can use our [ES6](https://nikpro.com.au/category/es6) knowledge and change our code to be more readable [using arrow functions](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
 
 ```

@@ -4,7 +4,7 @@ title: All you need to know about arrow functions in Javascript
 date: 2018-06-24T22:32:50+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31711
+guid: https://www.nikpro.com.au/?p=31711
 permalink: /all-you-need-to-know-about-arrow-functions-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/arrow-function-example.png
@@ -19,7 +19,7 @@ Arrow functions are one of the very exciting features that ES6 has introduced to
 
 ## Explain it with an example
 
-This is a normal [function](http://www.nikpro.com.au/javascript-functions-simplified-the-best-explanation-of-functions/) that returns the parameter name:
+This is a normal [function](https://www.nikpro.com.au/javascript-functions-simplified-the-best-explanation-of-functions/) that returns the parameter name:
 
 
 ```

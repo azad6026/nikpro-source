@@ -4,7 +4,7 @@ title: Manipulate DOM elements and their CSS styles using useful Javascript meth
 date: 2018-12-16T13:07:40+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32598
+guid: https://www.nikpro.com.au/?p=32598
 permalink: /manipulate-dom-elements-and-their-css-styles-using-useful-javascript-methods/
 xyz_twap:
   - "1"
@@ -45,7 +45,7 @@ CSS// Selects all p tags<br />const matches = document.querySelectorAll("p");<br
 
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.nikpro.com.auhtmlDOM.png" alt="" class="wp-image-32602" srcset="http://testgatsby.localhtmlDOM.png 225w, http://testgatsby.localhtmlDOM-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /><figcaption>Manipulate DOM using CSS in JS</figcaption></figure>
+  <figure class="aligncenter"><img src="https://www.nikpro.com.auhtmlDOM.png" alt="" class="wp-image-32602" srcset="https://testgatsby.localhtmlDOM.png 225w, https://testgatsby.localhtmlDOM-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /><figcaption>Manipulate DOM using CSS in JS</figcaption></figure>
 </div>
 
 Practically we could combine them to select specific children of a parent element:
@@ -66,7 +66,7 @@ matches.forEach(function(pTag) {<br />  boldIt(pTag);<br />});
 
 Now that we know more about selecting elements lets dive in CSS in Javascript and manipulate them.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.audom-manipulation-1024x576.png" alt="" class="wp-image-32600" srcset="http://testgatsby.localdom-manipulation-1024x576.png 1024w, http://testgatsby.localdom-manipulation-300x169.png 300w, http://testgatsby.localdom-manipulation-768x432.png 768w, http://testgatsby.localdom-manipulation-1568x882.png 1568w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>  
+<img src="https://www.nikpro.com.audom-manipulation-1024x576.png" alt="" class="wp-image-32600" srcset="https://testgatsby.localdom-manipulation-1024x576.png 1024w, https://testgatsby.localdom-manipulation-300x169.png 300w, https://testgatsby.localdom-manipulation-768x432.png 768w, https://testgatsby.localdom-manipulation-1568x882.png 1568w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>  
 DOM manipulation
 
 </figcaption></figure>
@@ -106,7 +106,7 @@ Instead of doing all properties one by one we can create a class and put in all 
 ```
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="http://testgatsby.localdom-tree.png 665w, http://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> </figure>
+<img src="https://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="https://testgatsby.localdom-tree.png 665w, https://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> </figure>
 
 #### Modifying classes in CSS
 

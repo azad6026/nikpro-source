@@ -4,7 +4,7 @@ title: 'Event handlers and Event Listeners in Javascript: Part 2'
 date: 2018-07-03T22:14:22+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31778
+guid: https://www.nikpro.com.au/?p=31778
 permalink: /event-handlers-and-event-listeners-in-javascript-part-2/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/event-listener-three-actors-model.png
@@ -16,7 +16,7 @@ tags:
   - event listeners
   - events
 ---
-In [part 1](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/) about event handlers and event listeners in Javascript, we learnt about inline event handling in two ways and Event listeners which are the better way of handling events in Javascript as they seperate concerns and logics and also we could use lots of events on one element at once.
+In [part 1](https://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/) about event handlers and event listeners in Javascript, we learnt about inline event handling in two ways and Event listeners which are the better way of handling events in Javascript as they seperate concerns and logics and also we could use lots of events on one element at once.
 
 In this part, we will look at other event concepts. 
 

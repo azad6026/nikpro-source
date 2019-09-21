@@ -4,7 +4,7 @@ title: CSS display:contents basic introduction
 date: 2018-09-18T21:34:18+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32241
+guid: https://www.nikpro.com.au/?p=32241
 permalink: /css-displaycontents-basic-introduction/
 xyz_twap:
   - "1"
@@ -40,7 +40,7 @@ Firstly we will take a look at this example from <a href="https://rachelandrew.c
 
 As a result we loose all the box style such as border and background and padding and so on in the outer box. So display: contents is good if we need an element for the sake of semantic HTML but not as a styled element.
 
-#### Here is another example [with FlexBox](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/)
+#### Here is another example [with FlexBox](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/)
 
 Practically we could use display:contents to change the HTML to make our own layouts. In this example from <a href="https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/" target="_blank" rel="noreferrer noopener">Rachel Andrew</a> we have the inner two boxes wrapped in a container. Using display: contents we remove the box and make those two inner boxes child of Flexbox container:
 

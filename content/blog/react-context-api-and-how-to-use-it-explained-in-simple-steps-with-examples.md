@@ -4,7 +4,7 @@ title: React Context API and how to use it explained in simple steps with exampl
 date: 2018-12-25T20:06:46+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32610
+guid: https://www.nikpro.com.au/?p=32610
 permalink: /react-context-api-and-how-to-use-it-explained-in-simple-steps-with-examples/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ React Context API is getting a lot of attention after the latest updates. Becaus
 
 ## React Context API concepts
 
-Generally we are used to pass state from parent components to children [via props](http://www.nikpro.com.au/explaining-props-and-state-in-react-components/). When it gets complicated and we have multiple level of data it is hard to control. Have a look at this example in steps. The App component renders the Parent component which is TopComponent here:
+Generally we are used to pass state from parent components to children [via props](https://www.nikpro.com.au/explaining-props-and-state-in-react-components/). When it gets complicated and we have multiple level of data it is hard to control. Have a look at this example in steps. The App component renders the Parent component which is TopComponent here:
 
 
 ```
@@ -52,7 +52,7 @@ const BottomComponent = ({ name }) => {<br />  return <p>My name is : {name}</p>
 
 Typically it is great that we could pass props like this in our application. But what if we to reuse components? Or have more levels of passing props? Using Context API makes sense then. Therefore we convert our application to utilise it.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aureact-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="http://testgatsby.localreact-context-api-1024x576.jpg 1024w, http://testgatsby.localreact-context-api-300x169.jpg 300w, http://testgatsby.localreact-context-api-768x432.jpg 768w, http://testgatsby.localreact-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption></figure>
+<img src="https://www.nikpro.com.aureact-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="https://testgatsby.localreact-context-api-1024x576.jpg 1024w, https://testgatsby.localreact-context-api-300x169.jpg 300w, https://testgatsby.localreact-context-api-768x432.jpg 768w, https://testgatsby.localreact-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption></figure>
 
 ## Using Context API in action
 
@@ -102,7 +102,7 @@ const SharedContext = React.createContext('Azadeh');
 
 Therefore in case of no close Provider it still works and takes the default value.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.augloball-state.png" alt="global state" class="wp-image-32614" srcset="http://testgatsby.localgloball-state.png 389w, http://testgatsby.localgloball-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> </figure>
+<img src="https://www.nikpro.com.augloball-state.png" alt="global state" class="wp-image-32614" srcset="https://testgatsby.localgloball-state.png 389w, https://testgatsby.localgloball-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> </figure>
 
 ### Another example
 

@@ -4,7 +4,7 @@ title: Compare the same layout using FlexBox and Grid layout system in CSS
 date: 2018-10-07T20:42:32+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32366
+guid: https://www.nikpro.com.au/?p=32366
 permalink: /compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - flexbox
   - grid
 ---
-Using same layout and HTML we will have a comparison of [FlexBox](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [grid](http://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) layout. The idea is from the great front end developer Rachel Andrew in <a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/?utm_source=Responsive+Design+Weekly&utm_campaign=aede0b16e0-RWD_Newsletter_329&utm_medium=email&utm_term=0_df65b6d7c8-aede0b16e0-59048533&mc_cid=aede0b16e0&mc_eid=6f8be64191" target="_blank" rel="noopener noreferrer">Smashing Magazine</a>. I will explain her example here.
+Using same layout and HTML we will have a comparison of [FlexBox](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [grid](https://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) layout. The idea is from the great front end developer Rachel Andrew in <a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/?utm_source=Responsive+Design+Weekly&utm_campaign=aede0b16e0-RWD_Newsletter_329&utm_medium=email&utm_term=0_df65b6d7c8-aede0b16e0-59048533&mc_cid=aede0b16e0&mc_eid=6f8be64191" target="_blank" rel="noopener noreferrer">Smashing Magazine</a>. I will explain her example here.
 
 ## FlexBox for just display items
 
@@ -37,7 +37,7 @@ Generally with grid we could have alignment in both directions as grid is a two 
   See the Pen <a href="https://codepen.io/rachelandrew/pen/LgGVyX/">Smashing Flexbox Series 4: Grid example</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
 
-As we explained in [this](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) article about using minmax() and auto-fit here we also use that t create columns:
+As we explained in [this](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) article about using minmax() and auto-fit here we also use that t create columns:
 
 
 ```

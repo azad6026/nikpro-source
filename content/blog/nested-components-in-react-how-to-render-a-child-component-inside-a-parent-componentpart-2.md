@@ -4,7 +4,7 @@ title: Nested components in React; How to render a child component inside a pare
 date: 2018-11-10T18:54:15+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32529
+guid: https://www.nikpro.com.au/?p=32529
 permalink: /nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/
 xyz_twap:
   - "1"
@@ -17,9 +17,9 @@ tags:
   - nested components
   - react components
 ---
-In the [previous article](http://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-1/) we learned how to render a child component inside a parent component with a simple example.
+In the [previous article](https://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-1/) we learned how to render a child component inside a parent component with a simple example.
 
-However we need to demonstrate nested components using a more complex example. We will use our example from [this article](http://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) where we grouped an array of objects based on a value with some modification.
+However we need to demonstrate nested components using a more complex example. We will use our example from [this article](https://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) where we grouped an array of objects based on a value with some modification.
 
 ## A nested array as an example
 
@@ -100,7 +100,7 @@ Basically we still have a persons array with some information about some people.
 
 ## Reduction to value
 
-Our goal is to show a list of persons&#8217; information grouped by their age. Therefore we need to use reduce as explained in [this post](http://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) to have a grouped array:
+Our goal is to show a list of persons&#8217; information grouped by their age. Therefore we need to use reduce as explained in [this post](https://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) to have a grouped array:
 
 
 ```
@@ -158,7 +158,7 @@ As a result we get another nested array! But at least it is grouped by a value t
 
 ## Map it 
 
-Probably [map is the most useful an important array method in React](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/). Therefore as usual we will use map to loop through array and be able to feed our component. Just do a map and see the result in console:
+Probably [map is the most useful an important array method in React](https://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/). Therefore as usual we will use map to loop through array and be able to feed our component. Just do a map and see the result in console:
 
 
 ```
@@ -218,7 +218,7 @@ const Persons = props => {
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32533" src="http://www.nikpro.com.aunestedararay.png" alt="" srcset="http://testgatsby.localnestedararay.png 1192w, http://testgatsby.localnestedararay-300x158.png 300w, http://testgatsby.localnestedararay-768x403.png 768w, http://testgatsby.localnestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> </figure> 
+<img class="wp-image-32533" src="https://www.nikpro.com.aunestedararay.png" alt="" srcset="https://testgatsby.localnestedararay.png 1192w, https://testgatsby.localnestedararay-300x158.png 300w, https://testgatsby.localnestedararay-768x403.png 768w, https://testgatsby.localnestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> </figure> 
 
 Now we could use the **{&#8230;details} as the desired  non nested array **and create our child component to show persons&#8217; info based on their age:
 
@@ -241,6 +241,6 @@ const Person = props => {
 
 Generally we access nested info using dots as they are objects. So **{props.hobby.movie}** will let us get their favourite movie from a hobby object. And we now have reached the gaol.Showing each person&#8217;s info based on and listed by their age.
 
-We can improve our code by [destructuring our props](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) and make it look more modern. But we will leave that for a later example. 
+We can improve our code by [destructuring our props](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) and make it look more modern. But we will leave that for a later example. 
 
 Thank you for reading.

@@ -4,7 +4,7 @@ title: Use cases of findIndex(), find() and indexOf() methods in Javascript ES6
 date: 2018-10-08T20:10:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32370
+guid: https://www.nikpro.com.au/?p=32370
 permalink: /use-cases-of-findindex-find-and-indexof-methods-in-javascript-es6/
 xyz_twap:
   - "1"
@@ -32,7 +32,7 @@ Practically we could say the first two methods are similar to each other. Also t
 
 #### Find index of a fruit with findIndex()
 
-Firstly we will find the index of a fruit inside a fruit array using [arrow](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) functions:
+Firstly we will find the index of a fruit inside a fruit array using [arrow](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) functions:
 
 
 ```
@@ -55,7 +55,7 @@ let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if�
 ```
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="http://testgatsby.localfind-index.png 1680w, http://testgatsby.localfind-index-300x113.png 300w, http://testgatsby.localfind-index-768x288.png 768w, http://testgatsby.localfind-index-1024x384.png 1024w, http://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
+<img src="https://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="https://testgatsby.localfind-index.png 1680w, https://testgatsby.localfind-index-300x113.png 300w, https://testgatsby.localfind-index-768x288.png 768w, https://testgatsby.localfind-index-1024x384.png 1024w, https://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
 
 #### Find the fruit object with find()
 
@@ -85,7 +85,7 @@ let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if�
 
 Similar function being passed to find(0 but this time we have found the actual number.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aufind-it.jpg" alt="find it" class="wp-image-32371" srcset="http://testgatsby.localfind-it.jpg 386w, http://testgatsby.localfind-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> </figure> 
+<img src="https://www.nikpro.com.aufind-it.jpg" alt="find it" class="wp-image-32371" srcset="https://testgatsby.localfind-it.jpg 386w, https://testgatsby.localfind-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> </figure> 
 
 The find() method is great when we are looking for specific items. <a href="https://codeburst.io/learn-javascript-es6-array-find-array-findindex-7fe4f63c6974" target="_blank" rel="noopener noreferrer">Note</a> that:
 

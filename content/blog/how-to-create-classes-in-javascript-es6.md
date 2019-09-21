@@ -4,7 +4,7 @@ title: How to create classes in Javascript ES6
 date: 2018-07-09T22:33:24+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31829
+guid: https://www.nikpro.com.au/?p=31829
 permalink: /how-to-create-classes-in-javascript-es6/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/class-es6.png
@@ -17,7 +17,7 @@ tags:
   - classes
   - super keyword
 ---
-Following our [last posts](http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) about new features in ES6, we will learn about how to create classes in Javascript ES6. Classes in ES6 have a nice and clean syntax which changes our usual way of using objects and prototypes.
+Following our [last posts](https://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) about new features in ES6, we will learn about how to create classes in Javascript ES6. Classes in ES6 have a nice and clean syntax which changes our usual way of using objects and prototypes.
 
 ## Class definition
 

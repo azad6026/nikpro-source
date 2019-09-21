@@ -4,7 +4,7 @@ title: How FlexBox and auto margin work together with examples
 date: 2018-08-19T21:49:50+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32050
+guid: https://www.nikpro.com.au/?p=32050
 permalink: /how-flexbox-and-auto-margin-work-together-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/flexbox-and-auto-magin.jpg
@@ -12,7 +12,7 @@ categories:
   - CSS
   - CSS3
 ---
-There are really useful use cases that we might need [FlexBox](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and auto margin to work together. In this article I will show this with some examples for a better understanding.
+There are really useful use cases that we might need [FlexBox](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and auto margin to work together. In this article I will show this with some examples for a better understanding.
 
 ## FlexBox and auto margin
 

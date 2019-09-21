@@ -4,7 +4,7 @@ title: WordPress difficulties and challenges! How to face WordPress problems?
 date: 2018-06-08T22:38:21+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31623
+guid: https://www.nikpro.com.au/?p=31623
 permalink: /wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/Common-Challenges-Faced-by-WordPress-Agencies-Banner.jpg

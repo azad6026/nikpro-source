@@ -4,7 +4,7 @@ title: Some arrow function benefits with examples explained
 date: 2018-08-07T21:43:55+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31992
+guid: https://www.nikpro.com.au/?p=31992
 permalink: /some-arrow-function-benefits-with-examples-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/arrow-fun.png
@@ -14,7 +14,7 @@ tags:
   - arrow functions
   - this keyword
 ---
-We have talked about arrow functions in [this article](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) before and in this article we will take a look at arrow function benefits as we use them.
+We have talked about arrow functions in [this article](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) before and in this article we will take a look at arrow function benefits as we use them.
 
 ## Shorter syntax
 
@@ -52,7 +52,7 @@ var imgUrlArray = [<br />        imgUrl1,<br />        imgUrl2<br />];<br />//ES
 ```
 
 
-Also this is an example with the [map](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) method in both versions:
+Also this is an example with the [map](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) method in both versions:
 
 
 ```

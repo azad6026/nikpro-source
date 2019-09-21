@@ -4,7 +4,7 @@ title: HTML5 Best Practices and what to avoid
 date: 2018-07-04T21:37:12+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31784
+guid: https://www.nikpro.com.au/?p=31784
 permalink: /html5-best-practices-and-what-to-avoid/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/html5-best-practices.png
@@ -15,7 +15,7 @@ tags:
   - best practices
   - tags
 ---
-As we mentioned in a post about [HTNL5 new tags](http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/) and where to use them, we want to talk about HTML5 best practices and what bad practices to avoid . It is essential to have a well structured markup that could be read and maintain easily.
+As we mentioned in a post about [HTNL5 new tags](https://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/) and where to use them, we want to talk about HTML5 best practices and what bad practices to avoid . It is essential to have a well structured markup that could be read and maintain easily.
 
 ### Doctype 
 
@@ -47,13 +47,13 @@ Unless you right a XML document.You don&#8217;t need this declaration before Doc
 
 It is a ver useful tag but remember it makes all links relative to the href it specifies:
 
-`<base href="http://www.example.com/" />`
+`<base href="https://www.example.com/" />`
 
 unless you specify the link explicitly.
 
-For example, an internal link `href="#internal" `will be interpreted as `href="http://www.example.com/#internal"`
+For example, an internal link `href="#internal" `will be interpreted as `href="https://www.example.com/#internal"`
 
-Also, linking an external webpage like`href="example.org" `will be interpreted as `href="http://www.example.com/example.org"`
+Also, linking an external webpage like`href="example.org" `will be interpreted as `href="https://www.example.com/example.org"`
 
 It is safer to always use absolute paths for your links.
 

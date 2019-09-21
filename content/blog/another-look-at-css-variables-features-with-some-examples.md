@@ -4,7 +4,7 @@ title: Another look at CSS variables features with some examples
 date: 2018-09-01T21:08:49+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32122
+guid: https://www.nikpro.com.au/?p=32122
 permalink: /another-look-at-css-variables-features-with-some-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-variables-features.jpg
@@ -15,7 +15,7 @@ tags:
   - css variables features.jpg
 ---
 
-We will take another look at CSS variables features with some examples in this article. Previously in [this link](http://www.nikpro.com.au/how-to-update-css-variables-using-javascript-with-examples/) we learnt about them in a practical example. Here we see more code in details.
+We will take another look at CSS variables features with some examples in this article. Previously in [this link](https://www.nikpro.com.au/how-to-update-css-variables-using-javascript-with-examples/) we learnt about them in a practical example. Here we see more code in details.
 
 ## CSS variables scope
 

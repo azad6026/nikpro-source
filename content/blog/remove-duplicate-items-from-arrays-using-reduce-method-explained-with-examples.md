@@ -4,7 +4,7 @@ title: Remove duplicate items from arrays using reduce() method explained with e
 date: 2018-11-24T20:18:54+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32576
+guid: https://www.nikpro.com.au/?p=32576
 permalink: /remove-duplicate-items-from-arrays-using-reduce-method-explained-with-examples/
 xyz_twap:
   - "1"
@@ -16,13 +16,13 @@ categories:
 tags:
   - reduce
 ---
-We have explained use cases of reduce() method in [this](http://www.nikpro.com.au/javascript-es6-reduce-method/) and [this](http://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) article. Eventually there are lots of use cases like removing duplicate values from arrays. We will explain this case here with some examples.
+We have explained use cases of reduce() method in [this](https://www.nikpro.com.au/javascript-es6-reduce-method/) and [this](https://www.nikpro.com.au/how-to-group-an-array-of-objects-based-on-an-a-property-value-using-reduce/) article. Eventually there are lots of use cases like removing duplicate values from arrays. We will explain this case here with some examples.
 
 ## Remove duplicate value use case
 
 We have had a situation while we needed to filter our array to get only unique items out of it and remove duplicate values. Obviously there are lots of different methods to do that. Here we will focus on using reduce() method with almost similar implementations.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auarraysreducing.jpeg" alt="" class="wp-image-32577" srcset="http://testgatsby.localarraysreducing.jpeg 1000w, http://testgatsby.localarraysreducing-300x75.jpeg 300w, http://testgatsby.localarraysreducing-768x193.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> </figure> 
+<img src="https://www.nikpro.com.auarraysreducing.jpeg" alt="" class="wp-image-32577" srcset="https://testgatsby.localarraysreducing.jpeg 1000w, https://testgatsby.localarraysreducing-300x75.jpeg 300w, https://testgatsby.localarraysreducing-768x193.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> </figure> 
 
 ## Importance of initial value
 
@@ -48,7 +48,7 @@ At the end we will have a **sorted** array with unique values from the original 
 
 ## Using includes and concat
 
-Also as with <a href="https://denizkumsal.com/programming/using-reduce-to-remove-duplicates/" target="_blank" rel="noreferrer noopener" aria-label="Also as with this method we can use includes method instead of length property to check the item's equality and concat the unique values at the end. Using ternary syntax will make it really short: (opens in a new tab)">this method</a> we can use [includes](http://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) method instead of length property to check the item&#8217;s equality and **concat** the unique values at the end. Using [ternary syntax](http://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) will make it really short:
+Also as with <a href="https://denizkumsal.com/programming/using-reduce-to-remove-duplicates/" target="_blank" rel="noreferrer noopener" aria-label="Also as with this method we can use includes method instead of length property to check the item's equality and concat the unique values at the end. Using ternary syntax will make it really short: (opens in a new tab)">this method</a> we can use [includes](https://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) method instead of length property to check the item&#8217;s equality and **concat** the unique values at the end. Using [ternary syntax](https://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) will make it really short:
 
 ```
 const removeDuplicates = (theArray) => {<br />  return theArray.reduce((result,nextItem) => result.includes(nextItem) ? result : result.concat(nextItem),[]);<br />}
@@ -57,9 +57,9 @@ const removeDuplicates = (theArray) => {<br />  return theArray.reduce((result,n
 
 Here we check if the result which is the accumulator contains or includes the currentItem(calling it nextItem here just fo clarity). If it does we return the accumulator and if it does not include it, we concat that item to the result. <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auconcat-1024x608.png" alt="" class="wp-image-32578" srcset="http://testgatsby.localconcat-1024x608.png 1024w, http://testgatsby.localconcat-300x178.png 300w, http://testgatsby.localconcat-768x456.png 768w, http://testgatsby.localconcat.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>concat the items of array</figcaption></figure> 
+<img src="https://www.nikpro.com.auconcat-1024x608.png" alt="" class="wp-image-32578" srcset="https://testgatsby.localconcat-1024x608.png 1024w, https://testgatsby.localconcat-300x178.png 300w, https://testgatsby.localconcat-768x456.png 768w, https://testgatsby.localconcat.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>concat the items of array</figcaption></figure> 
 
-Very neat and clean indeed. We could also use [push](http://www.nikpro.com.au/how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/) method. But unlike concat it changes the original arrays as push adds items to the array and concat just merge them. In our case it is the same result though if we use each one.
+Very neat and clean indeed. We could also use [push](https://www.nikpro.com.au/how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/) method. But unlike concat it changes the original arrays as push adds items to the array and concat just merge them. In our case it is the same result though if we use each one.
 
 We could have return the method in one line not using explicit &#8220;return. We need to remove brackets and remove the return keyword:
 
@@ -68,6 +68,6 @@ const removeDuplicates = (theArray) => <br />  theArray.reduce((result,nextItem)
 ```
 
 
-Whichever approach we could use reduce in a reliable and easy way to remove duplicate items from an array. We could also use [filter](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) and set methods in a different ways to complete the task but that is for another article.
+Whichever approach we could use reduce in a reliable and easy way to remove duplicate items from an array. We could also use [filter](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) and set methods in a different ways to complete the task but that is for another article.
 
 Thank you for reading.

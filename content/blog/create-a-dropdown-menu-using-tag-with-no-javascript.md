@@ -4,7 +4,7 @@ title: "Create a dropdown menu using details tag with no Javascript"
 date: 2019-03-24T13:33:17+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32716
+guid: https://www.nikpro.com.au/?p=32716
 permalink: /create-a-dropdown-menu-using-details-tag-with-no-javascript/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - summary tag
 ---
 
-Did you know we could create a dropdown menu using only [HTML5 tag](http://www.nikpro.com.au/html5-best-practices-and-what-to-avoid/) called details? If you don&#8217;t then read on as it is getting more attention and there is no Javascript involved. But what is details tag and how it works.
+Did you know we could create a dropdown menu using only [HTML5 tag](https://www.nikpro.com.au/html5-best-practices-and-what-to-avoid/) called details? If you don&#8217;t then read on as it is getting more attention and there is no Javascript involved. But what is details tag and how it works.
 
 ## Details tag as a descriptive element
 

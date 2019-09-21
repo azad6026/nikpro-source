@@ -4,7 +4,7 @@ title: Build a clock with Javascript and CSS using CSS transform
 date: 2018-07-23T21:11:11+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31902
+guid: https://www.nikpro.com.au/?p=31902
 permalink: /build-a-clock-with-javascript-and-css-using-css-transform/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - clock
   - CSS transform
 ---
-We will build a clock with Javascript and [CSS transform](http://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) and the Date() function. The original idea is from [wesbos.com  ](http://wesbos.com)which has nice Javascript ideas for all. I have created a pen for it and I will explain it as it is. This is the pen:
+We will build a clock with Javascript and [CSS transform](https://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) and the Date() function. The original idea is from [wesbos.com  ](https://wesbos.com)which has nice Javascript ideas for all. I have created a pen for it and I will explain it as it is. This is the pen:
 
 <p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="NBpXdv" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="JS + CSS  clock">
   See the Pen <a href="https://codepen.io/azad6026/pen/NBpXdv/">JS + CSS clock</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -27,7 +27,7 @@ We will build a clock with Javascript and [CSS transform](http://www.nikpro.com
 
 We have three divs for seconds and minutes and hours by the class of &#8220;hand&#8221;. We will explain the most important part of the clock here. So without the Javascript and the transform line of code in the .hand class in CSS this is what you will see:
 
-<img class="alignnone wp-image-31903 size-full" src="http://www.nikpro.com.auclock-without-transform.png" alt="" width="953" height="544" srcset="http://testgatsby.localclock-without-transform.png 953w, http://testgatsby.localclock-without-transform-300x171.png 300w, http://testgatsby.localclock-without-transform-768x438.png 768w" sizes="(max-width: 953px) 100vw, 953px" /> 
+<img class="alignnone wp-image-31903 size-full" src="https://www.nikpro.com.auclock-without-transform.png" alt="" width="953" height="544" srcset="https://testgatsby.localclock-without-transform.png 953w, https://testgatsby.localclock-without-transform-300x171.png 300w, https://testgatsby.localclock-without-transform-768x438.png 768w" sizes="(max-width: 953px) 100vw, 953px" /> 
 
 All three hands are above each other pointing to the nine it seams. So first we need to make them point to twelve where the clock actually starts. 
 
@@ -42,7 +42,7 @@ We change the transform-origin from 50% which is its default value to 100%. Beca
 
 However this is not enough. Although it will ake the hands to turn pointing right to the middle but they do not start from twelve &#8216;o clock. They are stuck to nine &#8216;o clock at the moment.Thus we rotate them by 90 degrees and that will do the trick:
 
-<img class="alignnone wp-image-31904 size-full" src="http://www.nikpro.com.auclock-without-js.png" alt="" width="952" height="543" srcset="http://testgatsby.localclock-without-js.png 952w, http://testgatsby.localclock-without-js-300x171.png 300w, http://testgatsby.localclock-without-js-768x438.png 768w" sizes="(max-width: 952px) 100vw, 952px" /> 
+<img class="alignnone wp-image-31904 size-full" src="https://www.nikpro.com.auclock-without-js.png" alt="" width="952" height="543" srcset="https://testgatsby.localclock-without-js.png 952w, https://testgatsby.localclock-without-js-300x171.png 300w, https://testgatsby.localclock-without-js-768x438.png 768w" sizes="(max-width: 952px) 100vw, 952px" /> 
 
 We have the clock ready now. Lets add the Javascript. As always we get the elements we need to work on:
 
@@ -67,7 +67,7 @@ This will give us what we want. We divide the seconds by 60 which gives a percen
 
 `const secondsDegrees = ((seconds / 60) * 360) + 90;`
 
-Now we update the transform property of our seconds hand using the [ES6 template literals](http://www.nikpro.com.au/template-literals-in-js6-explained/) syntax:
+Now we update the transform property of our seconds hand using the [ES6 template literals](https://www.nikpro.com.au/template-literals-in-js6-explained/) syntax:
 
 ``secondHand.style.transform = `rotate(${secondsDegrees}deg)`;``
 

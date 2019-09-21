@@ -4,7 +4,7 @@ title: The CSS calc function explained with examples
 date: 2018-09-10T21:06:55+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32179
+guid: https://www.nikpro.com.au/?p=32179
 permalink: /the-css-calc-function-explained-with-examples/
 xyz_twap:
   - "1"
@@ -14,7 +14,7 @@ categories:
   - CSS
   - CSS3
 ---
-Using the CSS calc function is great in many [use cases](http://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/). We will explain a few in this article with examples.
+Using the CSS calc function is great in many [use cases](https://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/). We will explain a few in this article with examples.
 
 Generally the calc function is used to calculate CSS property values.  According to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank" rel="noopener noreferrer">MDN</a> we can use it anywhere a [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length), [`<frequency>`](https://developer.mozilla.org/en-US/docs/Web/CSS/frequency), [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle), [`<time>`](https://developer.mozilla.org/en-US/docs/Web/CSS/time), [`<percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage), [`<number>`](https://developer.mozilla.org/en-US/docs/Web/CSS/number), or [`<integer>`](https://developer.mozilla.org/en-US/docs/Web/CSS/integer) is allowed.
 
@@ -35,7 +35,7 @@ As a side note we need to remember a few things when using calc function:
   * When using  plus and minus sign we always should add a space between the sign and the number to make a valid parsable expression: calc(50% **&#8211; 8px**) is right. calc(50% **-8px)**  is wrong.
   * We can use multiple units in our calc functions.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aucss3-calc.jpg" alt="css3 calc" class="wp-image-32182" srcset="http://testgatsby.localcss3-calc.jpg 1280w, http://testgatsby.localcss3-calc-300x169.jpg 300w, http://testgatsby.localcss3-calc-768x432.jpg 768w, http://testgatsby.localcss3-calc-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> </figure> 
+<img src="https://www.nikpro.com.aucss3-calc.jpg" alt="css3 calc" class="wp-image-32182" srcset="https://testgatsby.localcss3-calc.jpg 1280w, https://testgatsby.localcss3-calc-300x169.jpg 300w, https://testgatsby.localcss3-calc-768x432.jpg 768w, https://testgatsby.localcss3-calc-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /> </figure> 
 
 ### Positioning elements with calc
 
@@ -103,4 +103,4 @@ Therefor this is the interesting part of the code:
 
 Firstly the body has a full height of 100%. Then the h2 has a fixed height of 50px. For the content to have the rest of the height and be as tall as the body we use calc as **height : calc(100% &#8211; 50px)** to make it work. Looks great.
 
-In this article we show a few examples of using calc function. However there are lots of other use cases for this function like in animations and along with [CSS variables](http://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) and other use cases. With their great support in browsers we should be using them in the right place when possible. Thanks for reading.
+In this article we show a few examples of using calc function. However there are lots of other use cases for this function like in animations and along with [CSS variables](https://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) and other use cases. With their great support in browsers we should be using them in the right place when possible. Thanks for reading.

@@ -4,7 +4,7 @@ title: Event listeners and DOM interactions in modern Javascript explained with 
 date: 2019-03-11T19:43:46+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32710
+guid: https://www.nikpro.com.au/?p=32710
 permalink: /event-listeners-and-dom-interactions-in-modern-javascript-explained-with-examples/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - event listeners
 ---
 
-[Event listeners and their interaction](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-2/) with DOM is a very important part of Javascript. There has been many solutions and ways to deal with them and write the code. In this article we write some simple but modern and very useful examples.
+[Event listeners and their interaction](https://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-2/) with DOM is a very important part of Javascript. There has been many solutions and ways to deal with them and write the code. In this article we write some simple but modern and very useful examples.
 
 ## Attach event listener
 
@@ -58,7 +58,7 @@ As an example we passed the elements to the array( we should define the elements
 
 ### Using es6 to shorten the code
 
-Typically the code is the same. Just [using arrow function](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) to save some code like below:
+Typically the code is the same. Just [using arrow function](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) to save some code like below:
 
 
 ```
@@ -74,8 +74,8 @@ let elementsArray = document.querySelectorAll(".element");<br />elementsArray.fo
 ```
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aues5.jpg" alt="" class="wp-image-32711" srcset="http://testgatsby.locales5.jpg 638w, http://testgatsby.locales5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption></figure>
+<img src="https://www.nikpro.com.aues5.jpg" alt="" class="wp-image-32711" srcset="https://testgatsby.locales5.jpg 638w, https://testgatsby.locales5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption></figure>
 
 In this case we don’t want an arrow function, because we need the keyword to reference the actual array elements that got clicked. That is now even more important as we have a whole bunch of them.
 
-Practically [as we talked about them before](http://www.nikpro.com.au/how-arrow-functions-fixed-this-keyword-problem-in-es6/) arrow function, the value of `this` is **not rebound** inside of the function. Therefore we don&#8217;t have access to the element. We get access tot he window. So &#8220;this&#8221; in the second case gives us the DOM window and not the element we expected to. Try it out in console and understand it.
+Practically [as we talked about them before](https://www.nikpro.com.au/how-arrow-functions-fixed-this-keyword-problem-in-es6/) arrow function, the value of `this` is **not rebound** inside of the function. Therefore we don&#8217;t have access to the element. We get access tot he window. So &#8220;this&#8221; in the second case gives us the DOM window and not the element we expected to. Try it out in console and understand it.

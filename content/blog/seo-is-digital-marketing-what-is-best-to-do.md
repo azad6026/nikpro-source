@@ -4,7 +4,7 @@ title: SEO is digital marketing, What is best to do?
 date: 2018-06-10T20:32:14+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31635
+guid: https://www.nikpro.com.au/?p=31635
 permalink: /seo-is-digital-marketing-what-is-best-to-do/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/images-3.jpeg

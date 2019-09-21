@@ -4,7 +4,7 @@ title: What is variable scope when we declare Javascript variables
 date: 2018-09-27T21:46:09+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32296
+guid: https://www.nikpro.com.au/?p=32296
 permalink: /what-is-variable-scope-when-we-declare-javascript-variables/
 xyz_twap:
   - "1"
@@ -19,7 +19,7 @@ tags:
   - var
   - variable scope
 ---
-As we learnt about ES6 variables [here](http://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript/) we need to explain more about variable scope when we are declaring them. It is essential to know where to declare which variable declaration and how to do it.
+As we learnt about ES6 variables [here](https://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript/) we need to explain more about variable scope when we are declaring them. It is essential to know where to declare which variable declaration and how to do it.
 
 ## Variable scope in Javascript
 
@@ -55,7 +55,7 @@ Clearly we have statement scope, block scope, function scope and general scope. 
 
 As a result let allows developers to scope variables at the block level (the nearest curly brackets).<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auglobal-scope.png" alt="variable scoping" class="wp-image-32301" srcset="http://testgatsby.localglobal-scope.png 544w, http://testgatsby.localglobal-scope-300x179.png 300w" sizes="(max-width: 544px) 100vw, 544px" /> </figure> 
+<img src="https://www.nikpro.com.auglobal-scope.png" alt="variable scoping" class="wp-image-32301" srcset="https://testgatsby.localglobal-scope.png 544w, https://testgatsby.localglobal-scope-300x179.png 300w" sizes="(max-width: 544px) 100vw, 544px" /> </figure> 
 
 ### Variable scope of const
 

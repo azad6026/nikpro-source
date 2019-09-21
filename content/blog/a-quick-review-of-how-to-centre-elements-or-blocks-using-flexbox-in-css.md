@@ -4,7 +4,7 @@ title: A quick review of how to centre elements or blocks using FlexBox in CSS
 date: 2018-10-18T20:36:05+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32422
+guid: https://www.nikpro.com.au/?p=32422
 permalink: /a-quick-review-of-how-to-centre-elements-or-blocks-using-flexbox-in-css/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - flexbox
 ---
 
-Generally we know lots of ways to centre elements of blocks anything in CSS using [FlexBox](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/). In this article we will review centring elements with examples.
+Generally we know lots of ways to centre elements of blocks anything in CSS using [FlexBox](https://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/). In this article we will review centring elements with examples.
 
 ## Centre elements horizontally using FlexBox
 

@@ -4,7 +4,7 @@ title: Create modern sticky footer using CSS grid and FlexBox and calc() functio
 date: 2018-10-16T20:18:52+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32414
+guid: https://www.nikpro.com.au/?p=32414
 permalink: /create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/
 xyz_twap:
   - "1"
@@ -19,7 +19,7 @@ tags:
   - grid layout
 ---
 
-There are couple of ways to create a modern sticky footer. Typically we are used to negative margins and absolute positioning. But we could use [CSS grid](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) and [FlexBox](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) and [calc()](http://www.nikpro.com.au/the-css-calc-function-explained-with-examples/) function to build them along the way.
+There are couple of ways to create a modern sticky footer. Typically we are used to negative margins and absolute positioning. But we could use [CSS grid](https://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) and [FlexBox](https://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) and [calc()](https://www.nikpro.com.au/the-css-calc-function-explained-with-examples/) function to build them along the way.
 
 ## Sticky footer with calc() function
 
@@ -53,7 +53,7 @@ Therefor no overlapping happens and two elements ( div.content and footer) will 
 
 ## Sticky footer with FlexBox
 
-We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/). We will have a variable height footer in this case. There are two ways for FlexBox option.
+We will solve the fixed height problem easily [using FlexBox](https://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/). We will have a variable height footer in this case. There are two ways for FlexBox option.
 
 ```
 <body>
@@ -64,7 +64,7 @@ We will solve the fixed height problem easily [using FlexBox](http://www.nikpro.
 </body>
 ```
 
-We can use **margin-top: auto** for footer [to push it away as far as needed from the rest of the content](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/).
+We can use **margin-top: auto** for footer [to push it away as far as needed from the rest of the content](https://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/).
 
 ```
 html, body {

@@ -4,7 +4,7 @@ title: JavaScript and React
 date: 2018-05-30T22:10:05+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31555
+guid: https://www.nikpro.com.au/?p=31555
 permalink: /javascript-and-react/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/reactjs.png

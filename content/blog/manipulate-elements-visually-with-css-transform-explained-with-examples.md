@@ -4,7 +4,7 @@ title: Manipulate elements visually with CSS transform explained with examples
 date: 2018-07-21T22:42:37+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31894
+guid: https://www.nikpro.com.au/?p=31894
 permalink: /manipulate-elements-visually-with-css-transform-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-transform.png
@@ -14,7 +14,7 @@ categories:
 tags:
   - CSS transform
 ---
-CSS transform function like [CSS transition](http://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/) and animation has been around for quiet sometime and has been used in all kinds of visual forms. It allows you to manipulate elements visually by skewing, rotating, translating, or scaling in a few different formats. Lets explain it with examples.
+CSS transform function like [CSS transition](https://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/) and animation has been around for quiet sometime and has been used in all kinds of visual forms. It allows you to manipulate elements visually by skewing, rotating, translating, or scaling in a few different formats. Lets explain it with examples.
 
 ## The transform property values
 
@@ -120,7 +120,7 @@ We could use multiple transform functions at once:
 `  transform: scale(20) skew(-20deg);`  
 `}`
 
-In the example above the skew will be performed first and then the scale as there is an order for performing transform functionality. This is what also can be done by Matrix. The `matrix` transform function can be used to combine all transforms into one. There are tools out there like [The Matrix Resolutions](http://meyerweb.com/eric/tools/matrix/), which can convert a group of transforms into a single matrix declaration. So this:
+In the example above the skew will be performed first and then the scale as there is an order for performing transform functionality. This is what also can be done by Matrix. The `matrix` transform function can be used to combine all transforms into one. There are tools out there like [The Matrix Resolutions](https://meyerweb.com/eric/tools/matrix/), which can convert a group of transforms into a single matrix declaration. So this:
 
 `<span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">24</span>px, <span class="token number">25</span>px<span class="token punctuation">)</span>`
 

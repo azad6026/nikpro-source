@@ -4,7 +4,7 @@ title: Javascript useful every() method explained with examples
 date: 2018-09-17T20:46:49+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32233
+guid: https://www.nikpro.com.au/?p=32233
 permalink: /javascript-useful-every-method-explained-with-examples/
 xyz_twap:
   - "1"
@@ -15,7 +15,7 @@ categories:
   - JAVASCRIPT
 ---
 
-Following [previous article](http://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) around Javascript methods we cover every() method in this article as one of the important ones.
+Following [previous article](https://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) around Javascript methods we cover every() method in this article as one of the important ones.
 
 ## The every() method
 
@@ -48,7 +48,7 @@ const arr1 = [{a:1, b:2, c:3, d:4}, {a:1, x:2, y:3, z:4}, {a:1, x:2, y:3, z:4}];
 
 We see in the second object only one pair does not meet the condition. As a result every() method returns false no matter the rest of pairs pass the condition.
 
-Moreover we can use [arrow function](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) in this method as well. Check out these examples:
+Moreover we can use [arrow function](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) in this method as well. Check out these examples:
 
 ```
 const a1 = [12, 5, 8, 130, 44];<br/>a1.every(x => x >= 10); // false<br/><br/>// Or all in one line

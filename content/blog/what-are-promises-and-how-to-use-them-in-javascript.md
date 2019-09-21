@@ -4,7 +4,7 @@ title: What are promises and how to use them in Javascript
 date: 2018-07-12T22:31:12+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31847
+guid: https://www.nikpro.com.au/?p=31847
 permalink: /what-are-promises-and-how-to-use-them-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/es6-promises.png
@@ -81,7 +81,7 @@ With promises , we attach the callbackes to the returned promises instead and bu
 `})`  
 `.then(null, failureCallback).`
 
-Using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in ES6 we can write the above example like this:
+Using [arrow functions](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in ES6 we can write the above example like this:
 
 `doSomething()`  
 `.then(result => doSomethingElse(result))`  
@@ -93,7 +93,7 @@ Using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arro
 
 Remember to always return a result otherwise callbacks will not catch the result of the previous promise. Now that we know how to use them n practice, we better define them.
 
-<img class="aligncenter wp-image-31849 size-full" src="http://www.nikpro.com.aupromised-land.jpeg" alt="" width="640" height="480" srcset="http://testgatsby.localpromised-land.jpeg 640w, http://testgatsby.localpromised-land-300x225.jpeg 300w" sizes="(max-width: 640px) 100vw, 640px" /> 
+<img class="aligncenter wp-image-31849 size-full" src="https://www.nikpro.com.aupromised-land.jpeg" alt="" width="640" height="480" srcset="https://testgatsby.localpromised-land.jpeg 640w, https://testgatsby.localpromised-land-300x225.jpeg 300w" sizes="(max-width: 640px) 100vw, 640px" /> 
 
 ## How to create a promise
 
@@ -123,7 +123,7 @@ If promise was successful, a resolve will happen and the console will log Promis
 
 ### A real example
 
-We use an example to [connect to an API](http://www.nikpro.com.au/how-to-connect-to-an-api-with-javascript-in-a-real-app/) to explain it here:
+We use an example to [connect to an API](https://www.nikpro.com.au/how-to-connect-to-an-api-with-javascript-in-a-real-app/) to explain it here:
 
 `const loadImage = url => {`  
 `   return new Promise(function(resolve, reject) {`

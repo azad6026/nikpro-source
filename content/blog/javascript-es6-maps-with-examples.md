@@ -4,7 +4,7 @@ title: Javascript ES6 maps and how to use them in practice
 date: 2018-07-24T21:17:10+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31906
+guid: https://www.nikpro.com.au/?p=31906
 permalink: /javascript-es6-maps-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/es6-maps.jpg
@@ -71,7 +71,7 @@ In the below examples,we get undefined result because the value specified is not
 
 Iterate over maps using for.. of 
 
-We could iterate through maps using [for&#8230; of loop](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) in different ways. Check this example:
+We could iterate through maps using [for&#8230; of loop](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) in different ways. Check this example:
 
 `var myMap = new Map();`  
 `myMap.set(0, 'zero');`  
@@ -122,7 +122,7 @@ Like any object maps have built-in forEach method for iteration:
 
 ## Maps and arrays
 
-ES6 maps look like arrays but they are not arrays. However as mentioned about using Array.form around NodeLists in [this post](http://www.nikpro.com.au/javascript-nodelist-and-html-dom-collection-and-how-to-use-them/), we could convert them to each other:
+ES6 maps look like arrays but they are not arrays. However as mentioned about using Array.form around NodeLists in [this post](https://www.nikpro.com.au/javascript-nodelist-and-html-dom-collection-and-how-to-use-them/), we could convert them to each other:
 
 Create an array:
 
@@ -168,7 +168,7 @@ We could merge maps keeping the uniqueness of the keys. This is a good example:
 `[2, 'dos']`  
 `]);`
 
-We merge two maps. The last repeated key wins which in here the second one is the winner. The ES6 [spread operator](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) essentially converts a Map to an Array:
+We merge two maps. The last repeated key wins which in here the second one is the winner. The ES6 [spread operator](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) essentially converts a Map to an Array:
 
 `var merged = new Map([...first, ...second]);`
 

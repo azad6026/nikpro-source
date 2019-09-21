@@ -4,7 +4,7 @@ title: The ternary operator in Javascript with some examples explained
 date: 2018-08-02T20:39:55+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31952
+guid: https://www.nikpro.com.au/?p=31952
 permalink: /the-ternary-operator-in-javascript-with-some-examples-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/ternary-operators.png
@@ -13,7 +13,7 @@ categories:
 tags:
   - ternary operator
 ---
-In this post I will explain the ternary operator in Javascript with some examples. We have been using it in some previous articles like the [CSS video article](http://www.nikpro.com.au/customise-html5-video-player-element-in-a-real-example/) and we want to get a better understanding of it in a seperate post.
+In this post I will explain the ternary operator in Javascript with some examples. We have been using it in some previous articles like the [CSS video article](https://www.nikpro.com.au/customise-html5-video-player-element-in-a-real-example/) and we want to get a better understanding of it in a seperate post.
 
 ## The ternary operator syntax
 
@@ -23,7 +23,7 @@ This operator has a very interesting and yet confusing syntax if you don&#8217;t
 
 It is the only operator taking three statements. The **condition** is what the operator will evaluate against it. If it evaluates to true the first expression will execute. If not the second one ( expression2 ) will be the returning value from the operator. Expressions could be of any type. Take a look a these examples now.
 
-<img class="wp-image-31954 size-full alignnone" src="http://www.nikpro.com.auternary.png" alt="" width="600" height="338" srcset="http://testgatsby.localternary.png 600w, http://testgatsby.localternary-300x169.png 300w" sizes="(max-width: 600px) 100vw, 600px" /> 
+<img class="wp-image-31954 size-full alignnone" src="https://www.nikpro.com.auternary.png" alt="" width="600" height="338" srcset="https://testgatsby.localternary.png 600w, https://testgatsby.localternary-300x169.png 300w" sizes="(max-width: 600px) 100vw, 600px" /> 
 
 ### Simple ternary operator
 

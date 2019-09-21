@@ -4,7 +4,7 @@ title: 'Exciting mondrian grid layout explained with an example: part 1'
 date: 2018-09-13T03:01:12+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32193
+guid: https://www.nikpro.com.au/?p=32193
 permalink: /exciting-mondrian-grid-layout-explained-with-an-example-part-1/
 xyz_twap:
   - "1"
@@ -14,9 +14,9 @@ categories:
   - CSS
   - CSS3
 ---
-In this article we explain an exciting introductory mondrian grid layout. I deep dive into this one with core [grid layout](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) concepts. This one is a non-responsive version. In the next article we will make a responsive one.
+In this article we explain an exciting introductory mondrian grid layout. I deep dive into this one with core [grid layout](https://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) concepts. This one is a non-responsive version. In the next article we will make a responsive one.
 
-Here is the pen I have created and built this one in. I got the idea from the amazing <a href="http://jensimmons.com/" target="_blank" rel="noopener noreferrer">Jen simmons </a>which is one of the core developers of grid layout system:
+Here is the pen I have created and built this one in. I got the idea from the amazing <a href="https://jensimmons.com/" target="_blank" rel="noopener noreferrer">Jen simmons </a>which is one of the core developers of grid layout system:
 
 <p data-height="400" data-theme-id="0" data-slug-hash="jvxEgW" data-default-tab="css,result" data-user="azad6026" data-pen-title="non-responsive mondrian grid layout" class="codepen">
   See the Pen <a href="https://codepen.io/azad6026/pen/jvxEgW/">non-responsive mondrian grid layout</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -74,7 +74,7 @@ li:nth-child(1) {
 ```
 
 
-We are using [nth-child() Pseudo selector](http://www.nikpro.com.au/the-css-nth-child-selector-explained-with-examples/) to reach out each list item. Also we use **grid-column** and **grid-row** to define how many column and row the item can occupy in the rid. Therefor there are different syntaxes that could be used here. I use span in this example. So **grid-column:** **span 2; **means you can expand or take 2 columns in the grid. Moreover **grid-row: span 1;** defines one row could be used by this item. And you will see the result for the first item.
+We are using [nth-child() Pseudo selector](https://www.nikpro.com.au/the-css-nth-child-selector-explained-with-examples/) to reach out each list item. Also we use **grid-column** and **grid-row** to define how many column and row the item can occupy in the rid. Therefor there are different syntaxes that could be used here. I use span in this example. So **grid-column:** **span 2; **means you can expand or take 2 columns in the grid. Moreover **grid-row: span 1;** defines one row could be used by this item. And you will see the result for the first item.
 
 #### Second and third and forth item
 

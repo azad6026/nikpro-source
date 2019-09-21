@@ -4,7 +4,7 @@ title: Comparing Array.from and spread syntax in Javascript with examples
 date: 2018-09-16T21:50:07+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32219
+guid: https://www.nikpro.com.au/?p=32219
 permalink: /comparing-array-from-and-spread-syntax-in-javascript-with-examples/
 xyz_twap:
   - "1"
@@ -15,7 +15,7 @@ categories:
   - JAVASCRIPT
 ---
 
-Definitively Array.from and [spread syntax](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) in Javascript are different from each other. Although we could use them in similar situations.
+Definitively Array.from and [spread syntax](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) in Javascript are different from each other. Although we could use them in similar situations.
 
 ## Array.from and spread syntax definintion
 
@@ -68,7 +68,7 @@ var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s
 As a result in this case as well spread syntax is a better option as it makes the code look better.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.nikpro.com.auarrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="http://testgatsby.localarrays.png 376w, http://testgatsby.localarrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></figure>
+  <figure class="aligncenter"><img src="https://www.nikpro.com.auarrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="https://testgatsby.localarrays.png 376w, https://testgatsby.localarrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></figure>
 </div>
 
 ### map functions inside Array.from method
@@ -98,7 +98,7 @@ const result = f(1, 2, 3);
 
 ### Destructuring with spread
 
-Practically one of the best funs using spread is with [destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/). Have a look at this example:
+Practically one of the best funs using spread is with [destructuring](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/). Have a look at this example:
 
 ```
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };<br />console.log(x); // 1

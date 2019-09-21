@@ -4,7 +4,7 @@ title: How to use slice and splice array methods in Javascript
 date: 2018-09-09T21:00:30+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32174
+guid: https://www.nikpro.com.au/?p=32174
 permalink: /how-to-use-slice-and-splice-array-methods-in-javascript/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ tags:
   - slice
   - splice
 ---
-In this article we have a look at how to use slice and splice [array methods](http://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) in Javascript. They might look similar but they have different functionalities.
+In this article we have a look at how to use slice and splice [array methods](https://www.nikpro.com.au/some-method-in-javascript-explained-with-examples/) in Javascript. They might look similar but they have different functionalities.
 
 ## Slice and Splice definition
 

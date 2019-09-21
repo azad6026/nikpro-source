@@ -4,7 +4,7 @@ title: A FelxBox dice as an example of different FlexBox properties
 date: 2018-08-30T20:16:45+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32113
+guid: https://www.nikpro.com.au/?p=32113
 permalink: /a-felxbox-dice-as-an-example-of-different-flexbox-properties/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/flexbox-dice.png
@@ -107,6 +107,6 @@ As a result we have three columns here. Therefor we have the second one centred 
 
 ```
 
-Practically we can [use FlexBox](http://www.nikpro.com.au/custom-form-and-gird-layouts-with-flexbox/) properties in any type of things. It is very flexible and easy to use. We will practice some complex examples later on as well.
+Practically we can [use FlexBox](https://www.nikpro.com.au/custom-form-and-gird-layouts-with-flexbox/) properties in any type of things. It is very flexible and easy to use. We will practice some complex examples later on as well.
 
 Thank you for reading.

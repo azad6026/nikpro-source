@@ -4,7 +4,7 @@ title: WordPress Migration Plugins; Make your own migration choice
 date: 2018-06-09T21:24:26+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31629
+guid: https://www.nikpro.com.au/?p=31629
 permalink: /wordpress-migration-plugins-make-your-own-migration-choice/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/migration-wp.jpg
@@ -16,7 +16,7 @@ tags:
 
 There are lots of plugins developed for a WordPress [site](_wp_link_placeholder) migration purpose. You will need a good way and the right choice to be able to migrate or duplicate one site to another and finding the best one that suits your need is hard. All these plugins are pretty much the same but they vary in options and flexibility they come with and of course their price.
 
-I will share a few of them that I have played around with and used for [my most recent project](http://www.nikpro.com.au/wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/) so that you get the idea:
+I will share a few of them that I have played around with and used for [my most recent project](https://www.nikpro.com.au/wordpress-difficulties-and-challenges-how-to-face-wordpress-problems/) so that you get the idea:
 
 ### [All in one migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
 
@@ -24,7 +24,7 @@ This is absolutely by far my most favourite one. It dose everything by one click
 
 For mu=y project I couldn&#8217;t use the free version as my site was a large one with over 1.2GB in size but this is my first choice at all times.
 
-### [BackupBuddy](http://ithemes.com/purchase/backupbuddy/)
+### [BackupBuddy](https://ithemes.com/purchase/backupbuddy/)
 
 This plugin isn’t free. Prices start at \$80 for two sites. But it does a great job.All you need to do is follow the on-screen prompts and the provided ImportBuddy script will take care of migrating URLs and file paths in posts, settings and configuration files.I haven&#8217;t used this one but it looks reliable.
 

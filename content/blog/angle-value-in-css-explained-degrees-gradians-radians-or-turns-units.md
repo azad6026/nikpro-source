@@ -4,7 +4,7 @@ title: 'Angle value in CSS explained: degrees, gradians, radians, or turns units
 date: 2018-09-15T21:46:01+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32212
+guid: https://www.nikpro.com.au/?p=32212
 permalink: /angle-value-in-css-explained-degrees-gradians-radians-or-turns-units/
 xyz_twap:
   - "1"
@@ -14,7 +14,7 @@ categories:
   - CSS
   - CSS3
 ---
-Generally as per <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle" target="_blank" rel="noopener noreferrer">MDN</a> the **`<angle>`** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) [data type](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types) represents an angle value expressed in degrees, gradians, radians, or turns.  We can use them in [transforms](http://www.nikpro.com.au/using-svg-part-2-to-create-animated-svg-spinner-by-css-transforms/) and gradients.
+Generally as per <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle" target="_blank" rel="noopener noreferrer">MDN</a> the **`<angle>`** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) [data type](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types) represents an angle value expressed in degrees, gradians, radians, or turns.  We can use them in [transforms](https://www.nikpro.com.au/using-svg-part-2-to-create-animated-svg-spinner-by-css-transforms/) and gradients.
 
 ## Degrees, gradians, radians, or turns
 

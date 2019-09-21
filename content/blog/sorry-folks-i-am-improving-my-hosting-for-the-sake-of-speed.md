@@ -4,7 +4,7 @@ title: 'Sorry folks,  I am improving my hosting for the sake of speed'
 date: 2018-09-02T20:12:51+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32126
+guid: https://www.nikpro.com.au/?p=32126
 permalink: /sorry-folks-i-am-improving-my-hosting-for-the-sake-of-speed/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/images-4.jpeg

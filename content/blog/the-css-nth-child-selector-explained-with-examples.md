@@ -4,7 +4,7 @@ title: The CSS :nth-child selector explained with examples
 date: 2018-07-28T22:13:45+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31932
+guid: https://www.nikpro.com.au/?p=31932
 permalink: /the-css-nth-child-selector-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/nth-child.jpg

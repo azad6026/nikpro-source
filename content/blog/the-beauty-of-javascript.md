@@ -4,7 +4,7 @@ title: The beauty of Javascript
 date: 2018-05-31T22:16:06+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31560
+guid: https://www.nikpro.com.au/?p=31560
 permalink: /the-beauty-of-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/challenge.jpg

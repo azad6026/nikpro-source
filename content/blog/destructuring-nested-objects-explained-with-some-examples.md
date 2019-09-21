@@ -4,7 +4,7 @@ title: Destructuring nested objects explained with some examples
 date: 2019-01-30T20:22:43+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32669
+guid: https://www.nikpro.com.au/?p=32669
 permalink: /destructuring-nested-objects-explained-with-some-examples/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ categories:
 tags:
   - destructuring nested arrays
 ---
-One of the most useful and yet advanced aspects that ES6 introduced was [destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) objects and arrays. But it is most interesting when we use it for nested objects and arrays. We will check out some examples.
+One of the most useful and yet advanced aspects that ES6 introduced was [destructuring](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) objects and arrays. But it is most interesting when we use it for nested objects and arrays. We will check out some examples.
 
 ## Destructuring definition in practice
 
@@ -176,8 +176,8 @@ var people = [
 ```
 
 
-[Using for &#8230; of](http://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) method we destructure people object and also rename its variables. The result is as we expected.
+[Using for &#8230; of](https://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) method we destructure people object and also rename its variables. The result is as we expected.
 
-Object destructuring is a vast and major topic in [ES6 features.](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) But nested objects can benefit of it the most.
+Object destructuring is a vast and major topic in [ES6 features.](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) But nested objects can benefit of it the most.
 
 Thank you for reading.

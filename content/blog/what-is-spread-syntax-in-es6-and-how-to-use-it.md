@@ -4,7 +4,7 @@ title: What is spread syntax in ES6 and how to use it?
 date: 2018-06-30T21:04:28+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31762
+guid: https://www.nikpro.com.au/?p=31762
 permalink: /what-is-spread-syntax-in-es6-and-how-to-use-it/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/spread-syntax.jpeg
@@ -16,7 +16,7 @@ tags:
   - soread syntax
   - spraed operator
 ---
-Continuing <a href="http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/" target="_blank" rel="noopener noreferrer">our explanation for ES6 new features</a>, we will review the spread operator. What is the magic spread syntax in ES6? The spread syntax is simply three dots: <code class="markup--code markup--li-code">...
+Continuing <a href="https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/" target="_blank" rel="noopener noreferrer">our explanation for ES6 new features</a>, we will review the spread operator. What is the magic spread syntax in ES6? The spread syntax is simply three dots: <code class="markup--code markup--li-code">...
 
 <strong class="markup--strong markup--li-strong">It allows an iterable to expand in places where 0 or more arguments likeIndefinite number of arguments (function calls) or  elements (array literals) or key-value pairs (object literals) are expected.
 

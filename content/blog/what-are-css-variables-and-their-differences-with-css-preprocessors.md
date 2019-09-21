@@ -4,7 +4,7 @@ title: What are CSS variables and their differences with CSS Preprocessors
 date: 2018-06-22T22:30:11+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31699
+guid: https://www.nikpro.com.au/?p=31699
 permalink: /what-are-css-variables-and-their-differences-with-css-preprocessors/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/cssvariables.jpg
@@ -67,7 +67,7 @@ The browser support. With them you don&#8217;t need to worry about it as they wi
 
 ## Should we us CSS variables
 
-<a href="http://www.nikpro.com.au/css-grid-layouts-and-css-new-variables-should-we-get-started/" target="_blank" rel="noopener noreferrer">Absolutely</a>. They are ready to be used. There are lots of other things that you need to read <a href="https://csswizardry.com/2016/10/pragmatic-practical-progressive-theming-with-custom-properties/" target="_blank" rel="noopener noreferrer">here</a> and <a href="http://kizu.ru/en/fun/conditions-for-css-variables/" target="_blank" rel="noopener noreferrer">here</a> to learn more about CSS variable. Browser support. In desktop only internet explorer does not support it. IE phone and opera mobile do not support it in mobiles. So good support so far.
+<a href="https://www.nikpro.com.au/css-grid-layouts-and-css-new-variables-should-we-get-started/" target="_blank" rel="noopener noreferrer">Absolutely</a>. They are ready to be used. There are lots of other things that you need to read <a href="https://csswizardry.com/2016/10/pragmatic-practical-progressive-theming-with-custom-properties/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://kizu.ru/en/fun/conditions-for-css-variables/" target="_blank" rel="noopener noreferrer">here</a> to learn more about CSS variable. Browser support. In desktop only internet explorer does not support it. IE phone and opera mobile do not support it in mobiles. So good support so far.
 
 Read up about CSS variables in this <a href="https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855" target="_blank" rel="noopener noreferrer">article</a> an watch the videos at the end of this css tricks <a href="https://css-tricks.com/difference-between-types-of-css-variables/" target="_blank" rel="noopener noreferrer">article</a>.
 

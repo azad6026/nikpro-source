@@ -4,7 +4,7 @@ title: Plan ahead to achieve success
 date: 2018-06-17T19:04:55+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31667
+guid: https://www.nikpro.com.au/?p=31667
 permalink: /plan-ahead-to-achieve-success/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/Plan-Ahead.jpg
@@ -13,7 +13,7 @@ categories:
 tags:
   - learning
 ---
-It is correct that you should plan ahead to achieve success. It applies to anything you are thinking of learning of doing. [Learning](http://www.nikpro.com.au/no-matter-what-happens-never-stop-learning/) for sure should be part of a daily schedule and should [never be stopped](http://www.nikpro.com.au/no-matter-what-happens-never-stop-learning/). Planing ahead is essential and hard. To be able to plan your time, you need to know about the big goal first.
+It is correct that you should plan ahead to achieve success. It applies to anything you are thinking of learning of doing. [Learning](https://www.nikpro.com.au/no-matter-what-happens-never-stop-learning/) for sure should be part of a daily schedule and should [never be stopped](https://www.nikpro.com.au/no-matter-what-happens-never-stop-learning/). Planing ahead is essential and hard. To be able to plan your time, you need to know about the big goal first.
 
 ### The Goal
 

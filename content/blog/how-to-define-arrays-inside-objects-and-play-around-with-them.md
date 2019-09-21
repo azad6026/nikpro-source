@@ -4,7 +4,7 @@ title: How to define arrays inside objects and play around with them
 date: 2018-06-05T21:47:10+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31602
+guid: https://www.nikpro.com.au/?p=31602
 permalink: /how-to-define-arrays-inside-objects-and-play-around-with-them/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/array.png
@@ -17,7 +17,7 @@ tags:
   - objects
 ---
 
-Lately I have posted an article about simple mistake around objects in [this link](http://www.nikpro.com.au/be-aware-when-playing-around-inside-objects-a-simple-example-explained/) emphasising how important curly braces are. Here in this article I want to show you other mistakes around arrays inside objets that might be useful to you.
+Lately I have posted an article about simple mistake around objects in [this link](https://www.nikpro.com.au/be-aware-when-playing-around-inside-objects-a-simple-example-explained/) emphasising how important curly braces are. Here in this article I want to show you other mistakes around arrays inside objets that might be useful to you.
 
 I have created a simple pen in codepen ro demonstrate what I mean. My main focus is the array.Inside objects, arrays are defined as objects as well. Unlike a variable, which used assignment operator, in array we use colons to give them vale. And for arrays we use brackets to hold the values. Simple and important. But to give the array an initial value, we need to use braces around an item and then inside it first comes the item property name and after a colon, inside cotations we need to add the value like this:
 
@@ -30,7 +30,7 @@ And then we can add items to it with this addItem function:
 **    todoItem : todoItem**  
 **});**
 
-The mistake I talked about in t[his link](http://www.nikpro.com.au/be-aware-when-playing-around-inside-objects-a-simple-example-explained/) was if we define the array like this:
+The mistake I talked about in t[his link](https://www.nikpro.com.au/be-aware-when-playing-around-inside-objects-a-simple-example-explained/) was if we define the array like this:
 
 **todoList : [ &#8220;I am an item&#8221;]**
 

@@ -4,7 +4,7 @@ title: CSS custom properties or variables with more examples
 date: 2018-09-08T21:12:43+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32163
+guid: https://www.nikpro.com.au/?p=32163
 permalink: /css-custom-properties-or-variables-with-more-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-custo-properties.jpg
@@ -15,7 +15,7 @@ categories:
 tags:
   - CSS custom properties
 ---
-We explain CSS custom properties or variables with more examples in this article. We had another article [here](http://www.nikpro.com.au/how-to-update-css-variables-using-javascript-with-examples/) with an example from Wes Bos. In this article we use some [more examples](http://www.nikpro.com.au/another-look-at-css-variables-features-with-some-examples/) around this topic.
+We explain CSS custom properties or variables with more examples in this article. We had another article [here](https://www.nikpro.com.au/how-to-update-css-variables-using-javascript-with-examples/) with an example from Wes Bos. In this article we use some [more examples](https://www.nikpro.com.au/another-look-at-css-variables-features-with-some-examples/) around this topic.
 
 ## Theming a site with CSS custom properties
 

@@ -39,7 +39,12 @@ class BlogIndex extends React.Component {
                 key={node.fields.slug}
                 style={{
                   transition: `transform 250ms cubic- bezier(0.4, 0, 0.2, 1), box - shadow 250ms cubic - bezier(0.4, 0, 0.2, 1), padding 250ms cubic - bezier(0.4, 0, 0.2, 1)`,
-                  background: `rgba(255,255,255,.85)`,
+                  // background: `rgba(255,255,255,.85)`,
+                  // background: `-moz - linear - gradient(left, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
+                  // background: `-webkit - linear - gradient(left, rgba(255, 255, 255,1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
+                  // background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
+                  background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, .7) 50% ,rgba(255, 255, 255, 0) 100%)`,
+                  // filter: `progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ffffff', endColorstr='#00ffffff',GradientType=1 )`,
                   boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
                   padding: `1rem 3rem`,
                   margin: `1rem auto`,

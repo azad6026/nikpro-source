@@ -8,7 +8,7 @@ excerpt: |
   <h2>Hide With Opacity</h2>
   <p>Although with setting opacity to zero, it seems that the element is hidden but it is actually still an intractable element and occupies its place in the page.<!--more--></p>
 layout: post
-guid: http://www.nikpro.com.au/?p=31514
+guid: https://www.nikpro.com.au/?p=31514
 permalink: /different-ways-to-hide-an-element-in-css/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-tips.jpg

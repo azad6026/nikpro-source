@@ -4,7 +4,7 @@ title: Explaining JSX with some examples
 date: 2018-06-21T21:59:22+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31693
+guid: https://www.nikpro.com.au/?p=31693
 permalink: /explaining-jsx-with-some-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/jsx-react.png
@@ -30,7 +30,7 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   </h2>
   
   <p>
-    <a href="http://www.nikpro.com.au/react-or-angular-how-much-it-matters/">React</a> embraces JSX to be used to define Elements and Components. It looks like rendering logic is mixed with UI logic. The fact is in react, logic and UI are not seperate as files. They are seperate as concerns by using and defining components.
+    <a href="https://www.nikpro.com.au/react-or-angular-how-much-it-matters/">React</a> embraces JSX to be used to define Elements and Components. It looks like rendering logic is mixed with UI logic. The fact is in react, logic and UI are not seperate as files. They are seperate as concerns by using and defining components.
   </p>
   
   <p>

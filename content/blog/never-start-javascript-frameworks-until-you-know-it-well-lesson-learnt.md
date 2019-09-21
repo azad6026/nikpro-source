@@ -4,7 +4,7 @@ title: Never start JavaScript frameworks until you know JavaScript well, Lesson 
 date: 2018-06-04T21:39:48+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31596
+guid: https://www.nikpro.com.au/?p=31596
 permalink: /never-start-javascript-frameworks-until-you-know-it-well-lesson-learnt/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/fundamentals.png

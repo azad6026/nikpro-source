@@ -4,7 +4,7 @@ title: CSS grid layouts and CSS new variables? Should we get started?
 date: 2018-06-12T22:33:59+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31646
+guid: https://www.nikpro.com.au/?p=31646
 permalink: /css-grid-layouts-and-css-new-variables-should-we-get-started/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-grid-terminology.png

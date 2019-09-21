@@ -4,7 +4,7 @@ title: How to convert an array of objects to seperate array of key value pairs u
 date: 2018-10-12T20:16:16+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32394
+guid: https://www.nikpro.com.au/?p=32394
 permalink: /how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - Object.entries
   - objects
 ---
-Sometimes we need to convert an [array of objects](http://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) to seperate array of key value pairs. For example in order to create another array or use its key value pairs separately. Object .entries method is a perfect choice were even map method cannot help you out.
+Sometimes we need to convert an [array of objects](https://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) to seperate array of key value pairs. For example in order to create another array or use its key value pairs separately. Object .entries method is a perfect choice were even map method cannot help you out.
 
 ## Object.entires as a method
 
@@ -78,9 +78,9 @@ key3: {
 
 But we need to give each person&#8217;s container a unique id to be able to manipulate it easier later on. As an example we want to edit or delete that persons information from the database. <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aufor-...-of-loop.png" alt="" class="wp-image-32397" srcset="http://testgatsby.localfor-...-of-loop.png 880w, http://testgatsby.localfor-...-of-loop-300x188.png 300w, http://testgatsby.localfor-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption></figure> 
+<img src="https://www.nikpro.com.aufor-...-of-loop.png" alt="" class="wp-image-32397" srcset="https://testgatsby.localfor-...-of-loop.png 880w, https://testgatsby.localfor-...-of-loop-300x188.png 300w, https://testgatsby.localfor-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption></figure> 
 
-We will use [for .. of](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) to loop through the above object and using Object.entries() we will create an array of persons which holds their with a unique key per person:
+We will use [for .. of](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) to loop through the above object and using Object.entries() we will create an array of persons which holds their with a unique key per person:
 
 
 ```
@@ -106,6 +106,6 @@ Therefor we could have an array of persons as below which we can then display as
 ```
 
 
-Because of the nature of **Object.entries** we can use it to re create or manipulate different ind of objects. It is actually a combination of [**Object,keys**](http://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) and **[Object.values](http://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/)** with full control over keys and values both.
+Because of the nature of **Object.entries** we can use it to re create or manipulate different ind of objects. It is actually a combination of [**Object,keys**](https://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/) and **[Object.values](https://www.nikpro.com.au/converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/)** with full control over keys and values both.
 
 Thank you for reading.

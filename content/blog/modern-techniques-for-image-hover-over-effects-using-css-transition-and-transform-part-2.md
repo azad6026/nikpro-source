@@ -4,7 +4,7 @@ title: 'Modern techniques for image hover over effects using CSS transition and 
 date: 2018-10-23T20:42:42+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32451
+guid: https://www.nikpro.com.au/?p=32451
 permalink: /modern-techniques-for-image-hover-over-effects-using-css-transition-and-transform-part-2/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - hover over effect
   - transition
 ---
-Following [the previous article](http://www.nikpro.com.au/modern-techniques-for-image-hover-over-effects-using-css-transition-and-animation-part-1/), I have prepared two more image hover over techniques using CSS [transform](http://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) and [transitions](http://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/). Try to manipulate them in CodePen and get different effects.
+Following [the previous article](https://www.nikpro.com.au/modern-techniques-for-image-hover-over-effects-using-css-transition-and-animation-part-1/), I have prepared two more image hover over techniques using CSS [transform](https://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/) and [transitions](https://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/). Try to manipulate them in CodePen and get different effects.
 
 ## #1: Round image hove over effect
 

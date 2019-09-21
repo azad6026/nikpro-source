@@ -4,7 +4,7 @@ title: CSS Filter() function using drop shadow effect explained and compared to 
 date: 2019-04-22T15:12:32+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32735
+guid: https://www.nikpro.com.au/?p=32735
 permalink: /css-filter-function-using-drop-shadow-effect-explained-and-compared-to-box-shadow-property/
 xyz_twap:
   - "1"
@@ -65,4 +65,4 @@ Generally the main difference is about the box. The box shadow property follows 
 
 As a result it is up to our decision of which one is more suitable in our cases. They both do really the same job but in a different ways.
 
-<a href="http://thenewcode.com/598/box-shadow-property-vs-drop-shadow-filter-a-complete-comparison" target="_blank" rel="noreferrer noopener" aria-label="Also (opens in a new tab)">Also</a> **drop**&#8211;**shadow** filters have the advantage of hardware acceleration if the browser vendor supports it while **box**&#8211;**shadow** does not have access to that code. The **drop**&#8211;**shadow** filter also will tend to render faster
+<a href="https://thenewcode.com/598/box-shadow-property-vs-drop-shadow-filter-a-complete-comparison" target="_blank" rel="noreferrer noopener" aria-label="Also (opens in a new tab)">Also</a> **drop**&#8211;**shadow** filters have the advantage of hardware acceleration if the browser vendor supports it while **box**&#8211;**shadow** does not have access to that code. The **drop**&#8211;**shadow** filter also will tend to render faster

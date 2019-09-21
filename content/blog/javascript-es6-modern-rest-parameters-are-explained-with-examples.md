@@ -4,7 +4,7 @@ title: Javascript ES6 modern rest parameters are explained with examples
 date: 2018-09-26T21:33:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32291
+guid: https://www.nikpro.com.au/?p=32291
 permalink: /javascript-es6-modern-rest-parameters-are-explained-with-examples/
 xyz_twap:
   - "1"
@@ -19,7 +19,7 @@ tags:
   - spread syntax
 ---
 
-We have covered spread syntax in [an article](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) before and here we will explain Javascript ES6 modern rest parameter in this article.
+We have covered spread syntax in [an article](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) before and here we will explain Javascript ES6 modern rest parameter in this article.
 
 ## The rest parameters syntax
 
@@ -30,12 +30,12 @@ Then we have all remaining arguments to be placed within &#8220;standard&#8221; 
 ```
 function f(a, b, ...theArgs) {
   // ...
-}<br/><br/>// Using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/> // ...<br />}
+}<br/><br/>// Using <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/> // ...<br />}
 ```
 
 Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aurestprams.png" alt="" class="wp-image-32293" srcset="http://testgatsby.localrestprams.png 599w, http://testgatsby.localrestprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> </figure>
+<img src="https://www.nikpro.com.aurestprams.png" alt="" class="wp-image-32293" srcset="https://testgatsby.localrestprams.png 599w, https://testgatsby.localrestprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> </figure>
 
 ### Destructuring rest parameters
 

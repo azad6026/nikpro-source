@@ -4,7 +4,7 @@ title: How to update CSS variables using Javascript with an example
 date: 2018-07-13T22:55:23+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31852
+guid: https://www.nikpro.com.au/?p=31852
 permalink: /how-to-update-css-variables-using-javascript-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-var-change.png
@@ -16,7 +16,7 @@ tags:
   - css variables
   - datasets
 ---
-Have you tried to update [CSS variables](http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/) using Javascript? In this post we will explain how to do this with examples. This is an example from <a href="http://www.wesbos.com" target="_blank" rel="noopener noreferrer">Wesbos</a> courses and it is really useful and informative.
+Have you tried to update [CSS variables](https://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/) using Javascript? In this post we will explain how to do this with examples. This is an example from <a href="https://www.wesbos.com" target="_blank" rel="noopener noreferrer">Wesbos</a> courses and it is really useful and informative.
 
 ## The Example
 
@@ -32,7 +32,7 @@ Let us explain what it does first. We have three variables that could be changed
 
 ### First the CSS
 
-If you know about CSS variables and <a href="http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">how to define them</a> you can see that we have defined three variables in our CSS:
+If you know about CSS variables and <a href="https://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">how to define them</a> you can see that we have defined three variables in our CSS:
 
 `:root {`  
 `  --base: #ffc600;`  
@@ -51,7 +51,7 @@ And then we use them in our image and our heading:
 `  color: var(--base);`  
 `}`
 
-If you are not familiar with how to define and use CSS variables, read <a href="http://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">this</a> to learn their difference with preprocessors and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank" rel="noopener noreferrer">this</a> to understand them better. But here we use var to be able to use our variables wherever we need. This is how it has been implemented to CSS itself.
+If you are not familiar with how to define and use CSS variables, read <a href="https://www.nikpro.com.au/what-are-css-variables-and-their-differences-with-css-preprocessors/" target="_blank" rel="noopener noreferrer">this</a> to learn their difference with preprocessors and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank" rel="noopener noreferrer">this</a> to understand them better. But here we use var to be able to use our variables wherever we need. This is how it has been implemented to CSS itself.
 
 ### Now the HTML
 
@@ -75,7 +75,7 @@ Next we need to loop through inputs and listen to the change event and update th
 
 `inputs.forEach(input => input.addEventListener('change', handleUpdate));`
 
-We used <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a> here to make the code nice and neat. We should listen to the mousemove event as well as if we don&#8217;t because the spacebar can be moved with mouse and it will be quick, the change event will not catch that. So we will do the same for mouse moves as well:
+We used <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a> here to make the code nice and neat. We should listen to the mousemove event as well as if we don&#8217;t because the spacebar can be moved with mouse and it will be quick, the change event will not catch that. So we will do the same for mouse moves as well:
 
 `inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));`
 

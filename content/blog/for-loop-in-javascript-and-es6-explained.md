@@ -4,7 +4,7 @@ title: For loop in Javascript and ES6 explained
 date: 2018-06-28T21:51:20+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31745
+guid: https://www.nikpro.com.au/?p=31745
 permalink: /for-loop-in-javascript-and-es6-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/for-loop_0.jpg
@@ -31,7 +31,7 @@ To iterate through an array indexes in Javascript we simply write a for loop usi
 
 `}`
 
-That still works perfectly. It is a long syntax though. Also remember it is using var to initiate the variable. As explained in [this post,](http://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript#let) let is a better choice in for loops to be used as the variable iterator.
+That still works perfectly. It is a long syntax though. Also remember it is using var to initiate the variable. As explained in [this post,](https://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript#let) let is a better choice in for loops to be used as the variable iterator.
 
 ## The ES5 Solution
 

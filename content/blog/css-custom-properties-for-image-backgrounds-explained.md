@@ -4,7 +4,7 @@ title: CSS custom properties for image backgrounds explained
 date: 2019-03-01T19:19:03+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32705
+guid: https://www.nikpro.com.au/?p=32705
 permalink: /css-custom-properties-for-image-backgrounds-explained/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - image backgrounds
 ---
 
-We have talked about CSS c[ustom properties](http://www.nikpro.com.au/using-css-variables-to-create-dynamic-css-transform-values/) or CSS [variables](http://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) in a few articles before. Here we explain how we can use them for background image if we needed to.
+We have talked about CSS c[ustom properties](https://www.nikpro.com.au/using-css-variables-to-create-dynamic-css-transform-values/) or CSS [variables](https://www.nikpro.com.au/css-custom-properties-or-variables-with-more-examples/) in a few articles before. Here we explain how we can use them for background image if we needed to.
 
 ## Normal background colour
 

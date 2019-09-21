@@ -4,7 +4,7 @@ title: CSS clip-path property basic concept explained with examples
 date: 2018-08-05T22:01:52+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31981
+guid: https://www.nikpro.com.au/?p=31981
 permalink: /css-clip-path-property-basic-concept-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/clip-path.jpg
@@ -69,7 +69,7 @@ Also we could use round keyword and a border radius to make round edges:
 ```
 
 
-[](http://bennettfeely.com/clippy/)**Eclipse**
+[](https://bennettfeely.com/clippy/)**Eclipse**
 
 Ellipses are defined using this syntax: _ellipse(radiusX radiusY at posX posY)_. The position is optional and will default to _50% 50%:_
 
@@ -139,6 +139,6 @@ Also have a look at this example on CodePen which uses CSS clip-path for hover o
   See the Pen <a href="https://codepen.io/drewminns/pen/vEZOeq/">vEZOeq</a> by Drew Minns (<a href="https://codepen.io/drewminns">@drewminns</a>) on <a href="https://codepen.io">CodePen</a>.
 </p>
 
-You could play around with it through Bennet Feely&#8217;s [Clippy.](http://bennettfeely.com/clippy/) It will give us a better understanding around clipping with CSS clip-path. In the next article of CSS clip-path we will talk about [CSS animations](http://www.nikpro.com.au/learn-how-to-use-css-animation-using-keyframes-with-examples/) made by clipping and masking. Thanks for reading.
+You could play around with it through Bennet Feely&#8217;s [Clippy.](https://bennettfeely.com/clippy/) It will give us a better understanding around clipping with CSS clip-path. In the next article of CSS clip-path we will talk about [CSS animations](https://www.nikpro.com.au/learn-how-to-use-css-animation-using-keyframes-with-examples/) made by clipping and masking. Thanks for reading.
 
-[](http://bennettfeely.com/clippy/)
+[](https://bennettfeely.com/clippy/)

@@ -4,7 +4,7 @@ title: React.Fragment the new way to wrap multiple React elements explained
 date: 2018-09-20T19:55:19+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32254
+guid: https://www.nikpro.com.au/?p=32254
 permalink: /react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ tags:
   - higher order functions
   - React.Fragment
 ---
-React.Fragment is the new way to wrap elements in the return statement. We will explain it in this article with some examples. Similarly we had explained how to wrap multi-element return statements using higher order components [here](http://www.nikpro.com.au/different-stateless-functional-component-in-react-explained/) before.
+React.Fragment is the new way to wrap elements in the return statement. We will explain it in this article with some examples. Similarly we had explained how to wrap multi-element return statements using higher order components [here](https://www.nikpro.com.au/different-stateless-functional-component-in-react-explained/) before.
 
 ## React.Fragment syntax pattern
 

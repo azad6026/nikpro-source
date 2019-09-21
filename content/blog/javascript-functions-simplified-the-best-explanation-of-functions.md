@@ -4,7 +4,7 @@ title: JavaScript Functions Simplified; The Best Explanation of functions
 date: 2018-05-12T19:30:22+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31542
+guid: https://www.nikpro.com.au/?p=31542
 permalink: /javascript-functions-simplified-the-best-explanation-of-functions/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/functions.png
@@ -14,7 +14,7 @@ tags:
   - functions
 ---
 
-There are lots of explanations and tutorials about Javascript and specifically functions out there which we all may have tried. But thus far from all I have seen, a unique approach around the whole language is what Gordon Zhu has implemented in [watchandcode.com  ](http://watchandcode.com)that is a practical way and very deep understanding of every major part of JavaScript.
+There are lots of explanations and tutorials about Javascript and specifically functions out there which we all may have tried. But thus far from all I have seen, a unique approach around the whole language is what Gordon Zhu has implemented in [watchandcode.com  ](https://watchandcode.com)that is a practical way and very deep understanding of every major part of JavaScript.
 
 I will explain functions here as my own take away which I hope be helpful to you too.
 

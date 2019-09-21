@@ -4,7 +4,7 @@ title: Hoisting in Javascript explained with examples
 date: 2018-08-04T20:26:42+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31973
+guid: https://www.nikpro.com.au/?p=31973
 permalink: /hoisting-in-javascript-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/hoisting.png
@@ -14,7 +14,7 @@ tags:
   - declaration
   - hoisting
 ---
-There is a confusing term called **hoisting in Javascript** that is interesting to be explained and needs to be understand as one of the [fundamentals](http://www.nikpro.com.au/higher-order-functions-in-javascript-with-examples/). I will explain hoisting in Javascript with examples.
+There is a confusing term called **hoisting in Javascript** that is interesting to be explained and needs to be understand as one of the [fundamentals](https://www.nikpro.com.au/higher-order-functions-in-javascript-with-examples/). I will explain hoisting in Javascript with examples.
 
 ## What is hoisting?
 

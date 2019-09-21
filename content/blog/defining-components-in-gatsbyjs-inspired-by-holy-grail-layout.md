@@ -1,11 +1,11 @@
 ---
-description: Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gastbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](http://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby.
+description: Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gastbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](https://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby.
 id: 32754
 title: Defining components in Gatsbyjs inspired by holy grail layout
 date: 2019-05-19T15:17:12+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32754
+guid: https://www.nikpro.com.au/?p=32754
 permalink: /defining-components-in-gatsbyjs-inspired-by-holy-grail-layout/
 xyz_twap:
   - "1"
@@ -19,11 +19,11 @@ tags:
   - react components
 ---
 
-Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gatsbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](http://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby. Here is a summary.
+Building websites <a rel="noreferrer noopener" aria-label="with Gatsbyjs (opens in a new tab)" href="https://gatsbyjs.org" target="_blank">with Gatsbyjs</a> started as such an interesting and inspiring experience for me. As a matter of fact what I found exciting is how holy grail layout has made me [understand components](https://www.nikpro.com.au/nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-2/). Surprisingly in a better and deeper way in React land here in Gatsby. Here is a summary.
 
 ## Holy grail components
 
-No matter what you use to build a site, you will need a structure. And the most simple and yet important one is the [holy grail layout](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/):
+No matter what you use to build a site, you will need a structure. And the most simple and yet important one is the [holy grail layout](https://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/):
 
 <figure>
 <img src="/images/holy-grail-layout.png" alt="Simple Holy Grial Layout" /> 
@@ -44,7 +44,7 @@ Basically in the first glance we see our major components here:
 </Layout>
 ```
 
-As a result we named them capitalised just as [components in react](http://www.nikpro.com.au/more-on-react-components-with-examples/) to better understand the application. Layout is the main component of the application and Content includes the main content of the site. Including Navigation, Sidebar and Main.
+As a result we named them capitalised just as [components in react](https://www.nikpro.com.au/more-on-react-components-with-examples/) to better understand the application. Layout is the main component of the application and Content includes the main content of the site. Including Navigation, Sidebar and Main.
 
 Generally these are the building blocks of any web application. And understanding this basic concept is the key for more complex structures. Lets talk about each main component in depth.
 
@@ -121,7 +121,7 @@ Practically we use it like below. Simple but powerful:
 
 ```
 
-<Image src="http://link.com" alt ="some text"/>
+<Image src="https://link.com" alt ="some text"/>
 
 ```
 

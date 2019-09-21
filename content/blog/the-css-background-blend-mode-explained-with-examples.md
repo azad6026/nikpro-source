@@ -4,7 +4,7 @@ title: The CSS background blend mode explained with examples
 date: 2018-08-24T21:24:35+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32085
+guid: https://www.nikpro.com.au/?p=32085
 permalink: /the-css-background-blend-mode-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/blend-mode.png
@@ -12,7 +12,7 @@ categories:
   - CSS
   - CSS3
 ---
-The [CSS](http://www.nikpro.com.au/category/css) background blend mode property is a modern way of creating complex yet beautiful and small size backgrounds. Comparing to the image version of these backgrounds they save lots of &#8220;size issue&#8221; and more importantly a http request to the server. We will have a look at a few examples explaining the CSS background blend mode.
+The [CSS](https://www.nikpro.com.au/category/css) background blend mode property is a modern way of creating complex yet beautiful and small size backgrounds. Comparing to the image version of these backgrounds they save lots of &#8220;size issue&#8221; and more importantly a http request to the server. We will have a look at a few examples explaining the CSS background blend mode.
 
 ### Example with repeating linear gradient
 

@@ -4,7 +4,7 @@ title: "Flexbox explained in a simple way with examples: Part 2"
 date: 2018-06-26T18:39:25+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31728
+guid: https://www.nikpro.com.au/?p=31728
 permalink: /flexbox-explained-in-a-simple-way-with-examples-part-2/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-flexbox-2.png
@@ -15,7 +15,7 @@ tags:
   - flexbox
 ---
 
-In the [last article](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) we explained the parent container properties of Flexbox layout. In this article, we will go through the flex items properties and demonstrate them with some examples at the end.
+In the [last article](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) we explained the parent container properties of Flexbox layout. In this article, we will go through the flex items properties and demonstrate them with some examples at the end.
 
 ## Flexbox item properties {#flexbox-item-properties}
 
@@ -90,7 +90,7 @@ It is best practice to use the shorthand over the individual properties as it co
 
 ## align-self {#align-self}
 
-Align-self property allows the default alignment (or the one specified by align-items) to be overridden for each flex item inside the flex container. Refer to [align-items](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1#align-items) explanation for flex container to understand the available values. The default value is auto.
+Align-self property allows the default alignment (or the one specified by align-items) to be overridden for each flex item inside the flex container. Refer to [align-items](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1#align-items) explanation for flex container to understand the available values. The default value is auto.
 
 ```
 

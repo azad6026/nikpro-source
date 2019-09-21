@@ -4,7 +4,7 @@ title: New ideas around all web front end development
 date: 2018-09-03T20:21:51+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32129
+guid: https://www.nikpro.com.au/?p=32129
 permalink: /new-ideas-around-all-web-front-end-development/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/never-stop-learning.png
@@ -21,7 +21,7 @@ I do believe that we should accept our ever changing web develpoment era and try
 
 ###  A NEW THEME
 
-I have committed myself to finish my own theme for the site and publish it soon. It is based on [grad layout system](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) and [FlexBox design](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and I wish it to be as simple and accessible as possible. Also I make the site three to four times faster so hopefully there will be no problem in that matter.
+I have committed myself to finish my own theme for the site and publish it soon. It is based on [grad layout system](https://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) and [FlexBox design](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and I wish it to be as simple and accessible as possible. Also I make the site three to four times faster so hopefully there will be no problem in that matter.
 
 ### React articles
 

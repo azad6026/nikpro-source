@@ -4,7 +4,7 @@ title: How to extract components in React with example
 date: 2018-08-18T20:15:57+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32045
+guid: https://www.nikpro.com.au/?p=32045
 permalink: /how-to-extract-components-in-react-with-example/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/extracting-component.png
@@ -13,7 +13,7 @@ categories:
 tags:
   - Extract components in React
 ---
-There are ways on how to extract [components in React](http://www.nikpro.com.au/more-on-react-components-with-examples/) depends on the structure of your components. It is always best practice to separate logics as optimised as possible to avoid certain bad practices.
+There are ways on how to extract [components in React](https://www.nikpro.com.au/more-on-react-components-with-examples/) depends on the structure of your components. It is always best practice to separate logics as optimised as possible to avoid certain bad practices.
 
 ## When to extract components
 

@@ -4,7 +4,7 @@ title: Custom form and gird layouts with FlexBox
 date: 2018-08-03T20:56:31+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31967
+guid: https://www.nikpro.com.au/?p=31967
 permalink: /custom-form-and-gird-layouts-with-flexbox/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/flexbox-layout-form.jpg
@@ -16,11 +16,11 @@ tags:
   - form
   - grid layout
 ---
-We will take a look at FlexBox custom form and FlexBox grid layout here. We have talked about FlexBox basics and design properties in [this post](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [this post](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/) before. Therefor we will use that knowledge here.
+We will take a look at FlexBox custom form and FlexBox grid layout here. We have talked about FlexBox basics and design properties in [this post](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and [this post](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/) before. Therefor we will use that knowledge here.
 
 ## Custom form by FlexBox
 
-Take a look at this pen which is a FlexBox custom form that I created using some examples from [quackit.](http://quackit.com) Two forms with different designs for inputs:
+Take a look at this pen which is a FlexBox custom form that I created using some examples from [quackit.](https://quackit.com) Two forms with different designs for inputs:
 
 <p data-height="600" data-theme-id="0" data-slug-hash="bjKdJZ" data-default-tab="html,result" data-user="azad6026" data-pen-title="Custom form with flexBox 1" class="codepen">
   See the Pen <a href="https://codepen.io/azad6026/pen/bjKdJZ/">Custom form with flexBox 1</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -58,4 +58,4 @@ We have got three grid sections. In each section it uses justify-content as defa
 
 And each column has flex:1; so that they can line up with the same width. However for the third grid layout the justify-content is set to space-between and each have a width of 32%. to make sure they will fill the remaining space. ( Flex items take as much space as their content otherwise. Try to remove this line and you will see the result).
 
-We created FlexBox custom form and FlexBox grid layouts with some examples. FlexBox has some very powerful property toolsets to make Flexible yet custom layouts based on the needs. Although for grid layouts it is best to use [CSS grids](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) as they have been made to build all kinds of grid layouts. Thanks for reading.
+We created FlexBox custom form and FlexBox grid layouts with some examples. FlexBox has some very powerful property toolsets to make Flexible yet custom layouts based on the needs. Although for grid layouts it is best to use [CSS grids](https://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) as they have been made to build all kinds of grid layouts. Thanks for reading.

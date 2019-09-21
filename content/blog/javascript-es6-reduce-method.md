@@ -4,7 +4,7 @@ title: Javascript ES6 reduce() method and how to use it
 date: 2018-07-27T21:44:19+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31925
+guid: https://www.nikpro.com.au/?p=31925
 permalink: /javascript-es6-reduce-method/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/reduce-method.png
@@ -14,7 +14,7 @@ categories:
 tags:
   - reduce
 ---
-We will talk about Javascript ES6 reduce() method and how to use it in this article. Among [new ES6 features](http://www.nikpro.com.au/javascript-es6-maps-with-examples/), reduce() method is one of the good and sometimes confusing ones. First we need to understand its syntax.
+We will talk about Javascript ES6 reduce() method and how to use it in this article. Among [new ES6 features](https://www.nikpro.com.au/javascript-es6-maps-with-examples/), reduce() method is one of the good and sometimes confusing ones. First we need to understand its syntax.
 
 ## The ES6 reduce() syntax
 
@@ -174,7 +174,7 @@ We have applied reduce to an array of five elements. In the below table you will
 
 Clearly the accumulator which is called the total amount as well, is always the left value in the array and the current value is in the right side of it. Remember reduce applies he function to each element in the array so these values are changing upon each call until it reaches the last value.
 
-And the best thing is to convert this to an [arrow function](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) syntax. We leave off the currentIndex and array as they are optional:
+And the best thing is to convert this to an [arrow function](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) syntax. We leave off the currentIndex and array as they are optional:
 
 `[0, 1, 2, 3, 4].reduce((accumulator, currentValue)=> accumulator + currentValue);`
 

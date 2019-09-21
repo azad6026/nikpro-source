@@ -4,7 +4,7 @@ title: What is amazing about Angular
 date: 2018-06-18T22:20:02+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31671
+guid: https://www.nikpro.com.au/?p=31671
 permalink: /what-is-amazing-about-anguar/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/angualr.jpg
@@ -15,7 +15,7 @@ tags:
   - framework
   - typescript
 ---
-## What is amazing about [Angular](http://www.nikpro.com.au/react-or-angular-how-much-it-matters/)?
+## What is amazing about [Angular](https://www.nikpro.com.au/react-or-angular-how-much-it-matters/)?
 
 I would like to share my opinion about what is so amazing and interesting about <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a>. AlthoughI haven&#8217;t built anything serious with angular just yet, but I could explain why it has always been my favourite front end framework to have an eye on.
 

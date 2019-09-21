@@ -4,7 +4,7 @@ title: React or Angular? How much it matters?
 date: 2018-06-03T21:06:35+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31575
+guid: https://www.nikpro.com.au/?p=31575
 permalink: /react-or-angular-how-much-it-matters/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/focus-on-what-matters.jpg

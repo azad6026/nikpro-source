@@ -4,7 +4,7 @@ title: Heads up for WordPress Gutenberg; How to get ready for the big change
 date: 2018-12-02T14:14:58+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32584
+guid: https://www.nikpro.com.au/?p=32584
 permalink: /heads-up-for-wordpress-gutenberg-how-to-get-ready-for-the-big-change/
 xyz_twap:
   - "1"
@@ -20,7 +20,7 @@ If you are reading this article, you know about Gutenberg. The WordPress modern 
 
 Here we will talk about what will be affected by Gutenberg and how to get ready for it. And if ever having a problem migrating to it, what solutions are available.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.augutenberg-try.gif" alt="" class="wp-image-32585" /> <figcaption>Gutenberg editor</figcaption></figure>
+<img src="https://www.nikpro.com.augutenberg-try.gif" alt="" class="wp-image-32585" /> <figcaption>Gutenberg editor</figcaption></figure>
 
 ## What is Gutenberg?
 
@@ -28,7 +28,7 @@ Basically Gutenberg is the new upcoming core editor of WordPress that will chang
 
 Therefore it has a close relationship with the theme and all the plugins involving in building and customising the site.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auchnage-the-road-1024x640.jpg" alt="" class="wp-image-32588" srcset="http://testgatsby.localchnage-the-road-1024x640.jpg 1024w, http://testgatsby.localchnage-the-road-300x188.jpg 300w, http://testgatsby.localchnage-the-road-768x480.jpg 768w, http://testgatsby.localchnage-the-road.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Embrace the change</figcaption></figure>
+<img src="https://www.nikpro.com.auchnage-the-road-1024x640.jpg" alt="" class="wp-image-32588" srcset="https://testgatsby.localchnage-the-road-1024x640.jpg 1024w, https://testgatsby.localchnage-the-road-300x188.jpg 300w, https://testgatsby.localchnage-the-road-768x480.jpg 768w, https://testgatsby.localchnage-the-road.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Embrace the change</figcaption></figure>
 
 ## What should we expect as a business?
 
@@ -55,7 +55,7 @@ As a result of this transformation :
 - Plugins that are used for changing and customising the editor will be affected.
 - the theme&#8217;s compatibility with editor will be affected<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aunew-future-1024x497.jpg" alt="" class="wp-image-32587" srcset="http://testgatsby.localnew-future-1024x497.jpg 1024w, http://testgatsby.localnew-future-300x146.jpg 300w, http://testgatsby.localnew-future-768x373.jpg 768w, http://testgatsby.localnew-future.jpg 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure>
+<img src="https://www.nikpro.com.aunew-future-1024x497.jpg" alt="" class="wp-image-32587" srcset="https://testgatsby.localnew-future-1024x497.jpg 1024w, https://testgatsby.localnew-future-300x146.jpg 300w, https://testgatsby.localnew-future-768x373.jpg 768w, https://testgatsby.localnew-future.jpg 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure>
 
 ## What does this change mean?
 
@@ -69,7 +69,7 @@ Fortunately all these popular page builders are already updating themselves to b
 
 Bu there are sites that might use some 3rd party plugins or old and not updated themes that might crash or not work properly. Here are the solutions.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auwp5.jpg" alt="" class="wp-image-32589" srcset="http://testgatsby.localwp5.jpg 750w, http://testgatsby.localwp5-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /> <figcaption>WordPress 5 is close</figcaption></figure>
+<img src="https://www.nikpro.com.auwp5.jpg" alt="" class="wp-image-32589" srcset="https://testgatsby.localwp5.jpg 750w, https://testgatsby.localwp5-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /> <figcaption>WordPress 5 is close</figcaption></figure>
 
 ## What are the solutions?
 
@@ -81,7 +81,7 @@ After WordPress 5 released there will be customers that have done the update alr
 
 - Update all the plugins to the latest version up to date
 - Update the theme to their latest version
-- If problem persist then test the site <a rel="noreferrer noopener" aria-label="Update all plugins to the latest version Update their theme to the latest version if problem persist test the site block test unit plugin for Gutenberg (opens in a new tab)" href="http://using https://wordpress.org/plugins/block-unit-test/" target="_blank">with block test unit plugin</a> for Gutenberg to identify the problem
+- If problem persist then test the site <a rel="noreferrer noopener" aria-label="Update all plugins to the latest version Update their theme to the latest version if problem persist test the site block test unit plugin for Gutenberg (opens in a new tab)" href="https://using https://wordpress.org/plugins/block-unit-test/" target="_blank">with block test unit plugin</a> for Gutenberg to identify the problem
 - If still site does not look as expected install the classic editor and check again. This is a temporary solution though and should be reverted back to Gutenberg after testing.
 - If the problem was not identified reinstall Gutenberg and test again. activate all plugins one by one to see which one causes the problem.
 - If the identified plugin is not compatible with Gutenberg replace it with another one based on research

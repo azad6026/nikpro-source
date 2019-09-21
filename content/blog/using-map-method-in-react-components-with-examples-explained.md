@@ -4,7 +4,7 @@ title: Using map method in React components with examples explained
 date: 2018-08-15T21:48:18+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32032
+guid: https://www.nikpro.com.au/?p=32032
 permalink: /using-map-method-in-react-components-with-examples-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/reactmap.png
@@ -14,11 +14,11 @@ categories:
 tags:
   - map method in React
 ---
-It is interesting to know about using [map method](http://www.nikpro.com.au/javascript-es6-maps-with-examples/) in React components. I came across it and wanted to explain it in a few examples in this post.
+It is interesting to know about using [map method](https://www.nikpro.com.au/javascript-es6-maps-with-examples/) in React components. I came across it and wanted to explain it in a few examples in this post.
 
 ### Using map in Javascript
 
-In a normal Javascript example this is how we use map method to create a new mapped array ( using [arrow functions](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in practice):
+In a normal Javascript example this is how we use map method to create a new mapped array ( using [arrow functions](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in practice):
 
 
 ```

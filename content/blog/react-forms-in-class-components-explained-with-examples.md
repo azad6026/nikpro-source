@@ -4,7 +4,7 @@ title: React forms in class components explained with examples
 date: 2018-09-24T20:25:44+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32281
+guid: https://www.nikpro.com.au/?p=32281
 permalink: /react-forms-in-class-components-explained-with-examples/
 xyz_twap:
   - "1"
@@ -14,11 +14,11 @@ categories:
   - ES6
   - React
 ---
-Following these [series](http://www.nikpro.com.au/different-stateless-functional-component-in-react-explained/) of [articles](http://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) in React we will explain React forms  in this article. We will see how to manage React forms in [class](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) components.
+Following these [series](https://www.nikpro.com.au/different-stateless-functional-component-in-react-explained/) of [articles](https://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) in React we will explain React forms  in this article. We will see how to manage React forms in [class](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) components.
 
 ## React forms markup
 
-Typically the React forms markup looks like HTML code. But we know it will be rendered as a [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) code inside the component. Have a look at this example:
+Typically the React forms markup looks like HTML code. But we know it will be rendered as a [JSX](https://www.nikpro.com.au/explaining-jsx-with-some-examples/) code inside the component. Have a look at this example:
 
 
 ```
@@ -64,7 +64,7 @@ state = {
 
 Considerably I am using the React 16 ES6 version of state. You can also use a constructor for this which is less recommended as it makes it difficult to read and we need to take care of &#8220;this&#8221; in that case.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aureact-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="http://testgatsby.localreact-logo.jpeg 842w, http://testgatsby.localreact-logo-300x212.jpeg 300w, http://testgatsby.localreact-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> </figure> 
+<img src="https://www.nikpro.com.aureact-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="https://testgatsby.localreact-logo.jpeg 842w, https://testgatsby.localreact-logo-300x212.jpeg 300w, https://testgatsby.localreact-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> </figure> 
 
 <hr class="wp-block-separator" />
 
@@ -110,7 +110,7 @@ handleSubmit = (event) => {
 ```
 
 
-In addition [we use React.Fragment](http://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) to wrap our code instead of a div element to make sure a new tag element will not be our container. 
+In addition [we use React.Fragment](https://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) to wrap our code instead of a div element to make sure a new tag element will not be our container. 
 
 That is a complete component with a form. Of course we will have React forms with lots of inputs which you can check the rules in <a href="https://reactjs.org/docs/forms.html" target="_blank" rel="noopener noreferrer">React docs</a>. We will check out complex forms later on.
 

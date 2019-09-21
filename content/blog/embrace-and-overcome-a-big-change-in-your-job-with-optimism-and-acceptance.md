@@ -6,7 +6,7 @@ title: Embrace and Overcome a big change in your job with optimism and acceptanc
 date: 2019-06-03T20:49:46+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32762
+guid: https://www.nikpro.com.au/?p=32762
 permalink: /embrace-and-overcome-a-big-change-in-your-job-with-optimism-and-acceptance/
 xyz_twap:
   - "1"

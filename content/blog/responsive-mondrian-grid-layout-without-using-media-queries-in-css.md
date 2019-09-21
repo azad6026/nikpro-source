@@ -4,7 +4,7 @@ title: 'Responsive Mondrian grid  layout without using media queries in CSS'
 date: 2018-09-15T20:30:50+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32207
+guid: https://www.nikpro.com.au/?p=32207
 permalink: /responsive-mondrian-grid-layout-without-using-media-queries-in-css/
 xyz_twap:
   - "1"
@@ -14,11 +14,11 @@ categories:
   - CSS
   - CSS3
 ---
-Following the [previous article](http://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) we will have look at a responsive Mondrian grid layout without using media queries. As we have covered this layout in details in that post we will explain important part here to make sure all in clear.
+Following the [previous article](https://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) we will have look at a responsive Mondrian grid layout without using media queries. As we have covered this layout in details in that post we will explain important part here to make sure all in clear.
 
 ## The responsive Mondrain grid layout
 
-Basically I am using the same layout as the [non responsive](http://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) Mondrian layout. Same HTML markup as well. This is the pen I have created for this one:
+Basically I am using the same layout as the [non responsive](https://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) Mondrian layout. Same HTML markup as well. This is the pen I have created for this one:
 
 <p data-height="400" data-theme-id="0" data-slug-hash="KxBEOQ" data-default-tab="css,result" data-user="azad6026" data-pen-title="Responsive Mondrian Layout" class="codepen">
   See the Pen <a href="https://codepen.io/azad6026/pen/KxBEOQ/">Responsive Mondrian Layout</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -50,11 +50,11 @@ grid-auto-rows: 160px;
 
 As a result we are using auto-fit to specify number of columns. What <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeat" target="_blank" rel="noopener noreferrer">auto-fit</a> does is it fills the available space with as much items available and then it collapses the empty spaces.The good thing is all the space is always occupied by items and no unused space is left. 
 
-Moreover we use [minmax function](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) to calculate the columns. We specify the minimum width to 160px and by declaring 1fr ( 1 fraction) as the maximum width, we are telling the grid to give one fraction of available space to the rest of the items. More on this in the below. But I also need to explain that we use **grid-auto-rows **to specify the size of an implicitly-created grid row track.
+Moreover we use [minmax function](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) to calculate the columns. We specify the minimum width to 160px and by declaring 1fr ( 1 fraction) as the maximum width, we are telling the grid to give one fraction of available space to the rest of the items. More on this in the below. But I also need to explain that we use **grid-auto-rows **to specify the size of an implicitly-created grid row track.
 
 ### Responsive items in the grid
 
-Except for the third item which I increased the column width to **grid-column: span 3;** all the code is the same. So read on [here](http://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) for detailed explanation. But I need to explain how they fit in the layout now.
+Except for the third item which I increased the column width to **grid-column: span 3;** all the code is the same. So read on [here](https://www.nikpro.com.au/exciting-mondrian-grid-layout-explained-with-an-example-part-1/) for detailed explanation. But I need to explain how they fit in the layout now.
 
 In the non-responsive layout the items always take the space specified.  In the responsive layout thanks to auto-fit the first item takes its own specified columns first and then the rest of the space will be shared for the rest of the itemes by one fraction unit.
 

@@ -4,7 +4,7 @@ title: More on React components with examples
 date: 2018-08-10T21:40:25+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32007
+guid: https://www.nikpro.com.au/?p=32007
 permalink: /more-on-react-components-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/react-components.png
@@ -14,7 +14,7 @@ categories:
 tags:
   - react components
 ---
-We had a brief look at React components in [this article](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) before. In this one we will learn more on rendering React components and extracting them.
+We had a brief look at React components in [this article](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) before. In this one we will learn more on rendering React components and extracting them.
 
 ## Rendering React components
 
@@ -45,7 +45,7 @@ The function uses **props** as its argument that makes it a valid component.  
 
 ### Referring to other components
 
-As mentioned [here](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) we can compose component to other components in React. We can reuse the same component as many times as needed. We can use an app component to render the Welcome component as many times:
+As mentioned [here](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) we can compose component to other components in React. We can reuse the same component as many times as needed. We can use an app component to render the Welcome component as many times:
 
 
 ```
@@ -84,7 +84,7 @@ function Welcome(props) {
 ```
 
 
-And as we mentioned it is a valid component as it has props as its properties or argument. We could create exact same component in [ES6 way with a class:](http://www.nikpro.com.au/how-to-create-classes-in-javascript-es6/)
+And as we mentioned it is a valid component as it has props as its properties or argument. We could create exact same component in [ES6 way with a class:](https://www.nikpro.com.au/how-to-create-classes-in-javascript-es6/)
 
 
 ```

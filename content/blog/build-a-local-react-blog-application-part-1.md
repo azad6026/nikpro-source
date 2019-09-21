@@ -4,7 +4,7 @@ title: 'Build a local React blog application : part 1'
 date: 2018-10-10T13:47:59+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32375
+guid: https://www.nikpro.com.au/?p=32375
 permalink: /build-a-local-react-blog-application-part-1/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - local app
   - React blog application
 ---
-I wish to explain how to build a local React blog application in a series of articles. This will be a local version and afterwards we will build one with a realtime [API server](http://www.nikpro.com.au/a-simple-explanation-about-restful-api-and-how-to-use-it/).
+I wish to explain how to build a local React blog application in a series of articles. This will be a local version and afterwards we will build one with a realtime [API server](https://www.nikpro.com.au/a-simple-explanation-about-restful-api-and-how-to-use-it/).
 
 Generally in our local application we are able to add and remove posts from our app although the changes will not persist as there is no database involved. But we will learn the whole concept of a React application along the way. This is what we well talk about:
 
@@ -56,13 +56,13 @@ class App extends React.Component {
 ```
 
 
-Using [React.Fragment](http://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) we add our transparent wrapper and we render the Posts component. 
+Using [React.Fragment](https://www.nikpro.com.au/react-fragment-the-new-way-to-wrap-multiple-react-elements-explained/) we add our transparent wrapper and we render the Posts component. 
 
 Right here we can guess that **Post component** is a child of Posts component as we are not rendering it in our App component. And it should be as it is just a template that **shows an individual post** using **props**. We will explain that next.
 
 ### Components structure in React blog application
 
-Each application is a user interface. So we are actually building a UI and will set up our logic based on that. Therefor it is important to plan user interface before going into logic. Each UI is a [React component](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/).
+Each application is a user interface. So we are actually building a UI and will set up our logic based on that. Therefor it is important to plan user interface before going into logic. Each UI is a [React component](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/).
 
 In our React blog application and in **each post** we just have a title and a content blog entries with a button to delete the post. This is a component: **Post.**
 
@@ -98,7 +98,7 @@ const Post = props => (
 ```
 
 
-Firstly this component is a [functional](http://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component meaning it does not handle state and it is just a simple function that generates some JSX code which looks like HTML. It creates the UI for each post. In [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) we need to use className to implement classes as above. 
+Firstly this component is a [functional](https://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) component meaning it does not handle state and it is just a simple function that generates some JSX code which looks like HTML. It creates the UI for each post. In [JSX](https://www.nikpro.com.au/explaining-jsx-with-some-examples/) we need to use className to implement classes as above. 
 
 Secondly we that it uses **props to get information and show them in the UI.** What we need is an **id , title, content and delete ( as a method)** to be handled inside the parent.
 
@@ -153,7 +153,7 @@ state = {
 
 We have initialised our posts array with some dummy posts. But in real applications we will have it an empty array which will be populated by server data.
 
-Also we have individual post object to serve to Post component. To show the posts we need to loop through it [using map method](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) and populate the Post component with needed info:
+Also we have individual post object to serve to Post component. To show the posts we need to loop through it [using map method](https://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) and populate the Post component with needed info:
 
 
 ```
@@ -174,7 +174,7 @@ render() {
 ```
 
 
-What we do indie map method is we use index of each post as the id and we pass on post info [using spread syntax](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) :
+What we do indie map method is we use index of each post as the id and we pass on post info [using spread syntax](https://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) :
 
 
 ```
@@ -201,7 +201,7 @@ But that is more elegant and modern. We also pass on the id as the map key as Re
 
 In addition to title, id and content we also need to create a delete method. We will pass that on as props as well. 
 
-To delete an item we get the **post container index** ( in our app it is the article element) and **find that post inside posts array using [splice](http://www.nikpro.com.au/how-to-use-slice-and-splice-array-methods-in-javascript/) method**:
+To delete an item we get the **post container index** ( in our app it is the article element) and **find that post inside posts array using [splice](https://www.nikpro.com.au/how-to-use-slice-and-splice-array-methods-in-javascript/) method**:
 
 
 ```
@@ -223,7 +223,7 @@ As we are inside our parent component we need to update our posts right after th
 
 However note that I have taken a copy of the original posts array using spread syntax. Therefor the original array will not be mutated.
 
-Also as a side note to find the post we are clicking on its delete button I use **event.target** which [gives the information](http://www.nikpro.com.au/what-is-e-target-and-e-currenttarget-and-how-to-use-them/) about the button element and then using **parentNode** property we get its parent info which is the article element and then **getting the id as a unique value** to find out which article we want to delete.
+Also as a side note to find the post we are clicking on its delete button I use **event.target** which [gives the information](https://www.nikpro.com.au/what-is-e-target-and-e-currenttarget-and-how-to-use-them/) about the button element and then using **parentNode** property we get its parent info which is the article element and then **getting the id as a unique value** to find out which article we want to delete.
 
 Technically we now have all we need for Post component. Also we are able to show all the posts.
 

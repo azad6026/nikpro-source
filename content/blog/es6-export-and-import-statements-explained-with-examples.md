@@ -4,7 +4,7 @@ title: ES6 export and import statements explained with examples
 date: 2018-08-12T20:34:25+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32018
+guid: https://www.nikpro.com.au/?p=32018
 permalink: /es6-export-and-import-statements-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/import-export.png
@@ -15,7 +15,7 @@ tags:
   - export
   - import
 ---
-Continuing our [ES6 features](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in this post the ES6 export and import statements explained with examples. Using export and import this is how you can write code in one file and share that code so it can be used by another file or files.
+Continuing our [ES6 features](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) in this post the ES6 export and import statements explained with examples. Using export and import this is how you can write code in one file and share that code so it can be used by another file or files.
 
 ## The export statement
 
@@ -90,6 +90,6 @@ And the default export and import example:
 ```
 
 
-It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.<figure class="wp-block-image">
+It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auimport-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="http://testgatsby.localimport-export-image.jpeg 1276w, http://testgatsby.localimport-export-image-300x160.jpeg 300w, http://testgatsby.localimport-export-image-768x410.jpeg 768w, http://testgatsby.localimport-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> </figure>
+<img src="https://www.nikpro.com.auimport-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="https://testgatsby.localimport-export-image.jpeg 1276w, https://testgatsby.localimport-export-image-300x160.jpeg 300w, https://testgatsby.localimport-export-image-768x410.jpeg 768w, https://testgatsby.localimport-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> </figure>

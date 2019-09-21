@@ -4,7 +4,7 @@ title: The differences between var and let and const in Javascript
 date: 2018-06-23T22:22:22+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31708
+guid: https://www.nikpro.com.au/?p=31708
 permalink: /the-differences-between-var-and-let-and-const-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/var-let-const.jpeg
@@ -15,7 +15,7 @@ tags:
   - let
   - var
 ---
-In this post we take a look at the differences between var and let and const in [Javascript](http://www.nikpro.com.au/the-beauty-of-javascript/). There are confusions sometimes of where to use which and what are the best practices.
+In this post we take a look at the differences between var and let and const in [Javascript](https://www.nikpro.com.au/the-beauty-of-javascript/). There are confusions sometimes of where to use which and what are the best practices.
 
 To declare a variable we used to use **var** before ES6 introduced **let**. With var, you can declare a variable anywhere and redeclare it again meaning you can change its value by redeclaring it. Because var is function scope but let and **const** are block scope which means they scope inside curly braces.
 

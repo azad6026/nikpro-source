@@ -4,7 +4,7 @@ title: Disabling form inputs based on selection explained with an example
 date: 2018-08-11T21:11:27+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32011
+guid: https://www.nikpro.com.au/?p=32011
 permalink: /disabling-form-inputs-based-on-selection-explained-with-an-example/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/Disabling-form-inputs.png
@@ -56,7 +56,7 @@ tag.addEventListener('change', e => toggleFlavours(e.target.value))<br />
 ```
 
 
-Here arrow function has been [used](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) and made it simpler to write and maintain.We could make it better by getting the value separately :
+Here arrow function has been [used](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/) and made it simpler to write and maintain.We could make it better by getting the value separately :
 
 
 ```
@@ -82,7 +82,7 @@ value === 'no'
 
 In the function we check if the value is set to no or not. If it is then we set the **tag&#8217;s disabled attribute (**which by tag we mean the **input[name=flavour]** ) to true and will disable the checkboxes. And if the value from radio boxes is **not no** then the disabled attribute remains false.
 
-Finally in this function again arrow function has been used and also the ternary operator is been [used](http://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) instead of if statement here:
+Finally in this function again arrow function has been used and also the ternary operator is been [used](https://www.nikpro.com.au/the-ternary-operator-in-javascript-with-some-examples-explained/) instead of if statement here:
 
 
 ```

@@ -4,7 +4,7 @@ title: React component building blocks simple explanation part 1
 date: 2018-08-09T20:22:28+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32002
+guid: https://www.nikpro.com.au/?p=32002
 permalink: /react-component-building-blocks-simple-explanation-part-1/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/ract-cpmonent.png
@@ -17,7 +17,7 @@ tags:
   - state
 ---
 
-[React](http://www.nikpro.com.au/react-or-angular-how-much-it-matters/) component is like building block of a lego game. They have different use cases and <a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">each component</a> or here say block could be used in multiple sections or blocks.
+[React](https://www.nikpro.com.au/react-or-angular-how-much-it-matters/) component is like building block of a lego game. They have different use cases and <a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">each component</a> or here say block could be used in multiple sections or blocks.
 
 ## Create a React component
 

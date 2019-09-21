@@ -4,7 +4,7 @@ title: How to generate a mappable array in Javascript
 date: 2018-09-05T20:36:02+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32139
+guid: https://www.nikpro.com.au/?p=32139
 permalink: /how-to-generate-a-mappable-array-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/mappable-arrays-in-js.png
@@ -25,7 +25,7 @@ Basically we create arrays in the old way like the code below. If we want to cre
 const arr = [];<br />for (let i = 0; i < 100; i++) {<br />  arr[i] = i;<br />}
 ```
 
-Generally this is correct and works as expected. We will get an array of 100 numbers starting from 0 to 99. But as we learnt [about higher order functions and map](http://www.nikpro.com.au/javascript-es6-maps-with-examples/) and other ES6 [features](http://nikpro.com.au/category/es6) we also want to do this in ES6 way.
+Generally this is correct and works as expected. We will get an array of 100 numbers starting from 0 to 99. But as we learnt [about higher order functions and map](https://www.nikpro.com.au/javascript-es6-maps-with-examples/) and other ES6 [features](https://nikpro.com.au/category/es6) we also want to do this in ES6 way.
 
 ## Create a mappable array
 
@@ -43,7 +43,7 @@ const arr = Array(100).map((_, i) => i);
 
 As a result this is what we get:<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aumapable-array.png" alt="" class="wp-image-32140" srcset="http://testgatsby.localmapable-array.png 800w, http://testgatsby.localmapable-array-300x152.png 300w, http://testgatsby.localmapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </figure>
+<img src="https://www.nikpro.com.aumapable-array.png" alt="" class="wp-image-32140" srcset="https://testgatsby.localmapable-array.png 800w, https://testgatsby.localmapable-array-300x152.png 300w, https://testgatsby.localmapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </figure>
 
 Surprisingly we get undefined. As an explanation we know arrays are objects in practice. So the array like  **[&#8216;one&#8217;, &#8216;two&#8217;, &#8216;three&#8217;]** is equivalent to this object:
 
@@ -63,7 +63,7 @@ Therefor to make a mappable array we need to have keys even if the value is empt
 
 ## A truly mappable array
 
-The best way to do this is to [spread the array ](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/)out into an empty array. Then look at the result:
+The best way to do this is to [spread the array ](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/)out into an empty array. Then look at the result:
 
 ```
 const arr = [...Array(100)].map((_, i) => i);<br />console.log(arr[0]);<br />// 0

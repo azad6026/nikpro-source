@@ -4,7 +4,7 @@ title: How to connect to an API with Javascript in a real APP
 date: 2018-07-11T22:18:04+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31840
+guid: https://www.nikpro.com.au/?p=31840
 permalink: /how-to-connect-to-an-api-with-javascript-in-a-real-app/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/api-connect.jpg
@@ -89,7 +89,7 @@ Before looping through data we have an if staatement which checks if the API res
 
 if this become false, it throws an error. But if all is good, we will have our movie data which we take care of. I have explained what each line does:
 
-`// Loop through each movie object ( using <a href="http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a>)`
+`// Loop through each movie object ( using <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/" target="_blank" rel="noopener noreferrer">arrow functions</a>)`
 
 `data.forEach(movie => {`
 

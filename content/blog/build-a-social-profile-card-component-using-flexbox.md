@@ -4,7 +4,7 @@ title: Build a social profile card component using FlexBox
 date: 2018-11-03T20:59:14+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32511
+guid: https://www.nikpro.com.au/?p=32511
 permalink: /build-a-social-profile-card-component-using-flexbox/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ categories:
 tags:
   - align-items
 ---
-In this article we will demonstrate a social profile card component [built and designed using FlexBox.](http://www.nikpro.com.au/a-felxbox-dice-as-an-example-of-different-flexbox-properties/) The techniques look simple but it helps to improve our FlexBox knowledge to build more complex components. 
+In this article we will demonstrate a social profile card component [built and designed using FlexBox.](https://www.nikpro.com.au/a-felxbox-dice-as-an-example-of-different-flexbox-properties/) The techniques look simple but it helps to improve our FlexBox knowledge to build more complex components. 
 
 I got the idea from <a href="https://freshman.tech/flexbox/" target="_blank" rel="noreferrer noopener">freshman</a> and tweaked it for our needs. This is the pen for what we are going to explain:
 
@@ -56,9 +56,9 @@ As we see the div with **.photo** class is the main container. So we design its 
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32513" src="http://www.nikpro.com.aujustify.png" alt="" srcset="http://testgatsby.localjustify.png 512w, http://testgatsby.localjustify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> </figure> 
+<img class="wp-image-32513" src="https://www.nikpro.com.aujustify.png" alt="" srcset="https://testgatsby.localjustify.png 512w, https://testgatsby.localjustify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> </figure> 
 
-Firstly we change the direction of the [flex container](http://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/) to column so that the .**top** and .**middle** and  .**bottom** divs which are the immediate children of .photo div could be stacked on top of each other. Meaning we need to design them each in the location that their name suggest.
+Firstly we change the direction of the [flex container](https://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/) to column so that the .**top** and .**middle** and  .**bottom** divs which are the immediate children of .photo div could be stacked on top of each other. Meaning we need to design them each in the location that their name suggest.
 
 Also we justify the content with **space-between** so that they have space in between them only.
 
@@ -77,7 +77,7 @@ For the top bar we want the buttons to have even space in between them and look 
 
 Therefor we need to **justify the content** using **space-around** which makes sure buttons are positioned with space before, between, and after the lines.
 
-In addition we want the button content to be centred. We will use **align-items** property to nicely centre all the [items inside the flex container](http://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/):
+In addition we want the button content to be centred. We will use **align-items** property to nicely centre all the [items inside the flex container](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/):
 
 
 ```
@@ -88,7 +88,7 @@ In addition we want the button content to be centred. We will use **align-items*
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32514" src="http://www.nikpro.com.aualign5.png" alt="" srcset="http://testgatsby.localalign5.png 687w, http://testgatsby.localalign5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> </figure> 
+<img class="wp-image-32514" src="https://www.nikpro.com.aualign5.png" alt="" srcset="https://testgatsby.localalign5.png 687w, https://testgatsby.localalign5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> </figure> 
 
 ### The simple middle part
 

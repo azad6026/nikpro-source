@@ -4,7 +4,7 @@ title: Template literals vs Single and double quotes
 date: 2019-09-17T20:38:59+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31768
+guid: https://www.nikpro.com.au/?p=31768
 permalink: /template-literals-vs-single-and-double-quotes
 # featuredImage: ../../static/images/design-with-code.jpg
 featuredImage: ../../static/images/back-ticks-vs-single-double-quotes-string.png

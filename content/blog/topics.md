@@ -4,7 +4,7 @@ title: Topics
 date: 2018-05-03T11:32:28+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31511
+guid: https://www.nikpro.com.au/?p=31511
 permalink: /topics/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/design-with-code.jpg

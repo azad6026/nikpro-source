@@ -4,7 +4,7 @@ title: The CSS 4 writing mode property is explained with examples
 date: 2018-08-22T21:05:01+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32075
+guid: https://www.nikpro.com.au/?p=32075
 permalink: /the-css-4-writhing-mode-property-is-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/writing-mode.png
@@ -62,6 +62,6 @@ Check out this pen to get a better idea around this writing mode value:
 
 #### Side note around writing mode property
 
-The [SVG element](http://www.nikpro.com.au/what-is-svg-and-how-to-create-it-part-1/) has a **writing-mode** as an attribute. The `writing-mode` attribute specifies whether the initial inline-progression-direction for a [`text`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) element shall be left-to-right, right-to-left, or top-to-bottom. The `writing-mode` attribute applies only to **[`text`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) elements.**
+The [SVG element](https://www.nikpro.com.au/what-is-svg-and-how-to-create-it-part-1/) has a **writing-mode** as an attribute. The `writing-mode` attribute specifies whether the initial inline-progression-direction for a [`text`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) element shall be left-to-right, right-to-left, or top-to-bottom. The `writing-mode` attribute applies only to **[`text`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) elements.**
 
 Because of various type of writing in different languages and importance of visual design the writing mode property can be useful and essential in different types of designs. Therefor it is good to be aware of it. Thanks for reading.

@@ -4,7 +4,7 @@ title: Frustration and tiredness is your enemy to improve your skills and grow
 date: 2018-06-06T21:02:15+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31609
+guid: https://www.nikpro.com.au/?p=31609
 permalink: /frustration-and-tiredness-is-your-enemy-to-improve-your-skills-and-grow/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/grow.png

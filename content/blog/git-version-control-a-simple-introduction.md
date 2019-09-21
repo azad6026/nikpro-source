@@ -4,7 +4,7 @@ title: Git Version Control; A simple introduction
 date: 2018-06-27T21:24:58+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31738
+guid: https://www.nikpro.com.au/?p=31738
 permalink: /git-version-control-a-simple-introduction/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/git-version-control-system.jpg

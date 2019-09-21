@@ -4,7 +4,7 @@ title: Digital marketing, content writing or just blogging
 date: 2018-06-13T22:15:49+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31649
+guid: https://www.nikpro.com.au/?p=31649
 permalink: /digital-marketing-content-writing-or-just-blogging/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/digital-marketing2.jpg
@@ -13,7 +13,7 @@ categories:
 tags:
   - marketing
 ---
-In the online era these days, digital marketing is leading the way, coming from blogging and content writing. Whether you are a blogger of any kind that has some thoughts to share or a writer that writes content for people ( some people don&#8221;t call them writer but they are) or if you are a [SEO](http://www.nikpro.com.au/seo-is-digital-marketing-what-is-best-to-do/) person who happens to be knowledgable enough about writing so that you know how to write, you could potentially be in digital marketing. Or better say you could expand your business and have a name in digital era of marketing.
+In the online era these days, digital marketing is leading the way, coming from blogging and content writing. Whether you are a blogger of any kind that has some thoughts to share or a writer that writes content for people ( some people don&#8221;t call them writer but they are) or if you are a [SEO](https://www.nikpro.com.au/seo-is-digital-marketing-what-is-best-to-do/) person who happens to be knowledgable enough about writing so that you know how to write, you could potentially be in digital marketing. Or better say you could expand your business and have a name in digital era of marketing.
 
 No matter what you do in business and how you do it , it is hard to be successful without exposing yourself to the online world and the best way to do that is to write about is , around it and digitalise it.
 

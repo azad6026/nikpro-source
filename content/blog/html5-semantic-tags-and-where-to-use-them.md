@@ -4,7 +4,7 @@ title: HTML5 semantic tags and where to use them
 date: 2018-06-14T22:09:02+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31653
+guid: https://www.nikpro.com.au/?p=31653
 permalink: /html5-semantic-tags-and-where-to-use-them/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/design-with-code.jpg

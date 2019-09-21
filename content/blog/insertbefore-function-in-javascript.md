@@ -4,7 +4,7 @@ title: insertBefore Function in Javascript
 date: 2018-06-01T22:07:44+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31563
+guid: https://www.nikpro.com.au/?p=31563
 permalink: /insertbefore-function-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/slide2.jpg

@@ -4,7 +4,7 @@ title: Build responsive CSS grid layouts using minmax() with auto-fill and auto-
 date: 2018-07-19T21:30:25+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31880
+guid: https://www.nikpro.com.au/?p=31880
 permalink: /build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/
 enclosure:
   - |
@@ -29,7 +29,7 @@ tags:
   - minmax()
 ---
 
-Since introducing minmax() function, auto-fit and auto-fill properties , we could build responsive [CSS grid layouts](http://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) using minmax() with auto-fill and auto-fit without needing media queries.
+Since introducing minmax() function, auto-fit and auto-fill properties , we could build responsive [CSS grid layouts](https://www.nikpro.com.au/css-grid-layout-review-with-examples-part-1/) using minmax() with auto-fill and auto-fit without needing media queries.
 
 In this post we will look at some examples of how we can use them to produce a flexible layout which tends to be responsive as well.
 

@@ -4,7 +4,7 @@ title: Nested components in React; How to render a child component inside a pare
 date: 2018-11-06T20:48:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32518
+guid: https://www.nikpro.com.au/?p=32518
 permalink: /nested-components-in-react-how-to-render-a-child-component-inside-a-parent-componentpart-1/
 xyz_twap:
   - "1"
@@ -55,11 +55,11 @@ ReactDOM.render(
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32521" src="http://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="http://testgatsby.localpassdata.png 591w, http://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure>
+<img class="wp-image-32521" src="https://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="https://testgatsby.localpassdata.png 591w, https://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure>
 
 ## Extract components to nested components
 
-Now if we [extract our component](http://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) to two seperate component we could have nested components and see how to pass props in that case. Our NumberList Component will be changed and we extract it to two components:
+Now if we [extract our component](https://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) to two seperate component we could have nested components and see how to pass props in that case. Our NumberList Component will be changed and we extract it to two components:
 
 ```
 // Child component

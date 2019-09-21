@@ -4,7 +4,7 @@ title: The minmax() function in CSS grid explained with examples
 date: 2018-09-21T20:48:39+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32258
+guid: https://www.nikpro.com.au/?p=32258
 permalink: /the-minmax-function-in-css-grid-explained-with-examples/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - grid layout
   - minmax() function
 ---
-We will explain the minmax() function in CSS grid with examples in this article.We have seen in in some [previous articles](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) about CSS grid before. But it is essential to have a good understanding of it.
+We will explain the minmax() function in CSS grid with examples in this article.We have seen in in some [previous articles](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) about CSS grid before. But it is essential to have a good understanding of it.
 
 ## The minmax() function syntax
 
@@ -58,7 +58,7 @@ Moreover we can use percentage to calculate the width in minmax() function:
 Here the first column has a maximum width of 50% of the container and will not get smaller than 200px.  
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auminmax-example.jpg" alt="" class="wp-image-32261" srcset="http://testgatsby.localminmax-example.jpg 800w, http://testgatsby.localminmax-example-300x192.jpg 300w, http://testgatsby.localminmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption></figure> 
+<img src="https://www.nikpro.com.auminmax-example.jpg" alt="" class="wp-image-32261" srcset="https://testgatsby.localminmax-example.jpg 800w, https://testgatsby.localminmax-example-300x192.jpg 300w, https://testgatsby.localminmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption></figure> 
 
 #### **min-content and max-content**
 
@@ -78,7 +78,7 @@ The second column has min and max value as auto. Auto as a maximum, is equivalen
 
 #### A responsive grid without media queries
 
-As explained in [Mondrian layout](http://www.nikpro.com.au/responsive-mondrian-grid-layout-without-using-media-queries-in-css/) and grid layouts [with minmax() function](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) we can use it to build responsive grid layouts:
+As explained in [Mondrian layout](https://www.nikpro.com.au/responsive-mondrian-grid-layout-without-using-media-queries-in-css/) and grid layouts [with minmax() function](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) we can use it to build responsive grid layouts:
 
 
 ```

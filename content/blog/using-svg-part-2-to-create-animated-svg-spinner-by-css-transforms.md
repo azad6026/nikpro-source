@@ -4,7 +4,7 @@ title: Using SVG (part 2) to create animated SVG spinner by CSS transforms
 date: 2018-08-23T21:44:11+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32080
+guid: https://www.nikpro.com.au/?p=32080
 permalink: /using-svg-part-2-to-create-animated-svg-spinner-by-css-transforms/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/animated-SVg.jpg
@@ -16,7 +16,7 @@ tags:
   - stroke
   - SVG
 ---
-Following [the introduction about SVG](http://www.nikpro.com.au/what-is-svg-and-how-to-create-it-part-1/), here we explain an example using SVG to create animated SVG spinner by [CSS transforms](http://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/).
+Following [the introduction about SVG](https://www.nikpro.com.au/what-is-svg-and-how-to-create-it-part-1/), here we explain an example using SVG to create animated SVG spinner by [CSS transforms](https://www.nikpro.com.au/manipulate-elements-visually-with-css-transform-explained-with-examples/).
 
 ## The animated SVG spinner
 
@@ -28,7 +28,7 @@ This is the animated SVG spinner code which uses a few tags:
 
 
 ```
-<svg class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> <!-- 1 -->
+<svg class="spinner" viewBox="0 0 66 66" xmlns="https://www.w3.org/2000/svg"> <!-- 1 -->
 
   <circle class="path spinner-border" cx="33" cy="33" r="31" stroke="url(#gradient)"></circle> <!-- 2 -->
 

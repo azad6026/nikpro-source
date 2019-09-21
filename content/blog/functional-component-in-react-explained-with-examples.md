@@ -4,7 +4,7 @@ title: Functional component in React explained with examples
 date: 2018-08-28T21:39:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32105
+guid: https://www.nikpro.com.au/?p=32105
 permalink: /functional-component-in-react-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/functional-component.png
@@ -15,7 +15,7 @@ tags:
   - ES6 features
   - functional component
 ---
-We will take a look at functional component in React with examples in this article. Previously we have talked about components in React in [previous](http://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) [articles](http://www.nikpro.com.au/more-on-react-components-with-examples/) . Therefor we want to a bit focus on functional component in React which are called stateless component.
+We will take a look at functional component in React with examples in this article. Previously we have talked about components in React in [previous](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) [articles](https://www.nikpro.com.au/more-on-react-components-with-examples/) . Therefor we want to a bit focus on functional component in React which are called stateless component.
 
 ## Functional component in React explained
 
@@ -23,7 +23,7 @@ Generally functional component in React are called stateless components. The rea
 
 Typically we well know that state should be defined inside a class component and in its constructor.
 
-In a modern way though we are using ES6 [default parameters](http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) without constructor to define states. 
+In a modern way though we are using ES6 [default parameters](https://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) without constructor to define states. 
 
 Therefor in a functional component in React we only use props. Besides we use the data received through props from the stateful component.
 
@@ -89,7 +89,7 @@ const Username = function(props) {
 ```
 
 
-Alternatively which is a better way we could [use destructuring](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) in our function
+Alternatively which is a better way we could [use destructuring](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) in our function
 
 
 ```

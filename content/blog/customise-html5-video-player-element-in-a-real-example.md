@@ -4,7 +4,7 @@ title: Customise HTML5 video player element in a real example
 date: 2018-07-30T21:43:46+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31938
+guid: https://www.nikpro.com.au/?p=31938
 permalink: /customise-html5-video-player-element-in-a-real-example/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/htnl5-video.jpg
@@ -24,7 +24,7 @@ We will customise the HTML5 video player tag in this article with a real example
 
 
 
-We will learn how to play/pause the video with buttons. How to skip the video back and forth and how to use the progress bar to move it forward and backward. There is a lot going on thanks to <a href="http://wesbos.com" target="_blank" rel="noopener noreferrer">wes bos</a> whom I got the idea from to put it in an article.
+We will learn how to play/pause the video with buttons. How to skip the video back and forth and how to use the progress bar to move it forward and backward. There is a lot going on thanks to <a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">wes bos</a> whom I got the idea from to put it in an article.
 
 ## The HTML video player
 
@@ -49,7 +49,7 @@ The range inputs are used for measuring the volume and playbackRate based on our
 
 The progress bar is just a div tag we styled to use and it is used to move the video forth and back and even drag it along the bar.
 
-The skip buttons has a data-skip attribute to manage the skip time for back and forth skipping. (<a href="http://www.nikpro.com.au/create-a-html5-canvas-to-start-drawing-like-windows-paint/" target="_blank" rel="noopener noreferrer">This</a> is an example of dataset attributes as well). Lets jump to Javascript code.
+The skip buttons has a data-skip attribute to manage the skip time for back and forth skipping. (<a href="https://www.nikpro.com.au/create-a-html5-canvas-to-start-drawing-like-windows-paint/" target="_blank" rel="noopener noreferrer">This</a> is an example of dataset attributes as well). Lets jump to Javascript code.
 
 ## Javascript code
 
@@ -181,7 +181,7 @@ And in Javascript we need to set the flex-basis property to that amount as perce
 ``  progressBar.style.flexBasis = `${percent}%`;``  
 `}`
 
-Then we update the progressBar accordingly. We used ES6 <a href="http://www.nikpro.com.au/template-literals-in-js6-explained/" target="_blank" rel="noopener noreferrer">template literals</a> to update the flex-basis property in the second line. Also if we use the skip buttons the progress bar updates itself too.
+Then we update the progressBar accordingly. We used ES6 <a href="https://www.nikpro.com.au/template-literals-in-js6-explained/" target="_blank" rel="noopener noreferrer">template literals</a> to update the flex-basis property in the second line. Also if we use the skip buttons the progress bar updates itself too.
 
 #### The scrub
 

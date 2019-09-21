@@ -4,7 +4,7 @@ title: "Flexbox explained in a simple way with examples: Part 1"
 date: 2018-06-25T20:52:14+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31721
+guid: https://www.nikpro.com.au/?p=31721
 permalink: /flexbox-explained-in-a-simple-way-with-examples-part-1/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css-flexbox-2.png

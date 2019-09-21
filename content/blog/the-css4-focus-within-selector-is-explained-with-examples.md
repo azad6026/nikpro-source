@@ -4,7 +4,7 @@ title: The CSS4 :focus-within selector is explained with examples
 date: 2018-07-31T19:50:15+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31945
+guid: https://www.nikpro.com.au/?p=31945
 permalink: /the-css4-focus-within-selector-is-explained-with-examples/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/focus-within.png
@@ -16,7 +16,7 @@ tags:
   - focus
   - focus-within
 ---
-The CSS4 :focus-within selector is an exciting CSS level 4 selector. It is a pseudo class ( like [nth-child](http://www.nikpro.com.au/the-css-nth-child-selector-explained-with-examples/)) that represents an element that receives focus or it has a child element that receives focus. It actually asks the browser to apply a style to a parent when any of its children are in focus. 
+The CSS4 :focus-within selector is an exciting CSS level 4 selector. It is a pseudo class ( like [nth-child](https://www.nikpro.com.au/the-css-nth-child-selector-explained-with-examples/)) that represents an element that receives focus or it has a child element that receives focus. It actually asks the browser to apply a style to a parent when any of its children are in focus. 
 
 Also it could be used in dropdown menus when we do not want to lose focus or in tables or in forms when user focuses on its inputs. Or simply any element that has children and needs its focus to be taken care of. We will take a look at some examples.
 

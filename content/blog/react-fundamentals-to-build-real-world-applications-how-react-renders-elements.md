@@ -4,7 +4,7 @@ title: "React fundamentals to build real world applications: how React renders e
 date: 2018-12-31T20:14:06+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32623
+guid: https://www.nikpro.com.au/?p=32623
 permalink: /react-fundamentals-to-build-real-world-applications-how-react-renders-elements/
 xyz_twap:
   - "1"
@@ -70,7 +70,7 @@ If we needed seperate content we could also have an array of children:
 const reactElement = React.createElement('h2',{className :  'reactCalss', children: ['Hello There, ','I am created by React createElement']});
 ```
 
-But we can make the code simpler and more readable using [JSX](http://www.nikpro.com.au/explaining-jsx-with-some-examples/) which empowers our React application.
+But we can make the code simpler and more readable using [JSX](https://www.nikpro.com.au/explaining-jsx-with-some-examples/) which empowers our React application.
 
 ## Rendering elements using JSX in React
 
@@ -84,7 +84,7 @@ We have used two approaches here. In the first element we put the content as {co
 
 In the second element we called an arrow function to put the content in as we can use any Javascript code inside a JSX code. Pretty awesome.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aujsx-react-1024x538.png" alt="jsx react" class="wp-image-32627" srcset="http://testgatsby.localjsx-react-1024x538.png 1024w, http://testgatsby.localjsx-react-300x158.png 300w, http://testgatsby.localjsx-react-768x403.png 768w, http://testgatsby.localjsx-react.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>render elements in React</figcaption></figure>
+<img src="https://www.nikpro.com.aujsx-react-1024x538.png" alt="jsx react" class="wp-image-32627" srcset="https://testgatsby.localjsx-react-1024x538.png 1024w, https://testgatsby.localjsx-react-300x158.png 300w, https://testgatsby.localjsx-react-768x403.png 768w, https://testgatsby.localjsx-react.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>render elements in React</figcaption></figure>
 
 ## Rendering elements using props in React
 

@@ -4,7 +4,7 @@ title: 'Using ES6 features in React application codes: Spread operator'
 date: 2018-08-26T21:24:59+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32097
+guid: https://www.nikpro.com.au/?p=32097
 permalink: /using-es6-features-in-react-application-codes-spread-operator/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/spread-operator-in-react.jpg
@@ -12,7 +12,7 @@ categories:
   - ES6
   - React
 ---
-We will explain using ES6 spread operator in React following the [previous article](http://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) about destructing. Spread operators are very handy when it comes to mutating props and changing states. We will see some examples.
+We will explain using ES6 spread operator in React following the [previous article](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/) about destructing. Spread operators are very handy when it comes to mutating props and changing states. We will see some examples.
 
 ## Using spread operator in React component state
 
@@ -36,7 +36,7 @@ Therefor we actually using a copy of the ingredients and work on that and do not
 
 ## Using spread operator in React props
 
-Basically the important usage of spread operator is to get a copy of an array and pass it as a new array. If you already have `props` as an object, and you want to pass it in JSX, you can use `...` as a “spread” operator to pass the whole props object. We normally create a [functional component](http://www.nikpro.com.au/more-on-react-components-with-examples/) like this:
+Basically the important usage of spread operator is to get a copy of an array and pass it as a new array. If you already have `props` as an object, and you want to pass it in JSX, you can use `...` as a “spread” operator to pass the whole props object. We normally create a [functional component](https://www.nikpro.com.au/more-on-react-components-with-examples/) like this:
 
 
 ```

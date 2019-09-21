@@ -4,7 +4,7 @@ title: You should plan ahead even when you are certain about it
 date: 2018-09-04T20:37:30+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32134
+guid: https://www.nikpro.com.au/?p=32134
 permalink: /you-should-plan-ahead-even-when-you-are-certain-about-it/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/design-with-code.jpg

@@ -4,7 +4,7 @@ title: "Perfect understanding of align-items, align-content and justify-content 
 date: 2018-11-17T20:55:44+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32538
+guid: https://www.nikpro.com.au/?p=32538
 permalink: /perfect-understanding-of-align-items-align-content-and-justify-content-in-flexbox-with-examples-part-1/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - flexbox
 ---
 
-In this article we will be exploring&nbsp;align-content, align-items and justify-content properties in [FlexBox](http://www.nikpro.com.au/a-quick-review-of-how-to-centre-elements-or-blocks-using-flexbox-in-css/). Then we compare them and will understand their differences and similarities. I have created a few pens to demonstrate the task as well.&nbsp;
+In this article we will be exploring&nbsp;align-content, align-items and justify-content properties in [FlexBox](https://www.nikpro.com.au/a-quick-review-of-how-to-centre-elements-or-blocks-using-flexbox-in-css/). Then we compare them and will understand their differences and similarities. I have created a few pens to demonstrate the task as well.&nbsp;
 
 ## align-content, align-items and justify-content similarities
 
@@ -93,6 +93,6 @@ We see that center value centres items in the vertical horizontal axis this time
 
 Also **baseline** value aligns all baseline (starting) of text in all boxes at the very **same point from the left which is the cross axis( horizontal)**. Flex-start and flex-end align items in the **start or end** of the container as expected in the **cross axis**.
 
-In the [next article](http://www.nikpro.com.au/perfect-understanding-of-align-items-align-content-and-justify-content-in-flexbox-with-examples-part-1/) we will learn about justify-content property and align-content property now that we know all about align-items property.
+In the [next article](https://www.nikpro.com.au/perfect-understanding-of-align-items-align-content-and-justify-content-in-flexbox-with-examples-part-1/) we will learn about justify-content property and align-content property now that we know all about align-items property.
 
 Thank you for reading.

@@ -4,7 +4,7 @@ title: 'Some useful HTML attribute and elements ;meter keyboard contenteditable 
 date: 2018-07-29T21:46:23+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31935
+guid: https://www.nikpro.com.au/?p=31935
 permalink: /some-useful-html-attribute-and-elements-meter-keyboard-contenteditable/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/html-elements.jpeg
@@ -18,7 +18,7 @@ tags:
   - meter
   - q element
 ---
-Some useful HTML element and attribute like <a href="http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/" target="_blank" rel="noopener noreferrer">meter</a> are covered in this post. Writing HTML markup everyday might become very ordinary and repeatable that we might not explore and learn more about useful available elements and attributes that we might want to use at some point. Lets check some of them. This is the pen I created for demonstration.
+Some useful HTML element and attribute like <a href="https://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/" target="_blank" rel="noopener noreferrer">meter</a> are covered in this post. Writing HTML markup everyday might become very ordinary and repeatable that we might not explore and learn more about useful available elements and attributes that we might want to use at some point. Lets check some of them. This is the pen I created for demonstration.
 
 <p class="codepen" data-height="500" data-theme-id="0" data-slug-hash="ajVKqa" data-default-tab="html,result" data-user="azad6026" data-pen-title="Some HTML elements and attributes">
   See the Pen <a href="https://codepen.io/azad6026/pen/ajVKqa/">Some HTML elements and attributes</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.

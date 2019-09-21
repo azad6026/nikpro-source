@@ -4,7 +4,7 @@ title: Create a HTML5 canvas to start drawing like windows paint
 date: 2018-07-20T22:07:17+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31884
+guid: https://www.nikpro.com.au/?p=31884
 permalink: /create-a-html5-canvas-to-start-drawing-like-windows-paint/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/html5-canvas.jpg
@@ -16,7 +16,7 @@ tags:
   - draw
   - 'HTML% canvas'
 ---
-In this post we will create a HTML5 canvas element to start drawing. We will learn about canvas behaviour in action. Added in HTML5 like [many other tags](http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/), the **HTML <a style="text-decoration: none; color: #3f87a6; margin: 0px; padding: 0px; border: 0px;" title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"><canvas></a> element** can be used to draw graphics via scripting in JavaScript.  We sill create an example based on a <a href="http://www.wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> course example and will explain the code in details. 
+In this post we will create a HTML5 canvas element to start drawing. We will learn about canvas behaviour in action. Added in HTML5 like [many other tags](https://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/), the **HTML <a style="text-decoration: none; color: #3f87a6; margin: 0px; padding: 0px; border: 0px;" title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"><canvas></a> element** can be used to draw graphics via scripting in JavaScript.  We sill create an example based on a <a href="https://www.wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> course example and will explain the code in details. 
 
 This is what we are going to explain:
 
@@ -93,7 +93,7 @@ Before explaining this section I remind about how each element have lots of prop
 
 Now we specify what we need to happen when the mouse is interacting with the canvas. We have four events as mentioned above and we will specify each as below:
 
-`// for mousedown event , we need to update our flag for drawing and set it to true which means we want to start drawing.``we  also need to update our ending points here. We use <a href="http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/" target="_blank" rel="noopener noreferrer">ES6 syntax</a> to update them all in one line.`
+`// for mousedown event , we need to update our flag for drawing and set it to true which means we want to start drawing.``we  also need to update our ending points here. We use <a href="https://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/" target="_blank" rel="noopener noreferrer">ES6 syntax</a> to update them all in one line.`
 
 `canvas.addEventListener('mousedown', (e) => {`  
 `isDrawing = true;`  

@@ -4,7 +4,7 @@ title: "Modern techniques for image hover over effects using CSS transition and 
 date: 2018-10-23T11:48:30+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32446
+guid: https://www.nikpro.com.au/?p=32446
 permalink: /modern-techniques-for-image-hover-over-effects-using-css-transition-and-animation-part-1/
 xyz_twap:
   - "1"
@@ -19,7 +19,7 @@ tags:
   - transition
 ---
 
-Using CSS[transitions](http://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/) along with [animation ](http://www.nikpro.com.au/learn-how-to-use-css-animation-using-keyframes-with-examples/)there are tons of techniques we could use to create modern image hover over effects. In this article we will have a look at some beautiful yet simple and elegant ways of having these nice effects. Specially when some captions are involved.
+Using CSS[transitions](https://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/) along with [animation ](https://www.nikpro.com.au/learn-how-to-use-css-animation-using-keyframes-with-examples/)there are tons of techniques we could use to create modern image hover over effects. In this article we will have a look at some beautiful yet simple and elegant ways of having these nice effects. Specially when some captions are involved.
 
 ## #1: Image hover over with flying caption section
 
@@ -61,7 +61,7 @@ Firstly the top image should be hovered over so that it fades out and the second
 .simple img{<br />-webkit-transition: opacity 4s ease-in-out;<br />  -moz-transition: opacity 4s ease-in-out;<br />  -o-transition: opacity 4s ease-in-out;<br />  transition: opacity 4s ease-in-out;<br />}<br />// Changing the opacity to see the other image<br />.simple img.top:hover {<br />  opacity:0;<br />}
 ```
 
-Secondly we have the same images that animate in a timeframe. It looks like a very simple [gallery](http://www.nikpro.com.au/how-to-build-a-simple-gallery-using-flexbox-and-javascript/) or slider that we have created just by simple CSS. Here is the animation with four transition steps defined into it:
+Secondly we have the same images that animate in a timeframe. It looks like a very simple [gallery](https://www.nikpro.com.au/how-to-build-a-simple-gallery-using-flexbox-and-javascript/) or slider that we have created just by simple CSS. Here is the animation with four transition steps defined into it:
 
 ```
 @keyframes FadeInOut {<br />  0% {<br />  opacity:1;<br />}<br />45% {<br />opacity:1;<br />}<br />55% {<br />opacity:0;<br />}<br />100% {<br />opacity:0;<br />}<br />}

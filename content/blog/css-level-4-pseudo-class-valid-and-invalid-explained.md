@@ -4,7 +4,7 @@ title: CSS level 4 pseudo-class :valid and :invalid explained
 date: 2018-08-17T21:35:02+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32041
+guid: https://www.nikpro.com.au/?p=32041
 permalink: /css-level-4-pseudo-class-valid-and-invalid-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/css4-invalid-valid.png
@@ -15,7 +15,7 @@ tags:
   - pseudo-class :invalid
   - pseudo-class :valid
 ---
-In [CSS level 4 pseudo-class](http://www.nikpro.com.au/the-css4-focus-within-selector-is-explained-with-examples/) **:valid and pseudo-class :invalid** have been introduced to show if a form&#8217;s input content is valid or not.
+In [CSS level 4 pseudo-class](https://www.nikpro.com.au/the-css4-focus-within-selector-is-explained-with-examples/) **:valid and pseudo-class :invalid** have been introduced to show if a form&#8217;s input content is valid or not.
 
 ### The pseudo-class :valid 
 

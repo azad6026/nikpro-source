@@ -4,7 +4,7 @@ title: Use FlexBox or Grid in a simple layout design with reordering elements
 date: 2019-02-18T21:37:54+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32697
+guid: https://www.nikpro.com.au/?p=32697
 permalink: /use-flexbox-or-grid-in-a-simple-layout-design-with-reordering-elements/
 xyz_twap:
   - "1"
@@ -22,7 +22,7 @@ We all heard about <a rel="noreferrer noopener" aria-label="where to use FlexBox
 
 One of the many use cases and real word examples is when we need to change the order of the elements in the design.
 
-We will have a look at the same simple design using [FlexBox](http://www.nikpro.com.au/create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/) and [Grid](http://www.nikpro.com.au/compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/) system to implement this and compare the solutions.<figure class="wp-block-image">
+We will have a look at the same simple design using [FlexBox](https://www.nikpro.com.au/create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/) and [Grid](https://www.nikpro.com.au/compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/) system to implement this and compare the solutions.<figure class="wp-block-image">
 
 ![FlexBox – Grid](/images/flexbox-grid-1024x260.png)
 

@@ -4,7 +4,7 @@ title: Difference between overflow-wrap and word-break with examples
 date: 2018-11-02T21:33:26+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32503
+guid: https://www.nikpro.com.au/?p=32503
 permalink: /difference-between-overflow-wrap-and-word-break-with-examples/
 xyz_twap:
   - "1"

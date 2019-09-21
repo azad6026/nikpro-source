@@ -4,7 +4,7 @@ title: 'Using ES6 features in React  application codes : Destructuring'
 date: 2018-08-25T21:10:25+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32092
+guid: https://www.nikpro.com.au/?p=32092
 permalink: /using-es6-destructuring-in-react-application-codes/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/react-destructuring.png
@@ -12,11 +12,11 @@ categories:
   - ES6
   - React
 ---
-Using [ES6](http://www.nikpro.com.au/category/es6) destructuring in React application codes make the life easier. Because the code will be more maintainable and readable and of course looks modern.In this article I will show some examples of implementing ES6 destructuring in React.
+Using [ES6](https://www.nikpro.com.au/category/es6) destructuring in React application codes make the life easier. Because the code will be more maintainable and readable and of course looks modern.In this article I will show some examples of implementing ES6 destructuring in React.
 
 ## ES6 destructuring in React
 
-As we learnt destructuring in ES6 [in this article](http://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) we can use it to initialise props or to structure our rendered templates. Remember this from old way:
+As we learnt destructuring in ES6 [in this article](https://www.nikpro.com.au/default-parameters-in-javascript-es6-explained/) we can use it to initialise props or to structure our rendered templates. Remember this from old way:
 
 
 ```
@@ -32,7 +32,7 @@ let object = { one: 1, two: 2, three: 3 }<br />let { one, two, three } = object;
 ```
 
 
-You can easily read the code and predict what it does. Now lets have a look at a React component and use ES6 destructuring in React code. This is a [functional component](http://www.nikpro.com.au/more-on-react-components-with-examples/) in React:
+You can easily read the code and predict what it does. Now lets have a look at a React component and use ES6 destructuring in React code. This is a [functional component](https://www.nikpro.com.au/more-on-react-components-with-examples/) in React:
 
 
 ```

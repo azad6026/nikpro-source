@@ -4,7 +4,7 @@ title: The CSS shape properties using function values explained with examples pa
 date: 2018-09-11T21:27:41+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32185
+guid: https://www.nikpro.com.au/?p=32185
 permalink: /the-css-shape-properties-using-function-values-explained-with-examples-part-1/
 xyz_twap:
   - "1"
@@ -48,7 +48,7 @@ shape-outside: ellipse(100px 200px at 50% 50%);<br />clip-path: ellipse(100px 20
 ```
 
 
-Therefor [the clip-path](http://www.nikpro.com.au/css-clip-path-property-basic-concept-explained-with-examples/) makes the oval shape and we use the shape-outside property as one of the CSS shape properties to shape the container as expected.
+Therefor [the clip-path](https://www.nikpro.com.au/css-clip-path-property-basic-concept-explained-with-examples/) makes the oval shape and we use the shape-outside property as one of the CSS shape properties to shape the container as expected.
 
 ## CSS shape properties polygon() value
 

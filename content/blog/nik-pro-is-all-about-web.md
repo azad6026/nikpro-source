@@ -4,7 +4,7 @@ title: NIK PRO is all about web
 date: 2018-05-01T15:16:20+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31503
+guid: https://www.nikpro.com.au/?p=31503
 permalink: /nik-pro-is-all-about-web/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/never-stop-learning.png

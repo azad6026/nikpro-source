@@ -4,7 +4,7 @@ title: How SEO works and how keywords matter in 2018
 date: 2018-06-20T21:28:16+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31688
+guid: https://www.nikpro.com.au/?p=31688
 permalink: /how-seo-works-and-how-keywords-matter-in-2018/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/seo-matters.jpg
@@ -14,7 +14,7 @@ categories:
 tags:
   - keywords
 ---
-I was looking through some articles around [SEO](http://www.nikpro.com.au/digital-marketing-content-writing-or-just-blogging/) to see how SEO works and how keywords matter. Keywords can be described as the topic for your content. They are also the words or phrases people type into search engines. Placement and density are the two key factors to know about here. So where to use your keywords will effect the SEO rank of your post. And also density is how many times you have used that keyword.
+I was looking through some articles around [SEO](https://www.nikpro.com.au/digital-marketing-content-writing-or-just-blogging/) to see how SEO works and how keywords matter. Keywords can be described as the topic for your content. They are also the words or phrases people type into search engines. Placement and density are the two key factors to know about here. So where to use your keywords will effect the SEO rank of your post. And also density is how many times you have used that keyword.
 
 ## Keywords
 

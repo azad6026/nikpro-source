@@ -4,7 +4,7 @@ title: A simple explanation about Restful API and how to use it
 date: 2018-07-18T22:20:02+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31875
+guid: https://www.nikpro.com.au/?p=31875
 permalink: /a-simple-explanation-about-restful-api-and-how-to-use-it/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/restap.png
@@ -16,7 +16,7 @@ tags:
   - rest api
 ---
 
-Continuing our talk about API&#8217;s from [this post](http://www.nikpro.com.au/how-to-connect-to-an-api-with-javascript-in-a-real-app/), we will have a deeper understanding about Rest API in this article.
+Continuing our talk about API&#8217;s from [this post](https://www.nikpro.com.au/how-to-connect-to-an-api-with-javascript-in-a-real-app/), we will have a deeper understanding about Rest API in this article.
 
 If you’ve thought about getting data from another source on the internet, such as Twitter or Github, you need to know about Restful API and how to use them.
 

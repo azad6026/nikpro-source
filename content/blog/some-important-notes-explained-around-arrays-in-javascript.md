@@ -4,7 +4,7 @@ title: Some important notes explained around arrays in Javascript
 date: 2018-09-23T20:24:35+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32272
+guid: https://www.nikpro.com.au/?p=32272
 permalink: /some-important-notes-explained-around-arrays-in-javascript/
 xyz_twap:
   - "1"
@@ -18,7 +18,7 @@ tags:
   - shift
   - unshift
 ---
-In this article I will show some important notes around arrays in Javascript. We will talk about [some methods](http://www.nikpro.com.au/how-to-generate-a-mappable-array-in-javascript/) and tips of how to manipulate arrays.
+In this article I will show some important notes around arrays in Javascript. We will talk about [some methods](https://www.nikpro.com.au/how-to-generate-a-mappable-array-in-javascript/) and tips of how to manipulate arrays.
 
 ### Avoid new Array(), Use [] instead
 
@@ -100,7 +100,7 @@ The `shift` operation must do 3 things:
   2. Move all elements to the left, renumber them from the index `1` to ``, from `2` to `1` and so on.
   3. Update the `length` property of the array.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.auarray-shift.png" alt="" class="wp-image-32275" srcset="http://testgatsby.localarray-shift.png 593w, http://testgatsby.localarray-shift-300x72.png 300w" sizes="(max-width: 593px) 100vw, 593px" /> <figcaption><a href="https://javascript.info/array#methods-pop-push-shift-unshift" target="_blank" rel="noopener noreferrer">array shift</a></figcaption></figure> 
+<img src="https://www.nikpro.com.auarray-shift.png" alt="" class="wp-image-32275" srcset="https://testgatsby.localarray-shift.png 593w, https://testgatsby.localarray-shift-300x72.png 300w" sizes="(max-width: 593px) 100vw, 593px" /> <figcaption><a href="https://javascript.info/array#methods-pop-push-shift-unshift" target="_blank" rel="noopener noreferrer">array shift</a></figcaption></figure> 
 
 Therefor the more elements in the array, the more time to move them, more in-memory operations.
 

@@ -4,7 +4,7 @@ title: 'Event handlers and Event Listeners in Javascript: Part 1'
 date: 2018-07-02T22:20:28+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31774
+guid: https://www.nikpro.com.au/?p=31774
 permalink: /event-handlers-and-event-listeners-in-javascript-part-1/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/event-listener-three-actors-model.png
@@ -106,7 +106,7 @@ Separating your programming logic from your content also makes your site more fr
 
 ## <span class="highlight-span">addEventListener() and removeEventListener()</span> {#addEventListener()_and_removeEventListener().highlight-spanned}
 
-This is [the newer approach](http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) that is quiet similar to event handler approach but with a different syntax:
+This is [the newer approach](https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/) that is quiet similar to event handler approach but with a different syntax:
 
 <pre class="brush: js line-numbers  language-js"><code class=" language-js"><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>

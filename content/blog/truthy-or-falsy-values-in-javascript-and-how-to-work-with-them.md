@@ -4,7 +4,7 @@ title: Truthy or Falsy values in Javascript and how to work with them?
 date: 2018-07-15T17:35:41+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31861
+guid: https://www.nikpro.com.au/?p=31861
 permalink: /truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/truthy-falsy.jpg
@@ -14,7 +14,7 @@ tags:
   - falsy values
   - truhy values
 ---
-[JavaScript variables](http://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript/) are loosely/dynamically typed and the language doesn’t care how a value is declared or changed. A **truthy** or **falsy** value is a value that translates to ture/false when evaluated in a [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean "Boolean: In computer science, a Boolean is a logical data type that can have only the values true or false."){.glossaryLink} context. Examples of _falsy_ values in JavaScript (which translate to false and thus _bypass_ the `if`block):
+[JavaScript variables](https://www.nikpro.com.au/the-differences-between-var-and-let-and-const-in-javascript/) are loosely/dynamically typed and the language doesn’t care how a value is declared or changed. A **truthy** or **falsy** value is a value that translates to ture/false when evaluated in a [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean "Boolean: In computer science, a Boolean is a logical data type that can have only the values true or false."){.glossaryLink} context. Examples of _falsy_ values in JavaScript (which translate to false and thus _bypass_ the `if`block):
 
 `if (false)`  
 `if (null)`  

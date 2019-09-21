@@ -4,7 +4,7 @@ title: What is e.target and e.currentTarget and how to use them?
 date: 2018-07-16T23:32:26+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31865
+guid: https://www.nikpro.com.au/?p=31865
 permalink: /what-is-e-target-and-e-currenttarget-and-how-to-use-them/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/event-content.jpg
@@ -15,7 +15,7 @@ tags:
 ---
 What is e.target and e.currentTarget and how to use them? As a simple explanation, **e.target(short for event.target)** is the element that targeted an specific event. It is **not** the e.currentTarget.
 
-The [`event.currentTarget`](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget "Identifies the current target for the event, as the event traverses the DOM. It always refers to the element to which the event handler has been attached, as opposed to event.target which identifies the element on which the event occurred.") is called when the [event handler](http://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/) is called during the bubbling or capturing phase of the event and it is the one that the listener is attached to. We will have a look at some examples.
+The [`event.currentTarget`](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget "Identifies the current target for the event, as the event traverses the DOM. It always refers to the element to which the event handler has been attached, as opposed to event.target which identifies the element on which the event occurred.") is called when the [event handler](https://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/) is called during the bubbling or capturing phase of the event and it is the one that the listener is attached to. We will have a look at some examples.
 
 ### The **`event.target`** property (e.target)
 

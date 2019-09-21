@@ -4,7 +4,7 @@ title: Styling components in React without third-party libraries
 date: 2018-10-27T20:38:07+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32471
+guid: https://www.nikpro.com.au/?p=32471
 permalink: /how-to-style-components-in-react-without-third-party-libraries/
 xyz_twap:
   - "1"
@@ -16,7 +16,7 @@ tags:
   - CSS modules
   - styles in React
 ---
-Basically three are three ways of styling [components](http://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) in React without using any other libraries like styled components. We will cover them all in this article with different examples.
+Basically three are three ways of styling [components](https://www.nikpro.com.au/how-to-extract-components-in-react-with-example/) in React without using any other libraries like styled components. We will cover them all in this article with different examples.
 
 ## Style components with inline styling
 
@@ -60,11 +60,11 @@ HelloWorldComponent => (
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32473" src="http://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
+<img class="wp-image-32473" src="https://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
 
 ## Styling components with CSS stylesheet
 
-Styling components with CSS stylesheet is a better and more maintainable way. Especially we could have seperate stylesheet per component which makes the code neater and the style more [specific](http://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/) to the component.
+Styling components with CSS stylesheet is a better and more maintainable way. Especially we could have seperate stylesheet per component which makes the code neater and the style more [specific](https://www.nikpro.com.au/how-cascade-in-css-works-this-partspecificity/) to the component.
 
 We will need to import the file into the component and use the classes in our code. Here is a simple component called DottedBox using its very own CSS stylesheet:
 
@@ -98,7 +98,7 @@ Also this is the CSS file called DottedBox.css:
 ```
 <figure class="wp-block-image">
 
-<img class="wp-image-32474" src="http://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="http://testgatsby.localcss-in-react.jpg 638w, http://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
+<img class="wp-image-32474" src="https://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="https://testgatsby.localcss-in-react.jpg 638w, https://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
 
 ## Styling components using CSS modules
 

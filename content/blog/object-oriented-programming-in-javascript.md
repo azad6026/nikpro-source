@@ -4,7 +4,7 @@ title: Object oriented programming in JavaScript; My experience
 date: 2018-06-07T21:56:14+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31615
+guid: https://www.nikpro.com.au/?p=31615
 permalink: /object-oriented-programming-in-javascript/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/oop-big.jpeg
@@ -25,4 +25,4 @@ It is not just tidiness and structural behaviour of the code that you love, but 
 
 But it is not easy to do it and that is why not every one goes around it. It takes time and time and perseverance. And it takes courage to do it because if you start you have to stick with it and be consistent in each and every line of your code.
 
-In every language there are various approaches to implement object oriented programming. Although the concept remains the same but it is different in how to manage and manipulate it. And the same goes to JavaScript as well. JavaScript is a very flexible language that you can manipulate it and you wish and structure it in any way. And that is the [beauty of it](http://www.nikpro.com.au/the-beauty-of-javascript/) again. SO just try it out and learn about object oriented structuring in JavaScript and maybe have a look at C# as an awesome OOP based language and have fun coding.
+In every language there are various approaches to implement object oriented programming. Although the concept remains the same but it is different in how to manage and manipulate it. And the same goes to JavaScript as well. JavaScript is a very flexible language that you can manipulate it and you wish and structure it in any way. And that is the [beauty of it](https://www.nikpro.com.au/the-beauty-of-javascript/) again. SO just try it out and learn about object oriented structuring in JavaScript and maybe have a look at C# as an awesome OOP based language and have fun coding.

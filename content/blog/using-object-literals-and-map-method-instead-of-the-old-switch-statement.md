@@ -4,7 +4,7 @@ title: Using object literals and map method instead of the old switch statement
 date: 2018-09-30T20:38:40+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32314
+guid: https://www.nikpro.com.au/?p=32314
 permalink: /using-object-literals-and-map-method-instead-of-the-old-switch-statement/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - map method
   - switch method
 ---
-Implementing [ES6](http://nikpro.com.au/category/es6) features in our code it is best to use [object literals](http://www.nikpro.com.au/template-literals-in-js6-explained/) instead of switch statements in our codes. In this article we will explain it with some examples.
+Implementing [ES6](https://nikpro.com.au/category/es6) features in our code it is best to use [object literals](https://www.nikpro.com.au/template-literals-in-js6-explained/) instead of switch statements in our codes. In this article we will explain it with some examples.
 
 ## First example: switch statement replaced
 
@@ -49,7 +49,7 @@ Clearly we could see how switch statement works here. it finds or categorises fr
 
 We know that switch statements, with their non standard syntax included, are difficult to read and contain extra **“syntactical sugar (not good sugar)”** that we really don’t want to be reading.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.ausynthatical-sugar.jpeg" alt="synthetical sugar" class="wp-image-32316" srcset="http://testgatsby.localsynthatical-sugar.jpeg 1600w, http://testgatsby.localsynthatical-sugar-300x202.jpeg 300w, http://testgatsby.localsynthatical-sugar-768x516.jpeg 768w, http://testgatsby.localsynthatical-sugar-1024x688.jpeg 1024w, http://testgatsby.localsynthatical-sugar-1568x1054.jpeg 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> </figure> 
+<img src="https://www.nikpro.com.ausynthatical-sugar.jpeg" alt="synthetical sugar" class="wp-image-32316" srcset="https://testgatsby.localsynthatical-sugar.jpeg 1600w, https://testgatsby.localsynthatical-sugar-300x202.jpeg 300w, https://testgatsby.localsynthatical-sugar-768x516.jpeg 768w, https://testgatsby.localsynthatical-sugar-1024x688.jpeg 1024w, https://testgatsby.localsynthatical-sugar-1568x1054.jpeg 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> </figure> 
 
 ## Object literals or map to help
 

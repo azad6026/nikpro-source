@@ -4,7 +4,7 @@ title: Design a responsive trello board with modern CSS grid
 date: 2019-04-06T20:13:43+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32725
+guid: https://www.nikpro.com.au/?p=32725
 permalink: /design-a-responsive-trello-board-with-modern-css-grid/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - card layout
 ---
 
-We have explained [different CSS grid](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) [responsive layouts before.](http://www.nikpro.com.au/the-minmax-function-in-css-grid-explained-with-examples/) But as a specific example we will learn about a responsive <a rel="noreferrer noopener" aria-label="trello board (opens in a new tab)" href="https://trello.com/b/1Jz6SorC/the-dev-board" target="_blank">trello card layout</a> borrowing from this thorough article about grids from <a rel="noreferrer noopener" aria-label="CSS tricks. (opens in a new tab)" href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target="_blank">CSS tricks.</a>
+We have explained [different CSS grid](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) [responsive layouts before.](https://www.nikpro.com.au/the-minmax-function-in-css-grid-explained-with-examples/) But as a specific example we will learn about a responsive <a rel="noreferrer noopener" aria-label="trello board (opens in a new tab)" href="https://trello.com/b/1Jz6SorC/the-dev-board" target="_blank">trello card layout</a> borrowing from this thorough article about grids from <a rel="noreferrer noopener" aria-label="CSS tricks. (opens in a new tab)" href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target="_blank">CSS tricks.</a>
 
 ## Card layout trello as a common use case
 
@@ -63,6 +63,6 @@ What matters is **grid-template-rows** set to **auto**. Because we need rows to 
 
 Also inner columns of each card use grid as well. Therefore the design looks smooth and consistent throughout the layout.
 
-Using just a few lines of code in CSS grid using **[auto-fill](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)** [or](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) **[auto-fit](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)** [](http://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)and **minmax() function** is absolutely enough to design a beautiful responsive layout that works on every size with no need to media queries.
+Using just a few lines of code in CSS grid using **[auto-fill](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)** [or](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/) **[auto-fit](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)** [](https://www.nikpro.com.au/build-responsive-css-grid-layouts-using-minmax-with-auto-fill-and-auto-fit/)and **minmax() function** is absolutely enough to design a beautiful responsive layout that works on every size with no need to media queries.
 
 Thank you for reading.

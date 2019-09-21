@@ -4,7 +4,7 @@ title: Equal height column card layouts with aligned content using FlexBox and G
 date: 2019-05-04T21:45:29+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32748
+guid: https://www.nikpro.com.au/?p=32748
 permalink: /equal-height-column-card-layouts-with-aligned-content-using-flexbox-and-grid-explained-with-examples/
 xyz_twap:
   - "1"
@@ -72,7 +72,7 @@ button{
 ```
 
 
-We have seen usefulness of auto margin in [this post](http://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) before. That makes the button to stick in the bottom of the card layout.
+We have seen usefulness of auto margin in [this post](https://www.nikpro.com.au/how-flexbox-and-auto-margin-work-together-with-examples/) before. That makes the button to stick in the bottom of the card layout.
 
 ## Grid to make equal height column
 

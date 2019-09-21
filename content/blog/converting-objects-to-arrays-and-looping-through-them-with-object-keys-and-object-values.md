@@ -4,7 +4,7 @@ title: Converting objects to arrays and looping through them with Object.keys an
 date: 2018-10-01T21:29:30+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32319
+guid: https://www.nikpro.com.au/?p=32319
 permalink: /converting-objects-to-arrays-and-looping-through-them-with-object-keys-and-object-values/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ categories:
 
 ## Object.keys and Object.values instead of for &#8230; in loop
 
-Basically these two ES6 methods are great replacement for for &#8230; in loop. As we explained in [this](http://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) article the for &#8230; loop is buggy and not the best option to loop through an array of object. Thankfully we can use Object.keys and Object.values as below examples  from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" target="_blank" rel="noopener noreferrer">MDN</a>.
+Basically these two ES6 methods are great replacement for for &#8230; in loop. As we explained in [this](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) article the for &#8230; loop is buggy and not the best option to loop through an array of object. Thankfully we can use Object.keys and Object.values as below examples  from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" target="_blank" rel="noopener noreferrer">MDN</a>.
 
 ### Object.keys examples
 
@@ -58,7 +58,7 @@ Object.keys('apple');
 
 <figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aues6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="http://testgatsby.locales6-object-methods.png 483w, http://testgatsby.locales6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> </figure>
+<img src="https://www.nikpro.com.aues6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="https://testgatsby.locales6-object-methods.png 483w, https://testgatsby.locales6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> </figure>
 
 ### Object.values examples
 

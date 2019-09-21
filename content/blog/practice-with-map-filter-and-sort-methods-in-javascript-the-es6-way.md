@@ -4,7 +4,7 @@ title: Practice with map filter and sort methods in Javascript the ES6 way
 date: 2018-07-25T21:54:39+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31914
+guid: https://www.nikpro.com.au/?p=31914
 permalink: /practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/sort.jpg
@@ -51,7 +51,7 @@ First we want to generate a list of inventors who lived in the 1600&#8217;s. We 
 
 In our if statement we return true meaning we want o keep the data and then we show it in our console.We use **console.table** to show a nice and clean table of returned content.
 
-However this is a long way of writing the code. Lets use some ES6 syntax and shorten it. We will use [arrow function](http://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) and put the if condition all in one line :
+However this is a long way of writing the code. Lets use some ES6 syntax and shorten it. We will use [arrow function](https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/) and put the if condition all in one line :
 
 `const sixteen = inventors.filter(inventor=>`(`inventor.year >= 1600 && inventor.year));`
 
@@ -124,7 +124,7 @@ This is a really nice example using map and new ES6 syntax. We want to return th
 `});`  
 `console.table(fullnames);`
 
-This works perfectly but lets make it more readable and modern using arrow function instead of the function and back-tick in [template literals](http://www.nikpro.com.au/template-literals-in-js6-explained/) in your return statement:
+This works perfectly but lets make it more readable and modern using arrow function instead of the function and back-tick in [template literals](https://www.nikpro.com.au/template-literals-in-js6-explained/) in your return statement:
 
 `const fullnames = inventors.map(inventor =>
 ```
@@ -133,4 +133,4 @@ This works perfectly but lets make it more readable and modern using arrow funct
 
 And it now looks great. and works just the same.
 
-In this post we had a few practices around map filter and sort using modern ES6 syntaxes like arrow functions and template literals and ternary operator. In the next post of this series, we will practice more on sorts and reduce methods. See more of these examples on <a href="http://wesbos.com" target="_blank" rel="noopener noreferrer">wesbos.com</a>. Thanks for reading.
+In this post we had a few practices around map filter and sort using modern ES6 syntaxes like arrow functions and template literals and ternary operator. In the next post of this series, we will practice more on sorts and reduce methods. See more of these examples on <a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">wesbos.com</a>. Thanks for reading.

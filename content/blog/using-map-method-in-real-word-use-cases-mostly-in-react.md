@@ -4,7 +4,7 @@ title: Using map method in real world use cases; mostly in React
 date: 2019-01-24T19:36:47+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32664
+guid: https://www.nikpro.com.au/?p=32664
 permalink: /using-map-method-in-real-world-use-cases-mostly-in-react/
 xyz_twap:
   - "1"
@@ -17,7 +17,7 @@ tags:
   - map method
 ---
 
-As we know the&nbsp;**map()**&nbsp;[method](http://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) creates a new array with the results of calling a provided function on every element in the calling array.
+As we know the&nbsp;**map()**&nbsp;[method](https://www.nikpro.com.au/using-map-method-in-react-components-with-examples-explained/) creates a new array with the results of calling a provided function on every element in the calling array.
 
 Therefore whenever we need to manipulate data without actually changing the data itself, map is the best option.
 
@@ -32,7 +32,7 @@ const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];<br />const NamesList = (
 
 We return JSX code using map method to create the list for us. As we know we need to specify the key attribute in our React code to have a unique identity for each list item.<figure class="wp-block-image">
 
-<img src="http://www.nikpro.com.aumap-in-react-1024x576.png" alt="map in react" class="wp-image-32666" srcset="http://testgatsby.localmap-in-react-1024x576.png 1024w, http://testgatsby.localmap-in-react-300x169.png 300w, http://testgatsby.localmap-in-react-768x432.png 768w, http://testgatsby.localmap-in-react.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>map method in React</figcaption></figure>
+<img src="https://www.nikpro.com.aumap-in-react-1024x576.png" alt="map in react" class="wp-image-32666" srcset="https://testgatsby.localmap-in-react-1024x576.png 1024w, https://testgatsby.localmap-in-react-300x169.png 300w, https://testgatsby.localmap-in-react-768x432.png 768w, https://testgatsby.localmap-in-react.png 1140w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>map method in React</figcaption></figure>
 
 ## Create an array from Objects
 
@@ -46,7 +46,7 @@ Additionally we can use the map method to manipulate array of objects. In this e
 
 ## Using map like a filter method
 
-Although we have [filter and other methods](http://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) in this use case but sometimes we can use map to filter a specific data from an array or array of objects. Have a look at a <a rel="noreferrer noopener" aria-label="this (opens in a new tab)" href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" target="_blank">simple</a> example which I explain below:
+Although we have [filter and other methods](https://www.nikpro.com.au/practice-with-map-filter-and-sort-methods-in-javascript-the-es6-way/) in this use case but sometimes we can use map to filter a specific data from an array or array of objects. Have a look at a <a rel="noreferrer noopener" aria-label="this (opens in a new tab)" href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" target="_blank">simple</a> example which I explain below:
 
 
 ```

@@ -4,7 +4,7 @@ title: Template literals in JS6 explained
 date: 2018-07-01T20:38:59+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31768
+guid: https://www.nikpro.com.au/?p=31768
 permalink: /template-literals-in-js6-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/tmplate-literals.png
@@ -17,7 +17,7 @@ tags:
   - template literals
   - template strings
 ---
-Continuing our explanation of <a href="http://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/" target="_blank" rel="noopener noreferrer">ES6 new features</a>, template literals are a new way to create a string. They are simply the backtick (\`) character that we can use instead of single quotes or double quotes to connect strings in different situations. String concatenations has never been easy before. It improves readability as well. We will explain it with some examples. 
+Continuing our explanation of <a href="https://www.nikpro.com.au/what-is-spread-syntax-in-es6-and-how-to-use-it/" target="_blank" rel="noopener noreferrer">ES6 new features</a>, template literals are a new way to create a string. They are simply the backtick (\`) character that we can use instead of single quotes or double quotes to connect strings in different situations. String concatenations has never been easy before. It improves readability as well. We will explain it with some examples. 
 
 The back tick key is usually located in the top left corner of your keyboard, below the escape key and next to the 1 key.
 

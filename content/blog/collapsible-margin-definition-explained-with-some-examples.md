@@ -4,7 +4,7 @@ title: Collapsible margin, definition explained with some examples
 date: 2019-07-07T21:16:44+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32763
+guid: https://www.nikpro.com.au/?p=32763
 permalink: /create-a-simple-website-layout-using-flexbox/
 # featuredImage: ../../static/images/design-with-code.jpg
 featuredImage: ../../static/images/margin-in-element.jpg
@@ -18,7 +18,7 @@ You might have faced[ Collapsible margins ](https://developer.mozilla.org/en-U
 
 ### What is Collapsible margin
 
-Firstly Collapsible margin only apply to [block level elements](http://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/). Secondly it is about top and bottom margins of two block level elements sitting on top of each other.
+Firstly Collapsible margin only apply to [block level elements](https://www.nikpro.com.au/html5-semantic-tags-and-where-to-use-them/). Secondly it is about top and bottom margins of two block level elements sitting on top of each other.
 
 Collapsible margin happens when the top element have a margin-bottom value and the bottom element have a top-margin value. Definitively the space between them will be the biggest margin between these two values.
 

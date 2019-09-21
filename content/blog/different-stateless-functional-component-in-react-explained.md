@@ -4,7 +4,7 @@ title: Different stateless functional component in React explained
 date: 2018-08-29T20:31:50+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=32108
+guid: https://www.nikpro.com.au/?p=32108
 permalink: /different-stateless-functional-component-in-react-explained/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/rendering-functional-component.jpg
@@ -15,7 +15,7 @@ tags:
   - higher order components
   - stateless functional component
 ---
-Following the [previous article](http://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) we take a quick look at some different stateless functional component in React with examples.
+Following the [previous article](https://www.nikpro.com.au/functional-component-in-react-explained-with-examples/) we take a quick look at some different stateless functional component in React with examples.
 
 ### Return a few lines of JSX wrapped in a container 
 
@@ -35,7 +35,7 @@ const Profile = props => {<br />  return (  <br />    <div><br />      <h1>{prop
 ```
 
 
-Typically we use a div but you can use whatever suits your code. Also in this example we have just a one line code so we can drop the {} curly braces and the return statement based on [arrow functions capabilities](http://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
+Typically we use a div but you can use whatever suits your code. Also in this example we have just a one line code so we can drop the {} curly braces and the return statement based on [arrow functions capabilities](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
 ```
 <br />const Profile = props => <br />  <div><br />    <h1>{props.name}</h1><br />    <p>{props.bio}</p><br />  </div>;<br />

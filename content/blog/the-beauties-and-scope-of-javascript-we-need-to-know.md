@@ -4,7 +4,7 @@ title: The beauties and scope of Javascript we need to know
 date: 2018-08-06T21:56:26+00:00
 author: admin
 layout: post
-guid: http://www.nikpro.com.au/?p=31986
+guid: https://www.nikpro.com.au/?p=31986
 permalink: /the-beauties-and-scope-of-javascript-we-need-to-know/
 featuredImage: ../../static/images/design-with-code.jpg
 # featuredImage: ../../static/images/js-specials.png
@@ -80,7 +80,7 @@ NAN is a number but it is not equal to itself.In fact `NaN` is **not equal to
 
 ## Arrays odds
 
-It takes the [truthy and falsy](http://www.nikpro.com.au/truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/) concept here. In JavaScript, **every non-boolean value has a built-in boolean flag** that is called on when the value is asked to behave like a boolean; like, for example, when you compare it to a boolean.
+It takes the [truthy and falsy](https://www.nikpro.com.au/truthy-or-falsy-values-in-javascript-and-how-to-work-with-them/) concept here. In JavaScript, **every non-boolean value has a built-in boolean flag** that is called on when the value is asked to behave like a boolean; like, for example, when you compare it to a boolean.
 
 
 ```
