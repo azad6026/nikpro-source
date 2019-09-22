@@ -92,7 +92,7 @@ a.gatsby-resp-image-link {
   position: relative;
   overflow: hidden;
 }
-article.post-box::before {
+.post-box::before {
   content: "";
   position: absolute;
   top: 0;
