@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class BlogList extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
                   // background: `-moz - linear - gradient(left, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
                   // background: `-webkit - linear - gradient(left, rgba(255, 255, 255,1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
                   // background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
-                  background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, .7) 50% ,rgba(255, 255, 255, 0) 100%)`,
+                  background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, .7) 50%, rgba(255, 255, 255, 0) 100%)`,
                   // filter: `progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ffffff', endColorstr='#00ffffff',GradientType=1 )`,
                   boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
                   padding: `1rem 3rem`,
@@ -123,7 +123,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default BlogList
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
