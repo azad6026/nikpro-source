@@ -36,6 +36,7 @@ p {
 }
 a {
   transition: all 0.5s;
+  box-shadow: none;
 }
 a:hover {
   color: var(--hover-color);
@@ -63,6 +64,9 @@ header .inner-wrapper {
 }
 .menu-item-link:hover {
   color: white;
+  background: -webkit-linear-gradient(#f0eeee, #ea8b39);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 pre {
   background: #0c0904;
@@ -82,14 +86,18 @@ a {
 .pagination-menu ul {
   margin: 0;
 }
-.post-box h3 a {
+.post-box h3.post-title a {
   color: var(--primary-dark-color);
   background: -webkit-linear-gradient(#a39d9d, #120f0f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3 a:hover {
+.post-box h3.post-title a:hover {
   color: #a74e00;
+  background: -webkit-linear-gradient(#ea8b39, #120f0f);
+  color: #a74e00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 a.gatsby-resp-image-link {
   pointer-events: none;

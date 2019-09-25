@@ -51,7 +51,7 @@ class BlogList extends React.Component {
                   transition: `all .5s`,
                 }}
               >
-                <h3>
+                <h3 className="post-title">
                   <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                     {title}
                   </Link>
