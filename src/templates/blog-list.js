@@ -64,6 +64,7 @@ class BlogList extends React.Component {
                   <span> by Azadeh, {node.timeToRead} min</span>
                 </time>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                <Link to={node.fields.slug}>Continue reading </Link>
               </div>
             </BackgroundImage>
           )

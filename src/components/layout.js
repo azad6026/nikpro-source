@@ -50,17 +50,11 @@ const header = (
   </>
 )
 const Layout = ({ children }) => (
-  <div>
-    <p
-      style={{
-        background: `var(--primary-light-color)`,
-        fontSize: `1rem`,
-        textAlign: `center`,
-      }}
-    >
-      The site is getting a new look in Gatsbyjs.{" "}
-      <a href="mailto:niksoftpro@outlook.com">Send</a> me your feedbacks.
-    </p>
+  <div
+    style={{
+      borderTop: `.3rem solid var(--primary-light-color)`,
+    }}
+  >
     <a id="top"></a>
     <header
       style={{

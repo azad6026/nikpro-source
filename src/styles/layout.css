@@ -57,6 +57,9 @@ header .inner-wrapper {
 .menu-item-link {
   text-decoration: none;
   color: var(--primary-light-color);
+  background: -webkit-linear-gradient(#ea8b39, #f0eeee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-item-link:hover {
   color: white;
@@ -81,6 +84,9 @@ a {
 }
 .post-box h3 a {
   color: var(--primary-dark-color);
+  background: -webkit-linear-gradient(#a39d9d, #120f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h3 a:hover {
   color: #a74e00;
