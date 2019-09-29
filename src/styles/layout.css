@@ -86,19 +86,6 @@ a {
 .pagination-menu ul {
   margin: 0;
 }
-.post-box h3.post-title a {
-  color: var(--primary-dark-color);
-  background: -webkit-linear-gradient(#a39d9d, #120f0f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.post-box h3.post-title a:hover {
-  color: #a74e00;
-  background: -webkit-linear-gradient(#ea8b39, #120f0f);
-  color: #a74e00;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 a.gatsby-resp-image-link {
   pointer-events: none;
 }

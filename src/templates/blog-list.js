@@ -6,7 +6,48 @@ import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { rhythm } from "../utils/typography"
+import styled from "styled-components"
+
+const ArticleBackgroundWrapper = styled(props => (
+  <BackgroundImage {...props} />
+))``
+
+const ArticleWrapper = styled.div`
+  transition: all 0.5s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: rgba(12, 9, 4, 0.43) 7px 7px 0rem;
+  padding: 1rem 3rem;
+  margin: 1rem auto;
+`
+const ArticleTitle = styled.h3``
+const ArticleTitleLink = styled(props => <Link {...props} />)`
+  box-shadow: none;
+  color: var(--primary-dark-color);
+  background: -webkit-linear-gradient(#a39d9d, #120f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  :hover {
+    color: #a74e00;
+    background: -webkit-linear-gradient(#ea8b39, #120f0f);
+    color: #a74e00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`
+const ArticleTime = styled.time`
+  color: rgb(173, 81, 0);
+`
+
+const ArticleAuthor = styled.span``
+
+const ArticleExcert = styled.p``
+
+const ArticleReadMoreLink = styled(props => <Link {...props} />)``
 
 class BlogList extends React.Component {
   render() {
@@ -28,45 +69,31 @@ class BlogList extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <BackgroundImage
+            <ArticleBackgroundWrapper
               Tag="article"
               className="bg-image"
               fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-              backgroundColor={`#fff`}
             >
-              <div
-                className="post-box"
-                key={node.fields.slug}
-                style={{
-                  transition: `transform 250ms cubic- bezier(0.4, 0, 0.2, 1), box - shadow 250ms cubic - bezier(0.4, 0, 0.2, 1), padding 250ms cubic - bezier(0.4, 0, 0.2, 1)`,
-                  // background: `rgba(255,255,255,.85)`,
-                  // background: `-moz - linear - gradient(left, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
-                  // background: `-webkit - linear - gradient(left, rgba(255, 255, 255,1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
-                  // background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0 %, rgba(255, 255, 255, 0) 100 %)`,
-                  background: `linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, .7) 50%, rgba(255, 255, 255, 0) 100%)`,
-                  // filter: `progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ffffff', endColorstr='#00ffffff',GradientType=1 )`,
-                  boxShadow: `rgba(12, 9, 4, 0.43) 7px 7px 0rem`,
-                  padding: `1rem 3rem`,
-                  margin: `1rem auto`,
-                  transition: `all .5s`,
-                }}
-              >
-                <h3 className="post-title">
-                  <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+              <ArticleWrapper>
+                <ArticleTitle>
+                  <ArticleTitleLink to={node.fields.slug}>
                     {title}
-                  </Link>
-                </h3>
-                <time
-                  datetime={node.frontmatter.date}
-                  style={{ color: `#ad5100` }}
-                >
+                  </ArticleTitleLink>
+                </ArticleTitle>
+                <ArticleTime datetime={node.frontmatter.date}>
                   {node.frontmatter.date}
-                  <span> by Azadeh, {node.timeToRead} min</span>
-                </time>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                <Link to={node.fields.slug}>Continue reading </Link>
-              </div>
-            </BackgroundImage>
+                  <ArticleAuthor>
+                    by Azadeh, {node.timeToRead} min
+                  </ArticleAuthor>
+                </ArticleTime>
+                <ArticleExcert
+                  dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                />
+                <ArticleReadMoreLink to={node.fields.slug}>
+                  Continue reading{" "}
+                </ArticleReadMoreLink>
+              </ArticleWrapper>
+            </ArticleBackgroundWrapper>
           )
         })}
         <nav
