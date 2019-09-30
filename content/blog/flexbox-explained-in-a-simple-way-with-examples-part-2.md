@@ -105,8 +105,6 @@ The value of auto for align-self computes to the value of align-items on t
 
 You can play around with flex items in this playground by Dimitar on CodePen. Hover over the items individually and you can change the flex items and see how it actually effects the layout and their positions.
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yydezN" data-default-tab="html,result" data-user="justd" data-embed-version="2" data-pen-title="Flexbox Properties Demonstration">
-  See the Pen <a href="https://codepen.io/justd/pen/yydezN/">Flexbox Properties Demonstration</a> by Dimitar (<a href="https://codepen.io/justd">@justd</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/justd/pen/yydezN
 
 Hope these series of articles have helped you to learn and understand Flexbox better and deeper.

@@ -57,8 +57,6 @@ We might expect the same rule in the case of parent child. But it is different h
 
 But if we add some padding or border to the parent, this rule will go away as well.
 
-[See the pen below from CSS tricks](https://css-tricks.com/what-you-should-know-about-collapsing-margins/):
-
 https://codepen.io/team/css-tricks/pen/EjKOdV
 
 The top parent has no padding, so it will all collapse and we will only see the purple colour child.

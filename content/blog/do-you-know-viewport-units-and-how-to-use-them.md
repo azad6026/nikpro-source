@@ -73,9 +73,7 @@ Interestingly the important thing here is at some point items will overflow on e
 
 This is the pen for this example:
 
-<p data-height="400" data-theme-id="0" data-slug-hash="uhzgo" data-default-tab="css,result" data-user="timseverien" data-pen-title="Viewport units" class="codepen">
-  See the Pen <a href="https://codepen.io/timseverien/pen/uhzgo/">Viewport units</a> by Tim Severien (<a href="https://codepen.io/timseverien">@timseverien</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/timseverien/pen/uhzgo
 
 #### Easy sticky footers
 

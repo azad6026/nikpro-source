@@ -14,36 +14,33 @@ categories:
 tags:
   - CSS transform
 ---
+
 CSS transform function like [CSS transition](https://www.nikpro.com.au/css-transitions-and-animations-explained-with-examples/) and animation has been around for quiet sometime and has been used in all kinds of visual forms. It allows you to manipulate elements visually by skewing, rotating, translating, or scaling in a few different formats. Lets explain it with examples.
 
 ## The transform property values
 
 The <code class="w3-codespan">transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. These are different values of transform property:
 
-  * **`scale()`:** affects the size of the element. This also applies to the `font-size`, `padding`, `height`, and `width` of an element, too. It’s also a a shorthand function for the `scaleX` and `scaleY` functions.
-  * `skewX()` and **`skewY()`**: tilts an element to the left or right, like turning a triangle into a parallelogram. There is no shorthand `skew` property like scale().
-  * **`translate()`**: moves an element up and down and left and right.
-  * `rotate()`: rotates an element clockwise .
-  * **`matrix()`**: a function that combines all transforms into one.
-  * **`perspective()`**: it faffects the transforms of descendent elements&#8217; 3D transforms (and not the element), allowing them all to have a consistent depth perspective.
+- **`scale()`:** affects the size of the element. This also applies to the `font-size`, `padding`, `height`, and `width` of an element, too. It’s also a a shorthand function for the `scaleX` and `scaleY` functions.
+- `skewX()` and **`skewY()`**: tilts an element to the left or right, like turning a triangle into a parallelogram. There is no shorthand `skew` property like scale().
+- **`translate()`**: moves an element up and down and left and right.
+- `rotate()`: rotates an element clockwise .
+- **`matrix()`**: a function that combines all transforms into one.
+- **`perspective()`**: it faffects the transforms of descendent elements&#8217; 3D transforms (and not the element), allowing them all to have a consistent depth perspective.
 
 ## Scale transform function
 
 I have created this pen to explain in for both possible forms:
 
-<p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="ajpYJK" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="CSS scale transform">
-  See the Pen <a href="https://codepen.io/azad6026/pen/ajpYJK/">CSS scale transform</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/ajpYJK
 
+The left box square uses`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation"> </span>`which scales up both width and height by 20 times each direction.
 
-
-The left box square uses`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation"> </span>`which scales up both width and height by 20 times each direction.
-
-The right box square uses `<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20,30</span><span class="token punctuation">)</span><span class="token punctuation">; </span>`which scales width by 20 and height by 30 and makes it a rectangle at the end.
+The right box square uses `<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">20,30</span><span class="token punctuation">)</span><span class="token punctuation">; </span>`which scales width by 20 and height by 30 and makes it a rectangle at the end.
 
 There is another syntax to be more specific to change the scale by specifying X and Y in its syntax:
 
-`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> `
+`<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
 `<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>`
 
@@ -54,18 +51,14 @@ Try it on he above code pen and see how it scales the boxes. You will see how Y 
 There is no generic syntax for skew and we have to specifically define it for X and Y directions:
 
 `.element {`  
-`  transform: skewX(25deg);`  
+`transform: skewX(25deg);`  
 `}`
 
 `.element {`  
-`  transform: skewY(25deg);`  
+`transform: skewY(25deg);`  
 `}`
 
-<p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="ZjLxrv" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="skew transform examples">
-  See the Pen <a href="https://codepen.io/azad6026/pen/ZjLxrv/">skew transform examples</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/ZjLxrv
 
 They tilt an element in one way.In the example below, for the left blue boxes, we skew a 100px x 100px square to the left and right with **skewX **and in the right gray boxes, we skew them with `skewY.`
 
@@ -83,11 +76,7 @@ And rotate in Y direction:
 
 Have a look at this pen:
 
-<p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="MBJVPQ" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="rotate transform">
-  See the Pen <a href="https://codepen.io/azad6026/pen/MBJVPQ/">rotate transform</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/MBJVPQ
 
 In top three boxes, a square continues to rotate 360 degrees every three . And the individual bottom three boxes we use `rotateX`, `rotateY` and `rotateZ` functions.
 
@@ -104,20 +93,16 @@ This transform function moves an element sideways, or up and down. Or use the sp
 
 In the example below an element using `transform` will not cause other elements to flow around it. By using the `translate` function below and changing the green square out of its original position, the text will remain fixed in place, as if the square is a block element:
 
-<p class="codepen" data-height="350" data-theme-id="0" data-slug-hash="mjRxve" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="translate transform">
-  See the Pen <a href="https://codepen.io/azad6026/pen/mjRxve/">translate transform</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/mjRxve
 
 ### Multiple transform and Matrix
 
 We could use multiple transform functions at once:
 
 `.element {`  
-`  width: 20px;`  
-`  height: 20px;`  
-`  transform: scale(20) skew(-20deg);`  
+`width: 20px;`  
+`height: 20px;`  
+`transform: scale(20) skew(-20deg);`  
 `}`
 
 In the example above the skew will be performed first and then the scale as there is an order for performing transform functionality. This is what also can be done by Matrix. The `matrix` transform function can be used to combine all transforms into one. There are tools out there like [The Matrix Resolutions](https://meyerweb.com/eric/tools/matrix/), which can convert a group of transforms into a single matrix declaration. So this:

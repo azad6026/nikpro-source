@@ -15,6 +15,7 @@ tags:
   - CSS selectors
   - nth-child
 ---
+
 The CSS3<code class=" language-undefined">:nth-child selector is a pseudo class used to select elements by a numeric expression. Lets take a look at how nth-child works.
 
 ## The nth-child syntax
@@ -33,7 +34,7 @@ In the above syntax we could simply write:
 
 Which means select the 4th list item from the list. Or select odd or even elements like this:
 
-`li:nth-child(odd); {} ` //selects odd list items
+`li:nth-child(odd); {}` //selects odd list items
 
 `li:nth-child(even); {}` //selects even list items
 
@@ -71,33 +72,31 @@ selects the eighth through the fifteenth <p> elements of a group of siblings.
 
 ### :nth child best practices
 
-Obviously do not overuse nth child when you can. Follow some best practices 
+Obviously do not overuse nth child when you can. Follow some best practices
 
-  * Use :first-child and :last-child for first and last elements instead of nth-child.
-<li id="tip-4-avoid-weird-and-complex-nth-childnbspexpressions">
-  Avoid weird and complex <code class=" language-undefined">nth-childexpressions
-</li>
+- Use :first-child and :last-child for first and last elements instead of nth-child.
+  <li id="tip-4-avoid-weird-and-complex-nth-childnbspexpressions">
+    Avoid weird and complex <code class=" language-undefined">nth-childexpressions
+  </li>
 
 Check out this example to alternate table background colours:
 
 `/* do this and alternate colours by nth-child */`  
 `.data-table tr {`  
-`  background: white;`  
+`background: white;`  
 `}`  
 `.data-table tr:nth-child(even) {`  
-`  background: lightgrey;`  
+`background: lightgrey;`  
 `}`
 
 `/* do not do this */`  
 `.data-table tr:nth-child(odd) {`  
-`  background: white;`  
+`background: white;`  
 `}`  
 `.data-table tr:nth-child(even) {`  
-`  background: lightgrey;`  
+`background: lightgrey;`  
 `}`
 
 You can check the :nth tester from CSS tricks to make you understand better and deeper <a href="https://css-tricks.com/examples/nth-child-tester/" target="_blank" rel="noopener noreferrer">here</a>. You can also play around with this pen from CSS tricks as well. Thanks for reading.
 
-<p class="codepen" data-height="500" data-theme-id="0" data-slug-hash="ALiBx" data-default-tab="html,result" data-user="zakkain" data-pen-title="CSS-Tricks: :nth-child">
-  See the Pen <a href="https://codepen.io/zakkain/pen/ALiBx/">CSS-Tricks: :nth-child</a> by Zachary Kain (<a href="https://codepen.io/zakkain">@zakkain</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/zakkain/pen/ALiBx

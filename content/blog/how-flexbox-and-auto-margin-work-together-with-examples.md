@@ -12,12 +12,12 @@ categories:
   - CSS
   - CSS3
 ---
+
 There are really useful use cases that we might need [FlexBox](https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/) and auto margin to work together. In this article I will show this with some examples for a better understanding.
 
 ## FlexBox and auto margin
 
 The idea is actually to make a FlexBox child independent from the container and place in where we need it to be not the default place that the flex force it to. Let me give you an example. Imagine the code below:
-
 
 ```
 <div class="parent">
@@ -25,9 +25,7 @@ The idea is actually to make a FlexBox child independent from the container and 
 </div>
 ```
 
-
 If we want to have or place one child in the edge or middle edge of the container or right in the very centre of it we can. Using the magic of auto margins. The simplest way of doing this for example for placing that item in the centre of the parent container looks like this:
-
 
 ```
 .parent {
@@ -39,16 +37,13 @@ If we want to have or place one child in the edge or middle edge of the containe
 }
 ```
 
-
 As a result the **.child2** will be place in the centre of the remaining space of the container. By remaining I mean whatever space **.child1** is occupying is specified for item 1 and the rest will be where the item 2 will be in the centre of it.
 
 ### How FlexBox and auto margin works
 
 It is actually simple and understandable. The auto margin in any direction (in case of margin:auto it applies to all directions top left right and bottom) will push the item or child to have the maximum space from that direction. Have a look at this pen I have created for this topic to have a better understanding:
 
-<p data-height="600" data-theme-id="0" data-slug-hash="MqgvKy" data-default-tab="css,result" data-user="azad6026" data-pen-title="FlexBox and auto margin" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/MqgvKy/">FlexBox and auto margin</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/MqgvKy
 
 It is a full example of four FlexBox and auto margin examples. Let us explain them all.
 

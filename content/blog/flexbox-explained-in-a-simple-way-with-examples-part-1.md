@@ -95,9 +95,7 @@ Flex items can be aligned in the cross axis of the current line of the flex cont
 
 See these three examples of how to change the layout using these properties.
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="JZByeO" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="Flexbox Example 1">
-  See the Pen <a href="https://codepen.io/azad6026/pen/JZByeO/">Flexbox Example 1</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/JZByeO
 
 ## align-content {#align-content}
 
@@ -113,8 +111,6 @@ The align-content property aligns a flex container’s lines within the flex con
 
 You can play around with flex items in this playground by Dimitar on CodePen. Cahnge the properties of parent by clicking on the radio buttons
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="yydezN" data-default-tab="html,result" data-user="justd" data-embed-version="2" data-pen-title="Flexbox Properties Demonstration">
-  See the Pen <a href="https://codepen.io/justd/pen/yydezN/">Flexbox Properties Demonstration</a> by Dimitar (<a href="https://codepen.io/justd">@justd</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/justd/pen/yydezN
 
 These were all parent container&#8217;s properties. In the next article we will have a look at flex items properties.

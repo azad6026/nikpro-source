@@ -16,6 +16,7 @@ tags:
   - overflow-wrap
   - word-break
 ---
+
 Generally we could use overflow-wrap and word-break properties to break he words where needed. We will demonstrate the difference here and explain the different use cases.
 
 <!-- /wp:core-embed/wordpress -->
@@ -38,7 +39,6 @@ Basically we have two values for this property:
 /* Keyword values */ overflow-wrap: normal; overflow-wrap: break-word;
 ```
 
-
 <!-- /wp:preformatted -->
 
 <!-- wp:paragraph -->
@@ -55,11 +55,7 @@ However with **break-word **as per MDN , to prevent overflow, normally unbreak
 
 <!-- wp:html -->
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="ZLBvav" data-default-tab="css,result" data-user="impressivewebs" data-pen-title="overflow-wrap/word-wrap demo">
-  See the Pen <a href="https://codepen.io/impressivewebs/pen/ZLBvav/">overflow-wrap/word-wrap demo</a> by Louis Lazaris (<a href="https://codepen.io/impressivewebs">@impressivewebs</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/impressivewebs/pen/ZLBvav
 
 <!-- /wp:html -->
 
@@ -71,7 +67,7 @@ Once we toggle the button we clearly see that the break-word will be broken so t
 
 <!-- wp:paragraph -->
 
-Practically it can help the web pages from breaking down because of a long url or strings. A string of non-breaking space characters (` `) would be treated the same way and would also break at an appropriate spot.
+Practically it can help the web pages from breaking down because of a long url or strings. A string of non-breaking space characters (``) would be treated the same way and would also break at an appropriate spot.
 
 <!-- /wp:paragraph -->
 
@@ -105,12 +101,11 @@ Therefore `word-break` is great for  **non-English content** that requires sp
 /* Keyword values */ word-break: normal;  word-break: break-all;  word-break: keep-all; word-break: break-word;
 ```
 
-
 <!-- /wp:preformatted -->
 
 <!-- wp:paragraph -->
 
-According to MDN In contrast to `word-break: break-word`** and **`overflow-wrap: break-word`** **, `word-break: break-all`** **will create a break at the exact place where text would otherwise overflow its container
+According to MDN In contrast to `word-break: break-word`** and **`overflow-wrap: break-word`\*\* **, `word-break: break-all`** \*\*will create a break at the exact place where text would otherwise overflow its container
 
 <!-- /wp:paragraph -->
 
@@ -122,11 +117,7 @@ Here is a pen to demonstrate this:
 
 <!-- wp:html -->
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="avavBY" data-default-tab="html,result" data-user="css-tricks" data-pen-title="Fixing links with word-break">
-  See the Pen <a href="https://codepen.io/team/css-tricks/pen/avavBY/">Fixing links with word-break</a> by CSS-Tricks (<a href="https://codepen.io/css-tricks">@css-tricks</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/team/css-tricks/pen/avavBY
 
 <!-- /wp:html -->
 

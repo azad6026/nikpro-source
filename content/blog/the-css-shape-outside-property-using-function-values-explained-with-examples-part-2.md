@@ -17,12 +17,12 @@ tags:
   - shape outside inset
   - shape outside url
 ---
-Following our [previous article](https://www.nikpro.com.au/the-css-shape-properties-using-function-values-explained-with-examples-part-1/) about CSS shape outside property in this article we explain two more values on this property. The url property and the inset property. 
+
+Following our [previous article](https://www.nikpro.com.au/the-css-shape-properties-using-function-values-explained-with-examples-part-1/) about CSS shape outside property in this article we explain two more values on this property. The url property and the inset property.
 
 ## Shape outside inset() function
 
 Basically the full notation for an inset shape function is `inset(top right bottom left border-radius)`. Therefore `inset()` takes four values for the top, right, bottom and left values plus a final value for `border-radius`.We could use `inset()` shape function to create rectangular shapes around which to wrap content:
-
 
 ```
 .element{
@@ -32,9 +32,7 @@ Basically the full notation for an inset shape function is `inset(top right bot
 }
 ```
 
-
 As an example again the below CSS creates a rectangular shape inset from the reference box of the floated element 20 pixels from the top and bottom and 10 pixels from the left and right, with a border-radius value of 10 pixels.
-
 
 ```
 .shape {
@@ -43,15 +41,11 @@ As an example again the below CSS creates a rectangular shape inset from the ref
 }
 ```
 
-
 Finally have a look at this pen for a better idea:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="BOVNGo" data-default-tab="html,result" data-user="azad6026" data-pen-title="shape outside inset function" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/BOVNGo/">shape outside inset function</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/BOVNGo
 
 Generally in the example above we used border-box as a reference box instead of margin-box:
-
 
 ```
 .element-2 {
@@ -60,17 +54,15 @@ Generally in the example above we used border-box as a reference box instead of 
 }
 ```
 
-
-So according to MDN float area is computed according to the shape of a float element&#8217;s edges (as defined by the [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)). This can be `margin-box`, `border-box`, `padding-box`, or `content-box`. 
+So according to MDN float area is computed according to the shape of a float element&#8217;s edges (as defined by the [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)). This can be `margin-box`, `border-box`, `padding-box`, or `content-box`.
 
 ## Shape outside url() function
 
 Practically the `shape-outside: url(image.png)` CSS declaration tells the browser to extract a shape from the image. Also we could use `-image-threshold` property to define the minimum opacity level of pixels that will be used to create the shape. Therefor we could use `0.0` for fully transparent and `1.0`  for fully opaque.<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="https://testgatsby.localespresso.jpg 660w, https://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure> 
+<img src="https://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="https://testgatsby.localespresso.jpg 660w, https://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure>
 
 As a result of using the url function value the text has been wrapped around the element in the above example:
-
 
 ```
 .element{
@@ -79,7 +71,6 @@ As a result of using the url function value the text has been wrapped around the
   float: left;
 }
 ```
-
 
 Although the `shape-outside` property defines the shape of the area around which content will wrap, without the float, you won&#8217;t see the effects of the shape.
 

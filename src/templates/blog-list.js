@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
 import Image from "../components/image"
@@ -48,6 +48,10 @@ const ArticleAuthor = styled.span``
 const ArticleExcert = styled.p``
 
 const ArticleReadMoreLink = styled(props => <Link {...props} />)``
+
+// const BlogList = props => {
+// const BlogContext = props.pageContext;
+//}
 
 class BlogList extends React.Component {
   render() {
@@ -188,23 +192,3 @@ export const pageQuery = graphql`
     }
   }
 `
-// {
-//     gallery: allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
-//         edges {
-//             node {
-//                 name
-//                 childMarkdownRemark {
-//                     frontmatter {
-//                         image
-//                         permalink
-//                         categories
-//                         tags
-//                     }
-//                     wordCount {
-//                         words
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

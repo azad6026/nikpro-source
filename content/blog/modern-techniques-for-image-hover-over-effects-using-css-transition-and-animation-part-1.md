@@ -25,9 +25,7 @@ Using CSS[transitions](https://www.nikpro.com.au/css-transitions-and-animations-
 
 Basically in every effect we are manipulating captions based on our design:
 
-<p data-height="400" data-theme-id="0" data-slug-hash="jevybZ" data-default-tab="css,result" data-user="azad6026" data-pen-title="imageflying captions" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/jevybZ/">image flying captions</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/jevybZ
 
 For example in this one once we hover over the image its scale will change via transform property.&nbsp;
 
@@ -51,9 +49,7 @@ figcaption,figcaption h3 ,figcaption p,img{<br />  transition: all .9s ease;<br
 
 Lets animate the image using hover and keyframes (animation). Have a look a this pen :
 
-<p data-height="900" data-theme-id="0" data-slug-hash="gBdmmd" data-default-tab="css,result" data-user="azad6026" data-pen-title="Animate images with and without hover over" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/gBdmmd/">Animate images with and without hover over</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/gBdmmd
 
 Firstly the top image should be hovered over so that it fades out and the second image will be fade in. Therefor we change transition the opacity of the image:
 

@@ -45,9 +45,7 @@ And the CSS with calc() function:
 
 Also there is a pen in <a href="https://css-tricks.com/couple-takes-sticky-footer/" target="_blank" rel="noopener noreferrer">CSS tricks </a>that shows how it works:
 
-<p data-height="500" data-theme-id="0" data-slug-hash="jqRXBz" data-default-tab="js,result" data-user="chriscoyier" data-pen-title="Sticky Footer with calc();" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/jqRXBz/">Sticky Footer with calc();</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/jqRXBz
 
 Therefor no overlapping happens and two elements ( div.content and footer) will **stack on top of each other** making it 100% height. But the footer needs a fixed height.
 
@@ -90,9 +88,7 @@ Alternatively give the content a **flex: 1** so that it grows to fill the space
 }
 ```
 
-<p data-height="500" data-theme-id="0" data-slug-hash="RRbKrL" data-default-tab="css,result" data-user="chriscoyier" data-pen-title="Sticky Footer with Flexbox" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/RRbKrL/">Sticky Footer with Flexbox</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/RRbKrL
 
 ## Sticky footer with CSS Grid
 
@@ -115,9 +111,7 @@ body {
 
 Using **grid-row-start** we specify where the footer starts as we have a two row layout. And with **grid-row-end** we specify the ending of footer. Also using  **grid-template-rows: 1fr auto;** we make a flexible height grid layout.
 
-<p data-height="500" data-theme-id="0" data-slug-hash="YWKNrE" data-default-tab="js,result" data-user="chriscoyier" data-pen-title="Sticky Footer with Grid" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/YWKNrE/">Sticky Footer with Grid</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/YWKNrE
 
 We can also <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers" target="_blank" rel="noopener noreferrer">simply remove footer</a> code and only set **grid-template-rows:**
 

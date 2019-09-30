@@ -15,6 +15,7 @@ tags:
   - let
   - var
 ---
+
 In this post we take a look at the differences between var and let and const in [Javascript](https://www.nikpro.com.au/the-beauty-of-javascript/). There are confusions sometimes of where to use which and what are the best practices.
 
 To declare a variable we used to use **var** before ES6 introduced **let**. With var, you can declare a variable anywhere and redeclare it again meaning you can change its value by redeclaring it. Because var is function scope but let and **const** are block scope which means they scope inside curly braces.
@@ -23,15 +24,11 @@ To declare a variable we used to use **var** before ES6 introduced **let**. With
 
 Lets take a look at this example I made:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="PaameG" data-default-tab="js,result" data-user="azad6026" data-embed-version="2" data-pen-title="var vs let vs const">
-  See the Pen <a href="https://codepen.io/azad6026/pen/PaameG/">var vs let vs const</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/PaameG
 
 ### var
 
-For var variable, we can redeclare it by reassigning it another value and it always works fine.It has changed from 2 to 3.  It will cause problems though. In applications with lots if declarations and variables, var is buggy and no good to use. 
+For var variable, we can redeclare it by reassigning it another value and it always works fine.It has changed from 2 to 3.  It will cause problems though. In applications with lots if declarations and variables, var is buggy and no good to use.
 
 ### <a id="let"></a>let
 

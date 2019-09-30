@@ -46,9 +46,7 @@ Obviously in this case, array is not defined as an object and cannot be used as 
   So we removed the braces as the todoList is not accepting an object and just adding simple value to the list. In this pen I have shoed how it looks like if we have an array which is defined as an object with initial value. And an array without initial value which they are exactly the same in nature but un the first one we have specified an item to show how items should be added inside object arrays. (this is just an example, so be aware these arrays accept empty input if you just hit the button)
 </p>
 
-<p class="codepen" data-height="438" data-theme-id="0" data-slug-hash="gKrjKr" data-default-tab="html,result" data-user="azad6026" data-embed-version="2" data-pen-title="Arrays inside objects">
-  See the Pen <a href="https://codepen.io/azad6026/pen/gKrjKr/">Arrays inside objects</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/gKrjKr
 
 It looks simple and obvious but it is actually a fundamental concept about objects that should be taken care of. How to define an object which arrays are the best to practice ( with for having the same nature) , how to initialise them and make sure about syntax errors that might take aways hours in large and complicated code to be found.
 

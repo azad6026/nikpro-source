@@ -36,9 +36,7 @@ As a test I have created a pen for all the examples in this article to see the d
 
 We simply create a **h2 tag** and give it a class and content. Typically we use Javascript methods and properties to achieve the goal. And we append the element to the parent element. Lets create the same element using pure React with no JSX.
 
-<p data-height="740" data-theme-id="0" data-slug-hash="vvJeJr" data-default-tab="js,result" data-user="azad6026" data-pen-title="React Fundamentals of rendering elements" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/vvJeJr/">React Fundamentals of rendering elements</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/vvJeJr
 
 ## Rendering element using pure React
 
@@ -104,8 +102,6 @@ In this technique we could add more arguments to our props and pass them to the 
 
 In this article we learnt about how React actually enders an element and what is the concept of React.createElement behind the scenes. You can see the pen here again:
 
-<p data-height="740" data-theme-id="0" data-slug-hash="vvJeJr" data-default-tab="js,result" data-user="azad6026" data-pen-title="React Fundamentals of rendering elements" class="codepen">
-  See the Pen <a href="https://codepen.io/azad6026/pen/vvJeJr/">React Fundamentals of rendering elements</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/azad6026/pen/vvJeJr
 
 Thank you for reading.

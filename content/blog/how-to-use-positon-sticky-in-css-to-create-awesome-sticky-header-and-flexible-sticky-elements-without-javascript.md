@@ -41,21 +41,17 @@ Here is a simple example:
 #one { position: sticky; top: 10px; }
 ```
 
-
 ### Sticky titles with position: sticky
 
 We will have a look at a great demo from MDN. Basically in this example each section title will stick on the top once we scroll down its container:
 
-<p data-height="500" data-theme-id="0" data-slug-hash="JbdJRZ" data-default-tab="html,result" data-user="simevidas" data-pen-title="Sticky positioning" class="codepen">
-  See the Pen <a href="https://codepen.io/simevidas/pen/JbdJRZ/">Sticky positioning</a> by Šime Vidas (<a href="https://codepen.io/simevidas">@simevidas</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/simevidas/pen/JbdJRZ
 
 Firstly the **dt tag** which holds the title have this important CSS:
 
 ```
 dt {<br>  position: -webkit-sticky; //safari support<br>  position: sticky;<br>  top: -1px;<br>}<br>
 ```
-
 
 Sticky value for position property makes it behave as a relative positioned before scrolling. Also it has a top property which is needed as we scroll down. Once we scroll down the behaviour of the element will change to fixed positioning and the title sticks on the top.
 

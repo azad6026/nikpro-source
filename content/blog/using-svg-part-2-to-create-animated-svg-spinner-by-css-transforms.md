@@ -122,8 +122,6 @@ We will add this rotate keyframe as the animation for the big circle. Also we de
 
 As a result we have an animated SVG spinner with a dot shape head that spins infinitely as we speak. This is the pen for this example:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="wEwRvN" data-default-tab="css,result" data-user="SitePoint" data-pen-title="CSS Transformations: Loaders with SVGs" class="codepen">
-  See the Pen <a href="https://codepen.io/SitePoint/pen/wEwRvN/">CSS Transformations: Loaders with SVGs</a> by SitePoint (<a href="https://codepen.io/SitePoint">@SitePoint</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/SitePoint/pen/wEwRvNs
 
 In this example the CSS transform has been combined with SVG and some of its tags and the result is a nice animated SVG shape which could be an inspiration for animation with SVG tag. Thanks for reading.

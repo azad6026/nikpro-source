@@ -23,29 +23,23 @@ We have explained [different CSS grid](https://www.nikpro.com.au/build-responsiv
 
 Basically it is one of the best use cases of CSS grid. Designing a responsive column based layout which is mostly known as card layouts calling each column a card. Lets see the pen:
 
-<p class="codepen" data-height="515" data-theme-id="0" data-default-tab="html,result" data-user="imjuangarcia" data-slug-hash="MLyQPO" style="height: 515px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Trello-Style Card Layout">
-  <span>See the Pen <a href="https://codepen.io/imjuangarcia/pen/MLyQPO/"> Trello-Style Card Layout</a> by Juan Martín García (<a href="https://codepen.io/imjuangarcia">@imjuangarcia</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+https://codepen.io/imjuangarcia/pen/MLyQPO
 
 ### The main grid setup
 
 Practically the main grid container specifies how we lay down the layout. We could find the code here:
 
-
 ```
 .column__list {<br />   display: grid;<br />   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));<br />   grid-gap: .5rem;<br />   align-items: flex-start;<br /> }
 ```
-
 
 Using auto-fill in the repeat function we make sure that we achieve a fluid layout that each empty grid cell will be populated by a column once there is enough space for it. Therefore the minmax() function defines the minimum and maximum size of each grid cell to be calculated and occupied.
 
 The original layout in trello site is not responsive. We can even achieve that by adding these two lines:
 
-
 ```
 grid-auto-flow: column;<br />grid-auto-columns: minmax(260px, 1fr);
 ```
-
 
 Originally the default flow of the grid is based on rows. If we change it to column, then we get a scrollbar in our grid as we expand the width of the container by resizing it. And adding grid-auto-columns we define the size of auto-generated columns in this case. Here these two lines are not in use though.
 
@@ -53,11 +47,9 @@ Originally the default flow of the grid is based on rows. If we change it to col
 
 Practically each main column or card is based on grid themselves:
 
-
 ```
 .card__list {<br />   display: grid;<br />   grid-template-rows: auto;<br />   grid-gap: .5rem;<br />   margin: .5rem 0;<br /> }
 ```
-
 
 What matters is **grid-template-rows** set to **auto**. Because we need rows to have flexible heights based in their content.
 

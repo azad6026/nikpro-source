@@ -75,9 +75,7 @@ As the HTML is the root all calculations are based on that. So 1rem is always 16
 
 Pixels are always the same.In browsers they always stay intact. See the below pen:
 
-<p data-height="350" data-theme-id="0" data-slug-hash="bdxWbB" data-default-tab="html,result" data-user="tutsplus" data-pen-title="bdxWbB" class="codepen">
-  See the Pen <a href="https://codepen.io/tutsplus/pen/bdxWbB/">bdxWbB</a> by Envato Tuts+ (<a href="https://codepen.io/tutsplus">@tutsplus</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/tutsplus/pen/bdxWbBß
 
 Based on the slider font-size the boxes with em and rem units reflect and become relatively big and small. But the box with the pixel unit stays the same size at all times.
 

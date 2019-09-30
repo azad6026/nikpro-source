@@ -15,14 +15,12 @@ tags:
   - clipping
   - CSS clip-path
 ---
+
 CSS clip-path property is a strong and flexible way to hide and show different parts of an element in CSS. We explain CSS clip-path concept here in this post with some examples and would have future posts for further steps.
 
 In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="noopener noreferrer">this</a> CSS tricks article there are lots of example about CSS clip-path but I will explain some important concepts here.
 
 ## The CSS clip-path syntax
-
-
-
 
 ```
 .clip-inset {
@@ -40,7 +38,6 @@ In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="n
 }<br />
 ```
 
-
 We have four different shapes kind of clip-path. Lets explain each with a few examples.
 
 This pen shows how an image can be clipped by different clip-path property shapes:
@@ -49,18 +46,15 @@ This pen shows how an image can be clipped by different clip-path property shape
 
 With inset we can make an inner rectangle that crops the image where we need it to.
 
-
 ```
 .inset {
   -webkit-clip-path: inset(20% 25% 20% 10%);
   clip-path: inset(20% 25% 20% 10%);
 }
 ```
-
 
 Also we could use round keyword and a border radius to make round edges:
 
-
 ```
 .inset {
   -webkit-clip-path: inset(20% 25% 20% 10%);
@@ -68,11 +62,9 @@ Also we could use round keyword and a border radius to make round edges:
 }
 ```
 
-
 [](https://bennettfeely.com/clippy/)**Eclipse**
 
-Ellipses are defined using this syntax: _ellipse(radiusX radiusY at posX posY)_. The position is optional and will default to _50% 50%:_
-
+Ellipses are defined using this syntax: *ellipse(radiusX radiusY at posX posY)*. The position is optional and will default to *50% 50%:*
 
 ```
 .ellipse {
@@ -85,11 +77,9 @@ Ellipses are defined using this syntax: _ellipse(radiusX radiusY at posX posY)_
 }
 ```
 
-
 **Circle**
 
-Circles are defined with this syntax: _circle(radius at posX posY)_. And the position is default to 50% 50%:
-
+Circles are defined with this syntax: *circle(radius at posX posY)*. And the position is default to 50% 50%:
 
 ```
 .circle {
@@ -102,11 +92,9 @@ Circles are defined with this syntax: _circle(radius at posX posY)_. And the po
 }
 ```
 
-
 **Polygon**
 
 Polygon is a very flexible shape maker. You can give it as many points as you like. The provided points are **pairs of X and Y coordinates** that can be of any unit. Here are three examples of clipping with Polygon creating rectangle,  x shape and star shape:
-
 
 ```
 /* Triangle */
@@ -126,18 +114,13 @@ Polygon is a very flexible shape maker. You can give it as many points as you li
 }
 ```
 
-
 ### All in one example
 
-<p data-height="400" data-theme-id="0" data-slug-hash="wBKPOm" data-default-tab="html,result" data-user="chriscoyier" data-pen-title="clip-path examples" class="codepen">
-  See the Pen <a href="https://codepen.io/chriscoyier/pen/wBKPOm/">clip-path examples</a> by Chris Coyier (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/chriscoyier/pen/wBKPOm/
 
 Also have a look at this example on CodePen which uses CSS clip-path for hover over effect:
 
-<p data-height="400" data-theme-id="0" data-slug-hash="vEZOeq" data-default-tab="css,result" data-user="drewminns" data-pen-title="vEZOeq" class="codepen">
-  See the Pen <a href="https://codepen.io/drewminns/pen/vEZOeq/">vEZOeq</a> by Drew Minns (<a href="https://codepen.io/drewminns">@drewminns</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/drewminns/pen/vEZOeq
 
 You could play around with it through Bennet Feely&#8217;s [Clippy.](https://bennettfeely.com/clippy/) It will give us a better understanding around clipping with CSS clip-path. In the next article of CSS clip-path we will talk about [CSS animations](https://www.nikpro.com.au/learn-how-to-use-css-animation-using-keyframes-with-examples/) made by clipping and masking. Thanks for reading.
 

@@ -15,17 +15,14 @@ tags:
   - flexbox
   - gallery
 ---
+
 If you love building small but interesting things using CSS and Javascript, then you will enjoy this one. We will build a simple gallery using flexbox and Javascript. This is from one of the <a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">wesbos</a> courses and it is amazingly simple and elegant.
 
 ## The Flex Gallery
 
 This is what we are going to explain. Click on each panel and you will see that it expands and the words will slide in beautifully:
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="ERqpJq" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="flexbox gallery">
-  See the Pen <a href="https://codepen.io/azad6026/pen/ERqpJq/">flexbox gallery</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/ERqpJq
 
 Now what is happening here. We have five panels that could be sliders with this HTML:
 
@@ -69,13 +66,13 @@ html
 
 #### Parent container with .panels class
 
-We have a panel container with panels class and five child panels. Also three child paragraphs that hold the words. Now to make the panel layout all centred from top to bottom we will need flexbox.  You can read about flexbox with examples <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/" target="_blank" rel="noopener noreferrer">here. </a>
+We have a panel container with panels class and five child panels. Also three child paragraphs that hold the words. Now to make the panel layout all centred from top to bottom we will need flexbox. You can read about flexbox with examples <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-1/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.nikpro.com.au/flexbox-explained-in-a-simple-way-with-examples-part-2/" target="_blank" rel="noopener noreferrer">here. </a>
 
 So we will add display: flex;to the panels container with **.panels **class.
 
 #### The container children with .panel class
 
-To make the child panels all same size we need to add **flex:1; **which means they will have equal flex-grow and will sit beside each other.Then to make them centre we need to add **justify-content: center; ** and  **align-items:center; **This way they look centred and aligned. 
+To make the child panels all same size we need to add **flex:1; **which means they will have equal flex-grow and will sit beside each other.Then to make them centre we need to add **justify-content: center; ** and **align-items:center; **This way they look centred and aligned.
 
 Added to the panels so far:
 
@@ -93,27 +90,27 @@ Added to the panels so far:
 
 First we need to make them centred and then make the top ones go off the screen and then the bottom ones off the screen. We need to have nested flexbox in this example which does the job as we expect. Thus we add **display: flex **to each panel. Also because we want the text direction from top to button, will add **flex-direction: column; **as well.
 
-For panel items we will add  **flex: 1 0 auto;** so they take same space. Also we need them to also have a flex layout so that we can centre words as well. so we will add this:
+For panel items we will add **flex: 1 0 auto;** so they take same space. Also we need them to also have a flex layout so that we can centre words as well. so we will add this:
 
 ```
 
     .panel{
     **  flex: 1 0 auto;**
-      display:flex; 
-      justify-content: center; 
+      display:flex;
+      justify-content: center;
       align-items: center;
     }
 
 ```
 
-##### Now comes the interesting part:  The words animation
+##### Now comes the interesting part: The words animation
 
 To make the top words to go off and animate back we will use transform property and translateY value to push it away to the top:
 
 ```
 
-     .panel > *:first-child { 
-      transform: translateY(-100%); 
+     .panel > *:first-child {
+      transform: translateY(-100%);
     }
 
 ```
@@ -122,8 +119,8 @@ Also the same for the bottom words but to the bottom:
 
 ```
 
-    .panel > *:last-child { 
-      transform: translateY(100%); 
+    .panel > *:last-child {
+      transform: translateY(100%);
     }
 
 ```
@@ -132,8 +129,8 @@ Now we need a class that animates them back and trigger the class later with Jav
 
 ```
 
-    .panel.open-active > *:first-child { 
-      transform: translateY(0); 
+    .panel.open-active > *:first-child {
+      transform: translateY(0);
     }
 
 ```
@@ -142,8 +139,8 @@ This while toggles make the animation happen. For the bottom words we will have 
 
 ```
 
-    .panel.open-active > *:last-child { 
-      transform: translateY(0); 
+    .panel.open-active > *:last-child {
+      transform: translateY(0);
     }
 
 ```
@@ -154,9 +151,9 @@ This is very simple. We just need to change the flex property once the box is cl
 
 ```
 
-    .panel.open {  
-      flex: 5;  
-      font-size:40px;  
+    .panel.open {
+      flex: 5;
+      font-size:40px;
     }
 
 ```
@@ -175,8 +172,8 @@ Then the toggleOpen function that toggles the .open class:
 
 ```
 
-    function toggleOpen() {  
-      this.classList.toggle('open');  
+    function toggleOpen() {
+      this.classList.toggle('open');
 }
 
 ```
@@ -185,10 +182,10 @@ Now the function to toggle .open-acive class:
 
 ```
 
-    function toggleActive(e) {  
-      if (e.propertyName.includes('flex')) {  
-        this.classList.toggle('open-active');  
-      }  
+    function toggleActive(e) {
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
     }
 
 ```
@@ -219,10 +216,6 @@ To make the words transitioned, we listen to transitioned event and fire the tog
 
 ```
 
-<p class="codepen" data-height="265" data-theme-id="0" data-slug-hash="ERqpJq" data-default-tab="css,result" data-user="azad6026" data-embed-version="2" data-pen-title="flexbox gallery">
-  See the Pen <a href="https://codepen.io/azad6026/pen/ERqpJq/">flexbox gallery</a> by Azadeh Faramarzi (<a href="https://codepen.io/azad6026">@azad6026</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
-
-
+https://codepen.io/azad6026/pen/ERqpJq
 
 That&#8217;s it. Now you have it all. Now play around with it and maybe make your own with different techniques. We will make different galleries/sliders in the future. Hope you liked it.

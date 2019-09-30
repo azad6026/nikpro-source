@@ -14,8 +14,9 @@ categories:
   - CSS
   - CSS3
 tags:
-  - 'display: contents'
+  - "display: contents"
 ---
+
 In this article we will have a look at a basic introduction of display:contents in CSS. We need to learn about this useful property with some examples.
 
 ## What is display:contents?
@@ -34,9 +35,7 @@ Generally display: contents makes the container that we apply this property, to 
 
 Firstly we will take a look at this example from <a href="https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/" target="_blank" rel="noopener noreferrer">Rachel Andrew</a>. We will see how giving this property to the outer element makes all box styling disappear:
 
-<p data-height="350" data-theme-id="0" data-slug-hash="rxvMWG" data-default-tab="html,result" data-user="rachelandrew" data-pen-title="display: contents" class="codepen">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/rxvMWG/">display: contents</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/rachelandrew/pen/rxvMWG
 
 As a result we loose all the box style such as border and background and padding and so on in the outer box. So display: contents is good if we need an element for the sake of semantic HTML but not as a styled element.
 
@@ -44,9 +43,7 @@ As a result we loose all the box style such as border and background and padding
 
 Practically we could use display:contents to change the HTML to make our own layouts. In this example from <a href="https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/" target="_blank" rel="noreferrer noopener">Rachel Andrew</a> we have the inner two boxes wrapped in a container. Using display: contents we remove the box and make those two inner boxes child of Flexbox container:
 
-<p data-height="350" data-theme-id="0" data-slug-hash="zraOMV" data-default-tab="css,result" data-user="rachelandrew" data-pen-title="display: contents and flexbox" class="codepen">
-  See the Pen <a href="https://codepen.io/rachelandrew/pen/zraOMV/">display: contents and flexbox</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/rachelandrew/pen/zraOMV
 
 ### Accessibility issue
 

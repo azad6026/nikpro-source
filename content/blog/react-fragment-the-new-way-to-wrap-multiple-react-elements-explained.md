@@ -16,6 +16,7 @@ tags:
   - higher order functions
   - React.Fragment
 ---
+
 React.Fragment is the new way to wrap elements in the return statement. We will explain it in this article with some examples. Similarly we had explained how to wrap multi-element return statements using higher order components [here](https://www.nikpro.com.au/different-stateless-functional-component-in-react-explained/) before.
 
 ## React.Fragment syntax pattern
@@ -28,7 +29,6 @@ Practically there are two syntax or patterns to use React.Fragment inside the co
 
 Firstly imagine this example table from <a href="https://reactjs.org/docs/fragments.html#short-syntax" target="_blank" rel="noopener noreferrer">React site</a> which will include a Columns component. Columns component returns multiple table cells or <td>s:
 
-
 ```
  <table>
         <tr>
@@ -37,9 +37,7 @@ Firstly imagine this example table from <a href="https://reactjs.org/docs/fragme
  </table>
 ```
 
-
 Wrapping this Columns component return statement with a <div> is not correct in this case:
-
 
 ```
 class Columns extends React.Component {
@@ -54,9 +52,7 @@ class Columns extends React.Component {
 }
 ```
 
-
 Which means the table will look like this at the end:
-
 
 ```
 <table>
@@ -69,9 +65,7 @@ Which means the table will look like this at the end:
 </table>
 ```
 
-
 Definitely this is not a correct semantic table. We will need React.Fragment to generate the table and have no wrapper around the Columns component return statement:
-
 
 ```
 class Columns extends React.Component {
@@ -86,9 +80,7 @@ class Columns extends React.Component {
 }
 ```
 
-
 As a result we get this table:
-
 
 ```
 <table>
@@ -99,9 +91,7 @@ As a result we get this table:
 </table>
 ```
 
-
 Also we can use the shorter syntax in the Columns component which looks cool:
-
 
 ```
  <>
@@ -110,17 +100,13 @@ Also we can use the shorter syntax in the Columns component which looks cool:
   </>
 ```
 
-
-We see that opening and closing tags are actually empty. Besides it really makes sense as they do not produce any actual tags. 
+We see that opening and closing tags are actually empty. Besides it really makes sense as they do not produce any actual tags.
 
 Also there is a pen for this in the React docs:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="VrEbjE" data-default-tab="html,result" data-user="reactjs" data-pen-title="Example: Fragments" class="codepen">
-  See the Pen <a href="https://codepen.io/reactjs/pen/VrEbjE/">Example: Fragments</a> by React JS (<a href="https://codepen.io/reactjs">@reactjs</a>) on <a href="https://codepen.io">CodePen</a>.
-</p>
+https://codepen.io/reactjs/pen/VrEbjE
 
 Here is also a general usage of the React.Fragment wrapping multiple elements:
-
 
 ```
 render() {
@@ -134,7 +120,6 @@ render() {
 }
 ```
 
-
-Considerably we could use React.Fragment instead of using higher order functions in most cases. It is simple, easy to maintain and does exaxtly what needs to be done: only wrapping the content without generating a DOM element. 
+Considerably we could use React.Fragment instead of using higher order functions in most cases. It is simple, easy to maintain and does exaxtly what needs to be done: only wrapping the content without generating a DOM element.
 
 Thank you for reading.
