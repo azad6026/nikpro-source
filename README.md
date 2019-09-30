@@ -4,11 +4,11 @@
 
 ## Hello Gatsby
 
-This site is migrated from WordPress to Gatsby and hosted by Netlify and uses Netlify CMS as well.
+My site is migrated from WordPress to Gatsby and hosted by Netlify and will use Netlify CMS in the fututure as backend as well. I am moving all components to use styled components which is a cool way of doing all css in js.
 
 ## 🚀 Purpose
 
-To share my aha moments and knowledge to the community with passion and love.
+To share my aha moments and knowledge with the community with passion and love.
 
 ## 🧐 Contents
 
