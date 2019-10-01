@@ -80,24 +80,13 @@ pre {
 a {
   color: var(--link-color);
 }
-.pagination-menu a:hover {
-  --hover-color: #ffe;
-}
 a.gatsby-resp-image-link {
   pointer-events: none;
-}
-.post-box {
-  position: relative;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 12px;
-  }
-  ul,
-  ol {
-    /* margin: 0; */
   }
   .inner-wrapper {
     max-width: 90vw;
