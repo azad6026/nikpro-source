@@ -91,7 +91,10 @@ All good. But it would be nicer if we using ternary operator and shorten the cod
 
 Or we can even use a **const **value and set the method and then call it likewise. Whichever method is called it will play or pause the video:
 
-`function togglePlay() {<br /> const method = video.paused ? 'play' : 'paused';<br /> video[method]();<br /> }}`
+`function togglePlay() {
+ const method = video.paused ? 'play' : 'paused';
+ video[method]();
+ }}`
 
 Which is more of a modern way.
 

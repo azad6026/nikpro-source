@@ -70,7 +70,15 @@ https://codepen.io/enbee81/pen/LBMKqV
 We will explain the relevant part to the animation. The rest is just positioning stuff. This is the HTML:
 
 ```
-<div class="container"><br />&nbsp; <div class="box"><br />&nbsp; &nbsp; <div class="spin-container"><br />&nbsp; &nbsp; &nbsp; <div class="shape"><br />&nbsp; &nbsp; &nbsp; &nbsp; <div class="bd"></div><br />&nbsp; &nbsp; &nbsp; </div><br />&nbsp;&nbsp; &nbsp; </div><br />&nbsp; </div><br /></div>
+<div class="container">
+&nbsp; <div class="box">
+&nbsp; &nbsp; <div class="spin-container">
+&nbsp; &nbsp; &nbsp; <div class="shape">
+&nbsp; &nbsp; &nbsp; &nbsp; <div class="bd"></div>
+&nbsp; &nbsp; &nbsp; </div>
+&nbsp;&nbsp; &nbsp; </div>
+&nbsp; </div>
+</div>
 ```
 
 We notice that the inner child with **class .bd&nbsp;**&nbsp;has the image background and the spin animation applies to it.
@@ -82,7 +90,11 @@ animation: spin 12s linear infinite reverse;
 And the spin animation has a rotation been defined to it:
 
 ```
-@keyframes spin {<br />  to {<br />    transform: rotate(1turn);<br />  }<br />}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
 ```
 
 As a side note rotation property uses turn unit for the value which [we have explained here before](https://www.nikpro.com.au/angle-value-in-css-explained-degrees-gradians-radians-or-turns-units/).
@@ -90,13 +102,18 @@ As a side note rotation property uses turn unit for the value which [we have exp
 On the other side and **as the parent of this container we have a div with .shape class that magic applies to it.**
 
 ```
-transition: border-radius 1s ease-out;<br />border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;<br />animation: morph 8s ease-in-out infinite both alternate;
+transition: border-radius 1s ease-out;
+border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+animation: morph 8s ease-in-out infinite both alternate;
 ```
 
 Practically we use eight values which gives it different values on each edge. Then we apply the morph animation using both in the syntax.&nbsp;Therefor the animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions. And alternate them too.
 
 ```
-@keyframes morph {<br />  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} <br />  100% {border-radius: 40% 60%;} <br />}
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+  100% {border-radius: 40% 60%;} 
+}
 ```
 
 Also we see how the animation changes the border-radius property from start which it has 8 values using slash syntax to two values at 100%. Great effect.

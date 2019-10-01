@@ -25,7 +25,14 @@ There are two types of methods to select elements in the DOM. The old ones are:
 
 
 ```
-// Select an element with an id : here id=para<br />const el = document.getElementById('para');<br /><br />// Select an element by tag name :  here p tag<br />const el = document.getElementsByTagName('p');<br /><br />// Select an element by class name : here class=test<br />const el = document.getElementsByClassName('test');
+// Select an element with an id : here id=para
+const el = document.getElementById('para');
+
+// Select an element by tag name :  here p tag
+const el = document.getElementsByTagName('p');
+
+// Select an element by class name : here class=test
+const el = document.getElementsByClassName('test');
 ```
 
 
@@ -40,7 +47,12 @@ Using&nbsp;`querySelector method`&nbsp;we could select any selector. It could be
 
 
 ```
-CSS// Selects all p tags<br />const matches = document.querySelectorAll("p");<br /><br />// Selects all divs with class of note and alert<br />const matches = document.querySelectorAll("div.note, div.alert");<br />
+CSS// Selects all p tags
+const matches = document.querySelectorAll("p");
+
+// Selects all divs with class of note and alert
+const matches = document.querySelectorAll("div.note, div.alert");
+
 ```
 
 
@@ -52,7 +64,11 @@ Practically we could combine them to select specific children of a parent elemen
 
 
 ```
-// Select an element with id=test<br />const container = document.querySelector("#test");<br /><br />// Select all p tags inside a div with class=highlighted of the above container<br />const matches = container.querySelectorAll("div.highlighted > p");
+// Select an element with id=test
+const container = document.querySelector("#test");
+
+// Select all p tags inside a div with class=highlighted of the above container
+const matches = container.querySelectorAll("div.highlighted > p");
 ```
 
 
@@ -60,7 +76,9 @@ And because what we get as a result is an array we can also use array methods:
 
 
 ```
-matches.forEach(function(pTag) {<br />  boldIt(pTag);<br />});
+matches.forEach(function(pTag) {
+  boldIt(pTag);
+});
 ```
 
 
@@ -75,7 +93,23 @@ Additionally we can create , append and remove elements using&nbsp;&nbsp;`create
 
 
 ```
-// Create a p tag<br /><br />const para = document.createElement('p');<br />para.textContent = 'We hope you enjoyed the ride.';<br /><br />// Append it to the section<br /><br />const sect = document.querySelector('section');<br />sect.appendChild(para);<br /><br />// Remove the p tag<br /><br />sect.removeChild(linkPara);<br /><br />//Or remove it referencing to its parent like this when that is the only way<br /><br />linkPara.parentNode.removeChild(linkPara);
+// Create a p tag
+
+const para = document.createElement('p');
+para.textContent = 'We hope you enjoyed the ride.';
+
+// Append it to the section
+
+const sect = document.querySelector('section');
+sect.appendChild(para);
+
+// Remove the p tag
+
+sect.removeChild(linkPara);
+
+//Or remove it referencing to its parent like this when that is the only way
+
+linkPara.parentNode.removeChild(linkPara);
 ```
 
 
@@ -87,7 +121,17 @@ Basically there are two ways to manipulate CSS using Javascript. You can directl
 
 
 ```
-// Change the p tag's styles<br /><br />const para = document.createElement('p');<br /><br />// For two word properties we use camel case like in backgroundColor<br />para.style.color = 'white';<br />para.style.backgroundColor = 'black';<br />para.style.padding = '10px';<br />para.style.width = '250px';<br />para.style.textAlign = 'center';<br />
+// Change the p tag's styles
+
+const para = document.createElement('p');
+
+// For two word properties we use camel case like in backgroundColor
+para.style.color = 'white';
+para.style.backgroundColor = 'black';
+para.style.padding = '10px';
+para.style.width = '250px';
+para.style.textAlign = 'center';
+
 ```
 
 
@@ -102,7 +146,15 @@ Instead of doing all properties one by one we can create a class and put in all 
 
 
 ```
-.highlight {<br />  color: white;<br />  background-color: black;<br />  padding: 10px;<br />  width: 250px;<br />  text-align: center;<br />}<br /><br />para.setAttribute('class', 'highlight');
+.highlight {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+para.setAttribute('class', 'highlight');
 ```
 <figure class="wp-block-image">
 
@@ -114,7 +166,10 @@ Generally we can assign, toggle and replace or remove classes in CSS using Javas
 
 
 ```
-// Select a div<br />const div = document.querySelector('div');<br />// Assign the warning class to the div<br />div.className = 'warning';
+// Select a div
+const div = document.querySelector('div');
+// Assign the warning class to the div
+div.className = 'warning';
 ```
 
 
@@ -122,7 +177,20 @@ That is how we add class name without using setAttribute method. But we can also
 
 
 ```
-// Select a div by class name<br />const activeDiv = document.querySelector('.active');<br /><br />// Add the hidden class<br />activeDiv.classList.add('hidden'); <br /><br />// Remove the hidden class<br />activeDiv.classList.remove('hidden'); <br /><br />// Switch between hidden true and false<br />activeDiv.classList.toggle('hidden');<br /><br />// Replace active class with warning class<br />activeDiv.classList.replace('active', 'warning');
+// Select a div by class name
+const activeDiv = document.querySelector('.active');
+
+// Add the hidden class
+activeDiv.classList.add('hidden'); 
+
+// Remove the hidden class
+activeDiv.classList.remove('hidden'); 
+
+// Switch between hidden true and false
+activeDiv.classList.toggle('hidden');
+
+// Replace active class with warning class
+activeDiv.classList.replace('active', 'warning');
 ```
 
 

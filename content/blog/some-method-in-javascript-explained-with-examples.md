@@ -28,7 +28,8 @@ According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ```
 function isBiggerThan10(element, index, array) {
   return element > 10;
-}<br/><br />[2, 5, 8, 1, 4].some(x => x > 10);  // false
+}<br/>
+[2, 5, 8, 1, 4].some(x => x > 10);  // false
 [12, 5, 8, 1, 4].some(x => x > 10); // true
 ```
 
@@ -39,7 +40,9 @@ Moreover we can shorten the whole code to one function as some accept the functi
 
 
 ```
-[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false<br />[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true<br />
+[2, 5, 8, 1, 4].some((element, index, array)=> element > 10); // false
+[12, 5, 8, 1, 4].some((element, index, array)=> element > 10);// true
+
 ```
 
 
@@ -51,7 +54,8 @@ OF course there are other use cases for some. We might need to check if a user h
 
 
 ```
-const userPrivileges = ['user', 'user', 'user', 'admin'];<br/>userPrivileges.some( element => element === 'admin');<br />// will be equal to true
+const userPrivileges = ['user', 'user', 'user', 'admin'];<br/>userPrivileges.some( element => element === 'admin');
+// will be equal to true
 ```
 
 
@@ -83,7 +87,8 @@ function checkAvailability(arr, val)
            } );
 }
 
-checkAvailability(arr, 2);<br />checkAvailability(arr, 87);
+checkAvailability(arr, 2);
+checkAvailability(arr, 87);
 ```
 
 
@@ -93,7 +98,8 @@ Similarly includes checks if an array contains a certain value. It’s similar t
 
 
 ```
-const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.includes('waldo');<br />// will be equal to true
+const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];<br/>names.includes('waldo');
+// will be equal to true
 ```
 
 

@@ -38,7 +38,8 @@ https://codepen.io/azad6026/pen/aaYzNJ
 So the important part here is these lines of code:
 
 ```
-shape-outside: ellipse(100px 200px at 50% 50%);<br />clip-path: ellipse(100px 200px at 50% 50%);
+shape-outside: ellipse(100px 200px at 50% 50%);
+clip-path: ellipse(100px 200px at 50% 50%);
 ```
 
 Therefor [the clip-path](https://www.nikpro.com.au/css-clip-path-property-basic-concept-explained-with-examples/) makes the oval shape and we use the shape-outside property as one of the CSS shape properties to shape the container as expected.
@@ -56,7 +57,8 @@ Practically we use clip-path to shape the two right and left containers and then
   shape-outside: polygon(100% 0, 100% 100%, 0 100%);
   float: right;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);<br />
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+
 ```
 
 The above is the code for the right floated box and we have a similar code for the other one.

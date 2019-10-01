@@ -26,7 +26,8 @@ In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="n
 .clip-inset {
   clip-path: inset(10px 20px 30px 40px);
   /* Also can take single values to make all sides the same, or 2 values (vert/horz), or 3 values (top/horz/bottom). */
-}<br />.clip-circle {
+}
+.clip-circle {
   clip-path: circle(60px at center);
 }
 .clip-ellipse {
@@ -35,7 +36,8 @@ In <a href="https://css-tricks.com/clipping-masking-css/" target="_blank" rel="n
 .clip-polygon {
   clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   /* Note that percentages work as well as px */
-}<br />
+}
+
 ```
 
 We have four different shapes kind of clip-path. Lets explain each with a few examples.

@@ -35,7 +35,20 @@ Basically functional components are just React components that aren’t created 
 
 
 ```
-<em>// Class component<br /></em>class Parent extends React.Component {<br /> render () {<br />  return(<br />   <Child bg<em>Color</em>={'blue'} /><br />  )<br /> }<br />}<br /><em>// Functional component<br /></em>const Child = () => {<br />  return (<br />    <div></div><br />  )<br />}
+<em>// Class component
+</em>class Parent extends React.Component {
+ render () {
+  return(
+   <Child bg<em>Color</em>={'blue'} />
+  )
+ }
+}
+<em>// Functional component
+</em>const Child = () => {
+  return (
+    <div></div>
+  )
+}
 ```
 
 
@@ -45,7 +58,11 @@ Thankfully there is no nee to use the this keyword here. Because it is not a cla
 
 
 ```
-const Child = (props) => {<br />  return (<br />    <div style={{backgroundColor: props.bgColor}} /><br />  )<br />}
+const Child = (props) => {
+  return (
+    <div style={{backgroundColor: props.bgColor}} />
+  )
+}
 ```
 
 
@@ -53,7 +70,11 @@ A stateless component(or dumb) is just presentation of the state(props). It only
 
 
 ```
-const Button = props => (<br />   <button className="our_button" onClick={props.onClick}><br />      {props.label}<br />   </button><br />);
+const Button = props => (
+   <button className="our_button" onClick={props.onClick}>
+      {props.label}
+   </button>
+);
 ```
 
 

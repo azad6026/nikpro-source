@@ -23,7 +23,20 @@ Firstly have a look at this example with if/else statement:
 
 
 ```
-const MyComponent = ({ name }) => {<br />  if (name) {<br />    return (<br />      <div className="hello"><br />        Hello {name}<br />      </div><br />    );<br />  }<br />  return (<br />    <div className="hello"><br />      Please sign in<br />    </div><br />  );<br />};
+const MyComponent = ({ name }) => {
+  if (name) {
+    return (
+      <div className="hello">
+        Hello {name}
+      </div>
+    );
+  }
+  return (
+    <div className="hello">
+      Please sign in
+    </div>
+  );
+};
 ```
 
 
@@ -31,7 +44,11 @@ In [this functional](https://www.nikpro.com.au/functional-component-in-react-exp
 
 
 ```
-const MyComponent = ({ name }) => (<br />  <div className="hello"><br />    {name ? `Hello ${name}` : 'Please sign in'}<br />  </div><br />);
+const MyComponent = ({ name }) => (
+  <div className="hello">
+    {name ? `Hello ${name}` : 'Please sign in'}
+  </div>
+);
 ```
 
 

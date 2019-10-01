@@ -65,7 +65,8 @@ This is a good example for when a few conditions need to be checked step by step
 `var condition1 = true,`  
 `condition2 = false,` 
 
-`access = condition1 ? (condition2 ? "true true": "true false") : <br />
+`access = condition1 ? (condition2 ? "true true": "true false") : 
+
 (condition2 ? "false true" : "false false");` `console.log(access); // logs "true false"` 
 
 Here each expression contains a seperate ternary operator statement. Besides we can have more that only one operation per expression. We just need to seperate them with comma:

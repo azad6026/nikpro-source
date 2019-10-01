@@ -30,7 +30,8 @@ Then we have all remaining arguments to be placed within &#8220;standard&#8221; 
 ```
 function f(a, b, ...theArgs) {
   // ...
-}<br/><br/>// Using <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/> // ...<br />}
+}<br/><br/>// Using <a href="https://www.nikpro.com.au/all-you-need-to-know-about-arrow-functions-in-javascript/">arrow functions<br/><br/></a>const f = (a,b,  ...theArgs) => {<br/> // ...
+}
 ```
 
 Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
@@ -46,11 +47,14 @@ const myFun = (a, b, …manyMoreArgs) => {
   console.log("a", a);
   console.log("b", b);
   console.log("manyMoreArgs", manyMoreArgs);
-}<br /><br />myFun("one", "two", "three", "four", "five", "six");
+}
+
+myFun("one", "two", "three", "four", "five", "six");
 
 // a, one
 // b, two
-// manyMoreArgs, [three, four, five, six]<br />
+// manyMoreArgs, [three, four, five, six]
+
 ```
 
 As an example we have &#8230;manyMoreArgs as rest parameters. Therefor whatever argument to be assigned after the first two arguments will be part of the rest parameters:
@@ -66,7 +70,8 @@ myFun("one", "two", "three");
 
 // a, one
 // b, two
-// manyMoreArgs, []<br />
+// manyMoreArgs, []
+
 ```
 
 Although in the last function call the last parameter wasn&#8217;t specified but we still have an array which is empty.

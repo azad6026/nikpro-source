@@ -30,7 +30,15 @@ The TopComponent renders the MiddleComponent which is the child of the TopCompon
 
 
 ```
-class TopComponent extends React.Component {<br />  state = {<br />    name: "Azadeh"<br />  };<br /><br />  render() {<br />    return <MiddleComponent <em>name</em>={<em>this</em>.state.name} />;<br />  }<br />}
+class TopComponent extends React.Component {
+  state = {
+    name: "Azadeh"
+  };
+
+  render() {
+    return <MiddleComponent <em>name</em>={<em>this</em>.state.name} />;
+  }
+}
 ```
 
 
@@ -38,7 +46,9 @@ The MiddleComponent renders the BottomComponent which is the last component and 
 
 
 ```
-const MiddleComponent = ({ name }) => {<br />  return <BottomComponent <em>name</em>={name} />;<br />};
+const MiddleComponent = ({ name }) => {
+  return <BottomComponent <em>name</em>={name} />;
+};
 ```
 
 
@@ -46,7 +56,9 @@ The BottomComponent renders the name in a p tag and that is what will be shown a
 
 
 ```
-const BottomComponent = ({ name }) => {<br />  return <p>My name is : {name}</p>;<br />};
+const BottomComponent = ({ name }) => {
+  return <p>My name is : {name}</p>;
+};
 ```
 
 
@@ -60,7 +72,10 @@ Firstly we will create a Context object using its own method:
 
 
 ```
-const SharedContext = React.createContext({});<br />const SharedProvider = FamilyContext.Provider;<br />const SharedConsumer = FamilyContext.Consumer;<br />
+const SharedContext = React.createContext({});
+const SharedProvider = FamilyContext.Provider;
+const SharedConsumer = FamilyContext.Consumer;
+
 ```
 
 
@@ -68,7 +83,18 @@ Then we wrap our upper level component using the Provider. The Context Provider 
 
 
 ```
-class TopComponent extends React.Component {<br />    state = {<br />        name: "Azadeh"<br />    };<br /><br />    render() {<br />        return (<br />            <SharedProvider <em>value</em>={<em>this</em>.state.name}><br />              <MiddleComponent  /><br />            </SharedProvider>);<br />            }<br />}
+class TopComponent extends React.Component {
+    state = {
+        name: "Azadeh"
+    };
+
+    render() {
+        return (
+            <SharedProvider <em>value</em>={<em>this</em>.state.name}>
+              <MiddleComponent  />
+            </SharedProvider>);
+            }
+}
 ```
 
 
@@ -80,7 +106,15 @@ Here is the change in the BottomComponent using render props method:
 
 
 ```
-const BottomComponent = () => {<br />  return (<br />      <SharedConsumer><br />      // context is the object with name on it. It gets passed as an<br />      argument<br />      {context => <p>{context}</p>}<br />      </SharedConsumer><br />  );<br />};
+const BottomComponent = () => {
+  return (
+      <SharedConsumer>
+      // context is the object with name on it. It gets passed as an
+      argument
+      {context => <p>{context}</p>}
+      </SharedConsumer>
+  );
+};
 ```
 
 
@@ -110,7 +144,43 @@ Here is another full example from Reactjs with comments:
 
 
 ```
-// Context lets us pass a value deep into the component tree<br />// without explicitly threading it through every component.<br />// Create a context for the current theme (with "light" as the default).<br />const ThemeContext = React.createContext('light');<br /><br />class App extends React.Component {<br />    render() {<br />        // Use a Provider to pass the current theme to the tree below.<br />        // Any component can read it, no matter how deep it is.<br />        // In this example, we're passing "dark" as the current value.<br />        return (<br />            <ThemeContext.Provider <em>value</em>="dark"><br />                <Toolbar /><br />            </ThemeContext.Provider><br />        );<br />    }<br />}<br /><br />// A component in the middle doesn't have to<br />// pass the theme down explicitly anymore.<br />function Toolbar(props) {<br />    return (<br />        <div><br />            <ThemedButton /><br />        </div><br />    );<br />}<br /><br />class ThemedButton extends React.Component {<br />    // Assign a contextType to read the current theme context.<br />    // React will find the closest theme Provider above and use its value.<br />    // In this example, the current theme is "dark".<br />    static contextType = ThemeContext;<br />    render() {<br />        return <Button <em>theme</em>={<em>this</em>.context} />;<br />    }<br />}
+// Context lets us pass a value deep into the component tree
+// without explicitly threading it through every component.
+// Create a context for the current theme (with "light" as the default).
+const ThemeContext = React.createContext('light');
+
+class App extends React.Component {
+    render() {
+        // Use a Provider to pass the current theme to the tree below.
+        // Any component can read it, no matter how deep it is.
+        // In this example, we're passing "dark" as the current value.
+        return (
+            <ThemeContext.Provider <em>value</em>="dark">
+                <Toolbar />
+            </ThemeContext.Provider>
+        );
+    }
+}
+
+// A component in the middle doesn't have to
+// pass the theme down explicitly anymore.
+function Toolbar(props) {
+    return (
+        <div>
+            <ThemedButton />
+        </div>
+    );
+}
+
+class ThemedButton extends React.Component {
+    // Assign a contextType to read the current theme context.
+    // React will find the closest theme Provider above and use its value.
+    // In this example, the current theme is "dark".
+    static contextType = ThemeContext;
+    render() {
+        return <Button <em>theme</em>={<em>this</em>.context} />;
+    }
+}
 ```
 
 

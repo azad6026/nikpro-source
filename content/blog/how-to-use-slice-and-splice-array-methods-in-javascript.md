@@ -32,7 +32,11 @@ Firstly have a look at this example in both slice and splice methods:
 
 
 ```
-let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.slice(1);<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />// citrus : ["Banana", "Orange", "Lemon", "Apple"]<br />
+let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+let citrus = fruits.slice(1);
+// fruits : ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// citrus : ["Banana", "Orange", "Lemon", "Apple"]
+
 ```
 
 
@@ -42,7 +46,8 @@ Moreover if we do the slice with two arguments:
 
 
 ```
-citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon"]
+citrus = fruits.slice(1, 3);
+// citrus : ["Orange", "Lemon"]
 ```
 
 
@@ -52,7 +57,10 @@ Now lets try the same example of slice and splice with the splice method this ti
 
 
 ```
-let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.splice(1);<br />// citrus : ["Orange", "Lemon", "Apple", "Mango"];<br />// fruits : ["Banana"]
+let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+let citrus = fruits.splice(1);
+// citrus : ["Orange", "Lemon", "Apple", "Mango"];
+// fruits : ["Banana"]
 ```
 
 
@@ -62,7 +70,9 @@ Now if we do the two argument check with splice:
 
 
 ```
-citrus = fruits.slice(1, 3);<br />// citrus : ["Orange", "Lemon", "Apple"]<br />// fruits : ["Banana", "Mango"]
+citrus = fruits.slice(1, 3);
+// citrus : ["Orange", "Lemon", "Apple"]
+// fruits : ["Banana", "Mango"]
 ```
 
 
@@ -72,7 +82,10 @@ Comparing slice and splice we could also replace an element using splice in the 
 
 
 ```
-let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br />let citrus = fruits.splice(4, 1,'Kiwi');<br />// citrus : ["Mango"]<br />// fruits : ["Banana", "Orange", "Lemon", "Apple", "Kiwi"]
+let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+let citrus = fruits.splice(4, 1,'Kiwi');
+// citrus : ["Mango"]
+// fruits : ["Banana", "Orange", "Lemon", "Apple", "Kiwi"]
 ```
 
 

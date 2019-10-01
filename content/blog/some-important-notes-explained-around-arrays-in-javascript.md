@@ -26,7 +26,8 @@ When creating arrays in Javascript do not use the new keyword. It confuses the c
 
 
 ```
-let points = new Array(40, 100, 1, 5, 25, 10); // Bad<br />let points = [40, 100, 1, 5, 25, 10];          // Good
+let points = new Array(40, 100, 1, 5, 25, 10); // Bad
+let points = [40, 100, 1, 5, 25, 10];          // Good
 ```
 
 
@@ -36,7 +37,10 @@ Practically there are a few ways to check if an object is an array. We can test 
 
 
 ```
-let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />function isArray(x) {<br />    return x.constructor.toString().indexOf("Array") > -1;<br />}
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+function isArray(x) {
+    return x.constructor.toString().indexOf("Array") > -1;
+}
 ```
 
 
@@ -44,7 +48,8 @@ Therefor it always returns true if the argument is an array. Moreover the **ins
 
 
 ```
-let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />fruits instanceof Array     // returns true
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits instanceof Array     // returns true
 ```
 
 
@@ -52,7 +57,8 @@ Finally the newest option to recognise arrays in Javascript is the ES6 isArray m
 
 
 ```
-let fruits = ["Banana", "Orange", "Apple", "Mango"];<br />Array.isArray(fruits);     // returns true
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+Array.isArray(fruits);     // returns true
 ```
 
 
@@ -83,7 +89,10 @@ Obviously we get the same results with push and unshift.
 ```
 let fruits = ["Apple", "Orange", "Pear"];<br/><br/>// Pop
 alert( fruits.pop() ); // remove "Pear" and alert it
-alert( fruits ); // Apple, Orange<br /><br />// Shift<br />alert( fruits.shift() ); // remove Apple and alert it
+alert( fruits ); // Apple, Orange
+
+// Shift
+alert( fruits.shift() ); // remove Apple and alert it
 alert( fruits ); // Orange, Pear
 ```
 

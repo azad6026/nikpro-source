@@ -26,7 +26,10 @@ We most likely write the code to add and event to an element like this:
 
 
 ```
-Const Element1 = document.querySeletor(#name);<br />Element1.addEventListener ("click", function() {<br /> //this function does stuff <br /> });
+Const Element1 = document.querySeletor(#name);
+Element1.addEventListener ("click", function() {
+ //this function does stuff 
+ });
 ```
 
 
@@ -38,7 +41,12 @@ Using a forEach loop is the best way in modern ES6 code to add event listeners t
 
 
 ```
-let elementsArray = document.querySelectorAll(".element");<br /> elementsArray.forEach(function(elem) {<br />     elem.addEventListener("click", function() {<br />         //this function does stuff<br />     });<br /> });
+let elementsArray = document.querySelectorAll(".element");
+ elementsArray.forEach(function(elem) {
+     elem.addEventListener("click", function() {
+         //this function does stuff
+     });
+ });
 ```
 
 
@@ -50,7 +58,11 @@ Also if we only have a few different elements, we could apply the method directl
 
 
 ```
-[ Element1, Element2 ].forEach(function(element) {<br />    element.addEventListener("click", function() {<br />       //this function does stuff<br />    });<br /> });
+[ Element1, Element2 ].forEach(function(element) {
+    element.addEventListener("click", function() {
+       //this function does stuff
+    });
+ });
 ```
 
 
@@ -62,7 +74,10 @@ Typically the code is the same. Just [using arrow function](https://www.nikpro.c
 
 
 ```
-let elementsArray = document.querySelectorAll(".element");<br />elementsArray.forEach(el => el.addEventListener('click', function(){<br />  //console.log(this); refers to each array element<br />});
+let elementsArray = document.querySelectorAll(".element");
+elementsArray.forEach(el => el.addEventListener('click', function(){
+  //console.log(this); refers to each array element
+});
 ```
 
 
@@ -70,7 +85,10 @@ But remember we should not use arrow function for the function inside the addEve
 
 
 ```
-let elementsArray = document.querySelectorAll(".element");<br />elementsArray.forEach(el => el.addEventListener('click',() => {<br />  //console.log(this); refers to window<br />}));
+let elementsArray = document.querySelectorAll(".element");
+elementsArray.forEach(el => el.addEventListener('click',() => {
+  //console.log(this); refers to window
+}));
 ```
 <figure class="wp-block-image">
 

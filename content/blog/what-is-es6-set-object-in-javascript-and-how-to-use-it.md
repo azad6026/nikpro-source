@@ -29,19 +29,38 @@ new Set([<em>iterable</em>]);
 And this is how we initialise it in the code:
 
 ```
-const newSet1 = new Set();<br />const newSet2 = new Set(null);<br />const newSet3 = new Set([1, 2, 3, 4, 5]);
+const newSet1 = new Set();
+const newSet2 = new Set(null);
+const newSet3 = new Set([1, 2, 3, 4, 5]);
 ```
 
 Logically the add method adds new entries to the set collection and if ever a duplication happens based on **strict equality** of set it will be discarded. As mentioned above set only contains unique values. This is an example of creating a set collection and iterate through it using the forEach loop:
 
 ```
-const newSet = new Set();<br />newSet.add("C");<br />newSet.add(1);<br />newSet.add("C");<br />// chain add functionality<br />newSet.add("H").add("C");<br />newSet.forEach(el => {<br />  console.log(el);<br />  // expected output: C<br />  // expected output: 1<br />  // expected output: H<br />});
+const newSet = new Set();
+newSet.add("C");
+newSet.add(1);
+newSet.add("C");
+// chain add functionality
+newSet.add("H").add("C");
+newSet.forEach(el => {
+  console.log(el);
+  // expected output: C
+  // expected output: 1
+  // expected output: H
+});
 ```
 
 Moreover we could check if a value is in our set object using the **has** method:
 
 ```
-const newSet = new Set(["A", 2, "B", 4, "C"]);<br />console.log(newSet.has("A"));<br />// expected output: true<br />console.log(newSet.has(4));<br />// expected output: true<br />console.log(newSet.has(5));<br />// expected output: false
+const newSet = new Set(["A", 2, "B", 4, "C"]);
+console.log(newSet.has("A"));
+// expected output: true
+console.log(newSet.has(4));
+// expected output: true
+console.log(newSet.has(5));
+// expected output: false
 ```
 
 As a result it returns a boolean value of true if that value exists in the set object and false if it doesn&#8217;t.
@@ -51,7 +70,19 @@ As a result it returns a boolean value of true if that value exists in the set o
 As another functionality we could also delete a value from the set collection. And even check the size of a set:
 
 ```
-const newSet = new Set(["A", 2, "B", 4, "C"]);<br />newSet.delete("C");<br />// expected output: true<br />newSet.delete("C");<br />// expected output: false<br />newSet.size<br />// expected output: 4<br /><br /><br />newSet.clear();<br />// expected output: undefined<br />newSet.size<br />// expected output: 0
+const newSet = new Set(["A", 2, "B", 4, "C"]);
+newSet.delete("C");
+// expected output: true
+newSet.delete("C");
+// expected output: false
+newSet.size
+// expected output: 4
+
+
+newSet.clear();
+// expected output: undefined
+newSet.size
+// expected output: 0
 ```
 
 ### Iterating over the set collection

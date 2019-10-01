@@ -48,7 +48,11 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    const element = (<br />  <h1 className=&#8221;greeting&#8221;><br />   Hello, world!<br />   </h1><br /> );
+    const element = (
+  <h1 className=&#8221;greeting&#8221;>
+   Hello, world!
+   </h1>
+ );
   </p>
   
   <hr />
@@ -60,7 +64,11 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    const element = React.createElement(<br />   &#8216;h1&#8217;,<br />   {className: &#8216;greeting&#8217;},<br />   &#8216;Hello, world!&#8217;<br /> );
+    const element = React.createElement(
+   &#8216;h1&#8217;,
+   {className: &#8216;greeting&#8217;},
+   &#8216;Hello, world!&#8217;
+ );
   </p>
   
   <hr />
@@ -72,7 +80,13 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    const element = {<br />   type: &#8216;h1&#8217;,<br />   props: {<br />     className: &#8216;greeting&#8217;,<br />     children: &#8216;Hello, world!&#8217;<br />   }<br /> };
+    const element = {
+   type: &#8216;h1&#8217;,
+   props: {
+     className: &#8216;greeting&#8217;,
+     children: &#8216;Hello, world!&#8217;
+   }
+ };
   </p>
   
   <hr />
@@ -108,7 +122,12 @@ For browsers to understand it, it needs to be compiled with a compiler like [Bab
   <hr />
   
   <p>
-    function getGreeting(user) {<br />   if (user) {<br />     return <h1>Hello, {formatName(user)}!</h1>;<br />   }<br />   return <h1>Hello, Stranger.</h1>;<br /> }
+    function getGreeting(user) {
+   if (user) {
+     return <h1>Hello, {formatName(user)}!</h1>;
+   }
+   return <h1>Hello, Stranger.</h1>;
+ }
   </p>
   
   <hr />

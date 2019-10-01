@@ -20,7 +20,8 @@ Definitely there are times that we need to preserve the information of state and
 
 
 ```
-const updatedIngredients = this.state.ingredients;<br />   
+const updatedIngredients = this.state.ingredients;
+   
 ```
 
 
@@ -28,7 +29,9 @@ Best approach is to use spread operator in React component to preserve **ingredi
 
 
 ```
-const updatedIngredients = {<br />            ...this.state.ingredients<br />        };
+const updatedIngredients = {
+            ...this.state.ingredients
+        };
 ```
 
 
@@ -63,7 +66,9 @@ Moreover we could use the spread operator to pass arguments of the setState func
 
 
 ```
-addIngredients(newIngredient) {<br />    this.setState({ toDoNotes: [...this.state.ingredients, newIngredient]})<br />  }
+addIngredients(newIngredient) {
+    this.setState({ toDoNotes: [...this.state.ingredients, newIngredient]})
+  }
 ```
 
 
@@ -75,7 +80,13 @@ Imagine this code in our JSX which uses props info inside and input:
 
 
 ```
-<input <br />  type={props.type} <br />  id={props.id} <br />  placeholder={props.placeholder}<br />  value={props.value}<br />  onChange={(e) => props.onchange(e.target.value)}<br />  className={props.inputClass} />
+<input 
+  type={props.type} 
+  id={props.id} 
+  placeholder={props.placeholder}
+  value={props.value}
+  onChange={(e) => props.onchange(e.target.value)}
+  className={props.inputClass} />
 ```
 
 
@@ -83,7 +94,21 @@ As a good practice we can use spread operator to pass in the info and clean up t
 
 
 ```
- return (<br />    <div className={props.wrapClass}><br />      <label <br />        htmlFor={props.id}<br />        className={props.labelClass}<br />      ><br />        {props.label}<br />      </label><br />      <input <br />        {...props}<br />        onChange={(e) => props.onchange(e.target.value)}<br />        className={props.inputClass} /><br />    </div><br />  )<br />}
+ return (
+    <div className={props.wrapClass}>
+      <label 
+        htmlFor={props.id}
+        className={props.labelClass}
+      >
+        {props.label}
+      </label>
+      <input 
+        {...props}
+        onChange={(e) => props.onchange(e.target.value)}
+        className={props.inputClass} />
+    </div>
+  )
+}
 ```
 
 

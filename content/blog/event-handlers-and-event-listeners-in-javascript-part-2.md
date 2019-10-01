@@ -26,11 +26,14 @@ This object is the parameter that is passed to the handler function and could pr
 
 `var btn = document.querySelector('button');`
 
-`function bgChange(e) {<br />
+`function bgChange(e) {
+
 `
 
-`  e.target.style.backgroundColor = "red";<br />
-  console.log(e);<br />
+`  e.target.style.backgroundColor = "red";
+
+  console.log(e);
+
 `
 
 `} `

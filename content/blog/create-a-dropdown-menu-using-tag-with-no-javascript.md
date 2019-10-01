@@ -30,7 +30,10 @@ This is a simple semantic of how it looks like:
 
 ```
 
-<details><br /> &nbsp; &nbsp; <summary>System Requirements</summary><br /> &nbsp; &nbsp; Something small enough to escape casual notice.<br /> </details> 
+<details>
+ &nbsp; &nbsp; <summary>System Requirements</summary>
+ &nbsp; &nbsp; Something small enough to escape casual notice.
+ </details> 
 
 ```
 

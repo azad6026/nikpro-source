@@ -62,7 +62,10 @@ We have the HTML and CSS here again:
 ```
 
 ```
-#winner {<br />  background-color: red;<br />  border: 1px solid black;<br />  font-size: 30px;
+#winner {
+  background-color: red;
+  border: 1px solid black;
+  font-size: 30px;
 }
 .better {
   background-color: gray;

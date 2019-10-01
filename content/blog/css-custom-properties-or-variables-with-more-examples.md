@@ -39,7 +39,8 @@ Therefor we have an input to make the changes:
 Thankfully we are able to change the colours via Javascript just like we do with styling but this time we dynamically change the colour using CSS custom properties:
 
 ```
-<br />
+
+
 ```
 
 Moreover as you see here we could store the colour in a local storage or a database for later usage. This is a great simple example on how to use CSS custom properties for theming your application or site.

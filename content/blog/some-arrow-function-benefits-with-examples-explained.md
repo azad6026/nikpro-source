@@ -22,7 +22,16 @@ Obviously they are really short and neat and one you have them in your code it l
 
 
 ```
-// No parameters<br />() => { statements }<br />// single parameter<br />(param) => { statements }<br />param => { statements } <br />// multiple parameters<br />(param1,param2,....paramN) => { statements }<br />// Returning objects<br />// enclose objects by parenthesis so they can be treated as objects<br />(param1,param2) => ( { id: 1 , key: value });
+// No parameters
+() => { statements }
+// single parameter
+(param) => { statements }
+param => { statements } 
+// multiple parameters
+(param1,param2,....paramN) => { statements }
+// Returning objects
+// enclose objects by parenthesis so they can be treated as objects
+(param1,param2) => ( { id: 1 , key: value });
 ```
 
 
@@ -30,7 +39,11 @@ Which if we want to shorten it actually they look like this:
 
 
 ```
-parameters => expression<br />// is equivalent to:<br />function (parameters){<br />  return expression;<br />}
+parameters => expression
+// is equivalent to:
+function (parameters){
+  return expression;
+}
 ```
 
 
@@ -48,7 +61,16 @@ The great thing is with ES6 you get to skip _function_ keyword and _return_ 
 
 
 ```
-var imgUrlArray = [<br />        imgUrl1,<br />        imgUrl2<br />];<br />//ES5<br />imgUrlArray.map(function (img){<br />     return img;<br />});<br />//ES6<br />imgUrlArray.map(img => img);
+var imgUrlArray = [
+        imgUrl1,
+        imgUrl2
+];
+//ES5
+imgUrlArray.map(function (img){
+     return img;
+});
+//ES6
+imgUrlArray.map(img => img);
 ```
 
 
@@ -56,7 +78,11 @@ Also this is an example with the [map](https://www.nikpro.com.au/practice-with-m
 
 
 ```
-// Expressions<br />// ES5<br />var plusOne = [1,2,3,4,5].map(function(num){ return num + 1 });<br />// ES6<br />var plusOne = [1,2,3,4,5].map(num => num + 1);  // implicit return
+// Expressions
+// ES5
+var plusOne = [1,2,3,4,5].map(function(num){ return num + 1 });
+// ES6
+var plusOne = [1,2,3,4,5].map(num => num + 1);  // implicit return
 ```
 
 
@@ -67,7 +93,15 @@ Another important thing about arrow function benefits is that there is no bindin
 An arrow function **_does not_** newly define its own `this` when it&#8217;s being executed.The value of `this` is always inherited from the enclosing scope:
 
 ```
-<em>// ES5</em><br />function Counter(){<br />   this.seconds = 0;<br />   window.setInterval(function() {<br/>    this.seconds++;<br/>  }.bind(this), 1000);<br/>}<br /><em>//ES6</em><br />function Counter(){<br />this.seconds =0;<br />window.setInterval( () => this.seconds++,1000 );<br />}
+<em>// ES5</em>
+function Counter(){
+   this.seconds = 0;
+   window.setInterval(function() {<br/>    this.seconds++;<br/>  }.bind(this), 1000);<br/>}
+<em>//ES6</em>
+function Counter(){
+this.seconds =0;
+window.setInterval( () => this.seconds++,1000 );
+}
 ```
 
 
@@ -75,7 +109,10 @@ You clearly see the difference and no binding of &#8220;this&#8221; in arrow fun
 
 
 ```
-const funct = () => {<br />       console.log(arguments); <em>// This will throw reference error</em><br />}<br /><em>// undefined</em>
+const funct = () => {
+       console.log(arguments); <em>// This will throw reference error</em>
+}
+<em>// undefined</em>
 ```
 
 
@@ -87,7 +124,12 @@ Although we can use arrow functions in most cases but we need to be careful arou
 
 
 ```
-var Person= (param) => {<br />     this.name = param;<br />}<br />var Boy = new Person('Ram');<br /><em>// Throws error that Person is not a constructor</em><br />
+var Person= (param) => {
+     this.name = param;
+}
+var Boy = new Person('Ram');
+<em>// Throws error that Person is not a constructor</em>
+
 ```
 
 
@@ -99,7 +141,9 @@ And they certainly cannot be used with new keyword aswell:
 
 
 ```
-var func = () => { console.log("Hello"); };<br />var func1 = new func();<br /><em>// Uncaught TypeError: func is not a constructor</em>
+var func = () => { console.log("Hello"); };
+var func1 = new func();
+<em>// Uncaught TypeError: func is not a constructor</em>
 ```
 
 

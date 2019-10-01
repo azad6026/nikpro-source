@@ -39,7 +39,8 @@ Or just export the default:
 
 
 ```
-export {default} from 'mod';<br />
+export {default} from 'mod';
+
 ```
 
 
@@ -61,7 +62,9 @@ The `import` statement is used to import bindings which are exported by anothe
 
 
 ```
-import {myExport} from '/modules/my-module.js';<br />import {foo, bar} from '/modules/my-module.js';<br />import {reallyReallyLongModuleExportName as shortName}
+import {myExport} from '/modules/my-module.js';
+import {foo, bar} from '/modules/my-module.js';
+import {reallyReallyLongModuleExportName as shortName}
   from '/modules/my-module.js';
 ```
 
@@ -69,7 +72,9 @@ import {myExport} from '/modules/my-module.js';<br />import {foo, bar} from '/mo
 Additionally we could import defaults as in export. It is possible to have a default [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) (whether it is an object, a function, a class, etc.). The `import` statement may then be used to import such defaults:
 
 ```
-import myDefault from '/modules/my-module.js';<br />// myModule used as a namespace<br />import myDefault, {foo, bar} from '/modules/my-module.js';
+import myDefault from '/modules/my-module.js';
+// myModule used as a namespace
+import myDefault, {foo, bar} from '/modules/my-module.js';
 // specific, named imports
 ```
 

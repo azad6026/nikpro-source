@@ -102,7 +102,8 @@ const DeleteAccount = () => ({
         children: 'Cancel'
       }
    }]
-});<br />
+});
+
 ```
 
 

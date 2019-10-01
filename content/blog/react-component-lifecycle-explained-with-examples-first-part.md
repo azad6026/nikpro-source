@@ -52,7 +52,14 @@ Also instead of the above constructor we could change the code to below:
 
 
 ```
-// initialise state here, you don't need to use "this" keyword here<br />state = {<br />  counter: 0<br />}<br />// use arrow function which points to the class itself and there is no need to bind "this" to the event handler<br />handleClick = () => {<br /><br />}
+// initialise state here, you don't need to use "this" keyword here
+state = {
+  counter: 0
+}
+// use arrow function which points to the class itself and there is no need to bind "this" to the event handler
+handleClick = () => {
+
+}
 ```
 
 
@@ -88,7 +95,8 @@ class App extends Component {
       </div>
     );
   }
-}<br />
+}
+
 ```
 
 

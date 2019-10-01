@@ -40,7 +40,9 @@ We have an unordered list with a link and a dropdown menu inside each list item.
 But the most important part is the background container which is a div inside the nav:
 
 ```
-<div class="dropdownBackground"><br />    <span class="arrow"></span><br /></div>
+<div class="dropdownBackground">
+    <span class="arrow"></span>
+</div>
 ```
 
 It has an absolute positioning and a width and height. But important CSS code for this background is its opacity. We will change that opacity which is zero to 1 once we hover over an item.
@@ -50,7 +52,12 @@ It has an absolute positioning and a width and height. But important CSS code fo
 We better check what elements we need to work on. Firstly we need the list items. Then the background div and finally the nav itself which I explain why later.
 
 ```
-// Select all list items using querySelectorAll<br />const triggers = document.querySelectorAll('.cool > li');<br />// Select only the background using querySelector<br />const background  = document.querySelector('.dropdownBackground');<br />// Select the nav<br />const nav  = document.querySelector('.top');
+// Select all list items using querySelectorAll
+const triggers = document.querySelectorAll('.cool > li');
+// Select only the background using querySelector
+const background  = document.querySelector('.dropdownBackground');
+// Select the nav
+const nav  = document.querySelector('.top');
 ```
 
 Next step is to know what we need to do. We need to show the background behind the dropdown once we hover over each list item. Also when we hover off of that item and over over another item the background should follow along. That is why it is called follow along nav.
@@ -58,7 +65,8 @@ Next step is to know what we need to do. We need to show the background behind t
 Therefor we need two functions for entering the item and leaving it. So we better create [event listeners](https://www.nikpro.com.au/event-handlers-and-event-listeners-in-javascript-part-1/) for each time items being hovered [using arrow functions](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 
 ```
-triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));<br />
+triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+
   triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
 ```
 
@@ -86,10 +94,14 @@ We also need two more classes for the dropdown. The dropdown is hidden with **di
 So far we will have the enter function set up like this:
 
 ```
-function handleEnter() {<br /> // add trigger-enter class to dropdown
-    this.classList.add('trigger-enter');<br />// create a timeout which checks of the classList contains the trigger-enter. If true then it moves on and adds trigger-enter-active to the classList
-    setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);<br />// show the background
-    background.classList.add('open');<br />}
+function handleEnter() {
+ // add trigger-enter class to dropdown
+    this.classList.add('trigger-enter');
+// create a timeout which checks of the classList contains the trigger-enter. If true then it moves on and adds trigger-enter-active to the classList
+    setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+// show the background
+    background.classList.add('open');
+}
 ```
 
 Int he setTimeout function we have a && condition. What it does is it checks the first condition which is if the item&#8217;s dropdown has got **display: block** or not.
@@ -116,9 +128,13 @@ As a result for a follow along nav to work as its name suggests we need to calcu
 We need to calculate coordinates based on the distance from the top. If we only had the navbar in the page we could just calculate the dropdown cords(coordinates)  itself. But we might have a title or something else there so we better calculate the navbar cords as well and reduce it from dropdown&#8217;s left and right cords:
 
 ```
-// We need to select the selected dropdown here   <br />const dropdown = this.querySelector('.dropdown');<br />// calculate its cords
-const dropdownCoords = dropdown.getBoundingClientRect();<br />// calculate nav's cords
-const navCoords = nav.getBoundingClientRect();<br />// finally this will be the cords for the background of each dropdown
+// We need to select the selected dropdown here   
+const dropdown = this.querySelector('.dropdown');
+// calculate its cords
+const dropdownCoords = dropdown.getBoundingClientRect();
+// calculate nav's cords
+const navCoords = nav.getBoundingClientRect();
+// finally this will be the cords for the background of each dropdown
 const coords = {
       height: dropdownCoords.height,
       width: dropdownCoords.width,
@@ -130,7 +146,11 @@ const coords = {
 After we calculated the cords for both nav and dropdown we assign it to the background cords as below:
 
 ```
-// assign the width and heigth using <a href="https://www.nikpro.com.au/template-literals-in-js6-explained/">template literals</a><br />background.style.setProperty('width', ${coords.width}px);<br />background.style.setProperty('height', ${coords.height}px);<br />// the left and right cords should be assigned to tranform prperty in CSS<br />background.style.setProperty('transform', translate(${coords.left}px, ${coords.top}px));
+// assign the width and heigth using <a href="https://www.nikpro.com.au/template-literals-in-js6-explained/">template literals</a>
+background.style.setProperty('width', ${coords.width}px);
+background.style.setProperty('height', ${coords.height}px);
+// the left and right cords should be assigned to tranform prperty in CSS
+background.style.setProperty('transform', translate(${coords.left}px, ${coords.top}px));
 ```
 
 <figure class="wp-block-image">

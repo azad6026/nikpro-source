@@ -27,17 +27,20 @@ Let us have a look at some of its usages to get a better idea:
 To call a function with array argument we needed to use apply and use this syntax:
 
 <p class=" language-js">
-  <span class="token keyword">function</span> doSomething <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><br />
+  <span class="token keyword">function</span> doSomething <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
 
 </p>
 
 <p class=" language-js">
-  <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
+  <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
 
 </p>
 
 <p class=" language-js">
-  <span class="token comment" spellcheck="true">// Call the function, passing args</span><br />
+  <span class="token comment" spellcheck="true">// Call the function, passing args</span>
+
 
 </p>
 
@@ -212,12 +215,14 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p id="2b6d" class="graf graf--pre graf-after--p">
-          <span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]</span><br />
+          <span style="font-family: georgia, palatino, serif;">output: [1, 2, 3, 4, 5, 6]</span>
+
 
         </p>
         
         <p class="graf graf--pre graf-after--p">
-          As we expected. Also there are other ways of using spread operator to combine arrays:<br />
+          As we expected. Also there are other ways of using spread operator to combine arrays:
+
 
         </p>
         
@@ -246,7 +251,8 @@ To copy an array we pass a reference to the second one so they will have same va
         </p>
         
         <p class=" language-js">
-          <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br />
+          <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
 
         </p>
         

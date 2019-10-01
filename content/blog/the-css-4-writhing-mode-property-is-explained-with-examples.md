@@ -23,13 +23,20 @@ According to MDN this is the syntax for the writing mode property and its values
 
 
 ```
-/* Keyword values */<br />
-writing-mode: horizontal-tb; // horizontal direction from top to bottom<br />
-writing-mode: vertical-rl; // vertical direction from right to left<br />
-writing-mode: vertical-lr; // vertical direction from left to right<br />
-/* Global values */<br />
-writing-mode: inherit;<br />
-writing-mode: initial;<br />
+/* Keyword values */
+
+writing-mode: horizontal-tb; // horizontal direction from top to bottom
+
+writing-mode: vertical-rl; // vertical direction from right to left
+
+writing-mode: vertical-lr; // vertical direction from left to right
+
+/* Global values */
+
+writing-mode: inherit;
+
+writing-mode: initial;
+
 writing-mode: unset;
 ```
 

@@ -81,10 +81,12 @@ These tags are deprecated. Never use them. Also avoid using stylistic tags  lik
 
 The <br> tag is not for layout formatting and you should use CSS margin and padding to add spaces. You better use <br> inside an element to addd line breaks:
 
-`<label>Please use the following text area:<br><br />
+`<label>Please use the following text area:<br>
+
 `
 
-`  <textarea name="loremipsum"></textarea><br />
+`  <textarea name="loremipsum"></textarea>
+
 `
 
 `</label>`
@@ -93,7 +95,8 @@ The <br> tag is not for layout formatting and you should use CSS margin and padd
 
 The type attribute is not necessary for link and script tags. All browsers expect a link tag for a stylesheet and a script tag as a Javascript tag. So always do this:
 
-`<link rel="stylesheet" href="style.css" /><br />
+`<link rel="stylesheet" href="style.css" />
+
 `
 
 `<script src="script.js"></script>`

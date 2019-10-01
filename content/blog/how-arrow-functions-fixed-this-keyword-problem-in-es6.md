@@ -51,7 +51,8 @@ var person = {
       console.log(this.name + " wants to do " + hobby);
     });
   }
-};<br />person.showHobbies();
+};
+person.showHobbies();
 [object Window]  wants to do sports
 [object Window]   wants to do eating
 [object Window]   wants to do coding
@@ -62,7 +63,10 @@ Surprisingly we see that &#8220;this&#8221; keyword does not refer to the object
 **Because ‘_this_’, always references the owner of the function it is in, for this case — since it is now out of scope — the window/global object. It will happen to any standalone function:**
 
 ```
-var anyFunction = function(){<br />  console.log(this);<br />}<br />any/function(); // [object Window]
+var anyFunction = function(){
+  console.log(this);
+}
+any/function(); // [object Window]
 ```
 
 <figure class="wp-block-image">
@@ -81,7 +85,8 @@ var person = {
       console.log(_this.name + " loves " + hobby);
     });
   }
-};<br />
+};
+
 person.showHobbies();
 // John loves sports
 // John loves eating
@@ -103,8 +108,10 @@ var person = {
       console.log(this.name + " loves " + hobby);
     }.bind(this));
   }
-};<br />
-person.showHobbies();<br />// John loves sports
+};
+
+person.showHobbies();
+// John loves sports
 // John loves eating
 // John loves coding
 ```
@@ -122,7 +129,9 @@ var person = {
       console.log(this.name + " loves " + hobby);
     });
   }
-};<br />person.showHobbies();<br />// John loves sports
+};
+person.showHobbies();
+// John loves sports
 // John loves eating
 // John loves coding
 ```

@@ -31,7 +31,8 @@ In this case we will select all lis items inside unordered list or nested inside
 On the other hand we might need to select only the **direct children** of the unordered list. Meaning we only need elements of one level deep into the parent. We will have this code then:
 
 ```
-ul > li { color : red; }<br />
+ul > li { color : red; }
+
 ```
 
 Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:<figure class="wp-block-image">

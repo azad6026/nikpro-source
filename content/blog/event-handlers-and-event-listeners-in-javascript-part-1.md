@@ -41,7 +41,8 @@ Each available event will have an event handler which is a block of code that ru
 
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
+  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
 
 </p>
 
@@ -56,7 +57,8 @@ Each available event will have an event handler which is a block of code that ru
 Or to makeit more readable you could do this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
+  <code class=" language-js"><span class="token keyword">function</span> <span class="token function">bgChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
 
 </p>
 
@@ -69,8 +71,10 @@ Or to makeit more readable you could do this:
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> bgChange<span class="token punctuation">;<br />
-</span><br /> But the output is the same and clicking the button will change the background colour.
+  <code class=" language-js">btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> bgChange<span class="token punctuation">;
+
+</span>
+ But the output is the same and clicking the button will change the background colour.
 </p>
 
 Lets now have a look of how we could implement event handlers and which one is better.
@@ -92,7 +96,8 @@ It mixes your Javascript with HTML by attaching the event directly to an attribu
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token punctuation">}</span><br /> Here we have assigned the bgChange function to onclick event of the button. This mix is a bad practice and could cause lots of problems in your code. Wha if you need to do the same action for multiple buttons? You will add lots of attributes?
+  <code class=" language-js"><span class="token punctuation">}</span>
+ Here we have assigned the bgChange function to onclick event of the button. This mix is a bad practice and could cause lots of problems in your code. Wha if you need to do the same action for multiple buttons? You will add lots of attributes?
 </p>
 
 Another approach in this case is to put the function body inside the HTML code as well:
@@ -120,13 +125,16 @@ btn<span class="token punctuation">.</span><span class="token function">addEvent
 We have two parameters inside the addEventListener. First one is the event name and the second is the handler function to run in response to the event. We could also put all the code inside the second parameter like this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
+  <code class=" language-js">btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
 
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span>"red"<span class="token punctuation">;</span><br />
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> We could also remove the listener:
+  <code class=" language-js">  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span>"red"<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ We could also remove the listener:
 </p>
 
 <p class="brush: js line-numbers  language-js">
@@ -138,19 +146,22 @@ With event listeners multiple functions could have same code in response to an e
 In the inline approach, we cannot have multiple handlers on the same event for an element so this will not work:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionA<span class="token punctuation">;</span><br />
+  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionA<span class="token punctuation">;</span>
+
 
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionB<span class="token punctuation">;<br />
+  <code class=" language-js">myElement<span class="token punctuation">.</span>onclick <span class="token operator">=</span> functionB<span class="token punctuation">;
+
 </span>
 </p>
 
 But with Event Listeners we could do this:
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js">myElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> functionA<span class="token punctuation">)</span><span class="token punctuation">;</span><br />
+  <code class=" language-js">myElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> functionA<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
 
 </p>
 

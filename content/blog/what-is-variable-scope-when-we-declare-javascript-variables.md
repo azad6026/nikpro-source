@@ -35,7 +35,19 @@ Firstly here is an example for &#8220;var&#8221; which each scope has been clari
 
 
 ```
-var x = "hello world"; // scope of x: global<br />function foo() {<br />  var a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    var b = 3; // scope of b: foo<br />  }<br />  {<br />    var e = 10; // scope of e: foo<br />  }<br />  while(a < 2) {<br />    var d = 5; // scope of d: foo<br />  }<br />}
+var x = "hello world"; // scope of x: global
+function foo() {
+  var a = 1;  // scope of a: foo
+  if(a > 0) {
+    var b = 3; // scope of b: foo
+  }
+  {
+    var e = 10; // scope of e: foo
+  }
+  while(a < 2) {
+    var d = 5; // scope of d: foo
+  }
+}
 ```
 
 
@@ -47,7 +59,19 @@ Secondly we have the same example with &#8220;let&#8221; and the scopes are writ
 
 
 ```
-let x = "hello world"; // scope of x: global<br />function foo() {<br />  let a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    let b = 3; // scope of b: if statement<br />  }<br />  {<br />    let e = 10; // scope of e: surrounding block<br />  }<br />  while(a < 2) {<br />    let d = 5; // scope of d: while loop<br />  }<br />}
+let x = "hello world"; // scope of x: global
+function foo() {
+  let a = 1;  // scope of a: foo
+  if(a > 0) {
+    let b = 3; // scope of b: if statement
+  }
+  {
+    let e = 10; // scope of e: surrounding block
+  }
+  while(a < 2) {
+    let d = 5; // scope of d: while loop
+  }
+}
 ```
 
 
@@ -63,7 +87,19 @@ Finally with &#8220;const&#8221; we have exactly the same result regarding to va
 
 
 ```
-const x = "hello world"; // scope of x: global<br />function foo() {<br />  const a = 1;  // scope of a: foo<br />  if(a > 0) {<br />    const b = 3; // scope of b: if statement<br />  }<br />  {<br />    const e = 10; // scope of e: surrounding block<br />  }<br />  while(a < 2) {<br />    const d = 5; // scope of d: while loop<br />  }<br />}
+const x = "hello world"; // scope of x: global
+function foo() {
+  const a = 1;  // scope of a: foo
+  if(a > 0) {
+    const b = 3; // scope of b: if statement
+  }
+  {
+    const e = 10; // scope of e: surrounding block
+  }
+  while(a < 2) {
+    const d = 5; // scope of d: while loop
+  }
+}
 ```
 
 

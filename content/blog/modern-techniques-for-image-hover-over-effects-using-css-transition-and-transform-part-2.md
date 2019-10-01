@@ -30,19 +30,28 @@ https://codepen.io/azad6026/pen/pxOeZj
 We gave spinner , the caption box and the main wrapper and the image wrapper a **round border-radius** to make a circle:
 
 ```
-border-radius: 50%;<br />
+border-radius: 50%;
+
 ```
 
 But the interesting part is when we hover over the image. The spinner wrapper will be transformed with a rotation of 180deg and it looks like a ring wrapping the content:
 
 ```
-.hovered-item.circle.effect1 a:hover .spinner {<br />    -webkit-transform: rotate(180deg);<br />    -moz-transform: rotate(180deg);<br />    -ms-transform: rotate(180deg);<br />    -o-transform: rotate(180deg);<br />    transform: rotate(180deg);<br />}
+.hovered-item.circle.effect1 a:hover .spinner {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 ```
 
 Also at the same time we transition the opacity to fade in the caption box with a nice delay:
 
 ```
-.hovered-item.circle.effect1 a:hover .info {<br />    opacity: 1;<br />}
+.hovered-item.circle.effect1 a:hover .info {
+    opacity: 1;
+}
 ```
 
 ## #2: Slide in caption effect
@@ -54,25 +63,35 @@ https://codepen.io/azad6026/pen/NOLpro
 Firstly we transition the transform property of the image:
 
 ```
-img{<br />    transition: transform 0.4s;<br />}
+img{
+    transition: transform 0.4s;
+}
 ```
 
 Also for the **figcaption** element which is the caption wrapper we have set the transform-origin property to 0 to change it from it s default which is 50%. Because we need its transform to start from the left edge of the container. The&nbsp;**transform**&#8211;**origin**&nbsp;property is used to change the position of the&nbsp;**origin**&nbsp;of&nbsp;**transformation**&nbsp;of an element:
 
 ```
-figcaption{<br />  transform-origin: 0 0;<br />  transform: rotateY(-90deg);<br />}
+figcaption{
+  transform-origin: 0 0;
+  transform: rotateY(-90deg);
+}
 ```
 
 Therefor after hovering over the image we transform the figcaption element and it will slide in to the container with a smooth transition:
 
 ```
-figure:hover figcaption {<br />    transform: rotateY(0deg);<br />    transition: transform 0.4s, opacity 0.1s;<br />}
+figure:hover figcaption {
+    transform: rotateY(0deg);
+    transition: transform 0.4s, opacity 0.1s;
+}
 ```
 
 Also using translate we&nbsp;reposition the image by 25% to the right:
 
 ```
-figure:hover img{<br />  transform: translateX(25%);<br />}
+figure:hover img{
+  transform: translateX(25%);
+}
 ```
 
 As a result it is all a transform animation which is quiet useful and easy to manage. We are able to manipulate our elements behaviour using transform property in variety of ways and transition them as we wish.

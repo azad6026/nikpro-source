@@ -26,7 +26,13 @@ Therefore whenever we need to manipulate data without actually changing the data
 Basically the most use case for map in React specifically is to ender lists of items. Whether it is a list of blog posts or comments or just a simple list of names as below:
 
 ```
-const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];<br />const NamesList = () => (<br /> &nbsp; <div><br /> &nbsp; &nbsp; <ul>{names.map(name => <li key={name}> {name} </li>)}</ul><br /> &nbsp; </div><br /> ); <br />
+const names = ["Denis", "Dan", "Fred", "Jane", "Lena"];
+const NamesList = () => (
+ &nbsp; <div>
+ &nbsp; &nbsp; <ul>{names.map(name => <li key={name}> {name} </li>)}</ul>
+ &nbsp; </div>
+ ); 
+
 ```
 
 
@@ -40,7 +46,23 @@ Additionally we can use the map method to manipulate array of objects. In this e
 
 
 ```
- const myUsers = [<br /> &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },<br /> &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },<br /> &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }<br /> ]<br /> <br /><br /> const foodLovers = myUsers.map(item => {<br /> &nbsp; &nbsp; const container = {};<br /> &nbsp; &nbsp; container[item.name] = item.likes;<br /> &nbsp; &nbsp; container.age = item.name.length * 10;<br /> <br /> &nbsp; &nbsp; return container;<br /> })<br /> <br /> console.log(foodLovers);<br /> // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] 
+ const myUsers = [
+ &nbsp; &nbsp; { name: 'Dan', likes: 'chicken' },
+ &nbsp; &nbsp; { name: 'Lena', likes: 'meat' },
+ &nbsp; &nbsp; { name: 'Fred', likes: 'fish' }
+ ]
+ 
+
+ const foodLovers = myUsers.map(item => {
+ &nbsp; &nbsp; const container = {};
+ &nbsp; &nbsp; container[item.name] = item.likes;
+ &nbsp; &nbsp; container.age = item.name.length * 10;
+ 
+ &nbsp; &nbsp; return container;
+ })
+ 
+ console.log(foodLovers);
+ // [{Dan: "chicken", age: 30}, {Lena: "meat", age: 40}, {Fred: "fish", age: 40}] 
 ```
 
 
@@ -50,7 +72,15 @@ Although we have [filter and other methods](https://www.nikpro.com.au/practice-w
 
 
 ```
-// What you have<br />var officers = [<br />  { id: 20, name: 'Captain Piett' },<br />  { id: 24, name: 'General Veers' },<br />  { id: 56, name: 'Admiral Ozzel' },<br />  { id: 88, name: 'Commander Jerjerrod' }<br />];<br />// What you need<br />[20, 24, 56, 88]
+// What you have
+var officers = [
+  { id: 20, name: 'Captain Piett' },
+  { id: 24, name: 'General Veers' },
+  { id: 56, name: 'Admiral Ozzel' },
+  { id: 88, name: 'Commander Jerjerrod' }
+];
+// What you need
+[20, 24, 56, 88]
 ```
 
 

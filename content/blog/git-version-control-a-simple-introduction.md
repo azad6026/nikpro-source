@@ -23,7 +23,8 @@ By far, the most widely used version control system is Git. Rather than having o
 
 After <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">installing git</a>, you need to setup your repository to have a virtual space for your project We assume that we have a project already and we need to version it with a new git repository:
 
-**`<pre>cd /path/to/your/existing/code <br />
+**`<pre>cd /path/to/your/existing/code 
+
 git init
 ```
 `**

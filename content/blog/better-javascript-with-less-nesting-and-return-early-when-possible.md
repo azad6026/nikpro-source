@@ -22,7 +22,20 @@ There is an article in <a href="https://dev.to/jenniferlynparsons/early-returns-
 
 
 ```
-//Single Exit Point<br />function foo(bar){<br />    value = '';            <br />if (bar > 0) {    <br />&nbsp; value = "YES";<br />} else if (bar == 0) {    <br />&nbsp; value = "MAYBE"<br />} else {    <br />&nbsp; value = "NO";<br />}<br />&nbsp; return value;<br />}<br />// Call the function <br />foo(10);
+//Single Exit Point
+function foo(bar){
+    value = '';            
+if (bar > 0) {    
+&nbsp; value = "YES";
+} else if (bar == 0) {    
+&nbsp; value = "MAYBE"
+} else {    
+&nbsp; value = "NO";
+}
+&nbsp; return value;
+}
+// Call the function 
+foo(10);
 ```
 
 
@@ -36,7 +49,16 @@ Therefor the sooner we could return a value the earlier we could leave the funct
 
 
 ```
-//Early Returns with if/else<br />function foo(bar){<br />if (bar > 0) {    <br />&nbsp; return "YES";<br />} else if (bar == 0) {    <br />&nbsp; return "MAYBE"<br />} else {    <br />&nbsp; return "NO";}<br />}<br />foo(10);
+//Early Returns with if/else
+function foo(bar){
+if (bar > 0) {    
+&nbsp; return "YES";
+} else if (bar == 0) {    
+&nbsp; return "MAYBE"
+} else {    
+&nbsp; return "NO";}
+}
+foo(10);
 ```
 
 
@@ -44,7 +66,17 @@ We return value whenever a check is done. Even better we can remove the else as 
 
 
 ```
-//Early Returns with if/else<br />function foo(bar){<br />if (bar > 0) {<br />    return "YES";<br />}<br />if (bar == 0) {    <br />&nbsp; return "MAYBE";<br />}<br />&nbsp; return "NO";    <br />}<br />foo(10);
+//Early Returns with if/else
+function foo(bar){
+if (bar > 0) {
+    return "YES";
+}
+if (bar == 0) {    
+&nbsp; return "MAYBE";
+}
+&nbsp; return "NO";    
+}
+foo(10);
 ```
 
 
@@ -58,7 +90,22 @@ Along with return early we need to make sure that we have less nesting in our co
 
 
 ```
-function test(fruit, quantity) {<br />  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];<br />// condition 1: fruit must has value<br />  if (fruit) {<br />    // condition 2: must be red<br />    if (redFruits.includes(fruit)) {<br />      console.log('red');<br />  // condition 3: must be big quantity  if (quantity > 10) {    console.log('big quantity');  }}<br />} else {<br />    throw new Error('No fruit!');<br />  }<br />}<br />// test results<br />test(null); // error: No fruits<br />test('apple'); // print: red<br />test('apple', 20); // print: red, big quantity
+function test(fruit, quantity) {
+  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+// condition 1: fruit must has value
+  if (fruit) {
+    // condition 2: must be red
+    if (redFruits.includes(fruit)) {
+      console.log('red');
+  // condition 3: must be big quantity  if (quantity > 10) {    console.log('big quantity');  }}
+} else {
+    throw new Error('No fruit!');
+  }
+}
+// test results
+test(null); // error: No fruits
+test('apple'); // print: red
+test('apple', 20); // print: red, big quantity
 ```
 
 
@@ -66,7 +113,17 @@ Basically we have three levels of nesting and one if/else statement. We can retu
 
 
 ```
-/_ return early when invalid conditions found _/<br />function test(fruit, quantity) {<br />  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];<br />// condition 1: throw error early<br />  if (!fruit) throw new Error('No fruit!');<br />// condition 2: must be red<br />  if (redFruits.includes(fruit)) {<br />    console.log('red');<br />// condition 3: must be big quantity if (quantity > 10) {  console.log('big quantity');}<br />}<br />}
+/_ return early when invalid conditions found _/
+function test(fruit, quantity) {
+  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+// condition 1: throw error early
+  if (!fruit) throw new Error('No fruit!');
+// condition 2: must be red
+  if (redFruits.includes(fruit)) {
+    console.log('red');
+// condition 3: must be big quantity if (quantity > 10) {  console.log('big quantity');}
+}
+}
 ```
 
 

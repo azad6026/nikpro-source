@@ -130,7 +130,20 @@ We could use [CSS transform](https://www.nikpro.com.au/manipulate-elements-visua
 
 We could also have multiple animations on one element by comma separating them in the animation syntax:
 
-`@keyframes fade {<br /> to {<br /> opacity: 0;<br /> }<br /> }<br /> @keyframes rotate {<br /> to {<br /> transform: rotate(180deg);<br /> }<br /> }<br /> .multiple {<br /> animation: fade 5s 1s infinite linear alternate,<br /> rotate 5s 1s infinite linear alternate;<br /> }}`
+`@keyframes fade {
+ to {
+ opacity: 0;
+ }
+ }
+ @keyframes rotate {
+ to {
+ transform: rotate(180deg);
+ }
+ }
+ .multiple {
+ animation: fade 5s 1s infinite linear alternate,
+ rotate 5s 1s infinite linear alternate;
+ }}`
 
 This will animate both transform and opacity on the element.
 
@@ -139,7 +152,13 @@ This will animate both transform and opacity on the element.
 We better use prefixes to have 100% cover on supported browsers. For the animation itself:
 
 <p id="0d67" class="graf graf--pre graf-after--p">
-  .element {<br />   -webkit-animation: fade 4s 1s infinite linear alternate;<br />   -moz-animation: fade 4s 1s infinite linear alternate;<br />   -ms-animation: fade 4s 1s infinite linear alternate;<br />   -o-animation: fade 4s 1s infinite linear alternate;<br />   animation: fade 4s 1s infinite linear alternate;<br /> }
+  .element {
+   -webkit-animation: fade 4s 1s infinite linear alternate;
+   -moz-animation: fade 4s 1s infinite linear alternate;
+   -ms-animation: fade 4s 1s infinite linear alternate;
+   -o-animation: fade 4s 1s infinite linear alternate;
+   animation: fade 4s 1s infinite linear alternate;
+ }
 </p>
 
 And for the keyframe:

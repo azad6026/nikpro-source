@@ -23,7 +23,15 @@ In this article we quickly check how we can create a simple website layout using
 To create the simple website layout using FlexBox we create a simple markup first:
 
 ```
-<body><br />  <header>Header</header><br />  <main><br />    <article>Article</article><br />    <nav>Nav</nav><br />    <aside>Aside</aside><br />  </main><br />  <footer>Footer</footer><br /></body>
+<body>
+  <header>Header</header>
+  <main>
+    <article>Article</article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </main>
+  <footer>Footer</footer>
+</body>
 ```
 
 Originally it is the holy grail layout as it is infamous for it. We can use a few solutions to make the desired website layout using FlexBox.
@@ -46,14 +54,16 @@ Therefor with that in place we only need to set the main tag style to make it fl
 ```
 main {
    flex: 1;
-   display: flex;<br />}
+   display: flex;
+}
 ```
 
 However we set the flex-grow(flex) to 1 (`flex: 1` is equivalent to `flex-grow: 1` , `flex-shrink: 1` and `flex-basis: 0)` so that main can take the remaining space as it is. Although we give article flex : 1 as well to make sure it takes all the space available to it.
 
 ```
 article {
-   flex: 1;<br />}
+   flex: 1;
+}
 ```
 
 Although we can change the position of the nav in the markup to make it to be the starting left tag but we don&#8217;t do this here.
@@ -75,7 +85,9 @@ https://codepen.io/azad6026/pen/mGPqvZ/
 As another approach to create the same website layout using FlexBox we can change the flex container. We don&#8217;t really need the body to be the container and we can leave off the header and footer from the FLexBox container as they don&#8217;t need it. We can use main as the flex container and just compute its height as in this way it needs to be calculated by us:
 
 ```
-main {<br />  height: calc(100vh - 40vh);<br />}
+main {
+  height: calc(100vh - 40vh);
+}
 ```
 
 The height of `main` must be equal to `calc(100vh — height of header — height of footer ).`You must give header and footer a height though.

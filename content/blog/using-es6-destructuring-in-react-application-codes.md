@@ -20,7 +20,11 @@ As we learnt destructuring in ES6 [in this article](https://www.nikpro.com.au/de
 
 
 ```
-var object = { one: 1, two: 2, three: 3 }<br />var one = object.one;<br />var two = object.two;<br />var three = object.three<br />console.log(one, two, three) // prints 1, 2, 3
+var object = { one: 1, two: 2, three: 3 }
+var one = object.one;
+var two = object.two;
+var three = object.three
+console.log(one, two, three) // prints 1, 2, 3
 ```
 
 
@@ -28,7 +32,9 @@ Thankfully with ES6 destructuring we can change the code to be as simple as belo
 
 
 ```
-let object = { one: 1, two: 2, three: 3 }<br />let { one, two, three } = object;<br />console.log(one, two, three) // prints 1, 2, 3
+let object = { one: 1, two: 2, three: 3 }
+let { one, two, three } = object;
+console.log(one, two, three) // prints 1, 2, 3
 ```
 
 
@@ -36,7 +42,17 @@ You can easily read the code and predict what it does. Now lets have a look at a
 
 
 ```
-const Listing = (props) => (<br />  <div><br />    <p>Title: {props.listing.title}</p><br />    <p>Type: {props.listing.type}</p><br />    <p><br />      Location: {props.listing.location.city},<br />      {props.listing.location.state},<br />      {props.listing.location.country}<br />    </p><br />  </div><br />);
+const Listing = (props) => (
+  <div>
+    <p>Title: {props.listing.title}</p>
+    <p>Type: {props.listing.type}</p>
+    <p>
+      Location: {props.listing.location.city},
+      {props.listing.location.state},
+      {props.listing.location.country}
+    </p>
+  </div>
+);
 ```
 
 
@@ -44,7 +60,17 @@ Practically there is nothing wrong in this code. It takes the props from the fun
 
 
 ```
-const Listing = ({ listing }) => (<br />  <div><br />    <p>Title: {listing.title}</p><br />    <p>Type: {listing.type}</p><br />    <p><br />      Location: {listing.location.city},<br />      {listing.location.state},<br />      {listing.location.country}<br />    </p><br />  </div><br />);
+const Listing = ({ listing }) => (
+  <div>
+    <p>Title: {listing.title}</p>
+    <p>Type: {listing.type}</p>
+    <p>
+      Location: {listing.location.city},
+      {listing.location.state},
+      {listing.location.country}
+    </p>
+  </div>
+);
 ```
 
 
@@ -52,7 +78,23 @@ Therefor we are passing in the props argument and using that in the template ins
 
 
 ```
-const Listing = ({<br />  listing: {<br />    title,<br />    type,<br />    location: {<br />      city,<br />      state,<br />      country<br />    }<br />  }<br />}) => (<br />  <div><br />    <p>Title: {title}</p><br />    <p>Type: {type}</p><br />    <p>Location: {city}, {state}, {country}</p><br />  </div><br />);
+const Listing = ({
+  listing: {
+    title,
+    type,
+    location: {
+      city,
+      state,
+      country
+    }
+  }
+}) => (
+  <div>
+    <p>Title: {title}</p>
+    <p>Type: {type}</p>
+    <p>Location: {city}, {state}, {country}</p>
+  </div>
+);
 ```
 
 
@@ -64,7 +106,31 @@ However if we wanted to implement the same rules for a class component with the 
 
 
 ```
-import React, { Component } from 'react';<br />class Listing extends Component {<br />  render() {<br />    const {<br />      listing: {<br />        title,<br />        type,<br />        location: {<br />          city,<br />          state,<br />          country<br />        }<br />      }<br />    } = this.props;<br />return (<br />      <div><br />        <p>Title: {title}</p><br />        <p>Type: {type}</p><br />        <p><br />          Location: {city}, {state}, {country}<br />        </p><br />      </div><br />    )<br />  }<br />}
+import React, { Component } from 'react';
+class Listing extends Component {
+  render() {
+    const {
+      listing: {
+        title,
+        type,
+        location: {
+          city,
+          state,
+          country
+        }
+      }
+    } = this.props;
+return (
+      <div>
+        <p>Title: {title}</p>
+        <p>Type: {type}</p>
+        <p>
+          Location: {city}, {state}, {country}
+        </p>
+      </div>
+    )
+  }
+}
 ```
 
 

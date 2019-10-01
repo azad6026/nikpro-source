@@ -51,7 +51,12 @@ Also this is another example to find the odd element inside an array:
 
 
 ```
-let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br />function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the index<br />arr.findIndex(isOdd);<br />// 4<br />
+let arr = [2, 4, 6, 8, 9, 10, 12];
+// create the function to check if the item is odd
+function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the index
+arr.findIndex(isOdd);
+// 4
+
 ```
 <figure class="wp-block-image">
 
@@ -79,7 +84,11 @@ Above example shows how we can find an object inside an array using find() metho
 
 
 ```
-let arr = [2, 4, 6, 8, 9, 10, 12];<br />// create the function to check if the item is odd<br />function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the number this time<br />arr.find(isOdd);<br />// 49
+let arr = [2, 4, 6, 8, 9, 10, 12];
+// create the function to check if the item is odd
+function isOdd(i) {<br/>  return i % 2 !== 0;<br/>}<br/>//return the number this time
+arr.find(isOdd);
+// 49
 ```
 
 
@@ -100,9 +109,11 @@ Finally take a look at this example to find the element inside the array. If we 
 
 ```
 function updateVegetablesCollection (veggies, veggie) {<br/>    // do we have a veggie by id of -1 ? (means does not exist)
-    if (veggies.indexOf(veggie) === -1) {<br />    // add it to array if not
+    if (veggies.indexOf(veggie) === -1) {
+    // add it to array if not
         veggies.push(veggie);
-        console.log('New veggies collection is : ' + veggies);<br />    // already exists? report it then
+        console.log('New veggies collection is : ' + veggies);
+    // already exists? report it then
     } else if (veggies.indexOf(veggie) > -1) {
         console.log(veggie + ' already exists in the veggies collection.');
     }

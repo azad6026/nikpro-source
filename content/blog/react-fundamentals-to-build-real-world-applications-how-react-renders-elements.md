@@ -24,7 +24,12 @@ This article is inspired by the very informative site called <a rel="noreferrer 
 Basically we create an element into the DOM using similar code as this:
 
 ```
-// Create an element using only Javascript<br /> const parent = document.querySelector('#jstest');<br /> const jsElement = document.createElement('h2');<br /> jsElement.innerHTML = 'Hello There, I am created by Javascript';<br /> jsElement.classList.add('jsClass');<br /> parent.appendChild(jsElement);
+// Create an element using only Javascript
+ const parent = document.querySelector('#jstest');
+ const jsElement = document.createElement('h2');
+ jsElement.innerHTML = 'Hello There, I am created by Javascript';
+ jsElement.classList.add('jsClass');
+ parent.appendChild(jsElement);
 ```
 
 As a test I have created a pen for all the examples in this article to see the differences and play around with it.
@@ -43,7 +48,11 @@ https://codepen.io/azad6026/pen/vvJeJr
 Generally React utilises the same concept but makes it much simpler with its own syntax:
 
 ```
-// Create the same element using React<br /> const rootElement = document.querySelector('#reacttest');<br /> const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});<br /> console.log(reactElement);<br /> ReactDOM.render(reactElement,rootElement);
+// Create the same element using React
+ const rootElement = document.querySelector('#reacttest');
+ const reactElement = React.createElement('h2',{className :  'reactCalss', children: 'Hello There, I am created by React createElement'});
+ console.log(reactElement);
+ ReactDOM.render(reactElement,rootElement);
 ```
 
 As a result we get the same element rendered on the page with different content and class name. But the most important thing is **React.createElement** does the job. It accepts a few arguments. First one is the element name(tag). Also as the second one we could use an object to declare the class and content. The content which is called **children** always comes last in the list of arguments.
@@ -53,7 +62,18 @@ As a result we get the same element rendered on the page with different content 
 Reasonably we need to learn about the React element and understand its object. If you log the created reacElement into the console this is what we get:
 
 ```
-Object {<br />  $$typeof: [object Symbol] {},<br />  _owner: null,<br />  key: null,<br /><br />  props: Object {<br />    children: "Hello There, I am created by React createElement",<br />    className: "reactCalss"<br />  },<br />  ref: null,<br />  type: "h2"<br />}
+Object {
+  $$typeof: [object Symbol] {},
+  _owner: null,
+  key: null,
+
+  props: Object {
+    children: "Hello There, I am created by React createElement",
+    className: "reactCalss"
+  },
+  ref: null,
+  type: "h2"
+}
 ```
 
 Clearly we see our content called children and the calss we have given as className. That is what comes from the code:
@@ -75,7 +95,15 @@ But we can make the code simpler and more readable using [JSX](https://www.nikpr
 Using JSX to render the element feels like writing HTML itself. But the best part is we can write Javascript inside the tags. Better say HTML inside Javascript because JSX is Javascript extension itself:
 
 ```
-// Create the same element using JSX<br /> const jsxRoot = document.querySelector('#jsxtest');<br /> const content = "Hello there, I am created by React in JSX";<br /> const className = "jsx-class";<br /> // JSX with simple content&nbsp;<br /> const element1 = <h2 className={className}>{content}</h2>;<br /> //&nbsp; JSX with content as a function using arrow function<br /> const element2 = <h2 className={className}>{(() => content)()}</h2>;<br /> ReactDOM.render([element1,element2], jsxRoot);
+// Create the same element using JSX
+ const jsxRoot = document.querySelector('#jsxtest');
+ const content = "Hello there, I am created by React in JSX";
+ const className = "jsx-class";
+ // JSX with simple content&nbsp;
+ const element1 = <h2 className={className}>{content}</h2>;
+ //&nbsp; JSX with content as a function using arrow function
+ const element2 = <h2 className={className}>{(() => content)()}</h2>;
+ ReactDOM.render([element1,element2], jsxRoot);
 ```
 
 We have used two approaches here. In the first element we put the content as {content} which is actually the children property from the mentioned above in pure React approach.
@@ -89,13 +117,25 @@ In the second element we called an arrow function to put the content in as we ca
 Lastly we will declare the properties as props and pass them to the element using the rest parameters or spread syntax for them to get a copy of it. A very neat approach:
 
 ```
-// Create the same element using props<br /> const propsRoot = document.querySelector('#propstest');<br /> const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = <h2 {...props} />;<br /> ReactDOM.render(propsElement,propsRoot);
+// Create the same element using props
+ const propsRoot = document.querySelector('#propstest');
+ const props = {
+   className : "props-class",
+   children : " Hi there, I am created by props in React"
+ &nbsp;}
+ const propsElement = <h2 {...props} />;
+ ReactDOM.render(propsElement,propsRoot);
 ```
 
 To override the {&#8230;props} properties we need to specify them tight after it inside the tag. For example to override the className we should change the code to this:
 
 ```
-const props = {<br />   className : "props-class",<br />   children : " Hi there, I am created by props in React"<br /> &nbsp;}<br /> const propsElement = <h2 {...props} className="averrided-class" />;<br /> ReactDOM.render(propsElement,propsRoot);
+const props = {
+   className : "props-class",
+   children : " Hi there, I am created by props in React"
+ &nbsp;}
+ const propsElement = <h2 {...props} className="averrided-class" />;
+ ReactDOM.render(propsElement,propsRoot);
 ```
 
 In this technique we could add more arguments to our props and pass them to the element like events and other props.

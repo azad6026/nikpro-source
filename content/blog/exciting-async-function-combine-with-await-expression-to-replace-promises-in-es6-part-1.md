@@ -26,7 +26,16 @@ Generally we know that everything in Javascript executes synchronously. Therefor
 
 
 ```
-// Async/Await version<br />async function helloAsync() {<br />  return "hello";<br />}<br />// Promises version<br />function helloAsync() {<br />  return new Promise(function (resolve) {<br />    resolve("hello");<br />  });<br />}
+// Async/Await version
+async function helloAsync() {
+  return "hello";
+}
+// Promises version
+function helloAsync() {
+  return new Promise(function (resolve) {
+    resolve("hello");
+  });
+}
 ```
 
 
@@ -42,14 +51,25 @@ Normally we write code which looks like this using promises and **then** method:
 
 
 ```
-const makeRequest = () =><br />  getJSON()<br />    .then(data => {<br />      console.log(data)<br />      return "done"<br />    })<br />makeRequest()
+const makeRequest = () =>
+  getJSON()
+    .then(data => {
+      console.log(data)
+      return "done"
+    })
+makeRequest()
 ```
 
 
 We know that getJSON returns a promise and then we use that data and return &#8220;done&#8221;. We could write it this way using async await:
 
 ```
-<br />const makeRequest = async () => {<br />  console.log(await getJSON())<br />  return "done"<br />}<br />makeRequest()
+
+const makeRequest = async () => {
+  console.log(await getJSON())
+  return "done"
+}
+makeRequest()
 ```
 
 
@@ -63,7 +83,15 @@ Obviously we have to use error handling to make sure we will catch unwanted resu
 
 
 ```
-const makeRequest = async () => {<br />  try {<br />    // this parse may fail<br />    const data = JSON.parse(await getJSON())<br />    console.log(data)<br />  } catch (err) {<br />    console.log(err)<br />  }<br />}
+const makeRequest = async () => {
+  try {
+    // this parse may fail
+    const data = JSON.parse(await getJSON())
+    console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
+}
 ```
 
 

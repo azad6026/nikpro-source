@@ -44,7 +44,8 @@ As a rule don&#8217;t use !important unless you have no other choice. It breaks 
 ```
 <div id="test">
   <span>Text</span>
-</div><br/><br />div#test span { color: green; }
+</div><br/>
+div#test span { color: green; }
 div span { color: blue; }
 span { color: red; }
 ```
@@ -60,7 +61,11 @@ As mentioned in the [previous](https://www.nikpro.com.au/how-cascade-in-css-work
 ```
 table tr td   { width: 50px !important; }
 .myTable tr td { width: 50px !important; }
-#myTable tr td { width: 50px !important; }<br /><br />// Or add the same selector later on<br />tr td { width: 50px !important; }<br />
+#myTable tr td { width: 50px !important; }
+
+// Or add the same selector later on
+tr td { width: 50px !important; }
+
 ```
 
 

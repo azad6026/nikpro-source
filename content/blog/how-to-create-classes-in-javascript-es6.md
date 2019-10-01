@@ -26,23 +26,28 @@ We can define a class in two ways. declare it or express it.
 ### Class declaration 
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span><br />
+  <code class=" language-js"><span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span>
+
 
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token function">  constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span><br />
+  <code class=" language-js"><span class="token function">  constructor</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
 
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token keyword">   this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span><br />
-    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span><br />
+  <code class=" language-js"><span class="token keyword">   this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>width <span class="token operator">=</span> width<span class="token punctuation">;</span>
+
 
 </p>
 
 <p class="brush: js line-numbers  language-js">
-  <code class=" language-js"><span class="token punctuation">  }</span><br />
+  <code class=" language-js"><span class="token punctuation">  }</span>
+
 
 </p>
 

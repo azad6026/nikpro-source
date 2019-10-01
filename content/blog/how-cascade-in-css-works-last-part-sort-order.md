@@ -41,13 +41,23 @@ Technically we will have cases like this which we normally do not recognise as w
 
 
 ```
-User-agent CSS:<br />li { padding: 10px }<br />Author CSS 1:<br />li { padding: 0 } /* This is like a reset */<br />Author CSS 2:<br />@media screen {
+User-agent CSS:
+li { padding: 10px }
+Author CSS 1:
+li { padding: 0 } /* This is like a reset */
+Author CSS 2:
+@media screen {
   li { padding: 3px }
 }
 
 @media print {
   li { padding: 1px }
-}<br />User CSS:<br />.specific { padding: 1em }<br /><br />HTML:<br /><ul>
+}
+User CSS:
+.specific { padding: 1em }
+
+HTML:
+<ul>
   <li class="specific">1<sup>st</sup></li>
   <li>2<sup>nd</sup></li>
 </ul>
@@ -60,7 +70,9 @@ Therefor we have these three styles to win:
 
 
 ```
-margin-left: 0<br/><br />margin-left: 3px<br/><br />margin-left: 1px
+margin-left: 0<br/>
+margin-left: 3px<br/>
+margin-left: 1px
 ```
 
 
@@ -74,7 +86,8 @@ Practically in CSS once all the style for one element in different stylesheets w
 
 
 ```
-<p>I'm bold</p><br/><br />/* higher specificity */
+<p>I'm bold</p><br/>
+/* higher specificity */
 p strong {
   background-color: khaki;
   color: green;
@@ -114,7 +127,8 @@ There are four values for specifying inheritance on the supported properties:
   <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
   <li class="my-class-2">Reset the <a href="#">link</a> color</li>
   <li class="my-class-3">Unset the <a href="#">link</a> color</li>
-</ul><br/><br/>// And the CSS<br/><br />body {
+</ul><br/><br/>// And the CSS<br/>
+body {
   color: green;
 }
 

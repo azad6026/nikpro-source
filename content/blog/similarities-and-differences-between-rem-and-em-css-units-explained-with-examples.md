@@ -37,7 +37,8 @@ Em is relative to its container. It means that it scales up and down calculating
 
 
 ```
-html { font-size: 16px } <br />h1 { font-size: 2em } /* 16px * 2 = 32px */
+html { font-size: 16px } 
+h1 { font-size: 2em } /* 16px * 2 = 32px */
 ```
 
 
@@ -45,7 +46,8 @@ We set up our font in HTML tag by 16 pixels. Therefore h1 gets twice of that siz
 
 
 ```
-h1 {   font-size: 2em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 32px */ } <br />p {   font-size: 1em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 16px */ }
+h1 {   font-size: 2em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 32px */ } 
+p {   font-size: 1em; /* 1em = 16px */   margin-bottom: 1em; /* 1em = 16px */ }
 ```
 
 
@@ -63,7 +65,8 @@ Therefore the above example has a different effect this time:
 
 
 ```
-h1 {   font-size: 2rem;   margin-bottom: 1rem; /* 1rem = 16px */ } <br />p {   font-size: 1rem;   margin-bottom: 1rem; /* 1rem = 16px */ }
+h1 {   font-size: 2rem;   margin-bottom: 1rem; /* 1rem = 16px */ } 
+p {   font-size: 1rem;   margin-bottom: 1rem; /* 1rem = 16px */ }
 ```
 
 

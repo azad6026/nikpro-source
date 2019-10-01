@@ -49,7 +49,8 @@ Surprisingly we could create a simple popup using dialog tag with a short Javasc
 ```
 <dialog id="popup">
   <h1>I am a simple popup</h1>
-</dialog><br /><button id="showPopup" onClick="showPopup()">show simple popup</button>
+</dialog>
+<button id="showPopup" onClick="showPopup()">show simple popup</button>
 
 <script>
   const showPopup = ()  => {
@@ -72,7 +73,8 @@ However we need to use **showModal** method to create a modal box with dialog ta
 ```
 <dialog id="modal">
   <h1>I am a Modal</h1>
-</dialog><br /><button id="showModal" onClick="showModal()">show simple popup</button>
+</dialog>
+<button id="showModal" onClick="showModal()">show simple popup</button>
 
 <script>
   const showModal = ()  => {
@@ -94,11 +96,15 @@ Greatly we are able to use an attribute called method=&#8221;dialog&#8221;  in
     <button type="submit" value="yes">Yes</button>
   </form>
 </dialog>
-<button id="showForm" onClick="showForm()">show form</button><br /><br /><script><br />const form = document.getElementById('form');
+<button id="showForm" onClick="showForm()">show form</button>
+
+<script>
+const form = document.getElementById('form');
 const showForm = () => form.showModal();
 form.addEventListener('close',  (event) => {
     if (dialog.returnValue === 'yes') { /* … */ }
-  });<br /></script>
+  });
+</script>
 
 
 ```

@@ -25,7 +25,8 @@ To set up the parent container as Flexbox just add display property like this:
   .flex-container{
     display: -webkit-flex; /* Safari */
     display: flex;
-  }<br /> Or to show it just like an inline element:
+  }
+ Or to show it just like an inline element:
   .flex-container {
     display: -webkit-inline-flex; /* Safari */
     display: inline-flex;
@@ -41,7 +42,9 @@ It specifies how flex items are laid out in the parent container.They can be lai
 
 ```
 
-  .flex-container {<br />    flex-direction: row | row-reverse | column | column-reverse;<br /> }
+  .flex-container {
+    flex-direction: row | row-reverse | column | column-reverse;
+ }
 
 ```
 

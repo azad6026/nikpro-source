@@ -83,9 +83,6 @@ a {
 .pagination-menu a:hover {
   --hover-color: #ffe;
 }
-.pagination-menu ul {
-  margin: 0;
-}
 a.gatsby-resp-image-link {
   pointer-events: none;
 }
@@ -93,26 +90,7 @@ a.gatsby-resp-image-link {
   position: relative;
   overflow: hidden;
 }
-.post-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-width: 0 3rem 3rem 0;
-  border-style: solid;
-  border-color: #0c0904 #120f0f #f08b33 #0c0904;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
-    -1px 1px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-  display: block;
-  width: 0;
-}
-.post-box:hover {
-  transform: translateY(-0.25rem);
-  box-shadow: 0px 4px 8px rgba(46, 41, 51, 0.08),
-    0px 8px 16px rgba(71, 63, 79, 0.88);
-}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 12px;

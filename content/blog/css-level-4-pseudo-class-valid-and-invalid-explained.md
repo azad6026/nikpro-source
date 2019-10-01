@@ -26,7 +26,8 @@ The **`:valid`** selector allows you to select `<input>` elements that conta
 /* Selects any valid <input> */
 input:valid {
   background-color: green;
-}<br />
+}
+
 ```
 
 ### The pseudo-class :invalid

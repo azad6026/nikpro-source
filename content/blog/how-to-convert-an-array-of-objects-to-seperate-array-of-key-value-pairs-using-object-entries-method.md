@@ -25,7 +25,8 @@ Basically we get an array of key value pairs back from this method in the same o
 
 
 ```
-//  based on array keys the object woth key "2" is the first object with index 0 so it was returned here<br />const object3 = { 100: 'a', 2: 'b', 7: 'c' };
+//  based on array keys the object woth key "2" is the first object with index 0 so it was returned here
+const object3 = { 100: 'a', 2: 'b', 7: 'c' };
 console.log(Object.entries(object3)[0]);
 // expected output: Array ["2", "b"]
 ```
@@ -58,7 +59,8 @@ Imagine we have this array of persons from our database server which has unique 
 
 
 ```
-const databaseUsers = { <br />key1: {
+const databaseUsers = { 
+key1: {
     id: "1",
     name: "John",
     age: "27"
@@ -72,7 +74,8 @@ key3: {
     id: "3",
     name: "Dave",
     age: "47"
-}<br />}
+}
+}
 ```
 
 
@@ -84,7 +87,10 @@ We will use [for .. of](https://www.nikpro.com.au/for-loop-in-javascript-and-es6
 
 
 ```
-const persons = [];<br />for (const [key, value] of Object.entries(databaseUsers)) {<br /> // create a person object to hold each person's data<br />// add the unique key for each as their id
+const persons = [];
+for (const [key, value] of Object.entries(databaseUsers)) {
+ // create a person object to hold each person's data
+// add the unique key for each as their id
     const person = {
         id: key,
         name: value.name,
@@ -92,7 +98,8 @@ const persons = [];<br />for (const [key, value] of Object.entries(databaseUsers
     };
     // add all persons to the array here
     persons.push(person);
-}<br />
+}
+
 ```
 
 

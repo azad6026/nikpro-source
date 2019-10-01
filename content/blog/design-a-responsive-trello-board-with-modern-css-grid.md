@@ -30,7 +30,12 @@ https://codepen.io/imjuangarcia/pen/MLyQPO
 Practically the main grid container specifies how we lay down the layout. We could find the code here:
 
 ```
-.column__list {<br />   display: grid;<br />   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));<br />   grid-gap: .5rem;<br />   align-items: flex-start;<br /> }
+.column__list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+   grid-gap: .5rem;
+   align-items: flex-start;
+ }
 ```
 
 Using auto-fill in the repeat function we make sure that we achieve a fluid layout that each empty grid cell will be populated by a column once there is enough space for it. Therefore the minmax() function defines the minimum and maximum size of each grid cell to be calculated and occupied.
@@ -38,7 +43,8 @@ Using auto-fill in the repeat function we make sure that we achieve a fluid layo
 The original layout in trello site is not responsive. We can even achieve that by adding these two lines:
 
 ```
-grid-auto-flow: column;<br />grid-auto-columns: minmax(260px, 1fr);
+grid-auto-flow: column;
+grid-auto-columns: minmax(260px, 1fr);
 ```
 
 Originally the default flow of the grid is based on rows. If we change it to column, then we get a scrollbar in our grid as we expand the width of the container by resizing it. And adding grid-auto-columns we define the size of auto-generated columns in this case. Here these two lines are not in use though.
@@ -48,7 +54,12 @@ Originally the default flow of the grid is based on rows. If we change it to col
 Practically each main column or card is based on grid themselves:
 
 ```
-.card__list {<br />   display: grid;<br />   grid-template-rows: auto;<br />   grid-gap: .5rem;<br />   margin: .5rem 0;<br /> }
+.card__list {
+   display: grid;
+   grid-template-rows: auto;
+   grid-gap: .5rem;
+   margin: .5rem 0;
+ }
 ```
 
 What matters is **grid-template-rows** set to **auto**. Because we need rows to have flexible heights based in their content.

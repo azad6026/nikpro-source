@@ -32,7 +32,12 @@ In the below example we declare the variable after using it and it works just as
 
 
 ```
-x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;                     // Display x in the element<br /><br />var x; // Declare x
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;                     // Display x in the element
+
+var x; // Declare x
 ```
 
 
@@ -40,7 +45,11 @@ We normally might be doing it the other way around declaring variable first. How
 
 
 ```
-var x; // Declare x<br />x = 5; // Assign 5 to x<br /><br />elem = document.getElementById("demo"); // Find an element <br />elem.innerHTML = x;  
+var x; // Declare x
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;  
 ```
 
 

@@ -60,7 +60,10 @@ The **`stroke-dashoffset`** attribute is a presentation attribute defining an 
 
 
 ```
-.path {<br />  stroke-dasharray: 170;<br />  stroke-dashoffset: 20;<br />}
+.path {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 20;
+}
 ```
 
 
@@ -68,7 +71,11 @@ However we need to define the .spinner-border as well to make a full circle:
 
 
 ```
-.spinner-border {<br />  fill: transparent;<br />  stroke-width: 2;<br />  width: 100%;<br />  height: 100%;
+.spinner-border {
+  fill: transparent;
+  stroke-width: 2;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -77,7 +84,11 @@ This just makes the circle as it should look like. We need to limit the width an
 
 
 ```
-.spinner {<br />  margin: 10px;<br />  width: 180px;<br />  height: 180px;<br />}
+.spinner {
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+}
 ```
 
 
@@ -85,7 +96,10 @@ That&#8217;s better. We also need to add the animated SVG head look like a dot:
 
 
 ```
-.spinner-dot {<br />  stroke: #000;<br />  stroke-width: 1;<br />  fill: #000;
+.spinner-dot {
+  stroke: #000;
+  stroke-width: 1;
+  fill: #000;
 }
 ```
 
@@ -113,7 +127,8 @@ We will add this rotate keyframe as the animation for the big circle. Also we de
 @keyframes skew {
   from {
     transform: skewX(10deg)
-  }<br />  to {
+  }
+  to {
     transform: skewX(40deg)
   }
 }

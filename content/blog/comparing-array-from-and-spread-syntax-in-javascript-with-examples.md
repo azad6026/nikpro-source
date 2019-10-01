@@ -35,14 +35,16 @@ Spread syntax allows an **iterable** to expand in places where 0+ arguments are 
 As an example we can copy arrays with both methods just like this:
 
 ```
-// Using Array.from<br />let a1 = [1,2,3];
+// Using Array.from
+let a1 = [1,2,3];
 let a2 = Array.from(a1);
 a2.push(4)
 a2 = [1, 2, 3, 4]
 ```
 
 ```
-// Using spread syntax<br />let a1 = [1,2,3];
+// Using spread syntax
+let a1 = [1,2,3];
 let a2 =[ ...a1];
 a2.push(4)
 a2 = [1, 2, 3, 4]
@@ -56,13 +58,17 @@ Eventually we can create arrays from mapped objects or a set object using both a
 
 ```
 var m = new Map([[1, 2], [2, 4], [4, 8]]);<br/><br/>// Using from method
-Array.from(m);<br /><br />// Using spread syntax<br />[...m];
+Array.from(m);
+
+// Using spread syntax
+[...m];
 ```
 
 Moreover we can use them both on a set object:
 
 ```
-var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s);<br/><br/>//Using spread syntax<br />[...s];
+var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s);<br/><br/>//Using spread syntax
+[...s];
 ```
 
 As a result in this case as well spread syntax is a better option as it makes the code look better.
@@ -101,9 +107,11 @@ const result = f(1, 2, 3);
 Practically one of the best funs using spread is with [destructuring](https://www.nikpro.com.au/using-es6-destructuring-in-react-application-codes/). Have a look at this example:
 
 ```
-let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };<br />console.log(x); // 1
+let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+console.log(x); // 1
 console.log(y); // 2
-console.log(z); // { a: 3, b: 4 }<br />
+console.log(z); // { a: 3, b: 4 }
+
 ```
 
 Moreover here is a thorough <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener noreferrer">article</a> on this topic. Thankfully we can use spread syntax in most use cases and we better do. I looked at just a few usages here. It is very short and more maintainable and readable. Although there are some use cases which we have to use Array.from as mentioned. Thanks for reading.

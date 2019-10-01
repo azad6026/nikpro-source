@@ -53,7 +53,8 @@ Object.keys('apple');
 // TypeError: "apple" is not an object (ES5 code)
 
 Object.keys('apple');
-// ["0", "1", "2" , "3" , "4"]   (ES2015 code)<br />
+// ["0", "1", "2" , "3" , "4"]   (ES2015 code)
+
 ```
 
 <figure class="wp-block-image">

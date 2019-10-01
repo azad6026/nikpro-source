@@ -90,23 +90,27 @@ Great. Lets now put it all together and make our component right:
 class Form extends React.Component {
     state = {
         title: "",
-    }<br />
+    }
+
 handleChange = (event) => {
     this.setState({ title : event.target.title });
-}<br />
+}
+
 handleSubmit = (event) => {
     alert( 'New title ' + this.state.posts.title + 'was submitted');
     event.preventDefault();
 }
     render() {
-        return (<br />        <React.Fragment>
+        return (
+        <React.Fragment>
             <form onSubmit={this.handleSubmit}>
                 <lablel>
                     Title:<br/>                        <input type="text" name="title" <br/>                         value={this.state.title} <br/>                         onChange={this.handleChange}/>
                 </lablel>
                 <input type="submit" value="submit" />
             </form>
-        </React.Fragment> ); } <br />}
+        </React.Fragment> ); } 
+}
 ```
 
 
