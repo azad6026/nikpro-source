@@ -4,90 +4,86 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+import styled from "styled-components"
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <article
-          style={{
-            background: `#fff`,
-          }}
-        >
-          <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
-          <div
-            class="inner-article"
-            style={{
-              padding: `1rem 3rem`,
-            }}
-          >
-            <header
-              style={{
-                marginBottom: `1.5rem`,
-              }}
-            >
-              <h1
-                style={{
-                  marginBottom: `1rem`,
-                }}
-              >
-                {post.frontmatter.title}
-              </h1>
-              <time
-                datetime={post.frontmatter.date}
-                style={{ color: `#ad5100` }}
-              >
-                {post.frontmatter.date}
-                <span> by Azadeh, {post.timeToRead} min</span>
-              </time>
-            </header>
-            <section dangerouslySetInnerHTML={{ __html: post.html }} />
-            <footer></footer>
-          </div>
-        </article>
+const ArticleWrapper = styled.div`
+  background: #fff;
+`
+const ArticleTitle = styled.h1`
+  margin-bottom: 1rem;
+`
+const ArticleHeader = styled.header`
+  margin-bottom: 1.5rem;
+`
+const ArticleTime = styled.time`
+  color: rgb(173, 81, 0);
+`
 
-        <nav
-          className="pagination-menu"
-          style={{
-            padding: `1rem`,
-            margin: `1rem auto`,
-          }}
-        >
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← Older Articles{previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title}Newer Articles →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
-      </Layout>
-    )
-  }
+const ArticleAuthor = styled.span``
+
+const ArticleInnerWrapper = styled.div`
+  padding: 1rem 3rem;
+`
+const PaginationMenu = styled.nav`
+  padding: 1rem;
+  margin: 1rem auto;
+`
+
+const PaginationList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+`
+
+const BlogPostTemplate = props => {
+  const post = props.data.markdownRemark
+  const siteTitle = props.data.site.siteMetadata.title
+  const { previous, next } = props.pageContext
+
+  return (
+    <Layout location={props.location} title={siteTitle}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <ArticleWrapper>
+        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+        <ArticleInnerWrapper>
+          <ArticleHeader>
+            <ArticleTitle>{post.frontmatter.title}</ArticleTitle>
+            <ArticleTime datetime={post.frontmatter.date}>
+              {post.frontmatter.date}
+              <ArticleAuthor> by Azadeh, {post.timeToRead} min</ArticleAuthor>
+            </ArticleTime>
+          </ArticleHeader>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <footer></footer>
+        </ArticleInnerWrapper>
+      </ArticleWrapper>
+
+      <PaginationMenu>
+        <PaginationList>
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← Older Articles{previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title}Newer Articles →
+              </Link>
+            )}
+          </li>
+        </PaginationList>
+      </PaginationMenu>
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate

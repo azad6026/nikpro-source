@@ -181,7 +181,7 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// for later use in pagination menu
 // {
 //   Array.from({ length: numPages }, (_, i) => (
 //     <li
