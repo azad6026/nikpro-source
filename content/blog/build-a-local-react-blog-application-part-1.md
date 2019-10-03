@@ -74,7 +74,8 @@ Additionally we have a form to submit the posts. But that does not need to be in
 
 Basically in React data flows from parent to child. Read on <a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">here</a> if you don&#8217;t know about props and state. As a best practice depends on your application size there **should only be a very few or one component to handle state**. And the **rest of the components should be handled or fed by their parents via props.**  
 
-In React blog application we **handle state in Posts** component and pass on data to **Post component via props.**<figure class="wp-block-image">
+In React blog application we **handle state in Posts** component and pass on data to **Post component via props.**
+
 
 ![Posts component will handle state in this case](/images/state-in-componen.jpg)
 
@@ -106,7 +107,8 @@ Lets see how are they handled inside its parent component which is **Posts**.
 
 ### Post component : handling state for each post
 
-Firstly we will see how Posts component handles state and then pass on expected data for Post component. Then we have a look at the form and its state.<figure class="wp-block-image">
+Firstly we will see how Posts component handles state and then pass on expected data for Post component. Then we have a look at the form and its state.
+
 
 ![React is all about components](/images/reactcomponent.png)
 

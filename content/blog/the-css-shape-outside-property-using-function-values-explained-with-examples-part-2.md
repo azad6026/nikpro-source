@@ -58,9 +58,11 @@ So according to MDN float area is computed according to the shape of a float ele
 
 ## Shape outside url() function
 
-Practically the `shape-outside: url(image.png)` CSS declaration tells the browser to extract a shape from the image. Also we could use `-image-threshold` property to define the minimum opacity level of pixels that will be used to create the shape. Therefor we could use `0.0` for fully transparent and `1.0`  for fully opaque.<figure class="wp-block-image">
+Practically the `shape-outside: url(image.png)` CSS declaration tells the browser to extract a shape from the image. Also we could use `-image-threshold` property to define the minimum opacity level of pixels that will be used to create the shape. Therefor we could use `0.0` for fully transparent and `1.0`  for fully opaque.
 
-<img src="https://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="https://testgatsby.localespresso.jpg 660w, https://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption></figure>
+
+<img src="https://www.nikpro.com.auespresso.jpg" alt="" class="wp-image-32202" srcset="https://testgatsby.localespresso.jpg 660w, https://testgatsby.localespresso-300x182.jpg 300w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Example from <a href="https://www.html5rocks.com/en/tutorials/shapes/getting-started/" target="_blank" rel="noopener noreferrer">HTML5rocks</a></figcaption>
+
 
 As a result of using the url function value the text has been wrapped around the element in the above example:
 

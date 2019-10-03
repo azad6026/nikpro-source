@@ -79,9 +79,11 @@ key3: {
 ```
 
 
-But we need to give each person&#8217;s container a unique id to be able to manipulate it easier later on. As an example we want to edit or delete that persons information from the database. <figure class="wp-block-image">
+But we need to give each person&#8217;s container a unique id to be able to manipulate it easier later on. As an example we want to edit or delete that persons information from the database. 
 
-<img src="https://www.nikpro.com.aufor-...-of-loop.png" alt="" class="wp-image-32397" srcset="https://testgatsby.localfor-...-of-loop.png 880w, https://testgatsby.localfor-...-of-loop-300x188.png 300w, https://testgatsby.localfor-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption></figure> 
+
+<img src="https://www.nikpro.com.aufor-...-of-loop.png" alt="" class="wp-image-32397" srcset="https://testgatsby.localfor-...-of-loop.png 880w, https://testgatsby.localfor-...-of-loop-300x188.png 300w, https://testgatsby.localfor-...-of-loop-768x480.png 768w" sizes="(max-width: 880px) 100vw, 880px" /> <figcaption>for &#8230; of loop</figcaption>
+ 
 
 We will use [for .. of](https://www.nikpro.com.au/for-loop-in-javascript-and-es6-explained/) to loop through the above object and using Object.entries() we will create an array of persons which holds their with a unique key per person:
 

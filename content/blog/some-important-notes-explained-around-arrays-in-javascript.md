@@ -107,9 +107,11 @@ The `shift` operation must do 3 things:
 
   1. Remove the first element with the index ``.
   2. Move all elements to the left, renumber them from the index `1` to ``, from `2` to `1` and so on.
-  3. Update the `length` property of the array.<figure class="wp-block-image">
+  3. Update the `length` property of the array.
 
-<img src="https://www.nikpro.com.auarray-shift.png" alt="" class="wp-image-32275" srcset="https://testgatsby.localarray-shift.png 593w, https://testgatsby.localarray-shift-300x72.png 300w" sizes="(max-width: 593px) 100vw, 593px" /> <figcaption><a href="https://javascript.info/array#methods-pop-push-shift-unshift" target="_blank" rel="noopener noreferrer">array shift</a></figcaption></figure> 
+
+<img src="https://www.nikpro.com.auarray-shift.png" alt="" class="wp-image-32275" srcset="https://testgatsby.localarray-shift.png 593w, https://testgatsby.localarray-shift-300x72.png 300w" sizes="(max-width: 593px) 100vw, 593px" /> <figcaption><a href="https://javascript.info/array#methods-pop-push-shift-unshift" target="_blank" rel="noopener noreferrer">array shift</a></figcaption>
+ 
 
 Therefor the more elements in the array, the more time to move them, more in-memory operations.
 

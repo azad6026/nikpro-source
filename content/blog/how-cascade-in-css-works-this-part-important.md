@@ -39,9 +39,11 @@ Therefor the only way to override it is to add another rule for that property wi
 
 https://codepen.io/azad6026/pen/PdXGPM
 
-Basically we have three rules specified in this example. We have a generic tag selector called **p** which applies to all paragraphs in HTML. Secondly we have a class selector called .**better.**Thirdly we have an id selector called **#winner** which as we know can only belong to one element as ids should be unique in a HTML code.<figure class="wp-block-image">
+Basically we have three rules specified in this example. We have a generic tag selector called **p** which applies to all paragraphs in HTML. Secondly we have a class selector called .**better.**Thirdly we have an id selector called **#winner** which as we know can only belong to one element as ids should be unique in a HTML code.
 
-<img src="https://www.nikpro.com.auid-vs-class.jpg" alt="" class="wp-image-32249" srcset="https://testgatsby.localid-vs-class.jpg 510w, https://testgatsby.localid-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> </figure>
+
+<img src="https://www.nikpro.com.auid-vs-class.jpg" alt="" class="wp-image-32249" srcset="https://testgatsby.localid-vs-class.jpg 510w, https://testgatsby.localid-vs-class-300x200.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" /> 
+
 
 Lets break it down to some steps:
 

@@ -27,9 +27,11 @@ Generally shouldComponentUpdate() is considered a useful but tricky and sometime
 shouldComponentUpdate(nextProps, nextState)
 ```
 
-Technically by default in React component will re render in every state or props change. We need to remember `shouldComponentUpdate()` is invoked before rendering when new props or state are being received. Defaults to `true`. This method is not called for the initial render or when `forceUpdate()` is used.<figure class="wp-block-image">
+Technically by default in React component will re render in every state or props change. We need to remember `shouldComponentUpdate()` is invoked before rendering when new props or state are being received. Defaults to `true`. This method is not called for the initial render or when `forceUpdate()` is used.
 
-<img src="https://www.nikpro.com.aulifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="https://testgatsby.locallifecycle_props.png 1020w, https://testgatsby.locallifecycle_props-300x115.png 300w, https://testgatsby.locallifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption></figure>
+
+<img src="https://www.nikpro.com.aulifecycle_props.png" alt="update stage" class="wp-image-32346" srcset="https://testgatsby.locallifecycle_props.png 1020w, https://testgatsby.locallifecycle_props-300x115.png 300w, https://testgatsby.locallifecycle_props-768x295.png 768w" sizes="(max-width: 1020px) 100vw, 1020px" /> <figcaption>updating stages</figcaption>
+
 
 Practically we should not use shouldComponentUpdate() to prevent rendering. This method only exists as a **[performance optimization](https://reactjs.org/docs/optimizing-performance.html).**
 
@@ -80,9 +82,11 @@ componentDidUpdate(prevProps) {
 }
 ```
 
-But remember if we **update state in componentDidUpdate() it should be wrapped in a condition** like the example above to prevent infinite loops.<figure class="wp-block-image">
+But remember if we **update state in componentDidUpdate() it should be wrapped in a condition** like the example above to prevent infinite loops.
 
-<img src="https://www.nikpro.com.aucomponentlife.png" alt="" class="wp-image-32345" srcset="https://testgatsby.localcomponentlife.png 975w, https://testgatsby.localcomponentlife-300x154.png 300w, https://testgatsby.localcomponentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption></figure>
+
+<img src="https://www.nikpro.com.aucomponentlife.png" alt="" class="wp-image-32345" srcset="https://testgatsby.localcomponentlife.png 975w, https://testgatsby.localcomponentlife-300x154.png 300w, https://testgatsby.localcomponentlife-768x395.png 768w" sizes="(max-width: 975px) 100vw, 975px" /> <figcaption>component lifecycle metods</figcaption>
+
 
 Obviously just like [`componentDidMount()`](https://www.nikpro.com.au/react-component-lifecycle-explained-with-examples-first-part/), the `componentDidUpdate()` is called after all of the children are updated
 

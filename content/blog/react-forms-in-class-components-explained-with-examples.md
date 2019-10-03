@@ -62,9 +62,11 @@ state = {
 ```
 
 
-Considerably I am using the React 16 ES6 version of state. You can also use a constructor for this which is less recommended as it makes it difficult to read and we need to take care of &#8220;this&#8221; in that case.<figure class="wp-block-image">
+Considerably I am using the React 16 ES6 version of state. You can also use a constructor for this which is less recommended as it makes it difficult to read and we need to take care of &#8220;this&#8221; in that case.
 
-<img src="https://www.nikpro.com.aureact-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="https://testgatsby.localreact-logo.jpeg 842w, https://testgatsby.localreact-logo-300x212.jpeg 300w, https://testgatsby.localreact-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> </figure> 
+
+<img src="https://www.nikpro.com.aureact-logo.jpeg" alt="React forms" class="wp-image-32282" srcset="https://testgatsby.localreact-logo.jpeg 842w, https://testgatsby.localreact-logo-300x212.jpeg 300w, https://testgatsby.localreact-logo-768x543.jpeg 768w" sizes="(max-width: 842px) 100vw, 842px" /> 
+ 
 
 <hr class="wp-block-separator" />
 

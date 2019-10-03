@@ -57,9 +57,11 @@ Object.keys('apple');
 
 ```
 
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.aues6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="https://testgatsby.locales6-object-methods.png 483w, https://testgatsby.locales6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> </figure>
+
+
+<img src="https://www.nikpro.com.aues6-object-methods.png" alt="es6 object methods" class="wp-image-32321" srcset="https://testgatsby.locales6-object-methods.png 483w, https://testgatsby.locales6-object-methods-283x300.png 283w" sizes="(max-width: 483px) 100vw, 483px" /> 
+
 
 ### Object.values examples
 

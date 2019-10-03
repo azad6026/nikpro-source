@@ -95,6 +95,7 @@ And the default export and import example:
 ```
 
 
-It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.<figure class="wp-block-image">
+It was the basics of export and import in ES6 with a few example.We will see more of them in our [React components](https://www.nikpro.com.au/react-component-building-blocks-simple-explanation-part-1/) when we write them. Thanks for reading.
 
-<img src="https://www.nikpro.com.auimport-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="https://testgatsby.localimport-export-image.jpeg 1276w, https://testgatsby.localimport-export-image-300x160.jpeg 300w, https://testgatsby.localimport-export-image-768x410.jpeg 768w, https://testgatsby.localimport-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> </figure>
+
+<img src="https://www.nikpro.com.auimport-export-image.jpeg" alt="export import body image" class="wp-image-32019" srcset="https://testgatsby.localimport-export-image.jpeg 1276w, https://testgatsby.localimport-export-image-300x160.jpeg 300w, https://testgatsby.localimport-export-image-768x410.jpeg 768w, https://testgatsby.localimport-export-image-1024x547.jpeg 1024w" sizes="(max-width: 1276px) 100vw, 1276px" /> 

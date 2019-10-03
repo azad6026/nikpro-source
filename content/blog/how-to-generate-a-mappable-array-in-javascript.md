@@ -44,9 +44,11 @@ And map each index to a number using map:
 const arr = Array(100).map((_, i) => i);
 ```
 
-As a result this is what we get:<figure class="wp-block-image">
+As a result this is what we get:
 
-<img src="https://www.nikpro.com.aumapable-array.png" alt="" class="wp-image-32140" srcset="https://testgatsby.localmapable-array.png 800w, https://testgatsby.localmapable-array-300x152.png 300w, https://testgatsby.localmapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </figure>
+
+<img src="https://www.nikpro.com.aumapable-array.png" alt="" class="wp-image-32140" srcset="https://testgatsby.localmapable-array.png 800w, https://testgatsby.localmapable-array-300x152.png 300w, https://testgatsby.localmapable-array-768x389.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> 
+
 
 Surprisingly we get undefined. As an explanation we know arrays are objects in practice. So the array like  **[&#8216;one&#8217;, &#8216;two&#8217;, &#8216;three&#8217;]** is equivalent to this object:
 

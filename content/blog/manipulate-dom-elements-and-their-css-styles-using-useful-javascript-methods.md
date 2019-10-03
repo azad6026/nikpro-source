@@ -57,7 +57,8 @@ const matches = document.querySelectorAll("div.note, div.alert");
 
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.nikpro.com.auhtmlDOM.png" alt="" class="wp-image-32602" srcset="https://testgatsby.localhtmlDOM.png 225w, https://testgatsby.localhtmlDOM-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /><figcaption>Manipulate DOM using CSS in JS</figcaption></figure>
+  <figure class="aligncenter"><img src="https://www.nikpro.com.auhtmlDOM.png" alt="" class="wp-image-32602" srcset="https://testgatsby.localhtmlDOM.png 225w, https://testgatsby.localhtmlDOM-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /><figcaption>Manipulate DOM using CSS in JS</figcaption>
+
 </div>
 
 Practically we could combine them to select specific children of a parent element:
@@ -82,12 +83,14 @@ matches.forEach(function(pTag) {
 ```
 
 
-Now that we know more about selecting elements lets dive in CSS in Javascript and manipulate them.<figure class="wp-block-image">
+Now that we know more about selecting elements lets dive in CSS in Javascript and manipulate them.
+
 
 <img src="https://www.nikpro.com.audom-manipulation-1024x576.png" alt="" class="wp-image-32600" srcset="https://testgatsby.localdom-manipulation-1024x576.png 1024w, https://testgatsby.localdom-manipulation-300x169.png 300w, https://testgatsby.localdom-manipulation-768x432.png 768w, https://testgatsby.localdom-manipulation-1568x882.png 1568w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>  
 DOM manipulation
 
-</figcaption></figure>
+</figcaption>
+
 
 Additionally we can create , append and remove elements using&nbsp;&nbsp;`createElement`&nbsp;, `appendChild`&nbsp;and &nbsp;`removeElement` methods accordingly:
 
@@ -156,9 +159,11 @@ Instead of doing all properties one by one we can create a class and put in all 
 
 para.setAttribute('class', 'highlight');
 ```
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="https://testgatsby.localdom-tree.png 665w, https://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> </figure>
+
+
+<img src="https://www.nikpro.com.audom-tree.png" alt="dom-tree" class="wp-image-32605" srcset="https://testgatsby.localdom-tree.png 665w, https://testgatsby.localdom-tree-300x128.png 300w" sizes="(max-width: 665px) 100vw, 665px" /> 
+
 
 #### Modifying classes in CSS
 

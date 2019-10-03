@@ -58,9 +58,11 @@ HelloWorldComponent => (
   <div style={{ color: 'blue'}}>Hello World!</div>;
 );
 ```
-<figure class="wp-block-image">
 
-<img class="wp-image-32473" src="https://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> </figure> 
+
+
+<img class="wp-image-32473" src="https://www.nikpro.com.aucssstye.png" alt="" /> <figcaption>**CSS in React**</figcaption> 
+ 
 
 ## Styling components with CSS stylesheet
 
@@ -96,9 +98,11 @@ Also this is the CSS file called DottedBox.css:
   text-align: center;
 }
 ```
-<figure class="wp-block-image">
 
-<img class="wp-image-32474" src="https://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="https://testgatsby.localcss-in-react.jpg 638w, https://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
+
+
+<img class="wp-image-32474" src="https://www.nikpro.com.aucss-in-react.jpg" alt="" srcset="https://testgatsby.localcss-in-react.jpg 638w, https://testgatsby.localcss-in-react-300x182.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> 
+ 
 
 ## Styling components using CSS modules
 

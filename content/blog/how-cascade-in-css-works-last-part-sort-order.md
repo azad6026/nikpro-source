@@ -76,9 +76,11 @@ margin-left: 1px
 ```
 
 
-As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.<figure class="wp-block-image">
+As we have the second style specifying the media on screen the last style is ignored on screens. As a result the second style beats the first style as well because although they have the same specificity but based on sort order the later rule wins.
 
-<img src="https://www.nikpro.com.aucascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="https://testgatsby.localcascade-it.jpg 1480w, https://testgatsby.localcascade-it-300x185.jpg 300w, https://testgatsby.localcascade-it-768x473.jpg 768w, https://testgatsby.localcascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> </figure> 
+
+<img src="https://www.nikpro.com.aucascade-it.jpg" alt="cascade rules" class="wp-image-32289" srcset="https://testgatsby.localcascade-it.jpg 1480w, https://testgatsby.localcascade-it-300x185.jpg 300w, https://testgatsby.localcascade-it-768x473.jpg 768w, https://testgatsby.localcascade-it-1024x631.jpg 1024w" sizes="(max-width: 1480px) 100vw, 1480px" /> 
+ 
 
 ### All rules apply
 

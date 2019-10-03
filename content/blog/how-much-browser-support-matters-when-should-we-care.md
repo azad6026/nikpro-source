@@ -17,9 +17,11 @@ categories:
 ---
 Probably we do care about browser support more than we could think of sometimes. In all applications and websites that we build it is an essential factor without a doubt.
 
-In my opinion there are seperate sections that we should care about browser support: **Development** and **Production.**<figure class="wp-block-image">
+In my opinion there are seperate sections that we should care about browser support: **Development** and **Production.**
 
-<img src="https://www.nikpro.com.aubrowsers-in-one-shot.jpg" alt="browsers in one shot" class="wp-image-32459" srcset="https://testgatsby.localbrowsers-in-one-shot.jpg 2000w, https://testgatsby.localbrowsers-in-one-shot-300x116.jpg 300w, https://testgatsby.localbrowsers-in-one-shot-768x297.jpg 768w, https://testgatsby.localbrowsers-in-one-shot-1024x396.jpg 1024w, https://testgatsby.localbrowsers-in-one-shot-1568x607.jpg 1568w" sizes="(max-width: 2000px) 100vw, 2000px" /> </figure> 
+
+<img src="https://www.nikpro.com.aubrowsers-in-one-shot.jpg" alt="browsers in one shot" class="wp-image-32459" srcset="https://testgatsby.localbrowsers-in-one-shot.jpg 2000w, https://testgatsby.localbrowsers-in-one-shot-300x116.jpg 300w, https://testgatsby.localbrowsers-in-one-shot-768x297.jpg 768w, https://testgatsby.localbrowsers-in-one-shot-1024x396.jpg 1024w, https://testgatsby.localbrowsers-in-one-shot-1568x607.jpg 1568w" sizes="(max-width: 2000px) 100vw, 2000px" /> 
+ 
 
 ## Development phase
 
@@ -29,9 +31,11 @@ Therefor this is a perfect place to try every new skills that we want to check o
 
 Trying new things will not harm in any way and it will help to see how we possibly could build an application if we could use everything available in our palate. So the answer here is try everything and don&#8217;t worry about browser support at all.
 
-## Production phase<figure class="wp-block-image">
+## Production phase
 
-<img src="https://www.nikpro.com.auproduction-phase.jpg" alt="" class="wp-image-32460" srcset="https://testgatsby.localproduction-phase.jpg 1024w, https://testgatsby.localproduction-phase-300x150.jpg 300w, https://testgatsby.localproduction-phase-768x384.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img src="https://www.nikpro.com.auproduction-phase.jpg" alt="" class="wp-image-32460" srcset="https://testgatsby.localproduction-phase.jpg 1024w, https://testgatsby.localproduction-phase-300x150.jpg 300w, https://testgatsby.localproduction-phase-768x384.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+ 
 
 But what about production? My answer is it depends. There are variety of parameters you need to check and examine while building something for production. First and foremost are the target users.
 
@@ -41,9 +45,11 @@ All we do is about user experiences. Definitely we want then to have a great exp
 
 ### How much browser support needed?
 
-Therefor we might think we need to only use well supported techniques and properties and elements. But I do not agree with that.<figure class="wp-block-image">
+Therefor we might think we need to only use well supported techniques and properties and elements. But I do not agree with that.
 
-<img src="https://www.nikpro.com.auall-browsers.jpg" alt="" class="wp-image-32458" srcset="https://testgatsby.localall-browsers.jpg 600w, https://testgatsby.localall-browsers-300x158.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /> </figure> 
+
+<img src="https://www.nikpro.com.auall-browsers.jpg" alt="" class="wp-image-32458" srcset="https://testgatsby.localall-browsers.jpg 600w, https://testgatsby.localall-browsers-300x158.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /> 
+ 
 
 Having a good browser support is enough to make something ready to be used in production. Meaning there is no need for 100% support for everything which is not possible. In that case we are forced to stop coding forever.
 
@@ -53,13 +59,17 @@ But if you need to have a good support then you need to well support major brows
 
 #### Grid and FlexBox
 
-As an example using FlexBox is a must these days. Bu it wasn&#8217;t a few years back as it wasn&#8217;t well supported. But now here is the support around 92% globally:<figure class="wp-block-image">
+As an example using FlexBox is a must these days. Bu it wasn&#8217;t a few years back as it wasn&#8217;t well supported. But now here is the support around 92% globally:
 
-<img src="https://www.nikpro.com.auflexboxsupport.png" alt="" class="wp-image-32461" srcset="https://testgatsby.localflexboxsupport.png 1272w, https://testgatsby.localflexboxsupport-300x144.png 300w, https://testgatsby.localflexboxsupport-768x370.png 768w, https://testgatsby.localflexboxsupport-1024x493.png 1024w" sizes="(max-width: 1272px) 100vw, 1272px" /> <figcaption>FlexBox in caniuse.com</figcaption></figure> 
 
-But grid system does not have the same support. It has around 84% global support:<figure class="wp-block-image">
+<img src="https://www.nikpro.com.auflexboxsupport.png" alt="" class="wp-image-32461" srcset="https://testgatsby.localflexboxsupport.png 1272w, https://testgatsby.localflexboxsupport-300x144.png 300w, https://testgatsby.localflexboxsupport-768x370.png 768w, https://testgatsby.localflexboxsupport-1024x493.png 1024w" sizes="(max-width: 1272px) 100vw, 1272px" /> <figcaption>FlexBox in caniuse.com</figcaption>
+ 
 
-<img src="https://www.nikpro.com.augrid-support.png" alt="" class="wp-image-32462" srcset="https://testgatsby.localgrid-support.png 1254w, https://testgatsby.localgrid-support-300x143.png 300w, https://testgatsby.localgrid-support-768x366.png 768w, https://testgatsby.localgrid-support-1024x488.png 1024w" sizes="(max-width: 1254px) 100vw, 1254px" /> <figcaption>grid in caniuse.com</figcaption></figure> 
+But grid system does not have the same support. It has around 84% global support:
+
+
+<img src="https://www.nikpro.com.augrid-support.png" alt="" class="wp-image-32462" srcset="https://testgatsby.localgrid-support.png 1254w, https://testgatsby.localgrid-support-300x143.png 300w, https://testgatsby.localgrid-support-768x366.png 768w, https://testgatsby.localgrid-support-1024x488.png 1024w" sizes="(max-width: 1254px) 100vw, 1254px" /> <figcaption>grid in caniuse.com</figcaption>
+ 
 
 Does this mean we should not use it in production and&nbsp; wait for 100% support?**Absolutely not**. Because **it has a good support in all major browsers and that is well enough.** And using it more and more will force other minor browsers to catch up supporting it. **This is how a new technology evolves and grows. The more we use them the better they will be used and developed.**
 

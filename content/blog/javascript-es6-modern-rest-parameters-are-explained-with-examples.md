@@ -34,9 +34,11 @@ function f(a, b, ...theArgs) {
 }
 ```
 
-Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;<figure class="wp-block-image">
+Technically we need to know that the `arguments` object is not a real array, while rest parameters are [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)instances, meaning methods like [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) or [`pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) can be applied on it directly;
 
-<img src="https://www.nikpro.com.aurestprams.png" alt="" class="wp-image-32293" srcset="https://testgatsby.localrestprams.png 599w, https://testgatsby.localrestprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> </figure>
+
+<img src="https://www.nikpro.com.aurestprams.png" alt="" class="wp-image-32293" srcset="https://testgatsby.localrestprams.png 599w, https://testgatsby.localrestprams-300x182.png 300w" sizes="(max-width: 599px) 100vw, 599px" /> 
+
 
 ### Destructuring rest parameters
 

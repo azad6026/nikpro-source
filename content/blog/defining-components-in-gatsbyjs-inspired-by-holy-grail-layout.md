@@ -28,7 +28,8 @@ No matter what you use to build a site, you will need a structure. And the most 
 <figure>
 <img src="/images/holy-grail-layout.png" alt="Simple Holy Grial Layout" /> 
 <figcaption>Simple Holy Grial Layout</figcaption>
-</figure>
+
+
 
 Basically in the first glance we see our major components here:
 
@@ -104,7 +105,8 @@ Absolutely no surprise that everything including image is a component. This is h
 <figure>
 <img src="/images/main-blocks.png" alt="Component blocks" /> 
 <figcaption>Component blocks</figcaption>
-</figure>
+
+
 
 Therefore it goes on and on. But we know it is maintainable and easy to understand. And here is a simplified Image component in React:
 

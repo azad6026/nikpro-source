@@ -90,9 +90,11 @@ elementsArray.forEach(el => el.addEventListener('click',() => {
   //console.log(this); refers to window
 }));
 ```
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.aues5.jpg" alt="" class="wp-image-32711" srcset="https://testgatsby.locales5.jpg 638w, https://testgatsby.locales5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption></figure>
+
+
+<img src="https://www.nikpro.com.aues5.jpg" alt="" class="wp-image-32711" srcset="https://testgatsby.locales5.jpg 638w, https://testgatsby.locales5-300x169.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> <figcaption>Use es5 code for the event&#8217;s function</figcaption>
+
 
 In this case we don’t want an arrow function, because we need the keyword to reference the actual array elements that got clicked. That is now even more important as we have a whole bunch of them.
 

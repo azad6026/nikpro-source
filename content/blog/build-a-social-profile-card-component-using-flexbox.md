@@ -49,9 +49,11 @@ As we see the div with **.photo** class is the main container. So we design its 
 }
 ```
 
-<figure class="wp-block-image">
 
-<img class="wp-image-32513" src="https://www.nikpro.com.aujustify.png" alt="" srcset="https://testgatsby.localjustify.png 512w, https://testgatsby.localjustify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> </figure>
+
+
+<img class="wp-image-32513" src="https://www.nikpro.com.aujustify.png" alt="" srcset="https://testgatsby.localjustify.png 512w, https://testgatsby.localjustify-300x163.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> 
+
 
 Firstly we change the direction of the [flex container](https://www.nikpro.com.au/create-a-simple-website-layout-using-flexbox/) to column so that the .**top** and .**middle** and  .**bottom** divs which are the immediate children of .photo div could be stacked on top of each other. Meaning we need to design them each in the location that their name suggest.
 
@@ -79,9 +81,11 @@ In addition we want the button content to be centred. We will use **align-items*
 }
 ```
 
-<figure class="wp-block-image">
 
-<img class="wp-image-32514" src="https://www.nikpro.com.aualign5.png" alt="" srcset="https://testgatsby.localalign5.png 687w, https://testgatsby.localalign5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> </figure>
+
+
+<img class="wp-image-32514" src="https://www.nikpro.com.aualign5.png" alt="" srcset="https://testgatsby.localalign5.png 687w, https://testgatsby.localalign5-300x104.png 300w" sizes="(max-width: 687px) 100vw, 687px" /> 
+
 
 ### The simple middle part
 

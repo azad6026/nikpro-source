@@ -20,9 +20,11 @@ We have explained use cases of reduce() method in [this](https://www.nikpro.com.
 
 ## Remove duplicate value use case
 
-We have had a situation while we needed to filter our array to get only unique items out of it and remove duplicate values. Obviously there are lots of different methods to do that. Here we will focus on using reduce() method with almost similar implementations.<figure class="wp-block-image">
+We have had a situation while we needed to filter our array to get only unique items out of it and remove duplicate values. Obviously there are lots of different methods to do that. Here we will focus on using reduce() method with almost similar implementations.
 
-<img src="https://www.nikpro.com.auarraysreducing.jpeg" alt="" class="wp-image-32577" srcset="https://testgatsby.localarraysreducing.jpeg 1000w, https://testgatsby.localarraysreducing-300x75.jpeg 300w, https://testgatsby.localarraysreducing-768x193.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> </figure> 
+
+<img src="https://www.nikpro.com.auarraysreducing.jpeg" alt="" class="wp-image-32577" srcset="https://testgatsby.localarraysreducing.jpeg 1000w, https://testgatsby.localarraysreducing-300x75.jpeg 300w, https://testgatsby.localarraysreducing-768x193.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /> 
+ 
 
 ## Importance of initial value
 
@@ -65,9 +67,11 @@ const removeDuplicates = (theArray) => {
 ```
 
 
-Here we check if the result which is the accumulator contains or includes the currentItem(calling it nextItem here just fo clarity). If it does we return the accumulator and if it does not include it, we concat that item to the result. <figure class="wp-block-image">
+Here we check if the result which is the accumulator contains or includes the currentItem(calling it nextItem here just fo clarity). If it does we return the accumulator and if it does not include it, we concat that item to the result. 
 
-<img src="https://www.nikpro.com.auconcat-1024x608.png" alt="" class="wp-image-32578" srcset="https://testgatsby.localconcat-1024x608.png 1024w, https://testgatsby.localconcat-300x178.png 300w, https://testgatsby.localconcat-768x456.png 768w, https://testgatsby.localconcat.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>concat the items of array</figcaption></figure> 
+
+<img src="https://www.nikpro.com.auconcat-1024x608.png" alt="" class="wp-image-32578" srcset="https://testgatsby.localconcat-1024x608.png 1024w, https://testgatsby.localconcat-300x178.png 300w, https://testgatsby.localconcat-768x456.png 768w, https://testgatsby.localconcat.png 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>concat the items of array</figcaption>
+ 
 
 Very neat and clean indeed. We could also use [push](https://www.nikpro.com.au/how-to-convert-an-array-of-objects-to-seperate-array-of-key-value-pairs-using-object-entries-method/) method. But unlike concat it changes the original arrays as push adds items to the array and concat just merge them. In our case it is the same result though if we use each one.
 

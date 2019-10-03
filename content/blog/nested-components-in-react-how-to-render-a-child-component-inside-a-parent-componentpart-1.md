@@ -53,9 +53,11 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-<figure class="wp-block-image">
 
-<img class="wp-image-32521" src="https://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="https://testgatsby.localpassdata.png 591w, https://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> </figure>
+
+
+<img class="wp-image-32521" src="https://www.nikpro.com.aupassdata.png" alt="pass data down" srcset="https://testgatsby.localpassdata.png 591w, https://testgatsby.localpassdata-300x175.png 300w" sizes="(max-width: 591px) 100vw, 591px" /> <figcaption>passing data and events between child and parent components</figcaption> 
+
 
 ## Extract components to nested components
 

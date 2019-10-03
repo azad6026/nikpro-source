@@ -32,9 +32,11 @@ Technically we can calculate the order of applying specificity like below from h
   * Class selectors (e.g., `.example`), attributes selectors (e.g., `[type="radio"]`) 
   * Type selectors (e.g., `h1`) and pseudo-elements (e.g., `::before`)
 
-Inline styles added to an element (e.g., `style="font-weight:bold"`) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.<figure class="wp-block-image">
+Inline styles added to an element (e.g., `style="font-weight:bold"`) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.
 
-<img src="https://www.nikpro.com.auspecificity1.png" alt="specificity rules" class="wp-image-32265" srcset="https://testgatsby.localspecificity1.png 712w, https://testgatsby.localspecificity1-300x126.png 300w" sizes="(max-width: 712px) 100vw, 712px" /> </figure> 
+
+<img src="https://www.nikpro.com.auspecificity1.png" alt="specificity rules" class="wp-image-32265" srcset="https://testgatsby.localspecificity1.png 712w, https://testgatsby.localspecificity1-300x126.png 300w" sizes="(max-width: 712px) 100vw, 712px" /> 
+ 
 
 ### Never use !important as much as possible
 
@@ -106,7 +108,8 @@ div h1 {
 Although article looks closer to h1 as a direct parent but because the second rule is the last one in order it wins.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.nikpro.com.auineritance.jpg" alt="inheritance" class="wp-image-32268" srcset="https://testgatsby.localineritance.jpg 1920w, https://testgatsby.localineritance-300x169.jpg 300w, https://testgatsby.localineritance-768x432.jpg 768w, https://testgatsby.localineritance-1024x576.jpg 1024w, https://testgatsby.localineritance-1568x882.jpg 1568w" sizes="(max-width: 1920px) 100vw, 1920px" /><figcaption>Cascade</figcaption></figure>
+  <figure class="aligncenter"><img src="https://www.nikpro.com.auineritance.jpg" alt="inheritance" class="wp-image-32268" srcset="https://testgatsby.localineritance.jpg 1920w, https://testgatsby.localineritance-300x169.jpg 300w, https://testgatsby.localineritance-768x432.jpg 768w, https://testgatsby.localineritance-1024x576.jpg 1024w, https://testgatsby.localineritance-1568x882.jpg 1568w" sizes="(max-width: 1920px) 100vw, 1920px" /><figcaption>Cascade</figcaption>
+
 </div>
 
 In addition the negation pseudo-class `:not` is _not_ considered a pseudo-class in the specificity calculation. But selectors placed into the negation pseudo-class count as normal selectors when determining the count of [selector types](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#Selector_Types).

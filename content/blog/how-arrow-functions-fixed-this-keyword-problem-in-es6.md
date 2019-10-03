@@ -69,9 +69,11 @@ var anyFunction = function(){
 any/function(); // [object Window]
 ```
 
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.authe-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> </figure>
+
+
+<img src="https://www.nikpro.com.authe-arrow.jpeg" alt="the arrow" class="wp-image-32402" /> 
+
 
 ### Fix 1: using another variable to refer :this&#8221; keyword&#8221;
 
@@ -138,7 +140,8 @@ person.showHobbies();
 
 <figure class="wp-block-image is-resized">
 
-<img src="https://www.nikpro.com.aufat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="https://testgatsby.localfat-arrow.png 323w, https://testgatsby.localfat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption></figure>
+<img src="https://www.nikpro.com.aufat-arrow.png" alt="fat arrow" class="wp-image-32403" width="580" height="280" srcset="https://testgatsby.localfat-arrow.png 323w, https://testgatsby.localfat-arrow-300x145.png 300w" sizes="(max-width: 580px) 100vw, 580px" /> <figcaption>arrow functions fixed &#8220;this&#8221; problem</figcaption>
+
 
 Great. We have solved it. It keeps the code in scope and we always refer to the right object with &#8220;this&#8221; at the end. Using arrow functions really saves the code and makes it more readable, maintainable and solves the old &#8220;this keyword problem.
 

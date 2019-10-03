@@ -52,9 +52,11 @@ Moreover we can use percentage to calculate the width in minmax() function:
 
 Here the first column has a maximum width of 50% of the container and will not get smaller than 200px.
 
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.auminmax-example.jpg" alt="" class="wp-image-32261" srcset="https://testgatsby.localminmax-example.jpg 800w, https://testgatsby.localminmax-example-300x192.jpg 300w, https://testgatsby.localminmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption></figure>
+
+
+<img src="https://www.nikpro.com.auminmax-example.jpg" alt="" class="wp-image-32261" srcset="https://testgatsby.localminmax-example.jpg 800w, https://testgatsby.localminmax-example-300x192.jpg 300w, https://testgatsby.localminmax-example-768x492.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /> <figcaption>A grid example using minmax() function</figcaption>
+
 
 #### **min-content and max-content**
 

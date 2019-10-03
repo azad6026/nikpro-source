@@ -22,7 +22,8 @@ We all heard about <a rel="noreferrer noopener" aria-label="where to use FlexBox
 
 One of the many use cases and real word examples is when we need to change the order of the elements in the design.
 
-We will have a look at the same simple design using [FlexBox](https://www.nikpro.com.au/create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/) and [Grid](https://www.nikpro.com.au/compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/) system to implement this and compare the solutions.<figure class="wp-block-image">
+We will have a look at the same simple design using [FlexBox](https://www.nikpro.com.au/create-modern-sticky-footer-using-css-grid-and-flexbox-and-calc-function/) and [Grid](https://www.nikpro.com.au/compare-the-same-layout-using-flexbox-and-grid-layout-system-in-css/) system to implement this and compare the solutions.
+
 
 ![FlexBox – Grid](/images/flexbox-grid-1024x260.png)
 

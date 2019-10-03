@@ -25,9 +25,11 @@ We could see the the component lifecycle methods in the below diagram. Once a co
   * [`static getDerivedStateFromProps()`](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
   * [**`render()`**](https://reactjs.org/docs/react-component.html#render)  
     
-  * [**`componentDidMount()`**](https://reactjs.org/docs/react-component.html#componentdidmount)<figure class="wp-block-image">
+  * [**`componentDidMount()`**](https://reactjs.org/docs/react-component.html#componentdidmount)
 
-<img src="https://www.nikpro.com.auReact-lifecycle-methods-diagram.png" alt="" class="wp-image-32330" srcset="https://testgatsby.localReact-lifecycle-methods-diagram.png 1103w, https://testgatsby.localReact-lifecycle-methods-diagram-300x112.png 300w, https://testgatsby.localReact-lifecycle-methods-diagram-768x288.png 768w, https://testgatsby.localReact-lifecycle-methods-diagram-1024x383.png 1024w" sizes="(max-width: 1103px) 100vw, 1103px" /> </figure> 
+
+<img src="https://www.nikpro.com.auReact-lifecycle-methods-diagram.png" alt="" class="wp-image-32330" srcset="https://testgatsby.localReact-lifecycle-methods-diagram.png 1103w, https://testgatsby.localReact-lifecycle-methods-diagram-300x112.png 300w, https://testgatsby.localReact-lifecycle-methods-diagram-768x288.png 768w, https://testgatsby.localReact-lifecycle-methods-diagram-1024x383.png 1024w" sizes="(max-width: 1103px) 100vw, 1103px" /> 
+ 
 
 ### The constructor
 
@@ -77,9 +79,11 @@ static getDerivedStateFromProps(props, state)
 
 This method exists for [rare use cases](https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state) where the state depends on changes in props over time. 
 
-For example, it might be handy for implementing a `<Transition>` component that compares its previous and next children to decide which of them to animate in and out.<figure class="wp-block-image">
+For example, it might be handy for implementing a `<Transition>` component that compares its previous and next children to decide which of them to animate in and out.
 
-<img src="https://www.nikpro.com.aulifecycle.jpg" alt="" class="wp-image-32327" srcset="https://testgatsby.locallifecycle.jpg 638w, https://testgatsby.locallifecycle-300x225.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> </figure> 
+
+<img src="https://www.nikpro.com.aulifecycle.jpg" alt="" class="wp-image-32327" srcset="https://testgatsby.locallifecycle.jpg 638w, https://testgatsby.locallifecycle-300x225.jpg 300w" sizes="(max-width: 638px) 100vw, 638px" /> 
+ 
 
 ### The render() method
 

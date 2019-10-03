@@ -38,9 +38,11 @@ Have a look at this pen that shows justify-content with all its values:
 
 https://codepen.io/azad6026/pen/bQwRoL
 
-Firstly just like align-items we have flex-start and flex-end and center with same functionality. The only difference is justify-content does work in main axis ( here horizontal):<figure class="wp-block-image">
+Firstly just like align-items we have flex-start and flex-end and center with same functionality. The only difference is justify-content does work in main axis ( here horizontal):
 
-<img src="https://www.nikpro.com.austart-end-center-justify.png" alt="" class="wp-image-32553" srcset="https://testgatsby.localstart-end-center-justify.png 429w, https://testgatsby.localstart-end-center-justify-287x300.png 287w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>common values of justify-content and align-items (row direction)</figcaption></figure>
+
+<img src="https://www.nikpro.com.austart-end-center-justify.png" alt="" class="wp-image-32553" srcset="https://testgatsby.localstart-end-center-justify.png 429w, https://testgatsby.localstart-end-center-justify-287x300.png 287w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>common values of justify-content and align-items (row direction)</figcaption>
+
 
 But we have three new values which are all starting with space as they define how the space is distributed between itms.
 
@@ -48,9 +50,11 @@ The **space-between** divides the available space inside container in the **main
 
 The **space-around** divides the space around all items. Space-around adds the same amount of space on each side to all items but in this case first and last item will have half space of the other items as they don&#8217;t have any other item in one of their sides.&nbsp;
 
-The **space-evenly** which is <a rel="noreferrer noopener" aria-label="The space-evenly which is fairly new (opens in a new tab)" href="https://caniuse.com/#search=space-evenly" target="_blank">fairly new</a>&nbsp;adds the exact amount space for all items including first and last items:<figure class="wp-block-image">
+The **space-evenly** which is <a rel="noreferrer noopener" aria-label="The space-evenly which is fairly new (opens in a new tab)" href="https://caniuse.com/#search=space-evenly" target="_blank">fairly new</a>&nbsp;adds the exact amount space for all items including first and last items:
 
-<img src="https://www.nikpro.com.aujustify-space-items.png" alt="" class="wp-image-32554" srcset="https://testgatsby.localjustify-space-items.png 429w, https://testgatsby.localjustify-space-items-280x300.png 280w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>space values of justify-content property</figcaption></figure>
+
+<img src="https://www.nikpro.com.aujustify-space-items.png" alt="" class="wp-image-32554" srcset="https://testgatsby.localjustify-space-items.png 429w, https://testgatsby.localjustify-space-items-280x300.png 280w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>space values of justify-content property</figcaption>
+
 
 As a result justify-content property aligns items in the main axis with six different values that could be used in various cases.
 
@@ -62,13 +66,17 @@ Similar rules apply to this property in a column flex-direction. But the differe
 
 https://codepen.io/azad6026/pen/vQJPGW
 
-Remember that in this case **flex-direction is column**. So the items will be centred along the vertical axis. Also flex-start and flex-end will align items on top and bottom of the container as below:<figure class="wp-block-image">
+Remember that in this case **flex-direction is column**. So the items will be centred along the vertical axis. Also flex-start and flex-end will align items on top and bottom of the container as below:
 
-<img src="https://www.nikpro.com.auflex-end-start-centre-justify-column.png" alt="" class="wp-image-32558" srcset="https://testgatsby.localflex-end-start-centre-justify-column.png 429w, https://testgatsby.localflex-end-start-centre-justify-column-285x300.png 285w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>column direction with flex-start , flex-end and center values</figcaption></figure>
 
-Additionally the space values will distribute the free space of the container along the main axis which is vertical axis here. Accordingly we will have the expected result:<figure class="wp-block-image">
+<img src="https://www.nikpro.com.auflex-end-start-centre-justify-column.png" alt="" class="wp-image-32558" srcset="https://testgatsby.localflex-end-start-centre-justify-column.png 429w, https://testgatsby.localflex-end-start-centre-justify-column-285x300.png 285w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>column direction with flex-start , flex-end and center values</figcaption>
 
-<img src="https://www.nikpro.com.auflex-space-values-justify-content.png" alt="flex-space-values-justify-content" class="wp-image-32559" srcset="https://testgatsby.localflex-space-values-justify-content.png 429w, https://testgatsby.localflex-space-values-justify-content-289x300.png 289w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>space values in justify-content in column direction</figcaption></figure>
+
+Additionally the space values will distribute the free space of the container along the main axis which is vertical axis here. Accordingly we will have the expected result:
+
+
+<img src="https://www.nikpro.com.auflex-space-values-justify-content.png" alt="flex-space-values-justify-content" class="wp-image-32559" srcset="https://testgatsby.localflex-space-values-justify-content.png 429w, https://testgatsby.localflex-space-values-justify-content-289x300.png 289w" sizes="(max-width: 429px) 100vw, 429px" /> <figcaption>space values in justify-content in column direction</figcaption>
+
 
 As we **learnt justify-content is the equivalent version of align-items in main axis**. It divides the remaining space between all flex items as per its value.
 

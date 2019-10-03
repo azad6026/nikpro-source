@@ -216,9 +216,11 @@ const Persons = props => {
     );
 }
 ```
-<figure class="wp-block-image">
 
-<img class="wp-image-32533" src="https://www.nikpro.com.aunestedararay.png" alt="" srcset="https://testgatsby.localnestedararay.png 1192w, https://testgatsby.localnestedararay-300x158.png 300w, https://testgatsby.localnestedararay-768x403.png 768w, https://testgatsby.localnestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> </figure> 
+
+
+<img class="wp-image-32533" src="https://www.nikpro.com.aunestedararay.png" alt="" srcset="https://testgatsby.localnestedararay.png 1192w, https://testgatsby.localnestedararay-300x158.png 300w, https://testgatsby.localnestedararay-768x403.png 768w, https://testgatsby.localnestedararay-1024x538.png 1024w" sizes="(max-width: 1192px) 100vw, 1192px" /> <figcaption>pass props from parent to child component</figcaption> 
+ 
 
 Now we could use the **{&#8230;details} as the desired  non nested array **and create our child component to show persons&#8217; info based on their age:
 

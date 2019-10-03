@@ -1,6 +1,6 @@
 ---
 id: 32357
-title: 'Async function and await expression combine with promise.all explained: part 2'
+title: "Async function and await expression combine with promise.all explained: part 2"
 date: 2018-10-06T20:50:22+00:00
 author: admin
 layout: post
@@ -17,6 +17,7 @@ tags:
   - async await
   - promise.all
 ---
+
 Continuing our [first article](https://www.nikpro.com.au/exciting-async-function-combine-with-await-expression-to-replace-promises-in-es6-part-1/) around async function and await expression, we will explain them using promise.all in this post. Ideally we will see how to use them in a beneficial and in the right place.
 
 ## Await a few promises
@@ -29,22 +30,19 @@ According to MDN the `Promise.all(iterable)` method returns a single [`Promis
 
 #### A simple example
 
-
 ```
 var p1 = Promise.resolve(3);
 var p2 = 1337;
 var p3 = new Promise((resolve, reject) => {
   setTimeout(resolve, 100, 'foo');
-}); 
+});
 
-Promise.all([p1, p2, p3]).then(values => { 
-  console.log(values); // [3, 1337, "foo"] 
+Promise.all([p1, p2, p3]).then(values => {
+  console.log(values); // [3, 1337, "foo"]
 });
 ```
 
-
 As a result the values as an output from all three resolved promises. If a promise fails promise.all fails as well:
-
 
 ```
 var mixedPromisesArray = [Promise.resolve(33), Promise.reject(44)];
@@ -56,26 +54,22 @@ setTimeout(function() {
 });
 ```
 
-
 As a result the second promise is rejected:
-
 
 ```
 // logs
-// Promise { <state>: "pending" } 
+// Promise { <state>: "pending" }
 // the stack is now empty
 // Promise { <state>: "rejected", <reason>: 44 }
 ```
 
+Now that we know how it works we checkout and example with async await.
 
-Now that we know how it works we checkout and example with async await.<figure class="wp-block-image">
-
-<img src="https://www.nikpro.com.aupromise.all_.png" alt="" class="wp-image-32359" srcset="https://testgatsby.localpromise.all_.png 1600w, https://testgatsby.localpromise.all_-300x124.png 300w, https://testgatsby.localpromise.all_-768x317.png 768w, https://testgatsby.localpromise.all_-1024x423.png 1024w, https://testgatsby.localpromise.all_-1568x648.png 1568w" sizes="(max-width: 1600px) 100vw, 1600px" /> <figcaption>promise.all</figcaption></figure> 
+<img src="https://www.nikpro.com.aupromise.all_.png" alt="promise.all" class="wp-image-32359" srcset="https://testgatsby.localpromise.all_.png 1600w, https://testgatsby.localpromise.all_-300x124.png 300w, https://testgatsby.localpromise.all_-768x317.png 768w, https://testgatsby.localpromise.all_-1024x423.png 1024w, https://testgatsby.localpromise.all_-1568x648.png 1568w" sizes="(max-width: 1600px) 100vw, 1600px" />
 
 #### Advanced example with async await
 
 Practically we can use them for real world example like this one in <a href="https://gist.github.com/wesbos/1866f918824936ffb73d8fd0b02879b4" target="_blank" rel="noopener noreferrer">Github</a>. We want to make some API requests along with making a coffee. Read along the comments:
-
 
 ```
 // This is a function to make coffee which takes 2 seconds!! really?
@@ -109,10 +103,9 @@ async function go() {
 go();
 ```
 
+Great. Successfully we have saved a few unnecessary await as we didn&#8217;t really need to wait for them to be resolved one by one.
 
-Great. Successfully we have saved a few unnecessary await as we didn&#8217;t really need to wait for them to be resolved one by one.<figure class="wp-block-image">
-
-<img src="https://www.nikpro.com.aupromisesasync.jpeg" alt="" class="wp-image-32362" srcset="https://testgatsby.localpromisesasync.jpeg 744w, https://testgatsby.localpromisesasync-300x161.jpeg 300w" sizes="(max-width: 744px) 100vw, 744px" /> <figcaption>Lets  await the promises</figcaption></figure> 
+<img src="https://www.nikpro.com.aupromisesasync.jpeg" alt="lets  await the promises" class="wp-image-32362" srcset="https://testgatsby.localpromisesasync.jpeg 744w, https://testgatsby.localpromisesasync-300x161.jpeg 300w" sizes="(max-width: 744px) 100vw, 744px" />
 
 Also we could use it when a promise uses other promise&#8217;s return value and also there is a third promise as well:
 
@@ -124,16 +117,14 @@ const makeRequest = () => {
       // do something
       return promise2(value1)
         .then(value2 => {
-          // do something          
+          // do something
           return promise3(value1, value2)
         })
     })
 }
 ```
 
-
 If we use promise.all only:
-
 
 ```
 const makeRequest = () => {
@@ -143,15 +134,13 @@ const makeRequest = () => {
       return Promise.all([value1, promise2(value1)])
     })
     .then(([value1, value2]) => {
-      // do something          
+      // do something
       return promise3(value1, value2)
     })
 }
 ```
 
-
 But the simplest and best option here is to use async await and make it clean and more semantic:
-
 
 ```
 const makeRequest = async () => {
@@ -160,7 +149,6 @@ const makeRequest = async () => {
   return promise3(value1, value2)
 }
 ```
-
 
 We do both promises asynchronously and the third promise keeps the returned value.
 

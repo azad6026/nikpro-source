@@ -139,9 +139,11 @@ Therefor we get the desired result :
   .
 }
 ```
-<figure class="wp-block-image">
 
-<img class="wp-image-32469" src="https://www.nikpro.com.autransform.png" alt="transform the array" srcset="https://testgatsby.localtransform.png 550w, https://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> </figure> 
+
+
+<img class="wp-image-32469" src="https://www.nikpro.com.autransform.png" alt="transform the array" srcset="https://testgatsby.localtransform.png 550w, https://testgatsby.localtransform-300x205.png 300w" sizes="(max-width: 550px) 100vw, 550px" /> <figcaption>transform the array using reduce()</figcaption> 
+ 
 
 We can use our [ES6](https://nikpro.com.au/category/es6) knowledge and change our code to be more readable [using arrow functions](https://www.nikpro.com.au/some-arrow-function-benefits-with-examples-explained/):
 

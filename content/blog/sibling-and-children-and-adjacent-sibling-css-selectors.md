@@ -35,9 +35,11 @@ ul > li { color : red; }
 
 ```
 
-Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:<figure class="wp-block-image">
+Visually this is the image of how it will look like from Chris Coyier&#8217;s [article](https://css-tricks.com/child-and-sibling-selectors/) here:
 
-<img src="https://www.nikpro.com.auselector-example.png" alt="" class="wp-image-32307" srcset="https://testgatsby.localselector-example.png 570w, https://testgatsby.localselector-example-300x205.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure>
+
+<img src="https://www.nikpro.com.auselector-example.png" alt="" class="wp-image-32307" srcset="https://testgatsby.localselector-example.png 570w, https://testgatsby.localselector-example-300x205.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> 
+
 
 Therefor we clearly see the difference between these two CSS selectors.
 
@@ -49,17 +51,21 @@ Technically we need to know that this selector selects all siblings. Not just th
 p ~ p { margin: 0 0 5px 0; }
 ```
 
-We can see the visual showcase of this here in this image:<figure class="wp-block-image">
+We can see the visual showcase of this here in this image:
 
-<img src="https://www.nikpro.com.augeneral-sibling-example.png" alt="general sibling example" class="wp-image-32309" srcset="https://testgatsby.localgeneral-sibling-example.png 570w, https://testgatsby.localgeneral-sibling-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure>
+
+<img src="https://www.nikpro.com.augeneral-sibling-example.png" alt="general sibling example" class="wp-image-32309" srcset="https://testgatsby.localgeneral-sibling-example.png 570w, https://testgatsby.localgeneral-sibling-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> 
+
 
 Although the last **p** element is not directly followed by an article but it has been selected by **p ~ p** selector as well.
 
 ## Adjacent sibling selector
 
-Finally we can combine both above CSS selectors and make an adjacent sibling selector which selects and element which directly follows the first element:<figure class="wp-block-image">
+Finally we can combine both above CSS selectors and make an adjacent sibling selector which selects and element which directly follows the first element:
 
-<img src="https://www.nikpro.com.auadjacent-selector-example.png" alt="adjacent selector example" class="wp-image-32308" srcset="https://testgatsby.localadjacent-selector-example.png 570w, https://testgatsby.localadjacent-selector-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> </figure>
+
+<img src="https://www.nikpro.com.auadjacent-selector-example.png" alt="adjacent selector example" class="wp-image-32308" srcset="https://testgatsby.localadjacent-selector-example.png 570w, https://testgatsby.localadjacent-selector-example-300x156.png 300w" sizes="(max-width: 570px) 100vw, 570px" /> 
+
 
 As a result the last p element is not selected by **p + p** selector this time which makes sense.
 

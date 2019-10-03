@@ -26,15 +26,19 @@ This new set of units consists of four different units. Two for each axis (meani
 - **`vmin`**: 1/100th of the smallest side
 - **`vmax`**: 1/100th of the largest side
 
-Basically viewport units are like percentages. But the difference is that percentage is related to the element container and is based n that. However viewport units are related to the browser window of the device. Lets see some use cases.<figure class="wp-block-image">
+Basically viewport units are like percentages. But the difference is that percentage is related to the element container and is based n that. However viewport units are related to the browser window of the device. Lets see some use cases.
 
-<img src="https://www.nikpro.com.auviewport-units.png" alt="" class="wp-image-32145" srcset="https://testgatsby.localviewport-units.png 522w, https://testgatsby.localviewport-units-300x238.png 300w" sizes="(max-width: 522px) 100vw, 522px" /> <figcaption>100vh for height and 100vw for width </figcaption></figure>
+
+<img src="https://www.nikpro.com.auviewport-units.png" alt="" class="wp-image-32145" srcset="https://testgatsby.localviewport-units.png 522w, https://testgatsby.localviewport-units-300x238.png 300w" sizes="(max-width: 522px) 100vw, 522px" /> <figcaption>100vh for height and 100vw for width </figcaption>
+
 
 ## Using the units in typography
 
-Generally it is common to use them for font sizes. Then the font size will update itself based on the browser size. But as you can see in the below image it will change dramatically fast we need to use a better approach:<figure class="wp-block-image">
+Generally it is common to use them for font sizes. Then the font size will update itself based on the browser size. But as you can see in the below image it will change dramatically fast we need to use a better approach:
 
-<img src="https://www.nikpro.com.aupure-responsive_nvzwrs-1.gif" alt="" class="wp-image-32146" /> <figcaption>image from <a href="https://css-tricks.com/fun-viewport-units/" target="_blank" rel="noopener noreferrer">CSS-tricks</a></figcaption></figure>
+
+<img src="https://www.nikpro.com.aupure-responsive_nvzwrs-1.gif" alt="" class="wp-image-32146" /> <figcaption>image from <a href="https://css-tricks.com/fun-viewport-units/" target="_blank" rel="noopener noreferrer">CSS-tricks</a></figcaption>
+
 
 Moreover we need to use calc() function to have more control over the font size growth:
 

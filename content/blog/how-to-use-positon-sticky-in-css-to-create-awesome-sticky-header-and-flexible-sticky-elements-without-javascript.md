@@ -33,7 +33,8 @@ Using **position: sticky** in CSS we create an sticky element which sticks the e
   </p>
 </blockquote><figure class="wp-block-image is-resized">
 
-<img src="https://www.nikpro.com.austickr.png" alt="" class="wp-image-32636" width="594" height="197" srcset="https://testgatsby.localstickr.png 389w, https://testgatsby.localstickr-300x99.png 300w" sizes="(max-width: 594px) 100vw, 594px" /> <figcaption>sticky positioning in CSS</figcaption></figure>
+<img src="https://www.nikpro.com.austickr.png" alt="" class="wp-image-32636" width="594" height="197" srcset="https://testgatsby.localstickr.png 389w, https://testgatsby.localstickr-300x99.png 300w" sizes="(max-width: 594px) 100vw, 594px" /> <figcaption>sticky positioning in CSS</figcaption>
+
 
 Here is a simple example:
 
@@ -57,7 +58,8 @@ Sticky value for position property makes it behave as a relative positioned befo
 
 Secondly, once we pass that section and start the new section, the position for the **dt tag** behaves like a relative position again. Because as we learnt an element with position: sticky; property will stick to its own container. More like a local fixed element after scrolling. Therefore after we scroll and pass its container we cannot see it stuck anymore. <figure class="wp-block-image is-resized">
 
-<img src="https://www.nikpro.com.austicky-creative-way.png" alt="" class="wp-image-32638" width="597" height="358" /> <figcaption>Flexible sticky elements</figcaption></figure>
+<img src="https://www.nikpro.com.austicky-creative-way.png" alt="" class="wp-image-32638" width="597" height="358" /> <figcaption>Flexible sticky elements</figcaption>
+
 
 This is absolutely great. Practically it is very flexible and useful as we can manage how we want the element to stick on the DOM. This <a rel="noreferrer noopener" aria-label="link (opens in a new tab)" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sticky_element" target="_blank">link</a> is another example which creates a sticky header with sticky positioning..
 

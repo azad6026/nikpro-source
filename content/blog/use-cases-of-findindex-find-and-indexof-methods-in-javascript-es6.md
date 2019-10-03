@@ -58,9 +58,11 @@ arr.findIndex(isOdd);
 // 4
 
 ```
-<figure class="wp-block-image">
 
-<img src="https://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="https://testgatsby.localfind-index.png 1680w, https://testgatsby.localfind-index-300x113.png 300w, https://testgatsby.localfind-index-768x288.png 768w, https://testgatsby.localfind-index-1024x384.png 1024w, https://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption></figure> 
+
+
+<img src="https://www.nikpro.com.aufind-index.png" alt="find index" class="wp-image-32372" srcset="https://testgatsby.localfind-index.png 1680w, https://testgatsby.localfind-index-300x113.png 300w, https://testgatsby.localfind-index-768x288.png 768w, https://testgatsby.localfind-index-1024x384.png 1024w, https://testgatsby.localfind-index-1568x588.png 1568w" sizes="(max-width: 1680px) 100vw, 1680px" /> <figcaption>find it</figcaption>
+ 
 
 #### Find the fruit object with find()
 
@@ -92,9 +94,11 @@ arr.find(isOdd);
 ```
 
 
-Similar function being passed to find(0 but this time we have found the actual number.<figure class="wp-block-image">
+Similar function being passed to find(0 but this time we have found the actual number.
 
-<img src="https://www.nikpro.com.aufind-it.jpg" alt="find it" class="wp-image-32371" srcset="https://testgatsby.localfind-it.jpg 386w, https://testgatsby.localfind-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> </figure> 
+
+<img src="https://www.nikpro.com.aufind-it.jpg" alt="find it" class="wp-image-32371" srcset="https://testgatsby.localfind-it.jpg 386w, https://testgatsby.localfind-it-300x239.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" /> 
+ 
 
 The find() method is great when we are looking for specific items. <a href="https://codeburst.io/learn-javascript-es6-array-find-array-findindex-7fe4f63c6974" target="_blank" rel="noopener noreferrer">Note</a> that:
 

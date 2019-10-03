@@ -74,7 +74,8 @@ var s = new Set(['foo', window]); <br/><br/>//Using from method<br/>Array.from(s
 As a result in this case as well spread syntax is a better option as it makes the code look better.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.nikpro.com.auarrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="https://testgatsby.localarrays.png 376w, https://testgatsby.localarrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></figure>
+  <figure class="aligncenter"><img src="https://www.nikpro.com.auarrays.png" alt="array.from vs spread" class="wp-image-32228" srcset="https://testgatsby.localarrays.png 376w, https://testgatsby.localarrays-300x107.png 300w" sizes="(max-width: 376px) 100vw, 376px" />
+
 </div>
 
 ### map functions inside Array.from method

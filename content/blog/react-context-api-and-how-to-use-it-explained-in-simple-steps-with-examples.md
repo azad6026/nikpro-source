@@ -62,9 +62,11 @@ const BottomComponent = ({ name }) => {
 ```
 
 
-Typically it is great that we could pass props like this in our application. But what if we to reuse components? Or have more levels of passing props? Using Context API makes sense then. Therefore we convert our application to utilise it.<figure class="wp-block-image">
+Typically it is great that we could pass props like this in our application. But what if we to reuse components? Or have more levels of passing props? Using Context API makes sense then. Therefore we convert our application to utilise it.
 
-<img src="https://www.nikpro.com.aureact-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="https://testgatsby.localreact-context-api-1024x576.jpg 1024w, https://testgatsby.localreact-context-api-300x169.jpg 300w, https://testgatsby.localreact-context-api-768x432.jpg 768w, https://testgatsby.localreact-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption></figure>
+
+<img src="https://www.nikpro.com.aureact-context-api-1024x576.jpg" alt="" class="wp-image-32613" srcset="https://testgatsby.localreact-context-api-1024x576.jpg 1024w, https://testgatsby.localreact-context-api-300x169.jpg 300w, https://testgatsby.localreact-context-api-768x432.jpg 768w, https://testgatsby.localreact-context-api.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Context API</figcaption>
+
 
 ## Using Context API in action
 
@@ -134,9 +136,11 @@ const SharedContext = React.createContext('Azadeh');
 ```
 
 
-Therefore in case of no close Provider it still works and takes the default value.<figure class="wp-block-image">
+Therefore in case of no close Provider it still works and takes the default value.
 
-<img src="https://www.nikpro.com.augloball-state.png" alt="global state" class="wp-image-32614" srcset="https://testgatsby.localgloball-state.png 389w, https://testgatsby.localgloball-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> </figure>
+
+<img src="https://www.nikpro.com.augloball-state.png" alt="global state" class="wp-image-32614" srcset="https://testgatsby.localgloball-state.png 389w, https://testgatsby.localgloball-state-300x100.png 300w" sizes="(max-width: 389px) 100vw, 389px" /> 
+
 
 ### Another example
 

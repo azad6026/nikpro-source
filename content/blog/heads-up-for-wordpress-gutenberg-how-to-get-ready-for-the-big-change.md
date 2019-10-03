@@ -18,17 +18,21 @@ Most of us do not like change of any kind, but a change of this magnitude may be
 
 If you are reading this article, you know about Gutenberg. The WordPress modern and next level editor that will change the way we build websites in WordPress.
 
-Here we will talk about what will be affected by Gutenberg and how to get ready for it. And if ever having a problem migrating to it, what solutions are available.<figure class="wp-block-image">
+Here we will talk about what will be affected by Gutenberg and how to get ready for it. And if ever having a problem migrating to it, what solutions are available.
 
-<img src="https://www.nikpro.com.augutenberg-try.gif" alt="" class="wp-image-32585" /> <figcaption>Gutenberg editor</figcaption></figure>
+
+<img src="https://www.nikpro.com.augutenberg-try.gif" alt="" class="wp-image-32585" /> <figcaption>Gutenberg editor</figcaption>
+
 
 ## What is Gutenberg?
 
 Basically Gutenberg is the new upcoming core editor of WordPress that will change the way of building pages and how they appear in the frontend. It uses block units like components to build posts and pages. Blocks that are reusable as well.
 
-Therefore it has a close relationship with the theme and all the plugins involving in building and customising the site.<figure class="wp-block-image">
+Therefore it has a close relationship with the theme and all the plugins involving in building and customising the site.
 
-<img src="https://www.nikpro.com.auchnage-the-road-1024x640.jpg" alt="" class="wp-image-32588" srcset="https://testgatsby.localchnage-the-road-1024x640.jpg 1024w, https://testgatsby.localchnage-the-road-300x188.jpg 300w, https://testgatsby.localchnage-the-road-768x480.jpg 768w, https://testgatsby.localchnage-the-road.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Embrace the change</figcaption></figure>
+
+<img src="https://www.nikpro.com.auchnage-the-road-1024x640.jpg" alt="" class="wp-image-32588" srcset="https://testgatsby.localchnage-the-road-1024x640.jpg 1024w, https://testgatsby.localchnage-the-road-300x188.jpg 300w, https://testgatsby.localchnage-the-road-768x480.jpg 768w, https://testgatsby.localchnage-the-road.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Embrace the change</figcaption>
+
 
 ## What should we expect as a business?
 
@@ -53,9 +57,11 @@ As mentioned above, Gutenberg will be the core editor in WordPress. This means i
 As a result of this transformation :
 
 - Plugins that are used for changing and customising the editor will be affected.
-- the theme&#8217;s compatibility with editor will be affected<figure class="wp-block-image">
+- the theme&#8217;s compatibility with editor will be affected
 
-<img src="https://www.nikpro.com.aunew-future-1024x497.jpg" alt="" class="wp-image-32587" srcset="https://testgatsby.localnew-future-1024x497.jpg 1024w, https://testgatsby.localnew-future-300x146.jpg 300w, https://testgatsby.localnew-future-768x373.jpg 768w, https://testgatsby.localnew-future.jpg 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure>
+
+<img src="https://www.nikpro.com.aunew-future-1024x497.jpg" alt="" class="wp-image-32587" srcset="https://testgatsby.localnew-future-1024x497.jpg 1024w, https://testgatsby.localnew-future-300x146.jpg 300w, https://testgatsby.localnew-future-768x373.jpg 768w, https://testgatsby.localnew-future.jpg 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+
 
 ## What does this change mean?
 
@@ -67,9 +73,11 @@ Plugins like Siteorigin page builder , eliminator, Beaver page builder,&nbsp; SE
 
 Fortunately all these popular page builders are already updating themselves to be compatible with Gutenberg. Siteorigin page builder is supported already and SEO Yoast has integrated itself by working alongside Gutenberg team.
 
-Bu there are sites that might use some 3rd party plugins or old and not updated themes that might crash or not work properly. Here are the solutions.<figure class="wp-block-image">
+Bu there are sites that might use some 3rd party plugins or old and not updated themes that might crash or not work properly. Here are the solutions.
 
-<img src="https://www.nikpro.com.auwp5.jpg" alt="" class="wp-image-32589" srcset="https://testgatsby.localwp5.jpg 750w, https://testgatsby.localwp5-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /> <figcaption>WordPress 5 is close</figcaption></figure>
+
+<img src="https://www.nikpro.com.auwp5.jpg" alt="" class="wp-image-32589" srcset="https://testgatsby.localwp5.jpg 750w, https://testgatsby.localwp5-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /> <figcaption>WordPress 5 is close</figcaption>
+
 
 ## What are the solutions?
 
