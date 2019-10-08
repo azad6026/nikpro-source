@@ -4,12 +4,13 @@ import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import { useSpring, animated } from "react-spring"
 
 const ArticleBackgroundWrapper = styled(props => (
   <BackgroundImage {...props} />
 ))``
 
-const ArticleWrapper = styled.div`
+const ArticleWrapper = styled(animated.div)`
   transition: all 0.5s ease 0s;
   background: linear-gradient(
     to right,
@@ -82,6 +83,7 @@ const PaginationList = styled.ul`
 `
 
 const BlogList = props => {
+  const animProps = useSpring({ opacity: 1, from: { opacity: 0.5 } })
   const { data } = props
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -105,7 +107,7 @@ const BlogList = props => {
             className="bg-image"
             fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
           >
-            <ArticleWrapper>
+            <ArticleWrapper style={{ ...animProps }}>
               <ArticleTitle>
                 <ArticleTitleLink to={node.fields.slug}>
                   {title}
@@ -119,7 +121,7 @@ const BlogList = props => {
                 dangerouslySetInnerHTML={{ __html: node.excerpt }}
               />
               <ArticleReadMoreLink to={node.fields.slug}>
-                Continue reading{" "}
+                Continue reading
               </ArticleReadMoreLink>
             </ArticleWrapper>
           </ArticleBackgroundWrapper>
