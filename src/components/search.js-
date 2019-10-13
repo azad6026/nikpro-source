@@ -1,3 +1,9 @@
-<form>
-        <input type="text" id="search" placeholder="Search pages..." value=""><input type="submit" value="Submit">
+import React from "react"
+
+const Search = props => (
+        <form>
+                <input type="text" id="search" placeholder="Search pages..." value=""><input type="submit" value="Submit">
         </form>
+)
+
+export default Search;

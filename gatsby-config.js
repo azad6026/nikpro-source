@@ -5,7 +5,7 @@ module.exports = {
     description: `A blog for learning all around the web`,
     siteUrl: `https://nikpro.com.au`,
     social: {
-      twitter: `azad6026`,
+      github: `azad6026`,
     },
   },
   plugins: [
