@@ -7,19 +7,12 @@ import Bio from "./bio"
 
 const Layout = ({ children }) => (
   <div
+    id="top"
     style={{
       borderTop: `.3rem solid var(--primary-light-color)`,
     }}
   >
-    <a id="top"></a>
-    <header
-      style={{
-        background: `var(--primary-dark-colour )`,
-        padding: `1rem`,
-      }}
-    >
-      <Header />
-    </header>
+    <Header />
     <div className="inner-wrapper">
       <main>{children}</main>
       <footer style={{ color: `white` }}>

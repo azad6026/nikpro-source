@@ -5,48 +5,55 @@ import "../styles/layout.css"
 
 const Header = props => (
   <>
-    <div className="inner-wrapper">
-      <div
-        style={{
-          maxWidth: `150px`,
-        }}
-      >
-        <Link to="/">
-          <Image filename="nikpromainlogo.png" alt="nikpro logo" />
-        </Link>
-      </div>
-      <nav>
-        <ul
+    <header
+      style={{
+        background: `var(--primary-dark-colour )`,
+        padding: `1rem`,
+      }}
+    >
+      <div className="inner-wrapper">
+        <div
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-around`,
-            marginBottom: 0,
+            maxWidth: `150px`,
           }}
         >
-          <li className="menu-list-item">
-            <Link to="/categories/css" className="menu-item-link">
-              CSS
-            </Link>
-          </li>
-          <li className="menu-list-item">
-            <Link to="/categories/javascript/" className="menu-item-link">
-              Javascript
-            </Link>
-          </li>
-          <li className="menu-list-item">
-            <Link to="/categories/es-6" className="menu-item-link">
-              ES6
-            </Link>
-          </li>
-          <li className="menu-list-item">
-            <Link to="/categories/react" className="menu-item-link">
-              React
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          <Link to="/">
+            <Image filename="nikpromainlogo.png" alt="nikpro logo" />
+          </Link>
+        </div>
+        <nav>
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-around`,
+              marginBottom: 0,
+            }}
+          >
+            <li className="menu-list-item">
+              <Link to="/categories/css" className="menu-item-link">
+                CSS
+              </Link>
+            </li>
+            <li className="menu-list-item">
+              <Link to="/categories/javascript/" className="menu-item-link">
+                Javascript
+              </Link>
+            </li>
+            <li className="menu-list-item">
+              <Link to="/categories/es-6" className="menu-item-link">
+                ES6
+              </Link>
+            </li>
+            <li className="menu-list-item">
+              <Link to="/categories/react" className="menu-item-link">
+                React
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   </>
 )
 
