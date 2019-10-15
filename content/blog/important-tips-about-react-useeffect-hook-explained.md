@@ -15,7 +15,7 @@ tags:
   - useEffect
 ---
 
-In fact React useEffect hook could be tricky to understand as we use it in many different situation in our [functional components](https://nikpro.com.au/functional-component-in-react-explained-with-examples/). Here are some important tips that we need to know to use it effectively in various use cases. We use sme example code to make a better understanding.
+In fact React useEffect hook could be tricky to understand as we use it in many different situations in our [functional components](https://nikpro.com.au/functional-component-in-react-explained-with-examples/). Here are some important tips that we need to know to use it effectively in various use cases. We use sme example code to make a better understanding.
 
 ## React useEffect API explanation
 
@@ -29,7 +29,7 @@ This means all the effects related to Mounting, Unmounting and Updating happens 
 
 ## The important tip in the syntax
 
-Basically useEffect just like other hooks takes or better say can take two arguments. First one is the function that runs is every ** render or update **:
+Basically useEffect just like other hooks takes or better say could take two arguments. First one is the function that runs is every **render or update**:
 
 ```
  import React, { useState, useEffect } from 'react';
@@ -53,11 +53,11 @@ Basically useEffect just like other hooks takes or better say can take two argum
 }
 ```
 
-Generally we use useEffect hook to manage our updates and side effects. In the above code, we simply update the title of the document using te DOM API by each click on the button. Therefore each render the useEffect runs.
+Generally we use this hook to manage our updates and side effects. In the above code, we simply update the title of the document using te DOM API by each click on the button. Therefore on each render the useEffect runs.
 
 ### useEffect second argument for performance and control
 
-But as we mentioned useEffect accepts another argument that tells React "When" to run the side effect. What I mean bu=y that is we might need the useEffec to run only when the value(s) are changed.. Therefore we are able use the second argument as an array of variables so React will watch the state variables for a change (here count):
+But as we mentioned useEffect accepts another argument that tells React "When" to run the side effect. What I mean by that is we might need the useEffec to run only when the value(s) are changed.Therefore we are able to use the second argument as an array of variables so React will watch the state variables for a change (here count):
 
 ```
   useEffect(() => {
@@ -81,9 +81,9 @@ Practically if we need to run the useEffect only once, the second argument shoul
 
 ```
 
-### React cleanup or Unmont effect
+### React cleanup or Unmount effect
 
-Hwever we might need cleanups or performing a componentWillUnmount job in some cases. We need to returna function from our hook to make that happen:
+However we might need cleanups or performing a componentWillUnmount job in some cases. We need to return a function from our hook to make that happen:
 
 ```
 useEffect(() => {
@@ -96,6 +96,6 @@ useEffect(() => {
 })
 ```
 
-Using useEffect hook efficiently coud be tricky and confusing. Using these simple yet useful tips will help kepp the code clean and simple. Read more in depth about React hooks in the [React docs](https://reactjs.org/docs/hooks-effect.html).
+Using useEffect hook efficiently could be tricky and confusing. Using these simple yet useful tips will help keep the code clean and simple. Read more in depth about React hooks in the [React docs](https://reactjs.org/docs/hooks-effect.html).
 
 Thank you for reading.
