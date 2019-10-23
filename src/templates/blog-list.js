@@ -115,7 +115,7 @@ const BlogList = props => {
               </ArticleTitle>
               <ArticleTime datetime={node.frontmatter.date}>
                 {node.frontmatter.date}
-                <ArticleAuthor>by Azadeh, {node.timeToRead} min</ArticleAuthor>
+                <ArticleAuthor> by Azadeh, {node.timeToRead} min</ArticleAuthor>
               </ArticleTime>
               <ArticleExcert
                 dangerouslySetInnerHTML={{ __html: node.excerpt }}
