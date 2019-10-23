@@ -55,7 +55,7 @@ const Bio = () => {
       />
       <p>
         This site is created and maintined by {author} , A passionate developer,
-        sport and code lover who loves to share and write when she have some
+        sport and code lover who loves to share and write when she has some
         time.
         {` `}
         <a href={`https://github.com/${social.github}`}>
