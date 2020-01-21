@@ -100,6 +100,6 @@ Please check out this CodePen from <a href="https://medium.com/@elad" target="_b
 https://codepen.io/elad2412/pen/oQJmYQ
  
 
-In the next article, I will demonstrate some real examples of how e use these properties in different layouts. 
+In the next article, I will demonstrate some real examples of how to use these properties in different cases. 
 
 Thank you for reading.
